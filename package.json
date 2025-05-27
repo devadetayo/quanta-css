@@ -1,6 +1,6 @@
 {
   "name": "quanta-css",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Quanta CSS — a component + utility-first CSS framework with built-in dark mode and theming.",
   "main": "dist/quanta.css",
   "style": "dist/quanta.min.css",

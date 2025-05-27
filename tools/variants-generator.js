@@ -44,55 +44,46 @@ try {
     if (!m) continue;
 
     const cls = m[1];
-    const body = t.slice(t.indexOf('{')+1, t.lastIndexOf('}')).trim();
-    const jsKey = cls.replace(/-/g,'_');
+    const body = t.slice(t.indexOf('{') + 1, t.lastIndexOf('}')).trim();
+    const jsKey = cls.replace(/-/g, '_');
     jsonStyles[jsKey] = {};
-    body.split(';').forEach(pair=>{
-      let [p,v] = pair.split(':').map(s=>s.trim());
+    body.split(';').forEach(pair => {
+      let [p, v] = pair.split(':').map(s => s.trim());
       if (p && v) {
-        const key = p.replace(/-([a-z])/g,(_,g)=>g.toUpperCase());
-        jsonStyles[jsKey][key]=v;
+        const key = p.replace(/-([a-z])/g, (_, g) => g.toUpperCase());
+        jsonStyles[jsKey][key] = v;
       }
     });
 
     lightVars.push(`.${cls} { ${body} }`);
     darkVars.push(`${darkAttr} .${cls} { ${body} }`);
-    darkVars.push(`.dark-${cls} { ${body} }`);
 
     for (const [state, pseudo] of Object.entries(statePrefixes)) {
-      const lightState = `.${state}-${cls}${pseudo} { ${body} }`;
-      const darkState1 = `${darkAttr} .${state}-${cls}${pseudo} { ${body} }`;
-      const darkState2 = `.dark-${state}-${cls}${pseudo} { ${body} }`;
-
-      lightVars.push(lightState);
-      darkVars.push(darkState1, darkState2);
+      lightVars.push(`.${state}-${cls}${pseudo} { ${body} }`);
+      darkVars.push(`${darkAttr} .${state}-${cls}${pseudo} { ${body} }`);
     }
 
     lightVars.push(`.group:hover .group-hover-${cls} { ${body} }`);
     darkVars.push(`${darkAttr} .group:hover .group-hover-${cls} { ${body} }`);
-    darkVars.push(`.dark-group-hover-${cls} { ${body} }`);
 
     for (const [prefix, media] of Object.entries(responsivePrefixes)) {
       const sel = `.${prefix}-${cls}`;
       respLight[prefix].push(`${sel} { ${body} }`);
       respDark[prefix].push(`${darkAttr} ${sel} { ${body} }`);
-      respDark[prefix].push(`.${prefix}-dark-${cls} { ${body} }`);
 
       for (const [state, pseudo] of Object.entries(statePrefixes)) {
         const lightSel = `.${prefix}-${state}-${cls}${pseudo} { ${body} }`;
-        const darkSel1 = `${darkAttr} .${prefix}-${state}-${cls}${pseudo} { ${body} }`;
-        const darkSel2 = `.${prefix}-dark-${state}-${cls}${pseudo} { ${body} }`;
-
+        const darkSel = `${darkAttr} .${prefix}-${state}-${cls}${pseudo} { ${body} }`;
         respLight[prefix].push(lightSel);
-        respDark[prefix].push(darkSel1, darkSel2);
+        respDark[prefix].push(darkSel);
       }
     }
   }
 
-  const lightRespBlocks = Object.entries(responsivePrefixes).map(([p,media]) =>
+  const lightRespBlocks = Object.entries(responsivePrefixes).map(([p, media]) =>
     `${media} {\n${respLight[p].join('\n')}\n}`
   );
-  const darkRespBlocks = Object.entries(responsivePrefixes).map(([p,media]) =>
+  const darkRespBlocks = Object.entries(responsivePrefixes).map(([p, media]) =>
     `${media} {\n${respDark[p].join('\n')}\n}`
   );
 
