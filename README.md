@@ -67,7 +67,7 @@ npm install quanta-css
 ### Via CDN
 
 ```html
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/quantacss@1.0.2/dist/quanta.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/quantacss@1.0.1/dist/quanta.css">
 ```
 
 ---
