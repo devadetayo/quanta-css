@@ -1,0 +1,34 @@
+/* Tooltip base */
+.quanta-tooltip {
+  position: absolute;
+  background: var(--quanta-tooltip-bg, rgba(0, 0, 0, 0.8));
+  color: var(--quanta-tooltip-color, #fff);
+  padding: 0.25rem 0.5rem;         /* 4px 8px */
+  border-radius: 0.25rem;          /* 4px */
+  font-size: 0.75rem;              /* 12px */
+  line-height: 1.2;
+  white-space: nowrap;
+  pointer-events: none;
+  z-index: var(--quanta-z-tooltip, 1000);
+  opacity: 0;
+  transform: translateY(-4px);
+  transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+/* Show state (add this class in your JS when creating) */
+.quanta-tooltip.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Little arrow at the bottom */
+.quanta-tooltip::after {
+  content: "";
+  position: absolute;
+  bottom: -4px;                     /* overlaps 4px outside */
+  left: 50%;
+  transform: translateX(-50%);
+  border-width: 4px;
+  border-style: solid;
+  border-color: var(--quanta-tooltip-bg, rgba(0, 0, 0, 0.8)) transparent transparent transparent;
+}

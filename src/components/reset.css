@@ -1,0 +1,74 @@
+/* src/components/reset.css */
+@layer components.reset {
+  /* Core box‑sizing */
+  *, *::before, *::after { box-sizing: border-box; }
+
+  /* Reset margins, paddings, outlines */
+  :where(html, body,
+         h1, h2, h3, h4, h5, h6,
+         p, blockquote, pre,
+         ol, ul, li,
+         dl, dt, dd,
+         figure, figcaption,
+         hr,
+         fieldset, legend,
+         input, button, select, textarea,
+         table, th, td,
+         img, video, canvas, svg,
+         iframe, form, label, legend) {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    border: 0;
+    vertical-align: baseline;
+  }
+
+  /* Make HTML5 elements block */
+  :where(article, aside, footer, header, main, nav, section) {
+    display: block;
+  }
+
+  /* Lists, quotes, tables, media */
+  ol, ul { list-style: none; }
+  blockquote, q   { quotes: none; }
+  table           { border-collapse: collapse; border-spacing: 0; }
+  img, video      { max-width: 100%; height: auto; display: block; }
+
+  /* Form elements */
+  button, input, select, textarea {
+    font: inherit;
+    color: inherit;
+    background: transparent;
+    appearance: none;
+  }
+  button::-moz-focus-inner { border: 0; padding: 0; }
+  textarea { resize: vertical; }
+
+  /* Links */
+  a {
+    color: inherit;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: inherit;
+  }
+  a:hover {
+    text-decoration: underline;
+  }
+  a:not([href]):not([class]),
+  a:not([href]):not([class]):hover {
+    color: inherit;
+    text-decoration: none;
+    cursor: default;
+  }
+
+  /* Scrollbars */
+  ::-webkit-scrollbar {
+    width: 6px; height: 6px;
+  }
+
+  /* Accessibility */
+  :where(:focus-visible) {
+    outline: 2px solid var(--quanta-focus, #4f46e5);
+    outline-offset: 2px;
+  }
+}

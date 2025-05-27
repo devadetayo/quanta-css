@@ -1,0 +1,200 @@
+/* src/components/tables.css */
+@layer components.tables {
+
+  /* ─── Base Table Styles ─────────────────────────────────────────── */
+  .quanta-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: var(--quanta-text-sm);
+    color: var(--quanta-text-dark);
+  }
+
+  .quanta-table th, .quanta-table td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid var(--quanta-border-muted);
+  }
+
+  .quanta-table th {
+    background-color: var(--quanta-bg-muted);
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+
+  .quanta-table tr:hover {
+    background-color: var(--quanta-bg-hover);
+  }
+
+  .quanta-table-striped tr:nth-child(odd) {
+    background-color: var(--quanta-bg-light-muted);
+  }
+
+  /* Hoverable Rows */
+  .quanta-table-hover tbody tr:hover {
+    background-color: var(--quanta-bg-hover);
+  }
+
+  /* ─── Responsive Table ─────────────────────────────────────────── */
+  .quanta-table-responsive {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    margin-bottom: 20px;
+  }
+
+  .quanta-table th, .quanta-table td {
+    padding: 10px;
+    font-size: var(--quanta-text-xs);
+  }
+
+  @media (min-width: 640px) {
+    .quanta-table th, .quanta-table td {
+      padding: 12px;
+      font-size: var(--quanta-text-sm);
+    }
+  }
+
+  @media (min-width: 1280px) {
+    .quanta-table th, .quanta-table td {
+      padding: 15px;
+      font-size: var(--quanta-text-md);
+    }
+  }
+
+  /* ─── Sorting Functionality (Visual Only, Add JavaScript for Full Functionality) ── */
+  .quanta-table th.sortable {
+    cursor: pointer;
+    position: relative;
+  }
+
+  .quanta-table th.sortable::after {
+    content: '';
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 5px solid var(--quanta-text-muted);
+    opacity: 0.5;
+    transition: transform 0.3s;
+  }
+
+  .quanta-table th.sortable.sorted-asc::after {
+    transform: translateY(-50%) rotate(180deg);
+  }
+
+  .quanta-table th.sortable.sorted-desc::after {
+    transform: translateY(-50%) rotate(0deg);
+  }
+
+  /* ─── Pagination Styles ──────────────────────────────────────────── */
+  .quanta-pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+  }
+
+  .quanta-pagination .quanta-pagination-button {
+    padding: 8px 12px;
+    margin: 0 4px;
+    border: 1px solid var(--quanta-border-muted);
+    background-color: var(--quanta-bg-muted);
+    color: var(--quanta-text-dark);
+    cursor: pointer;
+    font-size: var(--quanta-text-sm);
+    border-radius: var(--quanta-rounded-sm);
+    transition: background-color 0.3s, color 0.3s;
+  }
+
+  .quanta-pagination .quanta-pagination-button:hover {
+    background-color: var(--quanta-bg-hover);
+    color: var(--quanta-text-light);
+  }
+
+  .quanta-pagination .quanta-pagination-button:disabled {
+    background-color: var(--quanta-bg-disabled);
+    color: var(--quanta-text-muted);
+    cursor: not-allowed;
+  }
+
+  .quanta-pagination .quanta-pagination-button.active {
+    background-color: var(--quanta-bg-primary);
+    color: var(--quanta-text-light);
+  }
+
+  /* ─── Dark Mode Support ─────────────────────────────────────────── */
+  html[data-theme="dark"] {
+    .quanta-table {
+      border-color: var(--quanta-border-dark);
+    }
+
+    .quanta-table th {
+      background-color: var(--quanta-bg-dark-muted);
+      color: var(--quanta-text-light);
+    }
+
+    .quanta-table tr:hover {
+      background-color: var(--quanta-bg-dark-hover);
+    }
+
+    .quanta-table-striped tr:nth-child(odd) {
+      background-color: var(--quanta-bg-dark-light-muted);
+    }
+
+    .quanta-pagination .quanta-pagination-button {
+      border-color: var(--quanta-border-dark);
+      background-color: var(--quanta-bg-dark-muted);
+      color: var(--quanta-text-light);
+    }
+
+    .quanta-pagination .quanta-pagination-button:hover {
+      background-color: var(--quanta-bg-dark-hover);
+      color: var(--quanta-text-dark);
+    }
+
+    .quanta-pagination .quanta-pagination-button.active {
+      background-color: var(--quanta-bg-dark-primary);
+      color: var(--quanta-text-light);
+    }
+  }
+
+  /* ─── Responsive Design (5 Breakpoints) ────────────── */
+  @media (max-width: 640px) {
+    .quanta-table th, .quanta-table td {
+      padding: 8px;
+      font-size: var(--quanta-text-xs);
+    }
+  }
+
+  @media (min-width: 641px) and (max-width: 768px) {
+    .quanta-table th, .quanta-table td {
+      padding: 10px;
+      font-size: var(--quanta-text-sm);
+    }
+  }
+
+  @media (min-width: 769px) and (max-width: 1024px) {
+    .quanta-table th, .quanta-table td {
+      padding: 12px;
+      font-size: var(--quanta-text-sm);
+    }
+  }
+
+  @media (min-width: 1025px) and (max-width: 1280px) {
+    .quanta-table th, .quanta-table td {
+      padding: 14px;
+      font-size: var(--quanta-text-md);
+    }
+  }
+
+  @media (min-width: 1281px) {
+    .quanta-table th, .quanta-table td {
+      padding: 16px;
+      font-size: var(--quanta-text-lg);
+    }
+  }
+}

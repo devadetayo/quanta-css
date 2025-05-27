@@ -1,0 +1,22 @@
+/* src/components/footer.css */
+@layer components.footer {
+  .quanta-footer {
+    background: var(--quanta-bg-muted);
+    padding: var(--quanta-space-6);
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--quanta-space-6);
+    justify-content: space-between;
+  }
+  .quanta-footer-col { flex: 1 1 200px; }
+  .quanta-footer h4 { margin-bottom: var(--quanta-space-3); }
+  .quanta-footer a { text-decoration: none; color: var(--quanta-text-default); }
+
+  html[data-theme="dark"] .quanta-footer { background: var(--quanta-bg-emphasis); }
+
+  @media (max-width:640px) { .quanta-footer { flex-direction: column; } }
+  @media (min-width:641px) and (max-width:768px) { /* no change */ }
+  @media (min-width:769px) and (max-width:1024px) { /* no change */ }
+  @media (min-width:1025px) and (max-width:1280px) { /* no change */ }
+  @media (min-width:1281px) { /* no change */ }
+}

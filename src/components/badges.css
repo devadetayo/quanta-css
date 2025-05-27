@@ -1,0 +1,185 @@
+/* src/components/badges.css */
+@layer components.quanta-badges {
+  .quanta-badge {
+    display: inline-block;
+    padding: var(--quanta-space-1) var(--quanta-space-2);
+    font-size: var(--quanta-text-xs);
+    line-height: var(--quanta-leading-normal);
+    font-weight: 500;
+    border-radius: var(--quanta-rounded-full);
+    background-color: var(--quanta-bg-default);
+    color: var(--quanta-text-default);
+    transition: background-color var(--quanta-transition-fast), color var(--quanta-transition-fast);
+    margin-right: var(--quanta-space-2); /* Add spacing between badges */
+    margin-bottom: var(--quanta-space-2); /* Add margin to the bottom for multi-line badges */
+  }
+
+  /* Badge Sizes */
+  .quanta-badge-sm {
+    font-size: var(--quanta-text-xxs);
+    padding: var(--quanta-space-1);
+  }
+
+  .quanta-badge-lg {
+    font-size: var(--quanta-text-sm);
+    padding: var(--quanta-space-2) var(--quanta-space-4);
+  }
+
+  /* Variants */
+  .quanta-badge-primary {
+    background-color: var(--quanta-bg-primary);
+    color: var(--quanta-text-primary);
+  }
+  .quanta-badge-secondary {
+    background-color: var(--quanta-bg-secondary);
+    color: var(--quanta-text-secondary);
+  }
+  .quanta-badge-success {
+    background-color: var(--quanta-bg-success);
+    color: var(--quanta-text-success);
+  }
+  .quanta-badge-warning {
+    background-color: var(--quanta-bg-warning);
+    color: var(--quanta-text-warning);
+  }
+  .quanta-badge-danger {
+    background-color: var(--quanta-bg-danger);
+    color: var(--quanta-text-danger);
+  }
+  .quanta-badge-info {
+    background-color: var(--quanta-bg-info);
+    color: var(--quanta-text-info);
+  }
+
+  /* Dark Mode */
+  html[data-theme="dark"] .quanta-badge {
+    background-color: var(--quanta-bg-emphasis);
+    color: var(--quanta-text-default);
+  }
+  html[data-theme="dark"] .quanta-badge-primary {
+    background-color: var(--quanta-primary-hover);
+    color: var(--quanta-text-primary);
+  }
+  html[data-theme="dark"] .quanta-badge-secondary {
+    background-color: var(--quanta-secondary-hover);
+    color: var(--quanta-text-secondary);
+  }
+  html[data-theme="dark"] .quanta-badge-success {
+    background-color: var(--quanta-success-hover);
+    color: var(--quanta-text-success);
+  }
+  html[data-theme="dark"] .quanta-badge-warning {
+    background-color: var(--quanta-warning-hover);
+    color: var(--quanta-text-warning);
+  }
+  html[data-theme="dark"] .quanta-badge-danger {
+    background-color: var(--quanta-danger-hover);
+    color: var(--quanta-text-danger);
+  }
+  html[data-theme="dark"] .quanta-badge-info {
+    background-color: var(--quanta-info-hover);
+    color: var(--quanta-text-info);
+  }
+
+  /* Responsive Breakpoints */
+  /* Mobile first approach */
+  @media (max-width: 767px) {
+    .quanta-badge {
+      font-size: var(--quanta-text-xs); /* Adjust font size on small screens */
+      padding: var(--quanta-space-1) var(--quanta-space-2); /* Adjust padding */
+    }
+
+    .quanta-badge-sm {
+      font-size: var(--quanta-text-xxs); /* Small badge adjustments for mobile */
+      padding: var(--quanta-space-1);
+    }
+
+    .quanta-badge-lg {
+      font-size: var(--quanta-text-sm); /* Large badge adjustments for mobile */
+      padding: var(--quanta-space-2);
+    }
+  }
+
+  /* Tablets (768px and above) */
+  @media (min-width: 768px) {
+    .quanta-badge {
+      font-size: var(--quanta-text-sm); /* Slightly larger font for tablets */
+      padding: var(--quanta-space-2) var(--quanta-space-3); /* Slightly larger padding */
+    }
+
+    .quanta-badge-sm {
+      font-size: var(--quanta-text-xs); /* Small badge adjustments for tablets */
+      padding: var(--quanta-space-1);
+    }
+
+    .quanta-badge-lg {
+      font-size: var(--quanta-text-md); /* Larger font for larger badges */
+      padding: var(--quanta-space-2) var(--quanta-space-4);
+    }
+  }
+
+  /* Desktop (1024px and above) */
+  @media (min-width: 1024px) {
+    .quanta-badge {
+      font-size: var(--quanta-text-base); /* Base font size for large screens */
+      padding: var(--quanta-space-3) var(--quanta-space-4); /* More padding on larger screens */
+    }
+
+    .quanta-badge-sm {
+      font-size: var(--quanta-text-sm); /* Slightly larger font for small badges */
+      padding: var(--quanta-space-1);
+    }
+
+    .quanta-badge-lg {
+      font-size: var(--quanta-text-lg); /* Increase font size for large badges */
+      padding: var(--quanta-space-3) var(--quanta-space-5);
+    }
+  }
+
+  /* Larger Desktop (1280px and above) */
+  @media (min-width: 1280px) {
+    .quanta-badge {
+      font-size: var(--quanta-text-lg); /* Larger font size for very large screens */
+      padding: var(--quanta-space-3) var(--quanta-space-5); /* Even more padding on large screens */
+    }
+
+    .quanta-badge-sm {
+      font-size: var(--quanta-text-base); /* Increase size for small badges on large screens */
+      padding: var(--quanta-space-2);
+    }
+
+    .quanta-badge-lg {
+      font-size: var(--quanta-text-xl); /* Larger font size for large badges */
+      padding: var(--quanta-space-4) var(--quanta-space-6);
+    }
+  }
+
+  /* Ultra Wide Desktop (1600px and above) */
+  @media (min-width: 1600px) {
+    .quanta-badge {
+      font-size: var(--quanta-text-xl); /* Very large font for ultra-wide screens */
+      padding: var(--quanta-space-4) var(--quanta-space-6); /* Generous padding */
+    }
+
+    .quanta-badge-sm {
+      font-size: var(--quanta-text-lg); /* Small badges also get larger font size */
+      padding: var(--quanta-space-2);
+    }
+
+    .quanta-badge-lg {
+      font-size: var(--quanta-text-2xl); /* Extra large font for large badges */
+      padding: var(--quanta-space-5) var(--quanta-space-7);
+    }
+  }
+
+  /* Accessibility Improvements */
+  .quanta-badge:focus {
+    outline: 2px solid var(--quanta-primary); /* Clear focus state for better accessibility */
+  }
+
+  /* Allow icons within badges */
+  .quanta-badge[aria-live="polite"] {
+    position: relative;
+    padding-left: var(--quanta-space-6); /* Add space for a potential icon */
+  }
+}

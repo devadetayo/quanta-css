@@ -1,0 +1,192 @@
+/* src/components/dropdowns.css */
+@layer components.dropdowns {
+  /* ─── Base Dropdown Styling ──────────────────────────────────── */
+  .quanta-dropdown {
+    position: relative;
+    display: inline-block;
+  }
+
+  .quanta-dropdown-menu {
+    display: none; /* Hidden by default */
+    position: absolute;
+    z-index: 1000;
+    top: 100%;
+    left: 0;
+    min-width: 160px;
+    background-color: var(--quanta-bg-emphasis);
+    border: var(--quanta-border-width) solid var(--quanta-border-color);
+    border-radius: var(--quanta-rounded-md);
+    box-shadow: var(--quanta-shadow-lg);
+    padding: var(--quanta-space-2) 0;
+    transition: opacity var(--quanta-transition-fast), transform var(--quanta-transition-fast);
+  }
+
+  .quanta-dropdown-item {
+    padding: var(--quanta-space-2) var(--quanta-space-4);
+    font-family: var(--quanta-font-secondary);
+    font-size: var(--quanta-text-base);
+    color: var(--quanta-text-default);
+    cursor: pointer;
+    transition: background-color var(--quanta-transition-fast), color var(--quanta-transition-fast);
+  }
+
+  .quanta-dropdown-item:hover,
+  .quanta-dropdown-item:focus {
+    background-color: var(--quanta-bg-hover);
+    color: var(--quanta-text-light);
+  }
+
+  .quanta-dropdown-item:active {
+    background-color: var(--quanta-bg-active);
+  }
+
+  /* ─── Dark Mode Support ───────────────────────────────────────── */
+  html[data-theme="dark"] {
+    .quanta-dropdown-menu {
+      background-color: var(--quanta-bg-dark-emphasis);
+      border-color: var(--quanta-border-dark-color);
+    }
+
+    .quanta-dropdown-item {
+      color: var(--quanta-text-dark);
+    }
+
+    .quanta-dropdown-item:hover,
+    .quanta-dropdown-item:focus {
+      background-color: var(--quanta-bg-dark-hover);
+      color: var(--quanta-text-light);
+    }
+
+    .quanta-dropdown-item:active {
+      background-color: var(--quanta-bg-dark-active);
+    }
+  }
+
+  /* ─── Responsive Media Queries ──────────────────────────────── */
+  @media (max-width: 640px) {
+    .quanta-dropdown-menu {
+      min-width: 140px;
+    }
+
+    .quanta-dropdown-item {
+      padding: var(--quanta-space-1) var(--quanta-space-3);
+    }
+  }
+
+  @media (min-width: 641px) and (max-width: 768px) {
+    .quanta-dropdown-menu {
+      min-width: 160px;
+    }
+  }
+
+  @media (min-width: 769px) and (max-width: 1024px) {
+    .quanta-dropdown-menu {
+      min-width: 180px;
+    }
+  }
+
+  @media (min-width: 1025px) and (max-width: 1280px) {
+    .quanta-dropdown-menu {
+      min-width: 200px;
+    }
+  }
+
+  @media (min-width: 1281px) {
+    .quanta-dropdown-menu {
+      min-width: 220px;
+    }
+  }
+
+  /* ─── Hover Dropdown ────────────────────────────────────── */
+  .quanta-dropdown-hover .quanta-dropdown-menu {
+    display: none; /* Hidden by default */
+  }
+
+  .quanta-dropdown-hover:hover .quanta-dropdown-menu {
+    display: block;
+    opacity: 1;
+    transform: translateY(8px);
+  }
+
+  /* ─── Click Dropdown ────────────────────────────────────── */
+  .quanta-dropdown-click .quanta-dropdown-menu {
+    display: none; /* Hidden by default */
+  }
+
+  .quanta-dropdown-click.show .quanta-dropdown-menu {
+    display: block;
+    opacity: 1;
+    transform: translateY(8px);
+  }
+
+  /* ─── Hover Dropdown Menu Styling ─────────────────────────── */
+  .quanta-dropdown-hover-item {
+    padding: var(--quanta-space-2) var(--quanta-space-4);
+    font-family: var(--quanta-font-secondary);
+    font-size: var(--quanta-text-base);
+    color: var(--quanta-text-default);
+    cursor: pointer;
+    transition: background-color var(--quanta-transition-fast), color var(--quanta-transition-fast);
+  }
+
+  .quanta-dropdown-hover-item:hover,
+  .quanta-dropdown-hover-item:focus {
+    background-color: var(--quanta-bg-hover);
+    color: var(--quanta-text-light);
+  }
+
+  .quanta-dropdown-hover-item:active {
+    background-color: var(--quanta-bg-active);
+  }
+
+  /* ─── Click Dropdown Menu Styling ──────────────────────────── */
+  .quanta-dropdown-click-item {
+    padding: var(--quanta-space-2) var(--quanta-space-4);
+    font-family: var(--quanta-font-secondary);
+    font-size: var(--quanta-text-base);
+    color: var(--quanta-text-default);
+    cursor: pointer;
+    transition: background-color var(--quanta-transition-fast), color var(--quanta-transition-fast);
+  }
+
+  .quanta-dropdown-click-item:hover,
+  .quanta-dropdown-click-item:focus {
+    background-color: var(--quanta-bg-hover);
+    color: var(--quanta-text-light);
+  }
+
+  .quanta-dropdown-click-item:active {
+    background-color: var(--quanta-bg-active);
+  }
+
+  /* ─── Dark Mode Support for Dropdowns ──────────────────────── */
+  html[data-theme="dark"] {
+    .quanta-dropdown-hover-menu {
+      background-color: var(--quanta-bg-dark-emphasis);
+      border-color: var(--quanta-border-dark-color);
+    }
+
+    .quanta-dropdown-click-menu {
+      background-color: var(--quanta-bg-dark-emphasis);
+      border-color: var(--quanta-border-dark-color);
+    }
+
+    .quanta-dropdown-hover-item,
+    .quanta-dropdown-click-item {
+      color: var(--quanta-text-dark);
+    }
+
+    .quanta-dropdown-hover-item:hover,
+    .quanta-dropdown-click-item:hover,
+    .quanta-dropdown-hover-item:focus,
+    .quanta-dropdown-click-item:focus {
+      background-color: var(--quanta-bg-dark-hover);
+      color: var(--quanta-text-light);
+    }
+
+    .quanta-dropdown-hover-item:active,
+    .quanta-dropdown-click-item:active {
+      background-color: var(--quanta-bg-dark-active);
+    }
+  }
+}

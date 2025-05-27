@@ -1,0 +1,29 @@
+/* src/components/avatars.css */
+@layer components.quanta-avatars {
+  .quanta-avatar {
+    display: inline-block;
+    width: var(--quanta-space-8);
+    height: var(--quanta-space-8);
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  .quanta-avatar-sm { width: var(--quanta-space-6); height: var(--quanta-space-6); }
+  .quanta-avatar-lg { width: var(--quanta-space-12); height: var(--quanta-space-12); }
+
+  .quanta-avatar-group {
+    display: flex;
+    align-items: center;
+    gap: calc(var(--quanta-space-4) * -0.4);
+  }
+  .quanta-avatar-group .quanta-avatar { border: 2px solid var(--quanta-bg-default); }
+
+  html[data-theme="dark"] .quanta-avatar-group .quanta-avatar {
+    border-color: var(--quanta-bg-emphasis);
+  }
+
+  @media (max-width:640px) { .quanta-avatar { width: var(--quanta-space-6); height: var(--quanta-space-6); } }
+  @media (min-width:641px) and (max-width:768px) { /* no change */ }
+  @media (min-width:769px) and (max-width:1024px) { /* no change */ }
+  @media (min-width:1025px) and (max-width:1280px) { /* no change */ }
+  @media (min-width:1281px) { .quanta-avatar-lg { width: var(--quanta-space-16); height: var(--quanta-space-16); } }
+}

@@ -1,0 +1,159 @@
+/* src/components/button.css */
+@layer components.quanta-button {
+  /* ─── Flexible Base ─────────────────────────────────────────── */
+  .quanta-btn {
+    all: unset;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: var(--quanta-space-2) var(--quanta-space-4);
+    font-family: var(--quanta-font-primary);
+    font-size: var(--quanta-body-size);
+    line-height: var(--quanta-body-line-height);
+    border: var(--quanta-border-width) solid var(--quanta-border-color);
+    border-radius: var(--quanta-comp-radius);
+    box-shadow: var(--quanta-shadow-sm);
+    cursor: pointer;
+    user-select: none;
+    transition:
+      background-color var(--quanta-transition-normal),
+      color var(--quanta-transition-normal),
+      box-shadow var(--quanta-transition-fast);
+  }
+
+  /* ─── Size Modifiers ───────────────────────────────────────── */
+  .quanta-btn-sm {
+    padding: calc(var(--quanta-space-2) * 0.75) calc(var(--quanta-space-4) * 0.75);
+    font-size: var(--quanta-comp-fs-sm);
+  }
+  .quanta-btn-lg {
+    padding: calc(var(--quanta-space-2) * 1.25) calc(var(--quanta-space-4) * 1.25);
+    font-size: var(--quanta-comp-fs-lg);
+  }
+
+  /* ─── Preset Variants ──────────────────────────────────────── */
+  .quanta-btn-primary {
+    background-color: var(--quanta-bg-primary);
+    color: var(--quanta-text-primary);
+    border-color: var(--quanta-border-primary);
+  }
+  .quanta-btn-secondary {
+    background-color: var(--quanta-bg-secondary);
+    color: var(--quanta-text-secondary);
+    border-color: var(--quanta-border-secondary);
+  }
+  .quanta-btn-success {
+    background-color: var(--quanta-bg-success);
+    color: var(--quanta-text-success);
+    border-color: var(--quanta-border-success);
+  }
+  .quanta-btn-warning {
+    background-color: var(--quanta-bg-warning);
+    color: var(--quanta-text-warning);
+    border-color: var(--quanta-border-warning);
+  }
+  .quanta-btn-danger {
+    background-color: var(--quanta-bg-danger);
+    color: var(--quanta-text-danger);
+    border-color: var(--quanta-border-danger);
+  }
+  .quanta-btn-info {
+    background-color: var(--quanta-bg-info);
+    color: var(--quanta-text-info);
+    border-color: var(--quanta-border-info);
+  }
+
+  /* ─── Interaction States ───────────────────────────────────── */
+  .quanta-btn:hover,
+  .quanta-btn:focus-visible {
+    box-shadow: var(--quanta-shadow-md);
+  }
+  .quanta-btn-primary:hover { background-color: var(--quanta-primary-hover); }
+  .quanta-btn-secondary:hover { background-color: var(--quanta-secondary-hover); }
+  .quanta-btn-success:hover { background-color: var(--quanta-success-hover); }
+  .quanta-btn-warning:hover { background-color: var(--quanta-warning-hover); }
+  .quanta-btn-danger:hover { background-color: var(--quanta-danger-hover); }
+  .quanta-btn-info:hover { background-color: var(--quanta-info-hover); }
+
+  /* ─── Disabled State ───────────────────────────────────────── */
+  .quanta-btn:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+    box-shadow: none;
+  }
+
+  /* ─── Dark‑mode Tweaks ─────────────────────────────────────── */
+  html[data-theme="dark"] .quanta-btn {
+    box-shadow: var(--quanta-shadow-lg);
+  }
+
+  /* ─── Mobile-First Styles ──────────────────────────────────── */
+  /* Base styles are for mobile devices */
+  .quanta-btn {
+    font-size: var(--quanta-body-size); /* Default font size for mobile */
+    padding: var(--quanta-space-2) var(--quanta-space-4); /* Default padding for mobile */
+  }
+
+  .quanta-btn-sm {
+    padding: calc(var(--quanta-space-2) * 0.75) calc(var(--quanta-space-4) * 0.75);
+  }
+
+  .quanta-btn-lg {
+    padding: calc(var(--quanta-space-2) * 1.25) calc(var(--quanta-space-4) * 1.25);
+  }
+
+  /* ─── Responsive Adjustments ─────────────────────────────────── */
+  /* 1. Small Tablets (min-width: 600px) */
+  @media (min-width: 600px) {
+    .quanta-btn {
+      font-size: var(--quanta-body-size-md); /* Adjust font size for small tablets */
+      padding: var(--quanta-space-3) var(--quanta-space-5); /* More padding for small tablets */
+    }
+  }
+
+  /* 2. Tablets (min-width: 768px) */
+  @media (min-width: 768px) {
+    .quanta-btn {
+      font-size: var(--quanta-body-size-lg); /* Larger font size on tablets */
+      padding: var(--quanta-space-3) var(--quanta-space-6); /* Adjust padding */
+    }
+
+    .quanta-btn-sm {
+      padding: calc(var(--quanta-space-2) * 0.85) calc(var(--quanta-space-4) * 0.85);
+    }
+    .quanta-btn-lg {
+      padding: calc(var(--quanta-space-2) * 1.35) calc(var(--quanta-space-4) * 1.35);
+    }
+  }
+
+  /* 3. Laptops (min-width: 1024px) */
+  @media (min-width: 1024px) {
+    .quanta-btn {
+      font-size: var(--quanta-body-size-xl); /* Even larger font size for laptops */
+      padding: var(--quanta-space-4) var(--quanta-space-7); /* Increase padding */
+    }
+
+    .quanta-btn-sm {
+      padding: calc(var(--quanta-space-2) * 1) calc(var(--quanta-space-4) * 1);
+    }
+    .quanta-btn-lg {
+      padding: calc(var(--quanta-space-2) * 1.5) calc(var(--quanta-space-4) * 1.5);
+    }
+  }
+
+  /* 4. Large Desktops (min-width: 1280px) */
+  @media (min-width: 1280px) {
+    .quanta-btn {
+      font-size: var(--quanta-body-size-2xl); /* Extra large font size for large desktops */
+      padding: var(--quanta-space-5) var(--quanta-space-8); /* Larger padding for larger screens */
+    }
+  }
+
+  /* 5. Huge Displays (min-width: 1600px) */
+  @media (min-width: 1600px) {
+    .quanta-btn {
+      font-size: var(--quanta-body-size-3xl); /* Font size is massive for huge displays */
+      padding: var(--quanta-space-6) var(--quanta-space-9); /* Super large padding */
+    }
+  }
+}

@@ -1,0 +1,181 @@
+:root{
+    --quanta-red-50: #ffe0dd;
+    --quanta-red-100: #ffc5c0;
+    --quanta-red-200: #ff9d94;
+    --quanta-red-300: #ff6557;
+    --quanta-red-400: #ff3623;
+    --quanta-red-500: #ff0202;
+    --quanta-red-600: #ff2814;
+    --quanta-red-700: #d71200;
+    --quanta-red-800: #92160a;
+    --quanta-red-900: #500700;
+
+    --quanta-orange-50: #fff0d4;
+    --quanta-orange-100: #ffdea8;
+    --quanta-orange-200: #ffc570;
+    --quanta-orange-300: #ff834d;
+    --quanta-orange-400: #ffa037;
+    --quanta-orange-500: #ff8614;
+    --quanta-orange-600: #f06806;
+    --quanta-orange-700: #c74d07;
+    --quanta-orange-800: #9e3d0e;
+    --quanta-orange-900: #451805;
+
+    --quanta-teal-50: #cffce9;
+    --quanta-teal-100: #a3f7d7;
+    --quanta-teal-200: #67eec3;
+    --quanta-teal-300: #2bdca9;
+    --quanta-teal-400: #07c595;
+    --quanta-teal-500: #009e78;
+    --quanta-teal-600: #007e64;
+    --quanta-teal-700: #016450;
+    --quanta-teal-800: #025243;
+    --quanta-teal-900: #002e27;
+
+    --quanta-purple-50: #fee5ff;
+    --quanta-purple-100: #fdcaff;
+    --quanta-purple-200: #ffa1fe;
+    --quanta-purple-300: #ff69fd;
+    --quanta-purple-400: #fb32ff;
+    --quanta-purple-500: #d710da;
+    --quanta-purple-600: #c10ac0;
+    --quanta-purple-700: #9d0b9a;
+    --quanta-purple-800: #800f7b;
+    --quanta-purple-900: #570054;
+
+    --quanta-indigo-50: #f3e7ff;
+    --quanta-indigo-100: #ead3ff;
+    --quanta-indigo-200: #d9b1ff;
+    --quanta-indigo-300: #c27fff;
+    --quanta-indigo-400: #aa4efe;
+    --quanta-indigo-500: #962bf2;
+    --quanta-indigo-600: #891ce3;
+    --quanta-indigo-700: #6e1bae;
+    --quanta-indigo-800: #5b178c;
+    --quanta-indigo-900: #3c0368;
+
+    --quanta-yellow-50: #f2ffc2;
+    --quanta-yellow-100: #e9ff88;
+    --quanta-yellow-200: #e4ff43;
+    --quanta-yellow-300: #eaff10;
+    --quanta-yellow-400: #e4ef03;
+    --quanta-yellow-500: #d6cf00;
+    --quanta-yellow-600: #a49104;
+    --quanta-yellow-700: #87710c;
+    --quanta-yellow-800: #735c10;
+    --quanta-yellow-900: #433205;
+
+    --quanta-pink-50: #fde6e9;
+    --quanta-pink-100: #fbd0d9;
+    --quanta-pink-200: #f7aab9;
+    --quanta-pink-300: #f27a93;
+    --quanta-pink-400: #e63f66;
+    --quanta-pink-500: #d42a5b;
+    --quanta-pink-600: #b21e4b;
+    --quanta-pink-700: #951c45;
+    --quanta-pink-800: #801b40;
+    --quanta-pink-900: #470a1f;
+
+    --quanta-grey-50: #e7e7e7;
+    --quanta-grey-100: #d1d1d1;
+    --quanta-grey-200: #b0b0b0;
+    --quanta-grey-300: #888888;
+    --quanta-grey-400: #707070;
+    --quanta-grey-500: #5d5d5d;
+    --quanta-grey-600: #4f4f4f;
+    --quanta-grey-700: #454545;
+    --quanta-grey-800: #3d3d3d;
+    --quanta-grey-900: #262626;
+
+    --quanta-lime-50: #e7fec9;
+    --quanta-lime-100: #d0fc9a;
+    --quanta-lime-200: #aff75f;
+    --quanta-lime-300: #91ec2f;
+    --quanta-lime-400: #66be0e;
+    --quanta-lime-500: #55a808;
+    --quanta-lime-600: #42800b;
+    --quanta-lime-700: #36650f;
+    --quanta-lime-800: #2f5512;
+    --quanta-lime-900: #162f04;
+
+    --quanta-cyan-50: #cafdf8;
+    --quanta-cyan-100: #96f9f3;
+    --quanta-cyan-200: #59efeb;
+    --quanta-cyan-300: #27d9da;
+    --quanta-cyan-400: #0ebbbe;
+    --quanta-cyan-500: #089499;
+    --quanta-cyan-600: #0b757a;
+    --quanta-cyan-700: #0e5c61;
+    --quanta-cyan-800: #114c50;
+    --quanta-cyan-900: #022c31;
+
+    --quanta-sky-50: #dff0ff;
+    --quanta-sky-100: #b8e2ff;
+    --quanta-sky-200: #94d6ff;
+    --quanta-sky-300: #33b3fd;
+    --quanta-sky-400: #0999ee;
+    --quanta-sky-500: #0079cc;
+    --quanta-sky-600: #0060a5;
+    --quanta-sky-700: #045288;
+    --quanta-sky-800: #0a4570;
+    --quanta-sky-900: #062b4b;
+
+    --quanta-violet-50: #f4e8ff;
+    --quanta-violet-100: #ebd4ff;
+    --quanta-violet-200: #dbb3ff;
+    --quanta-violet-300: #c582fe;
+    --quanta-violet-400: #af52fa;
+    --quanta-violet-500: #992ced;
+    --quanta-violet-600: #851fd1;
+    --quanta-violet-700: #711faa;
+    --quanta-violet-800: #5c1a89;
+    --quanta-violet-900: #3f0566;
+
+    --quanta-rose-50: #ffe3f6;
+    --quanta-rose-100: #ffc6ec;
+    --quanta-rose-200: #ff98db;
+    --quanta-rose-300: #ff58c1;
+    --quanta-rose-400: #ff27a5;
+    --quanta-rose-500: #ff0a85;
+    --quanta-rose-600: #df0064;
+    --quanta-rose-700: #b80053;
+    --quanta-rose-800: #980348;
+    --quanta-rose-900: #5f0026;
+
+    /* Tailwind CSS Slate Palette */
+    --quanta-slate-50:  #f8fafc;
+    --quanta-slate-100: #f1f5f9;
+    --quanta-slate-200: #e2e8f0;
+    --quanta-slate-300: #cbd5e1;
+    --quanta-slate-400: #94a3b8;
+    --quanta-slate-500: #64748b;
+    --quanta-slate-600: #475569;
+    --quanta-slate-700: #334155;
+    --quanta-slate-800: #1e293b;
+    --quanta-slate-900: #0f172a;
+
+    --quanta-blue-50: #d7eaff;
+    --quanta-blue-100: #b9dcff;
+    --quanta-blue-200: #88c7ff;
+    --quanta-blue-300: #50a7ff;
+    --quanta-blue-400: #2882ff;
+    --quanta-blue-500: #1463ff;
+    --quanta-blue-600: #0a4aeb;
+    --quanta-blue-700: #0f3cbe;
+    --quanta-blue-800: #133895;
+    --quanta-blue-900: #133895;
+
+    --quanta-green-50: #d8ffdf;
+    --quanta-green-100: #b4fec2;
+    --quanta-green-200: #7afb93;
+    --quanta-green-300: #3aee5e;
+    --quanta-green-400: #10d737;
+    --quanta-green-500: #07c52d;
+    --quanta-green-600: #098c24;
+    --quanta-green-700: #0d6e22;
+    --quanta-green-800: #0d5a1f;
+    --quanta-green-900: #00330c;
+
+    --black: #000;
+    --white: #fff;
+}

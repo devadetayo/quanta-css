@@ -1,0 +1,205 @@
+/* src/components/lists.css */
+@layer components.lists {
+  /* ─── Base List Styles ──────────────────────────────────────────── */
+  .quanta-list {
+    padding: 0;
+    margin: 0;
+    list-style: none; /* Remove default bullet points for all lists */
+  }
+
+  /* ─── Unordered Lists (Bullets) ──────────────────────────────────── */
+  .quanta-list-bullets {
+    list-style-type: disc;
+    padding-left: var(--quanta-space-4);
+  }
+
+  .quanta-list-bullets li {
+    margin-bottom: var(--quanta-space-2);
+    font-size: var(--quanta-text-base);
+    color: var(--quanta-text-default);
+  }
+
+  /* Custom Bullets (For advanced users) */
+  .quanta-list-bullets.custom-bullet li {
+    list-style-type: none;
+    position: relative;
+  }
+
+  .quanta-list-bullets.custom-bullet li::before {
+    content: '•'; /* Change the bullet symbol */
+    position: absolute;
+    left: -1.5em;
+    color: var(--quanta-accent-color);
+    font-size: 1.2em;
+  }
+
+  /* ─── Ordered Lists (Numbers) ────────────────────────────────────── */
+  .quanta-list-numbers {
+    list-style-type: decimal;
+    padding-left: var(--quanta-space-4);
+  }
+
+  .quanta-list-numbers li {
+    margin-bottom: var(--quanta-space-2);
+    font-size: var(--quanta-text-base);
+    color: var(--quanta-text-default);
+  }
+
+  /* Custom Ordered List (Roman numerals, letters) */
+  .quanta-list-numbers.roman {
+    list-style-type: upper-roman;
+  }
+
+  .quanta-list-numbers.alpha {
+    list-style-type: upper-alpha;
+  }
+
+  /* ─── List Groups ────────────────────────────────────────────────── */
+  .quanta-list-group {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    border: var(--quanta-border-width) solid var(--quanta-border-color);
+    border-radius: var(--quanta-rounded-md);
+    background-color: var(--quanta-bg-default);
+  }
+
+  .quanta-list-group-item {
+    padding: var(--quanta-space-3) var(--quanta-space-4);
+    border-bottom: var(--quanta-border-width) solid var(--quanta-border-color);
+    display: flex;
+    align-items: center;
+    font-size: var(--quanta-text-base);
+    color: var(--quanta-text-default);
+  }
+
+  .quanta-list-group-item:last-child {
+    border-bottom: none;
+  }
+
+  /* List Group Hover Effects */
+  .quanta-list-group-item:hover {
+    background-color: var(--quanta-bg-hover);
+    cursor: pointer;
+  }
+
+  .quanta-list-group-item:active {
+    background-color: var(--quanta-bg-active);
+  }
+
+  /* ─── Dark Mode Support ─────────────────────────────────────────── */
+  html[data-theme="dark"] {
+    .quanta-list-bullets,
+    .quanta-list-numbers,
+    .quanta-list-group {
+      color: var(--quanta-text-dark);
+    }
+
+    .quanta-list-group-item {
+      background-color: var(--quanta-bg-dark-default);
+      border-color: var(--quanta-border-dark-color);
+    }
+
+    .quanta-list-group-item:hover {
+      background-color: var(--quanta-bg-dark-hover);
+    }
+
+    .quanta-list-group-item:active {
+      background-color: var(--quanta-bg-dark-active);
+    }
+
+    .quanta-list-group-item:last-child {
+      background-color: var(--quanta-bg-dark-emphasis);
+    }
+  }
+
+  /* ─── Responsive Design (5 Breakpoints) ────────────────────────── */
+  @media (max-width: 640px) {
+    .quanta-list-group {
+      flex-direction: column;
+    }
+
+    .quanta-list-group-item {
+      padding: var(--quanta-space-2) var(--quanta-space-3);
+    }
+  }
+
+  @media (min-width: 641px) and (max-width: 768px) {
+    .quanta-list-group {
+      flex-direction: column;
+    }
+
+    .quanta-list-group-item {
+      padding: var(--quanta-space-2) var(--quanta-space-4);
+    }
+  }
+
+  @media (min-width: 769px) and (max-width: 1024px) {
+    .quanta-list-group {
+      flex-direction: column;
+    }
+
+    .quanta-list-group-item {
+      padding: var(--quanta-space-3) var(--quanta-space-5);
+    }
+  }
+
+  @media (min-width: 1025px) and (max-width: 1280px) {
+    .quanta-list-group {
+      flex-direction: row;
+      align-items: center;
+    }
+
+    .quanta-list-group-item {
+      padding: var(--quanta-space-3) var(--quanta-space-6);
+    }
+  }
+
+  @media (min-width: 1281px) {
+    .quanta-list-group {
+      flex-direction: row;
+      align-items: center;
+    }
+
+    .quanta-list-group-item {
+      padding: var(--quanta-space-3) var(--quanta-space-6);
+    }
+  }
+
+  /* ─── Utility Classes for Lists ─────────────────────────────────── */
+  .quanta-list-indent-1 {
+    padding-left: var(--quanta-space-5);
+  }
+
+  .quanta-list-indent-2 {
+    padding-left: var(--quanta-space-6);
+  }
+
+  .quanta-list-indent-3 {
+    padding-left: var(--quanta-space-7);
+  }
+
+  .quanta-list-no-margin {
+    margin: 0;
+  }
+
+  .quanta-list-no-padding {
+    padding: 0;
+  }
+
+  .quanta-list-rounded {
+    border-radius: var(--quanta-rounded-md);
+  }
+
+  /* Custom Styles for List Items (Icon support, etc.) */
+  .quanta-list-item-icon {
+    margin-right: var(--quanta-space-2);
+  }
+
+  .quanta-list-item-icon svg {
+    width: 1.5em;
+    height: 1.5em;
+    fill: var(--quanta-accent-color);
+  }
+}

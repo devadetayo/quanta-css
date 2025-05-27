@@ -1,0 +1,27 @@
+/* src/components/megamenu.css */
+@layer components.megamenu {
+  .quanta-megamenu {
+    position: relative;
+  }
+  .quanta-megamenu-content {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100vw;
+    background: var(--quanta-bg-default);
+    padding: var(--quanta-space-6);
+    box-shadow: var(--quanta-shadow-lg);
+  }
+  .quanta-megamenu:hover .quanta-megamenu-content,
+  .quanta-megamenu.show .quanta-megamenu-content {
+    display: block;
+  }
+  html[data-theme="dark"] .quanta-megamenu-content { background: var(--quanta-bg-emphasis); }
+
+  @media (max-width:640px) { .quanta-megamenu-content { position: static; width: auto; } }
+  @media (min-width:641px) and (max-width:768px) { /* no change */ }
+  @media (min-width:769px) and (max-width:1024px) { /* no change */ }
+  @media (min-width:1025px) and (max-width:1280px) { /* no change */ }
+  @media (min-width:1281px) { /* no change */ }
+}

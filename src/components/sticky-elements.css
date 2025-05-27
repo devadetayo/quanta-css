@@ -1,0 +1,139 @@
+/* src/components/sticky-elements.css */
+@layer components.sticky {
+  /* ─── Sticky Header ─────────────────────────────────────── */
+  .quanta-sticky-top {
+    position: -webkit-sticky; /* For Safari */
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: var(--quanta-bg-default);
+    box-shadow: var(--quanta-shadow-md);
+    padding: var(--quanta-space-3);
+  }
+
+  /* ─── Sticky Footer ─────────────────────────────────────── */
+  .quanta-sticky-bottom {
+    position: -webkit-sticky; /* For Safari */
+    position: sticky;
+    bottom: 0;
+    z-index: 1000;
+    background-color: var(--quanta-bg-default);
+    box-shadow: var(--quanta-shadow-md);
+    padding: var(--quanta-space-3);
+  }
+
+  /* ─── Sticky Sidebar ─────────────────────────────────────── */
+  .quanta-sticky-sidebar {
+    position: -webkit-sticky; /* For Safari */
+    position: sticky;
+    top: var(--quanta-space-4);
+    z-index: 1000;
+  }
+
+  /* ─── Sticky Navigation ─────────────────────────────────── */
+  .quanta-sticky-nav {
+    position: -webkit-sticky; /* For Safari */
+    position: sticky;
+    top: 0;
+    background-color: var(--quanta-bg-default);
+    box-shadow: var(--quanta-shadow-lg);
+    z-index: 999;
+  }
+
+  /* ─── Sticky Elements with Transitions ─────────────────── */
+  .quanta-sticky-transition {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    transition: top 0.3s ease;
+  }
+
+  /* ─── Sticky Elements Customization ─────────────────────── */
+  .quanta-sticky {
+    background-color: var(--quanta-bg-muted);
+    padding: var(--quanta-space-4);
+    border-radius: var(--quanta-rounded-md);
+    box-shadow: var(--quanta-shadow-sm);
+  }
+
+  .quanta-sticky:hover {
+    background-color: var(--quanta-bg-default);
+    box-shadow: var(--quanta-shadow-lg);
+  }
+
+  /* ─── Dark Mode ─────────────────────────────────────────── */
+  html[data-theme="dark"] {
+    .quanta-sticky-top,
+    .quanta-sticky-bottom,
+    .quanta-sticky-sidebar,
+    .quanta-sticky-nav {
+      background-color: var(--quanta-bg-emphasis);
+      box-shadow: var(--quanta-shadow-md);
+    }
+
+    .quanta-sticky {
+      background-color: var(--quanta-bg-muted);
+      color: var(--quanta-text-light);
+    }
+
+    .quanta-sticky:hover {
+      background-color: var(--quanta-bg-emphasis);
+    }
+  }
+
+  /* ─── Responsive Media Queries ──────────────────────────── */
+  @media (max-width: 640px) {
+    .quanta-sticky-top {
+      padding: var(--quanta-space-2);
+    }
+
+    .quanta-sticky-bottom {
+      padding: var(--quanta-space-2);
+    }
+
+    .quanta-sticky-sidebar {
+      top: var(--quanta-space-3);
+    }
+  }
+
+  @media (min-width: 641px) and (max-width: 768px) {
+    .quanta-sticky-top {
+      padding: var(--quanta-space-3);
+    }
+
+    .quanta-sticky-bottom {
+      padding: var(--quanta-space-3);
+    }
+  }
+
+  @media (min-width: 769px) and (max-width: 1024px) {
+    .quanta-sticky-top {
+      padding: var(--quanta-space-4);
+    }
+
+    .quanta-sticky-bottom {
+      padding: var(--quanta-space-4);
+    }
+  }
+
+  @media (min-width: 1025px) and (max-width: 1280px) {
+    .quanta-sticky-top {
+      padding: var(--quanta-space-4);
+    }
+
+    .quanta-sticky-bottom {
+      padding: var(--quanta-space-4);
+    }
+  }
+
+  @media (min-width: 1281px) {
+    .quanta-sticky-top {
+      padding: var(--quanta-space-5);
+    }
+
+    .quanta-sticky-bottom {
+      padding: var(--quanta-space-5);
+    }
+  }
+}

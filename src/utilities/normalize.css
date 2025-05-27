@@ -1,0 +1,213 @@
+/* Normalize and Reset Combined */
+
+/* Set box-sizing to border-box for all elements */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin and padding from all elements */
+html, body, div, p, h1, h2, h3, h4, h5, h6, ul, ol, li, figure, blockquote, pre, dl, dt, dd, table, th, td {
+  margin: 0;
+  padding: 0;
+}
+
+/* Set the font to a consistent base (using system font stack) */
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  line-height: 1.5;
+  background-color: #fff; /* Light mode default */
+  color: #333; /* Default text color */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 100%;
+}
+
+/* Set the text size and height for elements that inherit text sizing */
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  font-size: 1rem;
+  font-weight: inherit;
+}
+
+/* Reset for hyperlinks */
+a {
+  text-decoration: none;
+  color: inherit; /* Makes links inherit the color of their parents */
+}
+
+/* Remove default list styles */
+ul, ol {
+  list-style: none;
+}
+
+/* Reset table borders and spacing */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+th, td {
+  padding: 0;
+  text-align: left;
+  vertical-align: top;
+}
+
+/* Remove quotes from blockquotes */
+blockquote {
+  quotes: none;
+}
+
+blockquote::before, blockquote::after {
+  content: "";
+  content: none;
+}
+
+/* Reset form inputs, buttons, etc. */
+input, button, textarea, select {
+  font: inherit;
+  background: transparent;
+  border: none;
+  padding: 0;
+  margin: 0;
+  color: inherit;
+}
+
+/* Style links and buttons to inherit color and not break layout */
+button, a {
+  cursor: pointer;
+  background: none;
+  border: none;
+}
+
+/* Avoid horizontal scrollbars in the document */
+body, html {
+  overflow-x: hidden;
+}
+
+/* Set the body's background to be flexible */
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+/* Allow full-height of the viewport */
+html, body {
+  height: 100%;
+}
+
+/* Normalize form elements */
+input, button, select, textarea {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  outline: none;
+  border: 1px solid #ccc;
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+  line-height: 1.5;
+  padding: 0.5rem;
+  margin: 0.25rem 0;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+  width: auto;
+  height: auto;
+}
+
+textarea {
+  resize: vertical;
+}
+
+/* Reset input and button focus outlines for a custom solution */
+input:focus, textarea:focus, button:focus {
+  outline: none;
+}
+
+/* Prevent default focus ring styling for buttons */
+button:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+/* Normalize scrollbars */
+html {
+  scrollbar-width: thin;
+  scrollbar-color: #888 #f1f1f1;
+}
+
+html::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+html::-webkit-scrollbar-thumb {
+  background-color: #888;
+}
+
+html::-webkit-scrollbar-thumb:hover {
+  background-color: #555;
+}
+
+html::-webkit-scrollbar-track {
+  background-color: #f1f1f1;
+}
+
+/* Ensure text doesn't overflow or get cut off unnecessarily */
+body {
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
+/* Ensure links have a consistent base style */
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+a:visited {
+  color: inherit;
+}
+
+/* Accessibility: Focus styling */
+:focus {
+  outline: 2px solid #00f;
+}
+
+/* Better for accessibility and touch-based devices */
+button, input, select, textarea {
+  cursor: pointer;
+  user-select: none;
+}
+
+/* Form reset for consistent input field styling */
+input[type="text"], input[type="password"], textarea {
+  background-color: #fff;
+  border-radius: 4px;
+}
+
+/* Dark Mode */
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #121212;
+    color: #e0e0e0;
+  }
+
+  a {
+    color: #bb86fc;
+  }
+
+  input, button, textarea {
+    background-color: #333;
+    color: #fff;
+  }
+
+  table {
+    background-color: #1e1e1e;
+  }
+}

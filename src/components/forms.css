@@ -1,0 +1,247 @@
+/* src/components/form.css */
+@layer components.form {
+  /* ─── Form Layout ─────────────────────────────────────────── */
+  .quanta-form {
+    display: flex;
+    flex-direction: column;
+    gap: var(--quanta-space-5);
+    max-width: 600px;
+    margin-inline: auto;
+  }
+
+  .quanta-form-group {
+    display: flex;
+    flex-direction: column;
+    gap: var(--quanta-space-2);
+  }
+
+  .quanta-form-label {
+    font-family: var(--quanta-font-primary);
+    font-size: var(--quanta-text-sm);
+    color: var(--quanta-text-default);
+    font-weight: 500;
+  }
+
+  /* ─── Text Inputs & Textarea & Select ────────────────────── */
+  .quanta-form-input,
+  .quanta-form-textarea,
+  .quanta-form-select {
+    display: block;
+    width: 100%;
+    padding: var(--quanta-space-2) var(--quanta-space-3);
+    font-family: var(--quanta-font-secondary);
+    font-size: var(--quanta-text-base);
+    color: var(--quanta-text-default);
+    background: var(--quanta-bg-default);
+    border: var(--quanta-border-width) solid var(--quanta-border-color);
+    border-radius: var(--quanta-rounded-md);
+    transition: border-color var(--quanta-transition-fast), background-color var(--quanta-transition-fast);
+  }
+  .quanta-form-input:focus,
+  .quanta-form-textarea:focus,
+  .quanta-form-select:focus {
+    outline: none;
+    border-color: var(--quanta-primary);
+  }
+  .quanta-form-textarea {
+    resize: vertical;
+    min-height: 120px;
+  }
+  .quanta-form-select {
+    appearance: none;
+    background-image:
+      url("data:image/svg+xml,%3Csvg fill='%236B7280' viewBox='0 0 20 20'%3E%3Cpath d='M5 8l5 5 5-5H5z'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right var(--quanta-space-3) center;
+    background-size: var(--quanta-space-4) var(--quanta-space-4);
+    padding-right: var(--quanta-space-10);
+  }
+
+  /* ─── Search Variant ─────────────────────────────────────── */
+  .quanta-form-search {
+    position: relative;
+  }
+  .quanta-form-search .quanta-form-input {
+    padding-left: calc(var(--quanta-space-10) + var(--quanta-space-1));
+  }
+  .quanta-form-search::before {
+    content: "";
+    position: absolute;
+    top: 50%; left: var(--quanta-space-3);
+    transform: translateY(-50%);
+    width: var(--quanta-space-4);
+    height: var(--quanta-space-4);
+    background-image:
+      url("data:image/svg+xml,%3Csvg stroke='%236B7280' stroke-width='4' viewBox='0 0 24 24'%3E%3Cpath d='M21 21l-4.35-4.35M11 19a8 8 0 100-16 8 8 0 000 16z'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-size: contain;
+    pointer-events: none;
+  }
+
+  /* ─── Checkbox ───────────────────────────────────────────── */
+  .quanta-checkbox {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--quanta-space-2);
+    cursor: pointer;
+    user-select: none;
+    position: relative;
+  }
+  .quanta-checkbox-input {
+    position: absolute;
+    opacity: 0;
+    width: 0; height: 0;
+  }
+  .quanta-checkbox-box {
+    width: var(--quanta-space-4);
+    height: var(--quanta-space-4);
+    border: var(--quanta-border-width) solid var(--quanta-border-color);
+    border-radius: var(--quanta-rounded-md);
+    background: var(--quanta-bg-default);
+    position: relative;
+    overflow: hidden;
+    transition: background-color var(--quanta-transition-fast), border-color var(--quanta-transition-fast);
+  }
+  .quanta-checkbox-box::after {
+    content: "";
+    position: absolute;
+    top: 50%; left: 50%;
+    width: var(--quanta-space-3);
+    height: var(--quanta-space-3);
+    background-image:
+      url("data:image/svg+xml,%3Csvg viewBox='0 0 24 24' fill='none' stroke='%23fff' stroke-width='4' stroke-linecap='round' stroke-linejoin='round' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M5 13l4 4l10-10'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: var(--quanta-space-3) var(--quanta-space-3);
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: opacity var(--quanta-transition-fast);
+  }
+  .quanta-checkbox-input:checked + .quanta-checkbox-box {
+    background: var(--quanta-primary);
+    border-color: var(--quanta-primary);
+  }
+  .quanta-checkbox-input:checked + .quanta-checkbox-box::after {
+    opacity: 1;
+  }
+  .quanta-checkbox-label {
+    font-size: var(--quanta-text-base);
+    color: var(--quanta-text-default);
+    cursor: pointer;
+    margin: 0;
+  }
+
+  /* ─── Radio ─────────────────────────────────────────────── */
+  .quanta-radio {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--quanta-space-2);
+    cursor: pointer;
+    user-select: none;
+    position: relative;
+  }
+  .quanta-radio-input {
+    position: absolute;
+    opacity: 0;
+    width: 0; height: 0;
+  }
+  .quanta-radio-box {
+    width: var(--quanta-space-4);
+    height: var(--quanta-space-4);
+    border: var(--quanta-border-width) solid var(--quanta-border-color);
+    border-radius: 50%;
+    background: var(--quanta-bg-default);
+    position: relative;
+    overflow: hidden;
+    transition: background-color var(--quanta-transition-fast), border-color var(--quanta-transition-fast);
+  }
+  .quanta-radio-box::after {
+    content: "";
+    position: absolute;
+    top: 50%; left: 50%;
+    width: var(--quanta-space-2);
+    height: var(--quanta-space-2);
+    background: var(--quanta-bg-default);
+    border-radius: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: transform var(--quanta-transition-fast);
+  }
+  .quanta-radio-input:checked + .quanta-radio-box {
+    background: var(--quanta-primary);
+    border-color: var(--quanta-primary);
+  }
+  .quanta-radio-input:checked + .quanta-radio-box::after {
+    transform: translate(-50%, -50%) scale(1);
+  }
+  .quanta-radio-label {
+    font-size: var(--quanta-text-base);
+    color: var(--quanta-text-default);
+    cursor: pointer;
+    margin: 0;
+  }
+
+  /* ─── Switch ─────────────────────────────────────────────── */
+  .quanta-switch {
+    display: inline-block;
+    position: relative;
+    width: 42px;
+    height: 24px;
+  }
+  .quanta-switch-input {
+    position: absolute;
+    inset: 0;
+    margin: 0;
+    opacity: 0;
+    cursor: pointer;
+    z-index: 2;
+  }
+  .quanta-switch-slider {
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: var(--quanta-slate-100);
+    border-radius: var(--quanta-rounded-full);
+    transition: background-color var(--quanta-transition-fast);
+  }
+  .quanta-switch-slider::before {
+    content: "";
+    position: absolute;
+    width: 18px; height: 18px;
+    left: 3px; bottom: 3px;
+    background: var(--quanta-bg-default);
+    border-radius: 50%;
+    transition: transform var(--quanta-transition-fast);
+  }
+  .quanta-switch-input:checked + .quanta-switch-slider {
+    background: var(--quanta-primary);
+  }
+  .quanta-switch-input:checked + .quanta-switch-slider::before {
+    transform: translateX(18px);
+  }
+
+  /* ─── Dark Mode Overrides ───────────────────────────────── */
+  html[data-theme="dark"] .quanta-form-input,
+  html[data-theme="dark"] .quanta-form-textarea,
+  html[data-theme="dark"] .quanta-form-select,
+  html[data-theme="dark"] .quanta-form-search .quanta-form-input {
+    background: var(--quanta-bg-emphasis);
+    color: var(--quanta-text-default);
+    border-color: var(--quanta-border-color);
+  }
+  html[data-theme="dark"] .quanta-checkbox-box,
+  html[data-theme="dark"] .quanta-radio-box {
+    background: var(--quanta-bg-emphasis);
+    border-color: var(--quanta-border-color);
+  }
+  html[data-theme="dark"] .quanta-checkbox-input:checked + .quanta-checkbox-box,
+  html[data-theme="dark"] .quanta-radio-input:checked + .quanta-radio-box,
+  html[data-theme="dark"] .quanta-switch-input:checked + .quanta-switch-slider {
+    background: var(--quanta-primary);
+    border-color: var(--quanta-primary);
+  }
+  html[data-theme="dark"] .quanta-switch-slider {
+    background: var(--quanta-grey-600);
+  }
+  html[data-theme="dark"] .quanta-form-search::before {
+    filter: brightness(0.85);
+  }
+}

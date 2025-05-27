@@ -1,0 +1,138 @@
+/* src/components/sidebar.css */
+@layer components.sidebar {
+  .quanta-sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 260px;
+    background-color: var(--quanta-bg-default);
+    color: var(--quanta-text-default);
+    box-shadow: var(--quanta-shadow-lg);
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s ease;
+  }
+
+  .quanta-sidebar.collapsed {
+    width: 72px;
+  }
+
+  .quanta-sidebar-hidden {
+    transform: translateX(-100%);
+  }
+
+  .quanta-sidebar-header {
+    font-size: var(--quanta-text-lg);
+    font-weight: bold;
+    padding: var(--quanta-space-4);
+    border-bottom: var(--quanta-border-width) solid var(--quanta-border-color);
+  }
+
+  .quanta-sidebar-nav {
+    display: flex;
+    flex-direction: column;
+    padding: var(--quanta-space-4);
+    gap: var(--quanta-space-3);
+    flex-grow: 1;
+  }
+
+  .quanta-sidebar-link {
+    text-decoration: none;
+    color: var(--quanta-text-default);
+    font-size: var(--quanta-text-base);
+    padding: var(--quanta-space-2) var(--quanta-space-3);
+    border-radius: var(--quanta-rounded-sm);
+    transition: background-color 0.2s ease;
+  }
+
+  .quanta-sidebar-link:hover,
+  .quanta-sidebar-link.active {
+    background-color: var(--quanta-bg-muted);
+  }
+
+  .quanta-sidebar-footer {
+    padding: var(--quanta-space-4);
+    font-size: var(--quanta-text-sm);
+    color: var(--quanta-text-muted);
+    border-top: var(--quanta-border-width) solid var(--quanta-border-color);
+  }
+
+  .quanta-sidebar-toggle {
+    display: none;
+    position: fixed;
+    top: var(--quanta-space-3);
+    left: var(--quanta-space-3);
+    z-index: 1100;
+    background-color: var(--quanta-primary);
+    color: #fff;
+    border: none;
+    padding: var(--quanta-space-2) var(--quanta-space-3);
+    border-radius: var(--quanta-rounded-sm);
+    cursor: pointer;
+    box-shadow: var(--quanta-shadow-md);
+  }
+
+  /* ─── Responsive ─────────────────────────────────────────── */
+  @media (max-width: 640px) {
+    .quanta-sidebar {
+      width: 100%;
+      max-width: 260px;
+      transform: translateX(-100%);
+    }
+
+    .quanta-sidebar.show {
+      transform: translateX(0);
+    }
+
+    .quanta-sidebar-toggle {
+      display: block;
+    }
+  }
+
+  @media (min-width: 641px) and (max-width: 768px) {
+    .quanta-sidebar {
+      width: 220px;
+    }
+  }
+
+  @media (min-width: 769px) and (max-width: 1024px) {
+    .quanta-sidebar {
+      width: 240px;
+    }
+  }
+
+  @media (min-width: 1025px) and (max-width: 1280px) {
+    .quanta-sidebar {
+      width: 260px;
+    }
+  }
+
+  @media (min-width: 1281px) {
+    .quanta-sidebar {
+      width: 280px;
+    }
+  }
+
+  /* ─── Dark Mode ─────────────────────────────────────────── */
+  html[data-theme="dark"] {
+    .quanta-sidebar {
+      background-color: var(--quanta-bg-emphasis);
+      color: var(--quanta-text-light);
+    }
+
+    .quanta-sidebar-link {
+      color: var(--quanta-text-light);
+    }
+
+    .quanta-sidebar-link:hover,
+    .quanta-sidebar-link.active {
+      background-color: var(--quanta-grey-800);
+    }
+
+    .quanta-sidebar-footer {
+      color: var(--quanta-grey-500);
+    }
+  }
+}

@@ -1,0 +1,205 @@
+/* src/components/pagination.css */
+@layer components.pagination {
+  /* ─── Base Pagination Styling ──────────────────────────────────── */
+  .quanta-pagination {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    justify-content: center; /* Center pagination by default */
+    flex-wrap: wrap;
+  }
+
+  .quanta-pagination-item {
+    margin: var(--quanta-space-1);
+  }
+
+  .quanta-pagination-link {
+    display: inline-block;
+    padding: var(--quanta-space-2) var(--quanta-space-4);
+    background-color: var(--quanta-bg-default);
+    border: var(--quanta-border-width) solid var(--quanta-border-color);
+    border-radius: var(--quanta-rounded-md);
+    color: var(--quanta-text-default);
+    text-decoration: none;
+    font-size: var(--quanta-text-base);
+    transition: background-color var(--quanta-transition-fast), color var(--quanta-transition-fast);
+    cursor: pointer;
+  }
+
+  .quanta-pagination-link:hover,
+  .quanta-pagination-link:focus {
+    background-color: var(--quanta-bg-hover);
+    color: var(--quanta-text-light);
+  }
+
+  .quanta-pagination-link:active {
+    background-color: var(--quanta-bg-active);
+  }
+
+  /* ─── Pagination Disabled Styling ───────────────────────────────── */
+  .quanta-pagination-link.disabled,
+  .quanta-pagination-item.disabled .quanta-pagination-link {
+    background-color: var(--quanta-bg-disabled);
+    color: var(--quanta-text-disabled);
+    cursor: not-allowed;
+  }
+
+  /* ─── Pagination Active Link Styling ────────────────────────────── */
+  .quanta-pagination-link.active {
+    background-color: var(--quanta-bg-emphasis);
+    color: var(--quanta-text-light);
+    font-weight: var(--quanta-font-weight-bold);
+  }
+
+  /* ─── Pagination First, Last, Previous, Next Styling ───────────── */
+  .quanta-pagination-first,
+  .quanta-pagination-last,
+  .quanta-pagination-prev,
+  .quanta-pagination-next {
+    padding: var(--quanta-space-2) var(--quanta-space-4);
+    font-weight: var(--quanta-font-weight-medium);
+  }
+
+  /* ─── Pagination Icons ─────────────────────────────────────────── */
+  .quanta-pagination-first .quanta-pagination-link,
+  .quanta-pagination-prev .quanta-pagination-link,
+  .quanta-pagination-next .quanta-pagination-link,
+  .quanta-pagination-last .quanta-pagination-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  /* ─── Dark Mode Support ────────────────────────────────────────── */
+  html[data-theme="dark"] {
+    .quanta-pagination-link {
+      background-color: var(--quanta-bg-dark-default);
+      border-color: var(--quanta-border-dark-color);
+      color: var(--quanta-text-dark);
+    }
+
+    .quanta-pagination-link:hover,
+    .quanta-pagination-link:focus {
+      background-color: var(--quanta-bg-dark-hover);
+      color: var(--quanta-text-light);
+    }
+
+    .quanta-pagination-link:active {
+      background-color: var(--quanta-bg-dark-active);
+    }
+
+    .quanta-pagination-link.disabled {
+      background-color: var(--quanta-bg-dark-disabled);
+      color: var(--quanta-text-dark-disabled);
+    }
+
+    .quanta-pagination-link.active {
+      background-color: var(--quanta-bg-dark-emphasis);
+      color: var(--quanta-text-light);
+    }
+  }
+
+  /* ─── Responsive Design (5 Breakpoints) ────────────────────────── */
+  @media (max-width: 640px) {
+    .quanta-pagination {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .quanta-pagination-item {
+      margin: var(--quanta-space-1);
+    }
+  }
+
+  @media (min-width: 641px) and (max-width: 768px) {
+    .quanta-pagination {
+      flex-direction: row;
+    }
+  }
+
+  @media (min-width: 769px) and (max-width: 1024px) {
+    .quanta-pagination {
+      flex-direction: row;
+    }
+  }
+
+  @media (min-width: 1025px) and (max-width: 1280px) {
+    .quanta-pagination {
+      flex-direction: row;
+    }
+  }
+
+  @media (min-width: 1281px) {
+    .quanta-pagination {
+      flex-direction: row;
+    }
+  }
+
+  /* ─── Utility Classes for Pagination ──────────────────────────── */
+  /* Flexibility for pagination alignment and styling */
+  .quanta-pagination-center {
+    justify-content: center;
+  }
+
+  .quanta-pagination-start {
+    justify-content: flex-start;
+  }
+
+  .quanta-pagination-end {
+    justify-content: flex-end;
+  }
+
+  .quanta-pagination-space-between {
+    justify-content: space-between;
+  }
+
+  .quanta-pagination-space-around {
+    justify-content: space-around;
+  }
+
+  .quanta-pagination-space-evenly {
+    justify-content: space-evenly;
+  }
+
+  .quanta-pagination-no-wrap {
+    flex-wrap: nowrap;
+  }
+
+  .quanta-pagination-wrap {
+    flex-wrap: wrap;
+  }
+
+  /* Responsive Wrapping */
+  @media (max-width: 640px) {
+    .quanta-pagination-wrap {
+      flex-wrap: wrap;
+    }
+  }
+
+  /* Pagination Size Utility Classes */
+  .quanta-pagination-small .quanta-pagination-link {
+    padding: var(--quanta-space-1) var(--quanta-space-2);
+    font-size: var(--quanta-text-sm);
+  }
+
+  .quanta-pagination-large .quanta-pagination-link {
+    padding: var(--quanta-space-3) var(--quanta-space-6);
+    font-size: var(--quanta-text-lg);
+  }
+
+  /* ─── Icon Styles for Pagination (for First, Previous, Next, Last) ─── */
+  .quanta-pagination-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .quanta-pagination-prev-icon,
+  .quanta-pagination-next-icon,
+  .quanta-pagination-first-icon,
+  .quanta-pagination-last-icon {
+    font-size: var(--quanta-text-base);
+    margin: 0 var(--quanta-space-1);
+  }
+}

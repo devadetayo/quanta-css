@@ -1,0 +1,130 @@
+/* src/components/range-slider.css */
+@layer components.rangeslider {
+
+  /* ─── Base Range Slider Styles ──────────────────────────────────── */
+  .quanta-range-slider {
+    position: relative;
+    width: 100%;
+    height: 8px;
+    background-color: var(--quanta-bg-light);
+    border-radius: var(--quanta-rounded-sm);
+    overflow: hidden;
+    margin: 20px 0;
+  }
+
+  /* Slider Track */
+  .quanta-range-slider .quanta-track {
+    width: 100%;
+    height: 100%;
+    background-color: var(--quanta-bg-muted);
+    border-radius: var(--quanta-rounded-sm);
+  }
+
+  /* Range Slider Thumb */
+  .quanta-range-slider .quanta-thumb {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: var(--quanta-bg-primary);
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    z-index: 2;
+  }
+
+  /* Hover State for Thumb */
+  .quanta-range-slider .quanta-thumb:hover {
+    background-color: var(--quanta-bg-secondary);
+  }
+
+  /* Active State for Thumb */
+  .quanta-range-slider .quanta-thumb:active {
+    transform: scale(1.2);
+  }
+
+  /* Slider Value Display */
+  .quanta-range-slider .quanta-value {
+    position: absolute;
+    top: -30px;
+    font-size: var(--quanta-font-size-sm);
+    font-weight: bold;
+    color: var(--quanta-text-primary);
+    text-align: center;
+    width: 100%;
+  }
+
+  /* ─── Dark Mode Support ─────────────────────────────────────────── */
+  html[data-theme="dark"] {
+    .quanta-range-slider .quanta-track {
+      background-color: var(--quanta-bg-dark-muted);
+    }
+
+    .quanta-range-slider .quanta-thumb {
+      background-color: var(--quanta-bg-dark-primary);
+    }
+
+    .quanta-range-slider .quanta-thumb:hover {
+      background-color: var(--quanta-bg-dark-secondary);
+    }
+
+    .quanta-range-slider .quanta-value {
+      color: var(--quanta-text-light);
+    }
+  }
+
+  /* ─── Responsive Design (5 Breakpoints) ──────────────────────────── */
+  @media (max-width: 640px) {
+    .quanta-range-slider {
+      height: 6px;
+    }
+
+    .quanta-range-slider .quanta-thumb {
+      width: 16px;
+      height: 16px;
+    }
+  }
+
+  @media (min-width: 641px) and (max-width: 768px) {
+    .quanta-range-slider {
+      height: 7px;
+    }
+
+    .quanta-range-slider .quanta-thumb {
+      width: 18px;
+      height: 18px;
+    }
+  }
+
+  @media (min-width: 769px) and (max-width: 1024px) {
+    .quanta-range-slider {
+      height: 8px;
+    }
+
+    .quanta-range-slider .quanta-thumb {
+      width: 20px;
+      height: 20px;
+    }
+  }
+
+  @media (min-width: 1025px) and (max-width: 1280px) {
+    .quanta-range-slider {
+      height: 8px;
+    }
+
+    .quanta-range-slider .quanta-thumb {
+      width: 22px;
+      height: 22px;
+    }
+  }
+
+  @media (min-width: 1281px) {
+    .quanta-range-slider {
+      height: 8px;
+    }
+
+    .quanta-range-slider .quanta-thumb {
+      width: 24px;
+      height: 24px;
+    }
+  }
+}

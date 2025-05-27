@@ -1,0 +1,138 @@
+/* src/components/notifications.css */
+@layer components.notifications {
+  .quanta-toast-container {
+    position: fixed;
+    top: var(--quanta-space-4);
+    right: var(--quanta-space-4);
+    z-index: 9999;
+    display: flex;
+    flex-direction: column;
+    gap: var(--quanta-space-3);
+    max-width: 90vw;
+    width: 320px;
+    pointer-events: none;
+  }
+
+  .quanta-toast {
+    background-color: var(--quanta-bg-default);
+    color: var(--quanta-text-default);
+    border-left: 4px solid var(--quanta-primary);
+    border-radius: var(--quanta-rounded-md);
+    padding: var(--quanta-space-3) var(--quanta-space-4);
+    box-shadow: var(--quanta-shadow-md);
+    font-size: var(--quanta-text-sm);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--quanta-space-2);
+    animation: quanta-fade-in 0.4s ease forwards;
+    pointer-events: auto;
+  }
+
+  .quanta-toast.quanta-success {
+    border-color: var(--quanta-success);
+  }
+
+  .quanta-toast.quanta-error {
+    border-color: var(--quanta-danger);
+  }
+
+  .quanta-toast.quanta-warning {
+    border-color: var(--quanta-warning);
+  }
+
+  .quanta-toast.quanta-info {
+    border-color: var(--quanta-info);
+  }
+
+  .quanta-toast .quanta-toast-close {
+    background: none;
+    border: none;
+    font-size: 1rem;
+    cursor: pointer;
+    color: var(--quanta-text-muted);
+    transition: color 0.3s;
+  }
+
+  .quanta-toast .quanta-toast-close:hover {
+    color: var(--quanta-text-default);
+  }
+
+  /* Animations */
+  @keyframes quanta-fade-in {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes quanta-fade-out {
+    from {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    to {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+  }
+
+  /* Dark Mode Support */
+  html[data-theme='dark'] {
+    .quanta-toast {
+      background-color: var(--quanta-bg-emphasis);
+      color: var(--quanta-text-light);
+    }
+
+    .quanta-toast .quanta-toast-close {
+      color: var(--quanta-grey-400);
+    }
+
+    .quanta-toast .quanta-toast-close:hover {
+      color: var(--quanta-grey-200);
+    }
+  }
+
+  /* ─── Responsive Media Queries ─────────────────────────────────── */
+  @media (max-width: 640px) {
+    .quanta-toast-container {
+      left: var(--quanta-space-2);
+      right: var(--quanta-space-2);
+      width: auto;
+      top: var(--quanta-space-3);
+    }
+
+    .quanta-toast {
+      font-size: var(--quanta-text-xs);
+      padding: var(--quanta-space-2) var(--quanta-space-3);
+    }
+  }
+
+  @media (min-width: 641px) and (max-width: 768px) {
+    .quanta-toast-container {
+      width: 280px;
+    }
+  }
+
+  @media (min-width: 769px) and (max-width: 1024px) {
+    .quanta-toast-container {
+      width: 300px;
+    }
+  }
+
+  @media (min-width: 1025px) and (max-width: 1280px) {
+    .quanta-toast-container {
+      width: 320px;
+    }
+  }
+
+  @media (min-width: 1281px) {
+    .quanta-toast-container {
+      width: 360px;
+    }
+  }
+}

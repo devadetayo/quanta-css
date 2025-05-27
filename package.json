@@ -1,0 +1,43 @@
+{
+  "name": "quanta-css",
+  "version": "1.0.0",
+  "description": "Quanta CSS — a component + utility-first CSS framework with built-in dark mode and theming.",
+  "main": "dist/quanta.css",
+  "style": "dist/quanta.min.css",
+  "files": [
+    "dist/",
+    "src/",
+    "tools/",
+    "build.js",
+    "postcss.config.js"
+  ],
+  "scripts": {
+    "build": "node build.js",
+    "watch": "chokidar \"src/**/*.css\" -c \"npm run build\"",
+    "zip:utils": "npm run build && zip -j dist/quanta-utils.zip dist/utilities.css dist/utilities.min.css",
+    "zip:comps": "npm run build && zip -j dist/quanta-components.zip dist/components.css dist/components.min.css",
+    "zip": "npm run zip:utils && npm run zip:comps && zip -j dist/quanta.zip dist/quanta.css dist/quanta.min.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/devadetayo/quanta-css.git"
+  },
+  "keywords": [
+    "css",
+    "framework",
+    "utility-first",
+    "components",
+    "dark-mode",
+    "theming"
+  ],
+  "author": "Adeniyi Adetayo",
+  "license": "MIT",
+  "devDependencies": {
+    "autoprefixer": "^10.4.13",
+    "chokidar-cli": "^3.0.0",
+    "cssnano": "^6.0.1",
+    "postcss": "^8.4.21",
+    "postcss-cli": "^10.1.0",
+    "postcss-import": "^15.1.0"
+  }
+}

@@ -1,0 +1,31 @@
+/* src/components/search-filter.css */
+@layer components.searchfilter {
+  .quanta-searchbar {
+    display: flex;
+    gap: var(--quanta-space-2);
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  .quanta-searchbar input,
+  .quanta-searchbar select {
+    padding: var(--quanta-space-2) var(--quanta-space-3);
+    border: var(--quanta-border-width) solid var(--quanta-border-color);
+    border-radius: var(--quanta-rounded-md);
+    flex: 1 1 200px;
+  }
+  .quanta-searchbar button {
+    padding: var(--quanta-space-2) var(--quanta-space-4);
+    background: var(--quanta-primary);
+    color: #fff;
+    border: none;
+    border-radius: var(--quanta-rounded-md);
+    cursor: pointer;
+  }
+  html[data-theme="dark"] .quanta-searchbar input,
+  html[data-theme="dark"] .quanta-searchbar select {
+    background: var(--quanta-bg-emphasis);
+    color: var(--quanta-text-light);
+  }
+
+  @media (max-width:640px) { .quanta-searchbar { flex-direction: column; } }
+}

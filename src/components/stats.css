@@ -1,0 +1,27 @@
+/* src/components/stats.css */
+@layer components.stats {
+  .quanta-stats {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--quanta-space-6);
+    justify-content: center;
+  }
+  .quanta-stat {
+    background: var(--quanta-bg-default);
+    border-radius: var(--quanta-rounded-md);
+    padding: var(--quanta-space-6);
+    text-align: center;
+    flex: 1 1 200px;
+    box-shadow: var(--quanta-shadow-sm);
+  }
+  .quanta-stat-value { font-size: var(--quanta-text-3xl); font-weight: bold; }
+  .quanta-stat-label { font-size: var(--quanta-text-sm); color: var(--quanta-text-muted); }
+
+  html[data-theme="dark"] .quanta-stat { background: var(--quanta-bg-emphasis); }
+
+  @media (max-width:640px) { .quanta-stat { padding: var(--quanta-space-4); } }
+  @media (min-width:641px) and (max-width:768px) { /* no change */ }
+  @media (min-width:769px) and (max-width:1024px) { /* no change */ }
+  @media (min-width:1025px) and (max-width:1280px) { /* no change */ }
+  @media (min-width:1281px) { /* no change */ }
+}

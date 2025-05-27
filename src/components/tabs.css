@@ -1,0 +1,131 @@
+/* src/components/tabs.css */
+@layer components.quanta-tabs {
+  /* ─── Tabs Container ───────────────────────────────────────── */
+  .quanta-tabs {
+    display: flex;
+    flex-direction: column; /* Mobile-first: stack vertically */
+    border-bottom: var(--quanta-border-width) solid var(--quanta-border-color);
+    gap: var(--quanta-space-4);
+    width: 100%;
+  }
+
+  /* ─── Individual Tab ───────────────────────────────────────── */
+  .quanta-tabs .quanta-tab {
+    padding: var(--quanta-space-2) var(--quanta-space-4);
+    margin-bottom: -var(--quanta-border-width);
+    font-family: var(--quanta-font-primary);
+    font-size: var(--quanta-body-size);
+    color: var(--quanta-text-muted);
+    cursor: pointer;
+    transition: color var(--quanta-transition-fast), border-color var(--quanta-transition-fast);
+    border-bottom: var(--quanta-border-width) solid transparent;
+    width: 100%; /* Ensure tabs are full-width on mobile */
+    text-align: center; /* Center the tab labels on mobile */
+  }
+
+  .quanta-tabs .quanta-tab:hover {
+    color: var(--quanta-text-default);
+  }
+
+  /* ─── Active State ─────────────────────────────────────────── */
+  .quanta-tabs .quanta-tab.active {
+    color: var(--quanta-text-default);
+    border-color: var(--quanta-primary);
+    font-weight: 600;
+  }
+
+  /* ─── Tab Content Panels ───────────────────────────────────── */
+  .quanta-tab-content {
+    padding: var(--quanta-space-4) 0;
+    width: 100%;
+  }
+  
+  .quanta-tab-panel {
+    display: none;
+  }
+  
+  .quanta-tab-panel.active {
+    display: block;
+  }
+
+  /* ─── Mobile-First Styles ──────────────────────────────────── */
+  /* Base styles are for mobile devices */
+  .quanta-tabs {
+    flex-direction: column; /* Stack tabs vertically on mobile */
+  }
+
+  .quanta-tabs .quanta-tab {
+    font-size: var(--quanta-body-size); /* Default font size for mobile */
+    padding: var(--quanta-space-2) var(--quanta-space-4); /* Padding for mobile */
+  }
+
+  .quanta-tab-content {
+    padding: var(--quanta-space-4) 0; /* Padding for mobile */
+  }
+
+  /* ─── Responsive Adjustments ─────────────────────────────────── */
+  /* Tablet and larger screens (min-width: 768px) */
+  @media (min-width: 768px) {
+    .quanta-tabs {
+      flex-direction: row; /* Display tabs horizontally on tablets and larger screens */
+      gap: var(--quanta-space-6); /* Increase gap between tabs */
+    }
+
+    .quanta-tabs .quanta-tab {
+      font-size: var(--quanta-body-size-md); /* Slightly larger font on tablets */
+      padding: var(--quanta-space-3) var(--quanta-space-5); /* Adjust padding */
+    }
+
+    .quanta-tab-content {
+      padding: var(--quanta-space-5) 0; /* Add more padding on tablets */
+    }
+  }
+
+  /* Larger screens (min-width: 1024px) */
+  @media (min-width: 1024px) {
+    .quanta-tabs {
+      gap: var(--quanta-space-8); /* More gap between tabs on larger screens */
+    }
+
+    .quanta-tabs .quanta-tab {
+      font-size: var(--quanta-body-size-lg); /* Increase font size on desktop */
+      padding: var(--quanta-space-4) var(--quanta-space-6); /* Increase padding on large screens */
+    }
+
+    .quanta-tab-content {
+      padding: var(--quanta-space-6) 0; /* More padding for content on desktop */
+    }
+  }
+
+  /* ─── Dark Mode Tweaks ─────────────────────────────────────── */
+  html[data-theme="dark"] .quanta-tabs {
+    border-color: var(--quanta-border-color);
+  }
+
+  html[data-theme="dark"] .quanta-tabs .quanta-tab.active {
+    border-color: var(--quanta-primary);
+    color: var(--quanta-text-default);
+  }
+
+  /* ─── Accessibility & Usability Enhancements ───────────────── */
+  .quanta-tabs .quanta-tab:focus {
+    outline: 2px solid var(--quanta-primary); /* Focus state for accessibility */
+  }
+
+  .quanta-tabs .quanta-tab[aria-selected="true"] {
+    color: var(--quanta-text-default);
+    border-color: var(--quanta-primary);
+    font-weight: 600;
+  }
+
+  /* ─── Utility Support ──────────────────────────────────────── */
+  /* Allow utility-based control for padding and margins */
+  .quanta-tabs .quanta-tab {
+    @apply p-4; /* Utility class for padding */
+    @apply mb-2; /* Margin-bottom utility */
+  }
+
+  .quanta-tab-content {
+    @apply p-4; /* Utility class for padding */
+  }
+}

@@ -1,0 +1,170 @@
+/* src/components/spinners.css */
+@layer components.spinners {
+
+  /* ─── Base Spinner Styles ──────────────────────────────────────── */
+  .quanta-spinner {
+    display: inline-block;
+    border: 3px solid var(--quanta-border-muted);
+    border-top: 3px solid var(--quanta-bg-primary);
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+  }
+
+  /* Spinner sizes */
+  .quanta-spinner.sm {
+    width: 30px;
+    height: 30px;
+  }
+
+  .quanta-spinner.md {
+    width: 50px;
+    height: 50px;
+  }
+
+  .quanta-spinner.lg {
+    width: 70px;
+    height: 70px;
+  }
+
+  /* Loading Bar Spinner */
+  .quanta-spinner-bar {
+    width: 100%;
+    height: 8px;
+    background-color: var(--quanta-bg-muted);
+    border-radius: var(--quanta-rounded-sm);
+    position: relative;
+    overflow: hidden;
+  }
+
+  .quanta-spinner-bar .quanta-bar {
+    position: absolute;
+    width: 0%;
+    height: 100%;
+    background-color: var(--quanta-bg-primary);
+    animation: loading 2s infinite;
+  }
+
+  /* ─── Spinner Animations ───────────────────────────────────────── */
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+  @keyframes loading {
+    0% {
+      width: 0%;
+    }
+    50% {
+      width: 50%;
+    }
+    100% {
+      width: 100%;
+    }
+  }
+
+  /* ─── Dark Mode Support ───────────────────────────────────────── */
+  html[data-theme="dark"] {
+    .quanta-spinner {
+      border-color: var(--quanta-border-dark);
+      border-top-color: var(--quanta-bg-dark-primary);
+    }
+
+    .quanta-spinner-bar {
+      background-color: var(--quanta-bg-dark-muted);
+    }
+
+    .quanta-spinner-bar .quanta-bar {
+      background-color: var(--quanta-bg-dark-primary);
+    }
+  }
+
+  /* ─── Responsive Design (5 Breakpoints) ──────────────────────────── */
+  @media (max-width: 640px) {
+    .quanta-spinner.sm {
+      width: 20px;
+      height: 20px;
+    }
+
+    .quanta-spinner.md {
+      width: 35px;
+      height: 35px;
+    }
+
+    .quanta-spinner.lg {
+      width: 50px;
+      height: 50px;
+    }
+  }
+
+  @media (min-width: 641px) and (max-width: 768px) {
+    .quanta-spinner.sm {
+      width: 25px;
+      height: 25px;
+    }
+
+    .quanta-spinner.md {
+      width: 45px;
+      height: 45px;
+    }
+
+    .quanta-spinner.lg {
+      width: 60px;
+      height: 60px;
+    }
+  }
+
+  @media (min-width: 769px) and (max-width: 1024px) {
+    .quanta-spinner.sm {
+      width: 30px;
+      height: 30px;
+    }
+
+    .quanta-spinner.md {
+      width: 50px;
+      height: 50px;
+    }
+
+    .quanta-spinner.lg {
+      width: 70px;
+      height: 70px;
+    }
+  }
+
+  @media (min-width: 1025px) and (max-width: 1280px) {
+    .quanta-spinner.sm {
+      width: 35px;
+      height: 35px;
+    }
+
+    .quanta-spinner.md {
+      width: 55px;
+      height: 55px;
+    }
+
+    .quanta-spinner.lg {
+      width: 80px;
+      height: 80px;
+    }
+  }
+
+  @media (min-width: 1281px) {
+    .quanta-spinner.sm {
+      width: 40px;
+      height: 40px;
+    }
+
+    .quanta-spinner.md {
+      width: 60px;
+      height: 60px;
+    }
+
+    .quanta-spinner.lg {
+      width: 90px;
+      height: 90px;
+    }
+  }
+}

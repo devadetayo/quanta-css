@@ -1,0 +1,47 @@
+/* src/components/stepper.css */
+@layer components.stepper {
+  .quanta-stepper {
+    display: flex;
+    justify-content: space-between;
+    counter-reset: step;
+  }
+  .quanta-step {
+    position: relative;
+    flex: 1;
+    text-align: center;
+  }
+  .quanta-step::before {
+    counter-increment: step;
+    content: counter(step);
+    display: inline-block;
+    width: var(--quanta-space-6);
+    height: var(--quanta-space-6);
+    line-height: var(--quanta-space-6);
+    background: var(--quanta-bg-muted);
+    border-radius: 50%;
+    margin-bottom: var(--quanta-space-2);
+  }
+  .quanta-step::after {
+    content: '';
+    position: absolute;
+    top: var(--quanta-space-3);
+    left: 50%;
+    width: 100%;
+    height: var(--quanta-border-width);
+    background: var(--quanta-border-color);
+    z-index: -1;
+  }
+  .quanta-step:first-child::after { left: 50%; width: 50%; }
+  .quanta-step:last-child::after { width: 50%; }
+  .quanta-step.active::before { background: var(--quanta-primary); color: #fff; }
+  .quanta-step.completed::before { background: var(--quanta-success); color: #fff; }
+
+  html[data-theme="dark"] .quanta-step::before { background: var(--quanta-bg-emphasis); }
+  html[data-theme="dark"] .quanta-step.active::before { background: var(--quanta-primary); }
+
+  @media (max-width:640px) { .quanta-stepper { flex-direction: column; } }
+  @media (min-width:641px) and (max-width:768px) { /* no change */ }
+  @media (min-width:769px) and (max-width:1024px) { /* no change */ }
+  @media (min-width:1025px) and (max-width:1280px) { /* no change */ }
+  @media (min-width:1281px) { /* no change */ }
+}

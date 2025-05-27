@@ -1,0 +1,213 @@
+/* src/components/popovers.css */
+@layer components.popovers {
+  /* ─── Base Popover Styles ───────────────────────────────────────── */
+  .quanta-popover {
+    position: absolute;
+    z-index: var(--quanta-z-index-10);
+    max-width: 320px;
+    width: auto;
+    background-color: var(--quanta-bg-default);
+    border: var(--quanta-border-width) solid var(--quanta-border-color);
+    border-radius: var(--quanta-rounded-md);
+    padding: var(--quanta-space-4);
+    box-shadow: var(--quanta-shadow-lg);
+    font-size: var(--quanta-text-sm);
+    color: var(--quanta-text-default);
+    display: none; /* Hidden by default */
+    opacity: 0;
+    pointer-events: none; /* Prevent interaction when hidden */
+    transition: opacity 0.3s ease, transform 0.3s ease;
+  }
+
+  /* Popover Content */
+  .quanta-popover-content {
+    font-size: var(--quanta-text-base);
+    color: var(--quanta-text-default);
+  }
+
+  .quanta-popover-header {
+    font-size: var(--quanta-text-lg);
+    font-weight: bold;
+    margin-bottom: var(--quanta-space-2);
+    color: var(--quanta-text-accent);
+  }
+
+  .quanta-popover-body {
+    margin-bottom: var(--quanta-space-3);
+    line-height: 1.5;
+  }
+
+  .quanta-popover-footer {
+    font-size: var(--quanta-text-xs);
+    text-align: right;
+    color: var(--quanta-text-muted);
+  }
+
+  /* Arrow styles for popover */
+  .quanta-popover-arrow {
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-left: var(--quanta-border-width) solid transparent;
+    border-right: var(--quanta-border-width) solid transparent;
+    border-top: var(--quanta-border-width) solid var(--quanta-bg-default);
+  }
+
+  /* Popover Placement - Top */
+  .quanta-popover-top {
+    transform: translateY(-10px);
+    bottom: 100%;
+    left: 50%;
+    margin-left: -10px;
+  }
+
+  .quanta-popover-top .quanta-popover-arrow {
+    top: 100%;
+    left: 50%;
+    margin-left: -10px;
+    border-top: none;
+    border-bottom: var(--quanta-border-width) solid var(--quanta-bg-default);
+  }
+
+  /* Popover Placement - Bottom */
+  .quanta-popover-bottom {
+    transform: translateY(10px);
+    top: 100%;
+    left: 50%;
+    margin-left: -10px;
+  }
+
+  .quanta-popover-bottom .quanta-popover-arrow {
+    bottom: 100%;
+    left: 50%;
+    margin-left: -10px;
+    border-bottom: none;
+    border-top: var(--quanta-border-width) solid var(--quanta-bg-default);
+  }
+
+  /* Popover Placement - Left */
+  .quanta-popover-left {
+    transform: translateX(-10px);
+    top: 50%;
+    right: 100%;
+    margin-top: -10px;
+  }
+
+  .quanta-popover-left .quanta-popover-arrow {
+    right: 100%;
+    top: 50%;
+    margin-top: -10px;
+    border-left: none;
+    border-right: var(--quanta-border-width) solid var(--quanta-bg-default);
+  }
+
+  /* Popover Placement - Right */
+  .quanta-popover-right {
+    transform: translateX(10px);
+    top: 50%;
+    left: 100%;
+    margin-top: -10px;
+  }
+
+  .quanta-popover-right .quanta-popover-arrow {
+    left: 100%;
+    top: 50%;
+    margin-top: -10px;
+    border-right: none;
+    border-left: var(--quanta-border-width) solid var(--quanta-bg-default);
+  }
+
+  /* ─── Dark Mode Support ───────────────────────────────────────── */
+  html[data-theme="dark"] {
+    .quanta-popover {
+      background-color: var(--quanta-bg-dark-default);
+      border-color: var(--quanta-border-dark-color);
+      color: var(--quanta-text-dark);
+    }
+
+    .quanta-popover-arrow {
+      border-top-color: var(--quanta-bg-dark-default);
+      border-bottom-color: var(--quanta-bg-dark-default);
+      border-left-color: var(--quanta-bg-dark-default);
+      border-right-color: var(--quanta-bg-dark-default);
+    }
+  }
+
+  /* ─── Responsive Design (5 Breakpoints) ─────────────────────────── */
+  @media (max-width: 640px) {
+    .quanta-popover {
+      max-width: 100%;
+      padding: var(--quanta-space-2);
+    }
+  }
+
+  @media (min-width: 641px) and (max-width: 768px) {
+    .quanta-popover {
+      max-width: 320px;
+      padding: var(--quanta-space-3);
+    }
+  }
+
+  @media (min-width: 769px) and (max-width: 1024px) {
+    .quanta-popover {
+      max-width: 350px;
+      padding: var(--quanta-space-4);
+    }
+  }
+
+  @media (min-width: 1025px) and (max-width: 1280px) {
+    .quanta-popover {
+      max-width: 400px;
+      padding: var(--quanta-space-5);
+    }
+  }
+
+  @media (min-width: 1281px) {
+    .quanta-popover {
+      max-width: 450px;
+      padding: var(--quanta-space-6);
+    }
+  }
+
+  /* ─── Utility Classes for Popovers ───────────────────────────────── */
+  .quanta-popover-animated {
+    animation: fadeIn 0.3s ease-out;
+  }
+
+  /* Custom positioning utility classes */
+  .quanta-popover-top-left {
+    top: 0;
+    left: 0;
+    transform: translate(-10px, -10px);
+  }
+
+  .quanta-popover-top-right {
+    top: 0;
+    right: 0;
+    transform: translate(10px, -10px);
+  }
+
+  .quanta-popover-bottom-left {
+    bottom: 0;
+    left: 0;
+    transform: translate(-10px, 10px);
+  }
+
+  .quanta-popover-bottom-right {
+    bottom: 0;
+    right: 0;
+    transform: translate(10px, 10px);
+  }
+
+  /* ─── Animation Keyframes ───────────────────────────────────────── */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+}

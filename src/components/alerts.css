@@ -1,0 +1,124 @@
+/* src/components/alerts.css */
+@layer components.quanta-alerts {
+  .quanta-alert {
+    display: flex;
+    align-items: center;
+    gap: var(--quanta-space-3);
+    padding: var(--quanta-space-3) var(--quanta-space-4);
+    border-radius: var(--quanta-rounded-md);
+    font-size: var(--quanta-text-sm);
+    font-family: var(--quanta-font-secondary);
+    font-weight: 500;
+    line-height: var(--quanta-leading-normal);
+    border: var(--quanta-border-width) solid transparent;
+    width: 100%; /* Ensure full width on small screens */
+  }
+
+  .quanta-alert svg {
+    flex-shrink: 0;
+    width: 1.25rem;
+    height: 1.25rem;
+  }
+
+  .quanta-alert-info {
+    background-color: var(--quanta-blue-50);
+    color: var(--quanta-blue-800);
+    border-color: var(--quanta-blue-300);
+  }
+
+  .quanta-alert-success {
+    background-color: var(--quanta-green-50);
+    color: var(--quanta-green-800);
+    border-color: var(--quanta-green-300);
+  }
+
+  .quanta-alert-warning {
+    background-color: var(--quanta-yellow-50);
+    color: var(--quanta-yellow-800);
+    border-color: var(--quanta-yellow-300);
+  }
+
+  .quanta-alert-error {
+    background-color: var(--quanta-red-50);
+    color: var(--quanta-red-800);
+    border-color: var(--quanta-red-300);
+  }
+
+  /* Dark Mode Variants */
+  html[data-theme="dark"] .quanta-alert-info {
+    background-color: var(--quanta-blue-900);
+    color: var(--quanta-blue-100);
+    border-color: var(--quanta-blue-700);
+  }
+
+  html[data-theme="dark"] .quanta-alert-success {
+    background-color: var(--quanta-green-900);
+    color: var(--quanta-green-100);
+    border-color: var(--quanta-green-700);
+  }
+
+  html[data-theme="dark"] .quanta-alert-warning {
+    background-color: var(--quanta-yellow-900);
+    color: var(--quanta-yellow-100);
+    border-color: var(--quanta-yellow-700);
+  }
+
+  html[data-theme="dark"] .quanta-alert-error {
+    background-color: var(--quanta-red-900);
+    color: var(--quanta-red-100);
+    border-color: var(--quanta-red-700);
+  }
+
+  /* ─── Mobile-First Styles ──────────────────────────────────── */
+  /* Base styles for mobile devices */
+  .quanta-alert {
+    font-size: var(--quanta-text-sm); /* Default smaller font-size on mobile */
+    padding: var(--quanta-space-3) var(--quanta-space-4); /* Adjust padding for mobile */
+    width: 100%; /* Ensure alerts span full width on small screens */
+  }
+
+  /* ─── Responsive Adjustments ─────────────────────────────────── */
+  /* 1. Small Tablets (min-width: 600px) */
+  @media (min-width: 600px) {
+    .quanta-alert {
+      padding: var(--quanta-space-4) var(--quanta-space-5); /* More padding on small tablets */
+      font-size: var(--quanta-text-base); /* Larger font size for small tablets */
+    }
+  }
+
+  /* 2. Tablets (min-width: 768px) */
+  @media (min-width: 768px) {
+    .quanta-alert {
+      width: 90%; /* Slightly narrower on larger tablets */
+      padding: var(--quanta-space-4) var(--quanta-space-6); /* Even more padding on tablets */
+      font-size: var(--quanta-text-lg); /* Larger font size */
+    }
+  }
+
+  /* 3. Laptops (min-width: 1024px) */
+  @media (min-width: 1024px) {
+    .quanta-alert {
+      width: 80%; /* More space on larger screens */
+      padding: var(--quanta-space-5) var(--quanta-space-7); /* Adjust padding */
+      font-size: var(--quanta-text-xl); /* Larger font size */
+    }
+  }
+
+  /* 4. Large Desktops (min-width: 1280px) */
+  @media (min-width: 1280px) {
+    .quanta-alert {
+      width: 70%; /* Even more space on large desktops */
+      padding: var(--quanta-space-6) var(--quanta-space-8); /* Adjust padding for larger screens */
+      font-size: var(--quanta-text-2xl); /* Extra large font size */
+    }
+  }
+
+  /* 5. Huge Displays (min-width: 1600px) */
+  @media (min-width: 1600px) {
+    .quanta-alert {
+      width: 60%; /* Ultra-wide screens get even more space */
+      padding: var(--quanta-space-7) var(--quanta-space-9); /* Ultra-wide screen padding */
+      font-size: var(--quanta-text-3xl); /* Extra large text for huge displays */
+    }
+  }
+}

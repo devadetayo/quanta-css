@@ -1,0 +1,145 @@
+/* src/components/progress-bars.css */
+@layer components.progress-bars {
+  /* ─── Base Progress Bar Styles ─────────────────────────────────── */
+  .quanta-progress-bar {
+    position: relative;
+    height: 20px;
+    width: 100%;
+    background-color: var(--quanta-bg-muted);
+    border-radius: var(--quanta-rounded-sm);
+    overflow: hidden;
+    box-shadow: var(--quanta-shadow-sm);
+  }
+
+  .quanta-progress-bar-inner {
+    height: 100%;
+    width: 0; /* Default to 0% progress */
+    background-color: var(--quanta-bg-primary);
+    border-radius: var(--quanta-rounded-sm);
+    transition: width 0.3s ease-in-out;
+  }
+
+  .quanta-progress-bar-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: var(--quanta-text-xs);
+    font-weight: bold;
+    color: var(--quanta-text-white);
+  }
+
+  /* ─── Success Progress Bar ─────────────────────────────────────── */
+  .quanta-progress-bar-success .quanta-progress-bar-inner {
+    background-color: var(--quanta-bg-success);
+  }
+
+  /* ─── Info Progress Bar ────────────────────────────────────────── */
+  .quanta-progress-bar-info .quanta-progress-bar-inner {
+    background-color: var(--quanta-bg-info);
+  }
+
+  /* ─── Warning Progress Bar ─────────────────────────────────────── */
+  .quanta-progress-bar-warning .quanta-progress-bar-inner {
+    background-color: var(--quanta-bg-warning);
+  }
+
+  /* ─── Danger Progress Bar ──────────────────────────────────────── */
+  .quanta-progress-bar-danger .quanta-progress-bar-inner {
+    background-color: var(--quanta-bg-danger);
+  }
+
+  /* ─── Animated Progress Bar ────────────────────────────────────── */
+  .quanta-progress-bar-animated .quanta-progress-bar-inner {
+    animation: progress-bar-animate 1.5s linear infinite;
+  }
+
+  @keyframes progress-bar-animate {
+    0% {
+      width: 0%;
+    }
+    50% {
+      width: 50%;
+    }
+    100% {
+      width: 100%;
+    }
+  }
+
+  /* ─── Dark Mode Support ─────────────────────────────────────────── */
+  html[data-theme="dark"] {
+    .quanta-progress-bar {
+      background-color: var(--quanta-bg-dark-muted);
+    }
+
+    .quanta-progress-bar-inner {
+      background-color: var(--quanta-bg-dark-primary);
+    }
+
+    .quanta-progress-bar-success .quanta-progress-bar-inner {
+      background-color: var(--quanta-bg-dark-success);
+    }
+
+    .quanta-progress-bar-info .quanta-progress-bar-inner {
+      background-color: var(--quanta-bg-dark-info);
+    }
+
+    .quanta-progress-bar-warning .quanta-progress-bar-inner {
+      background-color: var(--quanta-bg-dark-warning);
+    }
+
+    .quanta-progress-bar-danger .quanta-progress-bar-inner {
+      background-color: var(--quanta-bg-dark-danger);
+    }
+  }
+
+  /* ─── Responsive Design (5 Breakpoints) ─────────────────────────── */
+  @media (max-width: 640px) {
+    .quanta-progress-bar {
+      height: 15px;
+    }
+  }
+
+  @media (min-width: 641px) and (max-width: 768px) {
+    .quanta-progress-bar {
+      height: 18px;
+    }
+  }
+
+  @media (min-width: 769px) and (max-width: 1024px) {
+    .quanta-progress-bar {
+      height: 20px;
+    }
+  }
+
+  @media (min-width: 1025px) and (max-width: 1280px) {
+    .quanta-progress-bar {
+      height: 22px;
+    }
+  }
+
+  @media (min-width: 1281px) {
+    .quanta-progress-bar {
+      height: 25px;
+    }
+  }
+
+  /* ─── Utility Classes ───────────────────────────────────────────── */
+  .quanta-progress-bar-striped .quanta-progress-bar-inner {
+    background-size: 40px 40px;
+    background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+  }
+
+  /* Customizable width for progress */
+  .quanta-progress-bar-half .quanta-progress-bar-inner {
+    width: 50%;
+  }
+
+  .quanta-progress-bar-three-quarters .quanta-progress-bar-inner {
+    width: 75%;
+  }
+
+  .quanta-progress-bar-full .quanta-progress-bar-inner {
+    width: 100%;
+  }
+}
