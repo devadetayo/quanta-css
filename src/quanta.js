@@ -145,59 +145,61 @@
   document.addEventListener('DOMContentLoaded', initQuantaCarousels);
 
   function initQuantaCarousels() {
-    document.querySelectorAll('.quanta-carousel').forEach(carousel => {
+      document.querySelectorAll('.quanta-carousel').forEach(carousel => {
       setupCarousel(carousel);
-    });
+      });
   }
 
   function setupCarousel(carousel) {
-    const items = Array.from(carousel.querySelectorAll('.quanta-carousel-item'));
-    if (!items.length) return;
+      if (!carousel) return;
 
-    let current = items.findIndex(item => item.classList.contains('active'));
-    if (current < 0) current = 0;
+      const items = Array.from(carousel.querySelectorAll('.quanta-carousel-item'));
+      if (!items.length) return;
 
-    // show initial
-    update();
+      let current = items.findIndex(item => item.classList.contains('active'));
+      if (current < 0) current = 0;
 
-    // controls
-    const prevBtn = carousel.querySelector('.quanta-carousel-prev');
-    const nextBtn = carousel.querySelector('.quanta-carousel-next');
-    if (prevBtn) prevBtn.addEventListener('click', () => { go(-1); });
-    if (nextBtn) nextBtn.addEventListener('click', () => { go(1); });
-
-    // indicators
-    const indicatorsContainer = carousel.querySelector('.quanta-carousel-indicators');
-    let indicators = [];
-    if (indicatorsContainer) {
+      // Set up indicators array before calling update()
+      const indicatorsContainer = carousel.querySelector('.quanta-carousel-indicators');
+      let indicators = [];
+      if (indicatorsContainer) {
       indicators = Array.from(indicatorsContainer.children)
-        .filter(el => el.classList.contains('quanta-carousel-indicator'));
+          .filter(el => el.classList.contains('quanta-carousel-indicator'));
       indicators.forEach((dot, i) => {
-        dot.addEventListener('click', () => {
+          dot.addEventListener('click', () => {
           current = i;
           update();
-        });
+          });
       });
-    }
+      }
 
-    function go(direction) {
+      // Show the initial slide/indicator
+      update();
+
+      // Controls
+      const prevBtn = carousel.querySelector('.quanta-carousel-prev');
+      const nextBtn = carousel.querySelector('.quanta-carousel-next');
+      if (prevBtn) prevBtn.addEventListener('click', () => { go(-1); });
+      if (nextBtn) nextBtn.addEventListener('click', () => { go(1); });
+
+      function go(direction) {
       current = (current + direction + items.length) % items.length;
       update();
-    }
+      }
 
-    function update() {
+      function update() {
       items.forEach((item, i) => {
-        item.classList.toggle('active', i === current);
+          item.classList.toggle('active', i === current);
       });
       indicators.forEach((dot, i) => {
-        dot.classList.toggle('active', i === current);
+          dot.classList.toggle('active', i === current);
       });
-    }
+      }
   }
 
   // Expose API if needed
   window.QuantaCarousel = {
-    init: initQuantaCarousels
+      init: initQuantaCarousels
   };
 })();
 
