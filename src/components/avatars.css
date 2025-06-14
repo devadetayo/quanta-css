@@ -1,29 +1,44 @@
-/* src/components/avatars.css */
 @layer components.quanta-avatars {
+  /* ─── Avatar Base ───────────────────────────────────────── */
   .quanta-avatar {
     display: inline-block;
     width: var(--quanta-space-8);
     height: var(--quanta-space-8);
-    border-radius: 50%;
+    border-radius: var(--quanta-rounded-full);
     object-fit: cover;
+    box-shadow: var(--quanta-shadow-sm);
+    transition: box-shadow var(--quanta-duration-fast);
   }
+  .quanta-avatar:hover {
+    box-shadow: var(--quanta-shadow);
+  }
+
+  /* ─── Size Modifiers ─────────────────────────────────────── */
   .quanta-avatar-sm { width: var(--quanta-space-6); height: var(--quanta-space-6); }
+  .quanta-avatar-md { width: var(--quanta-space-8); height: var(--quanta-space-8); }
   .quanta-avatar-lg { width: var(--quanta-space-12); height: var(--quanta-space-12); }
 
+  /* ─── Avatar Group ──────────────────────────────────────── */
   .quanta-avatar-group {
     display: flex;
     align-items: center;
-    gap: calc(var(--quanta-space-4) * -0.4);
+    margin-left: calc(var(--quanta-space-4) * -0.4);
   }
-  .quanta-avatar-group .quanta-avatar { border: 2px solid var(--quanta-bg-default); }
+  .quanta-avatar-group > * {
+    border: var(--quanta-border-width) solid var(--quanta-bg-default);
+    margin-left: calc(var(--quanta-space-4) * -0.4);
+  }
 
-  html[data-theme="dark"] .quanta-avatar-group .quanta-avatar {
+  /* Dark Mode Border Correction */
+  html[data-theme="dark"] .quanta-avatar-group > * {
     border-color: var(--quanta-bg-emphasis);
   }
 
-  @media (max-width:640px) { .quanta-avatar { width: var(--quanta-space-6); height: var(--quanta-space-6); } }
-  @media (min-width:641px) and (max-width:768px) { /* no change */ }
-  @media (min-width:769px) and (max-width:1024px) { /* no change */ }
-  @media (min-width:1025px) and (max-width:1280px) { /* no change */ }
-  @media (min-width:1281px) { .quanta-avatar-lg { width: var(--quanta-space-16); height: var(--quanta-space-16); } }
+  /* ─── Responsive Support ─────────────────────────────────── */
+  @media (max-width: var(--quanta-screen-sm)) {
+    .quanta-avatar { width: var(--quanta-space-6); height: var(--quanta-space-6); }
+  }
+  @media (min-width: var(--quanta-screen-2xl)) {
+    .quanta-avatar-lg { width: var(--quanta-space-16); height: var(--quanta-space-16); }
+  }
 }

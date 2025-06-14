@@ -1,6 +1,6 @@
 {
   "name": "quanta-css",
-  "version": "1.0.2",
+  "version": "1.0.4",
   "description": "Quanta CSS — a component + utility-first CSS framework with built-in dark mode and theming.",
   "main": "dist/quanta.css",
   "style": "dist/quanta.min.css",
@@ -39,5 +39,8 @@
     "postcss": "^8.4.21",
     "postcss-cli": "^10.1.0",
     "postcss-import": "^15.1.0"
+  },
+  "dependencies": {
+    "node-fetch": "^3.3.2"
   }
 }

@@ -7,7 +7,6 @@ const outDir = 'dist';
 const utilityFiles = [
   'src/tokens/color-tokens.css',
   'src/utilities/variables.css',
-  'src/utilities/base.css',
   'src/utilities/reset.css',
   'src/utilities/normalize.css',
   'src/utilities/quanta-css-variants.css',

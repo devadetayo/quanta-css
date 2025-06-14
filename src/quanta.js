@@ -138,68 +138,61 @@
   };
 })();
 
-// quanta-carousel.js
-;(function(){
-  'use strict';
-
-  document.addEventListener('DOMContentLoaded', initQuantaCarousels);
-
-  function initQuantaCarousels() {
-    document.querySelectorAll('.quanta-carousel').forEach(carousel => {
-      setupCarousel(carousel);
-    });
+export class QuantaCarousel {
+  constructor(container, options = {}) {
+    this.root = typeof container === 'string' ? document.querySelector(container) : container;
+    this.track = this.root.querySelector('.quanta-carousel-track');
+    this.items = Array.from(this.track.children);
+    this.prevBtn = this.root.querySelector('.quanta-carousel-prev');
+    this.nextBtn = this.root.querySelector('.quanta-carousel-next');
+    this.indicators = this.root.querySelectorAll('.quanta-carousel-indicator');
+    this.current = 0;
+    this.options = Object.assign({
+      slidesToShow: 1,
+      centerMode: true,
+      infinite: true,
+      animation: 'slide', // or 'fade'
+      responsive: [] // { breakpoint, settings }
+    }, options);
+    this.init();
   }
-
-  function setupCarousel(carousel) {
-    const items = Array.from(carousel.querySelectorAll('.quanta-carousel-item'));
-    if (!items.length) return;
-
-    let current = items.findIndex(item => item.classList.contains('active'));
-    if (current < 0) current = 0;
-
-    // show initial
-    update();
-
-    // controls
-    const prevBtn = carousel.querySelector('.quanta-carousel-prev');
-    const nextBtn = carousel.querySelector('.quanta-carousel-next');
-    if (prevBtn) prevBtn.addEventListener('click', () => { go(-1); });
-    if (nextBtn) nextBtn.addEventListener('click', () => { go(1); });
-
-    // indicators
-    const indicatorsContainer = carousel.querySelector('.quanta-carousel-indicators');
-    let indicators = [];
-    if (indicatorsContainer) {
-      indicators = Array.from(indicatorsContainer.children)
-        .filter(el => el.classList.contains('quanta-carousel-indicator'));
-      indicators.forEach((dot, i) => {
-        dot.addEventListener('click', () => {
-          current = i;
-          update();
-        });
-      });
-    }
-
-    function go(direction) {
-      current = (current + direction + items.length) % items.length;
-      update();
-    }
-
-    function update() {
-      items.forEach((item, i) => {
-        item.classList.toggle('active', i === current);
-      });
-      indicators.forEach((dot, i) => {
-        dot.classList.toggle('active', i === current);
-      });
-    }
+  init() {
+    this.update();
+    this.prevBtn.addEventListener('click', () => this.goTo(this.current - 1));
+    this.nextBtn.addEventListener('click', () => this.goTo(this.current + 1));
+    this.indicators.forEach((dot, i) => dot.addEventListener('click', () => this.goTo(i)));
+    window.addEventListener('resize', () => this.update());
   }
+  update() {
+    const width = this.root.clientWidth;
+    const show = this.options.slidesToShow;
+    this.track.style.transform = `translateX(${-(this.current * (width / show))}px)`;
+    this.items.forEach((item, i) => item.classList.toggle('quanta-carousel-item-active', i === this.current));
+    this.indicators.forEach((dot, i) => dot.classList.toggle('quanta-carousel-indicator-active', i === this.current));
+  }
+  goTo(idx) {
+    const len = this.items.length;
+    if (this.options.infinite) idx = (idx + len) % len;
+    else idx = Math.max(0, Math.min(idx, len - 1));
+    this.current = idx;
+    this.update();
+  }
+}
 
-  // Expose API if needed
-  window.QuantaCarousel = {
-    init: initQuantaCarousels
-  };
-})();
+const carousel = document.getElementById('slickCarousel');
+const items = [...carousel.querySelectorAll('.quanta-carousel-item')];
+const indicators = [...carousel.querySelectorAll('.quanta-carousel-indicator')];
+let idx = 0;
+function goTo(i) {
+  items[idx].classList.remove('quanta-carousel-item-active');
+  indicators[idx].classList.remove('quanta-carousel-indicator-active');
+  idx = (i + items.length) % items.length;
+  items[idx].classList.add('quanta-carousel-item-active');
+  indicators[idx].classList.add('quanta-carousel-indicator-active');
+}
+carousel.querySelector('.quanta-carousel-prev').onclick = () => goTo(idx-1);
+carousel.querySelector('.quanta-carousel-next').onclick = () => goTo(idx+1);
+indicators.forEach((dot,i)=>dot.onclick = ()=>goTo(i));
 
 // quanta-chips.js
 ;(function(){

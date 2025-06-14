@@ -1,185 +1,97 @@
 /* src/components/badges.css */
+@import "../components/variables.css";
+
 @layer components.quanta-badges {
+  /* ─── Badge Base ───────────────────────────────────────── */
   .quanta-badge {
-    display: inline-block;
-    padding: var(--quanta-space-1) var(--quanta-space-2);
+    display: inline-flex;
+    align-items: center;
+    gap: var(--quanta-space-1);
+    padding: var(--quanta-space-2) var(--quanta-space-4);
     font-size: var(--quanta-text-xs);
     line-height: var(--quanta-leading-normal);
     font-weight: 500;
+    font-family: var(--quanta-font-secondary);
     border-radius: var(--quanta-rounded-full);
     background-color: var(--quanta-bg-default);
     color: var(--quanta-text-default);
-    transition: background-color var(--quanta-transition-fast), color var(--quanta-transition-fast);
-    margin-right: var(--quanta-space-2); /* Add spacing between badges */
-    margin-bottom: var(--quanta-space-2); /* Add margin to the bottom for multi-line badges */
+    box-shadow: var(--quanta-shadow-sm);
+    transition: background-color var(--quanta-duration-fast),
+                color var(--quanta-duration-fast),
+                box-shadow var(--quanta-duration-fast);
+    margin: 0 var(--quanta-space-2) var(--quanta-space-2) 0;
+  }
+  .quanta-badge:hover {
+    box-shadow: var(--quanta-shadow-md);
   }
 
-  /* Badge Sizes */
+  /* ─── Size Variants ─────────────────────────────────────── */
   .quanta-badge-sm {
-    font-size: var(--quanta-text-xxs);
-    padding: var(--quanta-space-1);
+    font-size: var(--quanta-text-xs);
+    padding: var(--quanta-space-1) var(--quanta-space-3);
   }
-
-  .quanta-badge-lg {
+  .quanta-badge-md {
     font-size: var(--quanta-text-sm);
-    padding: var(--quanta-space-2) var(--quanta-space-4);
+    padding: var(--quanta-space-1) var(--quanta-space-4);
+  }
+  .quanta-badge-lg {
+    font-size: var(--quanta-text-base);
+    padding: var(--quanta-space-3) var(--quanta-space-6);
   }
 
-  /* Variants */
+  /* ─── Color Variants ────────────────────────────────────── */
+  /* Primary Colors */
   .quanta-badge-primary {
-    background-color: var(--quanta-bg-primary);
-    color: var(--quanta-text-primary);
+    background-color: var(--quanta-primary);
+    color: var(--white);
   }
-  .quanta-badge-secondary {
-    background-color: var(--quanta-bg-secondary);
-    color: var(--quanta-text-secondary);
-  }
-  .quanta-badge-success {
-    background-color: var(--quanta-bg-success);
-    color: var(--quanta-text-success);
-  }
-  .quanta-badge-warning {
-    background-color: var(--quanta-bg-warning);
-    color: var(--quanta-text-warning);
-  }
-  .quanta-badge-danger {
-    background-color: var(--quanta-bg-danger);
-    color: var(--quanta-text-danger);
-  }
-  .quanta-badge-info {
-    background-color: var(--quanta-bg-info);
-    color: var(--quanta-text-info);
+  .quanta-badge-primary-outline {
+    background-color: transparent;
+    color: var(--quanta-primary);
+    border: var(--quanta-border-width) solid var(--quanta-primary);
   }
 
-  /* Dark Mode */
+  /* Semantic Colors */
+  .quanta-badge-info    { background-color: var(--quanta-bg-info);    color: var(--white); }
+  .quanta-badge-success { background-color: var(--quanta-bg-success); color: var(--white); }
+  .quanta-badge-warning { background-color: var(--quanta-bg-warning); color: var(--white); }
+  .quanta-badge-danger  { background-color: var(--quanta-bg-danger);  color: var(--white); }
+
+  /* Extended palette */
+  .quanta-badge-gray {
+    background-color: var(--quanta-grey-200);
+    color: var(--quanta-grey-800);
+  }
+  .quanta-badge-gray-outline {
+    background-color: transparent;
+    color: var(--quanta-grey-800);
+    border: var(--quanta-border-width) solid var(--quanta-grey-300);
+  }
+  .quanta-badge-purple { background-color: var(--quanta-purple-500); color: var(--white); }
+  .quanta-badge-pink   { background-color: var(--quanta-pink-500);   color: var(--white); }
+  .quanta-badge-cyan   { background-color: var(--quanta-cyan-500);   color: var(--white); }
+
+  /* ─── Dark Mode ────────────────────────────────────────── */
   html[data-theme="dark"] .quanta-badge {
     background-color: var(--quanta-bg-emphasis);
     color: var(--quanta-text-default);
   }
   html[data-theme="dark"] .quanta-badge-primary {
     background-color: var(--quanta-primary-hover);
-    color: var(--quanta-text-primary);
+    color: var(--white);
   }
-  html[data-theme="dark"] .quanta-badge-secondary {
-    background-color: var(--quanta-secondary-hover);
-    color: var(--quanta-text-secondary);
-  }
-  html[data-theme="dark"] .quanta-badge-success {
-    background-color: var(--quanta-success-hover);
-    color: var(--quanta-text-success);
-  }
-  html[data-theme="dark"] .quanta-badge-warning {
-    background-color: var(--quanta-warning-hover);
-    color: var(--quanta-text-warning);
-  }
-  html[data-theme="dark"] .quanta-badge-danger {
-    background-color: var(--quanta-danger-hover);
-    color: var(--quanta-text-danger);
-  }
-  html[data-theme="dark"] .quanta-badge-info {
-    background-color: var(--quanta-info-hover);
-    color: var(--quanta-text-info);
-  }
+  html[data-theme="dark"] .quanta-badge-info    { background-color: var(--quanta-info-hover);    color: var(--white); }
+  html[data-theme="dark"] .quanta-badge-success { background-color: var(--quanta-success-hover); color: var(--white); }
+  html[data-theme="dark"] .quanta-badge-warning { background-color: var(--quanta-warning-hover); color: var(--white); }
+  html[data-theme="dark"] .quanta-badge-danger  { background-color: var(--quanta-danger-hover);  color: var(--white); }
+  html[data-theme="dark"] .quanta-badge-gray    { background-color: var(--quanta-grey-800);    color: var(--quanta-grey-100); }
+  html[data-theme="dark"] .quanta-badge-purple { background-color: var(--quanta-purple-400);  color: var(--white); }
+  html[data-theme="dark"] .quanta-badge-pink   { background-color: var(--quanta-pink-400);    color: var(--white); }
+  html[data-theme="dark"] .quanta-badge-cyan   { background-color: var(--quanta-cyan-400);    color: var(--white); }
 
-  /* Responsive Breakpoints */
-  /* Mobile first approach */
-  @media (max-width: 767px) {
-    .quanta-badge {
-      font-size: var(--quanta-text-xs); /* Adjust font size on small screens */
-      padding: var(--quanta-space-1) var(--quanta-space-2); /* Adjust padding */
-    }
-
-    .quanta-badge-sm {
-      font-size: var(--quanta-text-xxs); /* Small badge adjustments for mobile */
-      padding: var(--quanta-space-1);
-    }
-
-    .quanta-badge-lg {
-      font-size: var(--quanta-text-sm); /* Large badge adjustments for mobile */
-      padding: var(--quanta-space-2);
-    }
-  }
-
-  /* Tablets (768px and above) */
-  @media (min-width: 768px) {
-    .quanta-badge {
-      font-size: var(--quanta-text-sm); /* Slightly larger font for tablets */
-      padding: var(--quanta-space-2) var(--quanta-space-3); /* Slightly larger padding */
-    }
-
-    .quanta-badge-sm {
-      font-size: var(--quanta-text-xs); /* Small badge adjustments for tablets */
-      padding: var(--quanta-space-1);
-    }
-
-    .quanta-badge-lg {
-      font-size: var(--quanta-text-md); /* Larger font for larger badges */
-      padding: var(--quanta-space-2) var(--quanta-space-4);
-    }
-  }
-
-  /* Desktop (1024px and above) */
-  @media (min-width: 1024px) {
-    .quanta-badge {
-      font-size: var(--quanta-text-base); /* Base font size for large screens */
-      padding: var(--quanta-space-3) var(--quanta-space-4); /* More padding on larger screens */
-    }
-
-    .quanta-badge-sm {
-      font-size: var(--quanta-text-sm); /* Slightly larger font for small badges */
-      padding: var(--quanta-space-1);
-    }
-
-    .quanta-badge-lg {
-      font-size: var(--quanta-text-lg); /* Increase font size for large badges */
-      padding: var(--quanta-space-3) var(--quanta-space-5);
-    }
-  }
-
-  /* Larger Desktop (1280px and above) */
-  @media (min-width: 1280px) {
-    .quanta-badge {
-      font-size: var(--quanta-text-lg); /* Larger font size for very large screens */
-      padding: var(--quanta-space-3) var(--quanta-space-5); /* Even more padding on large screens */
-    }
-
-    .quanta-badge-sm {
-      font-size: var(--quanta-text-base); /* Increase size for small badges on large screens */
-      padding: var(--quanta-space-2);
-    }
-
-    .quanta-badge-lg {
-      font-size: var(--quanta-text-xl); /* Larger font size for large badges */
-      padding: var(--quanta-space-4) var(--quanta-space-6);
-    }
-  }
-
-  /* Ultra Wide Desktop (1600px and above) */
-  @media (min-width: 1600px) {
-    .quanta-badge {
-      font-size: var(--quanta-text-xl); /* Very large font for ultra-wide screens */
-      padding: var(--quanta-space-4) var(--quanta-space-6); /* Generous padding */
-    }
-
-    .quanta-badge-sm {
-      font-size: var(--quanta-text-lg); /* Small badges also get larger font size */
-      padding: var(--quanta-space-2);
-    }
-
-    .quanta-badge-lg {
-      font-size: var(--quanta-text-2xl); /* Extra large font for large badges */
-      padding: var(--quanta-space-5) var(--quanta-space-7);
-    }
-  }
-
-  /* Accessibility Improvements */
+  /* ─── Accessibility ─────────────────────────────────────── */
   .quanta-badge:focus {
-    outline: 2px solid var(--quanta-primary); /* Clear focus state for better accessibility */
-  }
-
-  /* Allow icons within badges */
-  .quanta-badge[aria-live="polite"] {
-    position: relative;
-    padding-left: var(--quanta-space-6); /* Add space for a potential icon */
+    outline: var(--quanta-ring-width) solid var(--quanta-primary);
+    outline-offset: var(--quanta-space-1);
   }
 }

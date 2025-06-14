@@ -181,6 +181,7 @@
 }
 /* src/components/variables.css */
 @import "../tokens/color-tokens.css";
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Roboto+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Roboto+Mono:wght@400;500;700&display=swap');
 
 @layer components.variables {
   :root {
@@ -203,10 +204,31 @@
     --quanta-rounded-xl:   0.75rem;   /* 12px */
     --quanta-rounded-2xl:  1rem;      /* 16px */
     --quanta-rounded-full: 9999px;
+    --quanta-font-inter: 'Inter', sans-serif;
+    --quanta-font-roboto-serif: 'Roboto Serif', serif;
+    --quanta-font-roboto-mono: 'Roboto Mono', monospace;
 
-    /* ─── Component Defaults ────────────────────────────────── */
-    --quanta-border-width:    1px;
-    --quanta-ring-width:      2px;
+    /* ─── Breakpoints ──────────────────────────────────────── */
+    --quanta-screen-sm: 640px;
+    --quanta-screen-md: 768px;
+    --quanta-screen-lg: 1024px;
+    --quanta-screen-xl: 1280px;
+    --quanta-screen-2xl: 1536px;
+
+    /* ─── Transition Durations & Easing ────────────────────── */
+    --quanta-duration-fast: 150ms;
+    --quanta-duration-normal: 300ms;
+    --quanta-duration-slow: 500ms;
+    --quanta-ease-default: cubic-bezier(0.4, 0, 0.2, 1);
+
+    /* ─── Z-Index Scale ────────────────────────────────────── */
+    --quanta-z-xs: 10;
+    --quanta-z-sm: 100;
+    --quanta-z: 1000;
+    --quanta-z-lg: 10000;
+    --quanta-z-xl: 100000;
+
+    /* ─── Shadow Presets ────────────────────────────────────── */
     --quanta-shadow-color:    rgba(0, 0, 0, 0.1);
     --quanta-shadow-sm:       0 1px 2px var(--quanta-shadow-color);
     --quanta-shadow:          0 1px 3px var(--quanta-shadow-color), 0 1px 2px var(--quanta-shadow-color);
@@ -215,17 +237,38 @@
     --quanta-shadow-xl:       0 20px 25px -5px var(--quanta-shadow-color), 0 10px 10px -5px var(--quanta-shadow-color);
     --quanta-shadow-2xl:      0 25px 50px -12px var(--quanta-shadow-color);
 
-    /* ─── Typography ───────────────────────────────────────── */
+    /* ─── Typography Scale ──────────────────────────────────── */
+    --quanta-text-xs: 0.75rem;    /* 12px */
+    --quanta-text-sm: 0.875rem;   /* 14px */
+    --quanta-text-base: 1rem;     /* 16px */
+    --quanta-text-lg: 1.125rem;   /* 18px */
+    --quanta-text-xl: 1.25rem;    /* 20px */
+    --quanta-text-2xl: 1.5rem;    /* 24px */
+    --quanta-text-3xl: 1.875rem;  /* 30px */
+    --quanta-text-4xl: 2.25rem;   /* 36px */
+    --quanta-text-5xl: 3rem;      /* 48px */
+
+    /* line-height tokens */
+    --quanta-leading-none: 1;
+    --quanta-leading-tight: 1.25;
+    --quanta-leading-snug: 1.375;
+    --quanta-leading-normal: 1.5;
+    --quanta-leading-relaxed: 1.625;
+    --quanta-leading-loose: 2;
+
+    /* fonts */
     --quanta-font-primary:    'Inter', sans-serif;
     --quanta-font-secondary:  'Roboto', sans-serif;
 
+    /* semantic font sizes */
     --quanta-heading-size:    var(--quanta-text-2xl);
     --quanta-subheading-size: var(--quanta-text-xl);
     --quanta-body-size:       var(--quanta-text-base);
     --quanta-caption-size:    var(--quanta-text-sm);
 
-    --quanta-heading-line-height: var(--quanta-leading-tight);
-    --quanta-body-line-height:    var(--quanta-leading-normal);
+    /* ─── Component Defaults ────────────────────────────────── */
+    --quanta-border-width:    1px;
+    --quanta-ring-width:      2px;
 
     /* ─── Semantic Colors ──────────────────────────────────── */
     /* Default */
@@ -379,6 +422,7 @@
 }
 /* src/components/variables.css */
 @import "../tokens/color-tokens.css";
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Roboto+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Roboto+Mono:wght@400;500;700&display=swap');
 
 @layer components.variables {
   :root {
@@ -401,10 +445,31 @@
     --quanta-rounded-xl:   0.75rem;   /* 12px */
     --quanta-rounded-2xl:  1rem;      /* 16px */
     --quanta-rounded-full: 9999px;
+    --quanta-font-inter: 'Inter', sans-serif;
+    --quanta-font-roboto-serif: 'Roboto Serif', serif;
+    --quanta-font-roboto-mono: 'Roboto Mono', monospace;
 
-    /* ─── Component Defaults ────────────────────────────────── */
-    --quanta-border-width:    1px;
-    --quanta-ring-width:      2px;
+    /* ─── Breakpoints ──────────────────────────────────────── */
+    --quanta-screen-sm: 640px;
+    --quanta-screen-md: 768px;
+    --quanta-screen-lg: 1024px;
+    --quanta-screen-xl: 1280px;
+    --quanta-screen-2xl: 1536px;
+
+    /* ─── Transition Durations & Easing ────────────────────── */
+    --quanta-duration-fast: 150ms;
+    --quanta-duration-normal: 300ms;
+    --quanta-duration-slow: 500ms;
+    --quanta-ease-default: cubic-bezier(0.4, 0, 0.2, 1);
+
+    /* ─── Z-Index Scale ────────────────────────────────────── */
+    --quanta-z-xs: 10;
+    --quanta-z-sm: 100;
+    --quanta-z: 1000;
+    --quanta-z-lg: 10000;
+    --quanta-z-xl: 100000;
+
+    /* ─── Shadow Presets ────────────────────────────────────── */
     --quanta-shadow-color:    rgba(0, 0, 0, 0.1);
     --quanta-shadow-sm:       0 1px 2px var(--quanta-shadow-color);
     --quanta-shadow:          0 1px 3px var(--quanta-shadow-color), 0 1px 2px var(--quanta-shadow-color);
@@ -413,17 +478,38 @@
     --quanta-shadow-xl:       0 20px 25px -5px var(--quanta-shadow-color), 0 10px 10px -5px var(--quanta-shadow-color);
     --quanta-shadow-2xl:      0 25px 50px -12px var(--quanta-shadow-color);
 
-    /* ─── Typography ───────────────────────────────────────── */
+    /* ─── Typography Scale ──────────────────────────────────── */
+    --quanta-text-xs: 0.75rem;    /* 12px */
+    --quanta-text-sm: 0.875rem;   /* 14px */
+    --quanta-text-base: 1rem;     /* 16px */
+    --quanta-text-lg: 1.125rem;   /* 18px */
+    --quanta-text-xl: 1.25rem;    /* 20px */
+    --quanta-text-2xl: 1.5rem;    /* 24px */
+    --quanta-text-3xl: 1.875rem;  /* 30px */
+    --quanta-text-4xl: 2.25rem;   /* 36px */
+    --quanta-text-5xl: 3rem;      /* 48px */
+
+    /* line-height tokens */
+    --quanta-leading-none: 1;
+    --quanta-leading-tight: 1.25;
+    --quanta-leading-snug: 1.375;
+    --quanta-leading-normal: 1.5;
+    --quanta-leading-relaxed: 1.625;
+    --quanta-leading-loose: 2;
+
+    /* fonts */
     --quanta-font-primary:    'Inter', sans-serif;
     --quanta-font-secondary:  'Roboto', sans-serif;
 
+    /* semantic font sizes */
     --quanta-heading-size:    var(--quanta-text-2xl);
     --quanta-subheading-size: var(--quanta-text-xl);
     --quanta-body-size:       var(--quanta-text-base);
     --quanta-caption-size:    var(--quanta-text-sm);
 
-    --quanta-heading-line-height: var(--quanta-leading-tight);
-    --quanta-body-line-height:    var(--quanta-leading-normal);
+    /* ─── Component Defaults ────────────────────────────────── */
+    --quanta-border-width:    1px;
+    --quanta-ring-width:      2px;
 
     /* ─── Semantic Colors ──────────────────────────────────── */
     /* Default */
@@ -989,497 +1075,364 @@ html[data-theme="dark"] {
 
 .jello { animation: jello 1s ease infinite; }
 
+.font-inter {
+  font-family: var(--quanta-font-inter) !important;
+}
+
+.font-roboto-serif {
+  font-family: var(--quanta-font-roboto-serif) !important;
+}
+
+.font-roboto-mono {
+  font-family: var(--quanta-font-roboto-mono) !important;
+}
+
 
 
 /* src/components/accordion.css */
+@import "../components/variables.css";
+
 @layer components.quanta-accordion {
-  /* ─── Accordion Container ─────────────────────────────────── */
+  /* ─── Accordion Wrapper ───────────────────────────────── */
   .quanta-accordion {
     display: flex;
     flex-direction: column;
-    gap: var(--quanta-space-2);
+    gap: var(--quanta-space-4);
     width: 100%;
   }
 
-  /* ─── Accordion Item ──────────────────────────────────────── */
+  /* ─── Accordion Card Style ────────────────────────────── */
   .quanta-accordion-item {
-    border: var(--quanta-border-width) solid var(--quanta-border-color);
-    border-radius: var(--quanta-rounded);
+    background-color: var(--quanta-bg-default);
+    border-radius: var(--quanta-rounded-lg);
+    box-shadow: var(--quanta-shadow-md);
     overflow: hidden;
-    width: 100%; /* Ensure items are full-width */
+    transition: box-shadow var(--quanta-duration-fast) var(--quanta-ease-default);
   }
 
-  /* ─── Accordion Header ────────────────────────────────────── */
+  .quanta-accordion-item:hover {
+    box-shadow: var(--quanta-shadow-lg);
+  }
+
+  /* ─── Accordion Header ───────────────────────────────── */
   .quanta-accordion-header {
-    background-color: var(--quanta-bg-surface);
-    color: var(--quanta-text-default);
-    padding: var(--quanta-space-3) var(--quanta-space-4); /* Mobile-first padding */
+    width: 100%;
+    padding: var(--quanta-space-4) var(--quanta-space-6);
     font-family: var(--quanta-font-primary);
     font-size: var(--quanta-body-size);
-    cursor: pointer;
+    color: var(--quanta-text-default);
+    background-color: var(--quanta-bg-surface);
     display: flex;
     justify-content: space-between;
     align-items: center;
+    cursor: pointer;
     user-select: none;
-    transition: background-color var(--quanta-transition-fast);
-    width: 100%;
+    transition: background-color var(--quanta-duration-fast), color var(--quanta-duration-fast);
   }
 
-  .quanta-accordion-header:hover {
+  .quanta-accordion-header:hover,
+  .quanta-accordion-header[aria-expanded="true"] {
     background-color: var(--quanta-bg-emphasis);
+    color: var(--quanta-text-default);
   }
 
-  /* ─── Accordion Content ───────────────────────────────────── */
-  .quanta-accordion-content {
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height var(--quanta-transition-normal), padding var(--quanta-transition-fast);
-    padding: 0 var(--quanta-space-4);
-    background-color: var(--quanta-bg-default);
+  .quanta-accordion-header:focus {
+    outline: var(--quanta-ring-width) solid var(--quanta-primary);
+    outline-offset: var(--quanta-space-1);
   }
 
-  .quanta-accordion-content.open {
-    padding: var(--quanta-space-3) var(--quanta-space-4);
-    max-height: 100vh; /* large enough to show content */
-  }
-
-  /* ─── Icon Toggles ─────────────────────────────────────────── */
+  /* Icon rotation */
   .quanta-accordion-header .icon {
-    transition: transform var(--quanta-transition-fast);
+    transition: transform var(--quanta-duration-fast);
   }
-
-  .quanta-accordion-header.quanta-active .icon {
+  .quanta-accordion-header[aria-expanded="true"] .icon {
     transform: rotate(180deg);
   }
 
-  /* ─── Dark Mode Tweaks ─────────────────────────────────────── */
+  /* ─── Accordion Content ──────────────────────────────── */
+  .quanta-accordion-content {
+    max-height: 0;
+    overflow: hidden;
+    padding: 0 var(--quanta-space-6);
+    background-color: var(--quanta-bg-default);
+    transition: max-height var(--quanta-duration-normal) var(--quanta-ease-default),
+                padding var(--quanta-duration-fast);
+  }
+
+  .quanta-accordion-content[aria-hidden="false"] {
+    padding: var(--quanta-space-4) var(--quanta-space-6);
+    max-height: 100vh;
+  }
+
+  /* ─── Responsive Adjustments ─────────────────────────── */
+  @media (min-width: var(--quanta-screen-md)) {
+    .quanta-accordion-header {
+      padding: var(--quanta-space-5) var(--quanta-space-8);
+      font-size: var(--quanta-text-lg);
+    }
+    .quanta-accordion-content {
+      padding: 0 var(--quanta-space-8);
+    }
+    .quanta-accordion-content[aria-hidden="false"] {
+      padding: var(--quanta-space-5) var(--quanta-space-8);
+    }
+  }
+
+  @media (min-width: var(--quanta-screen-lg)) {
+    .quanta-accordion-header {
+      font-size: var(--quanta-text-xl);
+      padding: var(--quanta-space-6) var(--quanta-space-10);
+    }
+  }
+
+  /* ─── Dark Mode ──────────────────────────────────────── */
+  html[data-theme="dark"] .quanta-accordion-item {
+    background-color: var(--quanta-bg-secondary);
+    box-shadow: var(--quanta-shadow-sm);
+  }
   html[data-theme="dark"] .quanta-accordion-header {
     background-color: var(--quanta-bg-surface);
     color: var(--quanta-text-default);
   }
-
   html[data-theme="dark"] .quanta-accordion-content {
-    background-color: var(--quanta-bg-default);
-  }
-
-  /* ─── Mobile-First Styles ──────────────────────────────────── */
-  /* Base styles are for mobile devices */
-  .quanta-accordion-header {
-    font-size: var(--quanta-body-size); /* Default font size for mobile */
-    padding: var(--quanta-space-3) var(--quanta-space-4); /* Padding for mobile */
-  }
-
-  .quanta-accordion-content {
-    padding: 0 var(--quanta-space-4); /* Padding for mobile */
-  }
-
-  /* ─── Responsive Adjustments ─────────────────────────────────── */
-  /* Tablet and larger screens (min-width: 768px) */
-  @media (min-width: 768px) {
-    .quanta-accordion-header {
-      padding: var(--quanta-space-3) var(--quanta-space-5); /* Larger padding for tablets */
-      font-size: var(--quanta-body-size-md); /* Slightly larger font on tablets */
-    }
-
-    .quanta-accordion-content.open {
-      padding: var(--quanta-space-3) var(--quanta-space-5); /* Increase padding on larger screens */
-    }
-
-    .quanta-accordion-item {
-      margin-bottom: var(--quanta-space-3); /* Larger space between accordion items */
-    }
-  }
-
-  /* Larger screens (min-width: 1024px) */
-  @media (min-width: 1024px) {
-    .quanta-accordion-header {
-      font-size: var(--quanta-body-size-lg); /* Increase font size on large screens */
-      padding: var(--quanta-space-4) var(--quanta-space-6); /* Add more padding on larger screens */
-    }
-
-    .quanta-accordion-content.open {
-      padding: var(--quanta-space-4) var(--quanta-space-6); /* Add more padding */
-    }
-
-    .quanta-accordion-item {
-      margin-bottom: var(--quanta-space-4); /* More space on larger screens */
-    }
-  }
-
-  /* Extra Large screens (min-width: 1280px) */
-  @media (min-width: 1280px) {
-    .quanta-accordion-header {
-      font-size: var(--quanta-body-size-xl); /* Even larger font size on extra large screens */
-      padding: var(--quanta-space-5) var(--quanta-space-8); /* Adjust padding for larger screens */
-    }
-
-    .quanta-accordion-content.open {
-      padding: var(--quanta-space-5) var(--quanta-space-8); /* More padding for larger screens */
-    }
-
-    .quanta-accordion-item {
-      margin-bottom: var(--quanta-space-5); /* Larger space on extra large screens */
-    }
-  }
-
-  /* ─── Accessibility & Usability Enhancements ───────────────── */
-  .quanta-accordion-header:focus {
-    outline: 2px solid var(--quanta-primary); /* Focus state for accessibility */
-    background-color: var(--quanta-bg-emphasis);
-  }
-
-  .quanta-accordion-header[aria-expanded="true"] {
-    background-color: var(--quanta-bg-emphasis);
-  }
-
-  /* ─── Additional Utility Support ──────────────────────────── */
-  /* Allow utility-based control for padding and margins */
-  .quanta-accordion-header {
-    @apply p-4; /* Utility class for padding */
-    @apply mb-2; /* Margin-bottom utility */
-  }
-
-  .quanta-accordion-content {
-    @apply p-4; /* Utility class for padding */
+    background-color: var(--quanta-bg-secondary);
   }
 }
+
 /* src/components/alerts.css */
+@import "../components/variables.css";
+
 @layer components.quanta-alerts {
   .quanta-alert {
     display: flex;
     align-items: center;
     gap: var(--quanta-space-3);
-    padding: var(--quanta-space-3) var(--quanta-space-4);
+    padding: var(--quanta-space-4) var(--quanta-space-6);
     border-radius: var(--quanta-rounded-md);
-    font-size: var(--quanta-text-sm);
+    font-size: var(--quanta-text-base);
     font-family: var(--quanta-font-secondary);
     font-weight: 500;
     line-height: var(--quanta-leading-normal);
     border: var(--quanta-border-width) solid transparent;
-    width: 100%; /* Ensure full width on small screens */
+    background-color: var(--quanta-bg-default);
+    color: var(--quanta-text-default);
+    box-shadow: var(--quanta-shadow-sm);
+    transition: background-color var(--quanta-duration-fast),
+                box-shadow var(--quanta-duration-fast);
+    width: 100%;
+  }
+
+  .quanta-alert:hover {
+    box-shadow: var(--quanta-shadow);
   }
 
   .quanta-alert svg {
     flex-shrink: 0;
-    width: 1.25rem;
-    height: 1.25rem;
+    width: var(--quanta-text-xl);
+    height: var(--quanta-text-xl);
   }
 
+  /* Variant modifiers */
   .quanta-alert-info {
     background-color: var(--quanta-blue-50);
     color: var(--quanta-blue-800);
     border-color: var(--quanta-blue-300);
   }
-
   .quanta-alert-success {
     background-color: var(--quanta-green-50);
     color: var(--quanta-green-800);
     border-color: var(--quanta-green-300);
   }
-
   .quanta-alert-warning {
     background-color: var(--quanta-yellow-50);
     color: var(--quanta-yellow-800);
     border-color: var(--quanta-yellow-300);
   }
-
   .quanta-alert-error {
     background-color: var(--quanta-red-50);
     color: var(--quanta-red-800);
     border-color: var(--quanta-red-300);
   }
 
-  /* Dark Mode Variants */
+  /* Dark mode adjustments */
   html[data-theme="dark"] .quanta-alert-info {
     background-color: var(--quanta-blue-900);
     color: var(--quanta-blue-100);
     border-color: var(--quanta-blue-700);
   }
-
   html[data-theme="dark"] .quanta-alert-success {
     background-color: var(--quanta-green-900);
     color: var(--quanta-green-100);
     border-color: var(--quanta-green-700);
   }
-
   html[data-theme="dark"] .quanta-alert-warning {
     background-color: var(--quanta-yellow-900);
     color: var(--quanta-yellow-100);
     border-color: var(--quanta-yellow-700);
   }
-
   html[data-theme="dark"] .quanta-alert-error {
     background-color: var(--quanta-red-900);
     color: var(--quanta-red-100);
     border-color: var(--quanta-red-700);
   }
 
-  /* ─── Mobile-First Styles ──────────────────────────────────── */
-  /* Base styles for mobile devices */
-  .quanta-alert {
-    font-size: var(--quanta-text-sm); /* Default smaller font-size on mobile */
-    padding: var(--quanta-space-3) var(--quanta-space-4); /* Adjust padding for mobile */
-    width: 100%; /* Ensure alerts span full width on small screens */
-  }
-
-  /* ─── Responsive Adjustments ─────────────────────────────────── */
-  /* 1. Small Tablets (min-width: 600px) */
-  @media (min-width: 600px) {
+  /* Responsive widths */
+  @media (min-width: var(--quanta-screen-md)) {
     .quanta-alert {
-      padding: var(--quanta-space-4) var(--quanta-space-5); /* More padding on small tablets */
-      font-size: var(--quanta-text-base); /* Larger font size for small tablets */
+      width: 90%;
     }
   }
-
-  /* 2. Tablets (min-width: 768px) */
-  @media (min-width: 768px) {
+  @media (min-width: var(--quanta-screen-lg)) {
     .quanta-alert {
-      width: 90%; /* Slightly narrower on larger tablets */
-      padding: var(--quanta-space-4) var(--quanta-space-6); /* Even more padding on tablets */
-      font-size: var(--quanta-text-lg); /* Larger font size */
+      width: 80%;
     }
   }
-
-  /* 3. Laptops (min-width: 1024px) */
-  @media (min-width: 1024px) {
+  @media (min-width: var(--quanta-screen-xl)) {
     .quanta-alert {
-      width: 80%; /* More space on larger screens */
-      padding: var(--quanta-space-5) var(--quanta-space-7); /* Adjust padding */
-      font-size: var(--quanta-text-xl); /* Larger font size */
-    }
-  }
-
-  /* 4. Large Desktops (min-width: 1280px) */
-  @media (min-width: 1280px) {
-    .quanta-alert {
-      width: 70%; /* Even more space on large desktops */
-      padding: var(--quanta-space-6) var(--quanta-space-8); /* Adjust padding for larger screens */
-      font-size: var(--quanta-text-2xl); /* Extra large font size */
-    }
-  }
-
-  /* 5. Huge Displays (min-width: 1600px) */
-  @media (min-width: 1600px) {
-    .quanta-alert {
-      width: 60%; /* Ultra-wide screens get even more space */
-      padding: var(--quanta-space-7) var(--quanta-space-9); /* Ultra-wide screen padding */
-      font-size: var(--quanta-text-3xl); /* Extra large text for huge displays */
+      width: 70%;
     }
   }
 }
-/* src/components/avatars.css */
+
 @layer components.quanta-avatars {
+  /* ─── Avatar Base ───────────────────────────────────────── */
   .quanta-avatar {
     display: inline-block;
     width: var(--quanta-space-8);
     height: var(--quanta-space-8);
-    border-radius: 50%;
+    border-radius: var(--quanta-rounded-full);
     object-fit: cover;
+    box-shadow: var(--quanta-shadow-sm);
+    transition: box-shadow var(--quanta-duration-fast);
   }
+  .quanta-avatar:hover {
+    box-shadow: var(--quanta-shadow);
+  }
+
+  /* ─── Size Modifiers ─────────────────────────────────────── */
   .quanta-avatar-sm { width: var(--quanta-space-6); height: var(--quanta-space-6); }
+  .quanta-avatar-md { width: var(--quanta-space-8); height: var(--quanta-space-8); }
   .quanta-avatar-lg { width: var(--quanta-space-12); height: var(--quanta-space-12); }
 
+  /* ─── Avatar Group ──────────────────────────────────────── */
   .quanta-avatar-group {
     display: flex;
     align-items: center;
-    gap: calc(var(--quanta-space-4) * -0.4);
+    margin-left: calc(var(--quanta-space-4) * -0.4);
   }
-  .quanta-avatar-group .quanta-avatar { border: 2px solid var(--quanta-bg-default); }
+  .quanta-avatar-group > * {
+    border: var(--quanta-border-width) solid var(--quanta-bg-default);
+    margin-left: calc(var(--quanta-space-4) * -0.4);
+  }
 
-  html[data-theme="dark"] .quanta-avatar-group .quanta-avatar {
+  /* Dark Mode Border Correction */
+  html[data-theme="dark"] .quanta-avatar-group > * {
     border-color: var(--quanta-bg-emphasis);
   }
 
-  @media (max-width:640px) { .quanta-avatar { width: var(--quanta-space-6); height: var(--quanta-space-6); } }
-  @media (min-width:641px) and (max-width:768px) { /* no change */ }
-  @media (min-width:769px) and (max-width:1024px) { /* no change */ }
-  @media (min-width:1025px) and (max-width:1280px) { /* no change */ }
-  @media (min-width:1281px) { .quanta-avatar-lg { width: var(--quanta-space-16); height: var(--quanta-space-16); } }
+  /* ─── Responsive Support ─────────────────────────────────── */
+  @media (max-width: var(--quanta-screen-sm)) {
+    .quanta-avatar { width: var(--quanta-space-6); height: var(--quanta-space-6); }
+  }
+  @media (min-width: var(--quanta-screen-2xl)) {
+    .quanta-avatar-lg { width: var(--quanta-space-16); height: var(--quanta-space-16); }
+  }
 }
-
 /* src/components/badges.css */
+@import "../components/variables.css";
+
 @layer components.quanta-badges {
+  /* ─── Badge Base ───────────────────────────────────────── */
   .quanta-badge {
-    display: inline-block;
-    padding: var(--quanta-space-1) var(--quanta-space-2);
+    display: inline-flex;
+    align-items: center;
+    gap: var(--quanta-space-1);
+    padding: var(--quanta-space-2) var(--quanta-space-4);
     font-size: var(--quanta-text-xs);
     line-height: var(--quanta-leading-normal);
     font-weight: 500;
+    font-family: var(--quanta-font-secondary);
     border-radius: var(--quanta-rounded-full);
     background-color: var(--quanta-bg-default);
     color: var(--quanta-text-default);
-    transition: background-color var(--quanta-transition-fast), color var(--quanta-transition-fast);
-    margin-right: var(--quanta-space-2); /* Add spacing between badges */
-    margin-bottom: var(--quanta-space-2); /* Add margin to the bottom for multi-line badges */
+    box-shadow: var(--quanta-shadow-sm);
+    transition: background-color var(--quanta-duration-fast),
+                color var(--quanta-duration-fast),
+                box-shadow var(--quanta-duration-fast);
+    margin: 0 var(--quanta-space-2) var(--quanta-space-2) 0;
+  }
+  .quanta-badge:hover {
+    box-shadow: var(--quanta-shadow-md);
   }
 
-  /* Badge Sizes */
+  /* ─── Size Variants ─────────────────────────────────────── */
   .quanta-badge-sm {
-    font-size: var(--quanta-text-xxs);
-    padding: var(--quanta-space-1);
+    font-size: var(--quanta-text-xs);
+    padding: var(--quanta-space-1) var(--quanta-space-3);
   }
-
-  .quanta-badge-lg {
+  .quanta-badge-md {
     font-size: var(--quanta-text-sm);
-    padding: var(--quanta-space-2) var(--quanta-space-4);
+    padding: var(--quanta-space-1) var(--quanta-space-4);
+  }
+  .quanta-badge-lg {
+    font-size: var(--quanta-text-base);
+    padding: var(--quanta-space-3) var(--quanta-space-6);
   }
 
-  /* Variants */
+  /* ─── Color Variants ────────────────────────────────────── */
+  /* Primary Colors */
   .quanta-badge-primary {
-    background-color: var(--quanta-bg-primary);
-    color: var(--quanta-text-primary);
+    background-color: var(--quanta-primary);
+    color: var(--white);
   }
-  .quanta-badge-secondary {
-    background-color: var(--quanta-bg-secondary);
-    color: var(--quanta-text-secondary);
-  }
-  .quanta-badge-success {
-    background-color: var(--quanta-bg-success);
-    color: var(--quanta-text-success);
-  }
-  .quanta-badge-warning {
-    background-color: var(--quanta-bg-warning);
-    color: var(--quanta-text-warning);
-  }
-  .quanta-badge-danger {
-    background-color: var(--quanta-bg-danger);
-    color: var(--quanta-text-danger);
-  }
-  .quanta-badge-info {
-    background-color: var(--quanta-bg-info);
-    color: var(--quanta-text-info);
+  .quanta-badge-primary-outline {
+    background-color: transparent;
+    color: var(--quanta-primary);
+    border: var(--quanta-border-width) solid var(--quanta-primary);
   }
 
-  /* Dark Mode */
+  /* Semantic Colors */
+  .quanta-badge-info    { background-color: var(--quanta-bg-info);    color: var(--white); }
+  .quanta-badge-success { background-color: var(--quanta-bg-success); color: var(--white); }
+  .quanta-badge-warning { background-color: var(--quanta-bg-warning); color: var(--white); }
+  .quanta-badge-danger  { background-color: var(--quanta-bg-danger);  color: var(--white); }
+
+  /* Extended palette */
+  .quanta-badge-gray {
+    background-color: var(--quanta-grey-200);
+    color: var(--quanta-grey-800);
+  }
+  .quanta-badge-gray-outline {
+    background-color: transparent;
+    color: var(--quanta-grey-800);
+    border: var(--quanta-border-width) solid var(--quanta-grey-300);
+  }
+  .quanta-badge-purple { background-color: var(--quanta-purple-500); color: var(--white); }
+  .quanta-badge-pink   { background-color: var(--quanta-pink-500);   color: var(--white); }
+  .quanta-badge-cyan   { background-color: var(--quanta-cyan-500);   color: var(--white); }
+
+  /* ─── Dark Mode ────────────────────────────────────────── */
   html[data-theme="dark"] .quanta-badge {
     background-color: var(--quanta-bg-emphasis);
     color: var(--quanta-text-default);
   }
   html[data-theme="dark"] .quanta-badge-primary {
     background-color: var(--quanta-primary-hover);
-    color: var(--quanta-text-primary);
+    color: var(--white);
   }
-  html[data-theme="dark"] .quanta-badge-secondary {
-    background-color: var(--quanta-secondary-hover);
-    color: var(--quanta-text-secondary);
-  }
-  html[data-theme="dark"] .quanta-badge-success {
-    background-color: var(--quanta-success-hover);
-    color: var(--quanta-text-success);
-  }
-  html[data-theme="dark"] .quanta-badge-warning {
-    background-color: var(--quanta-warning-hover);
-    color: var(--quanta-text-warning);
-  }
-  html[data-theme="dark"] .quanta-badge-danger {
-    background-color: var(--quanta-danger-hover);
-    color: var(--quanta-text-danger);
-  }
-  html[data-theme="dark"] .quanta-badge-info {
-    background-color: var(--quanta-info-hover);
-    color: var(--quanta-text-info);
-  }
+  html[data-theme="dark"] .quanta-badge-info    { background-color: var(--quanta-info-hover);    color: var(--white); }
+  html[data-theme="dark"] .quanta-badge-success { background-color: var(--quanta-success-hover); color: var(--white); }
+  html[data-theme="dark"] .quanta-badge-warning { background-color: var(--quanta-warning-hover); color: var(--white); }
+  html[data-theme="dark"] .quanta-badge-danger  { background-color: var(--quanta-danger-hover);  color: var(--white); }
+  html[data-theme="dark"] .quanta-badge-gray    { background-color: var(--quanta-grey-800);    color: var(--quanta-grey-100); }
+  html[data-theme="dark"] .quanta-badge-purple { background-color: var(--quanta-purple-400);  color: var(--white); }
+  html[data-theme="dark"] .quanta-badge-pink   { background-color: var(--quanta-pink-400);    color: var(--white); }
+  html[data-theme="dark"] .quanta-badge-cyan   { background-color: var(--quanta-cyan-400);    color: var(--white); }
 
-  /* Responsive Breakpoints */
-  /* Mobile first approach */
-  @media (max-width: 767px) {
-    .quanta-badge {
-      font-size: var(--quanta-text-xs); /* Adjust font size on small screens */
-      padding: var(--quanta-space-1) var(--quanta-space-2); /* Adjust padding */
-    }
-
-    .quanta-badge-sm {
-      font-size: var(--quanta-text-xxs); /* Small badge adjustments for mobile */
-      padding: var(--quanta-space-1);
-    }
-
-    .quanta-badge-lg {
-      font-size: var(--quanta-text-sm); /* Large badge adjustments for mobile */
-      padding: var(--quanta-space-2);
-    }
-  }
-
-  /* Tablets (768px and above) */
-  @media (min-width: 768px) {
-    .quanta-badge {
-      font-size: var(--quanta-text-sm); /* Slightly larger font for tablets */
-      padding: var(--quanta-space-2) var(--quanta-space-3); /* Slightly larger padding */
-    }
-
-    .quanta-badge-sm {
-      font-size: var(--quanta-text-xs); /* Small badge adjustments for tablets */
-      padding: var(--quanta-space-1);
-    }
-
-    .quanta-badge-lg {
-      font-size: var(--quanta-text-md); /* Larger font for larger badges */
-      padding: var(--quanta-space-2) var(--quanta-space-4);
-    }
-  }
-
-  /* Desktop (1024px and above) */
-  @media (min-width: 1024px) {
-    .quanta-badge {
-      font-size: var(--quanta-text-base); /* Base font size for large screens */
-      padding: var(--quanta-space-3) var(--quanta-space-4); /* More padding on larger screens */
-    }
-
-    .quanta-badge-sm {
-      font-size: var(--quanta-text-sm); /* Slightly larger font for small badges */
-      padding: var(--quanta-space-1);
-    }
-
-    .quanta-badge-lg {
-      font-size: var(--quanta-text-lg); /* Increase font size for large badges */
-      padding: var(--quanta-space-3) var(--quanta-space-5);
-    }
-  }
-
-  /* Larger Desktop (1280px and above) */
-  @media (min-width: 1280px) {
-    .quanta-badge {
-      font-size: var(--quanta-text-lg); /* Larger font size for very large screens */
-      padding: var(--quanta-space-3) var(--quanta-space-5); /* Even more padding on large screens */
-    }
-
-    .quanta-badge-sm {
-      font-size: var(--quanta-text-base); /* Increase size for small badges on large screens */
-      padding: var(--quanta-space-2);
-    }
-
-    .quanta-badge-lg {
-      font-size: var(--quanta-text-xl); /* Larger font size for large badges */
-      padding: var(--quanta-space-4) var(--quanta-space-6);
-    }
-  }
-
-  /* Ultra Wide Desktop (1600px and above) */
-  @media (min-width: 1600px) {
-    .quanta-badge {
-      font-size: var(--quanta-text-xl); /* Very large font for ultra-wide screens */
-      padding: var(--quanta-space-4) var(--quanta-space-6); /* Generous padding */
-    }
-
-    .quanta-badge-sm {
-      font-size: var(--quanta-text-lg); /* Small badges also get larger font size */
-      padding: var(--quanta-space-2);
-    }
-
-    .quanta-badge-lg {
-      font-size: var(--quanta-text-2xl); /* Extra large font for large badges */
-      padding: var(--quanta-space-5) var(--quanta-space-7);
-    }
-  }
-
-  /* Accessibility Improvements */
+  /* ─── Accessibility ─────────────────────────────────────── */
   .quanta-badge:focus {
-    outline: 2px solid var(--quanta-primary); /* Clear focus state for better accessibility */
-  }
-
-  /* Allow icons within badges */
-  .quanta-badge[aria-live="polite"] {
-    position: relative;
-    padding-left: var(--quanta-space-6); /* Add space for a potential icon */
+    outline: var(--quanta-ring-width) solid var(--quanta-primary);
+    outline-offset: var(--quanta-space-1);
   }
 }
 /* ─── Base Utility Classes ────────────────────────────────── */
@@ -1970,6 +1923,18 @@ html[data-theme="dark"] {
 
 .jello { animation: jello 1s ease infinite; }
 
+.font-inter {
+  font-family: var(--quanta-font-inter) !important;
+}
+
+.font-roboto-serif {
+  font-family: var(--quanta-font-roboto-serif) !important;
+}
+
+.font-roboto-mono {
+  font-family: var(--quanta-font-roboto-mono) !important;
+}
+
 
 
 /* src/components/breadcrumbs.css */
@@ -1981,762 +1946,352 @@ html[data-theme="dark"] {
     padding: 0;
     margin: 0;
     font-size: var(--quanta-text-sm);
+    font-family: var(--quanta-font-secondary);
+    color: var(--quanta-text-muted);
   }
+
   .quanta-breadcrumb li + li::before {
     content: '/';
     margin: 0 var(--quanta-space-2);
     color: var(--quanta-text-muted);
   }
+
   .quanta-breadcrumb a {
     text-decoration: none;
     color: var(--quanta-primary);
-    transition: color var(--quanta-transition-fast);
+    transition: color var(--quanta-duration-fast);
   }
+
   .quanta-breadcrumb a:hover {
     color: var(--quanta-primary-hover);
   }
+
+  .quanta-breadcrumb .is-current {
+    color: var(--quanta-text-default);
+    font-weight: 500;
+    pointer-events: none;
+  }
+
+  html[data-theme="dark"] .quanta-breadcrumb {
+    color: var(--quanta-text-light-muted);
+  }
+
   html[data-theme="dark"] .quanta-breadcrumb a {
+    color: var(--quanta-primary);
+  }
+
+  html[data-theme="dark"] .quanta-breadcrumb a:hover {
+    color: var(--quanta-primary-hover);
+  }
+
+  html[data-theme="dark"] .quanta-breadcrumb .is-current {
     color: var(--quanta-text-light);
   }
 
-  @media (max-width: 640px) { .quanta-breadcrumb { font-size: var(--quanta-text-xs); } }
-  @media (min-width:641px) and (max-width:768px) { /* no change */ }
-  @media (min-width:769px) and (max-width:1024px) { /* no change */ }
-  @media (min-width:1025px) and (max-width:1280px) { /* no change */ }
-  @media (min-width:1281px) { .quanta-breadcrumb { font-size: var(--quanta-text-base); } }
+  @media (max-width: 640px) {
+    .quanta-breadcrumb {
+      font-size: var(--quanta-text-xs);
+    }
+  }
+
+  @media (min-width: 1281px) {
+    .quanta-breadcrumb {
+      font-size: var(--quanta-text-base);
+    }
+  }
 }
 
-/* src/components/button.css */
 @layer components.quanta-button {
-  /* ─── Flexible Base ─────────────────────────────────────────── */
   .quanta-btn {
-    all: unset;
     display: inline-flex;
     align-items: center;
     justify-content: center;
     padding: var(--quanta-space-2) var(--quanta-space-4);
     font-family: var(--quanta-font-primary);
-    font-size: var(--quanta-body-size);
-    line-height: var(--quanta-body-line-height);
-    border: var(--quanta-border-width) solid var(--quanta-border-color);
-    border-radius: var(--quanta-comp-radius);
-    box-shadow: var(--quanta-shadow-sm);
+    line-height: 1.25;
+    border-radius: var(--quanta-rounded-md);
+    background-color: transparent;
+    color: inherit;
     cursor: pointer;
-    user-select: none;
-    transition:
-      background-color var(--quanta-transition-normal),
-      color var(--quanta-transition-normal),
-      box-shadow var(--quanta-transition-fast);
+    transition: all 0.2s ease;
   }
 
-  /* ─── Size Modifiers ───────────────────────────────────────── */
-  .quanta-btn-sm {
-    padding: calc(var(--quanta-space-2) * 0.75) calc(var(--quanta-space-4) * 0.75);
-    font-size: var(--quanta-comp-fs-sm);
-  }
-  .quanta-btn-lg {
-    padding: calc(var(--quanta-space-2) * 1.25) calc(var(--quanta-space-4) * 1.25);
-    font-size: var(--quanta-comp-fs-lg);
+  /* Variants */
+  .quanta-btn-primary   { background: var(--quanta-primary); color: var(--white); }
+  .quanta-btn-secondary { background: var(--quanta-bg-secondary); color: var(--white); }
+  .quanta-btn-danger    { background: var(--quanta-bg-danger); color: var(--white); }
+
+  .quanta-btn:hover     { opacity: 0.9; }
+  .quanta-btn:disabled  { opacity: 0.5; cursor: not-allowed; }
+
+  /* Size modifiers */
+  .btn-sm { padding: var(--quanta-space-1) var(--quanta-space-2); font-size: var(--quanta-text-xs); }
+  .btn-lg { padding: var(--quanta-space-3) var(--quanta-space-6); font-size: var(--quanta-text-lg); }
+
+  /* Round pill button */
+  .btn-round { border-radius: 9999px; }
+
+  /* Icon button (perfect circle) */
+  .btn-icon {
+    padding: 0.5rem;
+    width: 2.5rem;
+    height: 2.5rem;
+    aspect-ratio: 1 / 1;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
   }
 
-  /* ─── Preset Variants ──────────────────────────────────────── */
-  .quanta-btn-primary {
-    background-color: var(--quanta-bg-primary);
-    color: var(--quanta-text-primary);
-    border-color: var(--quanta-border-primary);
-  }
-  .quanta-btn-secondary {
-    background-color: var(--quanta-bg-secondary);
-    color: var(--quanta-text-secondary);
-    border-color: var(--quanta-border-secondary);
-  }
-  .quanta-btn-success {
-    background-color: var(--quanta-bg-success);
-    color: var(--quanta-text-success);
-    border-color: var(--quanta-border-success);
-  }
-  .quanta-btn-warning {
-    background-color: var(--quanta-bg-warning);
-    color: var(--quanta-text-warning);
-    border-color: var(--quanta-border-warning);
-  }
-  .quanta-btn-danger {
-    background-color: var(--quanta-bg-danger);
-    color: var(--quanta-text-danger);
-    border-color: var(--quanta-border-danger);
-  }
-  .quanta-btn-info {
-    background-color: var(--quanta-bg-info);
-    color: var(--quanta-text-info);
-    border-color: var(--quanta-border-info);
-  }
-
-  /* ─── Interaction States ───────────────────────────────────── */
-  .quanta-btn:hover,
-  .quanta-btn:focus-visible {
-    box-shadow: var(--quanta-shadow-md);
-  }
-  .quanta-btn-primary:hover { background-color: var(--quanta-primary-hover); }
-  .quanta-btn-secondary:hover { background-color: var(--quanta-secondary-hover); }
-  .quanta-btn-success:hover { background-color: var(--quanta-success-hover); }
-  .quanta-btn-warning:hover { background-color: var(--quanta-warning-hover); }
-  .quanta-btn-danger:hover { background-color: var(--quanta-danger-hover); }
-  .quanta-btn-info:hover { background-color: var(--quanta-info-hover); }
-
-  /* ─── Disabled State ───────────────────────────────────────── */
-  .quanta-btn:disabled {
-    opacity: 0.6;
-    cursor: not-allowed;
-    box-shadow: none;
-  }
-
-  /* ─── Dark‑mode Tweaks ─────────────────────────────────────── */
-  html[data-theme="dark"] .quanta-btn {
-    box-shadow: var(--quanta-shadow-lg);
-  }
-
-  /* ─── Mobile-First Styles ──────────────────────────────────── */
-  /* Base styles are for mobile devices */
-  .quanta-btn {
-    font-size: var(--quanta-body-size); /* Default font size for mobile */
-    padding: var(--quanta-space-2) var(--quanta-space-4); /* Default padding for mobile */
-  }
-
-  .quanta-btn-sm {
-    padding: calc(var(--quanta-space-2) * 0.75) calc(var(--quanta-space-4) * 0.75);
-  }
-
-  .quanta-btn-lg {
-    padding: calc(var(--quanta-space-2) * 1.25) calc(var(--quanta-space-4) * 1.25);
-  }
-
-  /* ─── Responsive Adjustments ─────────────────────────────────── */
-  /* 1. Small Tablets (min-width: 600px) */
-  @media (min-width: 600px) {
-    .quanta-btn {
-      font-size: var(--quanta-body-size-md); /* Adjust font size for small tablets */
-      padding: var(--quanta-space-3) var(--quanta-space-5); /* More padding for small tablets */
-    }
-  }
-
-  /* 2. Tablets (min-width: 768px) */
-  @media (min-width: 768px) {
-    .quanta-btn {
-      font-size: var(--quanta-body-size-lg); /* Larger font size on tablets */
-      padding: var(--quanta-space-3) var(--quanta-space-6); /* Adjust padding */
-    }
-
-    .quanta-btn-sm {
-      padding: calc(var(--quanta-space-2) * 0.85) calc(var(--quanta-space-4) * 0.85);
-    }
-    .quanta-btn-lg {
-      padding: calc(var(--quanta-space-2) * 1.35) calc(var(--quanta-space-4) * 1.35);
-    }
-  }
-
-  /* 3. Laptops (min-width: 1024px) */
-  @media (min-width: 1024px) {
-    .quanta-btn {
-      font-size: var(--quanta-body-size-xl); /* Even larger font size for laptops */
-      padding: var(--quanta-space-4) var(--quanta-space-7); /* Increase padding */
-    }
-
-    .quanta-btn-sm {
-      padding: calc(var(--quanta-space-2) * 1) calc(var(--quanta-space-4) * 1);
-    }
-    .quanta-btn-lg {
-      padding: calc(var(--quanta-space-2) * 1.5) calc(var(--quanta-space-4) * 1.5);
-    }
-  }
-
-  /* 4. Large Desktops (min-width: 1280px) */
-  @media (min-width: 1280px) {
-    .quanta-btn {
-      font-size: var(--quanta-body-size-2xl); /* Extra large font size for large desktops */
-      padding: var(--quanta-space-5) var(--quanta-space-8); /* Larger padding for larger screens */
-    }
-  }
-
-  /* 5. Huge Displays (min-width: 1600px) */
-  @media (min-width: 1600px) {
-    .quanta-btn {
-      font-size: var(--quanta-body-size-3xl); /* Font size is massive for huge displays */
-      padding: var(--quanta-space-6) var(--quanta-space-9); /* Super large padding */
-    }
+  html[data-theme="dark"] .quanta-btn-primary {
+    background: var(--quanta-primary-dark);
+    color: var(--quanta-text-light);
   }
 }
-
-/* src/components/card.quanta-css */
+/* src/components/quanta-card.css */
 @layer components.quanta-card {
-  /* ─── Card Container ───────────────────────────────────────── */
   .quanta-card {
-    background-color: var(--quanta-bg-default);
-    color: var(--quanta-text-default);
-    border: var(--quanta-border-width) solid var(--quanta-border-color);
-    border-radius: var(--quanta-rounded);
-    box-shadow: var(--quanta-shadow-sm);
-    padding: var(--quanta-space-4);
     display: flex;
     flex-direction: column;
     gap: var(--quanta-space-4);
-    transition: box-shadow var(--quanta-transition-normal);
+    padding: var(--quanta-space-4);
+    border-radius: var(--quanta-rounded-md);
+    background-color: var(--quanta-bg-default);
+    color: var(--quanta-text-default);
+    box-shadow: var(--quanta-shadow-sm);
+    transition:
+      box-shadow var(--quanta-duration-normal) var(--quanta-ease-default),
+      background-color var(--quanta-duration-normal) var(--quanta-ease-default),
+      border-color var(--quanta-duration-normal) var(--quanta-ease-default);
   }
 
-  /* Hover/Focus lift */
+  /* States */
   .quanta-card:hover,
   .quanta-card:focus-within {
     box-shadow: var(--quanta-shadow-md);
   }
 
-  /* ─── Dark‑mode shadow boost ───────────────────────────────── */
-  html[data-theme="dark"] .quanta-card {
-    box-shadow: var(--quanta-shadow-lg);
+  /* Variants */
+  .quanta-card-outline {
+    border: var(--quanta-border-width) solid var(--quanta-border-color);
+    background-color: var(--quanta-bg-default);
   }
 
-  /* ─── Card Image ───────────────────────────────────────────── */
-  .quanta-card-img-top {
-    width: 100%;
-    height: auto;
-    border-top-left-radius: var(--quanta-rounded);
-    border-top-right-radius: var(--quanta-rounded);
-    object-fit: cover;
+  .quanta-card-solid {
+    background-color: var(--quanta-bg-secondary);
+    color: var(--quanta-text-secondary);
+    border: none;
   }
 
-  /* ─── Card Header ──────────────────────────────────────────── */
+  .quanta-card-shadow {
+    box-shadow: var(--quanta-shadow-md);
+  }
+
+  .quanta-card-sm {
+    padding: var(--quanta-space-2);
+    border-radius: var(--quanta-rounded-sm);
+    gap: var(--quanta-space-2);
+  }
+
+  .quanta-card-rounded {
+    border-radius: var(--quanta-rounded-full);
+  }
+
+  /* Card sections */
   .quanta-card-header {
     font-family: var(--quanta-font-primary);
     font-size: var(--quanta-heading-size);
-    line-height: var(--quanta-heading-line-height);
-    margin-bottom: var(--quanta-space-3);
+    line-height: var(--quanta-leading-snug);
+    margin: 0;
   }
 
-  /* ─── Card Body ────────────────────────────────────────────── */
   .quanta-card-body {
+    flex-grow: 1;
     font-family: var(--quanta-font-secondary);
     font-size: var(--quanta-body-size);
-    line-height: var(--quanta-body-line-height);
-    flex-grow: 1;
+    line-height: var(--quanta-leading-normal);
+    margin: 0;
   }
 
-  /* ─── Card Footer ──────────────────────────────────────────── */
   .quanta-card-footer {
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
     align-items: center;
-    border-top: var(--quanta-border-width) solid var(--quanta-border-color);
-    padding-top: var(--quanta-space-3);
-    margin-top: var(--quanta-space-3);
     gap: var(--quanta-space-2);
+    margin: 0;
   }
 
-  /* ─── Mobile-First Styles ──────────────────────────────────── */
-  /* Base styles for mobile devices */
-  .quanta-card {
-    padding: var(--quanta-space-3);
-  }
-
-  .quanta-card-header {
-    font-size: var(--quanta-heading-size); /* Use smaller heading size on mobile */
-  }
-
-  .quanta-card-body {
-    font-size: var(--quanta-body-size); /* Base font size for body on mobile */
-  }
-
-  .quanta-card-footer {
-    padding-top: var(--quanta-space-2);
-    margin-top: var(--quanta-space-2);
-    gap: var(--quanta-space-2);
-  }
-
-  /* ─── Responsive Adjustments ─────────────────────────────────── */
-  /* 1. Small Tablets (min-width: 600px) */
-  @media (min-width: 600px) {
+  /* Dark mode overrides */
+  @media (prefers-color-scheme: dark) {
     .quanta-card {
-      padding: var(--quanta-space-4); /* More padding for small tablets */
+      background-color: var(--quanta-bg-default);
+      color: var(--quanta-text-default);
     }
-
-    .quanta-card-header {
-      font-size: var(--quanta-heading-size-md); /* Adjust heading size */
+    .quanta-card-outline {
+      border-color: var(--quanta-border-dark);
     }
-
-    .quanta-card-body {
-      font-size: var(--quanta-body-size-md); /* Slightly larger body text */
+    .quanta-card-solid {
+      background-color: var(--quanta-bg-secondary);
+      color: var(--quanta-text-secondary);
     }
-
-    .quanta-card-footer {
-      padding-top: var(--quanta-space-3);
-      margin-top: var(--quanta-space-3);
-    }
-  }
-
-  /* 2. Tablets (min-width: 768px) */
-  @media (min-width: 768px) {
-    .quanta-card {
-      flex-direction: row; /* Align cards in row for tablets and larger */
-      gap: var(--quanta-space-5); /* Increase gap between card sections */
-    }
-
-    .quanta-card-header {
-      font-size: var(--quanta-heading-size-lg); /* Larger font size on tablets */
-    }
-
-    .quanta-card-body {
-      font-size: var(--quanta-body-size-lg); /* Larger body font size */
-    }
-
-    .quanta-card-footer {
-      gap: var(--quanta-space-3); /* Adjust footer gap */
-    }
-  }
-
-  /* 3. Laptops (min-width: 1024px) */
-  @media (min-width: 1024px) {
-    .quanta-card {
-      padding: var(--quanta-space-5); /* Increase padding for laptops */
-    }
-
-    .quanta-card-header {
-      font-size: var(--quanta-heading-size-xl); /* Even larger heading size */
-    }
-
-    .quanta-card-body {
-      font-size: var(--quanta-body-size-xl); /* Larger text size for body */
-    }
-
-    .quanta-card-footer {
-      gap: var(--quanta-space-4); /* Larger gap in the footer */
-    }
-  }
-
-  /* 4. Large Desktops (min-width: 1280px) */
-  @media (min-width: 1280px) {
-    .quanta-card {
-      flex-direction: row; /* Continue row-based layout on larger screens */
-      padding: var(--quanta-space-6); /* Even more padding */
-    }
-
-    .quanta-card-header {
-      font-size: var(--quanta-heading-size-2xl); /* Extra large heading */
-    }
-
-    .quanta-card-body {
-      font-size: var(--quanta-body-size-2xl); /* Extra large body text */
-    }
-
-    .quanta-card-footer {
-      gap: var(--quanta-space-5); /* Even more gap in the footer */
-    }
-  }
-
-  /* 5. Huge Displays (min-width: 1600px) */
-  @media (min-width: 1600px) {
-    .quanta-card {
-      padding: var(--quanta-space-7); /* Super large padding for huge screens */
-    }
-
-    .quanta-card-header {
-      font-size: var(--quanta-heading-size-3xl); /* Huge heading size for very large screens */
-    }
-
-    .quanta-card-body {
-      font-size: var(--quanta-body-size-3xl); /* Very large body text */
-    }
-
-    .quanta-card-footer {
-      gap: var(--quanta-space-6); /* Large gap in footer */
+    .quanta-card-shadow {
+      box-shadow: var(--quanta-shadow-lg);
     }
   }
 }
 /* src/components/carousel.css */
-@layer components.carousel {
-  /* ─── Carousel Container ────────────────────────────────── */
+@import "../components/variables.css";
+
+@layer components.quanta-carousel {
+  /* ─── Carousel Base ─────────────────────────────────── */
   .quanta-carousel {
     position: relative;
     overflow: hidden;
     width: 100%;
-    max-width: 100%;
-    margin: 0 auto;
-    background-color: var(--quanta-bg-default);
-    border-radius: var(--quanta-rounded-md);
+    border-radius: var(--quanta-rounded-lg);
+    background-color: var(--quanta-bg-surface);
+    box-shadow: var(--quanta-shadow-md);
+    transition: box-shadow var(--quanta-duration-fast), background-color var(--quanta-duration-fast);
   }
+  .quanta-carousel:hover { box-shadow: var(--quanta-shadow-lg); }
 
-  /* ─── Carousel Items ────────────────────────────────────── */
+  /* ─── Track & Items ──────────────────────────────────── */
+  .quanta-carousel-track {
+    display: flex;
+    transition: transform 0.6s var(--quanta-ease-default);
+    will-change: transform;
+  }
   .quanta-carousel-item {
-    display: none;
+    flex: 0 0 auto;
     width: 100%;
-    height: auto;
-    transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+    opacity: 0.5;
+    transition: opacity var(--quanta-duration-fast);
+  }
+  .quanta-carousel-item-active {
+    opacity: 1;
   }
 
-  .quanta-carousel-item.active {
-    display: block;
-  }
-
-  .quanta-carousel-item img,
-  .quanta-carousel-item .quanta-carousel-content {
-    width: 100%;
-    height: auto;
-    border-radius: var(--quanta-rounded-md);
-  }
-
-  /* ─── Custom Layouts ────────────────────────────────────── */
-  /* Layout 1: Image Only */
-  .quanta-carousel.layout-image-only .quanta-carousel-item img {
-    width: 100%;
-    object-fit: cover;
-  }
-
-  /* Layout 2: Image + Text */
-  .quanta-carousel.layout-image-text .quanta-carousel-item {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .quanta-carousel.layout-image-text .quanta-carousel-item img {
-    width: 50%;
-    object-fit: cover;
-  }
-
-  .quanta-carousel.layout-image-text .quanta-carousel-item .quanta-carousel-caption {
-    width: 50%;
-    padding: var(--quanta-space-4);
-    color: var(--quanta-text-light);
-    background-color: rgba(0, 0, 0, 0.5);
-  }
-
-  /* Layout 3: Testimonials */
-  .quanta-carousel.layout-testimonial .quanta-carousel-item {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .quanta-carousel.layout-testimonial .quanta-carousel-item .quanta-carousel-caption {
-    text-align: center;
-    padding: var(--quanta-space-4);
-    background-color: rgba(0, 0, 0, 0.7);
-  }
-
-  /* ─── Carousel Controls (Previous & Next) ──────────────── */
+  /* ─── Controls ───────────────────────────────────────── */
   .quanta-carousel-prev,
   .quanta-carousel-next {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background-color: var(--quanta-bg-muted);
-    padding: var(--quanta-space-3);
-    border-radius: 50%;
-    box-shadow: var(--quanta-shadow-lg);
-    color: var(--quanta-text-default);
-    z-index: 10;
-    cursor: pointer;
-    transition: background-color 0.3s ease, transform 0.3s ease;
+    position: absolute; top: 50%;
+    width: var(--quanta-space-10); height: var(--quanta-space-10);
+    display: flex; align-items: center; justify-content: center;
+    background-color: rgba(255,255,255,0.8);
+    border-radius: 50%; box-shadow: var(--quanta-shadow-sm);
+    cursor: pointer; transform: translateY(-50%);
+    transition: background-color var(--quanta-duration-fast), transform var(--quanta-duration-fast);
+    z-index: var(--quanta-z-sm);
   }
-
   .quanta-carousel-prev:hover,
-  .quanta-carousel-next:hover {
-    background-color: var(--quanta-primary);
-    transform: translateY(-50%) scale(1.1);
-  }
+  .quanta-carousel-next:hover { transform: translateY(-50%) scale(1.1); background-color: var(--quanta-primary); color: var(--quanta-text-on-primary); }
+  .quanta-carousel-prev { left: var(--quanta-space-4); }
+  .quanta-carousel-next { right: var(--quanta-space-4); }
 
-  .quanta-carousel-prev {
-    left: var(--quanta-space-4);
-  }
+  /* ─── Indicators ─────────────────────────────────────── */
+  .quanta-carousel-indicators { position: absolute; bottom: var(--quanta-space-4); left: 50%; transform: translateX(-50%); display: flex; gap: var(--quanta-space-2); z-index: var(--quanta-z-sm); }
+  .quanta-carousel-indicator { width: var(--quanta-space-3); height: var(--quanta-space-3); border-radius: 50%; background-color: var(--quanta-border-color); cursor: pointer; transition: background-color var(--quanta-duration-fast), transform var(--quanta-duration-fast); }
+  .quanta-carousel-indicator-active { background-color: var(--quanta-primary); }
+  .quanta-carousel-indicator:hover { transform: scale(1.2); }
 
-  .quanta-carousel-next {
-    right: var(--quanta-space-4);
-  }
-
-  /* ─── Carousel Indicators (Dots) ────────────────────────── */
-  .quanta-carousel-indicators {
-    position: absolute;
-    bottom: var(--quanta-space-4);
-    left: 50%;
-    transform: translateX(-50%);
-    display: flex;
-    gap: var(--quanta-space-2);
-    z-index: 10;
-  }
-
-  .quanta-carousel-indicator {
-    width: var(--quanta-space-2);
-    height: var(--quanta-space-2);
-    border-radius: 50%;
-    background-color: var(--quanta-text-muted);
-    transition: background-color 0.3s ease;
-    cursor: pointer;
-  }
-
-  .quanta-carousel-indicator.active {
-    background-color: var(--quanta-primary);
-  }
-
-  /* ─── Carousel Caption (Text Content) ───────────────────── */
-  .quanta-carousel-caption {
-    position: absolute;
-    bottom: var(--quanta-space-4);
-    left: var(--quanta-space-4);
-    right: var(--quanta-space-4);
-    color: var(--quanta-text-light);
-    font-size: var(--quanta-text-lg);
-    text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.7);
-    z-index: 5;
-  }
-
-  /* ─── Dark Mode ─────────────────────────────────────────── */
-  html[data-theme="dark"] {
-    .quanta-carousel {
-      background-color: var(--quanta-bg-emphasis);
-    }
-
-    .quanta-carousel-prev,
-    .quanta-carousel-next {
-      background-color: var(--quanta-bg-dark);
-      color: var(--quanta-text-light);
-    }
-
-    .quanta-carousel-prev:hover,
-    .quanta-carousel-next:hover {
-      background-color: var(--quanta-primary-dark);
-    }
-
-    .quanta-carousel-indicator {
-      background-color: var(--quanta-text-muted-dark);
-    }
-
-    .quanta-carousel-indicator.active {
-      background-color: var(--quanta-primary-dark);
-    }
-
-    .quanta-carousel-caption {
-      color: var(--quanta-text-light);
-      text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
-    }
-  }
-
-  /* ─── Responsive Media Queries ──────────────────────────── */
-  @media (max-width: 640px) {
-    .quanta-carousel-prev,
-    .quanta-carousel-next {
-      padding: var(--quanta-space-2);
-    }
-
-    .quanta-carousel-caption {
-      font-size: var(--quanta-text-sm);
-    }
-
-    .quanta-carousel.layout-image-text .quanta-carousel-item img {
-      width: 100%;
-    }
-
-    .quanta-carousel.layout-image-text .quanta-carousel-item .quanta-carousel-caption {
-      width: 100%;
-    }
-  }
-
-  @media (min-width: 641px) and (max-width: 768px) {
-    .quanta-carousel-prev,
-    .quanta-carousel-next {
-      padding: var(--quanta-space-3);
-    }
-  }
-
-  @media (min-width: 769px) and (max-width: 1024px) {
-    .quanta-carousel-prev,
-    .quanta-carousel-next {
-      padding: var(--quanta-space-3);
-    }
-  }
-
-  @media (min-width: 1025px) {
-    .quanta-carousel-prev,
-    .quanta-carousel-next {
-      padding: var(--quanta-space-4);
-    }
-  }
+  /* ─── Dark Mode ───────────────────────────────────────── */
+  html[data-theme="dark"] .quanta-carousel { background-color: var(--quanta-bg-dark-surface); box-shadow: var(--quanta-shadow-lg); }
+  html[data-theme="dark"] .quanta-carousel-prev,
+  html[data-theme="dark"] .quanta-carousel-next { background-color: rgba(0,0,0,0.6); color: var(--quanta-text-light); }
+  html[data-theme="dark"] .quanta-carousel-prev:hover,
+  html[data-theme="dark"] .quanta-carousel-next:hover { background-color: var(--quanta-primary-dark); }
+  html[data-theme="dark"] .quanta-carousel-indicator { background-color: var(--quanta-border-dark); }
+  html[data-theme="dark"] .quanta-carousel-indicator-active { background-color: var(--quanta-primary-dark); }
 }
-/* src/components/card.quanta-css */
+
+/* src/components/quanta-card.css */
 @layer components.quanta-card {
-  /* ─── Card Container ───────────────────────────────────────── */
   .quanta-card {
-    background-color: var(--quanta-bg-default);
-    color: var(--quanta-text-default);
-    border: var(--quanta-border-width) solid var(--quanta-border-color);
-    border-radius: var(--quanta-rounded);
-    box-shadow: var(--quanta-shadow-sm);
-    padding: var(--quanta-space-4);
     display: flex;
     flex-direction: column;
     gap: var(--quanta-space-4);
-    transition: box-shadow var(--quanta-transition-normal);
+    padding: var(--quanta-space-4);
+    border-radius: var(--quanta-rounded-md);
+    background-color: var(--quanta-bg-default);
+    color: var(--quanta-text-default);
+    box-shadow: var(--quanta-shadow-sm);
+    transition:
+      box-shadow var(--quanta-duration-normal) var(--quanta-ease-default),
+      background-color var(--quanta-duration-normal) var(--quanta-ease-default),
+      border-color var(--quanta-duration-normal) var(--quanta-ease-default);
   }
 
-  /* Hover/Focus lift */
+  /* States */
   .quanta-card:hover,
   .quanta-card:focus-within {
     box-shadow: var(--quanta-shadow-md);
   }
 
-  /* ─── Dark‑mode shadow boost ───────────────────────────────── */
-  html[data-theme="dark"] .quanta-card {
-    box-shadow: var(--quanta-shadow-lg);
+  /* Variants */
+  .quanta-card-outline {
+    border: var(--quanta-border-width) solid var(--quanta-border-color);
+    background-color: var(--quanta-bg-default);
   }
 
-  /* ─── Card Image ───────────────────────────────────────────── */
-  .quanta-card-img-top {
-    width: 100%;
-    height: auto;
-    border-top-left-radius: var(--quanta-rounded);
-    border-top-right-radius: var(--quanta-rounded);
-    object-fit: cover;
+  .quanta-card-solid {
+    background-color: var(--quanta-bg-secondary);
+    color: var(--quanta-text-secondary);
+    border: none;
   }
 
-  /* ─── Card Header ──────────────────────────────────────────── */
+  .quanta-card-shadow {
+    box-shadow: var(--quanta-shadow-md);
+  }
+
+  .quanta-card-sm {
+    padding: var(--quanta-space-2);
+    border-radius: var(--quanta-rounded-sm);
+    gap: var(--quanta-space-2);
+  }
+
+  .quanta-card-rounded {
+    border-radius: var(--quanta-rounded-full);
+  }
+
+  /* Card sections */
   .quanta-card-header {
     font-family: var(--quanta-font-primary);
     font-size: var(--quanta-heading-size);
-    line-height: var(--quanta-heading-line-height);
-    margin-bottom: var(--quanta-space-3);
+    line-height: var(--quanta-leading-snug);
+    margin: 0;
   }
 
-  /* ─── Card Body ────────────────────────────────────────────── */
   .quanta-card-body {
+    flex-grow: 1;
     font-family: var(--quanta-font-secondary);
     font-size: var(--quanta-body-size);
-    line-height: var(--quanta-body-line-height);
-    flex-grow: 1;
+    line-height: var(--quanta-leading-normal);
+    margin: 0;
   }
 
-  /* ─── Card Footer ──────────────────────────────────────────── */
   .quanta-card-footer {
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
     align-items: center;
-    border-top: var(--quanta-border-width) solid var(--quanta-border-color);
-    padding-top: var(--quanta-space-3);
-    margin-top: var(--quanta-space-3);
     gap: var(--quanta-space-2);
+    margin: 0;
   }
 
-  /* ─── Mobile-First Styles ──────────────────────────────────── */
-  /* Base styles for mobile devices */
-  .quanta-card {
-    padding: var(--quanta-space-3);
-  }
-
-  .quanta-card-header {
-    font-size: var(--quanta-heading-size); /* Use smaller heading size on mobile */
-  }
-
-  .quanta-card-body {
-    font-size: var(--quanta-body-size); /* Base font size for body on mobile */
-  }
-
-  .quanta-card-footer {
-    padding-top: var(--quanta-space-2);
-    margin-top: var(--quanta-space-2);
-    gap: var(--quanta-space-2);
-  }
-
-  /* ─── Responsive Adjustments ─────────────────────────────────── */
-  /* 1. Small Tablets (min-width: 600px) */
-  @media (min-width: 600px) {
+  /* Dark mode overrides */
+  @media (prefers-color-scheme: dark) {
     .quanta-card {
-      padding: var(--quanta-space-4); /* More padding for small tablets */
+      background-color: var(--quanta-bg-default);
+      color: var(--quanta-text-default);
     }
-
-    .quanta-card-header {
-      font-size: var(--quanta-heading-size-md); /* Adjust heading size */
+    .quanta-card-outline {
+      border-color: var(--quanta-border-dark);
     }
-
-    .quanta-card-body {
-      font-size: var(--quanta-body-size-md); /* Slightly larger body text */
+    .quanta-card-solid {
+      background-color: var(--quanta-bg-secondary);
+      color: var(--quanta-text-secondary);
     }
-
-    .quanta-card-footer {
-      padding-top: var(--quanta-space-3);
-      margin-top: var(--quanta-space-3);
-    }
-  }
-
-  /* 2. Tablets (min-width: 768px) */
-  @media (min-width: 768px) {
-    .quanta-card {
-      flex-direction: row; /* Align cards in row for tablets and larger */
-      gap: var(--quanta-space-5); /* Increase gap between card sections */
-    }
-
-    .quanta-card-header {
-      font-size: var(--quanta-heading-size-lg); /* Larger font size on tablets */
-    }
-
-    .quanta-card-body {
-      font-size: var(--quanta-body-size-lg); /* Larger body font size */
-    }
-
-    .quanta-card-footer {
-      gap: var(--quanta-space-3); /* Adjust footer gap */
-    }
-  }
-
-  /* 3. Laptops (min-width: 1024px) */
-  @media (min-width: 1024px) {
-    .quanta-card {
-      padding: var(--quanta-space-5); /* Increase padding for laptops */
-    }
-
-    .quanta-card-header {
-      font-size: var(--quanta-heading-size-xl); /* Even larger heading size */
-    }
-
-    .quanta-card-body {
-      font-size: var(--quanta-body-size-xl); /* Larger text size for body */
-    }
-
-    .quanta-card-footer {
-      gap: var(--quanta-space-4); /* Larger gap in the footer */
-    }
-  }
-
-  /* 4. Large Desktops (min-width: 1280px) */
-  @media (min-width: 1280px) {
-    .quanta-card {
-      flex-direction: row; /* Continue row-based layout on larger screens */
-      padding: var(--quanta-space-6); /* Even more padding */
-    }
-
-    .quanta-card-header {
-      font-size: var(--quanta-heading-size-2xl); /* Extra large heading */
-    }
-
-    .quanta-card-body {
-      font-size: var(--quanta-body-size-2xl); /* Extra large body text */
-    }
-
-    .quanta-card-footer {
-      gap: var(--quanta-space-5); /* Even more gap in the footer */
-    }
-  }
-
-  /* 5. Huge Displays (min-width: 1600px) */
-  @media (min-width: 1600px) {
-    .quanta-card {
-      padding: var(--quanta-space-7); /* Super large padding for huge screens */
-    }
-
-    .quanta-card-header {
-      font-size: var(--quanta-heading-size-3xl); /* Huge heading size for very large screens */
-    }
-
-    .quanta-card-body {
-      font-size: var(--quanta-body-size-3xl); /* Very large body text */
-    }
-
-    .quanta-card-footer {
-      gap: var(--quanta-space-6); /* Large gap in footer */
+    .quanta-card-shadow {
+      box-shadow: var(--quanta-shadow-lg);
     }
   }
 }
@@ -2773,193 +2328,123 @@ html[data-theme="dark"] {
 }
 
 /* src/components/datepicker.css */
-@layer components.datepicker {
+@import "../components/variables.css";
 
-  /* ─── Base Date Picker Styles ──────────────────────────────────── */
+@layer components.datepicker {
   .quanta-datepicker {
     position: relative;
     display: inline-block;
     width: 100%;
-    font-family: var(--quanta-font-family);
+    font-family: var(--quanta-font-secondary);
   }
 
   /* Input Field */
   .quanta-datepicker input {
     width: 100%;
-    padding: 10px;
-    border: 1px solid var(--quanta-border-muted);
+    padding: var(--quanta-space-3);
+    border: var(--quanta-border-width) solid var(--quanta-border-color);
     border-radius: var(--quanta-rounded-sm);
-    background-color: var(--quanta-bg-input);
-    color: var(--quanta-text-primary);
-    font-size: var(--quanta-font-size-md);
-    transition: border-color 0.3s ease;
+    background-color: var(--quanta-bg-surface);
+    color: var(--quanta-text-default);
+    font-size: var(--quanta-text-base);
+    transition: border-color var(--quanta-transition-fast), box-shadow var(--quanta-transition-fast);
   }
-
   .quanta-datepicker input:focus {
-    border-color: var(--quanta-bg-primary);
+    border-color: var(--quanta-primary);
+    box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.3);
     outline: none;
   }
 
-  /* Input Focused */
-  .quanta-datepicker input:focus::placeholder {
-    color: transparent;
-  }
-
-  /* Date Picker Popup */
+  /* Popup Panel */
   .quanta-datepicker-popup {
     display: none;
     position: absolute;
-    top: 100%;
+    top: calc(100% + var(--quanta-space-2));
     left: 0;
-    z-index: 10;
-    background-color: var(--quanta-bg-primary);
-    border-radius: var(--quanta-rounded-sm);
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    padding: 10px;
+    z-index: var(--quanta-z-lg);
+    background-color: var(--quanta-bg-default);
+    border-radius: var(--quanta-rounded-md);
+    box-shadow: var(--quanta-shadow-lg);
+    padding: var(--quanta-space-4);
     width: 100%;
+    max-width: 300px;
   }
-
   .quanta-datepicker.active .quanta-datepicker-popup {
     display: block;
   }
 
   /* Calendar Grid */
-  .quanta-datepicker-popup .quanta-calendar {
+  .quanta-calendar {
     display: grid;
     grid-template-columns: repeat(7, 1fr);
-    gap: 5px;
+    gap: var(--quanta-space-2);
+    text-align: center;
   }
 
-  /* Calendar Days */
-  .quanta-datepicker-popup .quanta-calendar .quanta-day {
-    width: 40px;
-    height: 40px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  /* Day Cells */
+  .quanta-day {
+    padding: var(--quanta-space-2);
     border-radius: var(--quanta-rounded-sm);
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    transition: background-color var(--quanta-transition-fast);
   }
-
-  .quanta-datepicker-popup .quanta-calendar .quanta-day:hover {
-    background-color: var(--quanta-bg-muted);
+  .quanta-day:hover {
+    background-color: var(--quanta-bg-emphasis);
   }
-
-  .quanta-datepicker-popup .quanta-calendar .quanta-day.selected {
-    background-color: var(--quanta-bg-primary);
-    color: var(--quanta-text-white);
+  .quanta-day.selected {
+    background-color: var(--quanta-primary);
+    color: var(--quanta-text-on-primary);
   }
-
-  /* Day Numbers */
-  .quanta-datepicker-popup .quanta-calendar .quanta-day.disabled {
-    background-color: var(--quanta-bg-light);
+  .quanta-day.disabled {
+    color: var(--quanta-text-muted);
     cursor: not-allowed;
   }
 
-  /* Navigation Buttons (Previous & Next Month) */
-  .quanta-datepicker-popup .quanta-navigation {
+  /* Nav Buttons */
+  .quanta-navigation {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 10px;
+    margin-bottom: var(--quanta-space-3);
   }
-
-  .quanta-datepicker-popup .quanta-navigation button {
-    background-color: transparent;
-    border: none;
-    font-size: var(--quanta-font-size-md);
-    color: var(--quanta-text-primary);
+  .quanta-navigation button {
+    all: unset;
     cursor: pointer;
-    padding: 5px;
+    padding: var(--quanta-space-2);
+    border-radius: var(--quanta-rounded);
+    transition: background-color var(--quanta-transition-fast);
+  }
+  .quanta-navigation button:hover {
+    background-color: var(--quanta-bg-emphasis);
   }
 
-  .quanta-datepicker-popup .quanta-navigation button:hover {
-    color: var(--quanta-bg-primary);
+  /* Dark Mode */
+  html[data-theme="dark"] .quanta-datepicker input {
+    background-color: var(--quanta-bg-dark-surface);
+    color: var(--quanta-text-light);
+    border-color: var(--quanta-border-dark);
+  }
+  html[data-theme="dark"] .quanta-datepicker-popup {
+    background-color: var(--quanta-bg-dark-default);
+    box-shadow: var(--quanta-shadow-xl);
+  }
+  html[data-theme="dark"] .quanta-day:hover {
+    background-color: var(--quanta-bg-dark-emphasis);
+  }
+  html[data-theme="dark"] .quanta-day.selected {
+    background-color: var(--quanta-primary);
+    color: var(--quanta-text-on-primary);
   }
 
-  /* ─── Dark Mode Support ─────────────────────────────────────────── */
-  html[data-theme="dark"] {
-    .quanta-datepicker input {
-      background-color: var(--quanta-bg-dark-input);
-      color: var(--quanta-text-light);
-      border: 1px solid var(--quanta-border-dark);
+  /* Responsive */
+  @media (max-width: var(--quanta-screen-sm)) {
+    .quanta-calendar {
+      gap: var(--quanta-space-1);
     }
-
-    .quanta-datepicker-popup {
-      background-color: var(--quanta-bg-dark-primary);
-    }
-
-    .quanta-datepicker-popup .quanta-calendar .quanta-day:hover {
-      background-color: var(--quanta-bg-dark-muted);
-    }
-
-    .quanta-datepicker-popup .quanta-calendar .quanta-day.selected {
-      background-color: var(--quanta-bg-dark-primary);
-      color: var(--quanta-text-dark);
-    }
-
-    .quanta-datepicker-popup .quanta-navigation button {
-      color: var(--quanta-text-light);
-    }
-  }
-
-  /* ─── Responsive Design (5 Breakpoints) ──────────────────────────── */
-  @media (max-width: 640px) {
-    .quanta-datepicker input {
-      padding: 8px;
-    }
-
-    .quanta-datepicker-popup .quanta-calendar .quanta-day {
-      width: 30px;
-      height: 30px;
-    }
-  }
-
-  @media (min-width: 641px) and (max-width: 768px) {
-    .quanta-datepicker input {
-      padding: 9px;
-    }
-
-    .quanta-datepicker-popup .quanta-calendar .quanta-day {
-      width: 35px;
-      height: 35px;
-    }
-  }
-
-  @media (min-width: 769px) and (max-width: 1024px) {
-    .quanta-datepicker input {
-      padding: 10px;
-    }
-
-    .quanta-datepicker-popup .quanta-calendar .quanta-day {
-      width: 40px;
-      height: 40px;
-    }
-  }
-
-  @media (min-width: 1025px) and (max-width: 1280px) {
-    .quanta-datepicker input {
-      padding: 11px;
-    }
-
-    .quanta-datepicker-popup .quanta-calendar .quanta-day {
-      width: 45px;
-      height: 45px;
-    }
-  }
-
-  @media (min-width: 1281px) {
-    .quanta-datepicker input {
-      padding: 12px;
-    }
-
-    .quanta-datepicker-popup .quanta-calendar .quanta-day {
-      width: 50px;
-      height: 50px;
+    .quanta-day {
+      padding: var(--quanta-space-1);
     }
   }
 }
-
 /* src/components/dropdowns.css */
 @layer components.dropdowns {
   /* ─── Base Dropdown Styling ──────────────────────────────────── */

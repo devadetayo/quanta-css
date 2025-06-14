@@ -1,152 +1,109 @@
 /* src/components/accordion.css */
+@import "../components/variables.css";
+
 @layer components.quanta-accordion {
-  /* ─── Accordion Container ─────────────────────────────────── */
+  /* ─── Accordion Wrapper ───────────────────────────────── */
   .quanta-accordion {
     display: flex;
     flex-direction: column;
-    gap: var(--quanta-space-2);
+    gap: var(--quanta-space-4);
     width: 100%;
   }
 
-  /* ─── Accordion Item ──────────────────────────────────────── */
+  /* ─── Accordion Card Style ────────────────────────────── */
   .quanta-accordion-item {
-    border: var(--quanta-border-width) solid var(--quanta-border-color);
-    border-radius: var(--quanta-rounded);
+    background-color: var(--quanta-bg-default);
+    border-radius: var(--quanta-rounded-lg);
+    box-shadow: var(--quanta-shadow-md);
     overflow: hidden;
-    width: 100%; /* Ensure items are full-width */
+    transition: box-shadow var(--quanta-duration-fast) var(--quanta-ease-default);
   }
 
-  /* ─── Accordion Header ────────────────────────────────────── */
+  .quanta-accordion-item:hover {
+    box-shadow: var(--quanta-shadow-lg);
+  }
+
+  /* ─── Accordion Header ───────────────────────────────── */
   .quanta-accordion-header {
-    background-color: var(--quanta-bg-surface);
-    color: var(--quanta-text-default);
-    padding: var(--quanta-space-3) var(--quanta-space-4); /* Mobile-first padding */
+    width: 100%;
+    padding: var(--quanta-space-4) var(--quanta-space-6);
     font-family: var(--quanta-font-primary);
     font-size: var(--quanta-body-size);
-    cursor: pointer;
+    color: var(--quanta-text-default);
+    background-color: var(--quanta-bg-surface);
     display: flex;
     justify-content: space-between;
     align-items: center;
+    cursor: pointer;
     user-select: none;
-    transition: background-color var(--quanta-transition-fast);
-    width: 100%;
+    transition: background-color var(--quanta-duration-fast), color var(--quanta-duration-fast);
   }
 
-  .quanta-accordion-header:hover {
+  .quanta-accordion-header:hover,
+  .quanta-accordion-header[aria-expanded="true"] {
     background-color: var(--quanta-bg-emphasis);
+    color: var(--quanta-text-default);
   }
 
-  /* ─── Accordion Content ───────────────────────────────────── */
-  .quanta-accordion-content {
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height var(--quanta-transition-normal), padding var(--quanta-transition-fast);
-    padding: 0 var(--quanta-space-4);
-    background-color: var(--quanta-bg-default);
+  .quanta-accordion-header:focus {
+    outline: var(--quanta-ring-width) solid var(--quanta-primary);
+    outline-offset: var(--quanta-space-1);
   }
 
-  .quanta-accordion-content.open {
-    padding: var(--quanta-space-3) var(--quanta-space-4);
-    max-height: 100vh; /* large enough to show content */
-  }
-
-  /* ─── Icon Toggles ─────────────────────────────────────────── */
+  /* Icon rotation */
   .quanta-accordion-header .icon {
-    transition: transform var(--quanta-transition-fast);
+    transition: transform var(--quanta-duration-fast);
   }
-
-  .quanta-accordion-header.quanta-active .icon {
+  .quanta-accordion-header[aria-expanded="true"] .icon {
     transform: rotate(180deg);
   }
 
-  /* ─── Dark Mode Tweaks ─────────────────────────────────────── */
+  /* ─── Accordion Content ──────────────────────────────── */
+  .quanta-accordion-content {
+    max-height: 0;
+    overflow: hidden;
+    padding: 0 var(--quanta-space-6);
+    background-color: var(--quanta-bg-default);
+    transition: max-height var(--quanta-duration-normal) var(--quanta-ease-default),
+                padding var(--quanta-duration-fast);
+  }
+
+  .quanta-accordion-content[aria-hidden="false"] {
+    padding: var(--quanta-space-4) var(--quanta-space-6);
+    max-height: 100vh;
+  }
+
+  /* ─── Responsive Adjustments ─────────────────────────── */
+  @media (min-width: var(--quanta-screen-md)) {
+    .quanta-accordion-header {
+      padding: var(--quanta-space-5) var(--quanta-space-8);
+      font-size: var(--quanta-text-lg);
+    }
+    .quanta-accordion-content {
+      padding: 0 var(--quanta-space-8);
+    }
+    .quanta-accordion-content[aria-hidden="false"] {
+      padding: var(--quanta-space-5) var(--quanta-space-8);
+    }
+  }
+
+  @media (min-width: var(--quanta-screen-lg)) {
+    .quanta-accordion-header {
+      font-size: var(--quanta-text-xl);
+      padding: var(--quanta-space-6) var(--quanta-space-10);
+    }
+  }
+
+  /* ─── Dark Mode ──────────────────────────────────────── */
+  html[data-theme="dark"] .quanta-accordion-item {
+    background-color: var(--quanta-bg-secondary);
+    box-shadow: var(--quanta-shadow-sm);
+  }
   html[data-theme="dark"] .quanta-accordion-header {
     background-color: var(--quanta-bg-surface);
     color: var(--quanta-text-default);
   }
-
   html[data-theme="dark"] .quanta-accordion-content {
-    background-color: var(--quanta-bg-default);
-  }
-
-  /* ─── Mobile-First Styles ──────────────────────────────────── */
-  /* Base styles are for mobile devices */
-  .quanta-accordion-header {
-    font-size: var(--quanta-body-size); /* Default font size for mobile */
-    padding: var(--quanta-space-3) var(--quanta-space-4); /* Padding for mobile */
-  }
-
-  .quanta-accordion-content {
-    padding: 0 var(--quanta-space-4); /* Padding for mobile */
-  }
-
-  /* ─── Responsive Adjustments ─────────────────────────────────── */
-  /* Tablet and larger screens (min-width: 768px) */
-  @media (min-width: 768px) {
-    .quanta-accordion-header {
-      padding: var(--quanta-space-3) var(--quanta-space-5); /* Larger padding for tablets */
-      font-size: var(--quanta-body-size-md); /* Slightly larger font on tablets */
-    }
-
-    .quanta-accordion-content.open {
-      padding: var(--quanta-space-3) var(--quanta-space-5); /* Increase padding on larger screens */
-    }
-
-    .quanta-accordion-item {
-      margin-bottom: var(--quanta-space-3); /* Larger space between accordion items */
-    }
-  }
-
-  /* Larger screens (min-width: 1024px) */
-  @media (min-width: 1024px) {
-    .quanta-accordion-header {
-      font-size: var(--quanta-body-size-lg); /* Increase font size on large screens */
-      padding: var(--quanta-space-4) var(--quanta-space-6); /* Add more padding on larger screens */
-    }
-
-    .quanta-accordion-content.open {
-      padding: var(--quanta-space-4) var(--quanta-space-6); /* Add more padding */
-    }
-
-    .quanta-accordion-item {
-      margin-bottom: var(--quanta-space-4); /* More space on larger screens */
-    }
-  }
-
-  /* Extra Large screens (min-width: 1280px) */
-  @media (min-width: 1280px) {
-    .quanta-accordion-header {
-      font-size: var(--quanta-body-size-xl); /* Even larger font size on extra large screens */
-      padding: var(--quanta-space-5) var(--quanta-space-8); /* Adjust padding for larger screens */
-    }
-
-    .quanta-accordion-content.open {
-      padding: var(--quanta-space-5) var(--quanta-space-8); /* More padding for larger screens */
-    }
-
-    .quanta-accordion-item {
-      margin-bottom: var(--quanta-space-5); /* Larger space on extra large screens */
-    }
-  }
-
-  /* ─── Accessibility & Usability Enhancements ───────────────── */
-  .quanta-accordion-header:focus {
-    outline: 2px solid var(--quanta-primary); /* Focus state for accessibility */
-    background-color: var(--quanta-bg-emphasis);
-  }
-
-  .quanta-accordion-header[aria-expanded="true"] {
-    background-color: var(--quanta-bg-emphasis);
-  }
-
-  /* ─── Additional Utility Support ──────────────────────────── */
-  /* Allow utility-based control for padding and margins */
-  .quanta-accordion-header {
-    @apply p-4; /* Utility class for padding */
-    @apply mb-2; /* Margin-bottom utility */
-  }
-
-  .quanta-accordion-content {
-    @apply p-4; /* Utility class for padding */
+    background-color: var(--quanta-bg-secondary);
   }
 }

@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="ligth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Quanta CSS – Utility Meets Zen</title>
+  <link rel="stylesheet" href="src/components/index.css">
+</head>
+<body class="hero-bg text-slate-500 dark-text-slate-300 font-size-4 bg-white dark-bg-slate-900 min-h-100vh h-auto overflow-x-hidden d-flex flex-col items-center justify-center font-inter">
+
+    <div class="container mx-auto px-4 py-8">
+        <h1 class="text-center text-5xl font-bold mb-6">Quanta CSS</h1>
+        <p class="text-center mb-8">A utility-first CSS framework with semantic tokens and accessible components.</p>
+        
+        <!--<div class="text-center mb-8 mx-auto">
+
+            Include your Quanta CSS and accordion.css in <head>
+
+            <div class="quanta-accordion mt-12" id="faq">
+            <div class="quanta-accordion-item">
+                <button
+                class="quanta-accordion-header"
+                aria-expanded="false"
+                aria-controls="content-1"
+                id="header-1"
+                onclick="toggleAccordion(this)"
+                >
+                <span>What is Quanta CSS?</span>
+                <svg class="icon" width="16" height="16" viewBox="0 0 24 24">
+                    <path d="M6 9l6 6 6-6" stroke="currentColor" fill="none"/>
+                </svg>
+                </button>
+                <div
+                class="quanta-accordion-content"
+                id="content-1"
+                role="region"
+                aria-labelledby="header-1"
+                aria-hidden="true"
+                >
+                <p>Quanta CSS is a utility-first framework with semantic tokens and accessible components.</p>
+                </div>
+            </div>
+
+            <div class="quanta-accordion-item">
+                <button
+                class="quanta-accordion-header"
+                aria-expanded="false"
+                aria-controls="content-2"
+                id="header-2"
+                onclick="toggleAccordion(this)"
+                >
+                <span>How do I install it?</span>
+                <svg class="icon" width="16" height="16" viewBox="0 0 24 24">
+                    <path d="M6 9l6 6 6-6" stroke="currentColor" fill="none"/>
+                </svg>
+                </button>
+                <div
+                class="quanta-accordion-content"
+                id="content-2"
+                role="region"
+                aria-labelledby="header-2"
+                aria-hidden="true"
+                >
+                <p>Just include the CSS file and use the classes in your markup—no JS bundle required.</p>
+                </div>
+            </div>
+            </div>
+
+            <div class="quanta-alert quanta-alert-error" role="alert">
+                <svg>your icon</svg>
+                <span>Your changes have been saved!</span>
+            </div>
+
+            <img
+            src="https://myassetra.com.ng/assets/images/avatars/male.png"
+            alt="User name"
+            class="quanta-avatar quanta-avatar-lg"
+            />
+
+            Avatar Group
+            <div class="quanta-avatar-group">
+                <img src="https://myassetra.com.ng/assets/images/avatars/male.png" alt="A" class="quanta-avatar quanta-avatar-sm" />
+                <img src="https://myassetra.com.ng/assets/images/avatars/male.png" alt="B" class="quanta-avatar quanta-avatar-sm" />
+                <img src="https://myassetra.com.ng/assets/images/avatars/male.png" alt="C" class="quanta-avatar quanta-avatar-sm" />
+            </div>
+
+            Base Badges
+            <span class="quanta-badge">Default</span>
+            <span class="quanta-badge quanta-badge-sm">Small</span>
+            <span class="quanta-badge quanta-badge-md">Medium</span>
+            <span class="quanta-badge quanta-badge-lg">Large</span>
+
+            Semantic Variants
+            <span class="quanta-badge quanta-badge-primary">Primary</span>
+            <span class="quanta-badge quanta-badge-info">Info</span>
+            <span class="quanta-badge quanta-badge-success">Success</span>
+            <span class="quanta-badge quanta-badge-warning">Warning</span>
+            <span class="quanta-badge quanta-badge-danger">Error</span>
+
+            Extended Palette
+            <span class="quanta-badge quanta-badge-gray">Gray</span>
+            <span class="quanta-badge quanta-badge-gray-outline">Gray Outline</span>
+            <span class="quanta-badge quanta-badge-purple">Purple</span>
+            <span class="quanta-badge quanta-badge-pink">Pink</span>
+            <span class="quanta-badge quanta-badge-cyan">Cyan</span>
+
+            Outline Variants
+            <span class="quanta-badge quanta-badge-primary-outline">Primary Outline</span>
+            <span class="quanta-badge quanta-badge-gray-outline quanta-badge-sm">Small Gray Outline</span>
+
+            <nav aria-label="Breadcrumb">
+                <ol class="quanta-breadcrumb">
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/docs">Docs</a></li>
+                    <li><a href="/docs/components">Components</a></li>
+                    <li><span class="is-current">Breadcrumb</span></li>
+                </ol>
+            </nav>
+
+            Primary Button
+            Default button
+            <button class="quanta-btn quanta-btn-primary">Continue</button>
+
+            Pill style
+            <button class="quanta-btn quanta-btn-secondary btn-round">Subscribe</button>
+
+            Small button
+            <button class="quanta-btn quanta-btn-danger btn-sm">Delete</button>
+
+            Large button
+            <button class="quanta-btn quanta-btn-primary btn-lg">Get Started</button>
+
+            Icon button
+            <button class="quanta-btn btn-icon quanta-btn-primary">
+            <svg width="16" height="16" fill="currentColor">...</svg>
+            </button>
+            <div class="d-none gap-4">
+                Light mode outline + shadow
+                <article class="quanta-card quanta-card-outline quanta-card-shadow">
+                    <h2 class="quanta-card__header">Profile Overview</h2>
+                    <p class="quanta-card__body">
+                        John Doe is a full-stack dev with a passion for CSS design systems.
+                    </p>
+                    <footer class="quanta-card__footer">
+                        <button>Follow</button>
+                        <button>Message</button>
+                    </footer>
+                </article>
+
+                Dark mode solid + rounded + small
+                <html data-theme="dark">
+                    <article class="quanta-card quanta-card-solid">
+                        <h2 class="quanta-card-header">Quick Note</h2>
+                        <p class="quanta-card-body">
+                        This card adapts to dark mode automatically.
+                        </p>
+                        <footer class="quanta-card-footer">
+                        <button>Dismiss</button>
+                        </footer>
+                    </article>
+                </html>
+            </div>
+
+            Image Only Carousel
+            <div class="quanta-carousel quanta-carousel-layout-image-only">
+                <div class="quanta-carousel-item quanta-carousel-item-active">
+                <img src="https://myassetra.com.ng/assets/images/avatars/male.png" alt="Slide 1">
+                </div>
+                <div class="quanta-carousel-item">
+                <img src="https://myassetra.com.ng/assets/images/avatars/male.png" alt="Slide 2">
+                </div>
+                <button class="quanta-carousel-prev">‹</button>
+                <button class="quanta-carousel-next">›</button>
+                <div class="quanta-carousel-indicators">
+                <span class="quanta-carousel-indicator-active"></span>
+                <span class="quanta-carousel-indicator"></span>
+                </div>
+            </div>
+
+            Image + Text Carousel
+            <div class="quanta-carousel quanta-carousel-layout-image-text">
+                <div class="quanta-carousel-item quanta-carousel-item-active">
+                <img src="https://myassetra.com.ng/assets/images/avatars/male.png" alt="Feature">
+                <div class="quanta-carousel-caption">
+                    <h3>Feature Title</h3>
+                    <p>Description text goes here.</p>
+                </div>
+                </div>
+
+                <div class="quanta-carousel-item">
+                <img src="https://myassetra.com.ng/assets/images/avatars/male.png" alt="Feature">
+                <div class="quanta-carousel-caption">
+                    <h3>Feature Title</h3>
+                    <p>Description text goes here.</p>
+                </div>
+                </div>
+                Controls + Indicators as above
+            </div>
+            <div class="quanta-carousel quanta-carousel-layout-testimonial">
+                <div class="quanta-carousel-item quanta-carousel-item-active">
+                <div class="quanta-carousel-caption">
+                    <p>"This product changed my life!"</p>
+                    <footer>- Happy Customer</footer>
+                </div>
+                </div>
+
+                <div class="quanta-carousel-item">
+                <div class="quanta-carousel-caption">
+                    <p>"This product changed my life!"</p>
+                    <footer>- Happy Customer</footer>
+                </div>
+                </div>
+                More items, controls, indicators
+            </div>
+
+            <div class="quanta-datepicker" id="dp1">
+                <input type="text" placeholder="Select date" readonly />
+                <div class="quanta-datepicker-popup">
+                    <div class="quanta-navigation">
+                    <button class="prev">&lt;</button>
+                    <span>June 2025</span>
+                    <button class="next">&gt;</button>
+                    </div>
+                    <div class="quanta-calendar">
+                    generate .quanta-day elements
+                    <div class="quanta-day disabled">1</div>
+                    <div class="quanta-day">2</div>
+                    ...
+                    <div class="quanta-day selected">15</div>
+                    ...
+                    </div>
+                </div>
+            </div>
+
+            <script>
+            const dp = document.getElementById('dp1');
+            const input = dp.querySelector('input');
+            input.addEventListener('click', () => dp.classList.toggle('active'));
+            dp.querySelectorAll('.quanta-day:not(.disabled)').forEach(day =>
+                day.addEventListener('click', () => {
+                dp.querySelector('.selected')?.classList.remove('selected');
+                day.classList.add('selected');
+                input.value = day.textContent + ' June 2025';
+                dp.classList.remove('active');
+                })
+            );
+            // prev/next month handlers omitted for brevity
+            </script>
+
+
+        </div>--->
+
+        <div class="quanta-carousel quanta-carousel-testimonial" id="testimonialCarousel">
+            <div class="quanta-carousel-item quanta-carousel-item-active">
+                <p class="quanta-carousel-caption">
+                "This product completely changed my workflow. Highly recommend!"
+                </p>
+                <p class="testimonial-author">— Alex Johnson, CEO</p>
+            </div>
+            <div class="quanta-carousel-item">
+                <p class="quanta-carousel-caption">
+                "Fantastic UX and support team, made integration a breeze."
+                </p>
+                <p class="testimonial-author">— Maria Garcia, Product Manager</p>
+            </div>
+
+            Indicators
+            <div class="quanta-carousel-indicators">
+                <div class="quanta-carousel-indicator quanta-carousel-indicator-active"></div>
+                <div class="quanta-carousel-indicator"></div>
+            </div>
+        </div>
+
+        <script>
+            // reuse the same JS logic from before for prev/next if needed, or just indicators
+            const tc = document.getElementById('testimonialCarousel');
+            const items = [...tc.querySelectorAll('.quanta-carousel-item')];
+            const dots  = [...tc.querySelectorAll('.quanta-carousel-indicator')];
+            let tIdx = 0;
+            function tGo(i) {
+                items[tIdx].classList.remove('quanta-carousel-item-active');
+                dots[tIdx].classList.remove('quanta-carousel-indicator-active');
+                tIdx = (i + items.length) % items.length;
+                items[tIdx].classList.add('quanta-carousel-item-active');
+                dots[tIdx].classList.add('quanta-carousel-indicator-active');
+            }
+            dots.forEach((d,i)=>d.onclick=()=>tGo(i));
+            setInterval(()=>tGo(tIdx+1), 5000);
+        </script>
+
+    </div>
+
+    <script>
+    function toggleAccordion(btn) {
+        const expanded = btn.getAttribute('aria-expanded') === 'true';
+        const content = document.getElementById(btn.getAttribute('aria-controls'));
+        btn.setAttribute('aria-expanded', !expanded);
+        content.setAttribute('aria-hidden', expanded);
+    }
+    </script>
+
+</body>
+</html>

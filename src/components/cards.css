@@ -1,182 +1,91 @@
-/* src/components/card.quanta-css */
+/* src/components/quanta-card.css */
 @layer components.quanta-card {
-  /* ─── Card Container ───────────────────────────────────────── */
   .quanta-card {
-    background-color: var(--quanta-bg-default);
-    color: var(--quanta-text-default);
-    border: var(--quanta-border-width) solid var(--quanta-border-color);
-    border-radius: var(--quanta-rounded);
-    box-shadow: var(--quanta-shadow-sm);
-    padding: var(--quanta-space-4);
     display: flex;
     flex-direction: column;
     gap: var(--quanta-space-4);
-    transition: box-shadow var(--quanta-transition-normal);
+    padding: var(--quanta-space-4);
+    border-radius: var(--quanta-rounded-md);
+    background-color: var(--quanta-bg-default);
+    color: var(--quanta-text-default);
+    box-shadow: var(--quanta-shadow-sm);
+    transition:
+      box-shadow var(--quanta-duration-normal) var(--quanta-ease-default),
+      background-color var(--quanta-duration-normal) var(--quanta-ease-default),
+      border-color var(--quanta-duration-normal) var(--quanta-ease-default);
   }
 
-  /* Hover/Focus lift */
+  /* States */
   .quanta-card:hover,
   .quanta-card:focus-within {
     box-shadow: var(--quanta-shadow-md);
   }
 
-  /* ─── Dark‑mode shadow boost ───────────────────────────────── */
-  html[data-theme="dark"] .quanta-card {
-    box-shadow: var(--quanta-shadow-lg);
+  /* Variants */
+  .quanta-card-outline {
+    border: var(--quanta-border-width) solid var(--quanta-border-color);
+    background-color: var(--quanta-bg-default);
   }
 
-  /* ─── Card Image ───────────────────────────────────────────── */
-  .quanta-card-img-top {
-    width: 100%;
-    height: auto;
-    border-top-left-radius: var(--quanta-rounded);
-    border-top-right-radius: var(--quanta-rounded);
-    object-fit: cover;
+  .quanta-card-solid {
+    background-color: var(--quanta-bg-secondary);
+    color: var(--quanta-text-secondary);
+    border: none;
   }
 
-  /* ─── Card Header ──────────────────────────────────────────── */
+  .quanta-card-shadow {
+    box-shadow: var(--quanta-shadow-md);
+  }
+
+  .quanta-card-sm {
+    padding: var(--quanta-space-2);
+    border-radius: var(--quanta-rounded-sm);
+    gap: var(--quanta-space-2);
+  }
+
+  .quanta-card-rounded {
+    border-radius: var(--quanta-rounded-full);
+  }
+
+  /* Card sections */
   .quanta-card-header {
     font-family: var(--quanta-font-primary);
     font-size: var(--quanta-heading-size);
-    line-height: var(--quanta-heading-line-height);
-    margin-bottom: var(--quanta-space-3);
+    line-height: var(--quanta-leading-snug);
+    margin: 0;
   }
 
-  /* ─── Card Body ────────────────────────────────────────────── */
   .quanta-card-body {
+    flex-grow: 1;
     font-family: var(--quanta-font-secondary);
     font-size: var(--quanta-body-size);
-    line-height: var(--quanta-body-line-height);
-    flex-grow: 1;
+    line-height: var(--quanta-leading-normal);
+    margin: 0;
   }
 
-  /* ─── Card Footer ──────────────────────────────────────────── */
   .quanta-card-footer {
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
     align-items: center;
-    border-top: var(--quanta-border-width) solid var(--quanta-border-color);
-    padding-top: var(--quanta-space-3);
-    margin-top: var(--quanta-space-3);
     gap: var(--quanta-space-2);
+    margin: 0;
   }
 
-  /* ─── Mobile-First Styles ──────────────────────────────────── */
-  /* Base styles for mobile devices */
-  .quanta-card {
-    padding: var(--quanta-space-3);
-  }
-
-  .quanta-card-header {
-    font-size: var(--quanta-heading-size); /* Use smaller heading size on mobile */
-  }
-
-  .quanta-card-body {
-    font-size: var(--quanta-body-size); /* Base font size for body on mobile */
-  }
-
-  .quanta-card-footer {
-    padding-top: var(--quanta-space-2);
-    margin-top: var(--quanta-space-2);
-    gap: var(--quanta-space-2);
-  }
-
-  /* ─── Responsive Adjustments ─────────────────────────────────── */
-  /* 1. Small Tablets (min-width: 600px) */
-  @media (min-width: 600px) {
+  /* Dark mode overrides */
+  @media (prefers-color-scheme: dark) {
     .quanta-card {
-      padding: var(--quanta-space-4); /* More padding for small tablets */
+      background-color: var(--quanta-bg-default);
+      color: var(--quanta-text-default);
     }
-
-    .quanta-card-header {
-      font-size: var(--quanta-heading-size-md); /* Adjust heading size */
+    .quanta-card-outline {
+      border-color: var(--quanta-border-dark);
     }
-
-    .quanta-card-body {
-      font-size: var(--quanta-body-size-md); /* Slightly larger body text */
+    .quanta-card-solid {
+      background-color: var(--quanta-bg-secondary);
+      color: var(--quanta-text-secondary);
     }
-
-    .quanta-card-footer {
-      padding-top: var(--quanta-space-3);
-      margin-top: var(--quanta-space-3);
-    }
-  }
-
-  /* 2. Tablets (min-width: 768px) */
-  @media (min-width: 768px) {
-    .quanta-card {
-      flex-direction: row; /* Align cards in row for tablets and larger */
-      gap: var(--quanta-space-5); /* Increase gap between card sections */
-    }
-
-    .quanta-card-header {
-      font-size: var(--quanta-heading-size-lg); /* Larger font size on tablets */
-    }
-
-    .quanta-card-body {
-      font-size: var(--quanta-body-size-lg); /* Larger body font size */
-    }
-
-    .quanta-card-footer {
-      gap: var(--quanta-space-3); /* Adjust footer gap */
-    }
-  }
-
-  /* 3. Laptops (min-width: 1024px) */
-  @media (min-width: 1024px) {
-    .quanta-card {
-      padding: var(--quanta-space-5); /* Increase padding for laptops */
-    }
-
-    .quanta-card-header {
-      font-size: var(--quanta-heading-size-xl); /* Even larger heading size */
-    }
-
-    .quanta-card-body {
-      font-size: var(--quanta-body-size-xl); /* Larger text size for body */
-    }
-
-    .quanta-card-footer {
-      gap: var(--quanta-space-4); /* Larger gap in the footer */
-    }
-  }
-
-  /* 4. Large Desktops (min-width: 1280px) */
-  @media (min-width: 1280px) {
-    .quanta-card {
-      flex-direction: row; /* Continue row-based layout on larger screens */
-      padding: var(--quanta-space-6); /* Even more padding */
-    }
-
-    .quanta-card-header {
-      font-size: var(--quanta-heading-size-2xl); /* Extra large heading */
-    }
-
-    .quanta-card-body {
-      font-size: var(--quanta-body-size-2xl); /* Extra large body text */
-    }
-
-    .quanta-card-footer {
-      gap: var(--quanta-space-5); /* Even more gap in the footer */
-    }
-  }
-
-  /* 5. Huge Displays (min-width: 1600px) */
-  @media (min-width: 1600px) {
-    .quanta-card {
-      padding: var(--quanta-space-7); /* Super large padding for huge screens */
-    }
-
-    .quanta-card-header {
-      font-size: var(--quanta-heading-size-3xl); /* Huge heading size for very large screens */
-    }
-
-    .quanta-card-body {
-      font-size: var(--quanta-body-size-3xl); /* Very large body text */
-    }
-
-    .quanta-card-footer {
-      gap: var(--quanta-space-6); /* Large gap in footer */
+    .quanta-card-shadow {
+      box-shadow: var(--quanta-shadow-lg);
     }
   }
 }

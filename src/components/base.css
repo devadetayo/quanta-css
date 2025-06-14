@@ -486,4 +486,16 @@ html[data-theme="dark"] {
 
 .jello { animation: jello 1s ease infinite; }
 
+.font-inter {
+  font-family: var(--quanta-font-inter) !important;
+}
+
+.font-roboto-serif {
+  font-family: var(--quanta-font-roboto-serif) !important;
+}
+
+.font-roboto-mono {
+  font-family: var(--quanta-font-roboto-mono) !important;
+}
+
 

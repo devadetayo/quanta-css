@@ -1,5 +1,6 @@
 /* src/components/variables.css */
 @import "../tokens/color-tokens.css";
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Roboto+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Roboto+Mono:wght@400;500;700&display=swap');
 
 @layer components.variables {
   :root {
@@ -22,10 +23,31 @@
     --quanta-rounded-xl:   0.75rem;   /* 12px */
     --quanta-rounded-2xl:  1rem;      /* 16px */
     --quanta-rounded-full: 9999px;
+    --quanta-font-inter: 'Inter', sans-serif;
+    --quanta-font-roboto-serif: 'Roboto Serif', serif;
+    --quanta-font-roboto-mono: 'Roboto Mono', monospace;
 
-    /* ─── Component Defaults ────────────────────────────────── */
-    --quanta-border-width:    1px;
-    --quanta-ring-width:      2px;
+    /* ─── Breakpoints ──────────────────────────────────────── */
+    --quanta-screen-sm: 640px;
+    --quanta-screen-md: 768px;
+    --quanta-screen-lg: 1024px;
+    --quanta-screen-xl: 1280px;
+    --quanta-screen-2xl: 1536px;
+
+    /* ─── Transition Durations & Easing ────────────────────── */
+    --quanta-duration-fast: 150ms;
+    --quanta-duration-normal: 300ms;
+    --quanta-duration-slow: 500ms;
+    --quanta-ease-default: cubic-bezier(0.4, 0, 0.2, 1);
+
+    /* ─── Z-Index Scale ────────────────────────────────────── */
+    --quanta-z-xs: 10;
+    --quanta-z-sm: 100;
+    --quanta-z: 1000;
+    --quanta-z-lg: 10000;
+    --quanta-z-xl: 100000;
+
+    /* ─── Shadow Presets ────────────────────────────────────── */
     --quanta-shadow-color:    rgba(0, 0, 0, 0.1);
     --quanta-shadow-sm:       0 1px 2px var(--quanta-shadow-color);
     --quanta-shadow:          0 1px 3px var(--quanta-shadow-color), 0 1px 2px var(--quanta-shadow-color);
@@ -34,17 +56,38 @@
     --quanta-shadow-xl:       0 20px 25px -5px var(--quanta-shadow-color), 0 10px 10px -5px var(--quanta-shadow-color);
     --quanta-shadow-2xl:      0 25px 50px -12px var(--quanta-shadow-color);
 
-    /* ─── Typography ───────────────────────────────────────── */
+    /* ─── Typography Scale ──────────────────────────────────── */
+    --quanta-text-xs: 0.75rem;    /* 12px */
+    --quanta-text-sm: 0.875rem;   /* 14px */
+    --quanta-text-base: 1rem;     /* 16px */
+    --quanta-text-lg: 1.125rem;   /* 18px */
+    --quanta-text-xl: 1.25rem;    /* 20px */
+    --quanta-text-2xl: 1.5rem;    /* 24px */
+    --quanta-text-3xl: 1.875rem;  /* 30px */
+    --quanta-text-4xl: 2.25rem;   /* 36px */
+    --quanta-text-5xl: 3rem;      /* 48px */
+
+    /* line-height tokens */
+    --quanta-leading-none: 1;
+    --quanta-leading-tight: 1.25;
+    --quanta-leading-snug: 1.375;
+    --quanta-leading-normal: 1.5;
+    --quanta-leading-relaxed: 1.625;
+    --quanta-leading-loose: 2;
+
+    /* fonts */
     --quanta-font-primary:    'Inter', sans-serif;
     --quanta-font-secondary:  'Roboto', sans-serif;
 
+    /* semantic font sizes */
     --quanta-heading-size:    var(--quanta-text-2xl);
     --quanta-subheading-size: var(--quanta-text-xl);
     --quanta-body-size:       var(--quanta-text-base);
     --quanta-caption-size:    var(--quanta-text-sm);
 
-    --quanta-heading-line-height: var(--quanta-leading-tight);
-    --quanta-body-line-height:    var(--quanta-leading-normal);
+    /* ─── Component Defaults ────────────────────────────────── */
+    --quanta-border-width:    1px;
+    --quanta-ring-width:      2px;
 
     /* ─── Semantic Colors ──────────────────────────────────── */
     /* Default */

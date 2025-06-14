@@ -1,8 +1,9 @@
+/* src/components/variables.css */
 @import "../tokens/color-tokens.css";
 
 @layer utilities.variables {
   :root {
-    /* Spacing scale (used for margin, padding, gap, etc.) */
+    /* ─── Spacing scale (used for margin, padding, gap, etc.) ────────────────────────────────────────── */
     --quanta-space-0: 0rem;
     --quanta-space-1: 0.25rem;
     --quanta-space-2: 0.5rem;
@@ -22,7 +23,7 @@
     --quanta-space-56: 14rem;
     --quanta-space-64: 16rem;
 
-    /* Font sizes (fluid ready) */
+    /* ─── Font sizes (fluid ready) ─────────────────────────────────────────────────────────────────── */
     --quanta-text-xs: 0.75rem;
     --quanta-text-sm: 0.875rem;
     --quanta-text-base: 1rem;
@@ -37,7 +38,7 @@
     --quanta-text-8xl: 6rem;
     --quanta-text-9xl: 8rem;
 
-    /* Line heights */
+    /* ─── Line heights ──────────────────────────────────────────────────────────────────────────────── */
     --quanta-leading-none: 1;
     --quanta-leading-tight: 1.25;
     --quanta-leading-snug: 1.375;
@@ -45,7 +46,7 @@
     --quanta-leading-relaxed: 1.625;
     --quanta-leading-loose: 2;
 
-    /* Letter spacing */
+    /* ─── Letter spacing ────────────────────────────────────────────────────────────────────────────── */
     --quanta-tracking-tighter: -0.05em;
     --quanta-tracking-tight: -0.025em;
     --quanta-tracking-normal: 0;
@@ -53,7 +54,7 @@
     --quanta-tracking-wider: 0.05em;
     --quanta-tracking-widest: 0.1em;
 
-    /* Border radius */
+    /* ─── Border radius ─────────────────────────────────────────────────────────────────────────────── */
     --quanta-rounded-sm: 0.125rem;
     --quanta-rounded: 0.25rem;
     --quanta-rounded-md: 0.375rem;
@@ -63,7 +64,7 @@
     --quanta-rounded-3xl: 1.5rem;
     --quanta-rounded-full: 9999px;
 
-    /* Z-index layers */
+    /* ─── Z-index layers ──────────────────────────────────────────────────────────────────────────── */
     --quanta-z-0: 0;
     --quanta-z-10: 10;
     --quanta-z-20: 20;
@@ -71,9 +72,28 @@
     --quanta-z-40: 40;
     --quanta-z-50: 50;
 
-    /* Transitions */
+    /* ─── Transitions ──────────────────────────────────────────────────────────────────────────────── */
     --quanta-transition-fast: 150ms;
     --quanta-transition-normal: 300ms;
     --quanta-transition-slow: 500ms;
+
+    /* ─── Opacity scale (for bg/text/border opacity utilities) ───────────────────────────────────────── */
+    --quanta-opacity-0: 0;
+    --quanta-opacity-5: 0.05;
+    --quanta-opacity-10: 0.1;
+    --quanta-opacity-20: 0.2;
+    --quanta-opacity-25: 0.25;
+    --quanta-opacity-30: 0.3;
+    --quanta-opacity-40: 0.4;
+    --quanta-opacity-50: 0.5;
+    --quanta-opacity-60: 0.6;
+    --quanta-opacity-70: 0.7;
+    --quanta-opacity-75: 0.75;
+    --quanta-opacity-80: 0.8;
+    --quanta-opacity-90: 0.9;
+    --quanta-opacity-100: 1;
+    --quanta-font-inter: 'Inter', sans-serif;
+    --quanta-font-roboto-serif: 'Roboto Serif', serif;
+    --quanta-font-roboto-mono: 'Roboto Mono', monospace;
   }
 }
