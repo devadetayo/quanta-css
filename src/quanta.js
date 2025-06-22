@@ -1,86 +1,49 @@
-// quanta-accordion.js
-;(function() {
-  'use strict';
+document.addEventListener('DOMContentLoaded', () => {
+  const headers = document.querySelectorAll('.quanta-accordion-header');
 
-  document.addEventListener('DOMContentLoaded', initQuantaAccordions);
+  headers.forEach(header => {
+    header.addEventListener('click', () => {
+      const parentAccordion = header.closest('.quanta-accordion');
+      const isSingleOpen = parentAccordion.classList.contains('single-open');
+      const expanded = header.getAttribute('aria-expanded') === 'true';
+      const content = header.nextElementSibling;
 
-  function initQuantaAccordions() {
-    // Find every accordion container
-    document.querySelectorAll('.quanta-accordion').forEach(container => {
-      // For each header inside
-      container.querySelectorAll('.quanta-accordion-header').forEach(header => {
-        // 1) Make it keyboard‐accessible as a button
-        header.setAttribute('role', 'button');
-        if (!header.hasAttribute('tabindex')) header.setAttribute('tabindex', '0');
-
-        // 2) Initialize aria-expanded
-        if (!header.hasAttribute('aria-expanded')) {
-          header.setAttribute('aria-expanded', 'false');
-        }
-
-        // 3) Wire up click & key events
-        header.addEventListener('click', () => toggle(header));
-        header.addEventListener('keydown', e => {
-          if (e.key === 'Enter' || e.key === ' ') {
-            e.preventDefault();
-            toggle(header);
-          }
-        });
-      });
-    });
-  }
-
-  function toggle(header) {
-    const isOpen = header.getAttribute('aria-expanded') === 'true';
-    let content = null;
-
-    // A) If they used aria-controls → find that element
-    const targetId = header.getAttribute('aria-controls');
-    if (targetId) {
-      content = document.getElementById(targetId);
-    }
-
-    // B) Otherwise, assume next sibling
-    if (!content) {
-      const next = header.nextElementSibling;
-      if (next && next.classList.contains('quanta-accordion-content')) {
-        content = next;
+      if (isSingleOpen) {
+        // Close all other items
+        const allHeaders = parentAccordion.querySelectorAll('.quanta-accordion-header');
+        const allContents = parentAccordion.querySelectorAll('.quanta-accordion-content');
+        allHeaders.forEach(h => h.setAttribute('aria-expanded', 'false'));
+        allContents.forEach(c => c.setAttribute('aria-hidden', 'true'));
       }
-    }
 
-    if (!content) return; // nothing to toggle
+      // Toggle clicked one
+      header.setAttribute('aria-expanded', !expanded);
+      content.setAttribute('aria-hidden', expanded);
+    });
+  });
+});
 
-    // Toggle state
-    header.setAttribute('aria-expanded', isOpen ? 'false' : 'true');
-    header.classList.toggle('quanta-active', !isOpen);
-    content.classList.toggle('open', !isOpen);
+document.querySelectorAll('.quanta-avatar').forEach(el => {
+  const name = el.dataset.name;
+  const hasImage = el.querySelector('img');
+  const alreadyHasInitial = el.querySelector('.avatar-initial');
 
-    // For smooth collapse, set explicit max-height if closing
-    if (isOpen) {
-      // closing: remove explicit height after transition
-      content.style.maxHeight = `${content.scrollHeight}px`;
-      // force repaint
-      void content.offsetHeight;
-      content.style.maxHeight = '0';
-    } else {
-      // opening: set to scrollHeight
-      content.style.maxHeight = `${content.scrollHeight}px`;
-      // when transition ends, remove inline max-height
-      content.addEventListener('transitionend', function te() {
-        if (content.classList.contains('open')) {
-          content.style.maxHeight = '';
-        }
-        content.removeEventListener('transitionend', te);
-      });
-    }
+  if (!hasImage && name && !alreadyHasInitial) {
+    const initials = name
+      .trim()
+      .split(/\s+/)
+      .map(n => n[0])
+      .slice(0, 2)
+      .join('')
+      .toUpperCase();
+
+    const span = document.createElement('span');
+    span.className = 'avatar-initial';
+    span.textContent = initials;
+    el.prepend(span); // preserves any other children like badges
   }
+});
 
-  // Expose if you need to re-init manually
-  window.QuantaAccordion = {
-    init: initQuantaAccordions,
-    toggle
-  };
-})();
 
 // quanta-alerts.js
 ;(function() {
@@ -138,68 +101,321 @@
   };
 })();
 
-// quanta-carousel.js
-;(function(){
-  'use strict';
+document.querySelectorAll('.quanta-custom-select-wrapper').forEach(wrapper => {
+  const nativeSelect = wrapper.querySelector('select');
+  const customSelect = wrapper.querySelector('.quanta-custom-select');
+  const selectedDisplay = wrapper.querySelector('.quanta-custom-selected');
+  const optionsContainer = wrapper.querySelector('.quanta-custom-options');
 
-  document.addEventListener('DOMContentLoaded', initQuantaCarousels);
+  // Clear existing options
+  optionsContainer.innerHTML = '';
 
-  function initQuantaCarousels() {
-    document.querySelectorAll('.quanta-carousel').forEach(carousel => {
-      setupCarousel(carousel);
+  // Build custom options
+  nativeSelect.querySelectorAll('option').forEach(opt => {
+    const customOption = document.createElement('div');
+    customOption.className = 'quanta-custom-option';
+    customOption.textContent = opt.textContent;
+    customOption.dataset.value = opt.value;
+
+    if (opt.selected) {
+      customOption.classList.add('selected');
+      selectedDisplay.textContent = opt.textContent;
+    }
+
+    customOption.addEventListener('click', () => {
+      nativeSelect.value = customOption.dataset.value;
+      selectedDisplay.textContent = customOption.textContent;
+      wrapper.querySelectorAll('.quanta-custom-option').forEach(opt => opt.classList.remove('selected'));
+      customOption.classList.add('selected');
+      optionsContainer.style.display = 'none';
+
+      nativeSelect.dispatchEvent(new Event('change'));
+    });
+
+    optionsContainer.appendChild(customOption);
+  });
+
+  // Toggle logic
+  customSelect.addEventListener('click', (e) => {
+    e.stopPropagation();
+
+    // Close all open custom selects
+    document.querySelectorAll('.quanta-custom-options').forEach(opt => {
+      if (opt !== optionsContainer) opt.style.display = 'none';
+    });
+
+    // Toggle current one
+    optionsContainer.style.display = (optionsContainer.style.display === 'block') ? 'none' : 'block';
+  });
+
+  // Close dropdown when clicking outside
+  document.addEventListener('click', (e) => {
+    if (!wrapper.contains(e.target)) {
+      optionsContainer.style.display = 'none';
+    }
+  });
+});
+
+document.querySelectorAll('.quanta-carousel').forEach(carousel => {
+  const track = carousel.querySelector('.quanta-carousel-track');
+  const items = Array.from(carousel.querySelectorAll('.quanta-carousel-item'));
+  const indicatorsWrapper = carousel.querySelector('.quanta-carousel-indicators');
+  const prevBtn = carousel.querySelector('.quanta-carousel-prev');
+  const nextBtn = carousel.querySelector('.quanta-carousel-next');
+
+  const indicatorType = carousel.dataset.indicatorType || 'circle';
+  const autoplayEnabled = carousel.dataset.autoplayEnabled === "true";
+  const autoplayTime = parseInt(carousel.dataset.autoplay) || 5000;
+  const controlsEnabled = carousel.dataset.controls !== "false";
+
+  let currentIndex = 0;
+  let autoplayInterval = null;
+  let isDragging = false, startX = 0;
+
+  // Show/hide controls
+  if (!controlsEnabled) {
+    prevBtn?.remove();
+    nextBtn?.remove();
+  }
+
+  // Setup indicators
+  function createIndicators() {
+    if (!indicatorsWrapper) return;
+    indicatorsWrapper.innerHTML = '';
+    items.forEach((item, i) => {
+      const dot = document.createElement('div');
+      dot.className = `quanta-carousel-indicator indicator-${indicatorType}` + (i === 0 ? ' active' : '');
+      if (indicatorType === 'img') {
+        const img = item.querySelector('img')?.cloneNode();
+        img && dot.appendChild(img);
+      }
+      dot.addEventListener('click', () => goToSlide(i));
+      indicatorsWrapper.appendChild(dot);
     });
   }
 
-  function setupCarousel(carousel) {
-    const items = Array.from(carousel.querySelectorAll('.quanta-carousel-item'));
-    if (!items.length) return;
+  // Slide switching
+  function goToSlide(index) {
+    if (index < 0) index = items.length - 1;
+    if (index >= items.length) index = 0;
 
-    let current = items.findIndex(item => item.classList.contains('active'));
-    if (current < 0) current = 0;
+    items.forEach((item, i) => {
+      item.classList.toggle('active', i === index);
+    });
 
-    // show initial
-    update();
+    indicatorsWrapper?.querySelectorAll('.quanta-carousel-indicator').forEach((el, i) => {
+      el.classList.toggle('active', i === index);
+    });
 
-    // controls
-    const prevBtn = carousel.querySelector('.quanta-carousel-prev');
-    const nextBtn = carousel.querySelector('.quanta-carousel-next');
-    if (prevBtn) prevBtn.addEventListener('click', () => { go(-1); });
-    if (nextBtn) nextBtn.addEventListener('click', () => { go(1); });
-
-    // indicators
-    const indicatorsContainer = carousel.querySelector('.quanta-carousel-indicators');
-    let indicators = [];
-    if (indicatorsContainer) {
-      indicators = Array.from(indicatorsContainer.children)
-        .filter(el => el.classList.contains('quanta-carousel-indicator'));
-      indicators.forEach((dot, i) => {
-        dot.addEventListener('click', () => {
-          current = i;
-          update();
-        });
-      });
+    if (carousel.classList.contains('carousel-animate-slide')) {
+      track.style.transform = `translateX(-${index * 100}%)`;
     }
 
-    function go(direction) {
-      current = (current + direction + items.length) % items.length;
-      update();
-    }
+    currentIndex = index;
+  }
 
-    function update() {
-      items.forEach((item, i) => {
-        item.classList.toggle('active', i === current);
-      });
-      indicators.forEach((dot, i) => {
-        dot.classList.toggle('active', i === current);
-      });
+  // Autoplay
+  function startAutoplay() {
+    if (autoplayEnabled) {
+      autoplayInterval = setInterval(() => goToSlide(currentIndex + 1), autoplayTime);
     }
   }
 
-  // Expose API if needed
-  window.QuantaCarousel = {
-    init: initQuantaCarousels
-  };
-})();
+  function stopAutoplay() {
+    clearInterval(autoplayInterval);
+  }
+
+  // Drag/swipe support
+  carousel.addEventListener('touchstart', e => {
+    isDragging = true;
+    startX = e.touches[0].clientX;
+  });
+
+  carousel.addEventListener('touchmove', e => {
+    if (!isDragging) return;
+    const delta = e.touches[0].clientX - startX;
+    if (Math.abs(delta) > 50) {
+      isDragging = false;
+      delta < 0 ? goToSlide(currentIndex + 1) : goToSlide(currentIndex - 1);
+      stopAutoplay();
+      startAutoplay();
+    }
+  });
+
+  carousel.addEventListener('touchend', () => isDragging = false);
+
+  // Hover pause
+  carousel.addEventListener('mouseenter', stopAutoplay);
+  carousel.addEventListener('mouseleave', startAutoplay);
+
+  // Button control
+  prevBtn?.addEventListener('click', () => {
+    goToSlide(currentIndex - 1);
+    stopAutoplay();
+    startAutoplay();
+  });
+
+  nextBtn?.addEventListener('click', () => {
+    goToSlide(currentIndex + 1);
+    stopAutoplay();
+    startAutoplay();
+  });
+
+  createIndicators();
+  goToSlide(0);
+  startAutoplay();
+});
+
+function updateCharCount(textarea) {
+  const max = textarea.getAttribute('maxlength');
+  const current = textarea.value.length;
+  const counter = textarea.parentElement.querySelector('.quanta-char-count span');
+  counter.textContent = current;
+}
+
+// Optional: Init on page load if textarea already filled
+document.querySelectorAll('.quanta-textarea').forEach(el => updateCharCount(el));
+
+function initQuantaRating(id, onChange) {
+  const container = document.getElementById(id);
+  const starsCount = parseInt(container.dataset.stars) || 5;
+  let selected = parseInt(container.dataset.selected) || 0;
+
+  container.innerHTML = '';
+  const stars = [];
+
+  for (let i = 1; i <= starsCount; i++) {
+    const span = document.createElement('span');
+    span.classList.add('quanta-rating-star');
+    span.innerHTML = '★';
+    if (i <= selected) span.classList.add('filled');
+    container.appendChild(span);
+    stars.push(span);
+
+    span.addEventListener('mouseenter', () => updateStars(i));
+    span.addEventListener('mouseleave', () => updateStars(selected));
+    span.addEventListener('click', () => {
+      selected = i;
+      container.dataset.selected = selected;
+      updateStars(selected);
+      if (typeof onChange === 'function') onChange(selected);
+    });
+  }
+
+  function updateStars(count) {
+    stars.forEach((star, i) => {
+      star.classList.toggle('filled', i < count);
+    });
+  }
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+  initQuantaRating('ratingStars', rating => console.log('Selected:', rating));
+});
+
+
+function setTheme(mode) {
+  document.documentElement.setAttribute('data-theme', mode);
+  localStorage.setItem('quanta-theme', mode);
+}
+
+function toggleTheme() {
+  const current = document.documentElement.getAttribute('data-theme');
+  const next = current === 'dark' ? 'light' : 'dark';
+  setTheme(next);
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+  const stored = localStorage.getItem('quanta-theme');
+  const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+
+  const initialTheme = stored || (prefersDark ? 'dark' : 'light');
+  setTheme(initialTheme);
+
+  document.getElementById('themeToggle').addEventListener('click', toggleTheme);
+});
+
+document.addEventListener("DOMContentLoaded", () => {
+  const sections = document.querySelectorAll(".quanta-scrollspy-section");
+  const navLinks = document.querySelectorAll(".quanta-scrollspy-link");
+
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach(entry => {
+        const id = entry.target.getAttribute("id");
+        const link = document.querySelector(`.quanta-scrollspy-link[href="#${id}"]`);
+        if (entry.isIntersecting) {
+          navLinks.forEach(l => l.classList.remove("active"));
+          link?.classList.add("active");
+        }
+      });
+    },
+    {
+      rootMargin: "0px 0px -60% 0px", // Triggers before the section fully hits top
+      threshold: 0.3
+    }
+  );
+
+  sections.forEach(section => observer.observe(section));
+});
+
+document.addEventListener("DOMContentLoaded", () => {
+  const sections = document.querySelectorAll(".quanta-scrollspy-section");
+  const navLinks = document.querySelectorAll(".quanta-scrollspy-link");
+
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach(entry => {
+        const id = entry.target.getAttribute("id");
+        const link = document.querySelector(`.quanta-scrollspy-link[href="#${id}"]`);
+        if (entry.isIntersecting) {
+          navLinks.forEach(l => l.classList.remove("active"));
+          link?.classList.add("active");
+        }
+      });
+    },
+    {
+      rootMargin: "0px 0px -60% 0px", // Triggers before the section fully hits top
+      threshold: 0.3
+    }
+  );
+
+  sections.forEach(section => observer.observe(section));
+});
+
+document.addEventListener("DOMContentLoaded", () => {
+  const lazyElements = document.querySelectorAll('.lazy-load');
+
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('show');
+        observer.unobserve(entry.target); // only run once
+      }
+    });
+  }, {
+    threshold: 0.15
+  });
+
+  lazyElements.forEach(el => observer.observe(el));
+});
+
+document.querySelectorAll('[data-toggle="drawer"]').forEach(btn => {
+  btn.addEventListener('click', () => {
+    const drawer = document.querySelector(btn.dataset.target);
+    const overlay = document.getElementById('drawerOverlay');
+
+    const isActive = drawer.classList.contains('active');
+    drawer.classList.toggle('active');
+    overlay.classList.toggle('active', !isActive);
+  });
+});
+
+document.getElementById('drawerOverlay')?.addEventListener('click', () => {
+  document.querySelectorAll('.quanta-drawer.active').forEach(d => d.classList.remove('active'));
+  document.getElementById('drawerOverlay').classList.remove('active');
+});
+
 
 // quanta-chips.js
 ;(function(){
@@ -266,108 +482,138 @@
   };
 })();
 
-// quanta-datepicker.js
 ;(function(){
-  'use strict';
+  const fmt = d => d.toISOString().slice(0,10);
+  function daysInMonth(y,m){return new Date(y,m+1,0).getDate();}
+  function el(t,c='',txt=''){const d=document.createElement(t); if(c)d.className=c; if(txt)d.textContent=txt; return d;}
 
-  document.addEventListener('DOMContentLoaded', initQuantaDatepickers);
+  document.querySelectorAll('.quanta-datepicker').forEach(dp => {
+    const input = dp.querySelector('input');
+    const popup = el('div', 'quanta-datepicker-popup');
+    const header = el('div', 'quanta-datepicker-header');
+    const weekdays = el('div', 'quanta-weekdays');
+    const calendar = el('div', 'quanta-calendar');
 
-  function initQuantaDatepickers() {
-    document.querySelectorAll('.quanta-datepicker').forEach(picker => {
-      setupPicker(picker);
-    });
-  }
+    // SVG buttons
+    const leftBtn = el('button', 'quanta-nav-btn');
+    leftBtn.innerHTML = `
+      <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="size-4" viewBox="0 0 24 24">
+        <path fill-rule="evenodd" d="M7.72 12.53a.75.75 0 0 1 0-1.06l7.5-7.5a.75.75 0 1 1 1.06 1.06L9.31 12l6.97 6.97a.75.75 0 1 1-1.06 1.06l-7.5-7.5Z" clip-rule="evenodd" />
+      </svg>`;
 
-  function setupPicker(picker) {
-    const input       = picker.querySelector('input');
-    const popup       = picker.querySelector('.quanta-datepicker-popup');
-    const calendarEl  = picker.querySelector('.quanta-calendar');
-    const navPrev     = picker.querySelector('.quanta-navigation .prev');
-    const navNext     = picker.querySelector('.quanta-navigation .next');
+    const rightBtn = el('button', 'quanta-nav-btn');
+    rightBtn.innerHTML = `
+      <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="size-4" viewBox="0 0 24 24">
+        <path fill-rule="evenodd" d="M16.28 11.47a.75.75 0 0 1 0 1.06l-7.5 7.5a.75.75 0 0 1-1.06-1.06L14.69 12 7.72 5.03a.75.75 0 0 1 1.06-1.06l7.5 7.5Z" clip-rule="evenodd" />
+      </svg>`;
 
-    if (!input || !popup || !calendarEl || !navPrev || !navNext) {
-      console.warn('Quanta Datepicker missing markup in', picker);
-      return;
-    }
+    const display = el('span', 'quanta-month-display');
+    header.append(leftBtn, display, rightBtn);
 
-    // state
-    let viewDate = new Date();
-    let selectedDate = null;
+    popup.append(header, weekdays, calendar);
+    dp.append(popup);
 
-    // show/hide popup
-    function togglePopup(show) {
-      picker.classList.toggle('active', show);
-      if (show) renderCalendar();
-    }
+    // Month & Year Grids
+    const gridWrapper = el('div', 'quanta-grid-popup');
+    const monthGrid = el('div', 'quanta-month-grid');
+    const yearGrid = el('div', 'quanta-year-grid');
+    gridWrapper.append(monthGrid, yearGrid);
+    dp.append(gridWrapper);
 
-    input.addEventListener('focus', () => togglePopup(true));
-    input.addEventListener('click', () => togglePopup(true));
-    document.addEventListener('click', e => {
-      if (!picker.contains(e.target)) togglePopup(false);
-    });
+    const today = new Date();
+    let vy = today.getFullYear(), vm = today.getMonth(), selected = null;
 
-    // nav buttons
-    navPrev.addEventListener('click', () => {
-      viewDate.setMonth(viewDate.getMonth() - 1);
-      renderCalendar();
-    });
-    navNext.addEventListener('click', () => {
-      viewDate.setMonth(viewDate.getMonth() + 1);
-      renderCalendar();
-    });
-
-    // build month/year header
-    function renderCalendar() {
-      // clear
-      calendarEl.innerHTML = '';
-      // month start
-      const year = viewDate.getFullYear();
-      const month = viewDate.getMonth();
-      const firstDay = new Date(year, month, 1).getDay(); // 0=Sun
-      const daysInMonth = new Date(year, month+1, 0).getDate();
-      // pad blank days
-      for (let i=0; i<firstDay; i++) {
-        const blank = document.createElement('div');
-        blank.className = 'quanta-day disabled';
-        calendarEl.appendChild(blank);
+    function renderGrid(){
+      monthGrid.innerHTML = '';
+      for(let i = 0; i < 12; i++){
+        const m = el('div', '', new Date(0, i).toLocaleString('default', {month: 'short'}));
+        m.dataset.m = i;
+        if(i === vm) m.classList.add('selected');
+        monthGrid.append(m);
       }
-      // days
-      for (let d=1; d<=daysInMonth; d++) {
-        const dayEl = document.createElement('div');
-        dayEl.className = 'quanta-day';
-        dayEl.textContent = d;
-        const thisDate = new Date(year, month, d);
 
-        // mark selected
-        if (selectedDate &&
-            selectedDate.getFullYear() === year &&
-            selectedDate.getMonth() === month &&
-            selectedDate.getDate() === d) {
+      yearGrid.innerHTML = '';
+      for(let y = vy - 7; y <= vy + 7; y++){
+        const yv = el('div', '', ''+y);
+        yv.dataset.y = y;
+        if(y === vy) yv.classList.add('selected');
+        yearGrid.append(yv);
+      }
+    }
+
+    function renderCalendar(){
+      display.textContent = new Date(vy, vm).toLocaleString('default', {month: 'long', year: 'numeric'});
+
+      weekdays.innerHTML = '';
+      ['Su','Mo','Tu','We','Th','Fr','Sa'].forEach(d => weekdays.append(el('div', '', d)));
+
+      calendar.innerHTML = '';
+      const firstDay = new Date(vy, vm, 1).getDay();
+      for(let i = 0; i < firstDay; i++) calendar.append(el('div', 'quanta-day disabled'));
+
+      const days = daysInMonth(vy, vm);
+      for(let d = 1; d <= days; d++){
+        const dayEl = el('div', 'quanta-day', d);
+        if(vy === today.getFullYear() && vm === today.getMonth() && d === today.getDate())
+          dayEl.classList.add('today');
+
+        if(selected && vy === selected.getFullYear() && vm === selected.getMonth() && d === selected.getDate())
           dayEl.classList.add('selected');
-        }
 
         dayEl.addEventListener('click', () => {
-          selectedDate = thisDate;
-          input.value = formatDate(selectedDate);
-          togglePopup(false);
+          selected = new Date(vy, vm, d);
+          input.value = fmt(selected);
+          dp.classList.remove('active');
+          gridWrapper.style.display = 'none';
+          renderCalendar();
         });
 
-        calendarEl.appendChild(dayEl);
+        calendar.append(dayEl);
       }
     }
 
-    // format date as YYYY-MM-DD
-    function formatDate(d) {
-      const mm = String(d.getMonth()+1).padStart(2,'0');
-      const dd = String(d.getDate()).padStart(2,'0');
-      return `${d.getFullYear()}-${mm}-${dd}`;
-    }
-  }
+    // Init
+    renderGrid();
+    renderCalendar();
 
-  // Expose if you need manual init
-  window.QuantaDatepicker = {
-    init: initQuantaDatepickers
-  };
+    // Button events
+    leftBtn.addEventListener('click', () => {
+      vm--; if(vm < 0){ vm = 11; vy--; }
+      renderCalendar();
+    });
+    rightBtn.addEventListener('click', () => {
+      vm++; if(vm > 11){ vm = 0; vy++; }
+      renderCalendar();
+    });
+
+    // Click month/year to show selector
+    display.addEventListener('click', () => {
+      gridWrapper.style.display = gridWrapper.style.display === 'grid' ? 'none' : 'grid';
+    });
+
+    monthGrid.addEventListener('click', e => {
+      if(!e.target.dataset.m) return;
+      vm = +e.target.dataset.m;
+      gridWrapper.style.display = 'none';
+      renderCalendar();
+    });
+
+    yearGrid.addEventListener('click', e => {
+      if(!e.target.dataset.y) return;
+      vy = +e.target.dataset.y;
+      gridWrapper.style.display = 'none';
+      renderCalendar();
+    });
+
+    // Toggle popup
+    input.addEventListener('focus', () => dp.classList.add('active'));
+    document.addEventListener('click', e => {
+      if(!dp.contains(e.target)){
+        dp.classList.remove('active');
+        gridWrapper.style.display = 'none';
+      }
+    });
+  });
 })();
 
 // quanta-dropdown.js
@@ -419,91 +665,190 @@
   };
 })();
 
-// quanta-file-upload.js
-;(function(){
-  'use strict';
+document.addEventListener("DOMContentLoaded", () => {
+  function setupUpload(selector, options = {}) {
+    const {
+      previewId = '',
+      type = 'list', // list | thumb | box | box-image
+      layout = 'col',
+      single = false
+    } = options;
 
-  document.addEventListener('DOMContentLoaded', () => {
-    initQuantaFileUploads();
-  });
+    const wrapper = document.querySelector(selector);
+    if (!wrapper) return;
 
-  function initQuantaFileUploads() {
-    // 1) Traditional uploads (.quanta-file-upload)
-    document.querySelectorAll('.quanta-file-upload').forEach(wrapper => {
-      const input = wrapper.querySelector('input[type="file"]');
-      const label = wrapper.querySelector('span') || document.createElement('span');
+    const input = wrapper.querySelector('input[type="file"]');
+    const preview = previewId ? document.getElementById(previewId) : null;
+    if (!input) return;
 
-      // ensure label exists
-      if (!wrapper.contains(label)) {
-        wrapper.appendChild(label);
-      }
-
-      // click anywhere triggers file picker
-      wrapper.addEventListener('click', () => input.click());
-
-      // reflect chosen file(s)
-      input.addEventListener('change', () => {
-        const names = Array.from(input.files).map(f => f.name).join(', ') || 'No file chosen';
-        label.textContent = names;
-      });
+    // Enable drag-and-drop
+    wrapper.addEventListener('dragover', e => {
+      e.preventDefault();
+      wrapper.classList.add('dragover');
     });
 
-    // 2) Modern drag-and-drop uploads (.quanta-file-upload-modern)
-    document.querySelectorAll('.quanta-file-upload-modern').forEach(wrapper => {
-      const input = wrapper.querySelector('input[type="file"]');
-      const text  = wrapper.querySelector('.quanta-file-upload-text');
-      const icon  = wrapper.querySelector('.quanta-file-upload-icon');
+    wrapper.addEventListener('dragleave', () => {
+      wrapper.classList.remove('dragover');
+    });
 
-      // click opens picker
-      wrapper.addEventListener('click', () => input.click());
+    wrapper.addEventListener('drop', e => {
+      e.preventDefault();
+      wrapper.classList.remove('dragover');
+      input.files = e.dataTransfer.files;
+      handleFiles();
+    });
 
-      // highlight on drag-over
-      ['dragenter','dragover'].forEach(evt => {
-        wrapper.addEventListener(evt, e => {
-          e.preventDefault();
-          wrapper.classList.add('drag-over');
-        });
-      });
-      ['dragleave','drop'].forEach(evt => {
-        wrapper.addEventListener(evt, e => {
-          e.preventDefault();
-          wrapper.classList.remove('drag-over');
-        });
-      });
+    input.addEventListener('change', handleFiles);
 
-      // handle drop
-      wrapper.addEventListener('drop', e => {
-        input.files = e.dataTransfer.files;
-        updateModernLabel();
-      });
+    // box-image type (clickable img placeholder)
+    if (type === 'box-image') {
+      const img = wrapper.querySelector('img');
+      if (img) {
+        img.addEventListener('click', () => input.click());
+      }
+    }
 
-      // handle manual selection
-      input.addEventListener('change', updateModernLabel);
+    function handleFiles() {
+      let files = Array.from(input.files);
+      if (single && files.length > 1) files = [files[0]];
 
-      function updateModernLabel() {
-        const files = Array.from(input.files);
-        if (!files.length) {
-          text.textContent = 'Drag & drop or click to upload';
-        } else if (files.length === 1) {
-          text.textContent = files[0].name;
-        } else {
-          text.textContent = files.length + ' files selected';
+      if (type !== 'box' && type !== 'box-image' && preview) {
+        preview.innerHTML = '';
+        preview.className = 'quanta-file-preview ' + (layout === 'row'
+          ? 'd-flex flex-row gap-2'
+          : 'd-flex flex-col gap-2');
+      }
+
+      files.forEach((file, idx) => {
+        if (type === 'thumb') {
+          const thumb = document.createElement('div');
+          thumb.className = 'quanta-file-thumbnail';
+
+          const reader = new FileReader();
+          reader.onload = e => {
+            thumb.style.backgroundImage = `url('${e.target.result}')`;
+          };
+          reader.readAsDataURL(file);
+
+          const remove = createRemoveBtn(idx);
+          thumb.appendChild(remove);
+          preview.appendChild(thumb);
         }
-        // Optionally: hide the icon
-        if (icon) icon.style.display = files.length ? 'none' : '';
-      }
 
-      // init label
-      updateModernLabel();
-    });
+        else if (type === 'list') {
+          const item = document.createElement('div');
+          item.className = 'quanta-file-item';
+          item.textContent = file.name;
+
+          const remove = createRemoveBtn(idx);
+          item.appendChild(remove);
+          preview.appendChild(item);
+        }
+
+        else if (type === 'box') {
+          const previewBox = document.getElementById('previewBox');
+          const img = preview?.querySelector('img');
+          if (img) {
+            const reader = new FileReader();
+            reader.onload = e => {
+              previewBox.style.display = 'block';
+              img.src = e.target.result;
+            };
+            reader.readAsDataURL(file);
+          }
+        }
+
+        else if (type === 'box-image') {
+          const img = wrapper.querySelector('img');
+          if (img) {
+            const reader = new FileReader();
+            reader.onload = e => img.src = e.target.result;
+            reader.readAsDataURL(file);
+          }
+        }
+      });
+
+      function createRemoveBtn(index) {
+        const rm = document.createElement('span');
+        rm.className = 'quanta-file-remove';
+        rm.innerHTML = `<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="size-4" viewBox="0 0 24 24">
+          <path fill-rule="evenodd" d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25Zm-1.72 6.97a.75.75 0 1 0-1.06 1.06L10.94 12l-1.72 1.72a.75.75 0 1 0 1.06 1.06L12 13.06l1.72 1.72a.75.75 0 1 0 1.06-1.06L13.06 12l1.72-1.72a.75.75 0 1 0-1.06-1.06L12 10.94l-1.72-1.72Z" clip-rule="evenodd"/>
+        </svg>`;
+
+        rm.onclick = () => {
+          const dt = new DataTransfer();
+          const newFiles = files.filter((_, i) => i !== index);
+          newFiles.forEach(f => dt.items.add(f));
+          input.files = dt.files;
+          handleFiles();
+        };
+
+        return rm;
+      }
+    }
   }
 
-  // expose for manual init if you dynamically inject
-  window.QuantaFileUpload = {
-    init: initQuantaFileUploads
-  };
-})();
+  // 🟢 Initialize Uploaders
+  setupUpload('#classicBox', {
+    previewId: 'previewClassic',
+    type: 'list',
+    layout: 'row',
+    single: true
+  });
 
+  setupUpload('#dropList', {
+    previewId: 'previewList',
+    type: 'list',
+    layout: 'col',
+    single: false
+  });
+
+  setupUpload('#dropThumb', {
+    previewId: 'previewThumbs',
+    type: 'thumb',
+    layout: 'row',
+    single: false
+  });
+
+  setupUpload('#boxThumb', {
+    previewId: 'previewBox',
+    type: 'box',
+    layout: 'row',
+    single: true
+  });
+
+  setupUpload('#boxImage', {
+    type: 'box-image',
+    layout: 'row',
+    single: true
+  });
+});
+
+function openModal(id) {
+  document.getElementById(id).classList.add("active");
+  document.getElementById(`${id}-backdrop`).classList.add("active");
+}
+
+function closeModal(id) {
+  document.getElementById(id).classList.remove("active");
+  document.getElementById(`${id}-backdrop`).classList.remove("active");
+}
+
+// Optional: Escape key closes modal
+document.addEventListener("keydown", (e) => {
+  if (e.key === "Escape") {
+    document.querySelectorAll(".quanta-modal.active").forEach(modal => {
+      modal.classList.remove("active");
+      const id = modal.id;
+      document.getElementById(`${id}-backdrop`)?.classList.remove("active");
+    });
+  }
+});
+
+function toggleSidebar() {
+  const sidebar = document.getElementById('sidebar');
+  sidebar.classList.toggle('show');
+}
 
 // quanta-gallery.js
 ;(function(){
@@ -564,68 +909,39 @@
   window.QuantaGallery = { init: initQuantaGallery };
 })();
 
-// quanta-megamenu.js
-;(function(){
-  'use strict';
+document.addEventListener("DOMContentLoaded", () => {
+  const megamenus = document.querySelectorAll(".quanta-megamenu");
 
-  document.addEventListener('DOMContentLoaded', initQuantaMegaMenus);
+  megamenus.forEach(menu => {
+    const trigger = menu.querySelector(".quanta-megamenu-toggle");
+    const content = menu.querySelector(".quanta-megamenu-content");
 
-  function initQuantaMegaMenus() {
-    // Handle click‐based menus
-    document.querySelectorAll('.quanta-megamenu-click').forEach(menu => {
-      const toggle = menu.querySelector('.quanta-megamenu-toggle');
-      const content = menu.querySelector('.quanta-megamenu-content');
-      if (!toggle || !content) return;
+    if (!trigger || !content) return;
 
-      // Ensure ARIA attributes exist
-      const cid = content.id || `qm-${Math.random().toString(36).slice(2,6)}`;
-      content.id = cid;
-      toggle.setAttribute('aria-controls', cid);
-      if (!toggle.hasAttribute('aria-expanded')) {
-        toggle.setAttribute('aria-expanded','false');
-      }
-      toggle.setAttribute('aria-haspopup','true');
-
-      // Click toggles
-      toggle.addEventListener('click', e => {
-        e.stopPropagation();
-        const isOpen = toggle.getAttribute('aria-expanded') === 'true';
-        toggle.setAttribute('aria-expanded', isOpen ? 'false' : 'true');
-        menu.classList.toggle('show', !isOpen);
+    // Toggle on click
+    trigger.addEventListener("click", (e) => {
+      e.preventDefault();
+      // Close other megamenus
+      megamenus.forEach(m => {
+        if (m !== menu) m.classList.remove("show");
       });
-
-      // Close on outside click
-      document.addEventListener('click', e => {
-        if (!menu.contains(e.target)) {
-          menu.classList.remove('show');
-          toggle.setAttribute('aria-expanded','false');
-        }
-      });
-
-      // Keyboard support
-      toggle.addEventListener('keydown', e => {
-        if (e.key === 'Enter' || e.key === ' ') {
-          e.preventDefault();
-          toggle.click();
-        }
-      });
-      document.addEventListener('keydown', e => {
-        if (e.key === 'Escape') {
-          menu.classList.remove('show');
-          toggle.setAttribute('aria-expanded','false');
-          toggle.focus();
-        }
-      });
+      menu.classList.toggle("show");
     });
 
-    // Hover‐based menus work via CSS :hover
-  }
+    // Close on outside click
+    document.addEventListener("click", (e) => {
+      if (!menu.contains(e.target)) {
+        menu.classList.remove("show");
+      }
+    });
 
-  // Expose API if needed
-  window.QuantaMegaMenu = {
-    init: initQuantaMegaMenus
-  };
-})();
+    // Optional: Hover support for desktops
+    if (window.innerWidth >= 1024) {
+      menu.addEventListener("mouseenter", () => menu.classList.add("show"));
+      menu.addEventListener("mouseleave", () => menu.classList.remove("show"));
+    }
+  });
+});
 
 // quanta-navbar.js
 ;(function(){
@@ -679,62 +995,65 @@
 })();
 
 // quanta-notifications.js
-;(function(){
-  'use strict';
+document.showToast = function ({
+  title = '',
+  message = '',
+  type = 'primary',
+  icon = '',
+  timeout = 5000,
+  position = 'top-right',
+  showProgress = true,
+} = {}) {
+  const containerSelector = `.quanta-toast-container.${position}`;
+  let container = document.querySelector(containerSelector);
 
-  // Ensure container exists
-  function getContainer() {
-    let container = document.querySelector('.quanta-toast-container');
-    if (!container) {
-      container = document.createElement('div');
-      container.className = 'quanta-toast-container';
-      document.body.appendChild(container);
-    }
-    return container;
+  // Create container if it doesn't exist
+  if (!container) {
+    container = document.createElement('div');
+    container.className = `quanta-toast-container ${position}`;
+    document.body.appendChild(container);
   }
 
-  // Show a toast
-  function show({ message = '', type = 'info', duration = 4000 } = {}) {
-    const container = getContainer();
-    // Create toast element
-    const toast = document.createElement('div');
-    toast.className = `quanta-toast quanta-${type}`;
-    
-    // Message
-    const msg = document.createElement('div');
-    msg.className = 'quanta-toast-message';
-    msg.textContent = message;
-    toast.appendChild(msg);
+  const toast = document.createElement('div');
+  toast.className = `quanta-toast quanta-${type}`;
 
-    // Close button
-    const btn = document.createElement('button');
-    btn.className = 'quanta-toast-close';
-    btn.setAttribute('aria-label', 'Close notification');
-    btn.innerHTML = '&times;';
-    toast.appendChild(btn);
+  toast.innerHTML = `
+    ${icon ? `<div class="quanta-toast-icon">${icon}</div>` : ''}
+    <div class="quanta-toast-body">
+      ${title ? `<div class="quanta-toast-title">${title}</div>` : ''}
+      <div class="quanta-toast-message">${message}</div>
+    </div>
+    <button class="quanta-toast-close" aria-label="Close">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
+        <path fill-rule="evenodd" d="M5.47 5.47a.75.75 0 0 1 1.06 0L12 10.94l5.47-5.47a.75.75 0 1 1 1.06 1.06L13.06 12l5.47 5.47a.75.75 0 1 1-1.06 1.06L12 13.06l-5.47 5.47a.75.75 0 0 1-1.06-1.06L10.94 12 5.47 6.53a.75.75 0 0 1 0-1.06Z" clip-rule="evenodd" />
+      </svg>
+    </button>
+    ${showProgress ? `<div class="quanta-toast-progress" style="animation-duration: ${timeout}ms;"></div>` : ''}
+  `;
 
-    // Append & auto dismiss
-    container.appendChild(toast);
-    // Manual close
-    btn.addEventListener('click', () => dismiss(toast));
-    // Auto-dismiss
-    setTimeout(() => dismiss(toast), duration);
+  // Manual close
+  toast.querySelector('.quanta-toast-close').addEventListener('click', () => dismissToast(toast));
+
+  // Auto dismiss
+  const autoDismiss = setTimeout(() => dismissToast(toast), timeout);
+
+  function dismissToast(el) {
+    el.style.animation = 'quanta-slide-out 0.3s ease forwards';
+    clearTimeout(autoDismiss);
+    el.addEventListener('animationend', () => el.remove());
   }
 
-  // Dismiss logic with animation
-  function dismiss(toast) {
-    toast.style.animation = 'quanta-fade-out 0.4s ease forwards';
-    toast.addEventListener('animationend', () => {
-      toast.remove();
-    }, { once: true });
-  }
+  container.appendChild(toast);
+};
 
-  // Expose API
-  window.QuantaToast = { show, dismiss };
+document.querySelectorAll('.quanta-toast-close').forEach(btn => {
+  btn.addEventListener('click', (e) => {
+    const toast = e.target.closest('.quanta-toast');
+    toast.style.animation = 'quanta-slide-out 0.3s ease forwards';
+    toast.addEventListener('animationend', () => toast.remove());
+  });
+});
 
-  // Optional: auto-initialize container on DOMContentLoaded
-  document.addEventListener('DOMContentLoaded', getContainer);
-})();
 
 // quanta-pagination.js
 ;(function(){
@@ -796,275 +1115,174 @@
   };
 })();
 
-// quanta-popovers.js
-;(function () {
-  'use strict';
+function setupPopoverTriggers() {
+  const triggers = document.querySelectorAll('[data-popover-target]');
 
-  document.addEventListener('DOMContentLoaded', initQuantaPopovers);
+  triggers.forEach(trigger => {
+    const targetId = trigger.getAttribute('data-popover-target');
+    const popover = document.getElementById(targetId);
+    let timeout;
 
-  function initQuantaPopovers() {
-    // Find all triggers
-    document.querySelectorAll('[data-quanta-popover]').forEach(trigger => {
-      const popoverId = trigger.getAttribute('data-quanta-popover');
-      const popover = document.getElementById(popoverId);
-      if (!popover) return;
+    if (!popover) return; // Skip if target doesn't exist
 
-      // Ensure it's absolutely positioned and hidden initially
-      popover.style.position = 'absolute';
-      popover.style.display = 'none';
-      popover.style.opacity = '0';
+    const show = () => {
+      clearTimeout(timeout);
+      closeAllPopoversExcept(popover);
+      popover.setAttribute('data-show', 'true');
+    };
 
-      // Show on click
-      trigger.addEventListener('click', (e) => {
-        e.stopPropagation();
-        togglePopover(popover, trigger);
-      });
+    const hide = () => {
+      timeout = setTimeout(() => {
+        popover.setAttribute('data-show', 'false');
+      }, 150);
+    };
 
-      // Keyboard: Enter or Space
-      trigger.addEventListener('keydown', e => {
-        if (e.key === 'Enter' || e.key === ' ') {
-          e.preventDefault();
-          togglePopover(popover, trigger);
-        }
-      });
-    });
+    // Hover listeners for button
+    trigger.addEventListener('mouseenter', show);
+    trigger.addEventListener('mouseleave', hide);
 
-    // Click outside closes
-    document.addEventListener('click', e => {
-      document.querySelectorAll('.quanta-popover.show').forEach(p => {
-        if (!p.contains(e.target)) hidePopover(p);
-      });
-    });
+    // Hover listeners for popover itself
+    popover.addEventListener('mouseenter', () => clearTimeout(timeout));
+    popover.addEventListener('mouseleave', hide);
 
-    // Escape closes
-    document.addEventListener('keydown', e => {
-      if (e.key === 'Escape') {
-        document.querySelectorAll('.quanta-popover.show').forEach(hidePopover);
+    // Click toggle support
+    trigger.addEventListener('click', (e) => {
+      e.stopPropagation();
+      const isVisible = popover.getAttribute('data-show') === 'true';
+      if (!isVisible) {
+        closeAllPopoversExcept(popover);
+        popover.setAttribute('data-show', 'true');
+      } else {
+        popover.setAttribute('data-show', 'false');
       }
     });
-  }
-
-  function togglePopover(popover, trigger) {
-    const isOpen = popover.classList.contains('show');
-    if (isOpen) {
-      hidePopover(popover);
-    } else {
-      showPopover(popover, trigger);
-    }
-  }
-
-  function showPopover(popover, trigger) {
-    // Close any open popovers
-    document.querySelectorAll('.quanta-popover.show').forEach(hidePopover);
-
-    const rect = trigger.getBoundingClientRect();
-    const placement = popover.dataset.placement || 'bottom';
-
-    // Reset styles
-    popover.style.display = 'block';
-    popover.style.opacity = '1';
-    popover.style.pointerEvents = 'auto';
-
-    // Position
-    const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-    const scrollLeft = window.pageXOffset || document.documentElement.scrollLeft;
-
-    const top = {
-      top: rect.top + scrollTop - popover.offsetHeight - 8,
-      left: rect.left + scrollLeft + rect.width / 2 - popover.offsetWidth / 2,
-    };
-    const bottom = {
-      top: rect.bottom + scrollTop + 8,
-      left: rect.left + scrollLeft + rect.width / 2 - popover.offsetWidth / 2,
-    };
-    const left = {
-      top: rect.top + scrollTop + rect.height / 2 - popover.offsetHeight / 2,
-      left: rect.left + scrollLeft - popover.offsetWidth - 8,
-    };
-    const right = {
-      top: rect.top + scrollTop + rect.height / 2 - popover.offsetHeight / 2,
-      left: rect.right + scrollLeft + 8,
-    };
-
-    let pos = bottom; // default
-    if (placement === 'top') pos = top;
-    if (placement === 'left') pos = left;
-    if (placement === 'right') pos = right;
-
-    popover.style.top = `${pos.top}px`;
-    popover.style.left = `${pos.left}px`;
-
-    popover.classList.add('show', 'quanta-popover-animated');
-  }
-
-  function hidePopover(popover) {
-    popover.classList.remove('show', 'quanta-popover-animated');
-    popover.style.display = 'none';
-    popover.style.opacity = '0';
-    popover.style.pointerEvents = 'none';
-  }
-
-  // Optional external access
-  window.QuantaPopover = {
-    init: initQuantaPopovers,
-    show: showPopover,
-    hide: hidePopover,
-    toggle: togglePopover
-  };
-})();
-
-;(function () {
-  'use strict';
-
-  document.addEventListener('DOMContentLoaded', () => {
-    initQuantaProgressBars();
   });
 
-  function initQuantaProgressBars() {
-    document.querySelectorAll('.quanta-progress-bar').forEach(bar => {
-      const inner = bar.querySelector('.quanta-progress-bar-inner');
-      const text = bar.querySelector('.quanta-progress-bar-text');
-      const value = parseFloat(bar.dataset.progress || '0'); // Accepts 0 to 100
-
-      setProgress(inner, text, value);
-    });
-  }
-
-  function setProgress(inner, textEl, value) {
-    const clamped = Math.min(100, Math.max(0, value));
-    inner.style.width = clamped + '%';
-    if (textEl) {
-      textEl.textContent = clamped + '%';
+  // Hide all popovers when clicking outside
+  document.addEventListener('click', (e) => {
+    if (!e.target.closest('.quanta-popover') && !e.target.closest('[data-popover-target]')) {
+      closeAllPopovers();
     }
-  }
-
-  // Optional: API for external usage
-  window.QuantaProgressBar = {
-    set: (selector, value) => {
-      const bar = document.querySelector(selector);
-      if (!bar) return;
-      const inner = bar.querySelector('.quanta-progress-bar-inner');
-      const text = bar.querySelector('.quanta-progress-bar-text');
-      setProgress(inner, text, value);
-    },
-
-    animateTo: (selector, value, duration = 1000) => {
-      const bar = document.querySelector(selector);
-      if (!bar) return;
-      const inner = bar.querySelector('.quanta-progress-bar-inner');
-      const text = bar.querySelector('.quanta-progress-bar-text');
-      const current = parseFloat(inner.style.width) || 0;
-      const target = Math.min(100, Math.max(0, value));
-      const stepTime = 10;
-      const stepCount = duration / stepTime;
-      const increment = (target - current) / stepCount;
-
-      let progress = current;
-      const interval = setInterval(() => {
-        progress += increment;
-        if ((increment > 0 && progress >= target) || (increment < 0 && progress <= target)) {
-          progress = target;
-          clearInterval(interval);
-        }
-        setProgress(inner, text, progress);
-      }, stepTime);
-    }
-  };
-})();
-
-;(function () {
-  'use strict';
-
-  document.addEventListener('DOMContentLoaded', () => {
-    document.querySelectorAll('.quanta-range-slider').forEach(initQuantaRangeSlider);
   });
+}
 
-  function initQuantaRangeSlider(slider) {
-    const thumb = slider.querySelector('.quanta-thumb');
-    const valueDisplay = slider.querySelector('.quanta-value');
-    const track = slider.querySelector('.quanta-track');
+function closeAllPopovers() {
+  document.querySelectorAll('.quanta-popover[data-show="true"]').forEach(p => {
+    p.setAttribute('data-show', 'false');
+  });
+}
 
-    const updatePosition = (x, skipEmit = false) => {
-      const rect = slider.getBoundingClientRect();
-      const percent = Math.max(0, Math.min(1, (x - rect.left) / rect.width));
-      const value = Math.round(percent * 100);
-      thumb.style.left = `calc(${value}% - ${thumb.offsetWidth / 2}px)`;
-      valueDisplay.textContent = `${value}%`;
-      if (!skipEmit) slider.dispatchEvent(new CustomEvent('quanta:change', { detail: value }));
-    };
+function closeAllPopoversExcept(current) {
+  document.querySelectorAll('.quanta-popover[data-show="true"]').forEach(p => {
+    if (p !== current) p.setAttribute('data-show', 'false');
+  });
+}
 
-    const onMove = e => {
-      if (!slider.classList.contains('dragging')) return;
-      const clientX = e.touches ? e.touches[0].clientX : e.clientX;
-      updatePosition(clientX);
-    };
+setupPopoverTriggers();
 
-    const onUp = () => {
-      slider.classList.remove('dragging');
-      document.removeEventListener('mousemove', onMove);
-      document.removeEventListener('touchmove', onMove);
-      document.removeEventListener('mouseup', onUp);
-      document.removeEventListener('touchend', onUp);
-    };
+document.querySelectorAll('.quanta-progress-bar').forEach(bar => {
+  const inner = bar.querySelector('.quanta-progress-bar-inner');
+  const label = bar.querySelector('.quanta-progress-label');
+  const progress = parseInt(bar.dataset.progress || 0, 10);
 
-    const onDown = e => {
-      slider.classList.add('dragging');
-      const clientX = e.touches ? e.touches[0].clientX : e.clientX;
-      updatePosition(clientX);
-      document.addEventListener('mousemove', onMove);
-      document.addEventListener('touchmove', onMove);
-      document.addEventListener('mouseup', onUp);
-      document.addEventListener('touchend', onUp);
-    };
+  if (inner) {
+    inner.style.width = progress + '%';
 
-    // Init thumb position
-    updatePosition(slider.getBoundingClientRect().left, true);
-
-    thumb.addEventListener('mousedown', onDown);
-    thumb.addEventListener('touchstart', onDown, { passive: true });
-  }
-
-  // Optional global API
-  window.QuantaRangeSlider = {
-    set: (selector, value) => {
-      const slider = document.querySelector(selector);
-      const thumb = slider.querySelector('.quanta-thumb');
-      const valueDisplay = slider.querySelector('.quanta-value');
-      const percent = Math.max(0, Math.min(100, value));
-      thumb.style.left = `calc(${percent}% - ${thumb.offsetWidth / 2}px)`;
-      valueDisplay.textContent = `${percent}%`;
-    }
-  };
-})();
-
-document.addEventListener('DOMContentLoaded', () => {
-  const sidebar = document.querySelector('.quanta-sidebar');
-  const toggleBtn = document.querySelector('.quanta-sidebar-toggle');
-  const collapseBtn = document.querySelector('.quanta-sidebar-collapse'); // Optional collapse button
-
-  // Mobile toggle
-  if (sidebar && toggleBtn) {
-    toggleBtn.addEventListener('click', () => {
-      sidebar.classList.toggle('show');
-      const isExpanded = sidebar.classList.contains('show');
-      sidebar.setAttribute('aria-expanded', isExpanded);
-    });
-  }
-
-  // Load collapse state from localStorage
-  if (sidebar && collapseBtn) {
-    const isCollapsed = localStorage.getItem('quanta-sidebar-collapsed') === 'true';
-    if (isCollapsed) {
-      sidebar.classList.add('collapsed');
+    // Add smooth animation if not already striped or animated
+    if (!bar.classList.contains('quanta-progress-animated')) {
+      inner.style.transition = 'width 0.6s ease-in-out';
     }
 
-    collapseBtn.addEventListener('click', () => {
-      sidebar.classList.toggle('collapsed');
-      const collapsed = sidebar.classList.contains('collapsed');
-      localStorage.setItem('quanta-sidebar-collapsed', collapsed);
-    });
+    // If there's a label, set it
+    if (label) {
+      label.textContent = progress + '%';
+    }
   }
 });
+
+
+function updateQuantaRange(rangeInput) {
+  const wrapper = rangeInput.closest('.quanta-range-wrapper');
+  const fill = wrapper.querySelector('[data-range-fill]');
+  const output = wrapper.querySelector('[data-range-output]');
+  const min = parseFloat(rangeInput.min) || 0;
+  const max = parseFloat(rangeInput.max) || 100;
+  const value = parseFloat(rangeInput.value);
+
+  const percent = ((value - min) / (max - min)) * 100;
+
+  // Set width of fill
+  fill.style.width = percent + "%";
+
+  // Update value bubble position
+  const thumbWidth = rangeInput.offsetWidth;
+  const bubble = output;
+  bubble.style.left = `calc(${percent}% - ${bubble.offsetWidth / 2}px)`;
+  bubble.textContent = value;
+}
+
+// On load
+document.querySelectorAll('.quanta-range').forEach(input => {
+  updateQuantaRange(input);
+  input.addEventListener('input', () => updateQuantaRange(input));
+});
+
+// src/components/tooltip.js
+(() => {
+  // create tooltip element
+  function makeTooltip(text) {
+    const tip = document.createElement('div');
+    tip.className = 'quanta-tooltip';
+    tip.textContent = text;
+    document.body.appendChild(tip);
+    return tip;
+  }
+
+  // position tooltip above or below as needed
+  function positionTooltip(el, tip) {
+    const rect = el.getBoundingClientRect();
+    const tipRect = tip.getBoundingClientRect();
+    // default above
+    let top = rect.top - tipRect.height - 8 + window.scrollY;
+    let left = rect.left + (rect.width - tipRect.width)/2 + window.scrollX;
+
+    // if no room above, place below
+    if (top < window.scrollY + 4) {
+      top = rect.bottom + 8 + window.scrollY;
+      tip.style.transform = 'translateY(0)';
+      tip.style.setProperty('--quanta-tooltip-arrow-top', '-6px');
+      tip.style.setProperty('--quanta-tooltip-arrow-rotate', '180deg');
+    } else {
+      tip.style.removeProperty('--quanta-tooltip-arrow-top');
+      tip.style.removeProperty('--quanta-tooltip-arrow-rotate');
+      tip.style.transform = 'translateY(-6px)';
+    }
+
+    tip.style.left = `${Math.max(4, left)}px`;
+    tip.style.top  = `${top}px`;
+  }
+
+  document.querySelectorAll('[data-tooltip]').forEach(trigger => {
+    let tooltipEl = null;
+
+    trigger.addEventListener('mouseenter', () => {
+      const text = trigger.getAttribute('data-tooltip');
+      if (!text) return;
+      tooltipEl = makeTooltip(text);
+      positionTooltip(trigger, tooltipEl);
+      requestAnimationFrame(() => tooltipEl.classList.add('show'));
+    });
+
+    trigger.addEventListener('mouseleave', () => {
+      if (!tooltipEl) return;
+      tooltipEl.classList.remove('show');
+      tooltipEl.addEventListener('transitionend', () => {
+        tooltipEl.remove();
+      }, { once: true });
+      tooltipEl = null;
+    });
+  });
+})();
 
 document.addEventListener('DOMContentLoaded', () => {
   // Simulate loading delay (optional)
@@ -1088,295 +1306,236 @@ document.addEventListener('DOMContentLoaded', () => {
   }, delay);
 });
 
-const userCard = document.querySelector('.user-card');
-const skeletons = userCard.querySelectorAll('.quanta-skeleton');
+// quanta-spinner.js
+document.QuantaSpinner = {
+  show: function(selector = 'body', type = 'quanta-spinner md') {
+    const target = document.querySelector(selector);
+    if (!target) return;
 
-// Show skeletons
-skeletons.forEach(s => s.style.display = 'block');
+    const wrapper = document.createElement('div');
+    wrapper.className = 'quanta-spinner-wrapper';
+    wrapper.style.display = 'flex';
+    wrapper.style.justifyContent = 'center';
+    wrapper.style.alignItems = 'center';
+    wrapper.style.width = '100%';
+    wrapper.style.height = '100%';
+    wrapper.innerHTML = `<div class="${type}" role="status" aria-label="Loading..."></div>`;
+    
+    target.appendChild(wrapper);
+    return wrapper; // for later removal
+  },
 
-// Fetch content
-fetch('/api/user')
-  .then(res => res.json())
-  .then(data => {
-    userCard.innerHTML = `
-      <img src="${data.avatar}" class="avatar" />
-      <h3>${data.name}</h3>
-      <p>${data.role}</p>
-    `;
-  });
-
-document.addEventListener('DOMContentLoaded', () => {
-  // Optional: Automatically hide spinners after a delay
-  const autoHideAfter = 2000; // in ms
-
-  // Circle Spinners
-  const spinners = document.querySelectorAll('.quanta-spinner');
-  spinners.forEach(spinner => {
-    if (spinner.dataset.autohide !== 'false') {
-      setTimeout(() => {
-        spinner.style.display = 'none';
-      }, autoHideAfter);
-    }
-  });
-
-  // Bar Spinners (reset animation if needed)
-  const bars = document.querySelectorAll('.quanta-spinner-bar .quanta-bar');
-  bars.forEach(bar => {
-    // Optional: Reset animation every cycle
-    bar.addEventListener('animationiteration', () => {
-      bar.style.animation = 'none';
-      bar.offsetHeight; // Trigger reflow
-      bar.style.animation = '';
-    });
-  });
-});
-
-/**
- * Helper: Show spinner manually
- * @param {string} selector - e.g. ".quanta-spinner.lg"
- */
-function showSpinner(selector) {
-  const el = document.querySelector(selector);
-  if (el) el.style.display = 'inline-block';
-}
-
-/**
- * Helper: Hide spinner manually
- * @param {string} selector
- */
-function hideSpinner(selector) {
-  const el = document.querySelector(selector);
-  if (el) el.style.display = 'none';
-}
-
-/**
- * Helper: Start a bar animation from 0 again
- * @param {string} selector
- */
-function resetBarAnimation(selector) {
-  const el = document.querySelector(selector);
-  if (el) {
-    el.style.animation = 'none';
-    el.offsetHeight; // Force reflow
-    el.style.animation = 'loading 2s infinite';
-  }
-}
-
-document.addEventListener('DOMContentLoaded', () => {
-  // Auto animate all stat values on load
-  const statValues = document.querySelectorAll('.quanta-stat-value');
-  statValues.forEach(el => {
-    const finalValue = parseInt(el.textContent.replace(/,/g, ''), 10);
-    if (!isNaN(finalValue)) {
-      animateStat(el, finalValue);
-    }
-  });
-
-  // OPTIONAL: Auto refresh stats every 10s (for demo purposes)
-  // remove this block if not needed
-  setInterval(() => {
-    document.querySelectorAll('.quanta-stat-value').forEach(el => {
-      const newValue = getRandomInt(1000, 9999);
-      animateStat(el, newValue);
-    });
-  }, 10000);
-});
-
-/**
- * Animate a stat number from 0 to value
- * @param {HTMLElement} el
- * @param {number} end
- * @param {number} duration
- */
-function animateStat(el, end, duration = 1000) {
-  let start = 0;
-  const startTime = performance.now();
-
-  function update(currentTime) {
-    const progress = Math.min((currentTime - startTime) / duration, 1);
-    const current = Math.floor(progress * end);
-    el.textContent = formatNumber(current);
-
-    if (progress < 1) {
-      requestAnimationFrame(update);
+  hide: function(spinnerElement) {
+    if (spinnerElement && spinnerElement.remove) {
+      spinnerElement.remove();
     }
   }
+};
 
-  requestAnimationFrame(update);
-}
+document.addEventListener("DOMContentLoaded", () => {
+  const counters = document.querySelectorAll(".quanta-stat-value");
 
-/**
- * Format numbers with commas
- */
-function formatNumber(num) {
-  return num.toLocaleString('en-US');
-}
+  counters.forEach(counter => {
+    const target = +counter.getAttribute("data-count");
+    const duration = 1200; // total duration in ms
+    const stepTime = 30; // how fast to update (ms)
+    const steps = Math.ceil(duration / stepTime);
+    const increment = Math.ceil(target / steps);
+    let current = 0;
 
-/**
- * Random int for demo updates
- */
-function getRandomInt(min, max) {
-  return Math.floor(Math.random() * (max - min + 1)) + min;
-}
-
-
-document.addEventListener('DOMContentLoaded', () => {
-  const steppers = document.querySelectorAll('.quanta-stepper');
-
-  steppers.forEach(stepper => {
-    const steps = stepper.querySelectorAll('.quanta-step');
-    let currentStep = 0;
-
-    // Initialize steps
-    updateSteps(steps, currentStep);
-
-    // Optional: next/prev buttons (if using)
-    const nextBtn = stepper.querySelector('[data-step-next]');
-    const prevBtn = stepper.querySelector('[data-step-prev]');
-
-    nextBtn?.addEventListener('click', () => {
-      if (currentStep < steps.length - 1) {
-        currentStep++;
-        updateSteps(steps, currentStep);
+    const update = () => {
+      current += increment;
+      if (current >= target) {
+        counter.textContent = target.toLocaleString();
+      } else {
+        counter.textContent = current.toLocaleString();
+        setTimeout(update, stepTime);
       }
-    });
+    };
 
-    prevBtn?.addEventListener('click', () => {
-      if (currentStep > 0) {
-        currentStep--;
-        updateSteps(steps, currentStep);
-      }
-    });
+    update();
   });
 });
 
-/**
- * Update stepper UI
- */
-function updateSteps(steps, activeIndex) {
+let currentStep = 0;
+
+function updateStepper() {
+  const steps = document.querySelectorAll('.quanta-stepper .quanta-step');
   steps.forEach((step, index) => {
     step.classList.remove('active', 'completed');
-
-    if (index < activeIndex) {
+    if (index < currentStep) {
       step.classList.add('completed');
-    } else if (index === activeIndex) {
+    } else if (index === currentStep) {
       step.classList.add('active');
     }
   });
 }
 
-// Vanilla JS sticky header scroll behavior
-document.addEventListener('DOMContentLoaded', () => {
-  const stickyTop = document.querySelector('.quanta-sticky-top');
-  if (!stickyTop) return;
-
-  let lastScrollY = window.scrollY;
-  window.addEventListener('scroll', () => {
-    const currentScrollY = window.scrollY;
-
-    if (currentScrollY > lastScrollY) {
-      // Scrolling down — hide header by moving it up
-      stickyTop.style.top = '-60px'; // Adjust height as needed
-    } else {
-      // Scrolling up — show header
-      stickyTop.style.top = '0';
-    }
-    lastScrollY = currentScrollY;
-  });
-});
-
-
-document.addEventListener('DOMContentLoaded', () => {
-  const tabs = document.querySelectorAll('.quanta-tabs [role="tab"]');
-  const panels = document.querySelectorAll('.quanta-tab-panel');
-
-  function activateTab(tab) {
-    // Deactivate all tabs
-    tabs.forEach(t => {
-      t.classList.remove('active');
-      t.setAttribute('aria-selected', 'false');
-      t.setAttribute('tabindex', '-1');
-    });
-
-    // Hide all panels
-    panels.forEach(panel => {
-      panel.classList.remove('active');
-      panel.setAttribute('hidden', '');
-    });
-
-    // Activate the clicked tab
-    tab.classList.add('active');
-    tab.setAttribute('aria-selected', 'true');
-    tab.removeAttribute('tabindex');
-    tab.focus();
-
-    // Show the associated panel
-    const panelId = tab.getAttribute('aria-controls');
-    const panel = document.getElementById(panelId);
-    panel.classList.add('active');
-    panel.removeAttribute('hidden');
+function nextStep() {
+  const steps = document.querySelectorAll('.quanta-stepper .quanta-step');
+  if (currentStep < steps.length - 1) {
+    currentStep++;
+    updateStepper();
   }
-
-  function handleKeyDown(e) {
-    const key = e.key;
-    const currentTab = e.target;
-    let newIndex;
-
-    const tabsArray = Array.from(tabs);
-    const currentIndex = tabsArray.indexOf(currentTab);
-
-    switch (key) {
-      case 'ArrowRight':
-      case 'ArrowDown':
-        e.preventDefault();
-        newIndex = (currentIndex + 1) % tabs.length;
-        tabs[newIndex].focus();
-        break;
-      case 'ArrowLeft':
-      case 'ArrowUp':
-        e.preventDefault();
-        newIndex = (currentIndex - 1 + tabs.length) % tabs.length;
-        tabs[newIndex].focus();
-        break;
-      case 'Home':
-        e.preventDefault();
-        tabs[0].focus();
-        break;
-      case 'End':
-        e.preventDefault();
-        tabs[tabs.length - 1].focus();
-        break;
-      case 'Enter':
-      case ' ':
-        e.preventDefault();
-        activateTab(currentTab);
-        break;
-    }
-  }
-
-  tabs.forEach(tab => {
-    tab.addEventListener('click', () => activateTab(tab));
-    tab.addEventListener('keydown', handleKeyDown);
-  });
-});
-
-const target = document.querySelector('.tooltip-target');
-const tooltip = document.createElement('div');
-tooltip.className = 'quanta-tooltip';
-tooltip.textContent = 'Tooltip text here';
-document.body.appendChild(tooltip);
-
-function positionTooltip() {
-  const rect = target.getBoundingClientRect();
-  tooltip.style.top = rect.top - tooltip.offsetHeight - 8 + window.scrollY + 'px';
-  tooltip.style.left = rect.left + rect.width / 2 - tooltip.offsetWidth / 2 + window.scrollX + 'px';
 }
 
-target.addEventListener('mouseenter', () => {
-  positionTooltip();
-  tooltip.classList.add('show');
+function prevStep() {
+  if (currentStep > 0) {
+    currentStep--;
+    updateStepper();
+  }
+}
+
+// Optional: Auto-init on page load
+document.addEventListener('DOMContentLoaded', updateStepper);
+
+// Vanilla JS sticky header scroll behavior
+document.addEventListener("DOMContentLoaded", function () {
+  const stickyHeader = document.querySelector(".quanta-sticky-transition");
+
+  if (!stickyHeader) return;
+
+  let lastScroll = 0;
+
+  window.addEventListener("scroll", () => {
+    const currentScroll = window.scrollY;
+
+    if (currentScroll > lastScroll) {
+      // Scrolling down
+      stickyHeader.style.top = "-60px";
+    } else {
+      // Scrolling up
+      stickyHeader.style.top = "0";
+    }
+
+    lastScroll = currentScroll;
+  });
 });
-target.addEventListener('mouseleave', () => {
-  tooltip.classList.remove('show');
+
+document.addEventListener("DOMContentLoaded", () => {
+  const tabs = document.querySelectorAll(".quanta-tab");
+  const panels = document.querySelectorAll(".quanta-tab-panel");
+
+  tabs.forEach((tab, index) => {
+    tab.addEventListener("click", () => {
+      // Remove active state from all
+      tabs.forEach(t => t.classList.remove("active"));
+      panels.forEach(p => p.classList.remove("active"));
+
+      // Add active to clicked tab and its panel
+      tab.classList.add("active");
+      if (panels[index]) {
+        panels[index].classList.add("active");
+      }
+    });
+  });
 });
+
+
+(() => {
+  // Utility: create tooltip element
+  function makeTooltip(text) {
+    const tip = document.createElement('div');
+    tip.className = 'quanta-tooltip';
+    tip.textContent = text;
+    document.body.appendChild(tip);
+    return tip;
+  }
+
+  // Position the tooltip relative to the wrapper
+  function positionTooltip(wrapper, tooltip) {
+    const wrapRect = wrapper.getBoundingClientRect();
+    const tipRect  = tooltip.getBoundingClientRect();
+
+    // center horizontally, place above with 8px gap
+    const left = wrapRect.left + (wrapRect.width - tipRect.width) / 2;
+    const top  = wrapRect.top  - tipRect.height - 8;
+
+    tooltip.style.left = `${Math.max(4, left)}px`; // prevent overflow left
+    tooltip.style.top  = `${top < 4 ? wrapRect.bottom + 8 : top}px`;
+  }
+
+  document.querySelectorAll('[data-tooltip]').forEach(el => {
+    let tooltipEl = null;
+
+    el.addEventListener('mouseenter', () => {
+      // wrapper must be position: relative or body fallback
+      const wrapper = el.parentElement || document.body;
+      const txt = el.getAttribute('data-tooltip');
+      if (!txt) return;
+
+      tooltipEl = makeTooltip(txt);
+      positionTooltip(wrapper, tooltipEl);
+
+      // trigger fade in
+      requestAnimationFrame(() => tooltipEl.classList.add('show'));
+    });
+
+    el.addEventListener('mouseleave', () => {
+      if (!tooltipEl) return;
+      tooltipEl.classList.remove('show');
+      tooltipEl.addEventListener('transitionend', () => {
+        tooltipEl.remove();
+      }, { once: true });
+      tooltipEl = null;
+    });
+  });
+})();
+
+// src/components/tooltip.js
+(() => {
+  // create tooltip element
+  function makeTooltip(text) {
+    const tip = document.createElement('div');
+    tip.className = 'quanta-tooltip';
+    tip.textContent = text;
+    document.body.appendChild(tip);
+    return tip;
+  }
+
+  // position tooltip above or below as needed
+  function positionTooltip(el, tip) {
+    const rect = el.getBoundingClientRect();
+    const tipRect = tip.getBoundingClientRect();
+    // default above
+    let top = rect.top - tipRect.height - 8 + window.scrollY;
+    let left = rect.left + (rect.width - tipRect.width)/2 + window.scrollX;
+
+    // if no room above, place below
+    if (top < window.scrollY + 4) {
+      top = rect.bottom + 8 + window.scrollY;
+      tip.style.transform = 'translateY(0)';
+      tip.style.setProperty('--quanta-tooltip-arrow-top', '-6px');
+      tip.style.setProperty('--quanta-tooltip-arrow-rotate', '180deg');
+    } else {
+      tip.style.removeProperty('--quanta-tooltip-arrow-top');
+      tip.style.removeProperty('--quanta-tooltip-arrow-rotate');
+      tip.style.transform = 'translateY(-6px)';
+    }
+
+    tip.style.left = `${Math.max(4, left)}px`;
+    tip.style.top  = `${top}px`;
+  }
+
+  document.querySelectorAll('[data-tooltip]').forEach(trigger => {
+    let tooltipEl = null;
+
+    trigger.addEventListener('mouseenter', () => {
+      const text = trigger.getAttribute('data-tooltip');
+      if (!text) return;
+      tooltipEl = makeTooltip(text);
+      positionTooltip(trigger, tooltipEl);
+      requestAnimationFrame(() => tooltipEl.classList.add('show'));
+    });
+
+    trigger.addEventListener('mouseleave', () => {
+      if (!tooltipEl) return;
+      tooltipEl.classList.remove('show');
+      tooltipEl.addEventListener('transitionend', () => {
+        tooltipEl.remove();
+      }, { once: true });
+      tooltipEl = null;
+    });
+  });
+})();
 

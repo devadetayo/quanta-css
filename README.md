@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="src/logo/favico.png" alt="Quanta CSS Logo" width="160" />
+  <img src="src/logo/icons.png" alt="Quanta CSS Logo" width="160" />
 </p>
 
 **A modern CSS framework built for speed, simplicity, and complete design control.**
@@ -67,7 +67,7 @@ npm install quanta-css
 ### Via CDN
 
 ```html
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/quantacss@1.0.1/dist/quanta.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/quantacss@1.0.5/dist/quanta.css">
 ```
 
 ---

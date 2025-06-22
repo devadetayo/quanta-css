@@ -1,31 +1,114 @@
 /* src/components/chips.css */
 @layer components.chips {
+  /* ─── Base Chip Style ───────────────────────────────────── */
   .quanta-chip {
+    --chip-gap: var(--quanta-space-2);
+    --chip-padding-y: var(--quanta-space-1);
+    --chip-padding-x: var(--quanta-space-2);
+
     display: inline-flex;
     align-items: center;
-    gap: var(--quanta-space-2);
-    padding: var(--quanta-space-1) var(--quanta-space-2);
+    gap: var(--chip-gap);
+    padding: var(--chip-padding-y) var(--chip-padding-x);
     font-size: var(--quanta-text-sm);
-    background: var(--quanta-bg-muted);
+    line-height: 1;
+    background-color: var(--quanta-slate-100);
+    color: var(--quanta-text-default);
     border-radius: var(--quanta-rounded-full);
+    transition:
+      background-color var(--quanta-duration-fast) var(--quanta-ease-default),
+      color var(--quanta-duration-fast) var(--quanta-ease-default);
   }
-  .quanta-chip .quanta-chip-close {
-    cursor: pointer;
+
+  /* ─── Image/Icon in Chip ────────────────────────────────── */
+  .quanta-chip-img {
+    flex-shrink: 0;
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: var(--quanta-rounded-full);
+    object-fit: cover;
+  }
+
+  .quanta-chip-sm .quanta-chip-img {
+    width: 1rem;
+    height: 1rem;
+  }
+
+  .quanta-chip-lg .quanta-chip-img {
+    width: 2rem;
+    height: 2rem;
+  }
+
+  /* ─── Close Button/Icon ─────────────────────────────────── */
+  .quanta-chip-close {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: var(--quanta-space-1);
     font-size: var(--quanta-text-xs);
+    line-height: 1;
+    border-radius: var(--quanta-rounded-full);
+    cursor: pointer;
+    transition: background-color var(--quanta-duration-fast) var(--quanta-ease-default);
   }
+
+  .quanta-chip-close:hover,
+  .quanta-chip-close:focus {
+    background-color: var(--quanta-slate-20);
+    color: var(--quanta-text-default);
+    outline: none;
+  }
+
+  /* ─── Input Chip Variant ────────────────────────────────── */
   .quanta-chip-input {
+    flex: 1;
+    min-width: 4ch;
+    background: transparent;
     border: none;
     outline: none;
-    padding: var(--quanta-space-1);
+    padding: var(--quanta-space-1) 0;
     font-size: var(--quanta-text-sm);
-    min-width: 4ch;
+    color: var(--quanta-text-default);
   }
 
-  html[data-theme="dark"] .quanta-chip { background: var(--quanta-bg-emphasis); }
+  /* ─── Size Variants ─────────────────────────────────────── */
+  .quanta-chip-sm {
+    --chip-gap: var(--quanta-space-1);
+    --chip-padding-y: var(--quanta-space-0);
+    --chip-padding-x: var(--quanta-space-1);
+    font-size: var(--quanta-text-xs);
+  }
 
-  @media (max-width:640px) { .quanta-chip { font-size: var(--quanta-text-xs); } }
-  @media (min-width:641px) and (max-width:768px) { /* no change */ }
-  @media (min-width:769px) and (max-width:1024px) { /* no change */ }
-  @media (min-width:1025px) and (max-width:1280px) { /* no change */ }
-  @media (min-width:1281px) { /* no change */ }
+  .quanta-chip-lg {
+    --chip-gap: var(--quanta-space-3);
+    --chip-padding-y: var(--quanta-space-2);
+    --chip-padding-x: var(--quanta-space-3);
+    font-size: var(--quanta-text-base);
+  }
+
+  /* ─── Hover State ───────────────────────────────────────── */
+  .quanta-chip:hover {
+    background-color: var(--quanta-slate-200);
+  }
+
+  /* ─── Dark Mode Overrides ───────────────────────────────── */
+  html[data-theme="dark"] .quanta-chip {
+    background-color: var(--quanta-slate-800);
+    color: var(--quanta-text-default);
+  }
+
+  html[data-theme="dark"] .quanta-chip-close:hover,
+  html[data-theme="dark"] .quanta-chip-close:focus {
+    background-color: var(--quanta-slate-700);
+  }
+
+  /* ─── Responsive Adjustments ────────────────────────────── */
+  @media (max-width: var(--quanta-screen-sm)) {
+    .quanta-chip {
+      --chip-gap: var(--quanta-space-1);
+      --chip-padding-x: var(--quanta-space-1);
+      --chip-padding-y: var(--quanta-space-0);
+      font-size: var(--quanta-text-xs);
+    }
+  }
 }

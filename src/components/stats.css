@@ -1,27 +1,81 @@
-/* src/components/stats.css */
 @layer components.stats {
   .quanta-stats {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
     gap: var(--quanta-space-6);
+    align-items: stretch;
     justify-content: center;
+    padding: var(--quanta-space-4);
   }
+
   .quanta-stat {
-    background: var(--quanta-bg-default);
+    background: var(--white);
     border-radius: var(--quanta-rounded-md);
-    padding: var(--quanta-space-6);
+    padding: var(--quanta-space-6) var(--quanta-space-5);
     text-align: center;
-    flex: 1 1 200px;
-    box-shadow: var(--quanta-shadow-sm);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: background 0.3s ease, transform 0.2s ease;
   }
-  .quanta-stat-value { font-size: var(--quanta-text-3xl); font-weight: bold; }
-  .quanta-stat-label { font-size: var(--quanta-text-sm); color: var(--quanta-text-muted); }
 
-  html[data-theme="dark"] .quanta-stat { background: var(--quanta-bg-emphasis); }
+  .quanta-stat:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--quanta-shadow-md);
+  }
 
-  @media (max-width:640px) { .quanta-stat { padding: var(--quanta-space-4); } }
-  @media (min-width:641px) and (max-width:768px) { /* no change */ }
-  @media (min-width:769px) and (max-width:1024px) { /* no change */ }
-  @media (min-width:1025px) and (max-width:1280px) { /* no change */ }
-  @media (min-width:1281px) { /* no change */ }
+  .quanta-stat-icon {
+    font-size: var(--quanta-text-3xl);
+    margin-bottom: var(--quanta-space-2);
+    color: var(--quanta-primary);
+  }
+
+  .quanta-stat-value {
+    font-size: var(--quanta-text-4xl);
+    font-weight: 700;
+    color: var(--quanta-text-strong);
+    margin-bottom: var(--quanta-space-1);
+  }
+
+  .quanta-stat-label {
+    font-size: var(--quanta-text-sm);
+    color: var(--quanta-text-muted);
+  }
+
+  .quanta-stat-variation {
+    font-size: var(--quanta-text-xs);
+    font-weight: 500;
+    color: var(--quanta-success);
+    margin-top: var(--quanta-space-1);
+  }
+
+  /* ─── Variants ───────────────────────────────────────────── */
+  .quanta-stat.danger .quanta-stat-variation { color: var(--quanta-danger); }
+  .quanta-stat.warning .quanta-stat-variation { color: var(--quanta-warning); }
+  .quanta-stat.info .quanta-stat-variation { color: var(--quanta-info); }
+
+  /* ─── Dark Mode ─────────────────────────────────────────── */
+  html[data-theme="dark"] .quanta-stat {
+    background: var(--quanta-bg-emphasis);
+    color: var(--quanta-text-light);
+  }
+
+  html[data-theme="dark"] .quanta-stat-label {
+    color: var(--quanta-grey-400);
+  }
+
+  html[data-theme="dark"] .quanta-stat:hover {
+    background: var(--quanta-slate-800);
+  }
+
+  /* ─── Responsive Fine-Tuning ────────────────────────────── */
+  @media (max-width: 640px) {
+    .quanta-stat {
+      padding: var(--quanta-space-4);
+    }
+
+    .quanta-stat-value {
+      font-size: var(--quanta-text-2xl);
+    }
+  }
 }

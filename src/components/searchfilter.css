@@ -1,31 +1,95 @@
-/* src/components/search-filter.css */
 @layer components.searchfilter {
+  /* ─── Layout Wrapper ───────────────────────────── */
   .quanta-searchbar {
     display: flex;
-    gap: var(--quanta-space-2);
     flex-wrap: wrap;
     align-items: center;
+    justify-content: space-between;
+    gap: var(--quanta-space-3);
+    width: 100%;
   }
-  .quanta-searchbar input,
-  .quanta-searchbar select {
-    padding: var(--quanta-space-2) var(--quanta-space-3);
+
+  /* ─── Input / Select Base ──────────────────────── */
+  .quanta-searchbar-input,
+  .quanta-searchbar-select {
+    flex: 1 1 200px;
+    min-width: 180px;
+    padding: var(--quanta-space-3) var(--quanta-space-4);
+    font-size: var(--quanta-text-sm);
+    background-color: var(--white);
     border: var(--quanta-border-width) solid var(--quanta-border-color);
     border-radius: var(--quanta-rounded-md);
-    flex: 1 1 200px;
+    color: var(--quanta-text-default);
+    transition: border-color 0.3s, box-shadow 0.3s;
   }
-  .quanta-searchbar button {
-    padding: var(--quanta-space-2) var(--quanta-space-4);
-    background: var(--quanta-primary);
-    color: #fff;
+
+  .quanta-searchbar-input:focus,
+  .quanta-searchbar-select:focus {
+    border-color: var(--quanta-primary);
+    box-shadow: 0 0 0 2px var(--quanta-primary-light);
+    outline: none;
+  }
+
+  /* ─── Button ───────────────────────────────────── */
+  .quanta-searchbar-btn {
+    padding: var(--quanta-space-2) var(--quanta-space-3);
+    background-color: var(--quanta-primary);
+    color: var(--white);
+    font-size: var(--quanta-text-sm);
+    font-weight: 600;
     border: none;
     border-radius: var(--quanta-rounded-md);
     cursor: pointer;
+    transition: background 0.3s ease;
   }
-  html[data-theme="dark"] .quanta-searchbar input,
-  html[data-theme="dark"] .quanta-searchbar select {
-    background: var(--quanta-bg-emphasis);
+
+  .quanta-searchbar-btn:hover {
+    opacity: 0.8;
+  }
+
+  .quanta-searchbar-btn:active {
+    transform: scale(0.98);
+  }
+
+  /* ─── Sizes (Optional) ─────────────────────────── */
+  .quanta-searchbar-sm .quanta-searchbar-input,
+  .quanta-searchbar-sm .quanta-searchbar-select,
+  .quanta-searchbar-sm .quanta-searchbar-btn {
+    font-size: var(--quanta-text-xs);
+    padding: var(--quanta-space-1) var(--quanta-space-3);
+  }
+
+  .quanta-searchbar-lg .quanta-searchbar-input,
+  .quanta-searchbar-lg .quanta-searchbar-select,
+  .quanta-searchbar-lg .quanta-searchbar-btn {
+    font-size: var(--quanta-text-base);
+    padding: var(--quanta-space-3) var(--quanta-space-5);
+  }
+
+  /* ─── Dark Mode ────────────────────────────────── */
+  html[data-theme="dark"] .quanta-searchbar-input,
+  html[data-theme="dark"] .quanta-searchbar-select {
+    background-color: var(--quanta-slate-800);
+    border-color: var(--quanta-border-color);
     color: var(--quanta-text-light);
   }
 
-  @media (max-width:640px) { .quanta-searchbar { flex-direction: column; } }
+  html[data-theme="dark"] .quanta-searchbar-btn {
+    background-color: var(--quanta-primary);
+    color: var(--white);
+  }
+
+  /* ─── Responsive Stack ─────────────────────────── */
+  @media (max-width: 640px) {
+    .quanta-searchbar {
+      flex-direction: column;
+      align-items: stretch;
+    }
+
+    .quanta-searchbar-input,
+    .quanta-searchbar-select,
+    .quanta-searchbar-btn {
+      width: 100%;
+    }
+  }
 }

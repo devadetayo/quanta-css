@@ -1,0 +1,83 @@
+@layer components.drawer {
+  .quanta-drawer-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.4);
+    z-index: 998;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+  }
+
+  .quanta-drawer-overlay.active {
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+  .quanta-drawer {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    width: 300px;
+    background: var(--quanta-bg-default);
+    z-index: 999;
+    transition: transform 0.3s ease;
+    box-shadow: var(--quanta-shadow-lg);
+    display: flex;
+    flex-direction: column;
+  }
+
+  .quanta-drawer-left   { left: 0; transform: translateX(-100%); }
+  .quanta-drawer-right  { right: 0; transform: translateX(100%); }
+
+  .quanta-drawer.active { transform: translateX(0); }
+
+  .quanta-drawer-header {
+    padding: var(--quanta-space-4);
+    border-bottom: 1px solid var(--quanta-border-color);
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .quanta-drawer-body {
+    padding: var(--quanta-space-4);
+    overflow-y: auto;
+    flex-grow: 1;
+  }
+
+  .quanta-drawer-close {
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+
+  .quanta-drawer-menu{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .quanta-drawer-menu li .quanta-drawer-link {
+    padding: var(--quanta-space-2) var(--quanta-space-4);
+    text-decoration: none;
+    display: flex;
+    border-radius: var(--quanta-rounded-md);
+  }
+
+  .quanta-drawer-menu li .quanta-drawer-link:hover {
+    background-color: var(--quanta-border-color);
+    color: var(--quanta-primary);
+  }
+
+  html[data-theme="dark"] .quanta-drawer {
+    background-color: var(--quanta-slate-800);
+    color: var(--quanta-text-light);
+  }
+
+  html[data-theme="dark"] .quanta-drawer-overlay {
+    background-color: rgba(0,0,0,0.6);
+  }
+}

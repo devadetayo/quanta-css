@@ -1,156 +1,297 @@
 /* src/components/file-uploads.css */
-@layer components.file-uploads {
+@import "../components/variables.css";
 
-  /* ─── Base Styles for Normal File Upload Input ──────────────────── */
+@layer components.file-uploads {
+  /* ─── Base Variables ───────────────────────────────────── */
+  .quanta-file-upload,
+  .quanta-file-upload-modern {
+    cursor: pointer;
+    transition:
+      background-color var(--quanta-duration-fast),
+      border-color var(--quanta-duration-fast),
+      color var(--quanta-duration-fast);
+  }
+  .quanta-file-upload-wrapper{
+    display: flex;
+    width: 100%;
+    gap: var(--quanta-space-2);
+    align-items: center;
+    padding: var(--quanta-space-2);
+    border-radius: var(--quanta-rounded-lg);
+  }
+
+  .quanta-single-file-upload-wrapper {
+    display: flex;
+    width: 100%;
+    gap: var(--quanta-space-2);
+    align-items: center;
+    padding: var(--quanta-space-2);
+    border-radius: var(--quanta-rounded-lg);
+    background-color: var(--quanta-slate-100);
+  }
+
+  /* ─── Classic Upload ───────────────────────────────────── */
   .quanta-file-upload {
     position: relative;
-    display: inline-block;
-    width: 100%;
-    padding: 10px 20px;
-    background-color: var(--quanta-bg-muted);
-    border: 2px solid var(--quanta-border-default);
-    border-radius: var(--quanta-rounded-sm);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: var(--quanta-space-2) var(--quanta-space-3);
+    border-radius: var(--quanta-rounded-md);
     font-size: var(--quanta-text-sm);
-    color: var(--quanta-text-dark);
-    cursor: pointer;
     text-align: center;
-    transition: background-color 0.3s, border-color 0.3s;
-  }
-
-  .quanta-file-upload:hover {
-    background-color: var(--quanta-bg-hover);
-    border-color: var(--quanta-border-hover);
-  }
-
-  .quanta-file-upload:focus {
-    outline: none;
-    border-color: var(--quanta-border-focus);
   }
 
   .quanta-file-upload input[type="file"] {
-    display: none; /* Hide the default file input */
+    position: absolute;
+    inset: 0;
+    opacity: 0;
   }
 
-  .quanta-file-upload span {
-    display: inline-block;
-    font-weight: bold;
+  .quanta-file-upload:hover {
+    opacity: 0.8;
+    border-color: var(--quanta-primary);
   }
 
-  /* ─── Modern Styled File Upload ────────────────────────────────── */
+  .quanta-file-upload:focus-within {
+    border-color: var(--upload-focus-border);
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(37,192,214,0.3);
+  }
+
+  .quanta-file-upload-box {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: var(--quanta-space-3);
+    border-radius: var(--quanta-rounded-md);
+    font-size: var(--quanta-text-sm);
+    text-align: center;
+    border: 2px dashed var(--quanta-slate-200);
+    width: 100%;
+  }
+
+  .quanta-file-upload-box input[type="file"] {
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+  }
+
+  .quanta-file-upload-box:hover {
+    opacity: 0.8;
+    border-color: var(--quanta-primary);
+    color: var(--quanta-primary);
+  }
+
+  .quanta-file-upload:focus-within {
+    border-color: var(--upload-focus-border);
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(37,192,214,0.3);
+  }
+
+  /* ─── Modern Upload (Drag & Drop) ───────────────────────── */
   .quanta-file-upload-modern {
     position: relative;
-    display: inline-block;
     width: 100%;
-    height: 150px;
-    background-color: var(--quanta-bg-light);
-    border: 2px dashed var(--quanta-border-default);
-    border-radius: var(--quanta-rounded-sm);
-    font-size: var(--quanta-text-md);
-    color: var(--quanta-text-muted);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 180px;
+    background-color: var(--white);
+    border: 3px dashed var(--quanta-slate-300);
+    border-radius: var(--quanta-rounded-lg);
+    color: var(--upload-text-color);
     text-align: center;
-    line-height: 150px; /* Center text vertically */
-    transition: background-color 0.3s, border-color 0.3s;
-    cursor: pointer;
-    overflow: hidden;
+    gap: var(--quanta-space-2);
   }
 
-  .quanta-file-upload-modern:hover {
-    background-color: var(--quanta-bg-hover);
-    border-color: var(--quanta-border-hover);
-    color: var(--quanta-text-dark);
-  }
-
-  .quanta-file-upload-modern:focus {
-    outline: none;
-    border-color: var(--quanta-border-focus);
-  }
-
-  /* Hidden file input for Modern Upload */
   .quanta-file-upload-modern input[type="file"] {
     position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+    inset: 0;
     opacity: 0;
-    cursor: pointer;
-  }
-
-  .quanta-file-upload-modern .quanta-file-upload-text {
-    font-weight: bold;
-    font-size: 1.1rem;
   }
 
   .quanta-file-upload-modern .quanta-file-upload-icon {
-    font-size: 3rem;
-    color: var(--quanta-text-muted);
+    max-height: fit-content;
   }
 
-  /* Dark Mode Support for both styles */
-  html[data-theme="dark"] {
-    .quanta-file-upload {
-      background-color: var(--quanta-bg-dark-muted);
-      border-color: var(--quanta-border-dark);
+  .quanta-file-upload-modern .quanta-file-upload-text {
+    font-weight: 600;
+    font-size: var(--quanta-text-base);
+  }
+
+  .quanta-file-upload-modern .quanta-file-upload-icon svg{
+    width: var(--quanta-space-6);
+    height: var(--quanta-space-6);
+    max-width: fit-content;
+    fill: var(--quanta-primary);
+  }
+
+  .quanta-file-upload-modern:hover,
+  .quanta-file-upload-modern.dragover {
+    border-color: var(--quanta-primary);
+    color: var(--quanta-text-default);
+  }
+
+  .quanta-file-upload-modern:focus-within {
+    border-color: var(--quanta-primary);
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(37,192,214,0.3);
+  }
+
+  /* ─── Preview Section ──────────────────────────────────── */
+  .quanta-file-preview {
+    gap: var(--quanta-space-2);
+    width: 100%;
+    font-size: var(--quanta-text-sm);
+  }
+
+  /* Image Thumbnail Grid */
+  .quanta-file-upload-show-preview .quanta-file-preview {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
+  }
+
+  .quanta-file-thumbnail {
+    position: relative;
+    padding-top: 100%;
+    background-size: cover;
+    background-position: center;
+    border-radius: var(--quanta-rounded-md);
+    overflow: hidden;
+  }
+
+  .quanta-file-thumbnail .quanta-file-remove {
+    position: absolute;
+    top: var(--quanta-space-1);
+    right: var(--quanta-space-1);
+    background-color: rgba(0,0,0,0.6);
+    color: #fff;
+    width: var(--quanta-space-4);
+    height: var(--quanta-space-4);
+    border-radius: var(--quanta-rounded-full);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: var(--quanta-text-xs);
+    cursor: pointer;
+    opacity: 0.8;
+    transition: opacity 0.2s;
+  }
+
+  .quanta-file-thumbnail .quanta-file-remove:hover {
+    opacity: 1;
+  }
+
+  /* File List View */
+  .quanta-file-upload-show-list .quanta-file-preview {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .quanta-file-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: var(--quanta-space-2) var(--quanta-space-3);
+    background-color: var(--quanta-slate-200);
+    color: var(--black);
+    border-radius: var(--quanta-rounded-md);
+    gap: var(--quanta-space-2);
+    width: 100%;
+  }
+
+  .quanta-file-item .quanta-file-remove {
+    cursor: pointer;
+    font-size: var(--quanta-text-sm);
+    transition: color 0.2s;
+  }
+
+  .quanta-file-item .quanta-file-remove:hover {
+    color: var(--quanta-danger-hover);
+  }
+
+  /* ─── Size Variants ────────────────────────────────────── */
+  .quanta-file-upload-sm {
+    --upload-padding: var(--quanta-space-2);
+    font-size: var(--quanta-text-xs);
+  }
+
+  .quanta-file-upload-lg {
+    --upload-padding: var(--quanta-space-6);
+    font-size: var(--quanta-text-base);
+  }
+
+  .quanta-file-upload-modern-sm {
+    height: 100px;
+  }
+
+  .quanta-file-upload-modern-lg {
+    height: 200px;
+  }
+
+  .quanta-image-box-preview {
+    width: 100%;
+    aspect-ratio: 16/9;
+    border: 2px dashed var(--quanta-slate-200);
+    border-radius: var(--quanta-rounded-md);
+    overflow: hidden;
+    display: none;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .quanta-image-box-preview img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .quanta-image-box-wrapper {
+    position: relative;
+    width: 150px;
+    aspect-ratio: 1/1;
+    border-radius: var(--quanta-rounded-full);
+    overflow: hidden;
+    cursor: pointer;
+  }
+
+  .quanta-clickable-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+
+  /* ─── Dark Mode ───────────────────────────────────────── */
+  html[data-theme="dark"]{
+    .quanta-single-file-upload-wrapper{
+      background-color: var(--quanta-slate-800);
     }
 
-    .quanta-file-upload:hover {
-      background-color: var(--quanta-bg-dark-hover);
-      border-color: var(--quanta-border-dark-hover);
+    .quanta-file-upload-box {
+      border-color: var(--quanta-slate-700);
     }
 
     .quanta-file-upload-modern {
-      background-color: var(--quanta-bg-dark-light);
-      border-color: var(--quanta-border-dark);
+      border-color: var(--quanta-slate-700);
+      background: var(--quanta-slate-900);
+      color: var(--upload-text-color);
     }
 
-    .quanta-file-upload-modern:hover {
-      background-color: var(--quanta-bg-dark-hover);
-      border-color: var(--quanta-border-dark-hover);
-      color: var(--quanta-text-dark);
-    }
-
-    .quanta-file-upload-modern .quanta-file-upload-icon {
-      color: var(--quanta-text-muted);
+    .quanta-file-item,
+    .quanta-file-thumbnail {
+      background-color: var(--quanta-slate-700);
+      color: var(--quanta-text-default);
     }
   }
 
-  /* ─── Responsive Design for File Uploads (5 Breakpoints) ─────────── */
-  @media (max-width: 640px) {
-    .quanta-file-upload,
+  /* ─── Mobile Adjustment ───────────────────────────────── */
+  @media (max-width: var(--quanta-screen-sm)) {
     .quanta-file-upload-modern {
-      width: 100%;
-    }
-  }
-
-  @media (min-width: 641px) and (max-width: 768px) {
-    .quanta-file-upload,
-    .quanta-file-upload-modern {
-      width: 100%;
       height: 120px;
-    }
-  }
-
-  @media (min-width: 769px) and (max-width: 1024px) {
-    .quanta-file-upload,
-    .quanta-file-upload-modern {
-      width: 100%;
-      height: 140px;
-    }
-  }
-
-  @media (min-width: 1025px) and (max-width: 1280px) {
-    .quanta-file-upload,
-    .quanta-file-upload-modern {
-      width: 100%;
-      height: 160px;
-    }
-  }
-
-  @media (min-width: 1281px) {
-    .quanta-file-upload,
-    .quanta-file-upload-modern {
-      width: 100%;
-      height: 180px;
     }
   }
 }

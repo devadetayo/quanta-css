@@ -1,0 +1,42 @@
+@layer components.theme {
+  .quanta-theme-toggle {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--quanta-space-2);
+    padding: var(--quanta-space-2);
+    border: none;
+    background: var(--white);
+    color: var(--quanta-text-default);
+    border-radius: var(--quanta-rounded-lg);
+    border: 2px solid var(--quanta-border-color);
+    cursor: pointer;
+    transition: background 0.3s;
+    height: fit-content;
+    width: fit-content;
+  }
+
+  .quanta-theme-toggle:hover {
+    background: var(--quanta-bg-hover);
+  }
+
+  .quanta-theme-toggle .icon-sun,
+  .quanta-theme-toggle .icon-moon {
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+  }
+
+  html[data-theme="dark"] .quanta-theme-toggle {
+    background: var(--quanta-slate-800);
+    border-color: var(--quanta-border-color);
+  }
+
+  html[data-theme="dark"] .quanta-theme-toggle .icon-sun {
+    display: none;
+  }
+
+  html[data-theme="light"] .quanta-theme-toggle .icon-moon {
+    display: none;
+  }
+}

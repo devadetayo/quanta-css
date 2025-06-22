@@ -1,0 +1,53 @@
+@layer utilities.visibility {
+  /* Basic visibility */
+  .visible { visibility: visible; }
+  .invisible { visibility: hidden; }
+
+  /* Display toggle */
+  .hidden { display: none !important; }
+  .block { display: block !important; }
+  .inline { display: inline !important; }
+  .inline-block { display: inline-block !important; }
+
+  /* Screen-only / Print-only */
+  .screen-only { display: block; }
+  .print-only { display: none; }
+
+  @media print {
+    .screen-only { display: none !important; }
+    .print-only { display: block !important; }
+  }
+
+  /* ─── Responsive Display ───────────────────── */
+  @media (max-width: 640px) {
+    .sm-hidden { display: none !important; }
+    .sm-block { display: block !important; }
+    .sm-inline { display: inline !important; }
+    .sm-visible { visibility: visible !important; }
+    .sm-invisible { visibility: hidden !important; }
+  }
+
+  @media (min-width: 641px) and (max-width: 768px) {
+    .md-hidden { display: none !important; }
+    .md-block { display: block !important; }
+    .md-inline { display: inline !important; }
+    .md-visible { visibility: visible !important; }
+    .md-invisible { visibility: hidden !important; }
+  }
+
+  @media (min-width: 769px) and (max-width: 1024px) {
+    .lg-hidden { display: none !important; }
+    .lg-block { display: block !important; }
+    .lg-inline { display: inline !important; }
+    .lg-visible { visibility: visible !important; }
+    .lg-invisible { visibility: hidden !important; }
+  }
+
+  @media (min-width: 1025px) {
+    .xl-hidden { display: none !important; }
+    .xl-block { display: block !important; }
+    .xl-inline { display: inline !important; }
+    .xl-visible { visibility: visible !important; }
+    .xl-invisible { visibility: hidden !important; }
+  }
+}

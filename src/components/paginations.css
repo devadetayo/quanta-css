@@ -103,7 +103,7 @@
   /* ─── Responsive Design (5 Breakpoints) ────────────────────────── */
   @media (max-width: 640px) {
     .quanta-pagination {
-      flex-direction: column;
+      flex-direction: row;
       align-items: center;
     }
 

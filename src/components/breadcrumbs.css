@@ -7,27 +7,57 @@
     padding: 0;
     margin: 0;
     font-size: var(--quanta-text-sm);
+    font-family: var(--quanta-font-secondary);
+    color: var(--quanta-text-muted);
   }
+
   .quanta-breadcrumb li + li::before {
     content: '/';
     margin: 0 var(--quanta-space-2);
     color: var(--quanta-text-muted);
   }
+
   .quanta-breadcrumb a {
     text-decoration: none;
     color: var(--quanta-primary);
-    transition: color var(--quanta-transition-fast);
+    transition: color var(--quanta-duration-fast);
   }
+
   .quanta-breadcrumb a:hover {
     color: var(--quanta-primary-hover);
   }
+
+  .quanta-breadcrumb .is-current {
+    color: var(--quanta-text-default);
+    font-weight: 500;
+    pointer-events: none;
+  }
+
+  html[data-theme="dark"] .quanta-breadcrumb {
+    color: var(--quanta-text-light-muted);
+  }
+
   html[data-theme="dark"] .quanta-breadcrumb a {
+    color: var(--quanta-primary);
+  }
+
+  html[data-theme="dark"] .quanta-breadcrumb a:hover {
+    color: var(--quanta-primary-hover);
+  }
+
+  html[data-theme="dark"] .quanta-breadcrumb .is-current {
     color: var(--quanta-text-light);
   }
 
-  @media (max-width: 640px) { .quanta-breadcrumb { font-size: var(--quanta-text-xs); } }
-  @media (min-width:641px) and (max-width:768px) { /* no change */ }
-  @media (min-width:769px) and (max-width:1024px) { /* no change */ }
-  @media (min-width:1025px) and (max-width:1280px) { /* no change */ }
-  @media (min-width:1281px) { .quanta-breadcrumb { font-size: var(--quanta-text-base); } }
+  @media (max-width: 640px) {
+    .quanta-breadcrumb {
+      font-size: var(--quanta-text-xs);
+    }
+  }
+
+  @media (min-width: 1281px) {
+    .quanta-breadcrumb {
+      font-size: var(--quanta-text-base);
+    }
+  }
 }

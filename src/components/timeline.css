@@ -1,39 +1,102 @@
-/* src/components/timeline.css */
 @layer components.timeline {
   .quanta-timeline {
     position: relative;
-    margin: var(--quanta-space-4) 0;
-    padding-left: var(--quanta-space-6);
-    border-left: var(--quanta-border-width) solid var(--quanta-border-color);
+    display: flex;
+    flex-direction: column;
+    gap: var(--quanta-space-8);
+    border-left: 3px solid var(--quanta-border-color);
   }
+
   .quanta-timeline-item {
     position: relative;
-    margin-bottom: var(--quanta-space-6);
+    padding-left: var(--quanta-space-6);
+    transition: all 0.3s ease;
   }
+
   .quanta-timeline-item::before {
     content: '';
     position: absolute;
-    left: -var(--quanta-space-6);
-    top: 0;
-    width: var(--quanta-space-4);
-    height: var(--quanta-space-4);
-    background: var(--quanta-primary);
+    left: -0.5rem;
+    width: 0.9rem;
+    height: 0.9rem;
+    background-color: var(--quanta-primary);
     border-radius: 50%;
+    box-shadow: 0 0 0 4px var(--quanta-bg-default);
+    z-index: 1;
   }
-  .quanta-timeline-item .quanta-time {
-    font-size: var(--quanta-text-xs);
+
+  .quanta-timeline-item.quanta-beginning::before {
+    content: '';
+    position: absolute;
+    left: -0.4rem;
+    width: var(--quanta-space-3);
+    height: var(--quanta-space-3);
+    background-color: var(--quanta-bg-default);
+    border: 1px solid var(--quanta-primary);
+    border-radius: 50%;
+    box-shadow: 0 0 0 4px var(--white);
+    z-index: 1;
+  }
+
+  .quanta-timeline-icon {
+    font-size: var(--quanta-text-lg);
+    margin-right: var(--quanta-space-2);
+    color: var(--quanta-primary);
+  }
+
+  .quanta-timeline .quanta-time {
+    font-size: var(--quanta-text-sm);
     color: var(--quanta-text-muted);
-  }
-  .quanta-timeline-item .quanta-content {
-    padding-bottom: var(--quanta-space-2);
+    margin-bottom: var(--quanta-space-1);
   }
 
-  html[data-theme="dark"] .quanta-timeline { border-color: var(--quanta-border-dark); }
-  html[data-theme="dark"] .quanta-timeline-item::before { background: var(--quanta-primary); }
+  .quanta-timeline .quanta-title {
+    font-size: var(--quanta-text-lg);
+    font-weight: 600;
+    color: var(--quanta-text-strong);
+    margin-bottom: var(--quanta-space-1);
+  }
 
-  @media (max-width:640px) { .quanta-timeline { padding-left: var(--quanta-space-4); } }
-  @media (min-width:641px) and (max-width:768px) { /* no change */ }
-  @media (min-width:769px) and (max-width:1024px) { /* no change */ }
-  @media (min-width:1025px) and (max-width:1280px) { /* no change */ }
-  @media (min-width:1281px) { /* no change */ }
+  .quanta-timeline .quanta-content {
+    font-size: var(--quanta-body-size);
+    color: var(--quanta-text-default);
+  }
+
+  /* Alternate timeline on larger screens */
+  @media (min-width: 768px) {
+    .quanta-timeline {
+      padding-left: 0;
+    }
+
+    .quanta-timeline-item {
+      width: 50%;
+    }
+  }
+
+  /* Dark Mode Support */
+  html[data-theme="dark"] {
+    .quanta-timeline-item::before {
+      box-shadow: 0 0 0 4px var(--quanta-slate-900);
+    }
+
+    .quanta-timeline-item.quanta-beginning::before {
+      background: var(--quanta-slate-900);
+    }
+
+    .quanta-timeline-item {
+      color: var(--quanta-text-light);
+    }
+
+    .quanta-timeline .quanta-title {
+      color: var(--quanta-text-light);
+    }
+
+    .quanta-timeline .quanta-time {
+      color: var(--quanta-grey-400);
+    }
+
+    .quanta-timeline .quanta-content {
+      color: var(--quanta-grey-200);
+    }
+  }
 }

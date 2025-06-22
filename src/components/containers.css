@@ -1,0 +1,44 @@
+@layer components.container {
+  .quanta-container {
+    margin-inline: auto;
+    padding-inline: var(--quanta-space-4);
+    width: 100%;
+    max-width: 100%;
+  }
+
+  @media (min-width: 640px) {
+    .quanta-container { max-width: 640px; }
+  }
+
+  @media (min-width: 768px) {
+    .quanta-container { max-width: 768px; }
+  }
+
+  @media (min-width: 1024px) {
+    .quanta-container { max-width: 1024px; }
+  }
+
+  @media (min-width: 1280px) {
+    .quanta-container { max-width: 1280px; }
+  }
+
+  @media (min-width: 1536px) {
+    .quanta-container { max-width: 1440px; }
+  }
+
+  .quanta-container-fluid {
+    width: 100%;
+    padding-inline: var(--quanta-space-4);
+    margin-inline: auto;
+  }
+
+  .quanta-container-no-padding {
+    padding-inline: 0;
+  }
+
+  /* Dark mode if needed */
+  html[data-theme="dark"] .quanta-container,
+  html[data-theme="dark"] .quanta-container-fluid {
+    background-color: transparent;
+  }
+}

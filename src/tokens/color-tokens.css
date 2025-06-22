@@ -76,16 +76,38 @@
     --quanta-pink-800: #801b40;
     --quanta-pink-900: #470a1f;
 
-    --quanta-grey-50: #e7e7e7;
-    --quanta-grey-100: #d1d1d1;
-    --quanta-grey-200: #b0b0b0;
-    --quanta-grey-300: #888888;
-    --quanta-grey-400: #707070;
-    --quanta-grey-500: #5d5d5d;
-    --quanta-grey-600: #4f4f4f;
-    --quanta-grey-700: #454545;
-    --quanta-grey-800: #3d3d3d;
-    --quanta-grey-900: #262626;
+    --quanta-grey-50:  #f8f9fa;
+    --quanta-grey-100: #f1f3f5;
+    --quanta-grey-200: #e4e7ea;
+    --quanta-grey-300: #cfd4d9;
+    --quanta-grey-400: #9aa0a6;
+    --quanta-grey-500: #6b7280;
+    --quanta-grey-600: #4b5563;
+    --quanta-grey-700: #374151;
+    --quanta-grey-800: #23272f;
+    --quanta-grey-900: #12161d;
+
+    --quanta-zinc-50:  #fafafa;
+    --quanta-zinc-100: #f4f4f5;
+    --quanta-zinc-200: #e4e4e7;
+    --quanta-zinc-300: #d4d4d8;
+    --quanta-zinc-400: #a1a1aa;
+    --quanta-zinc-500: #71717a;
+    --quanta-zinc-600: #52525b;
+    --quanta-zinc-700: #3f3f46;
+    --quanta-zinc-800: #27272a;
+    --quanta-zinc-900: #18181b;
+
+    --quanta-neutral-50:  #fafafa;
+    --quanta-neutral-100: #f5f5f5;
+    --quanta-neutral-200: #e5e5e5;
+    --quanta-neutral-300: #d4d4d4;
+    --quanta-neutral-400: #a3a3a3;
+    --quanta-neutral-500: #737373;
+    --quanta-neutral-600: #525252;
+    --quanta-neutral-700: #404040;
+    --quanta-neutral-800: #262626;
+    --quanta-neutral-900: #171717;
 
     --quanta-lime-50: #e7fec9;
     --quanta-lime-100: #d0fc9a;

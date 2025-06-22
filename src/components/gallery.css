@@ -1,41 +1,60 @@
-/* src/components/gallery.css */
 @layer components.gallery {
   .quanta-gallery {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
     gap: var(--quanta-space-4);
+    width: 100%;
+    align-items: stretch;
+    justify-content: center;
   }
+
   .quanta-gallery-item {
     position: relative;
     overflow: hidden;
     border-radius: var(--quanta-rounded-md);
+    aspect-ratio: 1 / 1;
+    background: var(--quanta-bg-muted);
+    cursor: pointer;
+    transition: transform 0.2s ease;
   }
+
   .quanta-gallery-item img {
     width: 100%;
-    height: auto;
-    transition: transform 0.3s;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.3s ease;
   }
-  .quanta-gallery-item:hover img {
-    transform: scale(1.1);
+
+  .quanta-gallery-item:hover img,
+  .quanta-gallery-item:focus-visible img {
+    transform: scale(1.05);
   }
+
   /* Lightbox */
   .quanta-lightbox {
     display: none;
     position: fixed;
     inset: 0;
-    background: rgba(0,0,0,0.8);
+    background-color: rgba(0, 0, 0, 0.85);
+    backdrop-filter: blur(4px);
     align-items: center;
     justify-content: center;
     z-index: 10000;
+    padding: var(--quanta-space-4);
   }
+
   .quanta-lightbox.active {
     display: flex;
   }
+
   .quanta-lightbox img {
-    max-width: 90%;
-    max-height: 90%;
+    max-width: 100%;
+    max-height: 90vh;
     border-radius: var(--quanta-rounded-md);
+    box-shadow: 0 0 0 3px var(--quanta-bg-default);
   }
+
   .quanta-lightbox-close {
     position: absolute;
     top: var(--quanta-space-4);
@@ -43,11 +62,29 @@
     font-size: var(--quanta-text-2xl);
     color: #fff;
     cursor: pointer;
+    background: rgba(0, 0, 0, 0.4);
+    border-radius: 50%;
+    padding: 0.5rem 0.75rem;
+    transition: background 0.2s;
   }
 
-  @media (max-width:640px) { .quanta-gallery { gap: var(--quanta-space-2); } }
-  @media (min-width:641px) and (max-width:768px) { /* no change */ }
-  @media (min-width:769px) and (max-width:1024px) { /* no change */ }
-  @media (min-width:1025px) and (max-width:1280px) { /* no change */ }
-  @media (min-width:1281px) { /* no change */ }
+  .quanta-lightbox-close:hover {
+    background: rgba(0, 0, 0, 0.8);
+  }
+
+  /* Responsive tweaks */
+  @media (max-width: 640px) {
+    .quanta-gallery {
+      grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+      gap: var(--quanta-space-2);
+    }
+  }
+
+  html[data-theme="dark"] .quanta-gallery-item {
+    background: var(--quanta-bg-emphasis);
+  }
+
+  html[data-theme="dark"] .quanta-lightbox img {
+    box-shadow: 0 0 0 3px var(--quanta-bg-emphasis);
+  }
 }

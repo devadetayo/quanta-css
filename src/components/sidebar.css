@@ -1,18 +1,16 @@
-/* src/components/sidebar.css */
 @layer components.sidebar {
   .quanta-sidebar {
     position: fixed;
-    top: 0;
+    inset-block: 0;
     left: 0;
-    height: 100vh;
     width: 260px;
     background-color: var(--quanta-bg-default);
     color: var(--quanta-text-default);
-    box-shadow: var(--quanta-shadow-lg);
-    z-index: 1000;
     display: flex;
     flex-direction: column;
-    transition: transform 0.3s ease;
+    box-shadow: var(--quanta-shadow-lg);
+    transition: width 0.3s ease, transform 0.3s ease;
+    z-index: 1000;
   }
 
   .quanta-sidebar.collapsed {
@@ -28,54 +26,86 @@
     font-weight: bold;
     padding: var(--quanta-space-4);
     border-bottom: var(--quanta-border-width) solid var(--quanta-border-color);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
   }
 
   .quanta-sidebar-nav {
+    flex: 1;
+    overflow-y: auto;
     display: flex;
     flex-direction: column;
-    padding: var(--quanta-space-4);
-    gap: var(--quanta-space-3);
-    flex-grow: 1;
+    gap: var(--quanta-space-2);
+    padding: var(--quanta-space-4) var(--quanta-space-3);
+    scrollbar-width: thin;
   }
 
   .quanta-sidebar-link {
-    text-decoration: none;
-    color: var(--quanta-text-default);
-    font-size: var(--quanta-text-base);
+    display: flex;
+    align-items: center;
+    gap: var(--quanta-space-2);
     padding: var(--quanta-space-2) var(--quanta-space-3);
     border-radius: var(--quanta-rounded-sm);
+    font-size: var(--quanta-text-base);
+    text-decoration: none;
+    color: var(--quanta-text-default);
     transition: background-color 0.2s ease;
   }
 
-  .quanta-sidebar-link:hover,
+  .quanta-sidebar-link:hover {
+    background-color: var(--quanta-slate-100);
+  }
+
   .quanta-sidebar-link.active {
-    background-color: var(--quanta-bg-muted);
+    background-color: var(--quanta-primary);
+    color: var(--white);
   }
 
   .quanta-sidebar-footer {
     padding: var(--quanta-space-4);
-    font-size: var(--quanta-text-sm);
+    font-size: var(--quanta-text-xs);
     color: var(--quanta-text-muted);
     border-top: var(--quanta-border-width) solid var(--quanta-border-color);
+    text-align: center;
   }
 
   .quanta-sidebar-toggle {
-    display: none;
     position: fixed;
     top: var(--quanta-space-3);
     left: var(--quanta-space-3);
     z-index: 1100;
-    background-color: var(--quanta-primary);
-    color: #fff;
-    border: none;
     padding: var(--quanta-space-2) var(--quanta-space-3);
+    background-color: var(--quanta-primary);
+    color: var(--white);
+    border: none;
     border-radius: var(--quanta-rounded-sm);
     cursor: pointer;
     box-shadow: var(--quanta-shadow-md);
+    display: none;
   }
 
-  /* ─── Responsive ─────────────────────────────────────────── */
-  @media (max-width: 640px) {
+  /* ─── Dark Mode ───────────────────── */
+  html[data-theme="dark"] .quanta-sidebar {
+    background-color: var(--quanta-slate-800);
+    color: var(--quanta-text-light);
+  }
+
+  html[data-theme="dark"] .quanta-sidebar-link {
+    color: var(--quanta-text-light);
+  }
+
+  html[data-theme="dark"] .quanta-sidebar-link:hover {
+    background-color: var(--quanta-slate-700);
+  }
+
+  html[data-theme="dark"] .quanta-sidebar-link.active {
+    background-color: var(--quanta-primary);
+    color: var(--white);
+  }
+
+  /* ─── Responsive ───────────────────── */
+  @media (max-width: 768px) {
     .quanta-sidebar {
       width: 100%;
       max-width: 260px;
@@ -89,50 +119,31 @@
     .quanta-sidebar-toggle {
       display: block;
     }
-  }
 
-  @media (min-width: 641px) and (max-width: 768px) {
-    .quanta-sidebar {
-      width: 220px;
+    .quanta-with-sidebar {
+      flex-direction: column;
+    }
+
+    .quanta-sidebar-content {
+      margin-left: 0 !important;
     }
   }
+}
 
-  @media (min-width: 769px) and (max-width: 1024px) {
-    .quanta-sidebar {
-      width: 240px;
-    }
-  }
+/* ─── Sidebar Layout Wrapper ───────────────────── */
+.quanta-with-sidebar {
+  display: flex;
+  min-height: 100vh;
+}
 
-  @media (min-width: 1025px) and (max-width: 1280px) {
-    .quanta-sidebar {
-      width: 260px;
-    }
-  }
+/* ─── Content Area ─────────────────────────────── */
+.quanta-sidebar-content {
+  flex: 1;
+  margin-left: 260px;
+  transition: margin-left 0.3s ease;
+}
 
-  @media (min-width: 1281px) {
-    .quanta-sidebar {
-      width: 280px;
-    }
-  }
-
-  /* ─── Dark Mode ─────────────────────────────────────────── */
-  html[data-theme="dark"] {
-    .quanta-sidebar {
-      background-color: var(--quanta-bg-emphasis);
-      color: var(--quanta-text-light);
-    }
-
-    .quanta-sidebar-link {
-      color: var(--quanta-text-light);
-    }
-
-    .quanta-sidebar-link:hover,
-    .quanta-sidebar-link.active {
-      background-color: var(--quanta-grey-800);
-    }
-
-    .quanta-sidebar-footer {
-      color: var(--quanta-grey-500);
-    }
-  }
+/* ─── When Sidebar is Collapsed ────────────────── */
+.quanta-sidebar.collapsed + .quanta-sidebar-content {
+  margin-left: 72px;
 }

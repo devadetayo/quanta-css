@@ -1,145 +1,108 @@
-/* src/components/progress-bars.css */
 @layer components.progress-bars {
-  /* ─── Base Progress Bar Styles ─────────────────────────────────── */
   .quanta-progress-bar {
     position: relative;
-    height: 20px;
     width: 100%;
-    background-color: var(--quanta-bg-muted);
+    height: 1rem;
+    background-color: var(--quanta-slate-100);
     border-radius: var(--quanta-rounded-sm);
     overflow: hidden;
-    box-shadow: var(--quanta-shadow-sm);
+    box-shadow: var(--quanta-shadow-xs);
   }
 
   .quanta-progress-bar-inner {
     height: 100%;
-    width: 0; /* Default to 0% progress */
-    background-color: var(--quanta-bg-primary);
-    border-radius: var(--quanta-rounded-sm);
-    transition: width 0.3s ease-in-out;
+    width: 0%;
+    background-color: var(--quanta-primary);
+    transition: width 0.4s ease;
+    border-radius: inherit;
   }
 
-  .quanta-progress-bar-text {
+  .quanta-progress-label {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     font-size: var(--quanta-text-xs);
-    font-weight: bold;
+    font-weight: 600;
     color: var(--quanta-text-white);
+    pointer-events: none;
   }
 
-  /* ─── Success Progress Bar ─────────────────────────────────────── */
-  .quanta-progress-bar-success .quanta-progress-bar-inner {
-    background-color: var(--quanta-bg-success);
+  /* Color Variants */
+  .quanta-progress-success .quanta-progress-bar-inner { background-color: var(--quanta-bg-success); }
+  .quanta-progress-warning .quanta-progress-bar-inner { background-color: var(--quanta-bg-warning); }
+  .quanta-progress-info .quanta-progress-bar-inner { background-color: var(--quanta-bg-info); }
+  .quanta-progress-danger .quanta-progress-bar-inner { background-color: var(--quanta-bg-danger); }
+
+  /* Style Variants */
+  .quanta-progress-soft .quanta-progress-bar-inner { opacity: 0.8; }
+  .quanta-progress-glass .quanta-progress-bar-inner {
+    backdrop-filter: blur(6px);
+    background-color: rgba(255, 255, 255, 0.15);
+  }
+  .quanta-progress-gradient .quanta-progress-bar-inner {
+    background: linear-gradient(to right, var(--quanta-primary), var(--quanta-cyan-100));
   }
 
-  /* ─── Info Progress Bar ────────────────────────────────────────── */
-  .quanta-progress-bar-info .quanta-progress-bar-inner {
-    background-color: var(--quanta-bg-info);
-  }
-
-  /* ─── Warning Progress Bar ─────────────────────────────────────── */
-  .quanta-progress-bar-warning .quanta-progress-bar-inner {
-    background-color: var(--quanta-bg-warning);
-  }
-
-  /* ─── Danger Progress Bar ──────────────────────────────────────── */
-  .quanta-progress-bar-danger .quanta-progress-bar-inner {
-    background-color: var(--quanta-bg-danger);
-  }
-
-  /* ─── Animated Progress Bar ────────────────────────────────────── */
-  .quanta-progress-bar-animated .quanta-progress-bar-inner {
-    animation: progress-bar-animate 1.5s linear infinite;
-  }
-
-  @keyframes progress-bar-animate {
-    0% {
-      width: 0%;
-    }
-    50% {
-      width: 50%;
-    }
-    100% {
-      width: 100%;
-    }
-  }
-
-  /* ─── Dark Mode Support ─────────────────────────────────────────── */
-  html[data-theme="dark"] {
-    .quanta-progress-bar {
-      background-color: var(--quanta-bg-dark-muted);
-    }
-
-    .quanta-progress-bar-inner {
-      background-color: var(--quanta-bg-dark-primary);
-    }
-
-    .quanta-progress-bar-success .quanta-progress-bar-inner {
-      background-color: var(--quanta-bg-dark-success);
-    }
-
-    .quanta-progress-bar-info .quanta-progress-bar-inner {
-      background-color: var(--quanta-bg-dark-info);
-    }
-
-    .quanta-progress-bar-warning .quanta-progress-bar-inner {
-      background-color: var(--quanta-bg-dark-warning);
-    }
-
-    .quanta-progress-bar-danger .quanta-progress-bar-inner {
-      background-color: var(--quanta-bg-dark-danger);
-    }
-  }
-
-  /* ─── Responsive Design (5 Breakpoints) ─────────────────────────── */
-  @media (max-width: 640px) {
-    .quanta-progress-bar {
-      height: 15px;
-    }
-  }
-
-  @media (min-width: 641px) and (max-width: 768px) {
-    .quanta-progress-bar {
-      height: 18px;
-    }
-  }
-
-  @media (min-width: 769px) and (max-width: 1024px) {
-    .quanta-progress-bar {
-      height: 20px;
-    }
-  }
-
-  @media (min-width: 1025px) and (max-width: 1280px) {
-    .quanta-progress-bar {
-      height: 22px;
-    }
-  }
-
-  @media (min-width: 1281px) {
-    .quanta-progress-bar {
-      height: 25px;
-    }
-  }
-
-  /* ─── Utility Classes ───────────────────────────────────────────── */
-  .quanta-progress-bar-striped .quanta-progress-bar-inner {
+  /* Striped + Animated */
+  .quanta-progress-striped .quanta-progress-bar-inner {
+    background-image: repeating-linear-gradient(
+      45deg,
+      rgba(255, 255, 255, 0.1) 0,
+      rgba(255, 255, 255, 0.1) 10px,
+      transparent 10px,
+      transparent 20px
+    );
     background-size: 40px 40px;
-    background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
   }
 
-  /* Customizable width for progress */
-  .quanta-progress-bar-half .quanta-progress-bar-inner {
-    width: 50%;
+  .quanta-progress-animated .quanta-progress-bar-inner {
+    animation: progress-stripes 1s linear infinite;
   }
 
-  .quanta-progress-bar-three-quarters .quanta-progress-bar-inner {
-    width: 75%;
+  @keyframes progress-stripes {
+    0% { background-position: 0 0; }
+    100% { background-position: 40px 0; }
   }
 
-  .quanta-progress-bar-full .quanta-progress-bar-inner {
-    width: 100%;
+  /* Height Utility Variants */
+  .quanta-progress-sm { height: 0.5rem; }
+  .quanta-progress-md { height: 1rem; }
+  .quanta-progress-lg { height: 1.5rem; }
+
+  /* Radius Variants */
+  .quanta-progress-rounded-none { border-radius: 0; }
+  .quanta-progress-rounded-md { border-radius: var(--quanta-rounded-md); }
+  .quanta-progress-rounded-full { border-radius: 9999px; }
+
+  /* Predefined Fill */
+  .quanta-progress-25 .quanta-progress-bar-inner { width: 25%; }
+  .quanta-progress-50 .quanta-progress-bar-inner { width: 50%; }
+  .quanta-progress-75 .quanta-progress-bar-inner { width: 75%; }
+  .quanta-progress-100 .quanta-progress-bar-inner { width: 100%; }
+
+  /* Stackable Progress (multi-layer) */
+  .quanta-progress-stack {
+    display: flex;
+    height: 100%;
+  }
+
+  .quanta-progress-stack > .quanta-progress-bar-inner {
+    flex: 1;
+    border-radius: 0;
+  }
+
+  /* Dark Mode */
+  html[data-theme="dark"] {
+    .quanta-progress-bar { background-color: var(--quanta-slate-700); }
+    .quanta-progress-bar-inner { background-color: var(--quanta-primary); }
+  }
+
+  /* Responsive Height */
+  @media (max-width: 640px) {
+    .quanta-progress-bar { height: 0.5rem; }
+  }
+  @media (min-width: 1281px) {
+    .quanta-progress-bar { height: 1.25rem; }
   }
 }

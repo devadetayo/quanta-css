@@ -1,138 +1,141 @@
-/* src/components/notifications.css */
 @layer components.notifications {
   .quanta-toast-container {
     position: fixed;
-    top: var(--quanta-space-4);
-    right: var(--quanta-space-4);
-    z-index: 9999;
+    z-index: var(--quanta-z-xl);
     display: flex;
     flex-direction: column;
     gap: var(--quanta-space-3);
     max-width: 90vw;
-    width: 320px;
     pointer-events: none;
   }
 
+  /* Position Variants */
+  .top-right { top: var(--quanta-space-4); right: var(--quanta-space-4); align-items: flex-end; }
+  .top-left { top: var(--quanta-space-4); left: var(--quanta-space-4); align-items: flex-start; }
+  .bottom-right { bottom: var(--quanta-space-4); right: var(--quanta-space-4); align-items: flex-end; }
+  .bottom-left { bottom: var(--quanta-space-4); left: var(--quanta-space-4); align-items: flex-start; }
+  .top-center { top: var(--quanta-space-4); left: 50%; transform: translateX(-50%); align-items: center; }
+  .bottom-center { bottom: var(--quanta-space-4); left: 50%; transform: translateX(-50%); align-items: center; }
+
   .quanta-toast {
-    background-color: var(--quanta-bg-default);
+    background-color: var(--quanta-slate-100);
     color: var(--quanta-text-default);
     border-left: 4px solid var(--quanta-primary);
     border-radius: var(--quanta-rounded-md);
     padding: var(--quanta-space-3) var(--quanta-space-4);
-    box-shadow: var(--quanta-shadow-md);
+    box-shadow: var(--quanta-shadow-lg);
     font-size: var(--quanta-text-sm);
     display: flex;
-    align-items: center;
+    align-items: start;
     justify-content: space-between;
     gap: var(--quanta-space-2);
-    animation: quanta-fade-in 0.4s ease forwards;
+    animation: quanta-slide-in 0.3s ease forwards;
     pointer-events: auto;
+    min-width: 280px;
+    max-width: 100%;
+    position: relative;
   }
 
-  .quanta-toast.quanta-success {
-    border-color: var(--quanta-success);
+  .quanta-toast-title {
+    font-weight: 600;
+    margin-bottom: var(--quanta-space-1);
+    font-size: var(--quanta-text-base);
   }
 
-  .quanta-toast.quanta-error {
-    border-color: var(--quanta-danger);
+  .quanta-toast-body {
+    flex-grow: 1;
   }
 
-  .quanta-toast.quanta-warning {
-    border-color: var(--quanta-warning);
+  .quanta-toast-icon {
+    font-size: 1.25rem;
+    margin-right: var(--quanta-space-2);
   }
 
-  .quanta-toast.quanta-info {
-    border-color: var(--quanta-info);
+  .quanta-success .quanta-toast-icon{
+    color: var(--quanta-bg-success);
   }
 
-  .quanta-toast .quanta-toast-close {
+  .quanta-warning .quanta-toast-icon{
+    color: var(--quanta-bg-warning);
+  }
+
+  .quanta-danger .quanta-toast-icon{
+    color: var(--quanta-bg-danger);
+  }
+
+  .quanta-primary .quanta-toast-icon{
+    color: var(--quanta-primary);
+  }
+
+  .quanta-info .quanta-toast-icon{
+    color: var(--quanta-bg-info);
+  }
+
+  .quanta-toast-close {
     background: none;
     border: none;
-    font-size: 1rem;
+    font-size: 1.25rem;
     cursor: pointer;
     color: var(--quanta-text-muted);
     transition: color 0.3s;
+    align-self: flex-start;
   }
 
-  .quanta-toast .quanta-toast-close:hover {
+  .quanta-toast-close:hover {
     color: var(--quanta-text-default);
   }
 
+  /* Type Variants */
+  .quanta-primary { border-color: var(--quanta-primary); }
+  .quanta-success { border-color: var(--quanta-bg-success); }
+  .quanta-danger { border-color: var(--quanta-bg-danger); }
+  .quanta-warning { border-color: var(--quanta-bg-warning); }
+  .quanta-info { border-color: var(--quanta-bg-info); }
+
+  /* Progress bar (optional) */
+  .quanta-toast-progress {
+    height: 3px;
+    width: 100%;
+    background-color: var(--quanta-primary);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    animation: quanta-progress linear forwards;
+  }
+
   /* Animations */
-  @keyframes quanta-fade-in {
-    from {
-      opacity: 0;
-      transform: translateY(-20px);
-    }
-    to {
-      opacity: 1;
-      transform: translateY(0);
-    }
+  @keyframes quanta-slide-in {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
   }
 
-  @keyframes quanta-fade-out {
-    from {
-      opacity: 1;
-      transform: translateY(0);
-    }
-    to {
-      opacity: 0;
-      transform: translateY(-20px);
-    }
+  @keyframes quanta-slide-out {
+    from { opacity: 1; transform: translateY(0); }
+    to { opacity: 0; transform: translateY(-20px); }
   }
 
-  /* Dark Mode Support */
-  html[data-theme='dark'] {
-    .quanta-toast {
-      background-color: var(--quanta-bg-emphasis);
-      color: var(--quanta-text-light);
-    }
-
-    .quanta-toast .quanta-toast-close {
-      color: var(--quanta-grey-400);
-    }
-
-    .quanta-toast .quanta-toast-close:hover {
-      color: var(--quanta-grey-200);
-    }
+  @keyframes quanta-progress {
+    0% { width: 100%; }
+    100% { width: 0%; }
   }
 
-  /* ─── Responsive Media Queries ─────────────────────────────────── */
+  html[data-theme='dark'] .quanta-toast {
+    background-color: var(--quanta-slate-800);
+    color: var(--quanta-text-light);
+  }
+
+  html[data-theme='dark'] .quanta-toast-close {
+    color: var(--quanta-grey-400);
+  }
+
+  html[data-theme='dark'] .quanta-toast-close:hover {
+    color: var(--quanta-grey-200);
+  }
+
   @media (max-width: 640px) {
-    .quanta-toast-container {
-      left: var(--quanta-space-2);
-      right: var(--quanta-space-2);
-      width: auto;
-      top: var(--quanta-space-3);
-    }
-
     .quanta-toast {
       font-size: var(--quanta-text-xs);
       padding: var(--quanta-space-2) var(--quanta-space-3);
-    }
-  }
-
-  @media (min-width: 641px) and (max-width: 768px) {
-    .quanta-toast-container {
-      width: 280px;
-    }
-  }
-
-  @media (min-width: 769px) and (max-width: 1024px) {
-    .quanta-toast-container {
-      width: 300px;
-    }
-  }
-
-  @media (min-width: 1025px) and (max-width: 1280px) {
-    .quanta-toast-container {
-      width: 320px;
-    }
-  }
-
-  @media (min-width: 1281px) {
-    .quanta-toast-container {
-      width: 360px;
     }
   }
 }

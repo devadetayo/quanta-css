@@ -1,0 +1,47 @@
+@layer components.divider {
+  .quanta-divider {
+    width: 100%;
+    height: 1px;
+    background-color: var(--quanta-border-color);
+    margin-block: var(--quanta-space-4);
+    position: relative;
+  }
+
+  .quanta-divider-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: var(--quanta-bg-default);
+    padding-inline: var(--quanta-space-2);
+    font-size: var(--quanta-text-sm);
+    color: var(--quanta-text-muted);
+  }
+
+  .quanta-divider-vertical {
+    width: 1px;
+    height: 100%;
+    background-color: var(--quanta-border-color);
+    margin-inline: var(--quanta-space-2);
+  }
+
+  /* Thickness variants */
+  .divider-thin { height: 1px; }
+  .divider-medium { height: 2px; }
+  .divider-thick { height: 4px; }
+
+  /* Styles */
+  .divider-dashed { border-top: 2px dashed var(--quanta-border-color); background: none; height: auto; }
+  .divider-dotted { border-top: 2px dotted var(--quanta-border-color); background: none; height: auto; }
+
+  /* Dark mode */
+  html[data-theme="dark"] .quanta-divider,
+  html[data-theme="dark"] .quanta-divider-vertical {
+    background-color: var(--quanta-border-color);
+  }
+
+  html[data-theme="dark"] .quanta-divider-text {
+    background-color: var(--quanta-slate-900);
+    color: var(--quanta-text-light);
+  }
+}

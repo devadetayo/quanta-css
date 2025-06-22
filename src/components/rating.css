@@ -1,0 +1,88 @@
+@layer components.rating {
+  .quanta-rating {
+    display: inline-flex;
+    gap: var(--quanta-space-1);
+    cursor: pointer;
+  }
+
+  .quanta-rating-star {
+    font-size: 1.5rem;
+    color: var(--quanta-slate-400);
+    transition: color 0.2s;
+    position: relative;
+  }
+
+  .quanta-rating-star.filled {
+    color: var(--quanta-primary);
+  }
+
+  .quanta-rating-star.half::before {
+    content: '★';
+    position: absolute;
+    width: 50%;
+    overflow: hidden;
+    color: var(--quanta-primary);
+  }
+
+  /* ─── Semantic Fills ─────────────────────────── */
+
+  .quanta-rating.success .quanta-rating-star.filled,
+  .quanta-rating.success .quanta-rating-star.half::before {
+    color: var(--quanta-bg-success);
+  }
+
+  .quanta-rating.warning .quanta-rating-star.filled,
+  .quanta-rating.warning .quanta-rating-star.half::before {
+    color: var(--quanta-bg-warning);
+  }
+
+  .quanta-rating.error .quanta-rating-star.filled,
+  .quanta-rating.error .quanta-rating-star.half::before {
+    color: var(--quanta-bg-error);
+  }
+
+  .quanta-rating.info .quanta-rating-star.filled,
+  .quanta-rating.info .quanta-rating-star.half::before {
+    color: var(--quanta-bg-info);
+  }
+
+  .quanta-rating.secondary .quanta-rating-star.filled,
+  .quanta-rating.secondary .quanta-rating-star.half::before {
+    color: var(--quanta-bg-secondary);
+  }
+
+  /* ─── Dark Mode ─────────────────────────────── */
+
+  html[data-theme="dark"] .quanta-rating-star {
+    color: var(--quanta-slate-600);
+  }
+
+  html[data-theme="dark"] .quanta-rating-star.filled {
+    color: var(--quanta-primary);
+  }
+
+  html[data-theme="dark"] .quanta-rating.success .quanta-rating-star.filled,
+  html[data-theme="dark"] .quanta-rating.success .quanta-rating-star.half::before {
+    color: var(--quanta-bg-success);
+  }
+
+  html[data-theme="dark"] .quanta-rating.warning .quanta-rating-star.filled,
+  html[data-theme="dark"] .quanta-rating.warning .quanta-rating-star.half::before {
+    color: var(--quanta-bg-warning);
+  }
+
+  html[data-theme="dark"] .quanta-rating.error .quanta-rating-star.filled,
+  html[data-theme="dark"] .quanta-rating.error .quanta-rating-star.half::before {
+    color: var(--quanta-bg-danger);
+  }
+
+  html[data-theme="dark"] .quanta-rating.info .quanta-rating-star.filled,
+  html[data-theme="dark"] .quanta-rating.info .quanta-rating-star.half::before {
+    color: var(--quanta-bg-info);
+  }
+
+  html[data-theme="dark"] .quanta-rating.secondary .quanta-rating-star.filled,
+  html[data-theme="dark"] .quanta-rating.secondary .quanta-rating-star.half::before {
+    color: var(--quanta-bg-secondary);
+  }
+}

@@ -1,34 +1,52 @@
-/* Tooltip base */
-.quanta-tooltip {
-  position: absolute;
-  background: var(--quanta-tooltip-bg, rgba(0, 0, 0, 0.8));
-  color: var(--quanta-tooltip-color, #fff);
-  padding: 0.25rem 0.5rem;         /* 4px 8px */
-  border-radius: 0.25rem;          /* 4px */
-  font-size: 0.75rem;              /* 12px */
-  line-height: 1.2;
-  white-space: nowrap;
-  pointer-events: none;
-  z-index: var(--quanta-z-tooltip, 1000);
-  opacity: 0;
-  transform: translateY(-4px);
-  transition: opacity 0.2s ease, transform 0.2s ease;
-}
+/* src/components/tooltip.css */
+@layer components.tooltip {
+  .quanta-tooltip {
+    position: absolute;
+    max-width: 200px;
+    background: var(--quanta-slate-800);
+    color: var(--white);
+    padding: 0.5rem 0.75rem;
+    font-size: var(--quanta-text-sm);
+    border-radius: var(--quanta-rounded-md);
+    box-shadow: var(--quanta-shadow-md);
+    pointer-events: none;
+    opacity: 0;
+    transform: translateY(-6px);
+    transition: opacity 0.2s ease, transform 0.2s ease;
+    white-space: nowrap;
+    z-index: var(--quanta-z-tooltip, 9999);
+  }
 
-/* Show state (add this class in your JS when creating) */
-.quanta-tooltip.show {
-  opacity: 1;
-  transform: translateY(0);
-}
+  .quanta-tooltip.show {
+    opacity: 1;
+    transform: translateY(0);
+  }
 
-/* Little arrow at the bottom */
-.quanta-tooltip::after {
-  content: "";
-  position: absolute;
-  bottom: -4px;                     /* overlaps 4px outside */
-  left: 50%;
-  transform: translateX(-50%);
-  border-width: 4px;
-  border-style: solid;
-  border-color: var(--quanta-tooltip-bg, rgba(0, 0, 0, 0.8)) transparent transparent transparent;
+  .quanta-tooltip::after {
+    content: "";
+    position: absolute;
+    bottom: -16px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-width: 8px;
+    border-style: solid;
+    border-color: var(--quanta-slate-800) transparent transparent transparent;
+  }
+
+  /* Size variants */
+  .tooltip-sm { font-size: 0.6875rem; padding: 0.25rem 0.5rem; }
+  .tooltip-md { /* default */ }
+  .tooltip-lg { font-size: 0.875rem; padding: 0.75rem 1rem; }
+
+  /* Dark mode overrides */
+  html[data-theme="dark"]{
+    .quanta-tooltip {
+      background: var(--white);
+      color: var(--black);
+    }
+
+    .quanta-tooltip::after {
+      border-color: var(--white) transparent transparent transparent;
+    }
+  }
 }

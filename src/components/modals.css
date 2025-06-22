@@ -1,201 +1,187 @@
 /* src/components/modal.css */
 @layer components.quanta-modal {
-  /* ─── Modal Overlay ────────────────────────────────────────── */
+  /* ─── Modal Overlay ───────────────────────────── */
   .quanta-modal-backdrop {
     position: fixed;
     inset: 0;
     background-color: rgba(0, 0, 0, 0.6);
-    z-index: 50;
-    display: none;
+    z-index: 9999;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity var(--quanta-transition-fast);
   }
 
   .quanta-modal-backdrop.active {
-    display: block;
+    opacity: 1;
+    pointer-events: auto;
   }
 
-  /* ─── Modal Container ──────────────────────────────────────── */
+  /* ─── Modal Base ─────────────────────────────── */
   .quanta-modal {
     position: fixed;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%) scale(0.95);
     background-color: var(--quanta-bg-default);
     color: var(--quanta-text-default);
-    border-radius: var(--quanta-rounded);
+    border-radius: var(--quanta-rounded-md);
     box-shadow: var(--quanta-shadow-xl);
     width: 90%;
     max-width: 32rem;
-    z-index: 60;
-    display: none;
+    z-index: 10000;
+    display: flex;
     flex-direction: column;
-    overflow: hidden;
-    transition: opacity var(--quanta-transition-normal) ease;
+    opacity: 0;
+    pointer-events: none;
+    transition: all var(--quanta-transition-normal) ease;
+    padding: var(--quanta-space-4);
+    gap: var(--quanta-space-4)
   }
 
   .quanta-modal.active {
-    display: flex;
+    opacity: 1;
+    pointer-events: auto;
+    transform: translate(-50%, -50%) scale(1);
   }
 
-  /* ─── Modal Header ─────────────────────────────────────────── */
   .quanta-modal-header {
-    padding: var(--quanta-space-4);
-    border-bottom: var(--quanta-border-width) solid var(--quanta-border-color);
-    font-family: var(--quanta-font-primary);
-    font-size: var(--quanta-heading-size);
+    font-size: var(--quanta-text-md);
+    font-weight: 600;
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
 
-  /* ─── Modal Body ───────────────────────────────────────────── */
   .quanta-modal-body {
-    padding: var(--quanta-space-4);
     font-size: var(--quanta-body-size);
-    font-family: var(--quanta-font-secondary);
     line-height: var(--quanta-body-line-height);
+    color: var(--quanta-text-default);
   }
 
-  /* ─── Modal Footer ─────────────────────────────────────────── */
   .quanta-modal-footer {
-    padding: var(--quanta-space-4);
-    border-top: var(--quanta-border-width) solid var(--quanta-border-color);
     display: flex;
-    justify-content: flex-end;
     gap: var(--quanta-space-2);
   }
 
-  /* ─── Modal Close Button ───────────────────────────────────── */
+
+  .quanta-modal-footer.footer-end{
+    justify-content: flex-end;
+  }
+
+  .quanta-modal-footer.footer-start{
+    justify-content: flex-start;
+  }
+
+  .quanta-modal-footer.footer-center{
+    justify-content: flex-start;
+  }
+
+  /* ─── Close Button ───────────────────────────── */
   .quanta-modal-close {
     background: none;
     border: none;
     font-size: var(--quanta-text-lg);
     cursor: pointer;
     color: var(--quanta-text-default);
+    padding: var(--quanta-space-2);
+    border-radius: var(--quanta-space-2);
   }
 
   .quanta-modal-close:hover {
     color: var(--quanta-primary);
   }
 
-  /* ─── Dark Mode Adjustments ────────────────────────────────── */
-  html[data-theme="dark"] .quanta-modal {
-    box-shadow: var(--quanta-shadow-2xl);
+  /* ─── Dark Mode ──────────────────────────────── */
+  html[data-theme="dark"] {
+    .quanta-modal {
+      background-color: var(--quanta-slate-800);
+      color: var(--quanta-text-light);
+      box-shadow: var(--quanta-shadow-2xl);
+    }
+
+    .quanta-modal-header,
+    .quanta-modal-footer {
+      border-color: var(--quanta-border-dark);
+    }
+
+    .quanta-modal-close:hover {
+      color: var(--quanta-primary-light);
+    }
   }
 
-  /* ─── Mobile-First Styles ──────────────────────────────────── */
-  /* Base styles for mobile devices */
-  .quanta-modal {
-    width: 90%; /* Full width for smaller devices */
-    max-width: 32rem;
-    padding: var(--quanta-space-3); /* Adjust padding for mobile */
-  }
-
-  .quanta-modal-header {
-    font-size: var(--quanta-heading-size); /* Default smaller font-size on mobile */
-  }
-
-  .quanta-modal-body {
-    font-size: var(--quanta-body-size); /* Default font size for body */
-  }
-
-  .quanta-modal-footer {
-    padding-top: var(--quanta-space-3); /* Reduced footer padding */
-  }
-
-  /* ─── Responsive Adjustments ─────────────────────────────────── */
-  /* 1. Small Tablets (min-width: 600px) */
+  /* ─── Responsive Sizes ───────────────────────── */
   @media (min-width: 600px) {
     .quanta-modal {
-      width: 85%; /* Slightly narrower on small tablets */
+      width: 85%;
+      padding: var(--quanta-space-6);
     }
 
     .quanta-modal-header {
-      font-size: var(--quanta-heading-size-md); /* Slightly larger heading */
+      font-size: var(--quanta-heading-size-md);
     }
 
     .quanta-modal-body {
-      font-size: var(--quanta-body-size-md); /* Slightly larger body text */
-    }
-
-    .quanta-modal-footer {
-      padding-top: var(--quanta-space-4); /* Slightly more padding */
+      font-size: var(--quanta-body-size-md);
     }
   }
 
-  /* 2. Tablets (min-width: 768px) */
   @media (min-width: 768px) {
     .quanta-modal {
-      width: 75%; /* More space on larger tablets */
-      padding: var(--quanta-space-4); /* More padding on tablets */
+      width: 70%;
+      max-width: 36rem;
     }
 
     .quanta-modal-header {
-      font-size: var(--quanta-heading-size-lg); /* Larger heading on tablets */
+      font-size: var(--quanta-heading-size-lg);
     }
 
     .quanta-modal-body {
-      font-size: var(--quanta-body-size-lg); /* Larger text for body */
-    }
-
-    .quanta-modal-footer {
-      padding-top: var(--quanta-space-5); /* Adjust footer padding */
+      font-size: var(--quanta-body-size-lg);
     }
   }
 
-  /* 3. Laptops (min-width: 1024px) */
   @media (min-width: 1024px) {
     .quanta-modal {
-      width: 50%; /* Even more space on laptops */
+      width: 60%;
+      max-width: 40rem;
     }
 
     .quanta-modal-header {
-      font-size: var(--quanta-heading-size-xl); /* Extra large heading */
+      font-size: var(--quanta-heading-size-xl);
     }
 
     .quanta-modal-body {
-      font-size: var(--quanta-body-size-xl); /* Larger body text */
-    }
-
-    .quanta-modal-footer {
-      gap: var(--quanta-space-3); /* Increase footer gap */
+      font-size: var(--quanta-body-size-xl);
     }
   }
 
-  /* 4. Large Desktops (min-width: 1280px) */
   @media (min-width: 1280px) {
     .quanta-modal {
-      width: 40%; /* Larger screens get more space */
+      width: 45%;
+      max-width: 44rem;
     }
 
     .quanta-modal-header {
-      font-size: var(--quanta-heading-size-2xl); /* Huge heading */
+      font-size: var(--quanta-heading-size-2xl);
     }
 
     .quanta-modal-body {
-      font-size: var(--quanta-body-size-2xl); /* Very large body text */
-    }
-
-    .quanta-modal-footer {
-      gap: var(--quanta-space-4); /* Larger gap in footer */
+      font-size: var(--quanta-body-size-2xl);
     }
   }
 
-  /* 5. Huge Displays (min-width: 1600px) */
   @media (min-width: 1600px) {
     .quanta-modal {
-      width: 35%; /* Ultra-wide screens get even more space */
+      width: 35%;
+      max-width: 48rem;
     }
 
     .quanta-modal-header {
-      font-size: var(--quanta-heading-size-3xl); /* Extra huge heading */
+      font-size: var(--quanta-heading-size-3xl);
     }
 
     .quanta-modal-body {
-      font-size: var(--quanta-body-size-3xl); /* Extra large body text */
-    }
-
-    .quanta-modal-footer {
-      gap: var(--quanta-space-5); /* Large gap in footer */
+      font-size: var(--quanta-body-size-3xl);
     }
   }
 }

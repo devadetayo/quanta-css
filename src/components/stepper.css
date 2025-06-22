@@ -1,47 +1,104 @@
 /* src/components/stepper.css */
-@layer components.stepper {
-  .quanta-stepper {
+@import "../components/variables.css";
+
+@layer components.quanta-stepper {
+  .quanta-stepper,
+  .quanta-stepper-line {
     display: flex;
-    justify-content: space-between;
-    counter-reset: step;
-  }
-  .quanta-step {
+    align-items: center;
+    font-family: var(--quanta-font-primary);
     position: relative;
+    width: 100%;
+  }
+
+  .quanta-stepper-line {
+    justify-content: space-between;
+    padding: var(--quanta-space-2) 0;
+  }
+
+  .quanta-stepper-line .quanta-step {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     flex: 1;
+    position: relative;
     text-align: center;
   }
-  .quanta-step::before {
-    counter-increment: step;
-    content: counter(step);
-    display: inline-block;
-    width: var(--quanta-space-6);
-    height: var(--quanta-space-6);
-    line-height: var(--quanta-space-6);
-    background: var(--quanta-bg-muted);
-    border-radius: 50%;
-    margin-bottom: var(--quanta-space-2);
+
+  .quanta-stepper-line .quanta-step-icon {
+    width: 1rem;
+    height: 1rem;
+    border-radius: var(--quanta-rounded-full);
+    background-color: var(--quanta-border-color);
+    border: 2px solid var(--quanta-border-color);
+    z-index: 1;
   }
-  .quanta-step::after {
-    content: '';
+
+  .quanta-stepper-line .quanta-step-label {
+    margin-top: var(--quanta-space-2);
+    font-size: var(--quanta-text-sm);
+    color: var(--quanta-text-default);
+  }
+
+  .quanta-stepper-line .quanta-step:not(:last-child)::after {
+    content: "";
     position: absolute;
-    top: var(--quanta-space-3);
+    top: 0.5rem;
     left: 50%;
+    height: 2px;
     width: 100%;
-    height: var(--quanta-border-width);
-    background: var(--quanta-border-color);
-    z-index: -1;
+    background-color: var(--quanta-border-color);
+    z-index: 0;
+    transform: translateX(0);
   }
-  .quanta-step:first-child::after { left: 50%; width: 50%; }
-  .quanta-step:last-child::after { width: 50%; }
-  .quanta-step.active::before { background: var(--quanta-primary); color: #fff; }
-  .quanta-step.completed::before { background: var(--quanta-success); color: #fff; }
 
-  html[data-theme="dark"] .quanta-step::before { background: var(--quanta-bg-emphasis); }
-  html[data-theme="dark"] .quanta-step.active::before { background: var(--quanta-primary); }
+  .quanta-stepper-line .quanta-step[data-status="completed"]::after {
+    background-color: var(--quanta-primary);
+  }
 
-  @media (max-width:640px) { .quanta-stepper { flex-direction: column; } }
-  @media (min-width:641px) and (max-width:768px) { /* no change */ }
-  @media (min-width:769px) and (max-width:1024px) { /* no change */ }
-  @media (min-width:1025px) and (max-width:1280px) { /* no change */ }
-  @media (min-width:1281px) { /* no change */ }
+  .quanta-step[data-status="completed"] .quanta-step-icon {
+    background-color: var(--quanta-primary);
+    border-color: var(--quanta-primary);
+  }
+
+  .quanta-step[data-status="active"] .quanta-step-icon {
+    background-color: var(--quanta-bg-default);
+    border-color: var(--quanta-primary);
+  }
+
+  .quanta-step[data-status="active"] .quanta-step-label {
+    color: var(--quanta-primary);
+  }
+
+  .quanta-step[data-status="upcoming"] .quanta-step-icon {
+    background-color: var(--quanta-border-color);
+    border-color: var(--quanta-border-color);
+  }
+
+  .quanta-step[data-status="upcoming"] .quanta-step-label {
+    color: var(--quanta-slate-400);
+  }
+
+  html[data-theme="dark"] .quanta-stepper-line .quanta-step-icon {
+    background-color: var(--quanta-slate-700);
+    border-color: var(--quanta-slate-700);
+  }
+
+  html[data-theme="dark"] .quanta-step[data-status="completed"] .quanta-step-icon {
+    background-color: var(--quanta-primary);
+    border-color: var(--quanta-primary);
+  }
+
+  html[data-theme="dark"] .quanta-step[data-status="completed"]::after {
+    background-color: var(--quanta-primary);
+  }
+
+  html[data-theme="dark"] .quanta-step[data-status="active"] .quanta-step-icon {
+    background-color: var(--quanta-bg-default);
+    border-color: var(--quanta-primary);
+  }
+
+  html[data-theme="dark"] .quanta-step[data-status="upcoming"] .quanta-step-label {
+    color: var(--quanta-slate-500);
+  }
 }
