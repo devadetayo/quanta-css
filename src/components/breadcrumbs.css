@@ -1,63 +1,93 @@
-/* src/components/breadcrumbs.css */
-@layer components.quanta-breadcrumbs {
+/* ─── Base Breadcrumb ─────────────────────────────────── */
+.quanta-breadcrumb {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-size: var(--quanta-text-sm);
+  font-family: var(--quanta-font-secondary);
+  color: var(--quanta-text-muted);
+  gap: var(--quanta-space-1);
+}
+
+/* ─── Separator Default (Slash) ────────────────────────── */
+.quanta-breadcrumb li + li::before {
+  content: '/';
+  margin: 0 var(--quanta-space-2);
+  color: var(--quanta-text-muted);
+}
+
+/* ─── Link Styling ─────────────────────────────────────── */
+.quanta-breadcrumb a {
+  text-decoration: none;
+  color: var(--quanta-primary);
+  transition: color var(--quanta-duration-fast);
+}
+.quanta-breadcrumb a:hover {
+  color: var(--quanta-primary-hover);
+}
+.quanta-breadcrumb a.underline:hover {
+  text-decoration: underline;
+}
+
+/* ─── Current Page ─────────────────────────────────────── */
+.quanta-breadcrumb [aria-current="page"] {
+  color: var(--quanta-text-default);
+  font-weight: 500;
+  pointer-events: none;
+}
+
+/* ─── Separator Variants ───────────────────────────────── */
+.quanta-breadcrumb.separator-dot li + li::before {
+  content: '•';
+}
+.quanta-breadcrumb.separator-arrow li + li::before {
+  content: '›';
+}
+.quanta-breadcrumb.separator-pipe li + li::before {
+  content: '|';
+}
+
+/* ─── Size Variants ────────────────────────────────────── */
+.quanta-breadcrumb-sm { font-size: var(--quanta-text-xs); }
+.quanta-breadcrumb-md { font-size: var(--quanta-text-sm); }
+.quanta-breadcrumb-lg { font-size: var(--quanta-text-base); }
+
+/* ─── Icon Support ─────────────────────────────────────── */
+.quanta-breadcrumb .icon-start {
+  margin-right: var(--quanta-space-1);
+  display: inline-flex;
+  align-items: center;
+}
+.quanta-breadcrumb li {
+  display: inline-flex;
+  align-items: center;
+}
+
+/* ─── Responsive Font Size ─────────────────────────────── */
+@media (max-width: 640px) {
   .quanta-breadcrumb {
-    display: flex;
-    flex-wrap: wrap;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    font-size: var(--quanta-text-sm);
-    font-family: var(--quanta-font-secondary);
-    color: var(--quanta-text-muted);
+    font-size: var(--quanta-text-xs);
   }
+}
+@media (min-width: 1281px) {
+  .quanta-breadcrumb {
+    font-size: var(--quanta-text-base);
+  }
+}
 
-  .quanta-breadcrumb li + li::before {
-    content: '/';
-    margin: 0 var(--quanta-space-2);
-    color: var(--quanta-text-muted);
-  }
-
-  .quanta-breadcrumb a {
-    text-decoration: none;
-    color: var(--quanta-primary);
-    transition: color var(--quanta-duration-fast);
-  }
-
-  .quanta-breadcrumb a:hover {
-    color: var(--quanta-primary-hover);
-  }
-
-  .quanta-breadcrumb .is-current {
-    color: var(--quanta-text-default);
-    font-weight: 500;
-    pointer-events: none;
-  }
-
-  html[data-theme="dark"] .quanta-breadcrumb {
-    color: var(--quanta-text-light-muted);
-  }
-
-  html[data-theme="dark"] .quanta-breadcrumb a {
-    color: var(--quanta-primary);
-  }
-
-  html[data-theme="dark"] .quanta-breadcrumb a:hover {
-    color: var(--quanta-primary-hover);
-  }
-
-  html[data-theme="dark"] .quanta-breadcrumb .is-current {
-    color: var(--quanta-text-light);
-  }
-
-  @media (max-width: 640px) {
-    .quanta-breadcrumb {
-      font-size: var(--quanta-text-xs);
-    }
-  }
-
-  @media (min-width: 1281px) {
-    .quanta-breadcrumb {
-      font-size: var(--quanta-text-base);
-    }
-  }
+/* ─── Dark Mode ────────────────────────────────────────── */
+html[data-theme="dark"] .quanta-breadcrumb {
+  color: var(--quanta-text-light-muted);
+}
+html[data-theme="dark"] .quanta-breadcrumb a {
+  color: var(--quanta-primary);
+}
+html[data-theme="dark"] .quanta-breadcrumb a:hover {
+  color: var(--quanta-primary-hover);
+}
+html[data-theme="dark"] .quanta-breadcrumb [aria-current="page"] {
+  color: var(--quanta-text-light);
 }

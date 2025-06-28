@@ -110,7 +110,7 @@
                     </div>
 
                     <!-- 3. OUTLINE STYLE ACCORDION (multiple open allowed) -->
-                    <div class="quanta-accordion outline">
+                    <div class="quanta-accordion quanta-accordion-outline">
                         <div class="quanta-accordion-item">
                             <button class="quanta-accordion-header" aria-expanded="false">
                             Outline Section 1 <span class="icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-5">
@@ -238,7 +238,7 @@
                     <span class="quanta-badge quanta-badge-success">Success</span>
                     <span class="quanta-badge quanta-badge-warning">Warning</span>
                     <span class="quanta-badge quanta-badge-danger">Error</span>
-                    <span class="quanta-badge quanta-badge-primary-outline">Primary Outline</span>
+                    <span class="quanta-badge quanta-badge-outline-primary">Primary Outline</span>
 
                     <div style="position: relative; display: inline-block;">
                         <button class="quanta-btn quanta-btn-primary">
@@ -282,12 +282,12 @@
                     <button class="quanta-btn quanta-btn-info">Info</button>
 
                     <!-- ── Bordered Outline Buttons ── -->
-                    <button class="quanta-btn quanta-btn-border-primary">Border Primary</button>
-                    <button class="quanta-btn quanta-btn-border-secondary">Border Secondary</button>
-                    <button class="quanta-btn quanta-btn-border-success">Border Success</button>
-                    <button class="quanta-btn quanta-btn-border-warning">Border Warning</button>
-                    <button class="quanta-btn quanta-btn-border-danger">Border Danger</button>
-                    <button class="quanta-btn quanta-btn-border-info">Border Info</button>
+                    <button class="quanta-btn quanta-btn-outline-primary">Border Primary</button>
+                    <button class="quanta-btn quanta-btn-outline-secondary">Border Secondary</button>
+                    <button class="quanta-btn quanta-btn-outline-success">Border Success</button>
+                    <button class="quanta-btn quanta-btn-outline-warning">Border Warning</button>
+                    <button class="quanta-btn quanta-btn-outline-danger">Border Danger</button>
+                    <button class="quanta-btn quanta-btn-outline-info">Border Info</button>
 
                     <!-- ── Size Modifiers ── -->
                     <button class="quanta-btn quanta-btn-sm quanta-btn-primary">Small</button>
@@ -326,7 +326,7 @@
                         <h3 class="quanta-card-header">Outline Card - Left</h3>
                         <p class="quanta-card-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga, consectetur rem earum at quasi nemo labore?</p>
                         <div class="quanta-card-footer justify-start">
-                            <button class="quanta-btn quanta-btn-border-primary">Read More</button>
+                            <button class="quanta-btn quanta-btn-outline-primary">Read More</button>
                         </div>
                     </div>
 
@@ -463,7 +463,7 @@
                 <div class="d-flex w-full gap-6">
                     <div class="chip-demo d-flex items-center justify-center gap-2 w-full flex-wrap mb-2">
                         <!-- Static chip -->
-                        <span class="quanta-chip">
+                        <span class="quanta-chip quanta-chip-outline-primary">
                             #WebDev
                             <button class="quanta-chip-close" aria-label="Remove">×</button>
                         </span>
@@ -778,12 +778,36 @@
                         </div>
 
                         <!-- Toggle Switch -->
-                        <div class="quanta-form-group">
+                        <div class="quanta-form-group w-full">
                             <label class="quanta-form-label">Enable Feature</label>
-                            <div class="d-flex items-center gap-2">
+                            <div class="d-flex flex-wrap items-center gap-2">
                                 <label class="quanta-switch">
                                     <input type="checkbox" class="quanta-switch-input" />
                                     <span class="quanta-switch-slider"></span>
+                                </label>
+                                <label class="quanta-switch quanta-switch-accent">
+                                    <input type="checkbox" class="quanta-switch-input">
+                                    <span class="quanta-switch-slider"></span>
+                                </label>
+                                <label class="quanta-switch quanta-switch-danger">
+                                    <input type="checkbox" class="quanta-switch-input">
+                                    <span class="quanta-switch-slider"></span>
+                                </label>
+                                <label class="quanta-switch quanta-switch-info">
+                                    <input type="checkbox" class="quanta-switch-input">
+                                    <span class="quanta-switch-slider"></span>
+                                </label>
+                                <label class="quanta-switch quanta-switch-warning">
+                                    <input type="checkbox" class="quanta-switch-input">
+                                    <span class="quanta-switch-slider"></span>
+                                </label>
+                                <label class="quanta-switch quanta-switch-neutral">
+                                    <input type="checkbox" class="quanta-switch-input">
+                                    <span class="quanta-switch-slider"></span>
+                                </label>
+                                <label class="quanta-switch-outline quanta-switch-outline-danger">
+                                    <input type="checkbox" class="quanta-switch-outline-input" />
+                                    <span class="quanta-switch-outline-slider"></span>
                                 </label>
                                 <span class="">Toggle Me</span>
                             </div>
@@ -803,8 +827,14 @@
 
                             <label class="quanta-custom-radio">
                                 <input type="radio" name="plan" class="quanta-custom-radio-input" value="premium" />
-                                <span class="quanta-custom-radio-box"></span>
+                                <span class="quanta-custom-radio-box rounded-sm radio-xl"></span>
                                 <span>Premium Plan</span>
+                            </label>
+
+                            <label class="quanta-custom-radio quanta-custom-radio-danger">
+                                <input type="radio" name="status" class="quanta-custom-radio-input">
+                                <span class="quanta-custom-radio-box"></span>
+                                <span class="quanta-custom-radio-label">Danger</span>
                             </label>
                         </div>
 
@@ -819,7 +849,7 @@
 
                         <div class="quanta-form-group">
                             <label class="quanta-form-label">Subscription Options</label>
-                            <div class="d-flex gap-4">
+                            <div class="d-flex gap-4 flex-wrap">
                                 <label class="quanta-custom-checkbox">
                                     <input type="checkbox" class="quanta-custom-checkbox-input" name="newsletter" />
                                     <span class="quanta-custom-checkbox-box"></span>
@@ -829,6 +859,34 @@
                                     <input type="checkbox" class="quanta-custom-checkbox-input" name="newsletter" />
                                     <span class="quanta-custom-checkbox-box"></span>
                                     <span>Newsletter</span>
+                                </label>
+                                <label class="quanta-custom-checkbox quanta-custom-checkbox-success">
+                                    <input type="checkbox" class="quanta-custom-checkbox-input">
+                                    <span class="quanta-custom-checkbox-box  checkbox-rounded-sm checkbox-lg"></span>
+                                    <span class="quanta-custom-checkbox-label">Success</span>
+                                </label>
+                                <label class="quanta-custom-checkbox quanta-custom-checkbox-outline-accent">
+                                    <input type="checkbox" class="quanta-custom-checkbox-input" />
+                                    <span class="quanta-custom-checkbox-box checkbox-3xl checkbox-rounded-full"></span>
+                                    <span class="quanta-custom-checkbox-label">Accent Outline</span>
+                                </label>
+
+                                <label class="quanta-custom-checkbox quanta-custom-checkbox-outline-success">
+                                    <input type="checkbox" class="quanta-custom-checkbox-input">
+                                    <div class="quanta-custom-checkbox-box"></div>
+                                    <span class="quanta-custom-checkbox-label">Success Outline</span>
+                                </label>
+
+                                <!-- Outline Radio -->
+                                <label class="quanta-custom-radio quanta-custom-radio-outline-warning">
+                                    <input type="radio" class="quanta-custom-radio-input" name="example">
+                                    <div class="quanta-custom-radio-box"></div>
+                                    <span class="quanta-custom-radio-label">Warning Outline</span>
+                                </label>
+
+                                <label class="quanta-switch-outline quanta-switch-outline-success">
+                                    <input type="checkbox" class="quanta-switch-outline-input" />
+                                    <span class="quanta-switch-outline-slider"></span>
                                 </label>
                             </div>
                         </div>
@@ -1018,7 +1076,7 @@
                         </div>
 
                         <div class="quanta-modal-footer">
-                            <button class="quanta-btn quanta-btn-border-secondary quanta-btn-rounded-full" onclick="closeModal('myModal')">Close</button>
+                            <button class="quanta-btn quanta-btn-outline-secondary quanta-btn-rounded-full" onclick="closeModal('myModal')">Close</button>
                             <button class="quanta-btn quanta-btn-primary quanta-btn-rounded-full">Save</button>
                         </div>
                     </div>
@@ -1275,6 +1333,17 @@
                             <div class="quanta-range-value" data-range-output>30</div>
                         </div>
                     </div>
+
+                    <div class="quanta-range-container">
+                        <label class="quanta-label">Secondary</label>
+                        <div class="quanta-range-wrapper quanta-range-secondary">
+                            <input type="range" class="quanta-range" value="40">
+                            <div class="quanta-range-track"></div>
+                            <div class="quanta-range-fill" style="width: 40%;"></div>
+                            <div class="quanta-range-value" style="left: 40%;">40</div>
+                        </div>
+                    </div>
+
                 </div>
             </div>
 
@@ -1283,6 +1352,20 @@
                 </h3>
                 <div class="d-flex gap-6 items-center w-full justify-center text-left">
                     <div class="quanta-rating" data-stars="5" data-selected="3" id="ratingStars"></div>
+                    <div class="quanta-rating secondary">
+                        <span class="quanta-rating-star filled">★</span>
+                        <span class="quanta-rating-star filled">★</span>
+                        <span class="quanta-rating-star filled">★</span>
+                        <span class="quanta-rating-star">★</span>
+                        <span class="quanta-rating-star">★</span>
+                    </div>
+                    <div class="quanta-rating warning">
+                        <span class="quanta-rating-star filled">★</span>
+                        <span class="quanta-rating-star filled">★</span>
+                        <span class="quanta-rating-star filled">★</span>
+                        <span class="quanta-rating-star">★</span>
+                        <span class="quanta-rating-star">★</span>
+                    </div>
                 </div>
             </div>
 
@@ -1357,6 +1440,14 @@
                         <div class="quanta-spinner sm"></div>
                         <div class="quanta-spinner md"></div>
                         <div class="quanta-spinner lg"></div>
+                        <div class="quanta-spinner sm primary"></div>
+                        <div class="quanta-spinner sm success"></div>
+                        <div class="quanta-spinner sm warning"></div>
+                        <div class="quanta-spinner sm danger"></div>
+                        <div class="quanta-spinner sm info"></div>
+                        <div class="quanta-spinner sm secondary"></div>
+                        <div class="quanta-spinner sm accent"></div>
+                        <div class="quanta-spinner sm neutral"></div>
                     </div>
 
                     <div class="quanta-spinner-dots">
@@ -1374,6 +1465,14 @@
                     </div>
 
                     <div class="">
+                        <div class="quanta-spinner-dual-ring primary"></div>
+                        <div class="quanta-spinner-dual-ring success"></div>
+                        <div class="quanta-spinner-dual-ring warning"></div>
+                        <div class="quanta-spinner-dual-ring danger"></div>
+                        <div class="quanta-spinner-dual-ring info"></div>
+                        <div class="quanta-spinner-dual-ring secondary"></div>
+                        <div class="quanta-spinner-dual-ring accent"></div>
+                        <div class="quanta-spinner-dual-ring neutral"></div>
                         <div class="quanta-spinner-dual-ring"></div>
                     </div>
                 </div>

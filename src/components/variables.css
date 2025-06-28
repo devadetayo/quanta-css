@@ -1,167 +1,196 @@
-/* src/components/variables.css */
 @import "../tokens/color-tokens.css";
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Merriweather:ital,wght@0,400;0,700&family=Fira+Code:wght@400;500&display=swap');
 
-@layer components.variables {
-  :root {
-    /* ─── Spacing Scale ─────────────────────────────────────── */
-    --quanta-space-0: 0rem;
-    --quanta-space-1: 0.25rem;   /* 4px */
-    --quanta-space-2: 0.5rem;    /* 8px */
-    --quanta-space-3: 0.75rem;   /* 12px */
-    --quanta-space-4: 1rem;      /* 16px */
-    --quanta-space-5: 1.25rem;   /* 20px */
-    --quanta-space-6: 1.5rem;    /* 24px */
-    --quanta-space-8: 2rem;      /* 32px */
-    --quanta-space-10: 2.5rem;   /* 40px */
+:root {
+  /* ─── Spacing Scale ───────────────────────────────────── */
+  --quanta-space-0: 0rem;
+  --quanta-space-1: 0.25rem;
+  --quanta-space-2: 0.5rem;
+  --quanta-space-3: 0.75rem;
+  --quanta-space-4: 1rem;
+  --quanta-space-5: 1.25rem;
+  --quanta-space-6: 1.5rem;
+  --quanta-space-8: 2rem;
+  --quanta-space-10: 2.5rem;
 
-    /* ─── Border Radius (Rounded) ───────────────────────────── */
-    --quanta-rounded-sm:   0.125rem;  /* 2px */
-    --quanta-rounded:      0.25rem;   /* 4px */
-    --quanta-rounded-md:   0.375rem;  /* 6px */
-    --quanta-rounded-lg:   0.5rem;    /* 8px */
-    --quanta-rounded-xl:   0.75rem;   /* 12px */
-    --quanta-rounded-2xl:  1rem;      /* 16px */
-    --quanta-rounded-full: 9999px;
-    --quanta-font-inter: 'Inter', sans-serif;
-    --quanta-font-roboto-serif: 'Roboto Serif', serif;
-    --quanta-font-roboto-mono: 'Roboto Mono', monospace;
+  /* ─── Border Radius ───────────────────────────────────── */
+  --quanta-rounded-sm: 0.125rem;
+  --quanta-rounded: 0.25rem;
+  --quanta-rounded-md: 0.375rem;
+  --quanta-rounded-lg: 0.5rem;
+  --quanta-rounded-xl: 0.75rem;
+  --quanta-rounded-2xl: 1rem;
+  --quanta-rounded-full: 9999px;
 
-    /* ─── Breakpoints ──────────────────────────────────────── */
-    --quanta-screen-sm: 640px;
-    --quanta-screen-md: 768px;
-    --quanta-screen-lg: 1024px;
-    --quanta-screen-xl: 1280px;
-    --quanta-screen-2xl: 1536px;
+  /* ─── Fonts ───────────────────────────────────────────── */
+  --quanta-font-inter: 'Inter', sans-serif;
+  --quanta-font-primary: 'Inter', sans-serif;
+  --quanta-font-secondary: 'Roboto', sans-serif;
+  --quanta-font-roboto-serif: 'Roboto Serif', serif;
+  --quanta-font-roboto-mono: 'Roboto Mono', monospace;
 
-    /* ─── Transition Durations & Easing ────────────────────── */
-    --quanta-duration-fast: 150ms;
-    --quanta-duration-normal: 300ms;
-    --quanta-duration-slow: 500ms;
-    --quanta-ease-default: cubic-bezier(0.4, 0, 0.2, 1);
+  /* ─── Breakpoints ─────────────────────────────────────── */
+  --quanta-screen-sm: 640px;
+  --quanta-screen-md: 768px;
+  --quanta-screen-lg: 1024px;
+  --quanta-screen-xl: 1280px;
+  --quanta-screen-2xl: 1536px;
 
-    /* ─── Z-Index Scale ────────────────────────────────────── */
-    --quanta-z-xs: 10;
-    --quanta-z-sm: 100;
-    --quanta-z: 1000;
-    --quanta-z-lg: 10000;
-    --quanta-z-xl: 100000;
+  /* ─── Transitions ─────────────────────────────────────── */
+  --quanta-duration-fast: 150ms;
+  --quanta-duration-normal: 300ms;
+  --quanta-duration-slow: 500ms;
+  --quanta-ease-default: cubic-bezier(0.4, 0, 0.2, 1);
 
-    /* ─── Shadow Presets ────────────────────────────────────── */
-    --quanta-shadow-color:    rgba(0, 0, 0, 0.1);
-    --quanta-shadow-sm:       0 1px 2px var(--quanta-shadow-color);
-    --quanta-shadow:          0 1px 3px var(--quanta-shadow-color), 0 1px 2px var(--quanta-shadow-color);
-    --quanta-shadow-md:       0 4px 6px -1px var(--quanta-shadow-color), 0 2px 4px -2px var(--quanta-shadow-color);
-    --quanta-shadow-lg:       0 10px 15px -3px var(--quanta-shadow-color), 0 4px 6px -4px var(--quanta-shadow-color);
-    --quanta-shadow-xl:       0 20px 25px -5px var(--quanta-shadow-color), 0 10px 10px -5px var(--quanta-shadow-color);
-    --quanta-shadow-2xl:      0 25px 50px -12px var(--quanta-shadow-color);
+  /* ─── Z-Index ─────────────────────────────────────────── */
+  --quanta-z-xs: 10;
+  --quanta-z-sm: 100;
+  --quanta-z: 1000;
+  --quanta-z-lg: 10000;
+  --quanta-z-xl: 100000;
 
-    /* ─── Typography Scale ──────────────────────────────────── */
-    --quanta-text-xs: 0.75rem;    /* 12px */
-    --quanta-text-sm: 0.875rem;   /* 14px */
-    --quanta-text-base: 1rem;     /* 16px */
-    --quanta-text-lg: 1.125rem;   /* 18px */
-    --quanta-text-xl: 1.25rem;    /* 20px */
-    --quanta-text-2xl: 1.5rem;    /* 24px */
-    --quanta-text-3xl: 1.875rem;  /* 30px */
-    --quanta-text-4xl: 2.25rem;   /* 36px */
-    --quanta-text-5xl: 3rem;      /* 48px */
+  /* ─── Shadows ─────────────────────────────────────────── */
+  --quanta-shadow-color: rgba(0, 0, 0, 0.1);
+  --quanta-shadow-sm: 0 1px 2px var(--quanta-shadow-color);
+  --quanta-shadow: 0 1px 3px var(--quanta-shadow-color), 0 1px 2px var(--quanta-shadow-color);
+  --quanta-shadow-md: 0 4px 6px -1px var(--quanta-shadow-color), 0 2px 4px -2px var(--quanta-shadow-color);
+  --quanta-shadow-lg: 0 10px 15px -3px var(--quanta-shadow-color), 0 4px 6px -4px var(--quanta-shadow-color);
+  --quanta-shadow-xl: 0 20px 25px -5px var(--quanta-shadow-color), 0 10px 10px -5px var(--quanta-shadow-color);
+  --quanta-shadow-2xl: 0 25px 50px -12px var(--quanta-shadow-color);
 
-    /* line-height tokens */
-    --quanta-leading-none: 1;
-    --quanta-leading-tight: 1.25;
-    --quanta-leading-snug: 1.375;
-    --quanta-leading-normal: 1.5;
-    --quanta-leading-relaxed: 1.625;
-    --quanta-leading-loose: 2;
+  /* ─── Typography ──────────────────────────────────────── */
+  --quanta-text-xs: 0.75rem;
+  --quanta-text-sm: 0.875rem;
+  --quanta-text-base: 1rem;
+  --quanta-text-lg: 1.125rem;
+  --quanta-text-xl: 1.25rem;
+  --quanta-text-2xl: 1.5rem;
+  --quanta-text-3xl: 1.875rem;
+  --quanta-text-4xl: 2.25rem;
+  --quanta-text-5xl: 3rem;
 
-    /* fonts */
-    --quanta-font-primary:    'Inter', sans-serif;
-    --quanta-font-secondary:  'Roboto', sans-serif;
+  --quanta-leading-none: 1;
+  --quanta-leading-tight: 1.25;
+  --quanta-leading-snug: 1.375;
+  --quanta-leading-normal: 1.5;
+  --quanta-leading-relaxed: 1.625;
+  --quanta-leading-loose: 2;
 
-    /* semantic font sizes */
-    --quanta-heading-size:    var(--quanta-text-xl);
-    --quanta-subheading-size: var(--quanta-text-xl);
-    --quanta-body-size:       var(--quanta-text-base);
-    --quanta-caption-size:    var(--quanta-text-sm);
+  --quanta-heading-size: var(--quanta-text-xl);
+  --quanta-subheading-size: var(--quanta-text-xl);
+  --quanta-body-size: var(--quanta-text-base);
+  --quanta-caption-size: var(--quanta-text-sm);
 
-    /* ─── Component Defaults ────────────────────────────────── */
-    --quanta-border-width:    1px;
-    --quanta-ring-width:      2px;
+  /* ─── Component Defaults ──────────────────────────────── */
+  --quanta-border-width: 1px;
+  --quanta-ring-width: 2px;
 
-    /* ─── Semantic Colors ──────────────────────────────────── */
-    /* Default */
-    --quanta-bg-default:      var(--quanta-grey-50);
-    --quanta-text-default:    var(--quanta-grey-600);
-    --quanta-border-color:    var(--quanta-slate-200);
+  /* ─── Semantic Colors - Light ─────────────────────────── */
+  --quanta-bg-default:        var(--quanta-grey-50);
+  --quanta-text-default:      var(--quanta-grey-600);
+  --quanta-border-color:      var(--quanta-slate-200);
 
-    /* Primary */
-    --quanta-primary:         #25C0D6;
-    --quanta-primary-hover:   var(--quanta-blue-600);
+  --quanta-primary:         #25C0D6;
+  --quanta-primary-hover:   #1CA7B8;
+  --quanta-text-primary:    #ffffff;
+  --quanta-border-primary:  #1CA7B8;
 
-    /* Secondary */
-    --quanta-bg-secondary:      var(--quanta-slate-800);
-    --quanta-text-secondary:    var(--white);
-    --quanta-border-secondary:  var(--quanta-slate-800);
-    --quanta-secondary-hover:   var(--quanta-slate-700);
 
-    /* Success */
-    --quanta-bg-success:        var(--quanta-green-500);
-    --quanta-text-success:      var(--white);
-    --quanta-border-success:    var(--quanta-green-500);
-    --quanta-success-hover:     var(--quanta-green-600);
+  --quanta-bg-secondary:      var(--quanta-slate-800);
+  --quanta-text-secondary:    var(--white);
+  --quanta-border-secondary:  var(--quanta-slate-800);
+  --quanta-secondary-hover:   var(--quanta-slate-700);
 
-    /* Warning */
-    --quanta-bg-warning:        var(--quanta-yellow-500);
-    --quanta-text-warning:      var(--quanta-grey-900);
-    --quanta-border-warning:    var(--quanta-yellow-500);
-    --quanta-warning-hover:     var(--quanta-yellow-600);
+  --quanta-bg-success:        var(--quanta-green-500);
+  --quanta-text-success:      var(--white);
+  --quanta-border-success:    var(--quanta-green-500);
+  --quanta-success-hover:     var(--quanta-green-600);
 
-    /* Danger */
-    --quanta-bg-danger:         var(--quanta-red-500);
-    --quanta-text-danger:       var(--white);
-    --quanta-border-danger:     var(--quanta-red-500);
-    --quanta-danger-hover:      var(--quanta-red-600);
+  --quanta-bg-warning:        var(--quanta-orange-500);
+  --quanta-text-warning:      var(--white);
+  --quanta-border-warning:    var(--quanta-orange-500);
+  --quanta-warning-hover:     var(--quanta-orange-600);
 
-    /* Info */
-    --quanta-bg-info:           var(--quanta-cyan-500);
-    --quanta-text-info:         var(--white);
-    --quanta-border-info:       var(--quanta-cyan-500);
-    --quanta-info-hover:        var(--quanta-cyan-600);
-  }
+  --quanta-bg-danger:         var(--quanta-red-500);
+  --quanta-text-danger:       var(--white);
+  --quanta-border-danger:     var(--quanta-red-500);
+  --quanta-danger-hover:      var(--quanta-red-600);
 
-  html[data-theme="dark"] {
-    /* ─── Dark‑mode Overrides ──────────────────────────────── */
-    --quanta-bg-default:      var(--quanta-slate-900);
-    --quanta-text-default:    var(--quanta-grey-100);
-    --quanta-border-color:    var(--quanta-slate-700);
+  --quanta-bg-info:           var(--quanta-cyan-500);
+  --quanta-text-info:         var(--white);
+  --quanta-border-info:       var(--quanta-cyan-500);
+  --quanta-info-hover:        var(--quanta-cyan-600);
 
-    --quanta-primary:         #25C0D6;
-    --quanta-primary-hover:   var(--quanta-blue-300);
+  --quanta-bg-neutral:        var(--quanta-grey-100);
+  --quanta-text-neutral:      var(--quanta-grey-700);
+  --quanta-border-neutral:    var(--quanta-grey-300);
+  --quanta-neutral-hover:     var(--quanta-grey-200);
 
-    --quanta-bg-secondary:      var(--quanta-slate-500);
-    --quanta-text-secondary:    var(--quanta-slate-100);
-    --quanta-border-secondary:  var(--quanta-slate-500);
-    --quanta-secondary-hover:   var(--quanta-slate-400);
+  --quanta-bg-accent:         var(--quanta-indigo-500);
+  --quanta-text-accent:       var(--white);
+  --quanta-border-accent:     var(--quanta-indigo-500);
+  --quanta-accent-hover:      var(--quanta-indigo-600);
 
-    --quanta-bg-success:        var(--quanta-green-600);
-    --quanta-text-success:      var(--quanta-grey-100);
-    --quanta-border-success:    var(--quanta-green-600);
-    --quanta-success-hover:     var(--quanta-green-700);
+  --quanta-bg-ghost:          transparent;
+  --quanta-text-ghost:        var(--quanta-grey-600);
+  --quanta-border-ghost:      transparent;
+  --quanta-ghost-hover:       var(--quanta-grey-100);
 
-    --quanta-bg-warning:        var(--quanta-yellow-600);
-    --quanta-text-warning:      var(--quanta-grey-100);
-    --quanta-border-warning:    var(--quanta-yellow-600);
-    --quanta-warning-hover:     var(--quanta-yellow-700);
+  --quanta-text-link:         var(--quanta-blue-600);
+  --quanta-link-hover:        var(--quanta-blue-700);
+}
 
-    --quanta-bg-danger:         var(--quanta-red-600);
-    --quanta-text-danger:       var(--quanta-grey-100);
-    --quanta-border-danger:     var(--quanta-red-600);
-    --quanta-danger-hover:      var(--quanta-red-700);
+html[data-theme="dark"] {
+  /* ─── Semantic Colors - Dark ───────────────────────────── */
+  --quanta-bg-default:        var(--quanta-slate-900);
+  --quanta-text-default:      var(--quanta-grey-100);
+  --quanta-border-color:      var(--quanta-slate-700);
 
-    --quanta-bg-info:           var(--quanta-cyan-600);
-    --quanta-text-info:         var(--quanta-grey-100);
-    --quanta-border-info:       var(--quanta-cyan-600);
-    --quanta-info-hover:        var(--quanta-cyan-700);
-  }
+  --quanta-primary:         #25C0D6;
+  --quanta-primary-hover:   #34D0E5;
+  --quanta-text-primary:    #ffffff;
+  --quanta-border-primary:  #34D0E5;
+
+  --quanta-bg-secondary:      var(--quanta-slate-500);
+  --quanta-text-secondary:    var(--quanta-slate-100);
+  --quanta-border-secondary:  var(--quanta-slate-500);
+  --quanta-secondary-hover:   var(--quanta-slate-400);
+
+  --quanta-bg-success:        var(--quanta-green-400);
+  --quanta-text-success:      var(--quanta-grey-100);
+  --quanta-border-success:    var(--quanta-green-400);
+  --quanta-success-hover:     var(--quanta-green-300);
+
+  --quanta-bg-warning:        var(--quanta-orange-400);
+  --quanta-text-warning:      var(--white);
+  --quanta-border-warning:    var(--quanta-orange-400);
+  --quanta-warning-hover:     var(--quanta-orange-300);
+
+  --quanta-bg-danger:         var(--quanta-red-400);
+  --quanta-text-danger:       var(--white);
+  --quanta-border-danger:     var(--quanta-red-400);
+  --quanta-danger-hover:      var(--quanta-red-700);
+
+  --quanta-bg-info:           var(--quanta-cyan-300);
+  --quanta-text-info:         var(--quanta-grey-100);
+  --quanta-border-info:       var(--quanta-cyan-300);
+  --quanta-info-hover:        var(--quanta-cyan-200);
+
+  --quanta-bg-neutral:        var(--quanta-grey-400);
+  --quanta-text-neutral:      var(--quanta-grey-200);
+  --quanta-border-neutral:    var(--quanta-grey-400);
+  --quanta-neutral-hover:     var(--quanta-grey-200);
+
+  --quanta-bg-accent:         var(--quanta-indigo-400);
+  --quanta-text-accent:       var(--quanta-grey-100);
+  --quanta-border-accent:     var(--quanta-indigo-400);
+  --quanta-accent-hover:      var(--quanta-indigo-500);
+
+  --quanta-bg-ghost:          transparent;
+  --quanta-text-ghost:        var(--quanta-grey-300);
+  --quanta-border-ghost:      transparent;
+  --quanta-ghost-hover:       var(--quanta-grey-800);
+
+  --quanta-text-link:         var(--quanta-blue-400);
+  --quanta-link-hover:        var(--quanta-blue-300);
 }

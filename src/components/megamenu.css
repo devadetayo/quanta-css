@@ -1,144 +1,141 @@
-/* src/components/megamenu.css */
-@layer components.megamenu {
-  .quanta-megamenu {
-    position: relative;
-  }
+.quanta-megamenu {
+  position: relative;
+}
 
-  .quanta-megamenu-toggle {
-    cursor: pointer;
-    display: inline-flex;
-    align-items: center;
-    gap: var(--quanta-space-2);
-  }
+.quanta-megamenu-toggle {
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: var(--quanta-space-2);
+}
 
+.quanta-megamenu-content {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  min-width: 320px;
+  max-width: 100vw;
+  overflow-x: auto;
+  background-color: var(--white);
+  color: var(--quanta-text-default);
+  padding: var(--quanta-space-6);
+  box-shadow: var(--quanta-shadow-lg);
+  border-radius: var(--quanta-rounded-md);
+  z-index: var(--quanta-z-lg);
+  transition: all var(--quanta-duration-normal) var(--quanta-ease-default);
+}
+
+/* Show menu */
+.quanta-megamenu.show .quanta-megamenu-content {
+  display: block;
+}
+
+/* Positioning Modifiers */
+.quanta-megamenu-start .quanta-megamenu-content {
+  left: 0;
+  right: auto;
+}
+
+.quanta-megamenu-center .quanta-megamenu-content {
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.quanta-megamenu-end .quanta-megamenu-content {
+  right: 0;
+  left: auto;
+}
+
+/* Layout Containers */
+.quanta-megamenu-columns {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: var(--quanta-space-6);
+  min-width: 100%;
+}
+
+.quanta-megamenu-row {
+  flex-direction: row !important;
+  flex-wrap: wrap;
+}
+
+/* Column Item */
+.quanta-megamenu-col {
+  flex: 1 1 220px;
+  min-width: 220px;
+}
+
+.quanta-megamenu-heading {
+  font-size: var(--quanta-text-base);
+  font-weight: 600;
+  margin-bottom: var(--quanta-space-2);
+}
+
+.quanta-megamenu-item {
+  display: block;
+  padding: var(--quanta-space-2) 0;
+  font-size: var(--quanta-text-sm);
+  color: var(--quanta-text-default);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.quanta-megamenu-item:hover {
+  color: var(--quanta-primary);
+}
+
+/* Width Modifiers */
+.quanta-megamenu-content.w-xs { width: var(--quanta-width-xs); }
+.quanta-megamenu-content.w-sm { width: var(--quanta-width-sm); }
+.quanta-megamenu-content.w-md { width: var(--quanta-width-md); }
+.quanta-megamenu-content.w-lg { width: var(--quanta-width-lg); }
+.quanta-megamenu-content.w-xl { width: var(--quanta-width-xl); }
+.quanta-megamenu-content.w-full { width: 100%; }
+.quanta-megamenu-content.w-auto { width: auto; }
+
+/* Animation */
+.quanta-megamenu-content.fade-in {
+  animation: quanta-fade-in 0.3s ease-in-out both;
+}
+
+@keyframes quanta-fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(-0.5rem);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Dark Mode */
+html[data-theme="dark"] .quanta-megamenu-content {
+  background-color: var(--quanta-slate-800);
+  color: var(--quanta-text-light);
+  box-shadow: var(--quanta-shadow-md);
+}
+
+html[data-theme="dark"] .quanta-megamenu-item:hover {
+  color: var(--quanta-primary);
+}
+
+/* Mobile Layout */
+@media (max-width: 640px) {
   .quanta-megamenu-content {
-    display: none;
-    position: absolute;
-    top: 100%;
-    left: 0;
+    position: static;
     width: 100%;
-    min-width: 320px;
-    max-width: 100vw;
-    overflow-x: auto;
-    background-color: var(--white);
-    color: var(--quanta-text-default);
-    padding: var(--quanta-space-6);
-    box-shadow: var(--quanta-shadow-lg);
-    border-radius: var(--quanta-rounded-md);
-    z-index: var(--quanta-z-lg);
-    transition: all var(--quanta-duration-normal) var(--quanta-ease-default);
+    max-height: none;
+    transform: none;
+    box-shadow: none;
+    border-radius: 0;
+    padding: var(--quanta-space-4);
   }
 
-  /* Show menu */
-  .quanta-megamenu.show .quanta-megamenu-content {
-    display: block;
-  }
-
-  /* Positioning Modifiers */
-  .quanta-megamenu-start .quanta-megamenu-content {
-    left: 0;
-    right: auto;
-  }
-
-  .quanta-megamenu-center .quanta-megamenu-content {
-    left: 50%;
-    transform: translateX(-50%);
-  }
-
-  .quanta-megamenu-end .quanta-megamenu-content {
-    right: 0;
-    left: auto;
-  }
-
-  /* Layout Containers */
   .quanta-megamenu-columns {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    gap: var(--quanta-space-6);
-    min-width: 100%;
-  }
-
-  .quanta-megamenu-row {
-    flex-direction: row !important;
-    flex-wrap: wrap;
-  }
-
-  /* Column Item */
-  .quanta-megamenu-col {
-    flex: 1 1 220px;
-    min-width: 220px;
-  }
-
-  .quanta-megamenu-heading {
-    font-size: var(--quanta-text-base);
-    font-weight: 600;
-    margin-bottom: var(--quanta-space-2);
-  }
-
-  .quanta-megamenu-item {
-    display: block;
-    padding: var(--quanta-space-2) 0;
-    font-size: var(--quanta-text-sm);
-    color: var(--quanta-text-default);
-    text-decoration: none;
-    transition: color 0.2s ease;
-  }
-
-  .quanta-megamenu-item:hover {
-    color: var(--quanta-primary);
-  }
-
-  /* Width Modifiers */
-  .quanta-megamenu-content.w-xs { width: var(--quanta-width-xs); }
-  .quanta-megamenu-content.w-sm { width: var(--quanta-width-sm); }
-  .quanta-megamenu-content.w-md { width: var(--quanta-width-md); }
-  .quanta-megamenu-content.w-lg { width: var(--quanta-width-lg); }
-  .quanta-megamenu-content.w-xl { width: var(--quanta-width-xl); }
-  .quanta-megamenu-content.w-full { width: 100%; }
-  .quanta-megamenu-content.w-auto { width: auto; }
-
-  /* Animation */
-  .quanta-megamenu-content.fade-in {
-    animation: quanta-fade-in 0.3s ease-in-out both;
-  }
-
-  @keyframes quanta-fade-in {
-    from {
-      opacity: 0;
-      transform: translateY(-0.5rem);
-    }
-    to {
-      opacity: 1;
-      transform: translateY(0);
-    }
-  }
-
-  /* Dark Mode */
-  html[data-theme="dark"] .quanta-megamenu-content {
-    background-color: var(--quanta-slate-800);
-    color: var(--quanta-text-light);
-    box-shadow: var(--quanta-shadow-md);
-  }
-
-  html[data-theme="dark"] .quanta-megamenu-item:hover {
-    color: var(--quanta-primary);
-  }
-
-  /* Mobile Layout */
-  @media (max-width: 640px) {
-    .quanta-megamenu-content {
-      position: static;
-      width: 100%;
-      max-height: none;
-      transform: none;
-      box-shadow: none;
-      border-radius: 0;
-      padding: var(--quanta-space-4);
-    }
-
-    .quanta-megamenu-columns {
-      flex-direction: column !important;
-    }
+    flex-direction: column !important;
   }
 }

@@ -1,123 +1,129 @@
-@layer components.quanta-avatars {
-  .quanta-avatar {
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: var(--quanta-rounded-full);
-    font-weight: 600;
-    color: var(--white);
-    text-transform: uppercase;
-    font-family: var(--quanta-font-secondary);
-    overflow: hidden;
-    position: relative;
-    object-fit: cover;
-  }
+.quanta-avatar {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: var(--quanta-rounded-full);
+  font-weight: 600;
+  color: var(--white);
+  text-transform: uppercase;
+  font-family: var(--quanta-font-secondary);
+  overflow: hidden;
+  position: relative;
+  object-fit: cover;
+}
 
-  .quanta-avatar-wrapper {
-    display: inline-block;
-    position: relative;
-  }
+.quanta-avatar-wrapper {
+  display: inline-block;
+  position: relative;
+}
 
-  /* ─── Semantic Background Variants ───────────────────────── */
-  .quanta-avatar-primary  { background-color: var(--quanta-primary); color: var(--white); }
-  .quanta-avatar-success  { background-color: var(--quanta-bg-success); color: var(--white); }
-  .quanta-avatar-danger   { background-color: var(--quanta-bg-danger);  color: var(--white); }
-  .quanta-avatar-warning  { background-color: var(--quanta-bg-warning); color: var(--white); }
-  .quanta-avatar-info     { background-color: var(--quanta-bg-info);    color: var(--white); }
-  .quanta-avatar-secondary { background-color: var(--quanta-bg-secondary); color: var(--white); }
-  .quanta-avatar-light    { background-color: var(--quanta-grey-100); color: var(--quanta-grey-800); }
-  .quanta-avatar-dark     { background-color: var(--quanta-slate-800); color: var(--white); }
+/* ─── Semantic Background Variants ───────────────────────── */
+.quanta-avatar-primary  { background-color: var(--quanta-primary); color: var(--white); }
+.quanta-avatar-success  { background-color: var(--quanta-bg-success); color: var(--white); }
+.quanta-avatar-danger   { background-color: var(--quanta-bg-danger);  color: var(--white); }
+.quanta-avatar-warning  { background-color: var(--quanta-bg-warning); color: var(--white); }
+.quanta-avatar-info     { background-color: var(--quanta-bg-info);    color: var(--white); }
+.quanta-avatar-secondary { background-color: var(--quanta-bg-secondary); color: var(--white); }
+.quanta-avatar-light    { background-color: var(--quanta-grey-100); color: var(--quanta-grey-800); }
+.quanta-avatar-dark     { background-color: var(--quanta-slate-800); color: var(--white); }
 
-  /* ─── Dark Mode Adaptations ─────────────────────────────── */
-  html[data-theme="dark"] {
-    .quanta-avatar-light { background-color: var(--quanta-grey-200); color: var(--quanta-grey-900); }
-    .quanta-avatar-dark  { background-color: var(--quanta-grey-900); color: var(--white); }
-  }
-
-
-  /* Sizes from 20px (sm) to 80px (2xl) */
-  .quanta-avatar-sm  { width: 20px; height: 20px; font-size: 10px; }
-  .quanta-avatar-md  { width: 32px; height: 32px; font-size: 14px; }
-  .quanta-avatar-lg  { width: 48px; height: 48px; font-size: 18px; }
-  .quanta-avatar-xl  { width: 64px; height: 64px; font-size: 22px; }
-  .quanta-avatar-2xl { width: 80px; height: 80px; font-size: 26px; }
-
-  /* Group support */
-  .quanta-avatar-group {
-    display: flex;
-  }
-  .quanta-avatar-group > * {
-    margin-left: -6px;
-    border: 2px solid var(--quanta-bg-default);
-  }
-
-  /* Avatar Badge Base */
-  .quanta-avatar-badge {
-    position: absolute;
-    bottom: -6px;
-    right: -2px;
-    width: 18px;
-    height: 18px;
-    border-radius: 50%;
-    border: 2px solid var(--quanta-white);
-    background-color: var(--quanta-slate-50); /* default fallback */
-    font-size: .7rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .quanta-avatar-dot {
-    position: absolute;
-    bottom: 2px;
-    right: -2px;
-    width: 12px;
-    height: 12px;
-    border-radius: 50%;
-    border: 2px solid var(--quanta-white);
-    background-color: var(--quanta-slate-50); /* default fallback */
-  }
-
-  /* Badge Variants */
-  .quanta-badge-primary  { background-color: var(--quanta-primary); }
-  .quanta-badge-secondary { background-color: var(--quanta-bg-secondary); }
-  .quanta-badge-success  { background-color: var(--quanta-bg-success); }
-  .quanta-badge-warning  { background-color: var(--quanta-bg-warning); }
-  .quanta-badge-danger   { background-color: var(--quanta-bg-danger); }
-  .quanta-badge-info     { background-color: var(--quanta-bg-info); }
-  .quanta-badge-light    { background-color: var(--quanta-bg-light); }
-  .quanta-badge-dark     { background-color: var(--quanta-bg-dark); }
-
-  /* ─── Semantic Dot Variants ───────────────────────────── */
-  .quanta-dot-primary {
-    background-color: var(--quanta-primary);
-  }
-  .quanta-dot-success {
-    background-color: var(--quanta-bg-success);
-  }
-  .quanta-dot-info {
-    background-color: var(--quanta-bg-info);
-  }
-  .quanta-dot-warning {
-    background-color: var(--quanta-bg-warning);
-  }
-  .quanta-dot-danger {
-    background-color: var(--quanta-bg-danger);
-  }
-  .quanta-dot-gray {
-    background-color: var(--quanta-grey-400);
-  }
+/* ─── Dark Mode Adaptations ─────────────────────────────── */
+html[data-theme="dark"] {
+  .quanta-avatar-light { background-color: var(--quanta-grey-200); color: var(--quanta-grey-900); }
+  .quanta-avatar-dark  { background-color: var(--quanta-grey-900); color: var(--white); }
+}
 
 
-  /* Dark mode fix */
-  html[data-theme="dark"] .quanta-avatar-badge {
-    border-color: var(--quanta-slate-800);
-  }
+/* Sizes from 20px (sm) to 80px (2xl) */
+.quanta-avatar-sm  { width: 20px; height: 20px; font-size: 10px; }
+.quanta-avatar-md  { width: 32px; height: 32px; font-size: 14px; }
+.quanta-avatar-lg  { width: 48px; height: 48px; font-size: 18px; }
+.quanta-avatar-xl  { width: 64px; height: 64px; font-size: 22px; }
+.quanta-avatar-2xl { width: 80px; height: 80px; font-size: 26px; }
+
+/* Group support */
+.quanta-avatar-group {
+  display: flex;
+}
+.quanta-avatar-group > * {
+  margin-left: -6px;
+  border: 2px solid var(--quanta-bg-default);
+}
+
+/* Avatar Badge Base */
+.quanta-avatar-badge {
+  position: absolute;
+  bottom: -6px;
+  right: -2px;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  border: 2px solid var(--quanta-white);
+  background-color: var(--quanta-slate-50); /* default fallback */
+  font-size: .7rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.quanta-avatar-dot {
+  position: absolute;
+  bottom: 2px;
+  right: -2px;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  border: 2px solid var(--quanta-white);
+  background-color: var(--quanta-slate-50); /* default fallback */
+}
+
+/* Badge Variants */
+.quanta-badge-primary  { background-color: var(--quanta-primary); }
+.quanta-badge-secondary { background-color: var(--quanta-bg-secondary); }
+.quanta-badge-success  { background-color: var(--quanta-bg-success); }
+.quanta-badge-warning  { background-color: var(--quanta-bg-warning); }
+.quanta-badge-danger   { background-color: var(--quanta-bg-danger); }
+.quanta-badge-info     { background-color: var(--quanta-bg-info); }
+.quanta-badge-light    { background-color: var(--quanta-bg-light); }
+.quanta-badge-dark     { background-color: var(--quanta-bg-dark); }
+
+/* ─── Semantic Dot Variants ───────────────────────────── */
+.quanta-dot-primary {
+  background-color: var(--quanta-primary);
+}
+.quanta-dot-success {
+  background-color: var(--quanta-bg-success);
+}
+.quanta-dot-info {
+  background-color: var(--quanta-bg-info);
+}
+.quanta-dot-warning {
+  background-color: var(--quanta-bg-warning);
+}
+.quanta-dot-danger {
+  background-color: var(--quanta-bg-danger);
+}
+.quanta-dot-gray {
+  background-color: var(--quanta-grey-400);
+}
+
+/* ─── Avatar Border Radius Variants ─────────────────────── */
+.quanta-avatar-rounded-sm   { border-radius: var(--quanta-rounded-sm); }
+.quanta-avatar-rounded      { border-radius: var(--quanta-rounded); }
+.quanta-avatar-rounded-md   { border-radius: var(--quanta-rounded-md); }
+.quanta-avatar-rounded-lg   { border-radius: var(--quanta-rounded-lg); }
+.quanta-avatar-rounded-xl   { border-radius: var(--quanta-rounded-xl); }
+.quanta-avatar-rounded-2xl  { border-radius: var(--quanta-rounded-2xl); }
+.quanta-avatar-rounded-full { border-radius: var(--quanta-rounded-full); }
+
+/* Dark mode fix */
+html[data-theme="dark"] .quanta-avatar-badge {
+  border-color: var(--quanta-slate-800);
+}
 
 
-  /* Theme support */
-  html[data-theme="dark"] .quanta-avatar {
-    background-color: var(--quanta-slate-700);
-    color: var(--quanta-text-light);
-  }
+/* Theme support */
+html[data-theme="dark"] .quanta-avatar {
+  background-color: var(--quanta-slate-700);
+  color: var(--quanta-text-light);
 }

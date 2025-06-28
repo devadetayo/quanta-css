@@ -1,99 +1,92 @@
-/* src/components/alerts.css */
-@import "../components/variables.css";
+/* Base Alert */
+.quanta-alert {
+  display: flex;
+  align-items: center;
+  gap: var(--quanta-space-2);
+  padding: var(--quanta-space-2);
+  border-radius: var(--quanta-rounded-md);
+  font-size: var(--quanta-text-base);
+  font-family: var(--quanta-font-secondary);
+  font-weight: 500;
+  line-height: var(--quanta-leading-normal);
+  border: var(--quanta-border-width) solid transparent;
+  background-color: var(--quanta-bg-default);
+  color: var(--quanta-text-default);
+  box-shadow: var(--quanta-shadow-sm);
+  transition:
+    background-color var(--quanta-duration-fast),
+    box-shadow var(--quanta-duration-fast);
+  width: 100%;
+}
 
-@layer components.quanta-alerts {
+.quanta-alert:hover {
+  box-shadow: var(--quanta-shadow);
+}
+
+.quanta-alert svg {
+  flex-shrink: 0;
+}
+
+/* ── Alert Variants ───────────────────────────── */
+.quanta-alert-primary {
+  background-color: var(--quanta-primary);
+  color: var(--quanta-text-primary);
+  border: 1px solid var(--quanta-border-primary);
+}
+
+.quanta-alert-info {
+  background-color: var(--quanta-bg-info);
+  color: var(--quanta-text-info);
+  border: 1px solid var(--quanta-border-info);
+}
+
+.quanta-alert-success {
+  background-color: var(--quanta-bg-success);
+  color: var(--quanta-text-success);
+  border: 1px solid var(--quanta-border-success);
+}
+
+.quanta-alert-warning {
+  background-color: var(--quanta-bg-warning);
+  color: var(--quanta-text-warning);
+  border: 1px solid var(--quanta-border-warning);
+}
+
+.quanta-alert-error {
+  background-color: var(--quanta-bg-danger);
+  color: var(--quanta-text-danger);
+  border: 1px solid var(--quanta-border-danger);
+}
+
+.quanta-alert-neutral {
+  background-color: var(--quanta-bg-neutral);
+  color: var(--quanta-text-neutral);
+  border: 1px solid var(--quanta-border-neutral);
+}
+
+.quanta-alert-accent {
+  background-color: var(--quanta-bg-accent);
+  color: var(--quanta-text-accent);
+  border: 1px solid var(--quanta-border-accent);
+}
+
+/* ── Responsive Padding & Widths ──────────────── */
+@media (min-width: var(--quanta-screen-md)) {
   .quanta-alert {
-    display: flex;
-    align-items: center;
-    gap: var(--quanta-space-2);
-    padding: var(--quanta-space-2);
-    border-radius: var(--quanta-rounded-md);
-    font-size: var(--quanta-text-base);
-    font-family: var(--quanta-font-secondary);
-    font-weight: 500;
-    line-height: var(--quanta-leading-normal);
-    border: var(--quanta-border-width) solid transparent;
-    background-color: var(--quanta-bg-default);
-    color: var(--quanta-text-default);
-    box-shadow: var(--quanta-shadow-sm);
-    transition: background-color var(--quanta-duration-fast),
-                box-shadow var(--quanta-duration-fast);
-    width: 100%;
+    padding: var(--quanta-space-3);
+    width: 90%;
   }
+}
 
-  .quanta-alert:hover {
-    box-shadow: var(--quanta-shadow);
+@media (min-width: var(--quanta-screen-lg)) {
+  .quanta-alert {
+    padding: var(--quanta-space-4);
+    width: 80%;
   }
+}
 
-  .quanta-alert svg {
-    flex-shrink: 0;
-  }
-  /* Variant modifiers */
-  .quanta-alert-primary {
-    background-color: var(--quanta-primary);
-    color: var(--white);
-    border: none;
-  }
-  /* Variant modifiers */
-  .quanta-alert-info {
-    background-color: var(--quanta-blue-50);
-    color: var(--quanta-blue-800);
-    border-color: var(--quanta-blue-300);
-  }
-  .quanta-alert-success {
-    background-color: var(--quanta-green-50);
-    color: var(--quanta-green-800);
-    border-color: var(--quanta-green-300);
-  }
-  .quanta-alert-warning {
-    background-color: var(--quanta-yellow-50);
-    color: var(--quanta-yellow-800);
-    border-color: var(--quanta-yellow-300);
-  }
-  .quanta-alert-error {
-    background-color: var(--quanta-red-50);
-    color: var(--quanta-red-800);
-    border-color: var(--quanta-red-300);
-  }
-
-  /* Dark mode adjustments */
-  html[data-theme="dark"] .quanta-alert-info {
-    background-color: var(--quanta-blue-900);
-    color: var(--quanta-blue-100);
-    border-color: var(--quanta-blue-700);
-  }
-  html[data-theme="dark"] .quanta-alert-success {
-    background-color: var(--quanta-green-900);
-    color: var(--quanta-green-100);
-    border-color: var(--quanta-green-700);
-  }
-  html[data-theme="dark"] .quanta-alert-warning {
-    background-color: var(--quanta-yellow-900);
-    color: var(--quanta-yellow-100);
-    border-color: var(--quanta-yellow-700);
-  }
-  html[data-theme="dark"] .quanta-alert-error {
-    background-color: var(--quanta-red-900);
-    color: var(--quanta-red-100);
-    border-color: var(--quanta-red-700);
-  }
-
-  /* Responsive widths */
-  @media (min-width: var(--quanta-screen-md)) {
-    .quanta-alert {
-      padding: var(--quanta-space-3);
-      width: 90%;
-    }
-  }
-  @media (min-width: var(--quanta-screen-lg)) {
-    .quanta-alert {
-      padding: var(--quanta-space-4);
-      width: 80%;
-    }
-  }
-  @media (min-width: var(--quanta-screen-xl)) {
-    .quanta-alert {
-      width: 70%;
-    }
+@media (min-width: var(--quanta-screen-xl)) {
+  .quanta-alert {
+    width: 70%;
   }
 }

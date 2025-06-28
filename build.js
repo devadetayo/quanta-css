@@ -3,8 +3,8 @@ const path = require('path');
 const { execSync } = require('child_process');
 
 const outDir = 'dist';
+const usePostCSS = process.argv.includes('--postcss');
 
-// Utility files (adjust paths as needed)
 const utilityFiles = [
   'src/tokens/color-tokens.css',
   'src/utilities/variables.css',
@@ -14,7 +14,6 @@ const utilityFiles = [
   'src/utilities/quanta-css-variants.css',
 ];
 
-// Component files (adjust paths as needed)
 const componentFiles = [
   'src/tokens/color-tokens.css',
   'src/components/reset.css',
@@ -71,246 +70,168 @@ const componentFiles = [
   'src/components/visibility.css'
 ];
 
-// Combine all source files for the main build
-const allSourceFiles = [...utilityFiles, ...componentFiles];
+const excludedComponentFiles = ['reset.css', 'variables.css', 'base.css', 'color-tokens.css'];
+const filteredComponentFiles = componentFiles.filter(file =>
+  !excludedComponentFiles.some(exclude => file.includes(`/components/${exclude}`))
+);
+const allSourceFiles = [...utilityFiles, ...filteredComponentFiles];
 
-// Create output directory if it doesn't exist
-if (!fs.existsSync(outDir)) {
-  fs.mkdirSync(outDir, { recursive: true });
-}
+if (!fs.existsSync(outDir)) fs.mkdirSync(outDir, { recursive: true });
 
-/**
- * Check if a file exists and is readable
- */
 function fileExists(filePath) {
   try {
     fs.accessSync(filePath, fs.constants.F_OK | fs.constants.R_OK);
     return true;
-  } catch (err) {
+  } catch {
     return false;
   }
 }
 
-/**
- * Merge & dedupe CSS files:
- * - Preserves comments and structure
- * - Dedupes complete CSS rules and @-rules
- * - Removes empty rule blocks
- */
-function buildAndDedupe(files, outFile, buildType = 'main') {
-  const seenRules = new Set();
-  const seenImports = new Set();
+function isEmptyRule(rule) {
+  const cleaned = rule.replace(/\/\*[\s\S]*?\*\//g, '').replace(/\/\/.*$/gm, '');
+  const match = cleaned.match(/[^{]+\{([^}]*)\}/);
+  return match && match[1].trim() === '';
+}
+
+function parseCSS(content) {
+  const blocks = [];
+  const lines = content.split(/\r?\n/);
+  let current = '', type = null, brace = 0, inComment = false;
+
+  for (let line of lines) {
+    const trimmed = line.trim();
+    if (trimmed.includes('/*')) inComment = true;
+    if (trimmed.includes('*/')) inComment = false;
+    if (inComment || trimmed.startsWith('//')) {
+      type ??= 'comment';
+      current += line + '\n';
+      continue;
+    }
+    if (trimmed.startsWith('@import')) {
+      if (current.trim()) blocks.push({ type: type || 'rule', content: current.trim() });
+      blocks.push({ type: 'import', content: trimmed });
+      current = '', type = null;
+    } else if (/^@media|^@keyframes|^@supports|^@font-face/.test(trimmed)) {
+      if (current.trim()) blocks.push({ type: type || 'rule', content: current.trim() });
+      type = 'atrule';
+      current = line + '\n';
+      brace += (trimmed.match(/\{/g) || []).length;
+    } else if (trimmed.includes('{')) {
+      type ??= 'rule';
+      current += line + '\n';
+      brace += (trimmed.match(/\{/g) || []).length;
+    } else if (trimmed.includes('}')) {
+      current += line + '\n';
+      brace -= (trimmed.match(/\}/g) || []).length;
+      if (brace <= 0) {
+        blocks.push({ type: type || 'rule', content: current.trim() });
+        current = '', type = null, brace = 0;
+      }
+    } else if (type) {
+      current += line + '\n';
+    } else if (trimmed) {
+      current += line + '\n';
+      type ??= 'rule';
+    }
+  }
+
+  if (current.trim()) blocks.push({ type: type || 'rule', content: current.trim() });
+  return blocks;
+}
+
+function buildAndDedupe(files, outFile, label = 'build') {
+  const seenRules = new Set(), seenImports = new Set();
   const result = [];
-  let totalProcessedFiles = 0;
-
-  // Remove duplicates from file list while preserving order
   const uniqueFiles = [...new Set(files)];
+  let total = 0;
 
-  console.log(`\n🔨 Building ${buildType} (${uniqueFiles.length} files) -> ${outFile}`);
+  console.log(`\n🚧 ${label} (${uniqueFiles.length} files) -> ${outFile}`);
 
-  uniqueFiles.forEach(filePath => {
+  for (const filePath of uniqueFiles) {
     if (!fileExists(filePath)) {
-      console.warn(`⚠️  File not found: ${filePath}`);
-      return;
+      console.warn(`⚠️  Missing: ${filePath}`);
+      continue;
     }
 
     try {
       const content = fs.readFileSync(filePath, 'utf8');
       console.log(`   📄 ${filePath}`);
-      
-      // Split content into logical blocks
-      const blocks = parseCSS(content);
-      
-      blocks.forEach(block => {
-        const blockKey = block.content.trim();
-        
+      for (const block of parseCSS(content)) {
+        const key = block.content.trim();
+        if (!key) continue;
         if (block.type === 'import') {
-          // Handle @import statements - dedupe them
-          if (!seenImports.has(blockKey)) {
-            seenImports.add(blockKey);
-            result.push(blockKey);
+          if (!seenImports.has(key)) {
+            seenImports.add(key);
+            result.push(key);
           }
         } else if (block.type === 'comment') {
-          // Always preserve comments but avoid duplicates
-          if (!seenRules.has(blockKey)) {
-            seenRules.add(blockKey);
-            result.push(blockKey);
+          if (!seenRules.has(key)) {
+            seenRules.add(key);
+            result.push(key);
           }
-        } else if (block.type === 'rule') {
-          // Handle CSS rules - dedupe complete rules
-          if (blockKey && !isEmptyRule(blockKey) && !seenRules.has(blockKey)) {
-            seenRules.add(blockKey);
-            result.push(blockKey);
-          }
-        } else if (block.type === 'atrule') {
-          // Handle @media, @keyframes, etc. - dedupe them
-          if (blockKey && !seenRules.has(blockKey)) {
-            seenRules.add(blockKey);
-            result.push(blockKey);
-          }
+        } else if (!isEmptyRule(key) && !seenRules.has(key)) {
+          seenRules.add(key);
+          result.push(key);
         }
-      });
-
-      totalProcessedFiles++;
+      }
+      total++;
     } catch (err) {
-      console.error(`❌ Error reading ${filePath}:`, err.message);
+      console.error(`❌ Error reading ${filePath}: ${err.message}`);
     }
-  });
+  }
 
-  // Join results with proper spacing
-  const merged = result.join('\n\n');
-  
   try {
-    fs.writeFileSync(outFile, merged);
-    console.log(`✅ ${outFile} created`);
-    console.log(`📊 ${totalProcessedFiles} files → ${seenRules.size + seenImports.size} unique rules`);
+    fs.writeFileSync(outFile, result.join('\n\n'));
+    console.log(`✅ Wrote ${outFile} (${seenRules.size + seenImports.size} rules from ${total} files)`);
   } catch (err) {
-    console.error(`❌ Error writing ${outFile}:`, err.message);
-    throw err;
+    console.error(`❌ Write failed: ${err.message}`);
   }
 }
 
-/**
- * Parse CSS content into logical blocks
- */
-function parseCSS(content) {
-  const blocks = [];
-  const lines = content.split(/\r?\n/);
-  let currentBlock = '';
-  let blockType = null;
-  let braceCount = 0;
-  let inMultilineComment = false;
-
-  for (let i = 0; i < lines.length; i++) {
-    const line = lines[i];
-    const trimmed = line.trim();
-
-    // Handle multiline comments
-    if (trimmed.includes('/*')) {
-      inMultilineComment = true;
-    }
-    if (trimmed.includes('*/')) {
-      inMultilineComment = false;
-      if (blockType === 'comment' || !blockType) {
-        currentBlock += line + '\n';
-        blocks.push({ type: 'comment', content: currentBlock.trim() });
-        currentBlock = '';
-        blockType = null;
-        continue;
-      }
-    }
-
-    // Handle different types of content
-    if (inMultilineComment || trimmed.startsWith('//')) {
-      if (!blockType) blockType = 'comment';
-      currentBlock += line + '\n';
-    } else if (trimmed.startsWith('@import')) {
-      if (currentBlock.trim()) {
-        blocks.push({ type: blockType || 'rule', content: currentBlock.trim() });
-      }
-      blocks.push({ type: 'import', content: trimmed });
-      currentBlock = '';
-      blockType = null;
-    } else if (trimmed.startsWith('@media') || trimmed.startsWith('@keyframes') || 
-               trimmed.startsWith('@supports') || trimmed.startsWith('@font-face')) {
-      if (currentBlock.trim()) {
-        blocks.push({ type: blockType || 'rule', content: currentBlock.trim() });
-      }
-      blockType = 'atrule';
-      currentBlock = line + '\n';
-      braceCount += (trimmed.match(/\{/g) || []).length;
-    } else if (trimmed.includes('{')) {
-      if (!blockType) blockType = 'rule';
-      currentBlock += line + '\n';
-      braceCount += (trimmed.match(/\{/g) || []).length;
-    } else if (trimmed.includes('}')) {
-      currentBlock += line + '\n';
-      braceCount -= (trimmed.match(/\}/g) || []).length;
-      
-      if (braceCount <= 0) {
-        blocks.push({ type: blockType || 'rule', content: currentBlock.trim() });
-        currentBlock = '';
-        blockType = null;
-        braceCount = 0;
-      }
-    } else if (blockType) {
-      currentBlock += line + '\n';
-    } else if (trimmed) {
-      // Standalone property or selector
-      currentBlock += line + '\n';
-      if (!blockType) blockType = 'rule';
-    }
-  }
-
-  // Handle any remaining content
-  if (currentBlock.trim()) {
-    blocks.push({ type: blockType || 'rule', content: currentBlock.trim() });
-  }
-
-  return blocks;
-}
-
-/**
- * Check if a CSS rule is empty (just selector with empty braces)
- */
-function isEmptyRule(rule) {
-  const withoutComments = rule.replace(/\/\*[\s\S]*?\*\//g, '').replace(/\/\/.*$/gm, '');
-  const match = withoutComments.match(/[^{]+\{([^}]*)\}/);
-  return match && match[1].trim() === '';
-}
-
-/**
- * Minify CSS content
- */
 function minifyCSS(css) {
   return css
-    .replace(/\/\*[\s\S]*?\*\//g, '') // Remove block comments
-    .replace(/\/\/.*$/gm, '')         // Remove line comments
-    .replace(/\s+/g, ' ')             // Collapse whitespace
-    .replace(/;\s*}/g, '}')           // Remove last semicolon before }
-    .replace(/\s*{\s*/g, '{')         // Remove spaces around {
-    .replace(/}\s*/g, '}')            // Remove spaces after }
-    .replace(/,\s*/g, ',')            // Remove spaces after commas
-    .replace(/:\s*/g, ':')            // Remove spaces after colons
-    .replace(/;\s*/g, ';')            // Remove spaces after semicolons
-    .replace(/>\s*/g, '>')            // Remove spaces after >
-    .replace(/\s*\+\s*/g, '+')        // Remove spaces around +
-    .replace(/\s*~\s*/g, '~')         // Remove spaces around ~
+    .replace(/\/\*[\s\S]*?\*\//g, '')
+    .replace(/\/\/.*$/gm, '')
+    .replace(/\s+/g, ' ')
+    .replace(/;\s*}/g, '}')
+    .replace(/\s*{\s*/g, '{')
+    .replace(/}\s*/g, '}')
+    .replace(/:\s*/g, ':')
+    .replace(/;\s*/g, ';')
+    .replace(/,\s*/g, ',')
+    .replace(/>\s*/g, '>')
+    .replace(/\s*\+\s*/g, '+')
+    .replace(/\s*~\s*/g, '~')
     .trim();
 }
 
 try {
-  console.log('🚀 Starting Quanta CSS build process...');
+  console.log('🚀 Quanta CSS Build Start');
 
-  // 1) Build utilities.css from utility files
-  buildAndDedupe(utilityFiles, `${outDir}/utilities.css`, 'utilities');
+  buildAndDedupe(utilityFiles, `${outDir}/utilities.css`, 'Utilities');
+  buildAndDedupe(componentFiles, `${outDir}/components.css`, 'Components');
+  buildAndDedupe(allSourceFiles, `${outDir}/quanta.css`, 'Full Framework');
 
-  // 2) Build components.css from component files  
-  buildAndDedupe(componentFiles, `${outDir}/components.css`, 'components');
+  console.log('\n🧹 Minifying...');
 
-  // 3) Build the main quanta.css with everything combined and deduped
-  buildAndDedupe(allSourceFiles, `${outDir}/quanta.css`, 'complete framework');
-
-  // 4) Create minified version
-  console.log('\n🗜️  Creating minified version...');
-  try {
-    // Try PostCSS first for better minification
-    execSync(`npx postcss ${outDir}/quanta.css -o ${outDir}/quanta.min.css`, { 
-      stdio: 'pipe' // Suppress output unless there's an error
-    });
-    console.log('✅ quanta.min.css created with PostCSS');
-  } catch (postcssError) {
-    console.log('⚠️  PostCSS not available, using basic minification...');
-    
-    // Fallback to basic minification
+  if (usePostCSS) {
+    try {
+      execSync(`npx postcss ${outDir}/quanta.css -o ${outDir}/quanta.min.css`, { stdio: 'pipe' });
+      console.log('✅ Minified with PostCSS');
+    } catch (err) {
+      console.log('⚠️  PostCSS failed, falling back to manual minify');
+      const css = fs.readFileSync(`${outDir}/quanta.css`, 'utf8');
+      const mini = minifyCSS(css);
+      fs.writeFileSync(`${outDir}/quanta.min.css`, mini);
+      console.log('✅ Minified (basic)');
+    }
+  } else {
     const css = fs.readFileSync(`${outDir}/quanta.css`, 'utf8');
-    const minified = minifyCSS(css);
-    
-    fs.writeFileSync(`${outDir}/quanta.min.css`, minified);
-    console.log('✅ quanta.min.css created with basic minification');
+    const mini = minifyCSS(css);
+    fs.writeFileSync(`${outDir}/quanta.min.css`, mini);
+    console.log('✅ Minified (fast)');
   }
 
-  // 5) Display final stats
   const stats = {
     'quanta.css': fs.statSync(`${outDir}/quanta.css`).size,
     'quanta.min.css': fs.statSync(`${outDir}/quanta.min.css`).size,
@@ -318,16 +239,14 @@ try {
     'components.css': fs.statSync(`${outDir}/components.css`).size
   };
 
-  console.log('\n📈 Build Summary:');
-  console.log(`   quanta.css:     ${(stats['quanta.css'] / 1024).toFixed(1)}KB`);
-  console.log(`   quanta.min.css: ${(stats['quanta.min.css'] / 1024).toFixed(1)}KB (${Math.round((1 - stats['quanta.min.css']/stats['quanta.css']) * 100)}% smaller)`);
-  console.log(`   utilities.css:  ${(stats['utilities.css'] / 1024).toFixed(1)}KB`);
-  console.log(`   components.css: ${(stats['components.css'] / 1024).toFixed(1)}KB`);
+  console.log('\n📊 Build Size Summary:');
+  console.log(`   quanta.css:     ${(stats['quanta.css'] / 1024).toFixed(1)} KB`);
+  console.log(`   quanta.min.css: ${(stats['quanta.min.css'] / 1024).toFixed(1)} KB (${Math.round((1 - stats['quanta.min.css'] / stats['quanta.css']) * 100)}% smaller)`);
+  console.log(`   utilities.css:  ${(stats['utilities.css'] / 1024).toFixed(1)} KB`);
+  console.log(`   components.css: ${(stats['components.css'] / 1024).toFixed(1)} KB`);
 
-  console.log('\n🎉 Quanta CSS build completed successfully!');
-  console.log(`📁 Output files created in: ${outDir}/`);
-
-} catch (error) {
-  console.error('\n❌ Build failed:', error.message);
+  console.log('\n✅ Quanta CSS build done!');
+} catch (err) {
+  console.error('\n❌ Build crashed:', err.message);
   process.exit(1);
 }

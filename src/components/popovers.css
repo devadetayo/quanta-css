@@ -1,110 +1,108 @@
-@layer components.popovers {
-  .quanta-popover-wrapper{
-    position: relative;
-    max-width: fit-content;
-    display: flex;
-    align-items: center;
-  }
+.quanta-popover-wrapper{
+  position: relative;
+  max-width: fit-content;
+  display: flex;
+  align-items: center;
+}
 
-  .quanta-popover {
-    position: absolute;
-    z-index: var(--quanta-z-xs);
-    background-color: var(--white);
-    border-radius: var(--quanta-rounded-md);
-    box-shadow: var(--quanta-shadow-xl);
-    padding: var(--quanta-space-6);
-    font-size: var(--quanta-text-sm);
-    color: var(--quanta-text-default);
-    display: none;
-    opacity: 0;
-    pointer-events: none;
-    min-width: 300px;
-    transition: opacity 0.2s ease, transform 0.2s ease;
-  }
+.quanta-popover {
+  position: absolute;
+  z-index: var(--quanta-z-xs);
+  background-color: var(--white);
+  border-radius: var(--quanta-rounded-md);
+  box-shadow: var(--quanta-shadow-xl);
+  padding: var(--quanta-space-6);
+  font-size: var(--quanta-text-sm);
+  color: var(--quanta-text-default);
+  display: none;
+  opacity: 0;
+  pointer-events: none;
+  min-width: 300px;
+  transition: opacity 0.2s ease, transform 0.2s ease;
+}
 
-  @media(max-width: 640px){
-    .quanta-popover{
-      padding: var(--quanta-space-4);
-    }
+@media(max-width: 640px){
+  .quanta-popover{
+    padding: var(--quanta-space-4);
   }
+}
 
-  .quanta-popover[data-show="true"] {
-    display: block;
-    opacity: 1;
-    pointer-events: auto;
-  }
+.quanta-popover[data-show="true"] {
+  display: block;
+  opacity: 1;
+  pointer-events: auto;
+}
 
-  /* Arrow */
-  .quanta-popover::after {
-    content: "";
-    position: absolute;
-    width: 12px; 
-    height: 12px;
-    z-index: -1;
-    background: inherit;
-    transform: rotate(45deg);
-  }
+/* Arrow */
+.quanta-popover::after {
+  content: "";
+  position: absolute;
+  width: 12px; 
+  height: 12px;
+  z-index: -1;
+  background: inherit;
+  transform: rotate(45deg);
+}
 
-  /* Placements with offset */
-  .quanta-popover-top {
-    bottom: 100%;
-    left: 50%;
-    transform: translate(-50%, -0.5rem);
-  }
-  .quanta-popover-top::after {
-    top: 97%;
-    left: 50%;
-    transform: translateX(-50%) rotate(45deg);
-  }
+/* Placements with offset */
+.quanta-popover-top {
+  bottom: 100%;
+  left: 50%;
+  transform: translate(-50%, -0.5rem);
+}
+.quanta-popover-top::after {
+  top: 97%;
+  left: 50%;
+  transform: translateX(-50%) rotate(45deg);
+}
 
-  .quanta-popover-bottom {
-    top: 100%;
-    left: 50%;
-    transform: translate(-50%, 0.5rem);
-  }
-  .quanta-popover-bottom::after {
-    bottom: 97%;
-    left: 50%;
-    transform: translateX(-50%) rotate(45deg);
-  }
+.quanta-popover-bottom {
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%, 0.5rem);
+}
+.quanta-popover-bottom::after {
+  bottom: 97%;
+  left: 50%;
+  transform: translateX(-50%) rotate(45deg);
+}
 
-  .quanta-popover-left {
-    right: 100%;
-    top: 50%;
-    transform: translate(-0.5rem, -50%);
-  }
-  .quanta-popover-left::after {
-    right: -6px;
-    top: 50%;
-    transform: translateY(-50%) rotate(45deg);
-  }
+.quanta-popover-left {
+  right: 100%;
+  top: 50%;
+  transform: translate(-0.5rem, -50%);
+}
+.quanta-popover-left::after {
+  right: -6px;
+  top: 50%;
+  transform: translateY(-50%) rotate(45deg);
+}
 
-  .quanta-popover-right {
-    left: 100%;
-    top: 50%;
-    transform: translate(0.5rem, -50%);
-  }
-  .quanta-popover-right::after {
-    left: -6px;
-    top: 50%;
-    transform: translateY(-50%) rotate(45deg);
-  }
+.quanta-popover-right {
+  left: 100%;
+  top: 50%;
+  transform: translate(0.5rem, -50%);
+}
+.quanta-popover-right::after {
+  left: -6px;
+  top: 50%;
+  transform: translateY(-50%) rotate(45deg);
+}
 
-  /* Dark mode */
-  html[data-theme="dark"] .quanta-popover {
-    background-color: var(--quanta-slate-800);
-    color: var(--quanta-text-light);
-    box-shadow: 0 8px 20px rgba(0,0,0,0.5);
-  }
+/* Dark mode */
+html[data-theme="dark"] .quanta-popover {
+  background-color: var(--quanta-slate-800);
+  color: var(--quanta-text-light);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.5);
+}
 
-  /* Variants */
-  .quanta-popover.soft { box-shadow: var(--quanta-shadow-md); }
-  .quanta-popover.bold { box-shadow: var(--quanta-shadow-2xl); }
-  .quanta-popover.blur {
-    backdrop-filter: blur(8px);
-    background-color: rgba(255,255,255,0.8);
-  }
-  html[data-theme="dark"] .quanta-popover.blur {
-    background-color: rgba(30,41,59,0.8);
-  }
+/* Variants */
+.quanta-popover.soft { box-shadow: var(--quanta-shadow-md); }
+.quanta-popover.bold { box-shadow: var(--quanta-shadow-2xl); }
+.quanta-popover.blur {
+  backdrop-filter: blur(8px);
+  background-color: rgba(255,255,255,0.8);
+}
+html[data-theme="dark"] .quanta-popover.blur {
+  background-color: rgba(30,41,59,0.8);
 }

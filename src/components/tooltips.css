@@ -1,52 +1,50 @@
-/* src/components/tooltip.css */
-@layer components.tooltip {
-  .quanta-tooltip {
-    position: absolute;
-    max-width: 200px;
-    background: var(--quanta-slate-800);
-    color: var(--white);
-    padding: 0.5rem 0.75rem;
-    font-size: var(--quanta-text-sm);
-    border-radius: var(--quanta-rounded-md);
-    box-shadow: var(--quanta-shadow-md);
-    pointer-events: none;
-    opacity: 0;
-    transform: translateY(-6px);
-    transition: opacity 0.2s ease, transform 0.2s ease;
-    white-space: nowrap;
-    z-index: var(--quanta-z-tooltip, 9999);
-  }
 
-  .quanta-tooltip.show {
-    opacity: 1;
-    transform: translateY(0);
+.quanta-tooltip {
+  position: absolute;
+  max-width: 200px;
+  background: var(--quanta-slate-800);
+  color: var(--white);
+  padding: 0.5rem 0.75rem;
+  font-size: var(--quanta-text-sm);
+  border-radius: var(--quanta-rounded-md);
+  box-shadow: var(--quanta-shadow-md);
+  pointer-events: none;
+  opacity: 0;
+  transform: translateY(-6px);
+  transition: opacity 0.2s ease, transform 0.2s ease;
+  white-space: nowrap;
+  z-index: var(--quanta-z-tooltip, 9999);
+}
+
+.quanta-tooltip.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.quanta-tooltip::after {
+  content: "";
+  position: absolute;
+  bottom: -16px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-width: 8px;
+  border-style: solid;
+  border-color: var(--quanta-slate-800) transparent transparent transparent;
+}
+
+/* Size variants */
+.tooltip-sm { font-size: 0.6875rem; padding: 0.25rem 0.5rem; }
+.tooltip-md { /* default */ }
+.tooltip-lg { font-size: 0.875rem; padding: 0.75rem 1rem; }
+
+/* Dark mode overrides */
+html[data-theme="dark"]{
+  .quanta-tooltip {
+    background: var(--white);
+    color: var(--black);
   }
 
   .quanta-tooltip::after {
-    content: "";
-    position: absolute;
-    bottom: -16px;
-    left: 50%;
-    transform: translateX(-50%);
-    border-width: 8px;
-    border-style: solid;
-    border-color: var(--quanta-slate-800) transparent transparent transparent;
-  }
-
-  /* Size variants */
-  .tooltip-sm { font-size: 0.6875rem; padding: 0.25rem 0.5rem; }
-  .tooltip-md { /* default */ }
-  .tooltip-lg { font-size: 0.875rem; padding: 0.75rem 1rem; }
-
-  /* Dark mode overrides */
-  html[data-theme="dark"]{
-    .quanta-tooltip {
-      background: var(--white);
-      color: var(--black);
-    }
-
-    .quanta-tooltip::after {
-      border-color: var(--white) transparent transparent transparent;
-    }
+    border-color: var(--white) transparent transparent transparent;
   }
 }

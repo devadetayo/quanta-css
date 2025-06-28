@@ -1,27 +1,25 @@
-@layer components.lazyload {
-  .lazy-load {
-    opacity: 0;
-    transform: translateY(20px);
-    transition: opacity 0.6s ease, transform 0.6s ease;
-    will-change: opacity, transform;
-  }
+.lazy-load {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+  will-change: opacity, transform;
+}
 
-  .lazy-load.show {
-    opacity: 1;
-    transform: none;
-  }
+.lazy-load.show {
+  opacity: 1;
+  transform: none;
+}
 
-  /* Direction variants */
-  .lazy-from-left { transform: translateX(-30px); }
-  .lazy-from-right { transform: translateX(30px); }
-  .lazy-from-top { transform: translateY(-30px); }
-  .lazy-from-bottom { transform: translateY(30px); }
+/* Direction variants */
+.lazy-from-left { transform: translateX(-30px); }
+.lazy-from-right { transform: translateX(30px); }
+.lazy-from-top { transform: translateY(-30px); }
+.lazy-from-bottom { transform: translateY(30px); }
 
-  .lazy-from-left.show,
-  .lazy-from-right.show,
-  .lazy-from-top.show,
-  .lazy-from-bottom.show {
-    transform: none;
-    opacity: 1;
-  }
+.lazy-from-left.show,
+.lazy-from-right.show,
+.lazy-from-top.show,
+.lazy-from-bottom.show {
+  transform: none;
+  opacity: 1;
 }

@@ -1,127 +1,124 @@
-@layer components.hero {
-  /* Base Hero Wrapper */
-  .quanta-hero {
-    position: relative;
-    width: 100%;
-    padding: var(--quanta-space-16) var(--quanta-space-4);
-    color: var(--quanta-text-dark);
-    background-color: var(--quanta-bg-default);
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
+.quanta-hero {
+  position: relative;
+  width: 100%;
+  padding: var(--quanta-space-16) var(--quanta-space-4);
+  color: var(--quanta-text-dark);
+  background-color: var(--quanta-bg-default);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
 
-  .quanta-hero.fullscreen {
-    min-height: 100vh;
-  }
+.quanta-hero.fullscreen {
+  min-height: 100vh;
+}
 
-  .quanta-hero-title {
-    font-size: var(--quanta-text-5xl);
-    font-weight: 700;
-    margin-bottom: var(--quanta-space-4);
-  }
+.quanta-hero-title {
+  font-size: var(--quanta-text-5xl);
+  font-weight: 700;
+  margin-bottom: var(--quanta-space-4);
+}
 
-  .quanta-hero-sub {
-    font-size: var(--quanta-text-xl);
-    margin-bottom: var(--quanta-space-6);
-    color: var(--quanta-text-muted);
-  }
+.quanta-hero-sub {
+  font-size: var(--quanta-text-xl);
+  margin-bottom: var(--quanta-space-6);
+  color: var(--quanta-text-muted);
+}
 
-  .quanta-hero-cta {
-    display: inline-block;
-    padding: var(--quanta-space-3) var(--quanta-space-6);
-    background: var(--quanta-primary);
-    color: var(--white);
-    border-radius: var(--quanta-rounded-md);
-    font-weight: 600;
-    transition: background 0.2s ease;
-    text-decoration: none;
-  }
+.quanta-hero-cta {
+  display: inline-block;
+  padding: var(--quanta-space-3) var(--quanta-space-6);
+  background: var(--quanta-primary);
+  color: var(--white);
+  border-radius: var(--quanta-rounded-md);
+  font-weight: 600;
+  transition: background 0.2s ease;
+  text-decoration: none;
+}
 
-  .quanta-hero-cta:hover {
-    background: var(--quanta-primary-hover);
-  }
+.quanta-hero-cta:hover {
+  background: var(--quanta-primary-hover);
+}
 
-  /* ─────────── Variant 1: Centered ─────────── */
-  .quanta-hero.centered {
-    text-align: center;
-    align-items: center;
-  }
+/* ─────────── Variant 1: Centered ─────────── */
+.quanta-hero.centered {
+  text-align: center;
+  align-items: center;
+}
 
-  /* ─────────── Variant 2: Split Layout ─────────── */
-  .quanta-hero.split {
-    flex-direction: row;
-    gap: var(--quanta-space-12);
-    align-items: center;
-  }
+/* ─────────── Variant 2: Split Layout ─────────── */
+.quanta-hero.split {
+  flex-direction: row;
+  gap: var(--quanta-space-12);
+  align-items: center;
+}
 
-  .quanta-hero.split .quanta-hero-content {
-    flex: 1;
-  }
+.quanta-hero.split .quanta-hero-content {
+  flex: 1;
+}
 
-  .quanta-hero.split .quanta-hero-image {
-    flex: 1;
-    min-height: 300px;
-  }
+.quanta-hero.split .quanta-hero-image {
+  flex: 1;
+  min-height: 300px;
+}
 
-  .quanta-hero.split .quanta-hero-image img {
-    width: 100%;
-    border-radius: var(--quanta-rounded-md);
-  }
+.quanta-hero.split .quanta-hero-image img {
+  width: 100%;
+  border-radius: var(--quanta-rounded-md);
+}
 
-  /* ─────────── Variant 3: Overlay ─────────── */
-  .quanta-hero.overlay {
-    background: url('/path/to/hero-bg.jpg') center/cover no-repeat;
-    color: var(--quanta-text-light);
-    text-align: center;
-  }
+/* ─────────── Variant 3: Overlay ─────────── */
+.quanta-hero.overlay {
+  background: url('/path/to/hero-bg.jpg') center/cover no-repeat;
+  color: var(--quanta-text-light);
+  text-align: center;
+}
 
-  .quanta-hero.overlay::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background: rgba(0, 0, 0, 0.6);
-    z-index: 1;
-  }
+.quanta-hero.overlay::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 1;
+}
 
-  .quanta-hero.overlay > * {
-    position: relative;
-    z-index: 2;
-  }
+.quanta-hero.overlay > * {
+  position: relative;
+  z-index: 2;
+}
 
-  /* ─────────── Variant 4: Minimal ─────────── */
-  .quanta-hero.minimal {
-    padding: var(--quanta-space-8) var(--quanta-space-4);
-    background: var(--quanta-bg-subtle);
-    color: var(--quanta-text-default);
-  }
+/* ─────────── Variant 4: Minimal ─────────── */
+.quanta-hero.minimal {
+  padding: var(--quanta-space-8) var(--quanta-space-4);
+  background: var(--quanta-bg-subtle);
+  color: var(--quanta-text-default);
+}
 
-  .quanta-hero.minimal .quanta-hero-title {
-    font-size: var(--quanta-text-3xl);
-    margin-bottom: var(--quanta-space-2);
-  }
+.quanta-hero.minimal .quanta-hero-title {
+  font-size: var(--quanta-text-3xl);
+  margin-bottom: var(--quanta-space-2);
+}
 
-  .quanta-hero.minimal .quanta-hero-sub {
-    font-size: var(--quanta-text-md);
-    margin-bottom: 0;
-  }
+.quanta-hero.minimal .quanta-hero-sub {
+  font-size: var(--quanta-text-md);
+  margin-bottom: 0;
+}
 
-  /* ─────────── Responsive Fixes ─────────── */
-  @media (max-width: 768px) {
-    .quanta-hero-title { font-size: var(--quanta-text-3xl); }
-    .quanta-hero-sub { font-size: var(--quanta-text-lg); }
-    .quanta-hero.split { flex-direction: column; }
-    .quanta-hero.split .quanta-hero-image { order: -1; }
-  }
+/* ─────────── Responsive Fixes ─────────── */
+@media (max-width: 768px) {
+  .quanta-hero-title { font-size: var(--quanta-text-3xl); }
+  .quanta-hero-sub { font-size: var(--quanta-text-lg); }
+  .quanta-hero.split { flex-direction: column; }
+  .quanta-hero.split .quanta-hero-image { order: -1; }
+}
 
-  html[data-theme="dark"] .quanta-hero {
-    color: var(--quanta-text-light);
-    background-color: var(--quanta-bg-emphasis);
-  }
+html[data-theme="dark"] .quanta-hero {
+  color: var(--quanta-text-light);
+  background-color: var(--quanta-bg-emphasis);
+}
 
-  html[data-theme="dark"] .quanta-hero.minimal {
-    background-color: var(--quanta-bg-muted);
-  }
+html[data-theme="dark"] .quanta-hero.minimal {
+  background-color: var(--quanta-bg-muted);
 }

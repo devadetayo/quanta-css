@@ -1,114 +1,115 @@
-/* src/components/chips.css */
-@layer components.chips {
-  /* ─── Base Chip Style ───────────────────────────────────── */
-  .quanta-chip {
-    --chip-gap: var(--quanta-space-2);
-    --chip-padding-y: var(--quanta-space-1);
-    --chip-padding-x: var(--quanta-space-2);
+.quanta-chip {
+  --chip-gap: var(--quanta-space-2);
+  --chip-padding-y: var(--quanta-space-1);
+  --chip-padding-x: var(--quanta-space-2);
 
-    display: inline-flex;
-    align-items: center;
-    gap: var(--chip-gap);
-    padding: var(--chip-padding-y) var(--chip-padding-x);
-    font-size: var(--quanta-text-sm);
-    line-height: 1;
-    background-color: var(--quanta-slate-100);
-    color: var(--quanta-text-default);
-    border-radius: var(--quanta-rounded-full);
-    transition:
-      background-color var(--quanta-duration-fast) var(--quanta-ease-default),
-      color var(--quanta-duration-fast) var(--quanta-ease-default);
-  }
+  display: inline-flex;
+  align-items: center;
+  gap: var(--chip-gap);
+  padding: var(--chip-padding-y) var(--chip-padding-x);
+  font-size: var(--quanta-text-sm);
+  line-height: 1;
+  font-weight: 500;
+  background-color: var(--quanta-bg-neutral);
+  color: var(--quanta-text-neutral);
+  border: 1px solid transparent;
+  border-radius: var(--quanta-rounded-full);
+  transition:
+    background-color var(--quanta-duration-fast) var(--quanta-ease-default),
+    color var(--quanta-duration-fast) var(--quanta-ease-default),
+    border-color var(--quanta-duration-fast) var(--quanta-ease-default);
+}
 
-  /* ─── Image/Icon in Chip ────────────────────────────────── */
-  .quanta-chip-img {
-    flex-shrink: 0;
-    width: 1.5rem;
-    height: 1.5rem;
-    border-radius: var(--quanta-rounded-full);
-    object-fit: cover;
-  }
+/* ─── Variants: Filled ───────────────────────────────────── */
+.quanta-chip-primary     { background-color: var(--quanta-primary);   color: var(--quanta-text-primary);   border-color: var(--quanta-border-primary); }
+.quanta-chip-secondary   { background-color: var(--quanta-bg-secondary); color: var(--quanta-text-secondary); border-color: var(--quanta-border-secondary); }
+.quanta-chip-success     { background-color: var(--quanta-bg-success);   color: var(--quanta-text-success);   border-color: var(--quanta-border-success); }
+.quanta-chip-warning     { background-color: var(--quanta-bg-warning);   color: var(--quanta-text-warning);   border-color: var(--quanta-border-warning); }
+.quanta-chip-danger      { background-color: var(--quanta-bg-danger);    color: var(--quanta-text-danger);    border-color: var(--quanta-border-danger); }
+.quanta-chip-info        { background-color: var(--quanta-bg-info);      color: var(--quanta-text-info);      border-color: var(--quanta-border-info); }
+.quanta-chip-accent      { background-color: var(--quanta-bg-accent);    color: var(--quanta-text-accent);    border-color: var(--quanta-border-accent); }
+.quanta-chip-ghost       { background-color: var(--quanta-bg-ghost);     color: var(--quanta-text-ghost);     border-color: var(--quanta-border-ghost); }
 
-  .quanta-chip-sm .quanta-chip-img {
-    width: 1rem;
-    height: 1rem;
-  }
+/* ─── Variants: Outline ───────────────────────────────────── */
+.quanta-chip-outline-primary   { background: transparent; color: var(--quanta-primary); border-color: var(--quanta-border-primary); }
+.quanta-chip-outline-secondary { background: transparent; color: var(--quanta-bg-secondary); border-color: var(--quanta-border-secondary); }
+.quanta-chip-outline-success   { background: transparent; color: var(--quanta-bg-success); border-color: var(--quanta-border-success); }
+.quanta-chip-outline-warning   { background: transparent; color: var(--quanta-bg-warning); border-color: var(--quanta-border-warning); }
+.quanta-chip-outline-danger    { background: transparent; color: var(--quanta-bg-danger); border-color: var(--quanta-border-danger); }
+.quanta-chip-outline-info      { background: transparent; color: var(--quanta-bg-info); border-color: var(--quanta-border-info); }
+.quanta-chip-outline-accent    { background: transparent; color: var(--quanta-bg-accent); border-color: var(--quanta-border-accent); }
+.quanta-chip-outline-ghost     { background: transparent; color: var(--quanta-text-ghost); border-color: var(--quanta-border-ghost); }
 
-  .quanta-chip-lg .quanta-chip-img {
-    width: 2rem;
-    height: 2rem;
-  }
+/* ─── Hover ───────────────────────────────────────────────── */
+.quanta-chip:hover {
+  opacity: 0.95;
+}
 
-  /* ─── Close Button/Icon ─────────────────────────────────── */
-  .quanta-chip-close {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    padding: var(--quanta-space-1);
-    font-size: var(--quanta-text-xs);
-    line-height: 1;
-    border-radius: var(--quanta-rounded-full);
-    cursor: pointer;
-    transition: background-color var(--quanta-duration-fast) var(--quanta-ease-default);
-  }
+/* ─── Size Variants ───────────────────────────────────────── */
+.quanta-chip-sm {
+  --chip-gap: var(--quanta-space-1);
+  --chip-padding-y: var(--quanta-space-0);
+  --chip-padding-x: var(--quanta-space-1);
+  font-size: var(--quanta-text-xs);
+}
 
-  .quanta-chip-close:hover,
-  .quanta-chip-close:focus {
-    background-color: var(--quanta-slate-20);
-    color: var(--quanta-text-default);
-    outline: none;
-  }
+.quanta-chip-lg {
+  --chip-gap: var(--quanta-space-3);
+  --chip-padding-y: var(--quanta-space-2);
+  --chip-padding-x: var(--quanta-space-3);
+  font-size: var(--quanta-text-base);
+}
 
-  /* ─── Input Chip Variant ────────────────────────────────── */
-  .quanta-chip-input {
-    flex: 1;
-    min-width: 4ch;
-    background: transparent;
-    border: none;
-    outline: none;
-    padding: var(--quanta-space-1) 0;
-    font-size: var(--quanta-text-sm);
-    color: var(--quanta-text-default);
-  }
+/* ─── Close Button ────────────────────────────────────────── */
+.quanta-chip-close {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--quanta-space-1);
+  font-size: var(--quanta-text-xs);
+  line-height: 1;
+  border-radius: var(--quanta-rounded-full);
+  cursor: pointer;
+  transition: background-color var(--quanta-duration-fast) var(--quanta-ease-default);
+}
 
-  /* ─── Size Variants ─────────────────────────────────────── */
-  .quanta-chip-sm {
-    --chip-gap: var(--quanta-space-1);
-    --chip-padding-y: var(--quanta-space-0);
-    --chip-padding-x: var(--quanta-space-1);
-    font-size: var(--quanta-text-xs);
-  }
+.quanta-chip-close:hover,
+.quanta-chip-close:focus {
+  background-color: var(--quanta-ghost-hover);
+  color: var(--quanta-text-default);
+  outline: none;
+}
 
-  .quanta-chip-lg {
-    --chip-gap: var(--quanta-space-3);
-    --chip-padding-y: var(--quanta-space-2);
-    --chip-padding-x: var(--quanta-space-3);
-    font-size: var(--quanta-text-base);
-  }
+/* ─── Image/Icon in Chip ─────────────────────────────────── */
+.quanta-chip-img {
+  flex-shrink: 0;
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: var(--quanta-rounded-full);
+  object-fit: cover;
+}
 
-  /* ─── Hover State ───────────────────────────────────────── */
-  .quanta-chip:hover {
-    background-color: var(--quanta-slate-200);
-  }
+.quanta-chip-sm .quanta-chip-img { width: 1rem; height: 1rem; }
+.quanta-chip-lg .quanta-chip-img { width: 2rem; height: 2rem; }
 
-  /* ─── Dark Mode Overrides ───────────────────────────────── */
-  html[data-theme="dark"] .quanta-chip {
-    background-color: var(--quanta-slate-800);
-    color: var(--quanta-text-default);
-  }
+/* ─── Input Style ─────────────────────────────────────────── */
+.quanta-chip-input {
+  flex: 1;
+  min-width: 4ch;
+  background: transparent;
+  border: none;
+  outline: none;
+  padding: var(--quanta-space-1) 0;
+  font-size: var(--quanta-text-sm);
+  color: var(--quanta-text-default);
+}
 
-  html[data-theme="dark"] .quanta-chip-close:hover,
-  html[data-theme="dark"] .quanta-chip-close:focus {
-    background-color: var(--quanta-slate-700);
-  }
+/* ─── Dark Mode Support ───────────────────────────────────── */
+html[data-theme="dark"] .quanta-chip {
+  background-color: var(--quanta-bg-neutral);
+}
 
-  /* ─── Responsive Adjustments ────────────────────────────── */
-  @media (max-width: var(--quanta-screen-sm)) {
-    .quanta-chip {
-      --chip-gap: var(--quanta-space-1);
-      --chip-padding-x: var(--quanta-space-1);
-      --chip-padding-y: var(--quanta-space-0);
-      font-size: var(--quanta-text-xs);
-    }
-  }
+html[data-theme="dark"] .quanta-chip-close:hover,
+html[data-theme="dark"] .quanta-chip-close:focus {
+  background-color: var(--quanta-ghost-hover);
 }

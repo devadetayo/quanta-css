@@ -1114,10 +1114,10 @@ html[data-theme="dark"] {
 }
 
 /* Text Sizes */
-.text-xs { font-size: 0.75rem; }
-.text-sm { font-size: 1rem; }
-.text-base { font-size: 1.125rem; }
-.text-lg { font-size: 1.5rem; }
+.text-xs { font-size: 0.5rem; }
+.text-sm { font-size: 0.875rem; }
+.text-base { font-size: 1rem; }
+.text-lg { font-size: 1.125rem; }
 .text-xl { font-size: 2rem; }
 .text-2xl { font-size: 2.5rem; }
 .text-3xl { font-size: 3rem; }

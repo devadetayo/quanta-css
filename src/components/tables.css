@@ -1,192 +1,188 @@
-/* src/components/tables.css */
-@layer components.tables {
-  /* ─── Responsive Wrapper ─────────────────────────────── */
-  .quanta-table-responsive {
-    width: 100%;
-    overflow-x: auto;
-    -webkit-overflow-scrolling: touch;
-    margin-block: var(--quanta-space-4);
-  }
+.quanta-table-responsive {
+  width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  margin-block: var(--quanta-space-4);
+}
 
-  /* ─── Base Table ─────────────────────────────────────── */
+/* ─── Base Table ─────────────────────────────────────── */
+.quanta-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: var(--quanta-text-sm);
+  color: var(--quanta-text-default);
+}
+
+.quanta-table th,
+.quanta-table td {
+  padding: var(--quanta-space-3);
+  text-align: left;
+  border-bottom: 1px solid var(--quanta-border-color);
+  vertical-align: top;
+}
+
+.quanta-table th {
+  font-weight: 600;
+  color: var(--quanta-text-default);
+}
+
+/* ─── Size Variants ─────────────────────────────────── */
+.quanta-table-sm th,
+.quanta-table-sm td {
+  padding: var(--quanta-space-2);
+  font-size: var(--quanta-text-xs);
+}
+
+.quanta-table-lg th,
+.quanta-table-lg td {
+  padding: var(--quanta-space-4);
+  font-size: var(--quanta-text-base);
+}
+
+/* ─── Visual Variants ───────────────────────────────── */
+.quanta-table-hover tbody tr:hover {
+  background-color: var(--quanta-slate-100);
+}
+
+.quanta-table-zebra tbody tr:nth-child(odd) {
+  background-color: var(--quanta-slate-50);
+}
+
+.quanta-table-bordered th,
+.quanta-table-bordered td {
+  border: 1px solid var(--quanta-border-color);
+}
+
+.quanta-table-rounded {
+  border-radius: var(--quanta-rounded-md);
+  overflow: hidden;
+}
+
+.quanta-table-clean th,
+.quanta-table-clean td {
+  border: none !important;
+  background-color: transparent;
+}
+
+.quanta-table-shadowed {
+  box-shadow: var(--quanta-shadow-md);
+}
+
+.quanta-table-glass {
+  background-color: var(--quanta-slate-50);
+  backdrop-filter: blur(6px);
+  border-radius: var(--quanta-rounded-lg);
+  overflow: hidden;
+}
+
+/* ─── Sortable Headers ─────────────────────────────── */
+.quanta-table th.sortable {
+  position: relative;
+  cursor: pointer;
+  user-select: none;
+}
+
+.quanta-table th.sortable::after {
+  content: '';
+  position: absolute;
+  right: var(--quanta-space-2);
+  top: 50%;
+  transform: translateY(-50%);
+  border: 5px solid transparent;
+  border-top-color: var(--quanta-text-muted);
+  opacity: 0.6;
+  transition: transform 0.3s ease;
+}
+
+.quanta-table th.sortable.sorted-asc::after {
+  transform: translateY(-50%) rotate(180deg);
+}
+
+.quanta-table th.sortable.sorted-desc::after {
+  transform: translateY(-50%) rotate(0);
+}
+
+/* ─── Pagination Controls ───────────────────────────── */
+.quanta-pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: var(--quanta-space-2);
+  width: 100%;
+  margin-top: var(--quanta-space-4);
+}
+
+.quanta-pagination-button {
+  padding: var(--quanta-space-2) var(--quanta-space-3);
+  font-size: var(--quanta-text-sm);
+  background-color: var(--quanta-slate-100);
+  color: var(--quanta-text-default);
+  border: none;
+  border-radius: var(--quanta-rounded-md);
+  cursor: pointer;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+.quanta-pagination-button:hover {
+  background-color: var(--quanta-slate-200);
+  color: var(--quanta-text-dark);
+}
+
+.quanta-pagination-button.active {
+  background-color: var(--quanta-primary);
+  color: var(--white);
+}
+
+.quanta-pagination-button:disabled {
+  background-color: var(--quanta-slate-50);
+  color: var(--quanta-text-muted);
+  cursor: not-allowed;
+}
+
+/* ─── Dark Mode ─────────────────────────────────────── */
+html[data-theme="dark"] {
   .quanta-table {
-    width: 100%;
-    border-collapse: collapse;
-    font-size: var(--quanta-text-sm);
-    color: var(--quanta-text-default);
-  }
-
-  .quanta-table th,
-  .quanta-table td {
-    padding: var(--quanta-space-3);
-    text-align: left;
-    border-bottom: 1px solid var(--quanta-border-color);
-    vertical-align: top;
+    color: var(--quanta-text-light);
   }
 
   .quanta-table th {
-    font-weight: 600;
-    color: var(--quanta-text-default);
+    color: var(--quanta-text-light);
   }
 
-  /* ─── Size Variants ─────────────────────────────────── */
-  .quanta-table-sm th,
-  .quanta-table-sm td {
-    padding: var(--quanta-space-2);
-    font-size: var(--quanta-text-xs);
-  }
-
-  .quanta-table-lg th,
-  .quanta-table-lg td {
-    padding: var(--quanta-space-4);
-    font-size: var(--quanta-text-base);
-  }
-
-  /* ─── Visual Variants ───────────────────────────────── */
   .quanta-table-hover tbody tr:hover {
-    background-color: var(--quanta-slate-100);
+    background-color: var(--quanta-slate-800);
   }
 
   .quanta-table-zebra tbody tr:nth-child(odd) {
-    background-color: var(--quanta-slate-50);
-  }
-
-  .quanta-table-bordered th,
-  .quanta-table-bordered td {
-    border: 1px solid var(--quanta-border-color);
-  }
-
-  .quanta-table-rounded {
-    border-radius: var(--quanta-rounded-md);
-    overflow: hidden;
+    background-color: var(--quanta-slate-900);
   }
 
   .quanta-table-clean th,
   .quanta-table-clean td {
-    border: none !important;
-    background-color: transparent;
-  }
-
-  .quanta-table-shadowed {
-    box-shadow: var(--quanta-shadow-md);
+    color: var(--quanta-text-light);
   }
 
   .quanta-table-glass {
-    background-color: var(--quanta-slate-50);
-    backdrop-filter: blur(6px);
-    border-radius: var(--quanta-rounded-lg);
-    overflow: hidden;
+    background-color: var(--quanta-slate-700);
   }
 
-  /* ─── Sortable Headers ─────────────────────────────── */
-  .quanta-table th.sortable {
-    position: relative;
-    cursor: pointer;
-    user-select: none;
-  }
-
-  .quanta-table th.sortable::after {
-    content: '';
-    position: absolute;
-    right: var(--quanta-space-2);
-    top: 50%;
-    transform: translateY(-50%);
-    border: 5px solid transparent;
-    border-top-color: var(--quanta-text-muted);
-    opacity: 0.6;
-    transition: transform 0.3s ease;
-  }
-
-  .quanta-table th.sortable.sorted-asc::after {
-    transform: translateY(-50%) rotate(180deg);
-  }
-
-  .quanta-table th.sortable.sorted-desc::after {
-    transform: translateY(-50%) rotate(0);
-  }
-
-  /* ─── Pagination Controls ───────────────────────────── */
-  .quanta-pagination {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: var(--quanta-space-2);
-    width: 100%;
-    margin-top: var(--quanta-space-4);
+  .quanta-table-bordered th,
+  .quanta-table-bordered td {
+    border-color: var(--quanta-border-color);
   }
 
   .quanta-pagination-button {
-    padding: var(--quanta-space-2) var(--quanta-space-3);
-    font-size: var(--quanta-text-sm);
-    background-color: var(--quanta-slate-100);
-    color: var(--quanta-text-default);
-    border: none;
-    border-radius: var(--quanta-rounded-md);
-    cursor: pointer;
-    transition: background-color 0.2s, color 0.2s;
+    background-color: var(--quanta-slate-800);
+    color: var(--quanta-text-light);
   }
 
   .quanta-pagination-button:hover {
-    background-color: var(--quanta-slate-200);
-    color: var(--quanta-text-dark);
+    background-color: var(--quanta-slate-700);
+    color: var(--quanta-text-light);
   }
 
   .quanta-pagination-button.active {
     background-color: var(--quanta-primary);
     color: var(--white);
-  }
-
-  .quanta-pagination-button:disabled {
-    background-color: var(--quanta-slate-50);
-    color: var(--quanta-text-muted);
-    cursor: not-allowed;
-  }
-
-  /* ─── Dark Mode ─────────────────────────────────────── */
-  html[data-theme="dark"] {
-    .quanta-table {
-      color: var(--quanta-text-light);
-    }
-
-    .quanta-table th {
-      color: var(--quanta-text-light);
-    }
-
-    .quanta-table-hover tbody tr:hover {
-      background-color: var(--quanta-slate-800);
-    }
-
-    .quanta-table-zebra tbody tr:nth-child(odd) {
-      background-color: var(--quanta-slate-900);
-    }
-
-    .quanta-table-clean th,
-    .quanta-table-clean td {
-      color: var(--quanta-text-light);
-    }
-
-    .quanta-table-glass {
-      background-color: var(--quanta-slate-700);
-    }
-
-    .quanta-table-bordered th,
-    .quanta-table-bordered td {
-      border-color: var(--quanta-border-color);
-    }
-
-    .quanta-pagination-button {
-      background-color: var(--quanta-slate-800);
-      color: var(--quanta-text-light);
-    }
-
-    .quanta-pagination-button:hover {
-      background-color: var(--quanta-slate-700);
-      color: var(--quanta-text-light);
-    }
-
-    .quanta-pagination-button.active {
-      background-color: var(--quanta-primary);
-      color: var(--white);
-    }
   }
 }

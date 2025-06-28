@@ -1,130 +1,128 @@
-@layer components.quanta-accordion {
-  .quanta-accordion {
-    display: flex;
-    flex-direction: column;
-    gap: var(--quanta-space-4);
-    width: 100%;
-  }
+.quanta-accordion {
+  display: flex;
+  flex-direction: column;
+  gap: var(--quanta-space-4);
+  width: 100%;
+}
 
-  /* ─── Base Item ───────────────────────── */
-  .quanta-accordion-item {
-    overflow: hidden;
-    transition: box-shadow var(--quanta-duration-fast) var(--quanta-ease-default);
-  }
+/* ─── Base Item ───────────────────────── */
+.quanta-accordion-item {
+  overflow: hidden;
+  transition: box-shadow var(--quanta-duration-fast) var(--quanta-ease-default);
+}
 
-  /* ─── Header ──────────────────────────── */
-  .quanta-accordion-header {
-    width: 100%;
-    padding: var(--quanta-space-4);
-    font-family: var(--quanta-font-sans);
-    font-size: var(--quanta-body-size);
+/* ─── Header ──────────────────────────── */
+.quanta-accordion-header {
+  width: 100%;
+  padding: var(--quanta-space-4);
+  font-family: var(--quanta-font-sans);
+  font-size: var(--quanta-body-size);
+  color: var(--quanta-text-default);
+  background-color: var(--white);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  user-select: none;
+  transition: background-color var(--quanta-duration-fast), color var(--quanta-duration-fast);
+  border: none;
+}
+
+.quanta-accordion-header .icon {
+  transition: transform var(--quanta-duration-fast);
+}
+
+.quanta-accordion-header[aria-expanded="true"] .icon {
+  transform: rotate(180deg);
+}
+
+/* ─── Content ─────────────────────────── */
+.quanta-accordion-content {
+  max-height: 0;
+  overflow: hidden;
+  padding: 0 var(--quanta-space-6);
+  transition: max-height var(--quanta-duration-normal) var(--quanta-ease-default),
+              padding var(--quanta-duration-fast);
+}
+
+.quanta-accordion-content[aria-hidden="false"] {
+  padding: var(--quanta-space-4);
+  max-height: 100vh;
+}
+
+/* ─── Card Style ───────────────────────── */
+.quanta-accordion.card .quanta-accordion-item {
+  background-color: var(--white);
+  border-radius: var(--quanta-rounded-lg);
+  box-shadow: var(--quanta-shadow-md);
+}
+
+.quanta-accordion.card .quanta-accordion-item:hover {
+  box-shadow: var(--quanta-shadow-lg);
+}
+
+.quanta-accordion.quanta-accordion-outline{
+  background: transparent;
+}
+
+/* ─── Block Style ──────────────────────── */
+.quanta-accordion.block .quanta-accordion-item {
+  border-radius: 0;
+  border: none;
+  background-color: transparent;
+  box-shadow: none;
+  border-bottom: 2px solid var(--quanta-border-color);
+}
+
+.quanta-accordion.block .quanta-accordion-header {
+  background: transparent;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.quanta-accordion.block .quanta-accordion-content {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+/* ─── Outline Style ────────────────────── */
+.quanta-accordion.quanta-accordion-outline .quanta-accordion-item {
+  border: 2px solid var(--quanta-border-color);
+  border-radius: var(--quanta-rounded-md);
+  background: transparent;
+}
+
+/* ─── Dark Mode ───────────────────────── */
+html[data-theme="dark"] {
+  .quanta-accordion.card .quanta-accordion-item {
+    background-color: var(--quanta-slate-800);
     color: var(--quanta-text-default);
-    background-color: var(--white);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    cursor: pointer;
-    user-select: none;
-    transition: background-color var(--quanta-duration-fast), color var(--quanta-duration-fast);
-    border: none;
   }
 
-  .quanta-accordion-header .icon {
-    transition: transform var(--quanta-duration-fast);
+  .quanta-accordion-header, .quanta-accordion-content {
+    background-color: transparent;
+    color: var(--quanta-text-default);
   }
 
-  .quanta-accordion-header[aria-expanded="true"] .icon {
-    transform: rotate(180deg);
+  .quanta-accordion.quanta-accordion-outline .quanta-accordion-item {
+    border-color: var(--quanta-border-color);
+  }
+}
+
+/* ─── Responsive ───────────────────────── */
+@media (min-width: var(--quanta-screen-md)) {
+  .quanta-accordion-header {
+    padding: var(--quanta-space-6);
+    font-size: var(--quanta-text-lg);
   }
 
-  /* ─── Content ─────────────────────────── */
   .quanta-accordion-content {
-    max-height: 0;
-    overflow: hidden;
-    padding: 0 var(--quanta-space-6);
-    transition: max-height var(--quanta-duration-normal) var(--quanta-ease-default),
-                padding var(--quanta-duration-fast);
+    padding-left: var(--quanta-space-6);
+    padding-right: var(--quanta-space-6);
   }
 
   .quanta-accordion-content[aria-hidden="false"] {
-    padding: var(--quanta-space-4);
-    max-height: 100vh;
-  }
-
-  /* ─── Card Style ───────────────────────── */
-  .quanta-accordion.card .quanta-accordion-item {
-    background-color: var(--white);
-    border-radius: var(--quanta-rounded-lg);
-    box-shadow: var(--quanta-shadow-md);
-  }
-
-  .quanta-accordion.card .quanta-accordion-item:hover {
-    box-shadow: var(--quanta-shadow-lg);
-  }
-
-  .quanta-accordion.outline{
-    background: transparent;
-  }
-
-  /* ─── Block Style ──────────────────────── */
-  .quanta-accordion.block .quanta-accordion-item {
-    border-radius: 0;
-    border: none;
-    background-color: transparent;
-    box-shadow: none;
-    border-bottom: 2px solid var(--quanta-border-color);
-  }
-
-  .quanta-accordion.block .quanta-accordion-header {
-    background: transparent;
-    padding-left: 0;
-    padding-right: 0;
-  }
-
-  .quanta-accordion.block .quanta-accordion-content {
-    padding-left: 0;
-    padding-right: 0;
-  }
-
-  /* ─── Outline Style ────────────────────── */
-  .quanta-accordion.outline .quanta-accordion-item {
-    border: 2px solid var(--quanta-border-color);
-    border-radius: var(--quanta-rounded-md);
-    background: transparent;
-  }
-
-  /* ─── Dark Mode ───────────────────────── */
-  html[data-theme="dark"] {
-    .quanta-accordion.card .quanta-accordion-item {
-      background-color: var(--quanta-slate-800);
-      color: var(--quanta-text-default);
-    }
-
-    .quanta-accordion-header, .quanta-accordion-content {
-      background-color: transparent;
-      color: var(--quanta-text-default);
-    }
-
-    .quanta-accordion.outline .quanta-accordion-item {
-      border-color: var(--quanta-border-color);
-    }
-  }
-
-  /* ─── Responsive ───────────────────────── */
-  @media (min-width: var(--quanta-screen-md)) {
-    .quanta-accordion-header {
-      padding: var(--quanta-space-6);
-      font-size: var(--quanta-text-lg);
-    }
-
-    .quanta-accordion-content {
-      padding-left: var(--quanta-space-6);
-      padding-right: var(--quanta-space-6);
-    }
-
-    .quanta-accordion-content[aria-hidden="false"] {
-      padding-top: var(--quanta-space-5);
-      padding-bottom: var(--quanta-space-6);
-    }
+    padding-top: var(--quanta-space-5);
+    padding-bottom: var(--quanta-space-6);
   }
 }

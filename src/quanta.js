@@ -269,12 +269,17 @@ document.querySelectorAll('.quanta-carousel').forEach(carousel => {
 function updateCharCount(textarea) {
   const max = textarea.getAttribute('maxlength');
   const current = textarea.value.length;
-  const counter = textarea.parentElement.querySelector('.quanta-char-count span');
-  counter.textContent = current;
+  
+  const wrapper = textarea.closest('.quanta-textarea-wrapper'); // use a scoped wrapper
+  const counter = wrapper?.querySelector('.quanta-char-count span');
+  
+  if (counter) counter.textContent = current;
 }
 
-// Optional: Init on page load if textarea already filled
-document.querySelectorAll('.quanta-textarea').forEach(el => updateCharCount(el));
+document.querySelectorAll('.quanta-textarea').forEach(el => {
+  updateCharCount(el);
+  el.addEventListener('input', () => updateCharCount(el)); // make sure it updates on input too
+});
 
 function initQuantaRating(id, onChange) {
   const container = document.getElementById(id);

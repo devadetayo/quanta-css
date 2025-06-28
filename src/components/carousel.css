@@ -1,82 +1,80 @@
-@layer components.quanta-carousel {
-  /* Base carousel */
-  .quanta-carousel { 
-    position: relative; 
-    overflow: hidden; 
-    width:100%; border-radius:
-    var(--quanta-rounded-md); 
-  }
-
-  .quanta-carousel-track { 
-    display:flex;
-    transition: transform var(--quanta-duration-normal) var(--quanta-ease-default); 
-    will-change: transform;
-  }
-
-  .quanta-carousel-item {
-    flex:0 0 100%;
-    opacity:0;
-    transform: scale(0.95);
-    transition: transform var(--quanta-duration-fast), opacity var(--quanta-duration-fast); display:none;
-    border-radius:var(--quanta-rounded-md);
-    background:var(--white);
-  }
-
-  .quanta-carousel-item.active {
-    display:block; opacity:1;
-    transform:scale(1);
-  }
-
-  .quanta-carousel-item img {
-    width:100%;
-    height: 100%;
-    object-fit: cover;
-  }
-
-  /* Slide mode */
-  .carousel-animate-slide .quanta-carousel-track {
-    transition: transform var(--quanta-duration-normal) var(--quanta-ease-default);
-  }
-
-  .carousel-animate-slide .quanta-carousel-item {
-    position:relative;
-    display:block;
-    opacity:1;
-  }
-
-  /* Fade mode */
-  .carousel-animate-fade .quanta-carousel-item { position:absolute; inset:0; opacity:0; transition: opacity var(--quanta-duration-normal); display:block; }
-  .carousel-animate-fade .quanta-carousel-item.active { opacity:1; z-index:1; }
-
-  /* Grow mode */
-  .carousel-animate-grow .quanta-carousel-item { position:absolute; inset:0; opacity:0; transform:scale(0.9); transition: opacity var(--quanta-duration-normal), transform var(--quanta-duration-normal); display:block; }
-  .carousel-animate-grow .quanta-carousel-item.active { opacity:1; transform:scale(1); z-index:1; }
-
-  /* Controls */
-  .quanta-carousel-prev, .quanta-carousel-next { position:absolute; top:50%; transform:translateY(-50%); width:var(--quanta-space-10); height:var(--quanta-space-10); background:var(--white); border-radius:50%; display:flex; align-items:center; justify-content:center; box-shadow:var(--quanta-shadow-sm); cursor:pointer; z-index:var(--quanta-z-sm); }
-  .quanta-carousel-prev:hover, .quanta-carousel-next:hover { background:var(--quanta-primary); color:var(--white); }
-  .quanta-carousel-prev { left:var(--quanta-space-4); } .quanta-carousel-next { right:var(--quanta-space-4); }
-
-  /* Indicators variants */
-  .quanta-carousel-indicators { position:absolute; bottom:var(--quanta-space-4); left:50%; transform:translateX(-50%); display:flex; gap:var(--quanta-space-2); z-index:var(--quanta-z-sm); }
-  .quanta-carousel-indicator { cursor:pointer; transition: all 0.3s ease; }
-  
-  .indicator-circle { width:var(--quanta-space-3); height:var(--quanta-space-3); background:var(--quanta-border-color); border-radius:50%; }
-  .indicator-circle.active { background:var(--quanta-primary); transform:scale(1.2); }
-
-  .indicator-square { width:var(--quanta-space-3); height:var(--quanta-space-3); background:var(--quanta-border-color); }
-  .indicator-square.active { background:var(--quanta-primary); transform:scale(1.2); }
-
-  .indicator-rect { width:var(--quanta-space-6); height:var(--quanta-space-1); background:var(--quanta-border-color); }
-  .indicator-rect.active { background:var(--quanta-primary); }
-
-  .indicator-img { width:var(--quanta-space-6); height:var(--quanta-space-6); border-radius:var(--quanta-rounded); overflow:hidden; background:var(--quanta-border-color); }
-  .indicator-img img { width:100%; height:100%; object-fit:cover; }
-  .indicator-img.active { border:2px solid var(--quanta-primary); }
-
-  @media(max-width:var(--quanta-screen-sm)) { .quanta-carousel-item { padding:var(--quanta-space-4); } }
-  html[data-theme="dark"] .quanta-carousel-item { background:var(--quanta-slate-800); }
-  html[data-theme="dark"] .quanta-carousel-prev, html[data-theme="dark"] .quanta-carousel-next { background:var(--quanta-slate-700); color:var(--white); }
-  html[data-theme="dark"] .indicator-circle, html[data-theme="dark"] .indicator-square, html[data-theme="dark"] .indicator-rect { background:var(--quanta-slate-800); }
-  html[data-theme="dark"] .indicator-circle.active, html[data-theme="dark"] .indicator-square.active, html[data-theme="dark"] .indicator-rect.active { background:var(--quanta-primary); }
+/* Base carousel */
+.quanta-carousel { 
+  position: relative; 
+  overflow: hidden; 
+  width:100%; border-radius:
+  var(--quanta-rounded-md); 
 }
+
+.quanta-carousel-track { 
+  display:flex;
+  transition: transform var(--quanta-duration-normal) var(--quanta-ease-default); 
+  will-change: transform;
+}
+
+.quanta-carousel-item {
+  flex:0 0 100%;
+  opacity:0;
+  transform: scale(0.95);
+  transition: transform var(--quanta-duration-fast), opacity var(--quanta-duration-fast); display:none;
+  border-radius:var(--quanta-rounded-md);
+  background:var(--white);
+}
+
+.quanta-carousel-item.active {
+  display:block; opacity:1;
+  transform:scale(1);
+}
+
+.quanta-carousel-item img {
+  width:100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Slide mode */
+.carousel-animate-slide .quanta-carousel-track {
+  transition: transform var(--quanta-duration-normal) var(--quanta-ease-default);
+}
+
+.carousel-animate-slide .quanta-carousel-item {
+  position:relative;
+  display:block;
+  opacity:1;
+}
+
+/* Fade mode */
+.carousel-animate-fade .quanta-carousel-item { position:absolute; inset:0; opacity:0; transition: opacity var(--quanta-duration-normal); display:block; }
+.carousel-animate-fade .quanta-carousel-item.active { opacity:1; z-index:1; }
+
+/* Grow mode */
+.carousel-animate-grow .quanta-carousel-item { position:absolute; inset:0; opacity:0; transform:scale(0.9); transition: opacity var(--quanta-duration-normal), transform var(--quanta-duration-normal); display:block; }
+.carousel-animate-grow .quanta-carousel-item.active { opacity:1; transform:scale(1); z-index:1; }
+
+/* Controls */
+.quanta-carousel-prev, .quanta-carousel-next { position:absolute; top:50%; transform:translateY(-50%); width:var(--quanta-space-10); height:var(--quanta-space-10); background:var(--white); border-radius:50%; display:flex; align-items:center; justify-content:center; box-shadow:var(--quanta-shadow-sm); cursor:pointer; z-index:var(--quanta-z-sm); }
+.quanta-carousel-prev:hover, .quanta-carousel-next:hover { background:var(--quanta-primary); color:var(--white); }
+.quanta-carousel-prev { left:var(--quanta-space-4); } .quanta-carousel-next { right:var(--quanta-space-4); }
+
+/* Indicators variants */
+.quanta-carousel-indicators { position:absolute; bottom:var(--quanta-space-4); left:50%; transform:translateX(-50%); display:flex; gap:var(--quanta-space-2); z-index:var(--quanta-z-sm); }
+.quanta-carousel-indicator { cursor:pointer; transition: all 0.3s ease; }
+
+.indicator-circle { width:var(--quanta-space-3); height:var(--quanta-space-3); background:var(--quanta-border-color); border-radius:50%; }
+.indicator-circle.active { background:var(--quanta-primary); transform:scale(1.2); }
+
+.indicator-square { width:var(--quanta-space-3); height:var(--quanta-space-3); background:var(--quanta-border-color); }
+.indicator-square.active { background:var(--quanta-primary); transform:scale(1.2); }
+
+.indicator-rect { width:var(--quanta-space-6); height:var(--quanta-space-1); background:var(--quanta-border-color); }
+.indicator-rect.active { background:var(--quanta-primary); }
+
+.indicator-img { width:var(--quanta-space-6); height:var(--quanta-space-6); border-radius:var(--quanta-rounded); overflow:hidden; background:var(--quanta-border-color); }
+.indicator-img img { width:100%; height:100%; object-fit:cover; }
+.indicator-img.active { border:2px solid var(--quanta-primary); }
+
+@media(max-width:var(--quanta-screen-sm)) { .quanta-carousel-item { padding:var(--quanta-space-4); } }
+html[data-theme="dark"] .quanta-carousel-item { background:var(--quanta-slate-800); }
+html[data-theme="dark"] .quanta-carousel-prev, html[data-theme="dark"] .quanta-carousel-next { background:var(--quanta-slate-700); color:var(--white); }
+html[data-theme="dark"] .indicator-circle, html[data-theme="dark"] .indicator-square, html[data-theme="dark"] .indicator-rect { background:var(--quanta-slate-800); }
+html[data-theme="dark"] .indicator-circle.active, html[data-theme="dark"] .indicator-square.active, html[data-theme="dark"] .indicator-rect.active { background:var(--quanta-primary); }

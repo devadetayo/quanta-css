@@ -1,64 +1,88 @@
-@layer components.quanta-button {
-  .quanta-btn {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    padding: var(--quanta-space-3) var(--quanta-space-6);
-    font-family: var(--quanta-font-sans);
-    line-height: 1.25;
-    border-radius: var(--quanta-rounded-md);
-    background-color: transparent;
-    color: inherit;
-    cursor: pointer;
-    transition: all 0.2s ease;
-  }
-
-  /* Variants */
-  .quanta-btn-primary   { background: var(--quanta-primary); color: var(--white); }
-  .quanta-btn-secondary { background: var(--quanta-bg-secondary); color: var(--white); }
-  .quanta-btn-danger    { background: var(--quanta-bg-danger); color: var(--white); }
-  .quanta-btn-warning    { background: var(--quanta-bg-warning); color: var(--white); }
-  .quanta-btn-success    { background: var(--quanta-bg-success); color: var(--white); }
-  .quanta-btn-info    { background: var(--quanta-bg-info); color: var(--white); }
-  .quanta-btn-border-primary    { border: var(--quanta-border-width) solid var(--quanta-primary); color: var(--quanta-primary); }
-  .quanta-btn-border-primary:hover    { background: var(--quanta-primary); color: var(--white); }
-  .quanta-btn-border-secondary    { border: var(--quanta-border-width) solid var(--quanta-bg-secondary); color: var(--quanta-bg-secondary); }
-  .quanta-btn-border-secondary:hover    { background: var(--quanta-bg-secondary); color: var(--white); }
-  .quanta-btn-border-danger    { border: var(--quanta-border-width) solid var(--quanta-bg-danger); color: var(--quanta-bg-danger); }
-  .quanta-btn-border-danger:hover    { background: var(--quanta-bg-danger); color: var(--white); }
-  .quanta-btn-border-warning    { border: var(--quanta-border-width) solid var(--quanta-bg-warning); color: var(--quanta-bg-warning); }
-  .quanta-btn-border-warning:hover    { background: var(--quanta-bg-warning); color: var(--white); }
-  .quanta-btn-border-success    { border: var(--quanta-border-width) solid var(--quanta-bg-success); color: var(--quanta-bg-success); }
-  .quanta-btn-border-success:hover    { background: var(--quanta-bg-success); color: var(--white); }
-  .quanta-btn-border-info    { border: var(--quanta-border-width) solid var(--quanta-bg-info); color: var(--quanta-bg-info); }
-  .quanta-btn-border-info:hover    { background: var(--quanta-bg-info); color: var(--white); }
-
-  .quanta-btn:hover     { opacity: 0.9; }
-  .quanta-btn:disabled  { opacity: 0.5; cursor: not-allowed; }
-
-  /* Size modifiers */
-  .quanta-btn-sm { padding: var(--quanta-space-1) var(--quanta-space-2); font-size: var(--quanta-text-xs); }
-  .quanta-btn-sm { padding: var(--quanta-space-2) var(--quanta-space-4); font-size: var(--quanta-text-xs); }
-  .quanta-btn-lg { padding: var(--quanta-space-4) var(--quanta-space-8); font-size: var(--quanta-text-lg); }
-
-  /* Round pill button */
-  .quanta-btn-rounded-sm { border-radius: var(--quanta-rounded-sm); }
-  .quanta-btn-rounded { border-radius: var(--quanta-rounded); }
-  .quanta-btn-rounded-md { border-radius: var(--quanta-rounded-md); }
-  .quanta-btn-rounded-lg { border-radius: var(--quanta-rounded-lg); }
-  .quanta-btn-rounded-xl { border-radius: var(--quanta-rounded-xl); }
-  .quanta-btn-rounded-2xl { border-radius: var(--quanta-rounded-2xl); }
-  .quanta-btn-rounded-full { border-radius: var(--quanta-rounded-full); }
-
-  /* Icon button (perfect circle) */
-  .quanta-btn-icon {
-    padding: 0.5rem;
-    width: 2.5rem;
-    height: 2.5rem;
-    aspect-ratio: 1 / 1;
-    border-radius: 50%;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-  } 
+.quanta-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--quanta-space-3) var(--quanta-space-6);
+  font-family: var(--quanta-font-sans);
+  font-size: var(--quanta-text-base);
+  line-height: 1.25;
+  font-weight: 500;
+  border-radius: var(--quanta-rounded-md);
+  background-color: transparent;
+  color: inherit;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  border: none;
 }
+
+/* ─── Filled Variants ───────────────────────────────────── */
+.quanta-btn-primary     { background: var(--quanta-primary);   color: var(--quanta-text-primary);   border: 1px solid var(--quanta-border-primary); }
+.quanta-btn-secondary   { background: var(--quanta-bg-secondary); color: var(--quanta-text-secondary); border: 1px solid var(--quanta-border-secondary); }
+.quanta-btn-success     { background: var(--quanta-bg-success);   color: var(--quanta-text-success);   border: 1px solid var(--quanta-border-success); }
+.quanta-btn-warning     { background: var(--quanta-bg-warning);   color: var(--quanta-text-warning);   border: 1px solid var(--quanta-border-warning); }
+.quanta-btn-danger      { background: var(--quanta-bg-danger);    color: var(--quanta-text-danger);    border: 1px solid var(--quanta-border-danger); }
+.quanta-btn-info        { background: var(--quanta-bg-info);      color: var(--quanta-text-info);      border: 1px solid var(--quanta-border-info); }
+.quanta-btn-accent      { background: var(--quanta-bg-accent);    color: var(--quanta-text-accent);    border: 1px solid var(--quanta-border-accent); }
+.quanta-btn-neutral     { background: var(--quanta-bg-neutral);   color: var(--quanta-text-neutral);   border: 1px solid var(--quanta-border-neutral); }
+.quanta-btn-ghost       { background: var(--quanta-bg-ghost);     color: var(--quanta-text-ghost);     border: 1px solid var(--quanta-border-ghost); }
+
+/* ─── Hover States ───────────────────────────────────────── */
+.quanta-btn-primary:hover   { background: var(--quanta-primary-hover); }
+.quanta-btn-secondary:hover{ background: var(--quanta-secondary-hover); }
+.quanta-btn-success:hover  { background: var(--quanta-success-hover); }
+.quanta-btn-warning:hover  { background: var(--quanta-warning-hover); }
+.quanta-btn-danger:hover   { background: var(--quanta-danger-hover); }
+.quanta-btn-info:hover     { background: var(--quanta-info-hover); }
+.quanta-btn-accent:hover   { background: var(--quanta-accent-hover); }
+.quanta-btn-neutral:hover  { background: var(--quanta-neutral-hover); }
+.quanta-btn-ghost:hover    { background: var(--quanta-ghost-hover); }
+
+/* ─── Outlined Variants ──────────────────────────────────── */
+.quanta-btn-outline-primary     { background: transparent; color: var(--quanta-primary); border: 1px solid var(--quanta-border-primary); }
+.quanta-btn-outline-secondary   { background: transparent; color: var(--quanta-bg-secondary); border: 1px solid var(--quanta-border-secondary); }
+.quanta-btn-outline-success     { background: transparent; color: var(--quanta-bg-success); border: 1px solid var(--quanta-border-success); }
+.quanta-btn-outline-warning     { background: transparent; color: var(--quanta-bg-warning); border: 1px solid var(--quanta-border-warning); }
+.quanta-btn-outline-danger      { background: transparent; color: var(--quanta-bg-danger); border: 1px solid var(--quanta-border-danger); }
+.quanta-btn-outline-info        { background: transparent; color: var(--quanta-bg-info); border: 1px solid var(--quanta-border-info); }
+.quanta-btn-outline-accent      { background: transparent; color: var(--quanta-bg-accent); border: 1px solid var(--quanta-border-accent); }
+.quanta-btn-outline-neutral     { background: transparent; color: var(--quanta-bg-neutral); border: 1px solid var(--quanta-border-neutral); }
+.quanta-btn-outline-ghost       { background: transparent; color: var(--quanta-text-ghost); border: 1px solid var(--quanta-border-ghost); }
+
+.quanta-btn-outline-primary:hover   { background: var(--quanta-primary-hover); color: var(--white); }
+.quanta-btn-outline-secondary:hover { background: var(--quanta-secondary-hover); color: var(--white); }
+.quanta-btn-outline-success:hover   { background: var(--quanta-success-hover); color: var(--white); }
+.quanta-btn-outline-warning:hover   { background: var(--quanta-warning-hover); color: var(--quanta-text-warning); }
+.quanta-btn-outline-danger:hover    { background: var(--quanta-danger-hover); color: var(--white); }
+.quanta-btn-outline-info:hover      { background: var(--quanta-info-hover); color: var(--white); }
+.quanta-btn-outline-accent:hover    { background: var(--quanta-accent-hover); color: var(--white); }
+.quanta-btn-outline-neutral:hover   { background: var(--quanta-neutral-hover); color: var(--quanta-text-neutral); }
+.quanta-btn-outline-ghost:hover     { background: var(--quanta-ghost-hover); color: var(--quanta-text-default); }
+
+/* ─── Sizes ──────────────────────────────────────────────── */
+.quanta-btn-sm { padding: var(--quanta-space-1) var(--quanta-space-3); font-size: var(--quanta-text-sm); }
+.quanta-btn-md { padding: var(--quanta-space-2) var(--quanta-space-5); font-size: var(--quanta-text-base); }
+.quanta-btn-lg { padding: var(--quanta-space-3) var(--quanta-space-6); font-size: var(--quanta-text-lg); }
+
+/* ─── Rounded Options ───────────────────────────────────── */
+.quanta-btn-rounded-sm  { border-radius: var(--quanta-rounded-sm); }
+.quanta-btn-rounded     { border-radius: var(--quanta-rounded); }
+.quanta-btn-rounded-md  { border-radius: var(--quanta-rounded-md); }
+.quanta-btn-rounded-lg  { border-radius: var(--quanta-rounded-lg); }
+.quanta-btn-rounded-xl  { border-radius: var(--quanta-rounded-xl); }
+.quanta-btn-rounded-2xl { border-radius: var(--quanta-rounded-2xl); }
+.quanta-btn-rounded-full { border-radius: var(--quanta-rounded-full); }
+
+/* ─── Icon Button ───────────────────────────────────────── */
+.quanta-btn-icon {
+  padding: 0.5rem;
+  width: 2.5rem;
+  height: 2.5rem;
+  aspect-ratio: 1 / 1;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ─── States ────────────────────────────────────────────── */
+.quanta-btn:hover       { opacity: 0.95; }
+.quanta-btn:disabled    { opacity: 0.5; cursor: not-allowed; }

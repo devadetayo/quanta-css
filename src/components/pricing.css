@@ -1,140 +1,138 @@
-@layer components.pricing {
-  .quanta-pricing {
+.quanta-pricing {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--quanta-space-6);
+  justify-content: center;
+}
+
+.quanta-plan {
+  background: var(--white);
+  border-radius: var(--quanta-rounded-lg);
+  padding: var(--quanta-space-6);
+  flex: 1 1 280px;
+  box-shadow: var(--quanta-shadow-xl);
+  display: flex;
+  flex-direction: column;
+  transition: all 0.3s ease;
+  border: 2px solid transparent;
+}
+
+.quanta-plan:hover {
+  box-shadow: var(--quanta-shadow-2xl);
+  transform: translateY(-8px);
+  transition: all 300ms var(--quanta-ease-default);
+}
+
+.quanta-plan header{
+  padding-bottom: var(--quanta-space-4);
+  border-bottom: 2px solid var(--quanta-border-color);
+}
+
+.quanta-plan-center{
+  text-align: center;
+  align-items: center;
+}
+
+.quanta-plan-left{
+  text-align: left;
+  align-items: flex-start;
+}
+
+.quanta-plan-right{
+  text-align: right;
+  align-items: flex-end;
+}
+
+.quanta-plan-title {
+  font-size: var(--quanta-text-xl);
+  font-weight: 600;
+  margin-bottom: 3px;
+}
+
+.quanta-plan-price {
+  font-size: var(--quanta-text-3xl);
+  font-weight: bold;
+  margin-bottom: 2px;
+}
+
+.quanta-plan-features {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: left;
+  padding: var(--quanta-space-4) 0;
+  flex-grow: 1;
+  width: 100%;
+}
+
+.quanta-plan-features li {
+  margin-bottom: var(--quanta-space-2);
+  position: relative;
+}
+
+.quanta-plan-features li .check-icon {
+  margin-right: 4px;
+  color: var(--quanta-primary);
+}
+
+.quanta-plan-cta {
+  margin-top: auto;
+  width: 100%;
+}
+
+.quanta-plan-cta button{
+  white-space: nowrap;
+}
+
+/* Variant: Outline */
+.quanta-plan-outline {
+  background: none;
+  border: 1px solid var(--quanta-border-color);
+  box-shadow: none;
+}
+
+/* Variant: Glass */
+.quanta-plan-glass {
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(8px);
+  box-shadow: var(--quanta-shadow-lg);
+}
+
+html[data-theme="dark"] .quanta-plan-glass {
+  background: rgba(30, 41, 59, 0.6);
+}
+
+/* Featured Plan */
+.quanta-plan-featured {
+  border: 2px solid var(--quanta-primary);
+  box-shadow: var(--quanta-shadow-2xl);
+  transform: scale(1.05);
+}
+
+/* Horizontal layout for large screens */
+@media (min-width: 1024px) {
+  .quanta-pricing-horizontal {
     display: flex;
-    flex-wrap: wrap;
-    gap: var(--quanta-space-6);
-    justify-content: center;
-  }
-
-  .quanta-plan {
-    background: var(--white);
-    border-radius: var(--quanta-rounded-lg);
-    padding: var(--quanta-space-6);
-    flex: 1 1 280px;
-    box-shadow: var(--quanta-shadow-xl);
-    display: flex;
-    flex-direction: column;
-    transition: all 0.3s ease;
-    border: 2px solid transparent;
-  }
-
-  .quanta-plan:hover {
-    box-shadow: var(--quanta-shadow-2xl);
-    transform: translateY(-8px);
-    transition: all 300ms var(--quanta-ease-default);
-  }
-
-  .quanta-plan header{
-    padding-bottom: var(--quanta-space-4);
-    border-bottom: 2px solid var(--quanta-border-color);
-  }
-
-  .quanta-plan-center{
-    text-align: center;
-    align-items: center;
-  }
-
-  .quanta-plan-left{
-    text-align: left;
-    align-items: flex-start;
-  }
-
-  .quanta-plan-right{
-    text-align: right;
-    align-items: flex-end;
-  }
-
-  .quanta-plan-title {
-    font-size: var(--quanta-text-xl);
-    font-weight: 600;
-    margin-bottom: 3px;
-  }
-
-  .quanta-plan-price {
-    font-size: var(--quanta-text-3xl);
-    font-weight: bold;
-    margin-bottom: 2px;
-  }
-
-  .quanta-plan-features {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    text-align: left;
-    padding: var(--quanta-space-4) 0;
-    flex-grow: 1;
-    width: 100%;
-  }
-
-  .quanta-plan-features li {
-    margin-bottom: var(--quanta-space-2);
-    position: relative;
-  }
-
-  .quanta-plan-features li .check-icon {
-    margin-right: 4px;
-    color: var(--quanta-primary);
+    flex-direction: row;
   }
 
   .quanta-plan-cta {
-    margin-top: auto;
-    width: 100%;
+    margin-top: 0;
   }
+}
 
-  .quanta-plan-cta button{
-    white-space: nowrap;
-  }
+/* Dark mode tweaks */
+html[data-theme="dark"] .quanta-plan {
+  background: var(--quanta-slate-800);
+}
 
-  /* Variant: Outline */
-  .quanta-plan-outline {
-    background: none;
-    border: 1px solid var(--quanta-border-color);
-    box-shadow: none;
-  }
+html[data-theme="dark"] .quanta-plan-outline {
+  border-color: var(--quanta-slate-600);
+}
 
-  /* Variant: Glass */
-  .quanta-plan-glass {
-    background: rgba(255, 255, 255, 0.7);
-    backdrop-filter: blur(8px);
-    box-shadow: var(--quanta-shadow-lg);
-  }
-
-  html[data-theme="dark"] .quanta-plan-glass {
-    background: rgba(30, 41, 59, 0.6);
-  }
-
-  /* Featured Plan */
-  .quanta-plan-featured {
-    border: 2px solid var(--quanta-primary);
-    box-shadow: var(--quanta-shadow-2xl);
-    transform: scale(1.05);
-  }
-
-  /* Horizontal layout for large screens */
-  @media (min-width: 1024px) {
-    .quanta-pricing-horizontal {
-      display: flex;
-      flex-direction: row;
-    }
-
-    .quanta-plan-cta {
-      margin-top: 0;
-    }
-  }
-
-  /* Dark mode tweaks */
-  html[data-theme="dark"] .quanta-plan {
-    background: var(--quanta-slate-800);
-  }
-
-  html[data-theme="dark"] .quanta-plan-outline {
-    border-color: var(--quanta-slate-600);
-  }
-
-  /* Responsive tweaks */
-  @media (max-width: 640px) {
-    .quanta-plan {
-      padding: var(--quanta-space-4);
-    }
+/* Responsive tweaks */
+@media (max-width: 640px) {
+  .quanta-plan {
+    padding: var(--quanta-space-4);
   }
 }

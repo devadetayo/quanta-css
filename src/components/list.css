@@ -1,131 +1,127 @@
-/* src/components/lists.css */
-@layer components.lists {
-  /* ─── Base Reset ─────────────────────────────── */
-  .quanta-list {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-  }
+.quanta-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
 
-  /* ─── Bullet Lists ───────────────────────────── */
-  .quanta-list-bullets li {
-    position: relative;
-    padding-left: var(--quanta-space-5);
-    margin-bottom: var(--quanta-space-2);
-    font-size: var(--quanta-text-base);
-    color: var(--quanta-text-default);
-  }
+/* ─── Bullet Lists ───────────────────────────── */
+.quanta-list-bullets li {
+  position: relative;
+  padding-left: var(--quanta-space-5);
+  margin-bottom: var(--quanta-space-2);
+  font-size: var(--quanta-text-base);
+  color: var(--quanta-text-default);
+}
 
-  .quanta-list-bullets li::before {
-    content: '•';
-    position: absolute;
-    left: 0;
-    color: var(--quanta-accent-color);
-    font-size: var(--quanta-text-lg);
-  }
+.quanta-list-bullets li::before {
+  content: '•';
+  position: absolute;
+  left: 0;
+  color: var(--quanta-accent-color);
+  font-size: var(--quanta-text-lg);
+}
 
-  .quanta-list-bullets.check li::before {
-    content: '✔';
-    color: var(--quanta-success);
-  }
+.quanta-list-bullets.check li::before {
+  content: '✔';
+  color: var(--quanta-success);
+}
 
-  .quanta-list-bullets.dash li::before {
-    content: '–';
-    color: var(--quanta-text-muted);
-  }
+.quanta-list-bullets.dash li::before {
+  content: '–';
+  color: var(--quanta-text-muted);
+}
 
-  /* ─── Numbered Lists ─────────────────────────── */
-  .quanta-list-numbers {
-    list-style: decimal;
-    padding-left: var(--quanta-space-5);
-    font-size: var(--quanta-text-base);
-    color: var(--quanta-text-default);
-  }
+/* ─── Numbered Lists ─────────────────────────── */
+.quanta-list-numbers {
+  list-style: decimal;
+  padding-left: var(--quanta-space-5);
+  font-size: var(--quanta-text-base);
+  color: var(--quanta-text-default);
+}
 
-  .quanta-list-numbers.roman { list-style-type: upper-roman; }
-  .quanta-list-numbers.alpha { list-style-type: upper-alpha; }
+.quanta-list-numbers.roman { list-style-type: upper-roman; }
+.quanta-list-numbers.alpha { list-style-type: upper-alpha; }
 
-  /* ─── List Group (Box Style) ─────────────────── */
-  .quanta-list-group {
-    display: flex;
-    flex-direction: column;
-    border: var(--quanta-border-width) solid var(--quanta-border-color);
-    border-radius: var(--quanta-rounded-md);
-    overflow: hidden;
+/* ─── List Group (Box Style) ─────────────────── */
+.quanta-list-group {
+  display: flex;
+  flex-direction: column;
+  border: var(--quanta-border-width) solid var(--quanta-border-color);
+  border-radius: var(--quanta-rounded-md);
+  overflow: hidden;
+}
+
+.quanta-list-group-item {
+  padding: var(--quanta-space-3) var(--quanta-space-4);
+  background: var(--quanta-bg-default);
+  color: var(--quanta-text-default);
+  border-bottom: var(--quanta-border-width) solid var(--quanta-border-color);
+  transition: background-color 0.2s;
+}
+
+.quanta-list-group-item:last-child {
+  border-bottom: none;
+}
+
+.quanta-list-group-item:hover {
+  background-color: var(--quanta-bg-hover);
+  cursor: pointer;
+}
+
+/* ─── List Item Icons ───────────────────────── */
+.quanta-list-item-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: var(--quanta-space-2);
+  width: 1.25rem;
+  height: 1.25rem;
+}
+
+.quanta-list-item-icon svg {
+  width: 100%;
+  height: 100%;
+  fill: var(--quanta-primary);
+}
+
+/* ─── Tags & Badges ─────────────────────────── */
+.quanta-list-tag {
+  background: var(--quanta-bg-muted);
+  color: var(--quanta-text-muted);
+  font-size: var(--quanta-text-xs);
+  padding: 0.125rem 0.5rem;
+  border-radius: var(--quanta-rounded-sm);
+  margin-left: auto;
+}
+
+/* ─── Utility Mods ──────────────────────────── */
+.quanta-list-spaced li {
+  margin-bottom: var(--quanta-space-3);
+}
+
+.quanta-list-no-indent li {
+  padding-left: 0;
+}
+
+/* ─── Dark Mode Support ─────────────────────── */
+html[data-theme="dark"] {
+  .quanta-list-bullets li,
+  .quanta-list-numbers li {
+    color: var(--quanta-text-dark);
   }
 
   .quanta-list-group-item {
-    padding: var(--quanta-space-3) var(--quanta-space-4);
-    background: var(--quanta-bg-default);
-    color: var(--quanta-text-default);
-    border-bottom: var(--quanta-border-width) solid var(--quanta-border-color);
-    transition: background-color 0.2s;
-  }
-
-  .quanta-list-group-item:last-child {
-    border-bottom: none;
+    background: var(--quanta-bg-dark-default);
+    color: var(--quanta-text-dark);
+    border-color: var(--quanta-border-dark-color);
   }
 
   .quanta-list-group-item:hover {
-    background-color: var(--quanta-bg-hover);
-    cursor: pointer;
+    background: var(--quanta-bg-dark-hover);
   }
 
-  /* ─── List Item Icons ───────────────────────── */
-  .quanta-list-item-icon {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    margin-right: var(--quanta-space-2);
-    width: 1.25rem;
-    height: 1.25rem;
-  }
-
-  .quanta-list-item-icon svg {
-    width: 100%;
-    height: 100%;
-    fill: var(--quanta-primary);
-  }
-
-  /* ─── Tags & Badges ─────────────────────────── */
   .quanta-list-tag {
-    background: var(--quanta-bg-muted);
+    background: var(--quanta-bg-dark-muted);
     color: var(--quanta-text-muted);
-    font-size: var(--quanta-text-xs);
-    padding: 0.125rem 0.5rem;
-    border-radius: var(--quanta-rounded-sm);
-    margin-left: auto;
-  }
-
-  /* ─── Utility Mods ──────────────────────────── */
-  .quanta-list-spaced li {
-    margin-bottom: var(--quanta-space-3);
-  }
-
-  .quanta-list-no-indent li {
-    padding-left: 0;
-  }
-
-  /* ─── Dark Mode Support ─────────────────────── */
-  html[data-theme="dark"] {
-    .quanta-list-bullets li,
-    .quanta-list-numbers li {
-      color: var(--quanta-text-dark);
-    }
-
-    .quanta-list-group-item {
-      background: var(--quanta-bg-dark-default);
-      color: var(--quanta-text-dark);
-      border-color: var(--quanta-border-dark-color);
-    }
-
-    .quanta-list-group-item:hover {
-      background: var(--quanta-bg-dark-hover);
-    }
-
-    .quanta-list-tag {
-      background: var(--quanta-bg-dark-muted);
-      color: var(--quanta-text-muted);
-    }
   }
 }

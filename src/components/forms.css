@@ -1,178 +1,173 @@
-@import "../components/variables.css";
+.quanta-form {
+  display: flex;
+  flex-direction: column;
+  gap: var(--quanta-space-5);
+  width: 100%;
+  margin-inline: auto;
+}
 
-@layer components.form {
-  /* ─── Form Layouts ───────────────────── */
-  .quanta-form {
-    display: flex;
-    flex-direction: column;
-    gap: var(--quanta-space-5);
-    width: 100%;
-    margin-inline: auto;
-  }
+.quanta-form-inline {
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--quanta-space-4);
+}
 
-  .quanta-form-inline {
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: center;
-    gap: var(--quanta-space-4);
-  }
+.quanta-form-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: var(--quanta-space-4);
+}
 
-  .quanta-form-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    gap: var(--quanta-space-4);
-  }
+.quanta-form-group {
+  display: flex;
+  flex-direction: column;
+  gap: var(--quanta-space-2);
+}
 
-  .quanta-form-group {
-    display: flex;
-    flex-direction: column;
-    gap: var(--quanta-space-2);
-  }
+/* ─── Labels ─────────────────────────── */
+.quanta-form-label {
+  font-family: var(--quanta-font-primary);
+  font-size: var(--quanta-text-sm);
+  color: var(--quanta-text-default);
+  font-weight: 500;
+}
 
-  /* ─── Labels ─────────────────────────── */
-  .quanta-form-label {
-    font-family: var(--quanta-font-primary);
-    font-size: var(--quanta-text-sm);
-    color: var(--quanta-text-default);
-    font-weight: 500;
-  }
+.quanta-form-label .optional {
+  font-weight: normal;
+  color: var(--quanta-text-muted);
+  margin-left: 0.25rem;
+}
 
-  .quanta-form-label .optional {
-    font-weight: normal;
-    color: var(--quanta-text-muted);
-    margin-left: 0.25rem;
-  }
+.quanta-form-label .required {
+  color: var(--quanta-danger);
+  margin-left: 0.25rem;
+}
 
-  .quanta-form-label .required {
-    color: var(--quanta-danger);
-    margin-left: 0.25rem;
-  }
+/* ─── Inputs, Textareas, Selects ─────── */
+.quanta-form-input,
+.quanta-form-textarea, .quanta-select {
+  width: 100%;
+  display: block;
+  padding: var(--quanta-space-2) var(--quanta-space-3);
+  font-family: var(--quanta-font-secondary);
+  font-size: var(--quanta-text-base);
+  color: var(--quanta-text-default);
+  background: var(--quanta-bg-default);
+  border: var(--quanta-border-width) solid var(--quanta-border-color);
+  border-radius: var(--quanta-rounded-md);
+  transition: border-color var(--quanta-transition-fast), background-color var(--quanta-transition-fast);
+}
 
-  /* ─── Inputs, Textareas, Selects ─────── */
-  .quanta-form-input,
-  .quanta-form-textarea, .quanta-select {
-    width: 100%;
-    display: block;
-    padding: var(--quanta-space-2) var(--quanta-space-3);
-    font-family: var(--quanta-font-secondary);
-    font-size: var(--quanta-text-base);
-    color: var(--quanta-text-default);
-    background: var(--quanta-bg-default);
-    border: var(--quanta-border-width) solid var(--quanta-border-color);
-    border-radius: var(--quanta-rounded-md);
-    transition: border-color var(--quanta-transition-fast), background-color var(--quanta-transition-fast);
-  }
+.quanta-form-input:focus-visible,
+.quanta-form-textarea:focus-visible,
+.quanta-select:focus-visible {
+  outline: 2px solid var(--quanta-primary);
+  outline-offset: 2px;
+}
 
-  .quanta-form-input:focus-visible,
-  .quanta-form-textarea:focus-visible,
-  .quanta-select:focus-visible {
-    outline: 2px solid var(--quanta-primary);
-    outline-offset: 2px;
-  }
+.quanta-form-input:disabled,
+.quanta-form-textarea:disabled,
+.quanta-select:disabled {
+  background: var(--quanta-bg-muted);
+  color: var(--quanta-text-muted);
+  cursor: not-allowed;
+  opacity: 0.6;
+}
 
-  .quanta-form-input:disabled,
-  .quanta-form-textarea:disabled,
-  .quanta-select:disabled {
-    background: var(--quanta-bg-muted);
-    color: var(--quanta-text-muted);
-    cursor: not-allowed;
-    opacity: 0.6;
-  }
+.quanta-form-textarea {
+  resize: vertical;
+  min-height: 120px;
+}
 
-  .quanta-form-textarea {
-    resize: vertical;
-    min-height: 120px;
-  }
+.quanta-select {
+  appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg fill='%236B7280' viewBox='0 0 20 20'%3E%3Cpath d='M5 8l5 5 5-5H5z'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right var(--quanta-space-3) center;
+  background-size: var(--quanta-space-4) var(--quanta-space-4);
+  padding-right: var(--quanta-space-10);
+}
 
-  .quanta-select {
-    appearance: none;
-    background-image: url("data:image/svg+xml,%3Csvg fill='%236B7280' viewBox='0 0 20 20'%3E%3Cpath d='M5 8l5 5 5-5H5z'/%3E%3C/svg%3E");
-    background-repeat: no-repeat;
-    background-position: right var(--quanta-space-3) center;
-    background-size: var(--quanta-space-4) var(--quanta-space-4);
-    padding-right: var(--quanta-space-10);
-  }
+/* ─── Search Field ───────────────────── */
+.quanta-form-search {
+  position: relative;
+  max-height: fit-content;
+}
 
-  /* ─── Search Field ───────────────────── */
-  .quanta-form-search {
-    position: relative;
-    max-height: fit-content;
-  }
+.quanta-form-search .quanta-form-input {
+  padding-left: calc(var(--quanta-space-10));
+  max-height: fit-content;
+}
 
-  .quanta-form-search .quanta-form-input {
-    padding-left: calc(var(--quanta-space-10));
-    max-height: fit-content;
-  }
+.quanta-form-search::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: var(--quanta-space-3);
+  transform: translateY(-50%);
+  width: var(--quanta-space-4);
+  height: var(--quanta-space-4);
+  background-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20fill%3D%22none%22%20stroke%3D%22currentColor%22%20stroke-width%3D%222%22%20viewBox%3D%220%200%2024%2024%22%3E%3Ccircle%20cx%3D%2211%22%20cy%3D%2211%22%20r%3D%227%22/%3E%3Cline%20x1%3D%2216.65%22%20y1%3D%2216.65%22%20x2%3D%2221%22%20y2%3D%2221%22/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-size: contain;
+  pointer-events: none;
+}
 
-  .quanta-form-search::before {
-    content: "";
-    position: absolute;
-    top: 50%;
-    left: var(--quanta-space-3);
-    transform: translateY(-50%);
-    width: var(--quanta-space-4);
-    height: var(--quanta-space-4);
-    background-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20fill%3D%22none%22%20stroke%3D%22currentColor%22%20stroke-width%3D%222%22%20viewBox%3D%220%200%2024%2024%22%3E%3Ccircle%20cx%3D%2211%22%20cy%3D%2211%22%20r%3D%227%22/%3E%3Cline%20x1%3D%2216.65%22%20y1%3D%2216.65%22%20x2%3D%2221%22%20y2%3D%2221%22/%3E%3C/svg%3E");
-    background-repeat: no-repeat;
-    background-size: contain;
-    pointer-events: none;
-  }
+/* ─── Validation States ──────────────── */
+.quanta-form-group.error .quanta-form-input,
+.quanta-form-group.error .quanta-form-select,
+.quanta-form-group.error .quanta-form-textarea {
+  border-color: var(--quanta-danger);
+}
 
-  /* ─── Validation States ──────────────── */
-  .quanta-form-group.error .quanta-form-input,
-  .quanta-form-group.error .quanta-form-select,
-  .quanta-form-group.error .quanta-form-textarea {
-    border-color: var(--quanta-danger);
-  }
+.quanta-form-group.success .quanta-form-input,
+.quanta-form-group.success .quanta-form-select,
+.quanta-form-group.success .quanta-form-textarea {
+  border-color: var(--quanta-success);
+}
 
-  .quanta-form-group.success .quanta-form-input,
-  .quanta-form-group.success .quanta-form-select,
-  .quanta-form-group.success .quanta-form-textarea {
-    border-color: var(--quanta-success);
-  }
+/* ─── Checkbox / Radio ───────────────── */
+.quanta-checkbox,
+.quanta-radio {
+  display: flex;
+  align-items: center;
+  gap: var(--quanta-space-2);
+  cursor: pointer;
+  user-select: none;
+}
 
-  /* ─── Checkbox / Radio ───────────────── */
-  .quanta-checkbox,
-  .quanta-radio {
-    display: flex;
-    align-items: center;
-    gap: var(--quanta-space-2);
-    cursor: pointer;
-    user-select: none;
-  }
+.quanta-checkbox input[type="checkbox"],
+.quanta-radio input[type="radio"] {
+  width: var(--quanta-space-4);
+  height: var(--quanta-space-4);
+  border: var(--quanta-border-width) solid var(--quanta-border-color);
+  border-radius: var(--quanta-rounded-sm);
+  accent-color: var(--quanta-primary);
+  cursor: pointer;
+  appearance: auto;
+  color-scheme: light dark;
+  color: var(--white);
+}
 
-  .quanta-checkbox input[type="checkbox"],
-  .quanta-radio input[type="radio"] {
-    width: var(--quanta-space-4);
-    height: var(--quanta-space-4);
-    border: var(--quanta-border-width) solid var(--quanta-border-color);
-    border-radius: var(--quanta-rounded-sm);
-    accent-color: var(--quanta-primary);
-    cursor: pointer;
-    appearance: auto;
-    color-scheme: light dark;
-    color: var(--white);
-  }
+.quanta-radio input[type="radio"] {
+  border-radius: 9999px;
+}
 
-  .quanta-radio input[type="radio"] {
-    border-radius: 9999px;
-  }
+/* ─── Dark Mode ──────────────────────── */
+html[data-theme="dark"] .quanta-form-input,
+html[data-theme="dark"] .quanta-form-textarea,
+html[data-theme="dark"] .quanta-form-select {
+  background: var(--quanta-bg-emphasis);
+  color: var(--quanta-text-default);
+  border-color: var(--quanta-border-color);
+}
 
-  /* ─── Dark Mode ──────────────────────── */
-  html[data-theme="dark"] .quanta-form-input,
-  html[data-theme="dark"] .quanta-form-textarea,
-  html[data-theme="dark"] .quanta-form-select {
-    background: var(--quanta-bg-emphasis);
-    color: var(--quanta-text-default);
-    border-color: var(--quanta-border-color);
-  }
+html[data-theme="dark"] .quanta-form-input::placeholder,
+html[data-theme="dark"] .quanta-form-textarea::placeholder {
+  color: var(--quanta-text-muted);
+}
 
-  html[data-theme="dark"] .quanta-form-input::placeholder,
-  html[data-theme="dark"] .quanta-form-textarea::placeholder {
-    color: var(--quanta-text-muted);
-  }
-
-  html[data-theme="dark"] .quanta-form-search::before {
-    background-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20fill%3D%22none%22%20stroke%3D%22%23fff%22%20stroke-width%3D%222%22%20viewBox%3D%220%200%2024%2024%22%3E%3Ccircle%20cx%3D%2211%22%20cy%3D%2211%22%20r%3D%227%22/%3E%3Cline%20x1%3D%2216.65%22%20y1%3D%2216.65%22%20x2%3D%2221%22%20y2%3D%2221%22/%3E%3C/svg%3E");
-  }
+html[data-theme="dark"] .quanta-form-search::before {
+  background-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20fill%3D%22none%22%20stroke%3D%22%23fff%22%20stroke-width%3D%222%22%20viewBox%3D%220%200%2024%2024%22%3E%3Ccircle%20cx%3D%2211%22%20cy%3D%2211%22%20r%3D%227%22/%3E%3Cline%20x1%3D%2216.65%22%20y1%3D%2216.65%22%20x2%3D%2221%22%20y2%3D%2221%22/%3E%3C/svg%3E");
 }

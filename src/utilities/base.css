@@ -351,11 +351,11 @@ html[data-theme="dark"] * {
 .d-none { display: none; }
 
 /* -- Position Utilities (position-) -- */
-.position-static { position: static; }
-.position-relative { position: relative; }
-.position-absolute { position: absolute; }
-.position-fixed { position: fixed; }
-.position-sticky { position: sticky; }
+.static { position: static; }
+.relative { position: relative; }
+.absolute { position: absolute; }
+.fixed { position: fixed; }
+.sticky { position: sticky; }
 
 /* All sides */
 .inset-0   { inset: 0; }       .-inset-0   { inset: 0; }
@@ -4912,19 +4912,31 @@ html[data-theme="dark"] * {
 .bg-warning      { background-color: var(--quanta-bg-warning); }
 .bg-danger       { background-color: var(--quanta-bg-danger); }
 .bg-info         { background-color: var(--quanta-bg-info); }
+.bg-neutral      { background-color: var(--quanta-bg-neutral); }
+.bg-accent       { background-color: var(--quanta-bg-accent); }
+.bg-ghost        { background-color: var(--quanta-bg-ghost); }
+.bg-link         { background-color: var(--quanta-text-link); }
 
 /* ─── Semantic Text Colors ─────────────────────────── */
-.text-primary    { color: var(--quanta-primary); }
-.text-secondary  { color: var(--quanta-text-secondary); }
-.text-success    { color: var(--quanta-text-success); }
-.text-warning    { color: var(--quanta-text-warning); }
-.text-danger     { color: var(--quanta-text-danger); }
-.text-info       { color: var(--quanta-text-info); }
+.text-primary      { color: var(--quanta-primary); }
+.text-secondary    { color: var(--quanta-text-secondary); }
+.text-success      { color: var(--quanta-text-success); }
+.text-warning      { color: var(--quanta-text-warning); }
+.text-danger       { color: var(--quanta-text-danger); }
+.text-info         { color: var(--quanta-text-info); }
+.text-neutral      { color: var(--quanta-text-neutral); }
+.text-accent       { color: var(--quanta-text-accent); }
+.text-ghost        { color: var(--quanta-text-ghost); }
+.text-link         { color: var(--quanta-text-link); }
 
 /* ─── Semantic Border Colors ───────────────────────── */
-.border-primary      { border-color: var(--quanta-primary); }
+.border-primary      { border-color: var(--quanta-border-primary); }
 .border-secondary    { border-color: var(--quanta-border-secondary); }
 .border-success      { border-color: var(--quanta-border-success); }
 .border-warning      { border-color: var(--quanta-border-warning); }
 .border-danger       { border-color: var(--quanta-border-danger); }
 .border-info         { border-color: var(--quanta-border-info); }
+.border-neutral      { border-color: var(--quanta-border-neutral); }
+.border-accent       { border-color: var(--quanta-border-accent); }
+.border-ghost        { border-color: var(--quanta-border-ghost); }
+.border-link         { border-color: var(--quanta-text-link); }

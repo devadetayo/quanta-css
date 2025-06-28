@@ -1,96 +1,94 @@
-@layer components.skeleton {
-  .quanta-skeleton {
-    position: relative;
-    display: inline-block;
-    background-color: var(--quanta-slate-200);
-    animation: quanta-opacity 1.5s infinite ease-in-out;
-    border-radius: var(--quanta-rounded-md);
-    overflow: hidden;
-  }
+.quanta-skeleton {
+  position: relative;
+  display: inline-block;
+  background-color: var(--quanta-slate-200);
+  animation: quanta-opacity 1.5s infinite ease-in-out;
+  border-radius: var(--quanta-rounded-md);
+  overflow: hidden;
+}
 
-  .quanta-skeleton::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background: linear-gradient(
-      90deg,
-      transparent,
-      rgba(255, 255, 255, 0.2),
-      transparent
-    );
-    animation: quanta-skeleton-wave 1.6s infinite;
-  }
+.quanta-skeleton::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.2),
+    transparent
+  );
+  animation: quanta-skeleton-wave 1.6s infinite;
+}
 
-  /* ─── Presets ─────────────────────────── */
-  .quanta-skeleton-text {
-    height: var(--quanta-space-6);
-    width: 100%;
-    margin-bottom: var(--quanta-space-2);
-  }
+/* ─── Presets ─────────────────────────── */
+.quanta-skeleton-text {
+  height: var(--quanta-space-6);
+  width: 100%;
+  margin-bottom: var(--quanta-space-2);
+}
 
-  .quanta-skeleton-title {
-    height: var(--quanta-space-8);
-    width: 75%;
-    margin-bottom: var(--quanta-space-3);
-  }
+.quanta-skeleton-title {
+  height: var(--quanta-space-8);
+  width: 75%;
+  margin-bottom: var(--quanta-space-3);
+}
 
-  .quanta-skeleton-circle {
-    width: var(--quanta-space-10);
-    height: var(--quanta-space-10);
-    border-radius: 50%;
-  }
+.quanta-skeleton-circle {
+  width: var(--quanta-space-10);
+  height: var(--quanta-space-10);
+  border-radius: 50%;
+}
 
-  .quanta-skeleton-avatar-sm {
-    width: var(--quanta-space-8);
-    height: var(--quanta-space-8);
-    border-radius: 50%;
-  }
+.quanta-skeleton-avatar-sm {
+  width: var(--quanta-space-8);
+  height: var(--quanta-space-8);
+  border-radius: 50%;
+}
 
-  .quanta-skeleton-rect {
-    width: 100%;
-    height: 120px;
-  }
+.quanta-skeleton-rect {
+  width: 100%;
+  height: 120px;
+}
 
-  .quanta-skeleton-block {
-    width: 100%;
-    height: 200px;
-  }
+.quanta-skeleton-block {
+  width: 100%;
+  height: 200px;
+}
 
-  .quanta-skeleton-btn {
-    width: 160px;
-    height: calc(var(--quanta-space-8) + var(--quanta-space-4));
-    border-radius: var(--quanta-rounded-sm);
-  }
+.quanta-skeleton-btn {
+  width: 160px;
+  height: calc(var(--quanta-space-8) + var(--quanta-space-4));
+  border-radius: var(--quanta-rounded-sm);
+}
 
-  /* ─── Animations ───────────────────────── */
-  @keyframes quanta-opacity {
-    0%, 100% { opacity: 1; transform: scale(1); }
-    50% { opacity: 0.4; transform: scale(1);}
-  }
+/* ─── Animations ───────────────────────── */
+@keyframes quanta-opacity {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.4; transform: scale(1);}
+}
 
-  @keyframes quanta-skeleton-wave {
-    0% { transform: translateX(-100%); }
-    100% { transform: translateX(100%); }
-  }
+@keyframes quanta-skeleton-wave {
+  0% { transform: translateX(-100%); }
+  100% { transform: translateX(100%); }
+}
 
-  /* ─── Responsive Adjustments ───────────── */
-  @media (max-width: 640px) {
-    .quanta-skeleton-text { height: var(--quanta-space-3); }
-    .quanta-skeleton-title { width: 90%; }
-    .quanta-skeleton-btn { width: 100px; height: var(--quanta-space-7); }
-  }
+/* ─── Responsive Adjustments ───────────── */
+@media (max-width: 640px) {
+  .quanta-skeleton-text { height: var(--quanta-space-3); }
+  .quanta-skeleton-title { width: 90%; }
+  .quanta-skeleton-btn { width: 100px; height: var(--quanta-space-7); }
+}
 
-  /* ─── Dark Mode Support ───────────────── */
-  html[data-theme="dark"] .quanta-skeleton {
-    background-color: var(--quanta-slate-700);
-  }
+/* ─── Dark Mode Support ───────────────── */
+html[data-theme="dark"] .quanta-skeleton {
+  background-color: var(--quanta-slate-700);
+}
 
-  html[data-theme="dark"] .quanta-skeleton::before {
-    background: linear-gradient(
-      90deg,
-      transparent,
-      rgba(255, 255, 255, 0.1),
-      transparent
-    );
-  }
+html[data-theme="dark"] .quanta-skeleton::before {
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.1),
+    transparent
+  );
 }

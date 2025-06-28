@@ -1,195 +1,193 @@
-@layer components.rangeslider {
-  .quanta-range-container {
-    display: flex;
-    flex-direction: column;
-    gap: var(--quanta-space-2);
-    width: 100%;
-  }
+.quanta-range-container {
+  display: flex;
+  flex-direction: column;
+  gap: var(--quanta-space-2);
+  width: 100%;
+}
 
-  .quanta-label {
-    font-weight: 600;
-    font-size: var(--quanta-text-sm);
-    color: var(--quanta-text-muted);
-  }
+.quanta-label {
+  font-weight: 600;
+  font-size: var(--quanta-text-sm);
+  color: var(--quanta-text-muted);
+}
 
-  .quanta-range-wrapper {
-    position: relative;
-    width: 100%;
-  }
+.quanta-range-wrapper {
+  position: relative;
+  width: 100%;
+}
 
-  /* Full range base */
-  .quanta-range {
-    -webkit-appearance: none;
-    appearance: none;
-    width: 100%;
-    height: 8px;
-    background-color: transparent;
-    outline: none;
-    cursor: pointer;
-    position: relative;
-    z-index: 2;
-  }
+/* Full range base */
+.quanta-range {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 100%;
+  height: 8px;
+  background-color: transparent;
+  outline: none;
+  cursor: pointer;
+  position: relative;
+  z-index: 2;
+}
 
-  /* Base track */
+/* Base track */
+.quanta-range-track {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 8px;
+  width: 100%;
+  background-color: var(--quanta-slate-100);
+  border-radius: var(--quanta-rounded-full);
+  z-index: 1;
+  pointer-events: none;
+}
+
+/* Fill before thumb */
+.quanta-range-fill {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 8px;
+  background-color: var(--quanta-primary);
+  border-radius: var(--quanta-rounded-full);
+  z-index: 1;
+  pointer-events: none;
+  width: 0%;
+}
+
+/* Webkit thumb */
+.quanta-range::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  height: 20px;
+  width: 20px;
+  background-color: var(--white);
+  border: 2px solid var(--quanta-primary);
+  border-radius: 50%;
+  transition: transform 0.2s ease, background-color 0.3s ease;
+  cursor: pointer;
+  position: relative;
+  z-index: 3;
+  margin-top: -4px;
+}
+
+.quanta-range:hover::-webkit-slider-thumb {
+  background: var(--quanta-primary);
+}
+
+.quanta-range:active::-webkit-slider-thumb {
+  transform: scale(1.2);
+}
+
+/* Firefox thumb */
+.quanta-range::-moz-range-thumb {
+  height: 20px;
+  width: 20px;
+  background-color: var(--quanta-primary);
+  border-radius: 50%;
+  cursor: pointer;
+  border: none;
+  z-index: 3;
+  position: relative;
+  margin-top: -4px;
+}
+
+/* Value bubble */
+.quanta-range-value {
+  position: absolute;
+  top: -40px;
+  transform: translateX(-50%);
+  background: var(--quanta-slate-100);
+  color: var(--black);
+  font-size: var(--quanta-text-xs);
+  padding: var(--quanta-space-1) var(--quanta-space-2);
+  border-radius: var(--quanta-rounded-md);
+  font-weight: 500;
+  white-space: nowrap;
+  z-index: 4;
+  pointer-events: none;
+}
+
+/* ─── Semantic Variants ───────────────────────────────────────── */
+.quanta-range-primary::-webkit-slider-thumb,
+.quanta-range-primary::-moz-range-thumb,
+.quanta-range-primary ~ .quanta-range-fill,
+.quanta-range-primary ~ .quanta-range-value {
+  background-color: var(--quanta-primary);
+}
+
+.quanta-range-success::-webkit-slider-thumb,
+.quanta-range-success::-moz-range-thumb,
+.quanta-range-success ~ .quanta-range-fill,
+.quanta-range-success ~ .quanta-range-value {
+  background-color: var(--quanta-bg-success);
+}
+
+.quanta-range-warning::-webkit-slider-thumb,
+.quanta-range-warning::-moz-range-thumb,
+.quanta-range-warning ~ .quanta-range-fill,
+.quanta-range-warning ~ .quanta-range-value {
+  background-color: var(--quanta-bg-warning);
+  color: var(--quanta-text-warning);
+}
+
+.quanta-range-danger::-webkit-slider-thumb,
+.quanta-range-danger::-moz-range-thumb,
+.quanta-range-danger ~ .quanta-range-fill,
+.quanta-range-danger ~ .quanta-range-value {
+  background-color: var(--quanta-bg-danger);
+}
+
+.quanta-range-info::-webkit-slider-thumb,
+.quanta-range-info::-moz-range-thumb,
+.quanta-range-info ~ .quanta-range-fill,
+.quanta-range-info ~ .quanta-range-value {
+  background-color: var(--quanta-bg-info);
+}
+
+/* Optional hover effect */
+.quanta-range:hover::-webkit-slider-thumb,
+.quanta-range:hover::-moz-range-thumb {
+  opacity: 0.85;
+}
+
+/* Dark mode */
+html[data-theme="dark"] {
   .quanta-range-track {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    height: 8px;
-    width: 100%;
-    background-color: var(--quanta-slate-100);
-    border-radius: var(--quanta-rounded-full);
-    z-index: 1;
-    pointer-events: none;
+    background-color: var(--quanta-slate-700);
   }
 
-  /* Fill before thumb */
   .quanta-range-fill {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    height: 8px;
     background-color: var(--quanta-primary);
-    border-radius: var(--quanta-rounded-full);
-    z-index: 1;
-    pointer-events: none;
-    width: 0%;
   }
 
-  /* Webkit thumb */
   .quanta-range::-webkit-slider-thumb {
-    -webkit-appearance: none;
-    appearance: none;
-    height: 20px;
-    width: 20px;
-    background-color: var(--white);
-    border: 2px solid var(--quanta-primary);
-    border-radius: 50%;
-    transition: transform 0.2s ease, background-color 0.3s ease;
-    cursor: pointer;
-    position: relative;
-    z-index: 3;
-    margin-top: -4px;
+    background-color: var(--quanta-slate-900);
   }
 
   .quanta-range:hover::-webkit-slider-thumb {
-    background: var(--quanta-primary);
+    background-color: var(--quanta-primary);
   }
 
-  .quanta-range:active::-webkit-slider-thumb {
-    transform: scale(1.2);
-  }
-
-  /* Firefox thumb */
   .quanta-range::-moz-range-thumb {
-    height: 20px;
-    width: 20px;
     background-color: var(--quanta-primary);
-    border-radius: 50%;
-    cursor: pointer;
-    border: none;
-    z-index: 3;
-    position: relative;
-    margin-top: -4px;
   }
 
-  /* Value bubble */
   .quanta-range-value {
-    position: absolute;
-    top: -40px;
-    transform: translateX(-50%);
-    background: var(--quanta-slate-100);
-    color: var(--black);
-    font-size: var(--quanta-text-xs);
-    padding: var(--quanta-space-1) var(--quanta-space-2);
-    border-radius: var(--quanta-rounded-md);
-    font-weight: 500;
-    white-space: nowrap;
-    z-index: 4;
-    pointer-events: none;
+    background-color: var(--quanta-slate-800);
+    color: var(--white);
+  }
+}
+
+/* Responsive */
+@media (max-width: 640px) {
+  .quanta-range::-webkit-slider-thumb,
+  .quanta-range::-moz-range-thumb {
+    width: 16px;
+    height: 16px;
   }
 
-  /* ─── Semantic Variants ───────────────────────────────────────── */
-  .quanta-range-primary::-webkit-slider-thumb,
-  .quanta-range-primary::-moz-range-thumb,
-  .quanta-range-primary ~ .quanta-range-fill,
-  .quanta-range-primary ~ .quanta-range-value {
-    background-color: var(--quanta-primary);
-  }
-
-  .quanta-range-success::-webkit-slider-thumb,
-  .quanta-range-success::-moz-range-thumb,
-  .quanta-range-success ~ .quanta-range-fill,
-  .quanta-range-success ~ .quanta-range-value {
-    background-color: var(--quanta-bg-success);
-  }
-
-  .quanta-range-warning::-webkit-slider-thumb,
-  .quanta-range-warning::-moz-range-thumb,
-  .quanta-range-warning ~ .quanta-range-fill,
-  .quanta-range-warning ~ .quanta-range-value {
-    background-color: var(--quanta-bg-warning);
-    color: var(--quanta-text-warning);
-  }
-
-  .quanta-range-danger::-webkit-slider-thumb,
-  .quanta-range-danger::-moz-range-thumb,
-  .quanta-range-danger ~ .quanta-range-fill,
-  .quanta-range-danger ~ .quanta-range-value {
-    background-color: var(--quanta-bg-danger);
-  }
-
-  .quanta-range-info::-webkit-slider-thumb,
-  .quanta-range-info::-moz-range-thumb,
-  .quanta-range-info ~ .quanta-range-fill,
-  .quanta-range-info ~ .quanta-range-value {
-    background-color: var(--quanta-bg-info);
-  }
-
-  /* Optional hover effect */
-  .quanta-range:hover::-webkit-slider-thumb,
-  .quanta-range:hover::-moz-range-thumb {
-    opacity: 0.85;
-  }
-
-  /* Dark mode */
-  html[data-theme="dark"] {
-    .quanta-range-track {
-      background-color: var(--quanta-slate-700);
-    }
-
-    .quanta-range-fill {
-      background-color: var(--quanta-primary);
-    }
-
-    .quanta-range::-webkit-slider-thumb {
-      background-color: var(--quanta-slate-900);
-    }
-
-    .quanta-range:hover::-webkit-slider-thumb {
-      background-color: var(--quanta-primary);
-    }
-
-    .quanta-range::-moz-range-thumb {
-      background-color: var(--quanta-primary);
-    }
-
-    .quanta-range-value {
-      background-color: var(--quanta-slate-800);
-      color: var(--white);
-    }
-  }
-
-  /* Responsive */
-  @media (max-width: 640px) {
-    .quanta-range::-webkit-slider-thumb,
-    .quanta-range::-moz-range-thumb {
-      width: 16px;
-      height: 16px;
-    }
-
-    .quanta-range-value {
-      font-size: var(--quanta-text-2xs);
-    }
+  .quanta-range-value {
+    font-size: var(--quanta-text-2xs);
   }
 }

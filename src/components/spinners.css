@@ -1,152 +1,208 @@
-/* src/components/spinners.css */
-@layer components.spinners {
-  /* ─── Spinner Base ───────────────────────────────────────────── */
+/* ─── Quanta Spinners ───────────────────────────────────────────── */
+
+.quanta-spinner {
+  display: inline-block;
+  border: 3px solid var(--quanta-border-color);
+  border-top: 3px solid var(--quanta-primary);
+  border-radius: 50%;
+  animation: quanta-spin 1s linear infinite;
+}
+
+/* ─── Spinner Sizes ───────────────────────────────────────────── */
+.quanta-spinner.sm { width: 32px; height: 32px; }
+.quanta-spinner.md { width: 48px; height: 48px; }
+.quanta-spinner.lg { width: 64px; height: 64px; }
+
+/* ─── Dual Ring Spinner ──────────────────────────────────────── */
+.quanta-spinner-dual-ring {
+  display: inline-block;
+  width: 48px;
+  height: 48px;
+}
+.quanta-spinner-dual-ring:after {
+  content: " ";
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  border: 3px solid var(--quanta-border-color);
+  border-color: var(--quanta-primary) transparent var(--quanta-primary) transparent;
+  animation: quanta-spin 1.2s linear infinite;
+}
+
+/* ─── Dot Spinner ────────────────────────────────────────────── */
+.quanta-spinner-dots {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: var(--quanta-space-2);
+}
+
+.quanta-spinner-dots .dot {
+  width: 10px;
+  height: 10px;
+  background-color: var(--quanta-primary);
+  border-radius: 50%;
+  animation: quanta-bounce 0.8s infinite ease-in-out;
+}
+
+.quanta-spinner-dots .dot:nth-child(2) {
+  animation-delay: 0.1s;
+}
+
+.quanta-spinner-dots .dot:nth-child(3) {
+  animation-delay: 0.2s;
+}
+
+/* ─── Pulse Spinner ──────────────────────────────────────────── */
+.quanta-spinner-pulse {
+  width: 40px;
+  height: 40px;
+  background-color: var(--quanta-primary);
+  border-radius: 50%;
+  animation: quanta-pulse 1s ease-in-out infinite;
+}
+
+/* ─── Bar Spinner ────────────────────────────────────────────── */
+.quanta-spinner-bar {
+  width: 100%;
+  height: 8px;
+  background-color: var(--quanta-slate-100);
+  border-radius: var(--quanta-rounded-md);
+  position: relative;
+  overflow: hidden;
+}
+
+.quanta-spinner-bar .quanta-bar {
+  position: absolute;
+  height: 100%;
+  width: 40%;
+  background-color: var(--quanta-primary);
+  animation: quanta-loading-bar 1.5s ease-in-out infinite;
+}
+
+/* ─── Semantic Color Overrides ───────────────────────────── */
+
+.quanta-spinner.success,
+.quanta-spinner-dual-ring.success,
+.quanta-spinner-dots.success .dot,
+.quanta-spinner-pulse.success,
+.quanta-spinner-bar.success .quanta-bar {
+  --quanta-primary: var(--quanta-bg-success);
+}
+
+.quanta-spinner.warning,
+.quanta-spinner-dual-ring.warning,
+.quanta-spinner-dots.warning .dot,
+.quanta-spinner-pulse.warning,
+.quanta-spinner-bar.warning .quanta-bar {
+  --quanta-primary: var(--quanta-bg-warning);
+}
+
+.quanta-spinner.danger,
+.quanta-spinner-dual-ring.danger,
+.quanta-spinner-dots.danger .dot,
+.quanta-spinner-pulse.danger,
+.quanta-spinner-bar.danger .quanta-bar {
+  --quanta-primary: var(--quanta-bg-danger);
+}
+
+.quanta-spinner.info,
+.quanta-spinner-dual-ring.info,
+.quanta-spinner-dots.info .dot,
+.quanta-spinner-pulse.info,
+.quanta-spinner-bar.info .quanta-bar {
+  --quanta-primary: var(--quanta-bg-info);
+}
+
+.quanta-spinner.secondary,
+.quanta-spinner-dual-ring.secondary,
+.quanta-spinner-dots.secondary .dot,
+.quanta-spinner-pulse.secondary,
+.quanta-spinner-bar.secondary .quanta-bar {
+  --quanta-primary: var(--quanta-bg-secondary);
+}
+
+.quanta-spinner.accent,
+.quanta-spinner-dual-ring.accent,
+.quanta-spinner-dots.accent .dot,
+.quanta-spinner-pulse.accent,
+.quanta-spinner-bar.accent .quanta-bar {
+  --quanta-primary: var(--quanta-bg-accent);
+}
+
+.quanta-spinner.neutral,
+.quanta-spinner-dual-ring.neutral,
+.quanta-spinner-dots.neutral .dot,
+.quanta-spinner-pulse.neutral,
+.quanta-spinner-bar.neutral .quanta-bar {
+  --quanta-primary: var(--quanta-bg-neutral);
+}
+
+/* ─── Keyframes ──────────────────────────────────────────────── */
+
+@keyframes quanta-spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+@keyframes quanta-bounce {
+  0%, 100% { transform: scale(1); opacity: 1; }
+  50% { transform: scale(1.5); opacity: 0.6; }
+}
+
+@keyframes quanta-pulse {
+  0% { transform: scale(1); opacity: 1; }
+  50% { transform: scale(1.2); opacity: 0.5; }
+  100% { transform: scale(1); opacity: 1; }
+}
+
+@keyframes quanta-loading-bar {
+  0% { left: -40%; }
+  100% { left: 100%; }
+}
+
+/* ─── Dark Mode Support ─────────────────────────────────────── */
+
+html[data-theme="dark"] {
   .quanta-spinner {
-    display: inline-block;
-    border: 3px solid var(--quanta-border-color);
-    border-top: 3px solid var(--quanta-primary);
-    border-radius: 50%;
-    animation: quanta-spin 1s linear infinite;
+    border-color: var(--quanta-border-color);
+    border-top-color: var(--quanta-primary);
   }
 
-  /* ─── Spinner Sizes ───────────────────────────────────────────── */
-  .quanta-spinner.sm { width: 32px; height: 32px; }
-  .quanta-spinner.md { width: 48px; height: 48px; }
-  .quanta-spinner.lg { width: 64px; height: 64px; }
-
-  /* ─── Dual Ring Spinner ──────────────────────────────────────── */
-  .quanta-spinner-dual-ring {
-    display: inline-block;
-    width: 48px;
-    height: 48px;
-  }
   .quanta-spinner-dual-ring:after {
-    content: " ";
-    display: block;
-    width: 100%;
-    height: 100%;
-    border-radius: 50%;
-    border: 3px solid var(--quanta-border-color);
     border-color: var(--quanta-primary) transparent var(--quanta-primary) transparent;
-    animation: quanta-spin 1.2s linear infinite;
   }
 
-  /* ─── Dot Spinner ────────────────────────────────────────────── */
-  .quanta-spinner-dots {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: var(--quanta-space-2);
-  }
-
-  .quanta-spinner-dots .dot {
-    width: 10px;
-    height: 10px;
-    background-color: var(--quanta-primary);
-    border-radius: 50%;
-    animation: quanta-bounce 0.8s infinite ease-in-out;
-  }
-
-  .quanta-spinner-dots .dot:nth-child(2) {
-    animation-delay: 0.1s;
-  }
-
-  .quanta-spinner-dots .dot:nth-child(3) {
-    animation-delay: 0.2s;
-  }
-
-  /* ─── Pulse Spinner ──────────────────────────────────────────── */
-  .quanta-spinner-pulse {
-    width: 40px;
-    height: 40px;
-    max-width: 40px;
-    max-height: 40px;
-    background-color: var(--quanta-primary);
-    border-radius: 50%;
-    animation: quanta-pulse 1s ease-in-out infinite;
-  }
-
-  /* ─── Bar Spinner ────────────────────────────────────────────── */
   .quanta-spinner-bar {
-    width: 100%;
-    height: 8px;
-    background-color: var(--quanta-slate-100);
-    border-radius: var(--quanta-rounded-md);
-    position: relative;
-    overflow: hidden;
+    background-color: var(--quanta-slate-800);
   }
 
   .quanta-spinner-bar .quanta-bar {
-    position: absolute;
-    height: 100%;
-    width: 40%;
     background-color: var(--quanta-primary);
-    animation: quanta-loading-bar 1.5s ease-in-out infinite;
   }
 
-  /* ─── Keyframes ──────────────────────────────────────────────── */
-  @keyframes quanta-spin {
-    0% { transform: rotate(0deg); }
-    100% { transform: rotate(360deg); }
+  .quanta-spinner-dots .dot,
+  .quanta-spinner-pulse {
+    background-color: var(--quanta-primary);
   }
+}
 
-  @keyframes quanta-bounce {
-    0%, 100% { transform: scale(1); opacity: 1; }
-    50% { transform: scale(1.5); opacity: 0.6; }
-  }
+/* ─── Responsive Sizing ─────────────────────────────────────── */
+@media (max-width: 640px) {
+  .quanta-spinner.sm { width: 24px; height: 24px; }
+  .quanta-spinner.md { width: 36px; height: 36px; }
+  .quanta-spinner.lg { width: 48px; height: 48px; }
+}
 
-  @keyframes quanta-pulse {
-    0% { transform: scale(1); opacity: 1; }
-    50% { transform: scale(1.2); opacity: 0.5; }
-    100% { transform: scale(1); opacity: 1; }
-  }
+@media (min-width: 641px) and (max-width: 768px) {
+  .quanta-spinner.sm { width: 28px; height: 28px; }
+  .quanta-spinner.md { width: 42px; height: 42px; }
+  .quanta-spinner.lg { width: 56px; height: 56px; }
+}
 
-  @keyframes quanta-loading-bar {
-    0% { left: -40%; }
-    100% { left: 100%; }
-  }
-
-  /* ─── Dark Mode Support ─────────────────────────────────────── */
-  html[data-theme="dark"] {
-    .quanta-spinner {
-      border-color: var(--quanta-border-color);
-      border-top-color: var(--quanta-primary);
-    }
-
-    .quanta-spinner-dual-ring:after {
-      border-color: var(--quanta-border-color) transparent var(--quanta-border-color) transparent;
-    }
-
-    .quanta-spinner-bar {
-      background-color: var(--quanta-slate-800);
-    }
-
-    .quanta-spinner-bar .quanta-bar {
-      background-color: var(--quanta-primary);
-    }
-
-    .quanta-spinner-dots .dot,
-    .quanta-spinner-pulse {
-      background-color: var(--quanta-primary);
-    }
-  }
-
-  /* ─── Responsive Sizing ─────────────────────────────────────── */
-  @media (max-width: 640px) {
-    .quanta-spinner.sm { width: 24px; height: 24px; }
-    .quanta-spinner.md { width: 36px; height: 36px; }
-    .quanta-spinner.lg { width: 48px; height: 48px; }
-  }
-
-  @media (min-width: 641px) and (max-width: 768px) {
-    .quanta-spinner.sm { width: 28px; height: 28px; }
-    .quanta-spinner.md { width: 42px; height: 42px; }
-    .quanta-spinner.lg { width: 56px; height: 56px; }
-  }
-
-  @media (min-width: 769px) {
-    .quanta-spinner.sm { width: 32px; height: 32px; }
-    .quanta-spinner.md { width: 48px; height: 48px; }
-    .quanta-spinner.lg { width: 64px; height: 64px; }
-  }
+@media (min-width: 769px) {
+  .quanta-spinner.sm { width: 32px; height: 32px; }
+  .quanta-spinner.md { width: 48px; height: 48px; }
+  .quanta-spinner.lg { width: 64px; height: 64px; }
 }
