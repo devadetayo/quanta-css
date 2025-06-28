@@ -3146,6 +3146,27 @@
   "underline_offset_8": {
     "textUnderlineOffset": "8px"
   },
+  "text_xs": {
+    "fontSize": "0.5rem"
+  },
+  "text_sm": {
+    "fontSize": "0.875rem"
+  },
+  "text_base": {
+    "fontSize": "1rem"
+  },
+  "text_lg": {
+    "fontSize": "1.125rem"
+  },
+  "text_xl": {
+    "fontSize": "2rem"
+  },
+  "text_2xl": {
+    "fontSize": "2.5rem"
+  },
+  "text_3xl": {
+    "fontSize": "3rem"
+  },
   "text_ellipsis": {
     "textOverflow": "ellipsis",
     "overflow": "hidden",
