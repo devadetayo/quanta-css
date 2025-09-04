@@ -1,9 +1,10 @@
 {
   "name": "quanta-css",
-  "version": "1.0.7",
+  "version": "1.1.2",
   "description": "Quanta CSS — a component + utility-first CSS framework with built-in dark mode and theming.",
   "main": "dist/quanta.css",
-  "style": "dist/quanta.min.css",
+  "style": "dist/quanta.css",
+  "unpkg": "dist/quanta.min.css",
   "files": [
     "dist/",
     "src/",
@@ -16,11 +17,17 @@
     "watch": "chokidar \"src/**/*.css\" -c \"npm run build\"",
     "zip:utils": "npm run build && zip -j dist/quanta-utils.zip dist/utilities.css dist/utilities.min.css",
     "zip:comps": "npm run build && zip -j dist/quanta-components.zip dist/components.css dist/components.min.css",
-    "zip": "npm run zip:utils && npm run zip:comps && zip -j dist/quanta.zip dist/quanta.css dist/quanta.min.css"
+    "zip": "npm run zip:utils && npm run zip:comps && zip -j dist/quanta.zip dist/quanta.css dist/quanta.min.css",
+    "prepare": "npm run build",
+    "prepublishOnly": "npm run build"
   },
   "repository": {
     "type": "git",
     "url": "https://github.com/devadetayo/quanta-css.git"
+  },
+  "homepage": "https://devadetayo.github.io/quanta-css",
+  "bugs": {
+    "url": "https://github.com/devadetayo/quanta-css/issues"
   },
   "keywords": [
     "css",
@@ -32,6 +39,9 @@
   ],
   "author": "Adeniyi Adetayo",
   "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
   "devDependencies": {
     "autoprefixer": "^10.4.13",
     "chokidar-cli": "^3.0.0",

@@ -333,11 +333,12 @@ function toggleTheme() {
 document.addEventListener('DOMContentLoaded', () => {
   const stored = localStorage.getItem('quanta-theme');
   const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-
   const initialTheme = stored || (prefersDark ? 'dark' : 'light');
   setTheme(initialTheme);
 
-  document.getElementById('themeToggle').addEventListener('click', toggleTheme);
+  document.querySelectorAll('.quanta-theme-toggle').forEach(el => {
+    el.addEventListener('click', toggleTheme);
+  });
 });
 
 document.addEventListener("DOMContentLoaded", () => {
