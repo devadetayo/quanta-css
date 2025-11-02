@@ -10,7 +10,7 @@
   font-size: var(--quanta-text-sm);
   line-height: 1;
   font-weight: 500;
-  background-color: var(--quanta-bg-neutral);
+  background-color: var(--quanta-grey-200);
   color: var(--quanta-text-neutral);
   border: 1px solid transparent;
   border-radius: var(--quanta-rounded-full);
@@ -106,10 +106,30 @@
 
 /* ─── Dark Mode Support ───────────────────────────────────── */
 html[data-theme="dark"] .quanta-chip {
-  background-color: var(--quanta-bg-neutral);
+  background-color: var(--quanta-grey-700);
+  color: var(--white);
 }
 
 html[data-theme="dark"] .quanta-chip-close:hover,
 html[data-theme="dark"] .quanta-chip-close:focus {
   background-color: var(--quanta-ghost-hover);
+}
+
+html[data-theme="dark"] {
+  .quanta-chip-primary     { background-color: var(--quanta-primary);   color: var(--quanta-text-primary);   border-color: var(--quanta-border-primary); }
+  .quanta-chip-secondary   { background-color: var(--quanta-bg-secondary); color: var(--quanta-text-secondary); border-color: var(--quanta-border-secondary); }
+  .quanta-chip-success     { background-color: var(--quanta-bg-success);   color: var(--quanta-text-success);   border-color: var(--quanta-border-success); }
+  .quanta-chip-warning     { background-color: var(--quanta-bg-warning);   color: var(--quanta-text-warning);   border-color: var(--quanta-border-warning); }
+  .quanta-chip-danger      { background-color: var(--quanta-bg-danger);    color: var(--quanta-text-danger);    border-color: var(--quanta-border-danger); }
+  .quanta-chip-info        { background-color: var(--quanta-bg-info);      color: var(--quanta-text-info);      border-color: var(--quanta-border-info); }
+  .quanta-chip-accent      { background-color: var(--quanta-bg-accent);    color: var(--quanta-text-accent);    border-color: var(--quanta-border-accent); }
+  .quanta-chip-ghost       { background-color: var(--quanta-bg-ghost);     color: var(--quanta-text-ghost);     border-color: var(--quanta-border-ghost); }
+  .quanta-chip-outline-primary   { background: transparent; color: var(--quanta-primary); border-color: var(--quanta-border-primary); }
+  .quanta-chip-outline-secondary { background: transparent; color: var(--quanta-bg-secondary); border-color: var(--quanta-border-secondary); }
+  .quanta-chip-outline-success   { background: transparent; color: var(--quanta-bg-success); border-color: var(--quanta-border-success); }
+  .quanta-chip-outline-warning   { background: transparent; color: var(--quanta-bg-warning); border-color: var(--quanta-border-warning); }
+  .quanta-chip-outline-danger    { background: transparent; color: var(--quanta-bg-danger); border-color: var(--quanta-border-danger); }
+  .quanta-chip-outline-info      { background: transparent; color: var(--quanta-bg-info); border-color: var(--quanta-border-info); }
+  .quanta-chip-outline-accent    { background: transparent; color: var(--quanta-bg-accent); border-color: var(--quanta-border-accent); }
+  .quanta-chip-outline-ghost     { background: transparent; color: var(--quanta-text-ghost); border-color: var(--quanta-border-ghost); }
 }

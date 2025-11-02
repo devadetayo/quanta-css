@@ -1,0 +1,143 @@
+
+
+.transition-all { transition-property: all; }
+
+.transition-bg { transition-property: background-color; }
+
+.transition-color { transition-property: color; }
+
+.transition-opacity { transition-property: opacity; }
+
+.transition-transform { transition-property: transform; }
+
+.transition-shadow { transition-property: shadow; }
+
+.transition-border { transition-property: border; }
+
+.duration-75 { transition-duration: 75ms; }
+
+.duration-100 { transition-duration: 100ms; }
+
+.duration-150 { transition-duration: 150ms; }
+
+.duration-200 { transition-duration: 200ms; }
+
+.duration-300 { transition-duration: 300ms; }
+
+.duration-500 { transition-duration: 500ms; }
+
+.duration-700 { transition-duration: 700ms; }
+
+.duration-1000 { transition-duration: 1000ms; }
+
+.ease-linear { transition-timing-function: ease-linear; }
+
+.ease-in { transition-timing-function: ease-in; }
+
+.ease-out { transition-timing-function: ease-out; }
+
+.ease-in-out { transition-timing-function: ease-in-out; }
+
+/* Animation Duration Utilities (Quanta CSS) */
+.duration-75 { animation-duration: 0.075s !important; }
+
+.duration-100 { animation-duration: 0.1s   !important; }
+
+.duration-150 { animation-duration: 0.15s  !important; }
+
+.duration-200 { animation-duration: 0.2s   !important; }
+
+.duration-300 { animation-duration: 0.3s   !important; }
+
+.duration-500 { animation-duration: 0.5s   !important; }
+
+.duration-700 { animation-duration: 0.7s   !important; }
+
+.duration-1000 { animation-duration: 1s     !important; }
+
+.duration-1500 { animation-duration: 1.5s   !important; }
+
+.duration-2000 { animation-duration: 2s     !important; }
+
+/* =============================================================================
+   3. TRANSFORMS & TRANSITIONS (additional)
+============================================================================= */
+
+/* Transition Properties */
+.transition-all { transition-property: all; }
+
+.transition-colors { transition-property: color, background-color, border-color, fill, stroke; }
+
+.transition-opacity { transition-property: opacity; }
+
+.transition-shadow { transition-property: box-shadow; }
+
+.transition-transform { transition-property: transform; }
+
+/* Transition Durations */
+.duration-75 { transition-duration: 75ms; }
+
+.duration-100 { transition-duration: 100ms; }
+
+.duration-150 { transition-duration: 150ms; }
+
+.duration-200 { transition-duration: 200ms; }
+
+.duration-300 { transition-duration: 300ms; }
+
+.duration-500 { transition-duration: 500ms; }
+
+.duration-700 { transition-duration: 700ms; }
+
+.duration-1000 { transition-duration: 1000ms; }
+
+/* Timing Functions */
+.ease-linear { transition-timing-function: linear; }
+
+.ease-in { transition-timing-function: ease-in; }
+
+.ease-out { transition-timing-function: ease-out; }
+
+.ease-in-out { transition-timing-function: ease-in-out; }
+
+/* =============================================================================
+   ADVANCED UTILITIES (Sections 12–18)
+============================================================================= */
+
+/* -----------------------------------------------------------------------------
+   12. Transitions & Animation
+----------------------------------------------------------------------------- */
+/* Transition Property */
+.transition-none { transition-property: none; }
+
+.transition-all { transition-property: all; }
+
+.transition-colors { transition-property: color, background-color, border-color, text-decoration-color, fill, stroke; }
+
+.transition-opacity { transition-property: opacity; }
+
+.transition-shadow { transition-property: box-shadow; }
+
+.transition-transform { transition-property: transform; }
+
+/* Transition Duration */
+.duration-75 { transition-duration: 75ms; }
+
+.duration-150 { transition-duration: 150ms; }
+
+.duration-300 { transition-duration: 300ms; }
+
+.duration-500 { transition-duration: 500ms; }
+
+.duration-700 { transition-duration: 700ms; }
+
+.duration-1000 { transition-duration: 1000ms; }
+
+/* Transition Timing Function */
+.ease-linear { transition-timing-function: linear; }
+
+.ease-in { transition-timing-function: cubic-bezier(0.4,0,1,1); }
+
+.ease-out { transition-timing-function: cubic-bezier(0,0,0.2,1); }
+
+.ease-in-out { transition-timing-function: cubic-bezier(0.4,0,0.2,1); }

@@ -1,0 +1,56 @@
+
+* USAGE EXAMPLES:
+* 
+* 1. Basic usage:
+*    node purge-quanta.js
+* 
+* 2. Custom input/output:
+*    node purge-quanta.js --input dist/quanta.css --output dist/custom.css
+* 
+* 3. Scan specific files:
+*    node purge-quanta.js --content "src/**/*.html"
+* 
+* 4. Use custom config:
+*    node purge-quanta.js --config my-config.js
+* 
+* 
+* INTEGRATION WITH BUILD TOOLS:
+* 
+* Add to package.json scripts:
+* {
+*   "scripts": {
+*     "build:css": "node build-quanta.js",
+*     "purge:css": "node purge-quanta.js",
+*     "build": "npm run build:css && npm run purge:css"
+*   }
+* }
+* 
+* 
+* PRODUCTION WORKFLOW:
+* 
+* 1. Development:
+*    - Use dist/quanta.min.css (full framework)
+*    - All classes available for prototyping
+* 
+* 2. Production:
+*    - Run: npm run purge:css
+*    - Use dist/quanta.purged.min.css
+*    - Only includes classes you actually use
+*    - 90%+ smaller file size
+* 
+* 
+* ADVANCED: PER-PAGE PURGING
+* 
+* Create multiple configs for different pages:
+* 
+* // quanta.purge.home.config.js
+* module.exports = {
+*   content: ['./src/pages/home/**'],
+*   output: './dist/home.css'
+* };
+* 
+* // quanta.purge.dashboard.config.js
+* module.exports = {
+*   content: ['./src/pages/dashboard/**'],
+*   output: './dist/dashboard.css'
+* };

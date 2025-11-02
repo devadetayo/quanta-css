@@ -1,0 +1,1339 @@
+/* Quanta CSS v2.1 - backgrounds Light Variants */
+
+/* State Variants */
+.hover-bg-attachment-fixed:hover { background-attachment: fixed; }
+.focus-bg-attachment-fixed:focus { background-attachment: fixed; }
+.active-bg-attachment-fixed:active { background-attachment: fixed; }
+.disabled-bg-attachment-fixed:disabled { background-attachment: fixed; }
+.focus-visible-bg-attachment-fixed:focus-visible { background-attachment: fixed; }
+.focus-within-bg-attachment-fixed:focus-within { background-attachment: fixed; }
+.group:hover .group-hover-bg-attachment-fixed { background-attachment: fixed; }
+.hover-bg-attachment-local:hover { background-attachment: local; }
+.focus-bg-attachment-local:focus { background-attachment: local; }
+.active-bg-attachment-local:active { background-attachment: local; }
+.disabled-bg-attachment-local:disabled { background-attachment: local; }
+.focus-visible-bg-attachment-local:focus-visible { background-attachment: local; }
+.focus-within-bg-attachment-local:focus-within { background-attachment: local; }
+.group:hover .group-hover-bg-attachment-local { background-attachment: local; }
+.hover-bg-attachment-scroll:hover { background-attachment: scroll; }
+.focus-bg-attachment-scroll:focus { background-attachment: scroll; }
+.active-bg-attachment-scroll:active { background-attachment: scroll; }
+.disabled-bg-attachment-scroll:disabled { background-attachment: scroll; }
+.focus-visible-bg-attachment-scroll:focus-visible { background-attachment: scroll; }
+.focus-within-bg-attachment-scroll:focus-within { background-attachment: scroll; }
+.group:hover .group-hover-bg-attachment-scroll { background-attachment: scroll; }
+.hover-bg-clip-border:hover { background-clip: border-box; }
+.focus-bg-clip-border:focus { background-clip: border-box; }
+.active-bg-clip-border:active { background-clip: border-box; }
+.disabled-bg-clip-border:disabled { background-clip: border-box; }
+.focus-visible-bg-clip-border:focus-visible { background-clip: border-box; }
+.focus-within-bg-clip-border:focus-within { background-clip: border-box; }
+.group:hover .group-hover-bg-clip-border { background-clip: border-box; }
+.hover-bg-clip-padding:hover { background-clip: padding-box; }
+.focus-bg-clip-padding:focus { background-clip: padding-box; }
+.active-bg-clip-padding:active { background-clip: padding-box; }
+.disabled-bg-clip-padding:disabled { background-clip: padding-box; }
+.focus-visible-bg-clip-padding:focus-visible { background-clip: padding-box; }
+.focus-within-bg-clip-padding:focus-within { background-clip: padding-box; }
+.group:hover .group-hover-bg-clip-padding { background-clip: padding-box; }
+.hover-bg-clip-content:hover { background-clip: content-box; }
+.focus-bg-clip-content:focus { background-clip: content-box; }
+.active-bg-clip-content:active { background-clip: content-box; }
+.disabled-bg-clip-content:disabled { background-clip: content-box; }
+.focus-visible-bg-clip-content:focus-visible { background-clip: content-box; }
+.focus-within-bg-clip-content:focus-within { background-clip: content-box; }
+.group:hover .group-hover-bg-clip-content { background-clip: content-box; }
+.hover-bg-image-none:hover { background-image: none; }
+.focus-bg-image-none:focus { background-image: none; }
+.active-bg-image-none:active { background-image: none; }
+.disabled-bg-image-none:disabled { background-image: none; }
+.focus-visible-bg-image-none:focus-visible { background-image: none; }
+.focus-within-bg-image-none:focus-within { background-image: none; }
+.group:hover .group-hover-bg-image-none { background-image: none; }
+.hover-bg-image-gradient-to-r:hover { background-image: linear-gradient(to right, var(--quanta-from-color)); }
+.focus-bg-image-gradient-to-r:focus { background-image: linear-gradient(to right, var(--quanta-from-color)); }
+.active-bg-image-gradient-to-r:active { background-image: linear-gradient(to right, var(--quanta-from-color)); }
+.disabled-bg-image-gradient-to-r:disabled { background-image: linear-gradient(to right, var(--quanta-from-color)); }
+.focus-visible-bg-image-gradient-to-r:focus-visible { background-image: linear-gradient(to right, var(--quanta-from-color)); }
+.focus-within-bg-image-gradient-to-r:focus-within { background-image: linear-gradient(to right, var(--quanta-from-color)); }
+.group:hover .group-hover-bg-image-gradient-to-r { background-image: linear-gradient(to right, var(--quanta-from-color)); }
+.hover-bg-origin-border:hover { background-origin: border-box; }
+.focus-bg-origin-border:focus { background-origin: border-box; }
+.active-bg-origin-border:active { background-origin: border-box; }
+.disabled-bg-origin-border:disabled { background-origin: border-box; }
+.focus-visible-bg-origin-border:focus-visible { background-origin: border-box; }
+.focus-within-bg-origin-border:focus-within { background-origin: border-box; }
+.group:hover .group-hover-bg-origin-border { background-origin: border-box; }
+.hover-bg-origin-padding:hover { background-origin: padding-box; }
+.focus-bg-origin-padding:focus { background-origin: padding-box; }
+.active-bg-origin-padding:active { background-origin: padding-box; }
+.disabled-bg-origin-padding:disabled { background-origin: padding-box; }
+.focus-visible-bg-origin-padding:focus-visible { background-origin: padding-box; }
+.focus-within-bg-origin-padding:focus-within { background-origin: padding-box; }
+.group:hover .group-hover-bg-origin-padding { background-origin: padding-box; }
+.hover-bg-origin-content:hover { background-origin: content-box; }
+.focus-bg-origin-content:focus { background-origin: content-box; }
+.active-bg-origin-content:active { background-origin: content-box; }
+.disabled-bg-origin-content:disabled { background-origin: content-box; }
+.focus-visible-bg-origin-content:focus-visible { background-origin: content-box; }
+.focus-within-bg-origin-content:focus-within { background-origin: content-box; }
+.group:hover .group-hover-bg-origin-content { background-origin: content-box; }
+.hover-bg-position-center:hover { background-position: center; }
+.focus-bg-position-center:focus { background-position: center; }
+.active-bg-position-center:active { background-position: center; }
+.disabled-bg-position-center:disabled { background-position: center; }
+.focus-visible-bg-position-center:focus-visible { background-position: center; }
+.focus-within-bg-position-center:focus-within { background-position: center; }
+.group:hover .group-hover-bg-position-center { background-position: center; }
+.hover-bg-position-top:hover { background-position: top; }
+.focus-bg-position-top:focus { background-position: top; }
+.active-bg-position-top:active { background-position: top; }
+.disabled-bg-position-top:disabled { background-position: top; }
+.focus-visible-bg-position-top:focus-visible { background-position: top; }
+.focus-within-bg-position-top:focus-within { background-position: top; }
+.group:hover .group-hover-bg-position-top { background-position: top; }
+.hover-bg-position-bottom:hover { background-position: bottom; }
+.focus-bg-position-bottom:focus { background-position: bottom; }
+.active-bg-position-bottom:active { background-position: bottom; }
+.disabled-bg-position-bottom:disabled { background-position: bottom; }
+.focus-visible-bg-position-bottom:focus-visible { background-position: bottom; }
+.focus-within-bg-position-bottom:focus-within { background-position: bottom; }
+.group:hover .group-hover-bg-position-bottom { background-position: bottom; }
+.hover-bg-position-left:hover { background-position: left; }
+.focus-bg-position-left:focus { background-position: left; }
+.active-bg-position-left:active { background-position: left; }
+.disabled-bg-position-left:disabled { background-position: left; }
+.focus-visible-bg-position-left:focus-visible { background-position: left; }
+.focus-within-bg-position-left:focus-within { background-position: left; }
+.group:hover .group-hover-bg-position-left { background-position: left; }
+.hover-bg-position-right:hover { background-position: right; }
+.focus-bg-position-right:focus { background-position: right; }
+.active-bg-position-right:active { background-position: right; }
+.disabled-bg-position-right:disabled { background-position: right; }
+.focus-visible-bg-position-right:focus-visible { background-position: right; }
+.focus-within-bg-position-right:focus-within { background-position: right; }
+.group:hover .group-hover-bg-position-right { background-position: right; }
+.hover-bg-position-top-left:hover { background-position: top left; }
+.focus-bg-position-top-left:focus { background-position: top left; }
+.active-bg-position-top-left:active { background-position: top left; }
+.disabled-bg-position-top-left:disabled { background-position: top left; }
+.focus-visible-bg-position-top-left:focus-visible { background-position: top left; }
+.focus-within-bg-position-top-left:focus-within { background-position: top left; }
+.group:hover .group-hover-bg-position-top-left { background-position: top left; }
+.hover-bg-position-top-right:hover { background-position: top right; }
+.focus-bg-position-top-right:focus { background-position: top right; }
+.active-bg-position-top-right:active { background-position: top right; }
+.disabled-bg-position-top-right:disabled { background-position: top right; }
+.focus-visible-bg-position-top-right:focus-visible { background-position: top right; }
+.focus-within-bg-position-top-right:focus-within { background-position: top right; }
+.group:hover .group-hover-bg-position-top-right { background-position: top right; }
+.hover-bg-position-bottom-left:hover { background-position: bottom left; }
+.focus-bg-position-bottom-left:focus { background-position: bottom left; }
+.active-bg-position-bottom-left:active { background-position: bottom left; }
+.disabled-bg-position-bottom-left:disabled { background-position: bottom left; }
+.focus-visible-bg-position-bottom-left:focus-visible { background-position: bottom left; }
+.focus-within-bg-position-bottom-left:focus-within { background-position: bottom left; }
+.group:hover .group-hover-bg-position-bottom-left { background-position: bottom left; }
+.hover-bg-position-bottom-right:hover { background-position: bottom right; }
+.focus-bg-position-bottom-right:focus { background-position: bottom right; }
+.active-bg-position-bottom-right:active { background-position: bottom right; }
+.disabled-bg-position-bottom-right:disabled { background-position: bottom right; }
+.focus-visible-bg-position-bottom-right:focus-visible { background-position: bottom right; }
+.focus-within-bg-position-bottom-right:focus-within { background-position: bottom right; }
+.group:hover .group-hover-bg-position-bottom-right { background-position: bottom right; }
+.hover-bg-repeat-none:hover { background-repeat: no-repeat; }
+.focus-bg-repeat-none:focus { background-repeat: no-repeat; }
+.active-bg-repeat-none:active { background-repeat: no-repeat; }
+.disabled-bg-repeat-none:disabled { background-repeat: no-repeat; }
+.focus-visible-bg-repeat-none:focus-visible { background-repeat: no-repeat; }
+.focus-within-bg-repeat-none:focus-within { background-repeat: no-repeat; }
+.group:hover .group-hover-bg-repeat-none { background-repeat: no-repeat; }
+.hover-bg-repeat-x:hover { background-repeat: repeat-x; }
+.focus-bg-repeat-x:focus { background-repeat: repeat-x; }
+.active-bg-repeat-x:active { background-repeat: repeat-x; }
+.disabled-bg-repeat-x:disabled { background-repeat: repeat-x; }
+.focus-visible-bg-repeat-x:focus-visible { background-repeat: repeat-x; }
+.focus-within-bg-repeat-x:focus-within { background-repeat: repeat-x; }
+.group:hover .group-hover-bg-repeat-x { background-repeat: repeat-x; }
+.hover-bg-repeat-y:hover { background-repeat: repeat-y; }
+.focus-bg-repeat-y:focus { background-repeat: repeat-y; }
+.active-bg-repeat-y:active { background-repeat: repeat-y; }
+.disabled-bg-repeat-y:disabled { background-repeat: repeat-y; }
+.focus-visible-bg-repeat-y:focus-visible { background-repeat: repeat-y; }
+.focus-within-bg-repeat-y:focus-within { background-repeat: repeat-y; }
+.group:hover .group-hover-bg-repeat-y { background-repeat: repeat-y; }
+.hover-bg-repeat-round:hover { background-repeat: round; }
+.focus-bg-repeat-round:focus { background-repeat: round; }
+.active-bg-repeat-round:active { background-repeat: round; }
+.disabled-bg-repeat-round:disabled { background-repeat: round; }
+.focus-visible-bg-repeat-round:focus-visible { background-repeat: round; }
+.focus-within-bg-repeat-round:focus-within { background-repeat: round; }
+.group:hover .group-hover-bg-repeat-round { background-repeat: round; }
+.hover-bg-repeat-space:hover { background-repeat: space; }
+.focus-bg-repeat-space:focus { background-repeat: space; }
+.active-bg-repeat-space:active { background-repeat: space; }
+.disabled-bg-repeat-space:disabled { background-repeat: space; }
+.focus-visible-bg-repeat-space:focus-visible { background-repeat: space; }
+.focus-within-bg-repeat-space:focus-within { background-repeat: space; }
+.group:hover .group-hover-bg-repeat-space { background-repeat: space; }
+.hover-bg-size-auto:hover { background-size: auto; }
+.focus-bg-size-auto:focus { background-size: auto; }
+.active-bg-size-auto:active { background-size: auto; }
+.disabled-bg-size-auto:disabled { background-size: auto; }
+.focus-visible-bg-size-auto:focus-visible { background-size: auto; }
+.focus-within-bg-size-auto:focus-within { background-size: auto; }
+.group:hover .group-hover-bg-size-auto { background-size: auto; }
+.hover-bg-size-cover:hover { background-size: cover; }
+.focus-bg-size-cover:focus { background-size: cover; }
+.active-bg-size-cover:active { background-size: cover; }
+.disabled-bg-size-cover:disabled { background-size: cover; }
+.focus-visible-bg-size-cover:focus-visible { background-size: cover; }
+.focus-within-bg-size-cover:focus-within { background-size: cover; }
+.group:hover .group-hover-bg-size-cover { background-size: cover; }
+.hover-bg-size-contain:hover { background-size: contain; }
+.focus-bg-size-contain:focus { background-size: contain; }
+.active-bg-size-contain:active { background-size: contain; }
+.disabled-bg-size-contain:disabled { background-size: contain; }
+.focus-visible-bg-size-contain:focus-visible { background-size: contain; }
+.focus-within-bg-size-contain:focus-within { background-size: contain; }
+.group:hover .group-hover-bg-size-contain { background-size: contain; }
+
+/* SM Breakpoint */
+@media (min-width: 480px) {
+  .sm-bg-attachment-fixed { background-attachment: fixed; }
+  .sm-hover-bg-attachment-fixed:hover { background-attachment: fixed; }
+  .sm-focus-bg-attachment-fixed:focus { background-attachment: fixed; }
+  .sm-active-bg-attachment-fixed:active { background-attachment: fixed; }
+  .sm-disabled-bg-attachment-fixed:disabled { background-attachment: fixed; }
+  .sm-focus-visible-bg-attachment-fixed:focus-visible { background-attachment: fixed; }
+  .sm-focus-within-bg-attachment-fixed:focus-within { background-attachment: fixed; }
+  .group:hover .sm-group-hover-bg-attachment-fixed { background-attachment: fixed; }
+  .sm-bg-attachment-local { background-attachment: local; }
+  .sm-hover-bg-attachment-local:hover { background-attachment: local; }
+  .sm-focus-bg-attachment-local:focus { background-attachment: local; }
+  .sm-active-bg-attachment-local:active { background-attachment: local; }
+  .sm-disabled-bg-attachment-local:disabled { background-attachment: local; }
+  .sm-focus-visible-bg-attachment-local:focus-visible { background-attachment: local; }
+  .sm-focus-within-bg-attachment-local:focus-within { background-attachment: local; }
+  .group:hover .sm-group-hover-bg-attachment-local { background-attachment: local; }
+  .sm-bg-attachment-scroll { background-attachment: scroll; }
+  .sm-hover-bg-attachment-scroll:hover { background-attachment: scroll; }
+  .sm-focus-bg-attachment-scroll:focus { background-attachment: scroll; }
+  .sm-active-bg-attachment-scroll:active { background-attachment: scroll; }
+  .sm-disabled-bg-attachment-scroll:disabled { background-attachment: scroll; }
+  .sm-focus-visible-bg-attachment-scroll:focus-visible { background-attachment: scroll; }
+  .sm-focus-within-bg-attachment-scroll:focus-within { background-attachment: scroll; }
+  .group:hover .sm-group-hover-bg-attachment-scroll { background-attachment: scroll; }
+  .sm-bg-clip-border { background-clip: border-box; }
+  .sm-hover-bg-clip-border:hover { background-clip: border-box; }
+  .sm-focus-bg-clip-border:focus { background-clip: border-box; }
+  .sm-active-bg-clip-border:active { background-clip: border-box; }
+  .sm-disabled-bg-clip-border:disabled { background-clip: border-box; }
+  .sm-focus-visible-bg-clip-border:focus-visible { background-clip: border-box; }
+  .sm-focus-within-bg-clip-border:focus-within { background-clip: border-box; }
+  .group:hover .sm-group-hover-bg-clip-border { background-clip: border-box; }
+  .sm-bg-clip-padding { background-clip: padding-box; }
+  .sm-hover-bg-clip-padding:hover { background-clip: padding-box; }
+  .sm-focus-bg-clip-padding:focus { background-clip: padding-box; }
+  .sm-active-bg-clip-padding:active { background-clip: padding-box; }
+  .sm-disabled-bg-clip-padding:disabled { background-clip: padding-box; }
+  .sm-focus-visible-bg-clip-padding:focus-visible { background-clip: padding-box; }
+  .sm-focus-within-bg-clip-padding:focus-within { background-clip: padding-box; }
+  .group:hover .sm-group-hover-bg-clip-padding { background-clip: padding-box; }
+  .sm-bg-clip-content { background-clip: content-box; }
+  .sm-hover-bg-clip-content:hover { background-clip: content-box; }
+  .sm-focus-bg-clip-content:focus { background-clip: content-box; }
+  .sm-active-bg-clip-content:active { background-clip: content-box; }
+  .sm-disabled-bg-clip-content:disabled { background-clip: content-box; }
+  .sm-focus-visible-bg-clip-content:focus-visible { background-clip: content-box; }
+  .sm-focus-within-bg-clip-content:focus-within { background-clip: content-box; }
+  .group:hover .sm-group-hover-bg-clip-content { background-clip: content-box; }
+  .sm-bg-image-none { background-image: none; }
+  .sm-hover-bg-image-none:hover { background-image: none; }
+  .sm-focus-bg-image-none:focus { background-image: none; }
+  .sm-active-bg-image-none:active { background-image: none; }
+  .sm-disabled-bg-image-none:disabled { background-image: none; }
+  .sm-focus-visible-bg-image-none:focus-visible { background-image: none; }
+  .sm-focus-within-bg-image-none:focus-within { background-image: none; }
+  .group:hover .sm-group-hover-bg-image-none { background-image: none; }
+  .sm-bg-image-gradient-to-r { background-image: linear-gradient(to right, var(--quanta-from-color)); }
+  .sm-hover-bg-image-gradient-to-r:hover { background-image: linear-gradient(to right, var(--quanta-from-color)); }
+  .sm-focus-bg-image-gradient-to-r:focus { background-image: linear-gradient(to right, var(--quanta-from-color)); }
+  .sm-active-bg-image-gradient-to-r:active { background-image: linear-gradient(to right, var(--quanta-from-color)); }
+  .sm-disabled-bg-image-gradient-to-r:disabled { background-image: linear-gradient(to right, var(--quanta-from-color)); }
+  .sm-focus-visible-bg-image-gradient-to-r:focus-visible { background-image: linear-gradient(to right, var(--quanta-from-color)); }
+  .sm-focus-within-bg-image-gradient-to-r:focus-within { background-image: linear-gradient(to right, var(--quanta-from-color)); }
+  .group:hover .sm-group-hover-bg-image-gradient-to-r { background-image: linear-gradient(to right, var(--quanta-from-color)); }
+  .sm-bg-origin-border { background-origin: border-box; }
+  .sm-hover-bg-origin-border:hover { background-origin: border-box; }
+  .sm-focus-bg-origin-border:focus { background-origin: border-box; }
+  .sm-active-bg-origin-border:active { background-origin: border-box; }
+  .sm-disabled-bg-origin-border:disabled { background-origin: border-box; }
+  .sm-focus-visible-bg-origin-border:focus-visible { background-origin: border-box; }
+  .sm-focus-within-bg-origin-border:focus-within { background-origin: border-box; }
+  .group:hover .sm-group-hover-bg-origin-border { background-origin: border-box; }
+  .sm-bg-origin-padding { background-origin: padding-box; }
+  .sm-hover-bg-origin-padding:hover { background-origin: padding-box; }
+  .sm-focus-bg-origin-padding:focus { background-origin: padding-box; }
+  .sm-active-bg-origin-padding:active { background-origin: padding-box; }
+  .sm-disabled-bg-origin-padding:disabled { background-origin: padding-box; }
+  .sm-focus-visible-bg-origin-padding:focus-visible { background-origin: padding-box; }
+  .sm-focus-within-bg-origin-padding:focus-within { background-origin: padding-box; }
+  .group:hover .sm-group-hover-bg-origin-padding { background-origin: padding-box; }
+  .sm-bg-origin-content { background-origin: content-box; }
+  .sm-hover-bg-origin-content:hover { background-origin: content-box; }
+  .sm-focus-bg-origin-content:focus { background-origin: content-box; }
+  .sm-active-bg-origin-content:active { background-origin: content-box; }
+  .sm-disabled-bg-origin-content:disabled { background-origin: content-box; }
+  .sm-focus-visible-bg-origin-content:focus-visible { background-origin: content-box; }
+  .sm-focus-within-bg-origin-content:focus-within { background-origin: content-box; }
+  .group:hover .sm-group-hover-bg-origin-content { background-origin: content-box; }
+  .sm-bg-position-center { background-position: center; }
+  .sm-hover-bg-position-center:hover { background-position: center; }
+  .sm-focus-bg-position-center:focus { background-position: center; }
+  .sm-active-bg-position-center:active { background-position: center; }
+  .sm-disabled-bg-position-center:disabled { background-position: center; }
+  .sm-focus-visible-bg-position-center:focus-visible { background-position: center; }
+  .sm-focus-within-bg-position-center:focus-within { background-position: center; }
+  .group:hover .sm-group-hover-bg-position-center { background-position: center; }
+  .sm-bg-position-top { background-position: top; }
+  .sm-hover-bg-position-top:hover { background-position: top; }
+  .sm-focus-bg-position-top:focus { background-position: top; }
+  .sm-active-bg-position-top:active { background-position: top; }
+  .sm-disabled-bg-position-top:disabled { background-position: top; }
+  .sm-focus-visible-bg-position-top:focus-visible { background-position: top; }
+  .sm-focus-within-bg-position-top:focus-within { background-position: top; }
+  .group:hover .sm-group-hover-bg-position-top { background-position: top; }
+  .sm-bg-position-bottom { background-position: bottom; }
+  .sm-hover-bg-position-bottom:hover { background-position: bottom; }
+  .sm-focus-bg-position-bottom:focus { background-position: bottom; }
+  .sm-active-bg-position-bottom:active { background-position: bottom; }
+  .sm-disabled-bg-position-bottom:disabled { background-position: bottom; }
+  .sm-focus-visible-bg-position-bottom:focus-visible { background-position: bottom; }
+  .sm-focus-within-bg-position-bottom:focus-within { background-position: bottom; }
+  .group:hover .sm-group-hover-bg-position-bottom { background-position: bottom; }
+  .sm-bg-position-left { background-position: left; }
+  .sm-hover-bg-position-left:hover { background-position: left; }
+  .sm-focus-bg-position-left:focus { background-position: left; }
+  .sm-active-bg-position-left:active { background-position: left; }
+  .sm-disabled-bg-position-left:disabled { background-position: left; }
+  .sm-focus-visible-bg-position-left:focus-visible { background-position: left; }
+  .sm-focus-within-bg-position-left:focus-within { background-position: left; }
+  .group:hover .sm-group-hover-bg-position-left { background-position: left; }
+  .sm-bg-position-right { background-position: right; }
+  .sm-hover-bg-position-right:hover { background-position: right; }
+  .sm-focus-bg-position-right:focus { background-position: right; }
+  .sm-active-bg-position-right:active { background-position: right; }
+  .sm-disabled-bg-position-right:disabled { background-position: right; }
+  .sm-focus-visible-bg-position-right:focus-visible { background-position: right; }
+  .sm-focus-within-bg-position-right:focus-within { background-position: right; }
+  .group:hover .sm-group-hover-bg-position-right { background-position: right; }
+  .sm-bg-position-top-left { background-position: top left; }
+  .sm-hover-bg-position-top-left:hover { background-position: top left; }
+  .sm-focus-bg-position-top-left:focus { background-position: top left; }
+  .sm-active-bg-position-top-left:active { background-position: top left; }
+  .sm-disabled-bg-position-top-left:disabled { background-position: top left; }
+  .sm-focus-visible-bg-position-top-left:focus-visible { background-position: top left; }
+  .sm-focus-within-bg-position-top-left:focus-within { background-position: top left; }
+  .group:hover .sm-group-hover-bg-position-top-left { background-position: top left; }
+  .sm-bg-position-top-right { background-position: top right; }
+  .sm-hover-bg-position-top-right:hover { background-position: top right; }
+  .sm-focus-bg-position-top-right:focus { background-position: top right; }
+  .sm-active-bg-position-top-right:active { background-position: top right; }
+  .sm-disabled-bg-position-top-right:disabled { background-position: top right; }
+  .sm-focus-visible-bg-position-top-right:focus-visible { background-position: top right; }
+  .sm-focus-within-bg-position-top-right:focus-within { background-position: top right; }
+  .group:hover .sm-group-hover-bg-position-top-right { background-position: top right; }
+  .sm-bg-position-bottom-left { background-position: bottom left; }
+  .sm-hover-bg-position-bottom-left:hover { background-position: bottom left; }
+  .sm-focus-bg-position-bottom-left:focus { background-position: bottom left; }
+  .sm-active-bg-position-bottom-left:active { background-position: bottom left; }
+  .sm-disabled-bg-position-bottom-left:disabled { background-position: bottom left; }
+  .sm-focus-visible-bg-position-bottom-left:focus-visible { background-position: bottom left; }
+  .sm-focus-within-bg-position-bottom-left:focus-within { background-position: bottom left; }
+  .group:hover .sm-group-hover-bg-position-bottom-left { background-position: bottom left; }
+  .sm-bg-position-bottom-right { background-position: bottom right; }
+  .sm-hover-bg-position-bottom-right:hover { background-position: bottom right; }
+  .sm-focus-bg-position-bottom-right:focus { background-position: bottom right; }
+  .sm-active-bg-position-bottom-right:active { background-position: bottom right; }
+  .sm-disabled-bg-position-bottom-right:disabled { background-position: bottom right; }
+  .sm-focus-visible-bg-position-bottom-right:focus-visible { background-position: bottom right; }
+  .sm-focus-within-bg-position-bottom-right:focus-within { background-position: bottom right; }
+  .group:hover .sm-group-hover-bg-position-bottom-right { background-position: bottom right; }
+  .sm-bg-repeat-none { background-repeat: no-repeat; }
+  .sm-hover-bg-repeat-none:hover { background-repeat: no-repeat; }
+  .sm-focus-bg-repeat-none:focus { background-repeat: no-repeat; }
+  .sm-active-bg-repeat-none:active { background-repeat: no-repeat; }
+  .sm-disabled-bg-repeat-none:disabled { background-repeat: no-repeat; }
+  .sm-focus-visible-bg-repeat-none:focus-visible { background-repeat: no-repeat; }
+  .sm-focus-within-bg-repeat-none:focus-within { background-repeat: no-repeat; }
+  .group:hover .sm-group-hover-bg-repeat-none { background-repeat: no-repeat; }
+  .sm-bg-repeat-x { background-repeat: repeat-x; }
+  .sm-hover-bg-repeat-x:hover { background-repeat: repeat-x; }
+  .sm-focus-bg-repeat-x:focus { background-repeat: repeat-x; }
+  .sm-active-bg-repeat-x:active { background-repeat: repeat-x; }
+  .sm-disabled-bg-repeat-x:disabled { background-repeat: repeat-x; }
+  .sm-focus-visible-bg-repeat-x:focus-visible { background-repeat: repeat-x; }
+  .sm-focus-within-bg-repeat-x:focus-within { background-repeat: repeat-x; }
+  .group:hover .sm-group-hover-bg-repeat-x { background-repeat: repeat-x; }
+  .sm-bg-repeat-y { background-repeat: repeat-y; }
+  .sm-hover-bg-repeat-y:hover { background-repeat: repeat-y; }
+  .sm-focus-bg-repeat-y:focus { background-repeat: repeat-y; }
+  .sm-active-bg-repeat-y:active { background-repeat: repeat-y; }
+  .sm-disabled-bg-repeat-y:disabled { background-repeat: repeat-y; }
+  .sm-focus-visible-bg-repeat-y:focus-visible { background-repeat: repeat-y; }
+  .sm-focus-within-bg-repeat-y:focus-within { background-repeat: repeat-y; }
+  .group:hover .sm-group-hover-bg-repeat-y { background-repeat: repeat-y; }
+  .sm-bg-repeat-round { background-repeat: round; }
+  .sm-hover-bg-repeat-round:hover { background-repeat: round; }
+  .sm-focus-bg-repeat-round:focus { background-repeat: round; }
+  .sm-active-bg-repeat-round:active { background-repeat: round; }
+  .sm-disabled-bg-repeat-round:disabled { background-repeat: round; }
+  .sm-focus-visible-bg-repeat-round:focus-visible { background-repeat: round; }
+  .sm-focus-within-bg-repeat-round:focus-within { background-repeat: round; }
+  .group:hover .sm-group-hover-bg-repeat-round { background-repeat: round; }
+  .sm-bg-repeat-space { background-repeat: space; }
+  .sm-hover-bg-repeat-space:hover { background-repeat: space; }
+  .sm-focus-bg-repeat-space:focus { background-repeat: space; }
+  .sm-active-bg-repeat-space:active { background-repeat: space; }
+  .sm-disabled-bg-repeat-space:disabled { background-repeat: space; }
+  .sm-focus-visible-bg-repeat-space:focus-visible { background-repeat: space; }
+  .sm-focus-within-bg-repeat-space:focus-within { background-repeat: space; }
+  .group:hover .sm-group-hover-bg-repeat-space { background-repeat: space; }
+  .sm-bg-size-auto { background-size: auto; }
+  .sm-hover-bg-size-auto:hover { background-size: auto; }
+  .sm-focus-bg-size-auto:focus { background-size: auto; }
+  .sm-active-bg-size-auto:active { background-size: auto; }
+  .sm-disabled-bg-size-auto:disabled { background-size: auto; }
+  .sm-focus-visible-bg-size-auto:focus-visible { background-size: auto; }
+  .sm-focus-within-bg-size-auto:focus-within { background-size: auto; }
+  .group:hover .sm-group-hover-bg-size-auto { background-size: auto; }
+  .sm-bg-size-cover { background-size: cover; }
+  .sm-hover-bg-size-cover:hover { background-size: cover; }
+  .sm-focus-bg-size-cover:focus { background-size: cover; }
+  .sm-active-bg-size-cover:active { background-size: cover; }
+  .sm-disabled-bg-size-cover:disabled { background-size: cover; }
+  .sm-focus-visible-bg-size-cover:focus-visible { background-size: cover; }
+  .sm-focus-within-bg-size-cover:focus-within { background-size: cover; }
+  .group:hover .sm-group-hover-bg-size-cover { background-size: cover; }
+  .sm-bg-size-contain { background-size: contain; }
+  .sm-hover-bg-size-contain:hover { background-size: contain; }
+  .sm-focus-bg-size-contain:focus { background-size: contain; }
+  .sm-active-bg-size-contain:active { background-size: contain; }
+  .sm-disabled-bg-size-contain:disabled { background-size: contain; }
+  .sm-focus-visible-bg-size-contain:focus-visible { background-size: contain; }
+  .sm-focus-within-bg-size-contain:focus-within { background-size: contain; }
+  .group:hover .sm-group-hover-bg-size-contain { background-size: contain; }
+}
+
+/* MD Breakpoint */
+@media (min-width: 768px) {
+  .md-bg-attachment-fixed { background-attachment: fixed; }
+  .md-hover-bg-attachment-fixed:hover { background-attachment: fixed; }
+  .md-focus-bg-attachment-fixed:focus { background-attachment: fixed; }
+  .md-active-bg-attachment-fixed:active { background-attachment: fixed; }
+  .md-disabled-bg-attachment-fixed:disabled { background-attachment: fixed; }
+  .md-focus-visible-bg-attachment-fixed:focus-visible { background-attachment: fixed; }
+  .md-focus-within-bg-attachment-fixed:focus-within { background-attachment: fixed; }
+  .group:hover .md-group-hover-bg-attachment-fixed { background-attachment: fixed; }
+  .md-bg-attachment-local { background-attachment: local; }
+  .md-hover-bg-attachment-local:hover { background-attachment: local; }
+  .md-focus-bg-attachment-local:focus { background-attachment: local; }
+  .md-active-bg-attachment-local:active { background-attachment: local; }
+  .md-disabled-bg-attachment-local:disabled { background-attachment: local; }
+  .md-focus-visible-bg-attachment-local:focus-visible { background-attachment: local; }
+  .md-focus-within-bg-attachment-local:focus-within { background-attachment: local; }
+  .group:hover .md-group-hover-bg-attachment-local { background-attachment: local; }
+  .md-bg-attachment-scroll { background-attachment: scroll; }
+  .md-hover-bg-attachment-scroll:hover { background-attachment: scroll; }
+  .md-focus-bg-attachment-scroll:focus { background-attachment: scroll; }
+  .md-active-bg-attachment-scroll:active { background-attachment: scroll; }
+  .md-disabled-bg-attachment-scroll:disabled { background-attachment: scroll; }
+  .md-focus-visible-bg-attachment-scroll:focus-visible { background-attachment: scroll; }
+  .md-focus-within-bg-attachment-scroll:focus-within { background-attachment: scroll; }
+  .group:hover .md-group-hover-bg-attachment-scroll { background-attachment: scroll; }
+  .md-bg-clip-border { background-clip: border-box; }
+  .md-hover-bg-clip-border:hover { background-clip: border-box; }
+  .md-focus-bg-clip-border:focus { background-clip: border-box; }
+  .md-active-bg-clip-border:active { background-clip: border-box; }
+  .md-disabled-bg-clip-border:disabled { background-clip: border-box; }
+  .md-focus-visible-bg-clip-border:focus-visible { background-clip: border-box; }
+  .md-focus-within-bg-clip-border:focus-within { background-clip: border-box; }
+  .group:hover .md-group-hover-bg-clip-border { background-clip: border-box; }
+  .md-bg-clip-padding { background-clip: padding-box; }
+  .md-hover-bg-clip-padding:hover { background-clip: padding-box; }
+  .md-focus-bg-clip-padding:focus { background-clip: padding-box; }
+  .md-active-bg-clip-padding:active { background-clip: padding-box; }
+  .md-disabled-bg-clip-padding:disabled { background-clip: padding-box; }
+  .md-focus-visible-bg-clip-padding:focus-visible { background-clip: padding-box; }
+  .md-focus-within-bg-clip-padding:focus-within { background-clip: padding-box; }
+  .group:hover .md-group-hover-bg-clip-padding { background-clip: padding-box; }
+  .md-bg-clip-content { background-clip: content-box; }
+  .md-hover-bg-clip-content:hover { background-clip: content-box; }
+  .md-focus-bg-clip-content:focus { background-clip: content-box; }
+  .md-active-bg-clip-content:active { background-clip: content-box; }
+  .md-disabled-bg-clip-content:disabled { background-clip: content-box; }
+  .md-focus-visible-bg-clip-content:focus-visible { background-clip: content-box; }
+  .md-focus-within-bg-clip-content:focus-within { background-clip: content-box; }
+  .group:hover .md-group-hover-bg-clip-content { background-clip: content-box; }
+  .md-bg-image-none { background-image: none; }
+  .md-hover-bg-image-none:hover { background-image: none; }
+  .md-focus-bg-image-none:focus { background-image: none; }
+  .md-active-bg-image-none:active { background-image: none; }
+  .md-disabled-bg-image-none:disabled { background-image: none; }
+  .md-focus-visible-bg-image-none:focus-visible { background-image: none; }
+  .md-focus-within-bg-image-none:focus-within { background-image: none; }
+  .group:hover .md-group-hover-bg-image-none { background-image: none; }
+  .md-bg-image-gradient-to-r { background-image: linear-gradient(to right, var(--quanta-from-color)); }
+  .md-hover-bg-image-gradient-to-r:hover { background-image: linear-gradient(to right, var(--quanta-from-color)); }
+  .md-focus-bg-image-gradient-to-r:focus { background-image: linear-gradient(to right, var(--quanta-from-color)); }
+  .md-active-bg-image-gradient-to-r:active { background-image: linear-gradient(to right, var(--quanta-from-color)); }
+  .md-disabled-bg-image-gradient-to-r:disabled { background-image: linear-gradient(to right, var(--quanta-from-color)); }
+  .md-focus-visible-bg-image-gradient-to-r:focus-visible { background-image: linear-gradient(to right, var(--quanta-from-color)); }
+  .md-focus-within-bg-image-gradient-to-r:focus-within { background-image: linear-gradient(to right, var(--quanta-from-color)); }
+  .group:hover .md-group-hover-bg-image-gradient-to-r { background-image: linear-gradient(to right, var(--quanta-from-color)); }
+  .md-bg-origin-border { background-origin: border-box; }
+  .md-hover-bg-origin-border:hover { background-origin: border-box; }
+  .md-focus-bg-origin-border:focus { background-origin: border-box; }
+  .md-active-bg-origin-border:active { background-origin: border-box; }
+  .md-disabled-bg-origin-border:disabled { background-origin: border-box; }
+  .md-focus-visible-bg-origin-border:focus-visible { background-origin: border-box; }
+  .md-focus-within-bg-origin-border:focus-within { background-origin: border-box; }
+  .group:hover .md-group-hover-bg-origin-border { background-origin: border-box; }
+  .md-bg-origin-padding { background-origin: padding-box; }
+  .md-hover-bg-origin-padding:hover { background-origin: padding-box; }
+  .md-focus-bg-origin-padding:focus { background-origin: padding-box; }
+  .md-active-bg-origin-padding:active { background-origin: padding-box; }
+  .md-disabled-bg-origin-padding:disabled { background-origin: padding-box; }
+  .md-focus-visible-bg-origin-padding:focus-visible { background-origin: padding-box; }
+  .md-focus-within-bg-origin-padding:focus-within { background-origin: padding-box; }
+  .group:hover .md-group-hover-bg-origin-padding { background-origin: padding-box; }
+  .md-bg-origin-content { background-origin: content-box; }
+  .md-hover-bg-origin-content:hover { background-origin: content-box; }
+  .md-focus-bg-origin-content:focus { background-origin: content-box; }
+  .md-active-bg-origin-content:active { background-origin: content-box; }
+  .md-disabled-bg-origin-content:disabled { background-origin: content-box; }
+  .md-focus-visible-bg-origin-content:focus-visible { background-origin: content-box; }
+  .md-focus-within-bg-origin-content:focus-within { background-origin: content-box; }
+  .group:hover .md-group-hover-bg-origin-content { background-origin: content-box; }
+  .md-bg-position-center { background-position: center; }
+  .md-hover-bg-position-center:hover { background-position: center; }
+  .md-focus-bg-position-center:focus { background-position: center; }
+  .md-active-bg-position-center:active { background-position: center; }
+  .md-disabled-bg-position-center:disabled { background-position: center; }
+  .md-focus-visible-bg-position-center:focus-visible { background-position: center; }
+  .md-focus-within-bg-position-center:focus-within { background-position: center; }
+  .group:hover .md-group-hover-bg-position-center { background-position: center; }
+  .md-bg-position-top { background-position: top; }
+  .md-hover-bg-position-top:hover { background-position: top; }
+  .md-focus-bg-position-top:focus { background-position: top; }
+  .md-active-bg-position-top:active { background-position: top; }
+  .md-disabled-bg-position-top:disabled { background-position: top; }
+  .md-focus-visible-bg-position-top:focus-visible { background-position: top; }
+  .md-focus-within-bg-position-top:focus-within { background-position: top; }
+  .group:hover .md-group-hover-bg-position-top { background-position: top; }
+  .md-bg-position-bottom { background-position: bottom; }
+  .md-hover-bg-position-bottom:hover { background-position: bottom; }
+  .md-focus-bg-position-bottom:focus { background-position: bottom; }
+  .md-active-bg-position-bottom:active { background-position: bottom; }
+  .md-disabled-bg-position-bottom:disabled { background-position: bottom; }
+  .md-focus-visible-bg-position-bottom:focus-visible { background-position: bottom; }
+  .md-focus-within-bg-position-bottom:focus-within { background-position: bottom; }
+  .group:hover .md-group-hover-bg-position-bottom { background-position: bottom; }
+  .md-bg-position-left { background-position: left; }
+  .md-hover-bg-position-left:hover { background-position: left; }
+  .md-focus-bg-position-left:focus { background-position: left; }
+  .md-active-bg-position-left:active { background-position: left; }
+  .md-disabled-bg-position-left:disabled { background-position: left; }
+  .md-focus-visible-bg-position-left:focus-visible { background-position: left; }
+  .md-focus-within-bg-position-left:focus-within { background-position: left; }
+  .group:hover .md-group-hover-bg-position-left { background-position: left; }
+  .md-bg-position-right { background-position: right; }
+  .md-hover-bg-position-right:hover { background-position: right; }
+  .md-focus-bg-position-right:focus { background-position: right; }
+  .md-active-bg-position-right:active { background-position: right; }
+  .md-disabled-bg-position-right:disabled { background-position: right; }
+  .md-focus-visible-bg-position-right:focus-visible { background-position: right; }
+  .md-focus-within-bg-position-right:focus-within { background-position: right; }
+  .group:hover .md-group-hover-bg-position-right { background-position: right; }
+  .md-bg-position-top-left { background-position: top left; }
+  .md-hover-bg-position-top-left:hover { background-position: top left; }
+  .md-focus-bg-position-top-left:focus { background-position: top left; }
+  .md-active-bg-position-top-left:active { background-position: top left; }
+  .md-disabled-bg-position-top-left:disabled { background-position: top left; }
+  .md-focus-visible-bg-position-top-left:focus-visible { background-position: top left; }
+  .md-focus-within-bg-position-top-left:focus-within { background-position: top left; }
+  .group:hover .md-group-hover-bg-position-top-left { background-position: top left; }
+  .md-bg-position-top-right { background-position: top right; }
+  .md-hover-bg-position-top-right:hover { background-position: top right; }
+  .md-focus-bg-position-top-right:focus { background-position: top right; }
+  .md-active-bg-position-top-right:active { background-position: top right; }
+  .md-disabled-bg-position-top-right:disabled { background-position: top right; }
+  .md-focus-visible-bg-position-top-right:focus-visible { background-position: top right; }
+  .md-focus-within-bg-position-top-right:focus-within { background-position: top right; }
+  .group:hover .md-group-hover-bg-position-top-right { background-position: top right; }
+  .md-bg-position-bottom-left { background-position: bottom left; }
+  .md-hover-bg-position-bottom-left:hover { background-position: bottom left; }
+  .md-focus-bg-position-bottom-left:focus { background-position: bottom left; }
+  .md-active-bg-position-bottom-left:active { background-position: bottom left; }
+  .md-disabled-bg-position-bottom-left:disabled { background-position: bottom left; }
+  .md-focus-visible-bg-position-bottom-left:focus-visible { background-position: bottom left; }
+  .md-focus-within-bg-position-bottom-left:focus-within { background-position: bottom left; }
+  .group:hover .md-group-hover-bg-position-bottom-left { background-position: bottom left; }
+  .md-bg-position-bottom-right { background-position: bottom right; }
+  .md-hover-bg-position-bottom-right:hover { background-position: bottom right; }
+  .md-focus-bg-position-bottom-right:focus { background-position: bottom right; }
+  .md-active-bg-position-bottom-right:active { background-position: bottom right; }
+  .md-disabled-bg-position-bottom-right:disabled { background-position: bottom right; }
+  .md-focus-visible-bg-position-bottom-right:focus-visible { background-position: bottom right; }
+  .md-focus-within-bg-position-bottom-right:focus-within { background-position: bottom right; }
+  .group:hover .md-group-hover-bg-position-bottom-right { background-position: bottom right; }
+  .md-bg-repeat-none { background-repeat: no-repeat; }
+  .md-hover-bg-repeat-none:hover { background-repeat: no-repeat; }
+  .md-focus-bg-repeat-none:focus { background-repeat: no-repeat; }
+  .md-active-bg-repeat-none:active { background-repeat: no-repeat; }
+  .md-disabled-bg-repeat-none:disabled { background-repeat: no-repeat; }
+  .md-focus-visible-bg-repeat-none:focus-visible { background-repeat: no-repeat; }
+  .md-focus-within-bg-repeat-none:focus-within { background-repeat: no-repeat; }
+  .group:hover .md-group-hover-bg-repeat-none { background-repeat: no-repeat; }
+  .md-bg-repeat-x { background-repeat: repeat-x; }
+  .md-hover-bg-repeat-x:hover { background-repeat: repeat-x; }
+  .md-focus-bg-repeat-x:focus { background-repeat: repeat-x; }
+  .md-active-bg-repeat-x:active { background-repeat: repeat-x; }
+  .md-disabled-bg-repeat-x:disabled { background-repeat: repeat-x; }
+  .md-focus-visible-bg-repeat-x:focus-visible { background-repeat: repeat-x; }
+  .md-focus-within-bg-repeat-x:focus-within { background-repeat: repeat-x; }
+  .group:hover .md-group-hover-bg-repeat-x { background-repeat: repeat-x; }
+  .md-bg-repeat-y { background-repeat: repeat-y; }
+  .md-hover-bg-repeat-y:hover { background-repeat: repeat-y; }
+  .md-focus-bg-repeat-y:focus { background-repeat: repeat-y; }
+  .md-active-bg-repeat-y:active { background-repeat: repeat-y; }
+  .md-disabled-bg-repeat-y:disabled { background-repeat: repeat-y; }
+  .md-focus-visible-bg-repeat-y:focus-visible { background-repeat: repeat-y; }
+  .md-focus-within-bg-repeat-y:focus-within { background-repeat: repeat-y; }
+  .group:hover .md-group-hover-bg-repeat-y { background-repeat: repeat-y; }
+  .md-bg-repeat-round { background-repeat: round; }
+  .md-hover-bg-repeat-round:hover { background-repeat: round; }
+  .md-focus-bg-repeat-round:focus { background-repeat: round; }
+  .md-active-bg-repeat-round:active { background-repeat: round; }
+  .md-disabled-bg-repeat-round:disabled { background-repeat: round; }
+  .md-focus-visible-bg-repeat-round:focus-visible { background-repeat: round; }
+  .md-focus-within-bg-repeat-round:focus-within { background-repeat: round; }
+  .group:hover .md-group-hover-bg-repeat-round { background-repeat: round; }
+  .md-bg-repeat-space { background-repeat: space; }
+  .md-hover-bg-repeat-space:hover { background-repeat: space; }
+  .md-focus-bg-repeat-space:focus { background-repeat: space; }
+  .md-active-bg-repeat-space:active { background-repeat: space; }
+  .md-disabled-bg-repeat-space:disabled { background-repeat: space; }
+  .md-focus-visible-bg-repeat-space:focus-visible { background-repeat: space; }
+  .md-focus-within-bg-repeat-space:focus-within { background-repeat: space; }
+  .group:hover .md-group-hover-bg-repeat-space { background-repeat: space; }
+  .md-bg-size-auto { background-size: auto; }
+  .md-hover-bg-size-auto:hover { background-size: auto; }
+  .md-focus-bg-size-auto:focus { background-size: auto; }
+  .md-active-bg-size-auto:active { background-size: auto; }
+  .md-disabled-bg-size-auto:disabled { background-size: auto; }
+  .md-focus-visible-bg-size-auto:focus-visible { background-size: auto; }
+  .md-focus-within-bg-size-auto:focus-within { background-size: auto; }
+  .group:hover .md-group-hover-bg-size-auto { background-size: auto; }
+  .md-bg-size-cover { background-size: cover; }
+  .md-hover-bg-size-cover:hover { background-size: cover; }
+  .md-focus-bg-size-cover:focus { background-size: cover; }
+  .md-active-bg-size-cover:active { background-size: cover; }
+  .md-disabled-bg-size-cover:disabled { background-size: cover; }
+  .md-focus-visible-bg-size-cover:focus-visible { background-size: cover; }
+  .md-focus-within-bg-size-cover:focus-within { background-size: cover; }
+  .group:hover .md-group-hover-bg-size-cover { background-size: cover; }
+  .md-bg-size-contain { background-size: contain; }
+  .md-hover-bg-size-contain:hover { background-size: contain; }
+  .md-focus-bg-size-contain:focus { background-size: contain; }
+  .md-active-bg-size-contain:active { background-size: contain; }
+  .md-disabled-bg-size-contain:disabled { background-size: contain; }
+  .md-focus-visible-bg-size-contain:focus-visible { background-size: contain; }
+  .md-focus-within-bg-size-contain:focus-within { background-size: contain; }
+  .group:hover .md-group-hover-bg-size-contain { background-size: contain; }
+}
+
+/* LG Breakpoint */
+@media (min-width: 1024px) {
+  .lg-bg-attachment-fixed { background-attachment: fixed; }
+  .lg-hover-bg-attachment-fixed:hover { background-attachment: fixed; }
+  .lg-focus-bg-attachment-fixed:focus { background-attachment: fixed; }
+  .lg-active-bg-attachment-fixed:active { background-attachment: fixed; }
+  .lg-disabled-bg-attachment-fixed:disabled { background-attachment: fixed; }
+  .lg-focus-visible-bg-attachment-fixed:focus-visible { background-attachment: fixed; }
+  .lg-focus-within-bg-attachment-fixed:focus-within { background-attachment: fixed; }
+  .group:hover .lg-group-hover-bg-attachment-fixed { background-attachment: fixed; }
+  .lg-bg-attachment-local { background-attachment: local; }
+  .lg-hover-bg-attachment-local:hover { background-attachment: local; }
+  .lg-focus-bg-attachment-local:focus { background-attachment: local; }
+  .lg-active-bg-attachment-local:active { background-attachment: local; }
+  .lg-disabled-bg-attachment-local:disabled { background-attachment: local; }
+  .lg-focus-visible-bg-attachment-local:focus-visible { background-attachment: local; }
+  .lg-focus-within-bg-attachment-local:focus-within { background-attachment: local; }
+  .group:hover .lg-group-hover-bg-attachment-local { background-attachment: local; }
+  .lg-bg-attachment-scroll { background-attachment: scroll; }
+  .lg-hover-bg-attachment-scroll:hover { background-attachment: scroll; }
+  .lg-focus-bg-attachment-scroll:focus { background-attachment: scroll; }
+  .lg-active-bg-attachment-scroll:active { background-attachment: scroll; }
+  .lg-disabled-bg-attachment-scroll:disabled { background-attachment: scroll; }
+  .lg-focus-visible-bg-attachment-scroll:focus-visible { background-attachment: scroll; }
+  .lg-focus-within-bg-attachment-scroll:focus-within { background-attachment: scroll; }
+  .group:hover .lg-group-hover-bg-attachment-scroll { background-attachment: scroll; }
+  .lg-bg-clip-border { background-clip: border-box; }
+  .lg-hover-bg-clip-border:hover { background-clip: border-box; }
+  .lg-focus-bg-clip-border:focus { background-clip: border-box; }
+  .lg-active-bg-clip-border:active { background-clip: border-box; }
+  .lg-disabled-bg-clip-border:disabled { background-clip: border-box; }
+  .lg-focus-visible-bg-clip-border:focus-visible { background-clip: border-box; }
+  .lg-focus-within-bg-clip-border:focus-within { background-clip: border-box; }
+  .group:hover .lg-group-hover-bg-clip-border { background-clip: border-box; }
+  .lg-bg-clip-padding { background-clip: padding-box; }
+  .lg-hover-bg-clip-padding:hover { background-clip: padding-box; }
+  .lg-focus-bg-clip-padding:focus { background-clip: padding-box; }
+  .lg-active-bg-clip-padding:active { background-clip: padding-box; }
+  .lg-disabled-bg-clip-padding:disabled { background-clip: padding-box; }
+  .lg-focus-visible-bg-clip-padding:focus-visible { background-clip: padding-box; }
+  .lg-focus-within-bg-clip-padding:focus-within { background-clip: padding-box; }
+  .group:hover .lg-group-hover-bg-clip-padding { background-clip: padding-box; }
+  .lg-bg-clip-content { background-clip: content-box; }
+  .lg-hover-bg-clip-content:hover { background-clip: content-box; }
+  .lg-focus-bg-clip-content:focus { background-clip: content-box; }
+  .lg-active-bg-clip-content:active { background-clip: content-box; }
+  .lg-disabled-bg-clip-content:disabled { background-clip: content-box; }
+  .lg-focus-visible-bg-clip-content:focus-visible { background-clip: content-box; }
+  .lg-focus-within-bg-clip-content:focus-within { background-clip: content-box; }
+  .group:hover .lg-group-hover-bg-clip-content { background-clip: content-box; }
+  .lg-bg-image-none { background-image: none; }
+  .lg-hover-bg-image-none:hover { background-image: none; }
+  .lg-focus-bg-image-none:focus { background-image: none; }
+  .lg-active-bg-image-none:active { background-image: none; }
+  .lg-disabled-bg-image-none:disabled { background-image: none; }
+  .lg-focus-visible-bg-image-none:focus-visible { background-image: none; }
+  .lg-focus-within-bg-image-none:focus-within { background-image: none; }
+  .group:hover .lg-group-hover-bg-image-none { background-image: none; }
+  .lg-bg-image-gradient-to-r { background-image: linear-gradient(to right, var(--quanta-from-color)); }
+  .lg-hover-bg-image-gradient-to-r:hover { background-image: linear-gradient(to right, var(--quanta-from-color)); }
+  .lg-focus-bg-image-gradient-to-r:focus { background-image: linear-gradient(to right, var(--quanta-from-color)); }
+  .lg-active-bg-image-gradient-to-r:active { background-image: linear-gradient(to right, var(--quanta-from-color)); }
+  .lg-disabled-bg-image-gradient-to-r:disabled { background-image: linear-gradient(to right, var(--quanta-from-color)); }
+  .lg-focus-visible-bg-image-gradient-to-r:focus-visible { background-image: linear-gradient(to right, var(--quanta-from-color)); }
+  .lg-focus-within-bg-image-gradient-to-r:focus-within { background-image: linear-gradient(to right, var(--quanta-from-color)); }
+  .group:hover .lg-group-hover-bg-image-gradient-to-r { background-image: linear-gradient(to right, var(--quanta-from-color)); }
+  .lg-bg-origin-border { background-origin: border-box; }
+  .lg-hover-bg-origin-border:hover { background-origin: border-box; }
+  .lg-focus-bg-origin-border:focus { background-origin: border-box; }
+  .lg-active-bg-origin-border:active { background-origin: border-box; }
+  .lg-disabled-bg-origin-border:disabled { background-origin: border-box; }
+  .lg-focus-visible-bg-origin-border:focus-visible { background-origin: border-box; }
+  .lg-focus-within-bg-origin-border:focus-within { background-origin: border-box; }
+  .group:hover .lg-group-hover-bg-origin-border { background-origin: border-box; }
+  .lg-bg-origin-padding { background-origin: padding-box; }
+  .lg-hover-bg-origin-padding:hover { background-origin: padding-box; }
+  .lg-focus-bg-origin-padding:focus { background-origin: padding-box; }
+  .lg-active-bg-origin-padding:active { background-origin: padding-box; }
+  .lg-disabled-bg-origin-padding:disabled { background-origin: padding-box; }
+  .lg-focus-visible-bg-origin-padding:focus-visible { background-origin: padding-box; }
+  .lg-focus-within-bg-origin-padding:focus-within { background-origin: padding-box; }
+  .group:hover .lg-group-hover-bg-origin-padding { background-origin: padding-box; }
+  .lg-bg-origin-content { background-origin: content-box; }
+  .lg-hover-bg-origin-content:hover { background-origin: content-box; }
+  .lg-focus-bg-origin-content:focus { background-origin: content-box; }
+  .lg-active-bg-origin-content:active { background-origin: content-box; }
+  .lg-disabled-bg-origin-content:disabled { background-origin: content-box; }
+  .lg-focus-visible-bg-origin-content:focus-visible { background-origin: content-box; }
+  .lg-focus-within-bg-origin-content:focus-within { background-origin: content-box; }
+  .group:hover .lg-group-hover-bg-origin-content { background-origin: content-box; }
+  .lg-bg-position-center { background-position: center; }
+  .lg-hover-bg-position-center:hover { background-position: center; }
+  .lg-focus-bg-position-center:focus { background-position: center; }
+  .lg-active-bg-position-center:active { background-position: center; }
+  .lg-disabled-bg-position-center:disabled { background-position: center; }
+  .lg-focus-visible-bg-position-center:focus-visible { background-position: center; }
+  .lg-focus-within-bg-position-center:focus-within { background-position: center; }
+  .group:hover .lg-group-hover-bg-position-center { background-position: center; }
+  .lg-bg-position-top { background-position: top; }
+  .lg-hover-bg-position-top:hover { background-position: top; }
+  .lg-focus-bg-position-top:focus { background-position: top; }
+  .lg-active-bg-position-top:active { background-position: top; }
+  .lg-disabled-bg-position-top:disabled { background-position: top; }
+  .lg-focus-visible-bg-position-top:focus-visible { background-position: top; }
+  .lg-focus-within-bg-position-top:focus-within { background-position: top; }
+  .group:hover .lg-group-hover-bg-position-top { background-position: top; }
+  .lg-bg-position-bottom { background-position: bottom; }
+  .lg-hover-bg-position-bottom:hover { background-position: bottom; }
+  .lg-focus-bg-position-bottom:focus { background-position: bottom; }
+  .lg-active-bg-position-bottom:active { background-position: bottom; }
+  .lg-disabled-bg-position-bottom:disabled { background-position: bottom; }
+  .lg-focus-visible-bg-position-bottom:focus-visible { background-position: bottom; }
+  .lg-focus-within-bg-position-bottom:focus-within { background-position: bottom; }
+  .group:hover .lg-group-hover-bg-position-bottom { background-position: bottom; }
+  .lg-bg-position-left { background-position: left; }
+  .lg-hover-bg-position-left:hover { background-position: left; }
+  .lg-focus-bg-position-left:focus { background-position: left; }
+  .lg-active-bg-position-left:active { background-position: left; }
+  .lg-disabled-bg-position-left:disabled { background-position: left; }
+  .lg-focus-visible-bg-position-left:focus-visible { background-position: left; }
+  .lg-focus-within-bg-position-left:focus-within { background-position: left; }
+  .group:hover .lg-group-hover-bg-position-left { background-position: left; }
+  .lg-bg-position-right { background-position: right; }
+  .lg-hover-bg-position-right:hover { background-position: right; }
+  .lg-focus-bg-position-right:focus { background-position: right; }
+  .lg-active-bg-position-right:active { background-position: right; }
+  .lg-disabled-bg-position-right:disabled { background-position: right; }
+  .lg-focus-visible-bg-position-right:focus-visible { background-position: right; }
+  .lg-focus-within-bg-position-right:focus-within { background-position: right; }
+  .group:hover .lg-group-hover-bg-position-right { background-position: right; }
+  .lg-bg-position-top-left { background-position: top left; }
+  .lg-hover-bg-position-top-left:hover { background-position: top left; }
+  .lg-focus-bg-position-top-left:focus { background-position: top left; }
+  .lg-active-bg-position-top-left:active { background-position: top left; }
+  .lg-disabled-bg-position-top-left:disabled { background-position: top left; }
+  .lg-focus-visible-bg-position-top-left:focus-visible { background-position: top left; }
+  .lg-focus-within-bg-position-top-left:focus-within { background-position: top left; }
+  .group:hover .lg-group-hover-bg-position-top-left { background-position: top left; }
+  .lg-bg-position-top-right { background-position: top right; }
+  .lg-hover-bg-position-top-right:hover { background-position: top right; }
+  .lg-focus-bg-position-top-right:focus { background-position: top right; }
+  .lg-active-bg-position-top-right:active { background-position: top right; }
+  .lg-disabled-bg-position-top-right:disabled { background-position: top right; }
+  .lg-focus-visible-bg-position-top-right:focus-visible { background-position: top right; }
+  .lg-focus-within-bg-position-top-right:focus-within { background-position: top right; }
+  .group:hover .lg-group-hover-bg-position-top-right { background-position: top right; }
+  .lg-bg-position-bottom-left { background-position: bottom left; }
+  .lg-hover-bg-position-bottom-left:hover { background-position: bottom left; }
+  .lg-focus-bg-position-bottom-left:focus { background-position: bottom left; }
+  .lg-active-bg-position-bottom-left:active { background-position: bottom left; }
+  .lg-disabled-bg-position-bottom-left:disabled { background-position: bottom left; }
+  .lg-focus-visible-bg-position-bottom-left:focus-visible { background-position: bottom left; }
+  .lg-focus-within-bg-position-bottom-left:focus-within { background-position: bottom left; }
+  .group:hover .lg-group-hover-bg-position-bottom-left { background-position: bottom left; }
+  .lg-bg-position-bottom-right { background-position: bottom right; }
+  .lg-hover-bg-position-bottom-right:hover { background-position: bottom right; }
+  .lg-focus-bg-position-bottom-right:focus { background-position: bottom right; }
+  .lg-active-bg-position-bottom-right:active { background-position: bottom right; }
+  .lg-disabled-bg-position-bottom-right:disabled { background-position: bottom right; }
+  .lg-focus-visible-bg-position-bottom-right:focus-visible { background-position: bottom right; }
+  .lg-focus-within-bg-position-bottom-right:focus-within { background-position: bottom right; }
+  .group:hover .lg-group-hover-bg-position-bottom-right { background-position: bottom right; }
+  .lg-bg-repeat-none { background-repeat: no-repeat; }
+  .lg-hover-bg-repeat-none:hover { background-repeat: no-repeat; }
+  .lg-focus-bg-repeat-none:focus { background-repeat: no-repeat; }
+  .lg-active-bg-repeat-none:active { background-repeat: no-repeat; }
+  .lg-disabled-bg-repeat-none:disabled { background-repeat: no-repeat; }
+  .lg-focus-visible-bg-repeat-none:focus-visible { background-repeat: no-repeat; }
+  .lg-focus-within-bg-repeat-none:focus-within { background-repeat: no-repeat; }
+  .group:hover .lg-group-hover-bg-repeat-none { background-repeat: no-repeat; }
+  .lg-bg-repeat-x { background-repeat: repeat-x; }
+  .lg-hover-bg-repeat-x:hover { background-repeat: repeat-x; }
+  .lg-focus-bg-repeat-x:focus { background-repeat: repeat-x; }
+  .lg-active-bg-repeat-x:active { background-repeat: repeat-x; }
+  .lg-disabled-bg-repeat-x:disabled { background-repeat: repeat-x; }
+  .lg-focus-visible-bg-repeat-x:focus-visible { background-repeat: repeat-x; }
+  .lg-focus-within-bg-repeat-x:focus-within { background-repeat: repeat-x; }
+  .group:hover .lg-group-hover-bg-repeat-x { background-repeat: repeat-x; }
+  .lg-bg-repeat-y { background-repeat: repeat-y; }
+  .lg-hover-bg-repeat-y:hover { background-repeat: repeat-y; }
+  .lg-focus-bg-repeat-y:focus { background-repeat: repeat-y; }
+  .lg-active-bg-repeat-y:active { background-repeat: repeat-y; }
+  .lg-disabled-bg-repeat-y:disabled { background-repeat: repeat-y; }
+  .lg-focus-visible-bg-repeat-y:focus-visible { background-repeat: repeat-y; }
+  .lg-focus-within-bg-repeat-y:focus-within { background-repeat: repeat-y; }
+  .group:hover .lg-group-hover-bg-repeat-y { background-repeat: repeat-y; }
+  .lg-bg-repeat-round { background-repeat: round; }
+  .lg-hover-bg-repeat-round:hover { background-repeat: round; }
+  .lg-focus-bg-repeat-round:focus { background-repeat: round; }
+  .lg-active-bg-repeat-round:active { background-repeat: round; }
+  .lg-disabled-bg-repeat-round:disabled { background-repeat: round; }
+  .lg-focus-visible-bg-repeat-round:focus-visible { background-repeat: round; }
+  .lg-focus-within-bg-repeat-round:focus-within { background-repeat: round; }
+  .group:hover .lg-group-hover-bg-repeat-round { background-repeat: round; }
+  .lg-bg-repeat-space { background-repeat: space; }
+  .lg-hover-bg-repeat-space:hover { background-repeat: space; }
+  .lg-focus-bg-repeat-space:focus { background-repeat: space; }
+  .lg-active-bg-repeat-space:active { background-repeat: space; }
+  .lg-disabled-bg-repeat-space:disabled { background-repeat: space; }
+  .lg-focus-visible-bg-repeat-space:focus-visible { background-repeat: space; }
+  .lg-focus-within-bg-repeat-space:focus-within { background-repeat: space; }
+  .group:hover .lg-group-hover-bg-repeat-space { background-repeat: space; }
+  .lg-bg-size-auto { background-size: auto; }
+  .lg-hover-bg-size-auto:hover { background-size: auto; }
+  .lg-focus-bg-size-auto:focus { background-size: auto; }
+  .lg-active-bg-size-auto:active { background-size: auto; }
+  .lg-disabled-bg-size-auto:disabled { background-size: auto; }
+  .lg-focus-visible-bg-size-auto:focus-visible { background-size: auto; }
+  .lg-focus-within-bg-size-auto:focus-within { background-size: auto; }
+  .group:hover .lg-group-hover-bg-size-auto { background-size: auto; }
+  .lg-bg-size-cover { background-size: cover; }
+  .lg-hover-bg-size-cover:hover { background-size: cover; }
+  .lg-focus-bg-size-cover:focus { background-size: cover; }
+  .lg-active-bg-size-cover:active { background-size: cover; }
+  .lg-disabled-bg-size-cover:disabled { background-size: cover; }
+  .lg-focus-visible-bg-size-cover:focus-visible { background-size: cover; }
+  .lg-focus-within-bg-size-cover:focus-within { background-size: cover; }
+  .group:hover .lg-group-hover-bg-size-cover { background-size: cover; }
+  .lg-bg-size-contain { background-size: contain; }
+  .lg-hover-bg-size-contain:hover { background-size: contain; }
+  .lg-focus-bg-size-contain:focus { background-size: contain; }
+  .lg-active-bg-size-contain:active { background-size: contain; }
+  .lg-disabled-bg-size-contain:disabled { background-size: contain; }
+  .lg-focus-visible-bg-size-contain:focus-visible { background-size: contain; }
+  .lg-focus-within-bg-size-contain:focus-within { background-size: contain; }
+  .group:hover .lg-group-hover-bg-size-contain { background-size: contain; }
+}
+
+/* XL Breakpoint */
+@media (min-width: 1280px) {
+  .xl-bg-attachment-fixed { background-attachment: fixed; }
+  .xl-hover-bg-attachment-fixed:hover { background-attachment: fixed; }
+  .xl-focus-bg-attachment-fixed:focus { background-attachment: fixed; }
+  .xl-active-bg-attachment-fixed:active { background-attachment: fixed; }
+  .xl-disabled-bg-attachment-fixed:disabled { background-attachment: fixed; }
+  .xl-focus-visible-bg-attachment-fixed:focus-visible { background-attachment: fixed; }
+  .xl-focus-within-bg-attachment-fixed:focus-within { background-attachment: fixed; }
+  .group:hover .xl-group-hover-bg-attachment-fixed { background-attachment: fixed; }
+  .xl-bg-attachment-local { background-attachment: local; }
+  .xl-hover-bg-attachment-local:hover { background-attachment: local; }
+  .xl-focus-bg-attachment-local:focus { background-attachment: local; }
+  .xl-active-bg-attachment-local:active { background-attachment: local; }
+  .xl-disabled-bg-attachment-local:disabled { background-attachment: local; }
+  .xl-focus-visible-bg-attachment-local:focus-visible { background-attachment: local; }
+  .xl-focus-within-bg-attachment-local:focus-within { background-attachment: local; }
+  .group:hover .xl-group-hover-bg-attachment-local { background-attachment: local; }
+  .xl-bg-attachment-scroll { background-attachment: scroll; }
+  .xl-hover-bg-attachment-scroll:hover { background-attachment: scroll; }
+  .xl-focus-bg-attachment-scroll:focus { background-attachment: scroll; }
+  .xl-active-bg-attachment-scroll:active { background-attachment: scroll; }
+  .xl-disabled-bg-attachment-scroll:disabled { background-attachment: scroll; }
+  .xl-focus-visible-bg-attachment-scroll:focus-visible { background-attachment: scroll; }
+  .xl-focus-within-bg-attachment-scroll:focus-within { background-attachment: scroll; }
+  .group:hover .xl-group-hover-bg-attachment-scroll { background-attachment: scroll; }
+  .xl-bg-clip-border { background-clip: border-box; }
+  .xl-hover-bg-clip-border:hover { background-clip: border-box; }
+  .xl-focus-bg-clip-border:focus { background-clip: border-box; }
+  .xl-active-bg-clip-border:active { background-clip: border-box; }
+  .xl-disabled-bg-clip-border:disabled { background-clip: border-box; }
+  .xl-focus-visible-bg-clip-border:focus-visible { background-clip: border-box; }
+  .xl-focus-within-bg-clip-border:focus-within { background-clip: border-box; }
+  .group:hover .xl-group-hover-bg-clip-border { background-clip: border-box; }
+  .xl-bg-clip-padding { background-clip: padding-box; }
+  .xl-hover-bg-clip-padding:hover { background-clip: padding-box; }
+  .xl-focus-bg-clip-padding:focus { background-clip: padding-box; }
+  .xl-active-bg-clip-padding:active { background-clip: padding-box; }
+  .xl-disabled-bg-clip-padding:disabled { background-clip: padding-box; }
+  .xl-focus-visible-bg-clip-padding:focus-visible { background-clip: padding-box; }
+  .xl-focus-within-bg-clip-padding:focus-within { background-clip: padding-box; }
+  .group:hover .xl-group-hover-bg-clip-padding { background-clip: padding-box; }
+  .xl-bg-clip-content { background-clip: content-box; }
+  .xl-hover-bg-clip-content:hover { background-clip: content-box; }
+  .xl-focus-bg-clip-content:focus { background-clip: content-box; }
+  .xl-active-bg-clip-content:active { background-clip: content-box; }
+  .xl-disabled-bg-clip-content:disabled { background-clip: content-box; }
+  .xl-focus-visible-bg-clip-content:focus-visible { background-clip: content-box; }
+  .xl-focus-within-bg-clip-content:focus-within { background-clip: content-box; }
+  .group:hover .xl-group-hover-bg-clip-content { background-clip: content-box; }
+  .xl-bg-image-none { background-image: none; }
+  .xl-hover-bg-image-none:hover { background-image: none; }
+  .xl-focus-bg-image-none:focus { background-image: none; }
+  .xl-active-bg-image-none:active { background-image: none; }
+  .xl-disabled-bg-image-none:disabled { background-image: none; }
+  .xl-focus-visible-bg-image-none:focus-visible { background-image: none; }
+  .xl-focus-within-bg-image-none:focus-within { background-image: none; }
+  .group:hover .xl-group-hover-bg-image-none { background-image: none; }
+  .xl-bg-image-gradient-to-r { background-image: linear-gradient(to right, var(--quanta-from-color)); }
+  .xl-hover-bg-image-gradient-to-r:hover { background-image: linear-gradient(to right, var(--quanta-from-color)); }
+  .xl-focus-bg-image-gradient-to-r:focus { background-image: linear-gradient(to right, var(--quanta-from-color)); }
+  .xl-active-bg-image-gradient-to-r:active { background-image: linear-gradient(to right, var(--quanta-from-color)); }
+  .xl-disabled-bg-image-gradient-to-r:disabled { background-image: linear-gradient(to right, var(--quanta-from-color)); }
+  .xl-focus-visible-bg-image-gradient-to-r:focus-visible { background-image: linear-gradient(to right, var(--quanta-from-color)); }
+  .xl-focus-within-bg-image-gradient-to-r:focus-within { background-image: linear-gradient(to right, var(--quanta-from-color)); }
+  .group:hover .xl-group-hover-bg-image-gradient-to-r { background-image: linear-gradient(to right, var(--quanta-from-color)); }
+  .xl-bg-origin-border { background-origin: border-box; }
+  .xl-hover-bg-origin-border:hover { background-origin: border-box; }
+  .xl-focus-bg-origin-border:focus { background-origin: border-box; }
+  .xl-active-bg-origin-border:active { background-origin: border-box; }
+  .xl-disabled-bg-origin-border:disabled { background-origin: border-box; }
+  .xl-focus-visible-bg-origin-border:focus-visible { background-origin: border-box; }
+  .xl-focus-within-bg-origin-border:focus-within { background-origin: border-box; }
+  .group:hover .xl-group-hover-bg-origin-border { background-origin: border-box; }
+  .xl-bg-origin-padding { background-origin: padding-box; }
+  .xl-hover-bg-origin-padding:hover { background-origin: padding-box; }
+  .xl-focus-bg-origin-padding:focus { background-origin: padding-box; }
+  .xl-active-bg-origin-padding:active { background-origin: padding-box; }
+  .xl-disabled-bg-origin-padding:disabled { background-origin: padding-box; }
+  .xl-focus-visible-bg-origin-padding:focus-visible { background-origin: padding-box; }
+  .xl-focus-within-bg-origin-padding:focus-within { background-origin: padding-box; }
+  .group:hover .xl-group-hover-bg-origin-padding { background-origin: padding-box; }
+  .xl-bg-origin-content { background-origin: content-box; }
+  .xl-hover-bg-origin-content:hover { background-origin: content-box; }
+  .xl-focus-bg-origin-content:focus { background-origin: content-box; }
+  .xl-active-bg-origin-content:active { background-origin: content-box; }
+  .xl-disabled-bg-origin-content:disabled { background-origin: content-box; }
+  .xl-focus-visible-bg-origin-content:focus-visible { background-origin: content-box; }
+  .xl-focus-within-bg-origin-content:focus-within { background-origin: content-box; }
+  .group:hover .xl-group-hover-bg-origin-content { background-origin: content-box; }
+  .xl-bg-position-center { background-position: center; }
+  .xl-hover-bg-position-center:hover { background-position: center; }
+  .xl-focus-bg-position-center:focus { background-position: center; }
+  .xl-active-bg-position-center:active { background-position: center; }
+  .xl-disabled-bg-position-center:disabled { background-position: center; }
+  .xl-focus-visible-bg-position-center:focus-visible { background-position: center; }
+  .xl-focus-within-bg-position-center:focus-within { background-position: center; }
+  .group:hover .xl-group-hover-bg-position-center { background-position: center; }
+  .xl-bg-position-top { background-position: top; }
+  .xl-hover-bg-position-top:hover { background-position: top; }
+  .xl-focus-bg-position-top:focus { background-position: top; }
+  .xl-active-bg-position-top:active { background-position: top; }
+  .xl-disabled-bg-position-top:disabled { background-position: top; }
+  .xl-focus-visible-bg-position-top:focus-visible { background-position: top; }
+  .xl-focus-within-bg-position-top:focus-within { background-position: top; }
+  .group:hover .xl-group-hover-bg-position-top { background-position: top; }
+  .xl-bg-position-bottom { background-position: bottom; }
+  .xl-hover-bg-position-bottom:hover { background-position: bottom; }
+  .xl-focus-bg-position-bottom:focus { background-position: bottom; }
+  .xl-active-bg-position-bottom:active { background-position: bottom; }
+  .xl-disabled-bg-position-bottom:disabled { background-position: bottom; }
+  .xl-focus-visible-bg-position-bottom:focus-visible { background-position: bottom; }
+  .xl-focus-within-bg-position-bottom:focus-within { background-position: bottom; }
+  .group:hover .xl-group-hover-bg-position-bottom { background-position: bottom; }
+  .xl-bg-position-left { background-position: left; }
+  .xl-hover-bg-position-left:hover { background-position: left; }
+  .xl-focus-bg-position-left:focus { background-position: left; }
+  .xl-active-bg-position-left:active { background-position: left; }
+  .xl-disabled-bg-position-left:disabled { background-position: left; }
+  .xl-focus-visible-bg-position-left:focus-visible { background-position: left; }
+  .xl-focus-within-bg-position-left:focus-within { background-position: left; }
+  .group:hover .xl-group-hover-bg-position-left { background-position: left; }
+  .xl-bg-position-right { background-position: right; }
+  .xl-hover-bg-position-right:hover { background-position: right; }
+  .xl-focus-bg-position-right:focus { background-position: right; }
+  .xl-active-bg-position-right:active { background-position: right; }
+  .xl-disabled-bg-position-right:disabled { background-position: right; }
+  .xl-focus-visible-bg-position-right:focus-visible { background-position: right; }
+  .xl-focus-within-bg-position-right:focus-within { background-position: right; }
+  .group:hover .xl-group-hover-bg-position-right { background-position: right; }
+  .xl-bg-position-top-left { background-position: top left; }
+  .xl-hover-bg-position-top-left:hover { background-position: top left; }
+  .xl-focus-bg-position-top-left:focus { background-position: top left; }
+  .xl-active-bg-position-top-left:active { background-position: top left; }
+  .xl-disabled-bg-position-top-left:disabled { background-position: top left; }
+  .xl-focus-visible-bg-position-top-left:focus-visible { background-position: top left; }
+  .xl-focus-within-bg-position-top-left:focus-within { background-position: top left; }
+  .group:hover .xl-group-hover-bg-position-top-left { background-position: top left; }
+  .xl-bg-position-top-right { background-position: top right; }
+  .xl-hover-bg-position-top-right:hover { background-position: top right; }
+  .xl-focus-bg-position-top-right:focus { background-position: top right; }
+  .xl-active-bg-position-top-right:active { background-position: top right; }
+  .xl-disabled-bg-position-top-right:disabled { background-position: top right; }
+  .xl-focus-visible-bg-position-top-right:focus-visible { background-position: top right; }
+  .xl-focus-within-bg-position-top-right:focus-within { background-position: top right; }
+  .group:hover .xl-group-hover-bg-position-top-right { background-position: top right; }
+  .xl-bg-position-bottom-left { background-position: bottom left; }
+  .xl-hover-bg-position-bottom-left:hover { background-position: bottom left; }
+  .xl-focus-bg-position-bottom-left:focus { background-position: bottom left; }
+  .xl-active-bg-position-bottom-left:active { background-position: bottom left; }
+  .xl-disabled-bg-position-bottom-left:disabled { background-position: bottom left; }
+  .xl-focus-visible-bg-position-bottom-left:focus-visible { background-position: bottom left; }
+  .xl-focus-within-bg-position-bottom-left:focus-within { background-position: bottom left; }
+  .group:hover .xl-group-hover-bg-position-bottom-left { background-position: bottom left; }
+  .xl-bg-position-bottom-right { background-position: bottom right; }
+  .xl-hover-bg-position-bottom-right:hover { background-position: bottom right; }
+  .xl-focus-bg-position-bottom-right:focus { background-position: bottom right; }
+  .xl-active-bg-position-bottom-right:active { background-position: bottom right; }
+  .xl-disabled-bg-position-bottom-right:disabled { background-position: bottom right; }
+  .xl-focus-visible-bg-position-bottom-right:focus-visible { background-position: bottom right; }
+  .xl-focus-within-bg-position-bottom-right:focus-within { background-position: bottom right; }
+  .group:hover .xl-group-hover-bg-position-bottom-right { background-position: bottom right; }
+  .xl-bg-repeat-none { background-repeat: no-repeat; }
+  .xl-hover-bg-repeat-none:hover { background-repeat: no-repeat; }
+  .xl-focus-bg-repeat-none:focus { background-repeat: no-repeat; }
+  .xl-active-bg-repeat-none:active { background-repeat: no-repeat; }
+  .xl-disabled-bg-repeat-none:disabled { background-repeat: no-repeat; }
+  .xl-focus-visible-bg-repeat-none:focus-visible { background-repeat: no-repeat; }
+  .xl-focus-within-bg-repeat-none:focus-within { background-repeat: no-repeat; }
+  .group:hover .xl-group-hover-bg-repeat-none { background-repeat: no-repeat; }
+  .xl-bg-repeat-x { background-repeat: repeat-x; }
+  .xl-hover-bg-repeat-x:hover { background-repeat: repeat-x; }
+  .xl-focus-bg-repeat-x:focus { background-repeat: repeat-x; }
+  .xl-active-bg-repeat-x:active { background-repeat: repeat-x; }
+  .xl-disabled-bg-repeat-x:disabled { background-repeat: repeat-x; }
+  .xl-focus-visible-bg-repeat-x:focus-visible { background-repeat: repeat-x; }
+  .xl-focus-within-bg-repeat-x:focus-within { background-repeat: repeat-x; }
+  .group:hover .xl-group-hover-bg-repeat-x { background-repeat: repeat-x; }
+  .xl-bg-repeat-y { background-repeat: repeat-y; }
+  .xl-hover-bg-repeat-y:hover { background-repeat: repeat-y; }
+  .xl-focus-bg-repeat-y:focus { background-repeat: repeat-y; }
+  .xl-active-bg-repeat-y:active { background-repeat: repeat-y; }
+  .xl-disabled-bg-repeat-y:disabled { background-repeat: repeat-y; }
+  .xl-focus-visible-bg-repeat-y:focus-visible { background-repeat: repeat-y; }
+  .xl-focus-within-bg-repeat-y:focus-within { background-repeat: repeat-y; }
+  .group:hover .xl-group-hover-bg-repeat-y { background-repeat: repeat-y; }
+  .xl-bg-repeat-round { background-repeat: round; }
+  .xl-hover-bg-repeat-round:hover { background-repeat: round; }
+  .xl-focus-bg-repeat-round:focus { background-repeat: round; }
+  .xl-active-bg-repeat-round:active { background-repeat: round; }
+  .xl-disabled-bg-repeat-round:disabled { background-repeat: round; }
+  .xl-focus-visible-bg-repeat-round:focus-visible { background-repeat: round; }
+  .xl-focus-within-bg-repeat-round:focus-within { background-repeat: round; }
+  .group:hover .xl-group-hover-bg-repeat-round { background-repeat: round; }
+  .xl-bg-repeat-space { background-repeat: space; }
+  .xl-hover-bg-repeat-space:hover { background-repeat: space; }
+  .xl-focus-bg-repeat-space:focus { background-repeat: space; }
+  .xl-active-bg-repeat-space:active { background-repeat: space; }
+  .xl-disabled-bg-repeat-space:disabled { background-repeat: space; }
+  .xl-focus-visible-bg-repeat-space:focus-visible { background-repeat: space; }
+  .xl-focus-within-bg-repeat-space:focus-within { background-repeat: space; }
+  .group:hover .xl-group-hover-bg-repeat-space { background-repeat: space; }
+  .xl-bg-size-auto { background-size: auto; }
+  .xl-hover-bg-size-auto:hover { background-size: auto; }
+  .xl-focus-bg-size-auto:focus { background-size: auto; }
+  .xl-active-bg-size-auto:active { background-size: auto; }
+  .xl-disabled-bg-size-auto:disabled { background-size: auto; }
+  .xl-focus-visible-bg-size-auto:focus-visible { background-size: auto; }
+  .xl-focus-within-bg-size-auto:focus-within { background-size: auto; }
+  .group:hover .xl-group-hover-bg-size-auto { background-size: auto; }
+  .xl-bg-size-cover { background-size: cover; }
+  .xl-hover-bg-size-cover:hover { background-size: cover; }
+  .xl-focus-bg-size-cover:focus { background-size: cover; }
+  .xl-active-bg-size-cover:active { background-size: cover; }
+  .xl-disabled-bg-size-cover:disabled { background-size: cover; }
+  .xl-focus-visible-bg-size-cover:focus-visible { background-size: cover; }
+  .xl-focus-within-bg-size-cover:focus-within { background-size: cover; }
+  .group:hover .xl-group-hover-bg-size-cover { background-size: cover; }
+  .xl-bg-size-contain { background-size: contain; }
+  .xl-hover-bg-size-contain:hover { background-size: contain; }
+  .xl-focus-bg-size-contain:focus { background-size: contain; }
+  .xl-active-bg-size-contain:active { background-size: contain; }
+  .xl-disabled-bg-size-contain:disabled { background-size: contain; }
+  .xl-focus-visible-bg-size-contain:focus-visible { background-size: contain; }
+  .xl-focus-within-bg-size-contain:focus-within { background-size: contain; }
+  .group:hover .xl-group-hover-bg-size-contain { background-size: contain; }
+}
+
+/* UW Breakpoint */
+@media (min-width: 1536px) {
+  .uw-bg-attachment-fixed { background-attachment: fixed; }
+  .uw-hover-bg-attachment-fixed:hover { background-attachment: fixed; }
+  .uw-focus-bg-attachment-fixed:focus { background-attachment: fixed; }
+  .uw-active-bg-attachment-fixed:active { background-attachment: fixed; }
+  .uw-disabled-bg-attachment-fixed:disabled { background-attachment: fixed; }
+  .uw-focus-visible-bg-attachment-fixed:focus-visible { background-attachment: fixed; }
+  .uw-focus-within-bg-attachment-fixed:focus-within { background-attachment: fixed; }
+  .group:hover .uw-group-hover-bg-attachment-fixed { background-attachment: fixed; }
+  .uw-bg-attachment-local { background-attachment: local; }
+  .uw-hover-bg-attachment-local:hover { background-attachment: local; }
+  .uw-focus-bg-attachment-local:focus { background-attachment: local; }
+  .uw-active-bg-attachment-local:active { background-attachment: local; }
+  .uw-disabled-bg-attachment-local:disabled { background-attachment: local; }
+  .uw-focus-visible-bg-attachment-local:focus-visible { background-attachment: local; }
+  .uw-focus-within-bg-attachment-local:focus-within { background-attachment: local; }
+  .group:hover .uw-group-hover-bg-attachment-local { background-attachment: local; }
+  .uw-bg-attachment-scroll { background-attachment: scroll; }
+  .uw-hover-bg-attachment-scroll:hover { background-attachment: scroll; }
+  .uw-focus-bg-attachment-scroll:focus { background-attachment: scroll; }
+  .uw-active-bg-attachment-scroll:active { background-attachment: scroll; }
+  .uw-disabled-bg-attachment-scroll:disabled { background-attachment: scroll; }
+  .uw-focus-visible-bg-attachment-scroll:focus-visible { background-attachment: scroll; }
+  .uw-focus-within-bg-attachment-scroll:focus-within { background-attachment: scroll; }
+  .group:hover .uw-group-hover-bg-attachment-scroll { background-attachment: scroll; }
+  .uw-bg-clip-border { background-clip: border-box; }
+  .uw-hover-bg-clip-border:hover { background-clip: border-box; }
+  .uw-focus-bg-clip-border:focus { background-clip: border-box; }
+  .uw-active-bg-clip-border:active { background-clip: border-box; }
+  .uw-disabled-bg-clip-border:disabled { background-clip: border-box; }
+  .uw-focus-visible-bg-clip-border:focus-visible { background-clip: border-box; }
+  .uw-focus-within-bg-clip-border:focus-within { background-clip: border-box; }
+  .group:hover .uw-group-hover-bg-clip-border { background-clip: border-box; }
+  .uw-bg-clip-padding { background-clip: padding-box; }
+  .uw-hover-bg-clip-padding:hover { background-clip: padding-box; }
+  .uw-focus-bg-clip-padding:focus { background-clip: padding-box; }
+  .uw-active-bg-clip-padding:active { background-clip: padding-box; }
+  .uw-disabled-bg-clip-padding:disabled { background-clip: padding-box; }
+  .uw-focus-visible-bg-clip-padding:focus-visible { background-clip: padding-box; }
+  .uw-focus-within-bg-clip-padding:focus-within { background-clip: padding-box; }
+  .group:hover .uw-group-hover-bg-clip-padding { background-clip: padding-box; }
+  .uw-bg-clip-content { background-clip: content-box; }
+  .uw-hover-bg-clip-content:hover { background-clip: content-box; }
+  .uw-focus-bg-clip-content:focus { background-clip: content-box; }
+  .uw-active-bg-clip-content:active { background-clip: content-box; }
+  .uw-disabled-bg-clip-content:disabled { background-clip: content-box; }
+  .uw-focus-visible-bg-clip-content:focus-visible { background-clip: content-box; }
+  .uw-focus-within-bg-clip-content:focus-within { background-clip: content-box; }
+  .group:hover .uw-group-hover-bg-clip-content { background-clip: content-box; }
+  .uw-bg-image-none { background-image: none; }
+  .uw-hover-bg-image-none:hover { background-image: none; }
+  .uw-focus-bg-image-none:focus { background-image: none; }
+  .uw-active-bg-image-none:active { background-image: none; }
+  .uw-disabled-bg-image-none:disabled { background-image: none; }
+  .uw-focus-visible-bg-image-none:focus-visible { background-image: none; }
+  .uw-focus-within-bg-image-none:focus-within { background-image: none; }
+  .group:hover .uw-group-hover-bg-image-none { background-image: none; }
+  .uw-bg-image-gradient-to-r { background-image: linear-gradient(to right, var(--quanta-from-color)); }
+  .uw-hover-bg-image-gradient-to-r:hover { background-image: linear-gradient(to right, var(--quanta-from-color)); }
+  .uw-focus-bg-image-gradient-to-r:focus { background-image: linear-gradient(to right, var(--quanta-from-color)); }
+  .uw-active-bg-image-gradient-to-r:active { background-image: linear-gradient(to right, var(--quanta-from-color)); }
+  .uw-disabled-bg-image-gradient-to-r:disabled { background-image: linear-gradient(to right, var(--quanta-from-color)); }
+  .uw-focus-visible-bg-image-gradient-to-r:focus-visible { background-image: linear-gradient(to right, var(--quanta-from-color)); }
+  .uw-focus-within-bg-image-gradient-to-r:focus-within { background-image: linear-gradient(to right, var(--quanta-from-color)); }
+  .group:hover .uw-group-hover-bg-image-gradient-to-r { background-image: linear-gradient(to right, var(--quanta-from-color)); }
+  .uw-bg-origin-border { background-origin: border-box; }
+  .uw-hover-bg-origin-border:hover { background-origin: border-box; }
+  .uw-focus-bg-origin-border:focus { background-origin: border-box; }
+  .uw-active-bg-origin-border:active { background-origin: border-box; }
+  .uw-disabled-bg-origin-border:disabled { background-origin: border-box; }
+  .uw-focus-visible-bg-origin-border:focus-visible { background-origin: border-box; }
+  .uw-focus-within-bg-origin-border:focus-within { background-origin: border-box; }
+  .group:hover .uw-group-hover-bg-origin-border { background-origin: border-box; }
+  .uw-bg-origin-padding { background-origin: padding-box; }
+  .uw-hover-bg-origin-padding:hover { background-origin: padding-box; }
+  .uw-focus-bg-origin-padding:focus { background-origin: padding-box; }
+  .uw-active-bg-origin-padding:active { background-origin: padding-box; }
+  .uw-disabled-bg-origin-padding:disabled { background-origin: padding-box; }
+  .uw-focus-visible-bg-origin-padding:focus-visible { background-origin: padding-box; }
+  .uw-focus-within-bg-origin-padding:focus-within { background-origin: padding-box; }
+  .group:hover .uw-group-hover-bg-origin-padding { background-origin: padding-box; }
+  .uw-bg-origin-content { background-origin: content-box; }
+  .uw-hover-bg-origin-content:hover { background-origin: content-box; }
+  .uw-focus-bg-origin-content:focus { background-origin: content-box; }
+  .uw-active-bg-origin-content:active { background-origin: content-box; }
+  .uw-disabled-bg-origin-content:disabled { background-origin: content-box; }
+  .uw-focus-visible-bg-origin-content:focus-visible { background-origin: content-box; }
+  .uw-focus-within-bg-origin-content:focus-within { background-origin: content-box; }
+  .group:hover .uw-group-hover-bg-origin-content { background-origin: content-box; }
+  .uw-bg-position-center { background-position: center; }
+  .uw-hover-bg-position-center:hover { background-position: center; }
+  .uw-focus-bg-position-center:focus { background-position: center; }
+  .uw-active-bg-position-center:active { background-position: center; }
+  .uw-disabled-bg-position-center:disabled { background-position: center; }
+  .uw-focus-visible-bg-position-center:focus-visible { background-position: center; }
+  .uw-focus-within-bg-position-center:focus-within { background-position: center; }
+  .group:hover .uw-group-hover-bg-position-center { background-position: center; }
+  .uw-bg-position-top { background-position: top; }
+  .uw-hover-bg-position-top:hover { background-position: top; }
+  .uw-focus-bg-position-top:focus { background-position: top; }
+  .uw-active-bg-position-top:active { background-position: top; }
+  .uw-disabled-bg-position-top:disabled { background-position: top; }
+  .uw-focus-visible-bg-position-top:focus-visible { background-position: top; }
+  .uw-focus-within-bg-position-top:focus-within { background-position: top; }
+  .group:hover .uw-group-hover-bg-position-top { background-position: top; }
+  .uw-bg-position-bottom { background-position: bottom; }
+  .uw-hover-bg-position-bottom:hover { background-position: bottom; }
+  .uw-focus-bg-position-bottom:focus { background-position: bottom; }
+  .uw-active-bg-position-bottom:active { background-position: bottom; }
+  .uw-disabled-bg-position-bottom:disabled { background-position: bottom; }
+  .uw-focus-visible-bg-position-bottom:focus-visible { background-position: bottom; }
+  .uw-focus-within-bg-position-bottom:focus-within { background-position: bottom; }
+  .group:hover .uw-group-hover-bg-position-bottom { background-position: bottom; }
+  .uw-bg-position-left { background-position: left; }
+  .uw-hover-bg-position-left:hover { background-position: left; }
+  .uw-focus-bg-position-left:focus { background-position: left; }
+  .uw-active-bg-position-left:active { background-position: left; }
+  .uw-disabled-bg-position-left:disabled { background-position: left; }
+  .uw-focus-visible-bg-position-left:focus-visible { background-position: left; }
+  .uw-focus-within-bg-position-left:focus-within { background-position: left; }
+  .group:hover .uw-group-hover-bg-position-left { background-position: left; }
+  .uw-bg-position-right { background-position: right; }
+  .uw-hover-bg-position-right:hover { background-position: right; }
+  .uw-focus-bg-position-right:focus { background-position: right; }
+  .uw-active-bg-position-right:active { background-position: right; }
+  .uw-disabled-bg-position-right:disabled { background-position: right; }
+  .uw-focus-visible-bg-position-right:focus-visible { background-position: right; }
+  .uw-focus-within-bg-position-right:focus-within { background-position: right; }
+  .group:hover .uw-group-hover-bg-position-right { background-position: right; }
+  .uw-bg-position-top-left { background-position: top left; }
+  .uw-hover-bg-position-top-left:hover { background-position: top left; }
+  .uw-focus-bg-position-top-left:focus { background-position: top left; }
+  .uw-active-bg-position-top-left:active { background-position: top left; }
+  .uw-disabled-bg-position-top-left:disabled { background-position: top left; }
+  .uw-focus-visible-bg-position-top-left:focus-visible { background-position: top left; }
+  .uw-focus-within-bg-position-top-left:focus-within { background-position: top left; }
+  .group:hover .uw-group-hover-bg-position-top-left { background-position: top left; }
+  .uw-bg-position-top-right { background-position: top right; }
+  .uw-hover-bg-position-top-right:hover { background-position: top right; }
+  .uw-focus-bg-position-top-right:focus { background-position: top right; }
+  .uw-active-bg-position-top-right:active { background-position: top right; }
+  .uw-disabled-bg-position-top-right:disabled { background-position: top right; }
+  .uw-focus-visible-bg-position-top-right:focus-visible { background-position: top right; }
+  .uw-focus-within-bg-position-top-right:focus-within { background-position: top right; }
+  .group:hover .uw-group-hover-bg-position-top-right { background-position: top right; }
+  .uw-bg-position-bottom-left { background-position: bottom left; }
+  .uw-hover-bg-position-bottom-left:hover { background-position: bottom left; }
+  .uw-focus-bg-position-bottom-left:focus { background-position: bottom left; }
+  .uw-active-bg-position-bottom-left:active { background-position: bottom left; }
+  .uw-disabled-bg-position-bottom-left:disabled { background-position: bottom left; }
+  .uw-focus-visible-bg-position-bottom-left:focus-visible { background-position: bottom left; }
+  .uw-focus-within-bg-position-bottom-left:focus-within { background-position: bottom left; }
+  .group:hover .uw-group-hover-bg-position-bottom-left { background-position: bottom left; }
+  .uw-bg-position-bottom-right { background-position: bottom right; }
+  .uw-hover-bg-position-bottom-right:hover { background-position: bottom right; }
+  .uw-focus-bg-position-bottom-right:focus { background-position: bottom right; }
+  .uw-active-bg-position-bottom-right:active { background-position: bottom right; }
+  .uw-disabled-bg-position-bottom-right:disabled { background-position: bottom right; }
+  .uw-focus-visible-bg-position-bottom-right:focus-visible { background-position: bottom right; }
+  .uw-focus-within-bg-position-bottom-right:focus-within { background-position: bottom right; }
+  .group:hover .uw-group-hover-bg-position-bottom-right { background-position: bottom right; }
+  .uw-bg-repeat-none { background-repeat: no-repeat; }
+  .uw-hover-bg-repeat-none:hover { background-repeat: no-repeat; }
+  .uw-focus-bg-repeat-none:focus { background-repeat: no-repeat; }
+  .uw-active-bg-repeat-none:active { background-repeat: no-repeat; }
+  .uw-disabled-bg-repeat-none:disabled { background-repeat: no-repeat; }
+  .uw-focus-visible-bg-repeat-none:focus-visible { background-repeat: no-repeat; }
+  .uw-focus-within-bg-repeat-none:focus-within { background-repeat: no-repeat; }
+  .group:hover .uw-group-hover-bg-repeat-none { background-repeat: no-repeat; }
+  .uw-bg-repeat-x { background-repeat: repeat-x; }
+  .uw-hover-bg-repeat-x:hover { background-repeat: repeat-x; }
+  .uw-focus-bg-repeat-x:focus { background-repeat: repeat-x; }
+  .uw-active-bg-repeat-x:active { background-repeat: repeat-x; }
+  .uw-disabled-bg-repeat-x:disabled { background-repeat: repeat-x; }
+  .uw-focus-visible-bg-repeat-x:focus-visible { background-repeat: repeat-x; }
+  .uw-focus-within-bg-repeat-x:focus-within { background-repeat: repeat-x; }
+  .group:hover .uw-group-hover-bg-repeat-x { background-repeat: repeat-x; }
+  .uw-bg-repeat-y { background-repeat: repeat-y; }
+  .uw-hover-bg-repeat-y:hover { background-repeat: repeat-y; }
+  .uw-focus-bg-repeat-y:focus { background-repeat: repeat-y; }
+  .uw-active-bg-repeat-y:active { background-repeat: repeat-y; }
+  .uw-disabled-bg-repeat-y:disabled { background-repeat: repeat-y; }
+  .uw-focus-visible-bg-repeat-y:focus-visible { background-repeat: repeat-y; }
+  .uw-focus-within-bg-repeat-y:focus-within { background-repeat: repeat-y; }
+  .group:hover .uw-group-hover-bg-repeat-y { background-repeat: repeat-y; }
+  .uw-bg-repeat-round { background-repeat: round; }
+  .uw-hover-bg-repeat-round:hover { background-repeat: round; }
+  .uw-focus-bg-repeat-round:focus { background-repeat: round; }
+  .uw-active-bg-repeat-round:active { background-repeat: round; }
+  .uw-disabled-bg-repeat-round:disabled { background-repeat: round; }
+  .uw-focus-visible-bg-repeat-round:focus-visible { background-repeat: round; }
+  .uw-focus-within-bg-repeat-round:focus-within { background-repeat: round; }
+  .group:hover .uw-group-hover-bg-repeat-round { background-repeat: round; }
+  .uw-bg-repeat-space { background-repeat: space; }
+  .uw-hover-bg-repeat-space:hover { background-repeat: space; }
+  .uw-focus-bg-repeat-space:focus { background-repeat: space; }
+  .uw-active-bg-repeat-space:active { background-repeat: space; }
+  .uw-disabled-bg-repeat-space:disabled { background-repeat: space; }
+  .uw-focus-visible-bg-repeat-space:focus-visible { background-repeat: space; }
+  .uw-focus-within-bg-repeat-space:focus-within { background-repeat: space; }
+  .group:hover .uw-group-hover-bg-repeat-space { background-repeat: space; }
+  .uw-bg-size-auto { background-size: auto; }
+  .uw-hover-bg-size-auto:hover { background-size: auto; }
+  .uw-focus-bg-size-auto:focus { background-size: auto; }
+  .uw-active-bg-size-auto:active { background-size: auto; }
+  .uw-disabled-bg-size-auto:disabled { background-size: auto; }
+  .uw-focus-visible-bg-size-auto:focus-visible { background-size: auto; }
+  .uw-focus-within-bg-size-auto:focus-within { background-size: auto; }
+  .group:hover .uw-group-hover-bg-size-auto { background-size: auto; }
+  .uw-bg-size-cover { background-size: cover; }
+  .uw-hover-bg-size-cover:hover { background-size: cover; }
+  .uw-focus-bg-size-cover:focus { background-size: cover; }
+  .uw-active-bg-size-cover:active { background-size: cover; }
+  .uw-disabled-bg-size-cover:disabled { background-size: cover; }
+  .uw-focus-visible-bg-size-cover:focus-visible { background-size: cover; }
+  .uw-focus-within-bg-size-cover:focus-within { background-size: cover; }
+  .group:hover .uw-group-hover-bg-size-cover { background-size: cover; }
+  .uw-bg-size-contain { background-size: contain; }
+  .uw-hover-bg-size-contain:hover { background-size: contain; }
+  .uw-focus-bg-size-contain:focus { background-size: contain; }
+  .uw-active-bg-size-contain:active { background-size: contain; }
+  .uw-disabled-bg-size-contain:disabled { background-size: contain; }
+  .uw-focus-visible-bg-size-contain:focus-visible { background-size: contain; }
+  .uw-focus-within-bg-size-contain:focus-within { background-size: contain; }
+  .group:hover .uw-group-hover-bg-size-contain { background-size: contain; }
+}

@@ -91,7 +91,7 @@
 
 /* Dark mode */
 html[data-theme="dark"] .quanta-popover {
-  background-color: var(--quanta-slate-800);
+  background-color: var(--quanta-grey-800);
   color: var(--quanta-text-light);
   box-shadow: 0 8px 20px rgba(0,0,0,0.5);
 }

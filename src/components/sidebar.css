@@ -2,14 +2,15 @@
   position: fixed;
   inset-block: 0;
   left: 0;
-  width: 260px;
+  width: 320px;
+  height: 100vh;
   background-color: var(--quanta-bg-default);
   color: var(--quanta-text-default);
   display: flex;
   flex-direction: column;
-  box-shadow: var(--quanta-shadow-lg);
   transition: width 0.3s ease, transform 0.3s ease;
   z-index: 1000;
+  flex: 1 1 auto;
 }
 
 .quanta-sidebar.collapsed {
@@ -53,7 +54,7 @@
 }
 
 .quanta-sidebar-link:hover {
-  background-color: var(--quanta-slate-100);
+  background-color: var(--quanta-grey-100);
 }
 
 .quanta-sidebar-link.active {
@@ -70,23 +71,14 @@
 }
 
 .quanta-sidebar-toggle {
-  position: fixed;
-  top: var(--quanta-space-3);
-  left: var(--quanta-space-3);
-  z-index: 1100;
-  padding: var(--quanta-space-2) var(--quanta-space-3);
-  background-color: var(--quanta-primary);
-  color: var(--white);
   border: none;
-  border-radius: var(--quanta-rounded-sm);
   cursor: pointer;
-  box-shadow: var(--quanta-shadow-md);
   display: none;
 }
 
 /* ─── Dark Mode ───────────────────── */
 html[data-theme="dark"] .quanta-sidebar {
-  background-color: var(--quanta-slate-800);
+  background-color: var(--quanta-grey-800);
   color: var(--quanta-text-light);
 }
 
@@ -95,7 +87,7 @@ html[data-theme="dark"] .quanta-sidebar-link {
 }
 
 html[data-theme="dark"] .quanta-sidebar-link:hover {
-  background-color: var(--quanta-slate-700);
+  background-color: var(--quanta-grey-700);
 }
 
 html[data-theme="dark"] .quanta-sidebar-link.active {
@@ -119,10 +111,6 @@ html[data-theme="dark"] .quanta-sidebar-link.active {
     display: block;
   }
 
-  .quanta-with-sidebar {
-    flex-direction: column;
-  }
-
   .quanta-sidebar-content {
     margin-left: 0 !important;
   }
@@ -136,8 +124,8 @@ html[data-theme="dark"] .quanta-sidebar-link.active {
 
 /* ─── Content Area ─────────────────────────────── */
 .quanta-sidebar-content {
-  flex: 1;
-  margin-left: 260px;
+  flex: 1 1 auto;
+  margin-left: 320px;
   transition: margin-left 0.3s ease;
 }
 

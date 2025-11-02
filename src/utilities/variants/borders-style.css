@@ -1,0 +1,258 @@
+/* Quanta CSS v2.1 - borders-style Light Variants */
+
+/* State Variants */
+.hover-border-solid:hover { border-style: solid; }
+.focus-border-solid:focus { border-style: solid; }
+.active-border-solid:active { border-style: solid; }
+.disabled-border-solid:disabled { border-style: solid; }
+.focus-visible-border-solid:focus-visible { border-style: solid; }
+.focus-within-border-solid:focus-within { border-style: solid; }
+.group:hover .group-hover-border-solid { border-style: solid; }
+.hover-border-dashed:hover { border-style: dashed; }
+.focus-border-dashed:focus { border-style: dashed; }
+.active-border-dashed:active { border-style: dashed; }
+.disabled-border-dashed:disabled { border-style: dashed; }
+.focus-visible-border-dashed:focus-visible { border-style: dashed; }
+.focus-within-border-dashed:focus-within { border-style: dashed; }
+.group:hover .group-hover-border-dashed { border-style: dashed; }
+.hover-border-dotted:hover { border-style: dotted; }
+.focus-border-dotted:focus { border-style: dotted; }
+.active-border-dotted:active { border-style: dotted; }
+.disabled-border-dotted:disabled { border-style: dotted; }
+.focus-visible-border-dotted:focus-visible { border-style: dotted; }
+.focus-within-border-dotted:focus-within { border-style: dotted; }
+.group:hover .group-hover-border-dotted { border-style: dotted; }
+.hover-border-double:hover { border-style: double; }
+.focus-border-double:focus { border-style: double; }
+.active-border-double:active { border-style: double; }
+.disabled-border-double:disabled { border-style: double; }
+.focus-visible-border-double:focus-visible { border-style: double; }
+.focus-within-border-double:focus-within { border-style: double; }
+.group:hover .group-hover-border-double { border-style: double; }
+.hover-border-none:hover { border-style: none; }
+.focus-border-none:focus { border-style: none; }
+.active-border-none:active { border-style: none; }
+.disabled-border-none:disabled { border-style: none; }
+.focus-visible-border-none:focus-visible { border-style: none; }
+.focus-within-border-none:focus-within { border-style: none; }
+.group:hover .group-hover-border-none { border-style: none; }
+
+/* SM Breakpoint */
+@media (min-width: 480px) {
+  .sm-border-solid { border-style: solid; }
+  .sm-hover-border-solid:hover { border-style: solid; }
+  .sm-focus-border-solid:focus { border-style: solid; }
+  .sm-active-border-solid:active { border-style: solid; }
+  .sm-disabled-border-solid:disabled { border-style: solid; }
+  .sm-focus-visible-border-solid:focus-visible { border-style: solid; }
+  .sm-focus-within-border-solid:focus-within { border-style: solid; }
+  .group:hover .sm-group-hover-border-solid { border-style: solid; }
+  .sm-border-dashed { border-style: dashed; }
+  .sm-hover-border-dashed:hover { border-style: dashed; }
+  .sm-focus-border-dashed:focus { border-style: dashed; }
+  .sm-active-border-dashed:active { border-style: dashed; }
+  .sm-disabled-border-dashed:disabled { border-style: dashed; }
+  .sm-focus-visible-border-dashed:focus-visible { border-style: dashed; }
+  .sm-focus-within-border-dashed:focus-within { border-style: dashed; }
+  .group:hover .sm-group-hover-border-dashed { border-style: dashed; }
+  .sm-border-dotted { border-style: dotted; }
+  .sm-hover-border-dotted:hover { border-style: dotted; }
+  .sm-focus-border-dotted:focus { border-style: dotted; }
+  .sm-active-border-dotted:active { border-style: dotted; }
+  .sm-disabled-border-dotted:disabled { border-style: dotted; }
+  .sm-focus-visible-border-dotted:focus-visible { border-style: dotted; }
+  .sm-focus-within-border-dotted:focus-within { border-style: dotted; }
+  .group:hover .sm-group-hover-border-dotted { border-style: dotted; }
+  .sm-border-double { border-style: double; }
+  .sm-hover-border-double:hover { border-style: double; }
+  .sm-focus-border-double:focus { border-style: double; }
+  .sm-active-border-double:active { border-style: double; }
+  .sm-disabled-border-double:disabled { border-style: double; }
+  .sm-focus-visible-border-double:focus-visible { border-style: double; }
+  .sm-focus-within-border-double:focus-within { border-style: double; }
+  .group:hover .sm-group-hover-border-double { border-style: double; }
+  .sm-border-none { border-style: none; }
+  .sm-hover-border-none:hover { border-style: none; }
+  .sm-focus-border-none:focus { border-style: none; }
+  .sm-active-border-none:active { border-style: none; }
+  .sm-disabled-border-none:disabled { border-style: none; }
+  .sm-focus-visible-border-none:focus-visible { border-style: none; }
+  .sm-focus-within-border-none:focus-within { border-style: none; }
+  .group:hover .sm-group-hover-border-none { border-style: none; }
+}
+
+/* MD Breakpoint */
+@media (min-width: 768px) {
+  .md-border-solid { border-style: solid; }
+  .md-hover-border-solid:hover { border-style: solid; }
+  .md-focus-border-solid:focus { border-style: solid; }
+  .md-active-border-solid:active { border-style: solid; }
+  .md-disabled-border-solid:disabled { border-style: solid; }
+  .md-focus-visible-border-solid:focus-visible { border-style: solid; }
+  .md-focus-within-border-solid:focus-within { border-style: solid; }
+  .group:hover .md-group-hover-border-solid { border-style: solid; }
+  .md-border-dashed { border-style: dashed; }
+  .md-hover-border-dashed:hover { border-style: dashed; }
+  .md-focus-border-dashed:focus { border-style: dashed; }
+  .md-active-border-dashed:active { border-style: dashed; }
+  .md-disabled-border-dashed:disabled { border-style: dashed; }
+  .md-focus-visible-border-dashed:focus-visible { border-style: dashed; }
+  .md-focus-within-border-dashed:focus-within { border-style: dashed; }
+  .group:hover .md-group-hover-border-dashed { border-style: dashed; }
+  .md-border-dotted { border-style: dotted; }
+  .md-hover-border-dotted:hover { border-style: dotted; }
+  .md-focus-border-dotted:focus { border-style: dotted; }
+  .md-active-border-dotted:active { border-style: dotted; }
+  .md-disabled-border-dotted:disabled { border-style: dotted; }
+  .md-focus-visible-border-dotted:focus-visible { border-style: dotted; }
+  .md-focus-within-border-dotted:focus-within { border-style: dotted; }
+  .group:hover .md-group-hover-border-dotted { border-style: dotted; }
+  .md-border-double { border-style: double; }
+  .md-hover-border-double:hover { border-style: double; }
+  .md-focus-border-double:focus { border-style: double; }
+  .md-active-border-double:active { border-style: double; }
+  .md-disabled-border-double:disabled { border-style: double; }
+  .md-focus-visible-border-double:focus-visible { border-style: double; }
+  .md-focus-within-border-double:focus-within { border-style: double; }
+  .group:hover .md-group-hover-border-double { border-style: double; }
+  .md-border-none { border-style: none; }
+  .md-hover-border-none:hover { border-style: none; }
+  .md-focus-border-none:focus { border-style: none; }
+  .md-active-border-none:active { border-style: none; }
+  .md-disabled-border-none:disabled { border-style: none; }
+  .md-focus-visible-border-none:focus-visible { border-style: none; }
+  .md-focus-within-border-none:focus-within { border-style: none; }
+  .group:hover .md-group-hover-border-none { border-style: none; }
+}
+
+/* LG Breakpoint */
+@media (min-width: 1024px) {
+  .lg-border-solid { border-style: solid; }
+  .lg-hover-border-solid:hover { border-style: solid; }
+  .lg-focus-border-solid:focus { border-style: solid; }
+  .lg-active-border-solid:active { border-style: solid; }
+  .lg-disabled-border-solid:disabled { border-style: solid; }
+  .lg-focus-visible-border-solid:focus-visible { border-style: solid; }
+  .lg-focus-within-border-solid:focus-within { border-style: solid; }
+  .group:hover .lg-group-hover-border-solid { border-style: solid; }
+  .lg-border-dashed { border-style: dashed; }
+  .lg-hover-border-dashed:hover { border-style: dashed; }
+  .lg-focus-border-dashed:focus { border-style: dashed; }
+  .lg-active-border-dashed:active { border-style: dashed; }
+  .lg-disabled-border-dashed:disabled { border-style: dashed; }
+  .lg-focus-visible-border-dashed:focus-visible { border-style: dashed; }
+  .lg-focus-within-border-dashed:focus-within { border-style: dashed; }
+  .group:hover .lg-group-hover-border-dashed { border-style: dashed; }
+  .lg-border-dotted { border-style: dotted; }
+  .lg-hover-border-dotted:hover { border-style: dotted; }
+  .lg-focus-border-dotted:focus { border-style: dotted; }
+  .lg-active-border-dotted:active { border-style: dotted; }
+  .lg-disabled-border-dotted:disabled { border-style: dotted; }
+  .lg-focus-visible-border-dotted:focus-visible { border-style: dotted; }
+  .lg-focus-within-border-dotted:focus-within { border-style: dotted; }
+  .group:hover .lg-group-hover-border-dotted { border-style: dotted; }
+  .lg-border-double { border-style: double; }
+  .lg-hover-border-double:hover { border-style: double; }
+  .lg-focus-border-double:focus { border-style: double; }
+  .lg-active-border-double:active { border-style: double; }
+  .lg-disabled-border-double:disabled { border-style: double; }
+  .lg-focus-visible-border-double:focus-visible { border-style: double; }
+  .lg-focus-within-border-double:focus-within { border-style: double; }
+  .group:hover .lg-group-hover-border-double { border-style: double; }
+  .lg-border-none { border-style: none; }
+  .lg-hover-border-none:hover { border-style: none; }
+  .lg-focus-border-none:focus { border-style: none; }
+  .lg-active-border-none:active { border-style: none; }
+  .lg-disabled-border-none:disabled { border-style: none; }
+  .lg-focus-visible-border-none:focus-visible { border-style: none; }
+  .lg-focus-within-border-none:focus-within { border-style: none; }
+  .group:hover .lg-group-hover-border-none { border-style: none; }
+}
+
+/* XL Breakpoint */
+@media (min-width: 1280px) {
+  .xl-border-solid { border-style: solid; }
+  .xl-hover-border-solid:hover { border-style: solid; }
+  .xl-focus-border-solid:focus { border-style: solid; }
+  .xl-active-border-solid:active { border-style: solid; }
+  .xl-disabled-border-solid:disabled { border-style: solid; }
+  .xl-focus-visible-border-solid:focus-visible { border-style: solid; }
+  .xl-focus-within-border-solid:focus-within { border-style: solid; }
+  .group:hover .xl-group-hover-border-solid { border-style: solid; }
+  .xl-border-dashed { border-style: dashed; }
+  .xl-hover-border-dashed:hover { border-style: dashed; }
+  .xl-focus-border-dashed:focus { border-style: dashed; }
+  .xl-active-border-dashed:active { border-style: dashed; }
+  .xl-disabled-border-dashed:disabled { border-style: dashed; }
+  .xl-focus-visible-border-dashed:focus-visible { border-style: dashed; }
+  .xl-focus-within-border-dashed:focus-within { border-style: dashed; }
+  .group:hover .xl-group-hover-border-dashed { border-style: dashed; }
+  .xl-border-dotted { border-style: dotted; }
+  .xl-hover-border-dotted:hover { border-style: dotted; }
+  .xl-focus-border-dotted:focus { border-style: dotted; }
+  .xl-active-border-dotted:active { border-style: dotted; }
+  .xl-disabled-border-dotted:disabled { border-style: dotted; }
+  .xl-focus-visible-border-dotted:focus-visible { border-style: dotted; }
+  .xl-focus-within-border-dotted:focus-within { border-style: dotted; }
+  .group:hover .xl-group-hover-border-dotted { border-style: dotted; }
+  .xl-border-double { border-style: double; }
+  .xl-hover-border-double:hover { border-style: double; }
+  .xl-focus-border-double:focus { border-style: double; }
+  .xl-active-border-double:active { border-style: double; }
+  .xl-disabled-border-double:disabled { border-style: double; }
+  .xl-focus-visible-border-double:focus-visible { border-style: double; }
+  .xl-focus-within-border-double:focus-within { border-style: double; }
+  .group:hover .xl-group-hover-border-double { border-style: double; }
+  .xl-border-none { border-style: none; }
+  .xl-hover-border-none:hover { border-style: none; }
+  .xl-focus-border-none:focus { border-style: none; }
+  .xl-active-border-none:active { border-style: none; }
+  .xl-disabled-border-none:disabled { border-style: none; }
+  .xl-focus-visible-border-none:focus-visible { border-style: none; }
+  .xl-focus-within-border-none:focus-within { border-style: none; }
+  .group:hover .xl-group-hover-border-none { border-style: none; }
+}
+
+/* UW Breakpoint */
+@media (min-width: 1536px) {
+  .uw-border-solid { border-style: solid; }
+  .uw-hover-border-solid:hover { border-style: solid; }
+  .uw-focus-border-solid:focus { border-style: solid; }
+  .uw-active-border-solid:active { border-style: solid; }
+  .uw-disabled-border-solid:disabled { border-style: solid; }
+  .uw-focus-visible-border-solid:focus-visible { border-style: solid; }
+  .uw-focus-within-border-solid:focus-within { border-style: solid; }
+  .group:hover .uw-group-hover-border-solid { border-style: solid; }
+  .uw-border-dashed { border-style: dashed; }
+  .uw-hover-border-dashed:hover { border-style: dashed; }
+  .uw-focus-border-dashed:focus { border-style: dashed; }
+  .uw-active-border-dashed:active { border-style: dashed; }
+  .uw-disabled-border-dashed:disabled { border-style: dashed; }
+  .uw-focus-visible-border-dashed:focus-visible { border-style: dashed; }
+  .uw-focus-within-border-dashed:focus-within { border-style: dashed; }
+  .group:hover .uw-group-hover-border-dashed { border-style: dashed; }
+  .uw-border-dotted { border-style: dotted; }
+  .uw-hover-border-dotted:hover { border-style: dotted; }
+  .uw-focus-border-dotted:focus { border-style: dotted; }
+  .uw-active-border-dotted:active { border-style: dotted; }
+  .uw-disabled-border-dotted:disabled { border-style: dotted; }
+  .uw-focus-visible-border-dotted:focus-visible { border-style: dotted; }
+  .uw-focus-within-border-dotted:focus-within { border-style: dotted; }
+  .group:hover .uw-group-hover-border-dotted { border-style: dotted; }
+  .uw-border-double { border-style: double; }
+  .uw-hover-border-double:hover { border-style: double; }
+  .uw-focus-border-double:focus { border-style: double; }
+  .uw-active-border-double:active { border-style: double; }
+  .uw-disabled-border-double:disabled { border-style: double; }
+  .uw-focus-visible-border-double:focus-visible { border-style: double; }
+  .uw-focus-within-border-double:focus-within { border-style: double; }
+  .group:hover .uw-group-hover-border-double { border-style: double; }
+  .uw-border-none { border-style: none; }
+  .uw-hover-border-none:hover { border-style: none; }
+  .uw-focus-border-none:focus { border-style: none; }
+  .uw-active-border-none:active { border-style: none; }
+  .uw-disabled-border-none:disabled { border-style: none; }
+  .uw-focus-visible-border-none:focus-visible { border-style: none; }
+  .uw-focus-within-border-none:focus-within { border-style: none; }
+  .group:hover .uw-group-hover-border-none { border-style: none; }
+}

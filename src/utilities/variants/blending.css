@@ -1,0 +1,1245 @@
+/* Quanta CSS v2.1 - blending Light Variants */
+
+/* State Variants */
+.hover-bg-blend-normal:hover { background-blend-mode: normal; }
+.focus-bg-blend-normal:focus { background-blend-mode: normal; }
+.active-bg-blend-normal:active { background-blend-mode: normal; }
+.disabled-bg-blend-normal:disabled { background-blend-mode: normal; }
+.focus-visible-bg-blend-normal:focus-visible { background-blend-mode: normal; }
+.focus-within-bg-blend-normal:focus-within { background-blend-mode: normal; }
+.group:hover .group-hover-bg-blend-normal { background-blend-mode: normal; }
+.hover-bg-blend-multiply:hover { background-blend-mode: multiply; }
+.focus-bg-blend-multiply:focus { background-blend-mode: multiply; }
+.active-bg-blend-multiply:active { background-blend-mode: multiply; }
+.disabled-bg-blend-multiply:disabled { background-blend-mode: multiply; }
+.focus-visible-bg-blend-multiply:focus-visible { background-blend-mode: multiply; }
+.focus-within-bg-blend-multiply:focus-within { background-blend-mode: multiply; }
+.group:hover .group-hover-bg-blend-multiply { background-blend-mode: multiply; }
+.hover-bg-blend-screen:hover { background-blend-mode: screen; }
+.focus-bg-blend-screen:focus { background-blend-mode: screen; }
+.active-bg-blend-screen:active { background-blend-mode: screen; }
+.disabled-bg-blend-screen:disabled { background-blend-mode: screen; }
+.focus-visible-bg-blend-screen:focus-visible { background-blend-mode: screen; }
+.focus-within-bg-blend-screen:focus-within { background-blend-mode: screen; }
+.group:hover .group-hover-bg-blend-screen { background-blend-mode: screen; }
+.hover-bg-blend-overlay:hover { background-blend-mode: overlay; }
+.focus-bg-blend-overlay:focus { background-blend-mode: overlay; }
+.active-bg-blend-overlay:active { background-blend-mode: overlay; }
+.disabled-bg-blend-overlay:disabled { background-blend-mode: overlay; }
+.focus-visible-bg-blend-overlay:focus-visible { background-blend-mode: overlay; }
+.focus-within-bg-blend-overlay:focus-within { background-blend-mode: overlay; }
+.group:hover .group-hover-bg-blend-overlay { background-blend-mode: overlay; }
+.hover-bg-blend-darken:hover { background-blend-mode: darken; }
+.focus-bg-blend-darken:focus { background-blend-mode: darken; }
+.active-bg-blend-darken:active { background-blend-mode: darken; }
+.disabled-bg-blend-darken:disabled { background-blend-mode: darken; }
+.focus-visible-bg-blend-darken:focus-visible { background-blend-mode: darken; }
+.focus-within-bg-blend-darken:focus-within { background-blend-mode: darken; }
+.group:hover .group-hover-bg-blend-darken { background-blend-mode: darken; }
+.hover-bg-blend-lighten:hover { background-blend-mode: lighten; }
+.focus-bg-blend-lighten:focus { background-blend-mode: lighten; }
+.active-bg-blend-lighten:active { background-blend-mode: lighten; }
+.disabled-bg-blend-lighten:disabled { background-blend-mode: lighten; }
+.focus-visible-bg-blend-lighten:focus-visible { background-blend-mode: lighten; }
+.focus-within-bg-blend-lighten:focus-within { background-blend-mode: lighten; }
+.group:hover .group-hover-bg-blend-lighten { background-blend-mode: lighten; }
+.hover-bg-blend-color-dodge:hover { background-blend-mode: color-dodge; }
+.focus-bg-blend-color-dodge:focus { background-blend-mode: color-dodge; }
+.active-bg-blend-color-dodge:active { background-blend-mode: color-dodge; }
+.disabled-bg-blend-color-dodge:disabled { background-blend-mode: color-dodge; }
+.focus-visible-bg-blend-color-dodge:focus-visible { background-blend-mode: color-dodge; }
+.focus-within-bg-blend-color-dodge:focus-within { background-blend-mode: color-dodge; }
+.group:hover .group-hover-bg-blend-color-dodge { background-blend-mode: color-dodge; }
+.hover-bg-blend-color-burn:hover { background-blend-mode: color-burn; }
+.focus-bg-blend-color-burn:focus { background-blend-mode: color-burn; }
+.active-bg-blend-color-burn:active { background-blend-mode: color-burn; }
+.disabled-bg-blend-color-burn:disabled { background-blend-mode: color-burn; }
+.focus-visible-bg-blend-color-burn:focus-visible { background-blend-mode: color-burn; }
+.focus-within-bg-blend-color-burn:focus-within { background-blend-mode: color-burn; }
+.group:hover .group-hover-bg-blend-color-burn { background-blend-mode: color-burn; }
+.hover-bg-blend-hard-light:hover { background-blend-mode: hard-light; }
+.focus-bg-blend-hard-light:focus { background-blend-mode: hard-light; }
+.active-bg-blend-hard-light:active { background-blend-mode: hard-light; }
+.disabled-bg-blend-hard-light:disabled { background-blend-mode: hard-light; }
+.focus-visible-bg-blend-hard-light:focus-visible { background-blend-mode: hard-light; }
+.focus-within-bg-blend-hard-light:focus-within { background-blend-mode: hard-light; }
+.group:hover .group-hover-bg-blend-hard-light { background-blend-mode: hard-light; }
+.hover-bg-blend-soft-light:hover { background-blend-mode: soft-light; }
+.focus-bg-blend-soft-light:focus { background-blend-mode: soft-light; }
+.active-bg-blend-soft-light:active { background-blend-mode: soft-light; }
+.disabled-bg-blend-soft-light:disabled { background-blend-mode: soft-light; }
+.focus-visible-bg-blend-soft-light:focus-visible { background-blend-mode: soft-light; }
+.focus-within-bg-blend-soft-light:focus-within { background-blend-mode: soft-light; }
+.group:hover .group-hover-bg-blend-soft-light { background-blend-mode: soft-light; }
+.hover-bg-blend-difference:hover { background-blend-mode: difference; }
+.focus-bg-blend-difference:focus { background-blend-mode: difference; }
+.active-bg-blend-difference:active { background-blend-mode: difference; }
+.disabled-bg-blend-difference:disabled { background-blend-mode: difference; }
+.focus-visible-bg-blend-difference:focus-visible { background-blend-mode: difference; }
+.focus-within-bg-blend-difference:focus-within { background-blend-mode: difference; }
+.group:hover .group-hover-bg-blend-difference { background-blend-mode: difference; }
+.hover-bg-blend-exclusion:hover { background-blend-mode: exclusion; }
+.focus-bg-blend-exclusion:focus { background-blend-mode: exclusion; }
+.active-bg-blend-exclusion:active { background-blend-mode: exclusion; }
+.disabled-bg-blend-exclusion:disabled { background-blend-mode: exclusion; }
+.focus-visible-bg-blend-exclusion:focus-visible { background-blend-mode: exclusion; }
+.focus-within-bg-blend-exclusion:focus-within { background-blend-mode: exclusion; }
+.group:hover .group-hover-bg-blend-exclusion { background-blend-mode: exclusion; }
+.hover-bg-blend-hue:hover { background-blend-mode: hue; }
+.focus-bg-blend-hue:focus { background-blend-mode: hue; }
+.active-bg-blend-hue:active { background-blend-mode: hue; }
+.disabled-bg-blend-hue:disabled { background-blend-mode: hue; }
+.focus-visible-bg-blend-hue:focus-visible { background-blend-mode: hue; }
+.focus-within-bg-blend-hue:focus-within { background-blend-mode: hue; }
+.group:hover .group-hover-bg-blend-hue { background-blend-mode: hue; }
+.hover-bg-blend-saturation:hover { background-blend-mode: saturation; }
+.focus-bg-blend-saturation:focus { background-blend-mode: saturation; }
+.active-bg-blend-saturation:active { background-blend-mode: saturation; }
+.disabled-bg-blend-saturation:disabled { background-blend-mode: saturation; }
+.focus-visible-bg-blend-saturation:focus-visible { background-blend-mode: saturation; }
+.focus-within-bg-blend-saturation:focus-within { background-blend-mode: saturation; }
+.group:hover .group-hover-bg-blend-saturation { background-blend-mode: saturation; }
+.hover-bg-blend-color:hover { background-blend-mode: color; }
+.focus-bg-blend-color:focus { background-blend-mode: color; }
+.active-bg-blend-color:active { background-blend-mode: color; }
+.disabled-bg-blend-color:disabled { background-blend-mode: color; }
+.focus-visible-bg-blend-color:focus-visible { background-blend-mode: color; }
+.focus-within-bg-blend-color:focus-within { background-blend-mode: color; }
+.group:hover .group-hover-bg-blend-color { background-blend-mode: color; }
+.hover-bg-blend-luminosity:hover { background-blend-mode: luminosity; }
+.focus-bg-blend-luminosity:focus { background-blend-mode: luminosity; }
+.active-bg-blend-luminosity:active { background-blend-mode: luminosity; }
+.disabled-bg-blend-luminosity:disabled { background-blend-mode: luminosity; }
+.focus-visible-bg-blend-luminosity:focus-visible { background-blend-mode: luminosity; }
+.focus-within-bg-blend-luminosity:focus-within { background-blend-mode: luminosity; }
+.group:hover .group-hover-bg-blend-luminosity { background-blend-mode: luminosity; }
+.hover-bg-blend-normal:hover { background-blend-mode: normal; }
+.focus-bg-blend-normal:focus { background-blend-mode: normal; }
+.active-bg-blend-normal:active { background-blend-mode: normal; }
+.disabled-bg-blend-normal:disabled { background-blend-mode: normal; }
+.focus-visible-bg-blend-normal:focus-visible { background-blend-mode: normal; }
+.focus-within-bg-blend-normal:focus-within { background-blend-mode: normal; }
+.group:hover .group-hover-bg-blend-normal { background-blend-mode: normal; }
+.hover-bg-blend-multiply:hover { background-blend-mode: multiply; }
+.focus-bg-blend-multiply:focus { background-blend-mode: multiply; }
+.active-bg-blend-multiply:active { background-blend-mode: multiply; }
+.disabled-bg-blend-multiply:disabled { background-blend-mode: multiply; }
+.focus-visible-bg-blend-multiply:focus-visible { background-blend-mode: multiply; }
+.focus-within-bg-blend-multiply:focus-within { background-blend-mode: multiply; }
+.group:hover .group-hover-bg-blend-multiply { background-blend-mode: multiply; }
+.hover-bg-blend-screen:hover { background-blend-mode: screen; }
+.focus-bg-blend-screen:focus { background-blend-mode: screen; }
+.active-bg-blend-screen:active { background-blend-mode: screen; }
+.disabled-bg-blend-screen:disabled { background-blend-mode: screen; }
+.focus-visible-bg-blend-screen:focus-visible { background-blend-mode: screen; }
+.focus-within-bg-blend-screen:focus-within { background-blend-mode: screen; }
+.group:hover .group-hover-bg-blend-screen { background-blend-mode: screen; }
+.hover-bg-blend-overlay:hover { background-blend-mode: overlay; }
+.focus-bg-blend-overlay:focus { background-blend-mode: overlay; }
+.active-bg-blend-overlay:active { background-blend-mode: overlay; }
+.disabled-bg-blend-overlay:disabled { background-blend-mode: overlay; }
+.focus-visible-bg-blend-overlay:focus-visible { background-blend-mode: overlay; }
+.focus-within-bg-blend-overlay:focus-within { background-blend-mode: overlay; }
+.group:hover .group-hover-bg-blend-overlay { background-blend-mode: overlay; }
+.hover-bg-blend-darken:hover { background-blend-mode: darken; }
+.focus-bg-blend-darken:focus { background-blend-mode: darken; }
+.active-bg-blend-darken:active { background-blend-mode: darken; }
+.disabled-bg-blend-darken:disabled { background-blend-mode: darken; }
+.focus-visible-bg-blend-darken:focus-visible { background-blend-mode: darken; }
+.focus-within-bg-blend-darken:focus-within { background-blend-mode: darken; }
+.group:hover .group-hover-bg-blend-darken { background-blend-mode: darken; }
+.hover-bg-blend-lighten:hover { background-blend-mode: lighten; }
+.focus-bg-blend-lighten:focus { background-blend-mode: lighten; }
+.active-bg-blend-lighten:active { background-blend-mode: lighten; }
+.disabled-bg-blend-lighten:disabled { background-blend-mode: lighten; }
+.focus-visible-bg-blend-lighten:focus-visible { background-blend-mode: lighten; }
+.focus-within-bg-blend-lighten:focus-within { background-blend-mode: lighten; }
+.group:hover .group-hover-bg-blend-lighten { background-blend-mode: lighten; }
+.hover-mix-blend-normal:hover { mix-blend-mode: normal; }
+.focus-mix-blend-normal:focus { mix-blend-mode: normal; }
+.active-mix-blend-normal:active { mix-blend-mode: normal; }
+.disabled-mix-blend-normal:disabled { mix-blend-mode: normal; }
+.focus-visible-mix-blend-normal:focus-visible { mix-blend-mode: normal; }
+.focus-within-mix-blend-normal:focus-within { mix-blend-mode: normal; }
+.group:hover .group-hover-mix-blend-normal { mix-blend-mode: normal; }
+.hover-mix-blend-multiply:hover { mix-blend-mode: multiply; }
+.focus-mix-blend-multiply:focus { mix-blend-mode: multiply; }
+.active-mix-blend-multiply:active { mix-blend-mode: multiply; }
+.disabled-mix-blend-multiply:disabled { mix-blend-mode: multiply; }
+.focus-visible-mix-blend-multiply:focus-visible { mix-blend-mode: multiply; }
+.focus-within-mix-blend-multiply:focus-within { mix-blend-mode: multiply; }
+.group:hover .group-hover-mix-blend-multiply { mix-blend-mode: multiply; }
+.hover-mix-blend-screen:hover { mix-blend-mode: screen; }
+.focus-mix-blend-screen:focus { mix-blend-mode: screen; }
+.active-mix-blend-screen:active { mix-blend-mode: screen; }
+.disabled-mix-blend-screen:disabled { mix-blend-mode: screen; }
+.focus-visible-mix-blend-screen:focus-visible { mix-blend-mode: screen; }
+.focus-within-mix-blend-screen:focus-within { mix-blend-mode: screen; }
+.group:hover .group-hover-mix-blend-screen { mix-blend-mode: screen; }
+.hover-mix-blend-overlay:hover { mix-blend-mode: overlay; }
+.focus-mix-blend-overlay:focus { mix-blend-mode: overlay; }
+.active-mix-blend-overlay:active { mix-blend-mode: overlay; }
+.disabled-mix-blend-overlay:disabled { mix-blend-mode: overlay; }
+.focus-visible-mix-blend-overlay:focus-visible { mix-blend-mode: overlay; }
+.focus-within-mix-blend-overlay:focus-within { mix-blend-mode: overlay; }
+.group:hover .group-hover-mix-blend-overlay { mix-blend-mode: overlay; }
+
+/* SM Breakpoint */
+@media (min-width: 480px) {
+  .sm-bg-blend-normal { background-blend-mode: normal; }
+  .sm-hover-bg-blend-normal:hover { background-blend-mode: normal; }
+  .sm-focus-bg-blend-normal:focus { background-blend-mode: normal; }
+  .sm-active-bg-blend-normal:active { background-blend-mode: normal; }
+  .sm-disabled-bg-blend-normal:disabled { background-blend-mode: normal; }
+  .sm-focus-visible-bg-blend-normal:focus-visible { background-blend-mode: normal; }
+  .sm-focus-within-bg-blend-normal:focus-within { background-blend-mode: normal; }
+  .group:hover .sm-group-hover-bg-blend-normal { background-blend-mode: normal; }
+  .sm-bg-blend-multiply { background-blend-mode: multiply; }
+  .sm-hover-bg-blend-multiply:hover { background-blend-mode: multiply; }
+  .sm-focus-bg-blend-multiply:focus { background-blend-mode: multiply; }
+  .sm-active-bg-blend-multiply:active { background-blend-mode: multiply; }
+  .sm-disabled-bg-blend-multiply:disabled { background-blend-mode: multiply; }
+  .sm-focus-visible-bg-blend-multiply:focus-visible { background-blend-mode: multiply; }
+  .sm-focus-within-bg-blend-multiply:focus-within { background-blend-mode: multiply; }
+  .group:hover .sm-group-hover-bg-blend-multiply { background-blend-mode: multiply; }
+  .sm-bg-blend-screen { background-blend-mode: screen; }
+  .sm-hover-bg-blend-screen:hover { background-blend-mode: screen; }
+  .sm-focus-bg-blend-screen:focus { background-blend-mode: screen; }
+  .sm-active-bg-blend-screen:active { background-blend-mode: screen; }
+  .sm-disabled-bg-blend-screen:disabled { background-blend-mode: screen; }
+  .sm-focus-visible-bg-blend-screen:focus-visible { background-blend-mode: screen; }
+  .sm-focus-within-bg-blend-screen:focus-within { background-blend-mode: screen; }
+  .group:hover .sm-group-hover-bg-blend-screen { background-blend-mode: screen; }
+  .sm-bg-blend-overlay { background-blend-mode: overlay; }
+  .sm-hover-bg-blend-overlay:hover { background-blend-mode: overlay; }
+  .sm-focus-bg-blend-overlay:focus { background-blend-mode: overlay; }
+  .sm-active-bg-blend-overlay:active { background-blend-mode: overlay; }
+  .sm-disabled-bg-blend-overlay:disabled { background-blend-mode: overlay; }
+  .sm-focus-visible-bg-blend-overlay:focus-visible { background-blend-mode: overlay; }
+  .sm-focus-within-bg-blend-overlay:focus-within { background-blend-mode: overlay; }
+  .group:hover .sm-group-hover-bg-blend-overlay { background-blend-mode: overlay; }
+  .sm-bg-blend-darken { background-blend-mode: darken; }
+  .sm-hover-bg-blend-darken:hover { background-blend-mode: darken; }
+  .sm-focus-bg-blend-darken:focus { background-blend-mode: darken; }
+  .sm-active-bg-blend-darken:active { background-blend-mode: darken; }
+  .sm-disabled-bg-blend-darken:disabled { background-blend-mode: darken; }
+  .sm-focus-visible-bg-blend-darken:focus-visible { background-blend-mode: darken; }
+  .sm-focus-within-bg-blend-darken:focus-within { background-blend-mode: darken; }
+  .group:hover .sm-group-hover-bg-blend-darken { background-blend-mode: darken; }
+  .sm-bg-blend-lighten { background-blend-mode: lighten; }
+  .sm-hover-bg-blend-lighten:hover { background-blend-mode: lighten; }
+  .sm-focus-bg-blend-lighten:focus { background-blend-mode: lighten; }
+  .sm-active-bg-blend-lighten:active { background-blend-mode: lighten; }
+  .sm-disabled-bg-blend-lighten:disabled { background-blend-mode: lighten; }
+  .sm-focus-visible-bg-blend-lighten:focus-visible { background-blend-mode: lighten; }
+  .sm-focus-within-bg-blend-lighten:focus-within { background-blend-mode: lighten; }
+  .group:hover .sm-group-hover-bg-blend-lighten { background-blend-mode: lighten; }
+  .sm-bg-blend-color-dodge { background-blend-mode: color-dodge; }
+  .sm-hover-bg-blend-color-dodge:hover { background-blend-mode: color-dodge; }
+  .sm-focus-bg-blend-color-dodge:focus { background-blend-mode: color-dodge; }
+  .sm-active-bg-blend-color-dodge:active { background-blend-mode: color-dodge; }
+  .sm-disabled-bg-blend-color-dodge:disabled { background-blend-mode: color-dodge; }
+  .sm-focus-visible-bg-blend-color-dodge:focus-visible { background-blend-mode: color-dodge; }
+  .sm-focus-within-bg-blend-color-dodge:focus-within { background-blend-mode: color-dodge; }
+  .group:hover .sm-group-hover-bg-blend-color-dodge { background-blend-mode: color-dodge; }
+  .sm-bg-blend-color-burn { background-blend-mode: color-burn; }
+  .sm-hover-bg-blend-color-burn:hover { background-blend-mode: color-burn; }
+  .sm-focus-bg-blend-color-burn:focus { background-blend-mode: color-burn; }
+  .sm-active-bg-blend-color-burn:active { background-blend-mode: color-burn; }
+  .sm-disabled-bg-blend-color-burn:disabled { background-blend-mode: color-burn; }
+  .sm-focus-visible-bg-blend-color-burn:focus-visible { background-blend-mode: color-burn; }
+  .sm-focus-within-bg-blend-color-burn:focus-within { background-blend-mode: color-burn; }
+  .group:hover .sm-group-hover-bg-blend-color-burn { background-blend-mode: color-burn; }
+  .sm-bg-blend-hard-light { background-blend-mode: hard-light; }
+  .sm-hover-bg-blend-hard-light:hover { background-blend-mode: hard-light; }
+  .sm-focus-bg-blend-hard-light:focus { background-blend-mode: hard-light; }
+  .sm-active-bg-blend-hard-light:active { background-blend-mode: hard-light; }
+  .sm-disabled-bg-blend-hard-light:disabled { background-blend-mode: hard-light; }
+  .sm-focus-visible-bg-blend-hard-light:focus-visible { background-blend-mode: hard-light; }
+  .sm-focus-within-bg-blend-hard-light:focus-within { background-blend-mode: hard-light; }
+  .group:hover .sm-group-hover-bg-blend-hard-light { background-blend-mode: hard-light; }
+  .sm-bg-blend-soft-light { background-blend-mode: soft-light; }
+  .sm-hover-bg-blend-soft-light:hover { background-blend-mode: soft-light; }
+  .sm-focus-bg-blend-soft-light:focus { background-blend-mode: soft-light; }
+  .sm-active-bg-blend-soft-light:active { background-blend-mode: soft-light; }
+  .sm-disabled-bg-blend-soft-light:disabled { background-blend-mode: soft-light; }
+  .sm-focus-visible-bg-blend-soft-light:focus-visible { background-blend-mode: soft-light; }
+  .sm-focus-within-bg-blend-soft-light:focus-within { background-blend-mode: soft-light; }
+  .group:hover .sm-group-hover-bg-blend-soft-light { background-blend-mode: soft-light; }
+  .sm-bg-blend-difference { background-blend-mode: difference; }
+  .sm-hover-bg-blend-difference:hover { background-blend-mode: difference; }
+  .sm-focus-bg-blend-difference:focus { background-blend-mode: difference; }
+  .sm-active-bg-blend-difference:active { background-blend-mode: difference; }
+  .sm-disabled-bg-blend-difference:disabled { background-blend-mode: difference; }
+  .sm-focus-visible-bg-blend-difference:focus-visible { background-blend-mode: difference; }
+  .sm-focus-within-bg-blend-difference:focus-within { background-blend-mode: difference; }
+  .group:hover .sm-group-hover-bg-blend-difference { background-blend-mode: difference; }
+  .sm-bg-blend-exclusion { background-blend-mode: exclusion; }
+  .sm-hover-bg-blend-exclusion:hover { background-blend-mode: exclusion; }
+  .sm-focus-bg-blend-exclusion:focus { background-blend-mode: exclusion; }
+  .sm-active-bg-blend-exclusion:active { background-blend-mode: exclusion; }
+  .sm-disabled-bg-blend-exclusion:disabled { background-blend-mode: exclusion; }
+  .sm-focus-visible-bg-blend-exclusion:focus-visible { background-blend-mode: exclusion; }
+  .sm-focus-within-bg-blend-exclusion:focus-within { background-blend-mode: exclusion; }
+  .group:hover .sm-group-hover-bg-blend-exclusion { background-blend-mode: exclusion; }
+  .sm-bg-blend-hue { background-blend-mode: hue; }
+  .sm-hover-bg-blend-hue:hover { background-blend-mode: hue; }
+  .sm-focus-bg-blend-hue:focus { background-blend-mode: hue; }
+  .sm-active-bg-blend-hue:active { background-blend-mode: hue; }
+  .sm-disabled-bg-blend-hue:disabled { background-blend-mode: hue; }
+  .sm-focus-visible-bg-blend-hue:focus-visible { background-blend-mode: hue; }
+  .sm-focus-within-bg-blend-hue:focus-within { background-blend-mode: hue; }
+  .group:hover .sm-group-hover-bg-blend-hue { background-blend-mode: hue; }
+  .sm-bg-blend-saturation { background-blend-mode: saturation; }
+  .sm-hover-bg-blend-saturation:hover { background-blend-mode: saturation; }
+  .sm-focus-bg-blend-saturation:focus { background-blend-mode: saturation; }
+  .sm-active-bg-blend-saturation:active { background-blend-mode: saturation; }
+  .sm-disabled-bg-blend-saturation:disabled { background-blend-mode: saturation; }
+  .sm-focus-visible-bg-blend-saturation:focus-visible { background-blend-mode: saturation; }
+  .sm-focus-within-bg-blend-saturation:focus-within { background-blend-mode: saturation; }
+  .group:hover .sm-group-hover-bg-blend-saturation { background-blend-mode: saturation; }
+  .sm-bg-blend-color { background-blend-mode: color; }
+  .sm-hover-bg-blend-color:hover { background-blend-mode: color; }
+  .sm-focus-bg-blend-color:focus { background-blend-mode: color; }
+  .sm-active-bg-blend-color:active { background-blend-mode: color; }
+  .sm-disabled-bg-blend-color:disabled { background-blend-mode: color; }
+  .sm-focus-visible-bg-blend-color:focus-visible { background-blend-mode: color; }
+  .sm-focus-within-bg-blend-color:focus-within { background-blend-mode: color; }
+  .group:hover .sm-group-hover-bg-blend-color { background-blend-mode: color; }
+  .sm-bg-blend-luminosity { background-blend-mode: luminosity; }
+  .sm-hover-bg-blend-luminosity:hover { background-blend-mode: luminosity; }
+  .sm-focus-bg-blend-luminosity:focus { background-blend-mode: luminosity; }
+  .sm-active-bg-blend-luminosity:active { background-blend-mode: luminosity; }
+  .sm-disabled-bg-blend-luminosity:disabled { background-blend-mode: luminosity; }
+  .sm-focus-visible-bg-blend-luminosity:focus-visible { background-blend-mode: luminosity; }
+  .sm-focus-within-bg-blend-luminosity:focus-within { background-blend-mode: luminosity; }
+  .group:hover .sm-group-hover-bg-blend-luminosity { background-blend-mode: luminosity; }
+  .sm-bg-blend-normal { background-blend-mode: normal; }
+  .sm-hover-bg-blend-normal:hover { background-blend-mode: normal; }
+  .sm-focus-bg-blend-normal:focus { background-blend-mode: normal; }
+  .sm-active-bg-blend-normal:active { background-blend-mode: normal; }
+  .sm-disabled-bg-blend-normal:disabled { background-blend-mode: normal; }
+  .sm-focus-visible-bg-blend-normal:focus-visible { background-blend-mode: normal; }
+  .sm-focus-within-bg-blend-normal:focus-within { background-blend-mode: normal; }
+  .group:hover .sm-group-hover-bg-blend-normal { background-blend-mode: normal; }
+  .sm-bg-blend-multiply { background-blend-mode: multiply; }
+  .sm-hover-bg-blend-multiply:hover { background-blend-mode: multiply; }
+  .sm-focus-bg-blend-multiply:focus { background-blend-mode: multiply; }
+  .sm-active-bg-blend-multiply:active { background-blend-mode: multiply; }
+  .sm-disabled-bg-blend-multiply:disabled { background-blend-mode: multiply; }
+  .sm-focus-visible-bg-blend-multiply:focus-visible { background-blend-mode: multiply; }
+  .sm-focus-within-bg-blend-multiply:focus-within { background-blend-mode: multiply; }
+  .group:hover .sm-group-hover-bg-blend-multiply { background-blend-mode: multiply; }
+  .sm-bg-blend-screen { background-blend-mode: screen; }
+  .sm-hover-bg-blend-screen:hover { background-blend-mode: screen; }
+  .sm-focus-bg-blend-screen:focus { background-blend-mode: screen; }
+  .sm-active-bg-blend-screen:active { background-blend-mode: screen; }
+  .sm-disabled-bg-blend-screen:disabled { background-blend-mode: screen; }
+  .sm-focus-visible-bg-blend-screen:focus-visible { background-blend-mode: screen; }
+  .sm-focus-within-bg-blend-screen:focus-within { background-blend-mode: screen; }
+  .group:hover .sm-group-hover-bg-blend-screen { background-blend-mode: screen; }
+  .sm-bg-blend-overlay { background-blend-mode: overlay; }
+  .sm-hover-bg-blend-overlay:hover { background-blend-mode: overlay; }
+  .sm-focus-bg-blend-overlay:focus { background-blend-mode: overlay; }
+  .sm-active-bg-blend-overlay:active { background-blend-mode: overlay; }
+  .sm-disabled-bg-blend-overlay:disabled { background-blend-mode: overlay; }
+  .sm-focus-visible-bg-blend-overlay:focus-visible { background-blend-mode: overlay; }
+  .sm-focus-within-bg-blend-overlay:focus-within { background-blend-mode: overlay; }
+  .group:hover .sm-group-hover-bg-blend-overlay { background-blend-mode: overlay; }
+  .sm-bg-blend-darken { background-blend-mode: darken; }
+  .sm-hover-bg-blend-darken:hover { background-blend-mode: darken; }
+  .sm-focus-bg-blend-darken:focus { background-blend-mode: darken; }
+  .sm-active-bg-blend-darken:active { background-blend-mode: darken; }
+  .sm-disabled-bg-blend-darken:disabled { background-blend-mode: darken; }
+  .sm-focus-visible-bg-blend-darken:focus-visible { background-blend-mode: darken; }
+  .sm-focus-within-bg-blend-darken:focus-within { background-blend-mode: darken; }
+  .group:hover .sm-group-hover-bg-blend-darken { background-blend-mode: darken; }
+  .sm-bg-blend-lighten { background-blend-mode: lighten; }
+  .sm-hover-bg-blend-lighten:hover { background-blend-mode: lighten; }
+  .sm-focus-bg-blend-lighten:focus { background-blend-mode: lighten; }
+  .sm-active-bg-blend-lighten:active { background-blend-mode: lighten; }
+  .sm-disabled-bg-blend-lighten:disabled { background-blend-mode: lighten; }
+  .sm-focus-visible-bg-blend-lighten:focus-visible { background-blend-mode: lighten; }
+  .sm-focus-within-bg-blend-lighten:focus-within { background-blend-mode: lighten; }
+  .group:hover .sm-group-hover-bg-blend-lighten { background-blend-mode: lighten; }
+  .sm-mix-blend-normal { mix-blend-mode: normal; }
+  .sm-hover-mix-blend-normal:hover { mix-blend-mode: normal; }
+  .sm-focus-mix-blend-normal:focus { mix-blend-mode: normal; }
+  .sm-active-mix-blend-normal:active { mix-blend-mode: normal; }
+  .sm-disabled-mix-blend-normal:disabled { mix-blend-mode: normal; }
+  .sm-focus-visible-mix-blend-normal:focus-visible { mix-blend-mode: normal; }
+  .sm-focus-within-mix-blend-normal:focus-within { mix-blend-mode: normal; }
+  .group:hover .sm-group-hover-mix-blend-normal { mix-blend-mode: normal; }
+  .sm-mix-blend-multiply { mix-blend-mode: multiply; }
+  .sm-hover-mix-blend-multiply:hover { mix-blend-mode: multiply; }
+  .sm-focus-mix-blend-multiply:focus { mix-blend-mode: multiply; }
+  .sm-active-mix-blend-multiply:active { mix-blend-mode: multiply; }
+  .sm-disabled-mix-blend-multiply:disabled { mix-blend-mode: multiply; }
+  .sm-focus-visible-mix-blend-multiply:focus-visible { mix-blend-mode: multiply; }
+  .sm-focus-within-mix-blend-multiply:focus-within { mix-blend-mode: multiply; }
+  .group:hover .sm-group-hover-mix-blend-multiply { mix-blend-mode: multiply; }
+  .sm-mix-blend-screen { mix-blend-mode: screen; }
+  .sm-hover-mix-blend-screen:hover { mix-blend-mode: screen; }
+  .sm-focus-mix-blend-screen:focus { mix-blend-mode: screen; }
+  .sm-active-mix-blend-screen:active { mix-blend-mode: screen; }
+  .sm-disabled-mix-blend-screen:disabled { mix-blend-mode: screen; }
+  .sm-focus-visible-mix-blend-screen:focus-visible { mix-blend-mode: screen; }
+  .sm-focus-within-mix-blend-screen:focus-within { mix-blend-mode: screen; }
+  .group:hover .sm-group-hover-mix-blend-screen { mix-blend-mode: screen; }
+  .sm-mix-blend-overlay { mix-blend-mode: overlay; }
+  .sm-hover-mix-blend-overlay:hover { mix-blend-mode: overlay; }
+  .sm-focus-mix-blend-overlay:focus { mix-blend-mode: overlay; }
+  .sm-active-mix-blend-overlay:active { mix-blend-mode: overlay; }
+  .sm-disabled-mix-blend-overlay:disabled { mix-blend-mode: overlay; }
+  .sm-focus-visible-mix-blend-overlay:focus-visible { mix-blend-mode: overlay; }
+  .sm-focus-within-mix-blend-overlay:focus-within { mix-blend-mode: overlay; }
+  .group:hover .sm-group-hover-mix-blend-overlay { mix-blend-mode: overlay; }
+}
+
+/* MD Breakpoint */
+@media (min-width: 768px) {
+  .md-bg-blend-normal { background-blend-mode: normal; }
+  .md-hover-bg-blend-normal:hover { background-blend-mode: normal; }
+  .md-focus-bg-blend-normal:focus { background-blend-mode: normal; }
+  .md-active-bg-blend-normal:active { background-blend-mode: normal; }
+  .md-disabled-bg-blend-normal:disabled { background-blend-mode: normal; }
+  .md-focus-visible-bg-blend-normal:focus-visible { background-blend-mode: normal; }
+  .md-focus-within-bg-blend-normal:focus-within { background-blend-mode: normal; }
+  .group:hover .md-group-hover-bg-blend-normal { background-blend-mode: normal; }
+  .md-bg-blend-multiply { background-blend-mode: multiply; }
+  .md-hover-bg-blend-multiply:hover { background-blend-mode: multiply; }
+  .md-focus-bg-blend-multiply:focus { background-blend-mode: multiply; }
+  .md-active-bg-blend-multiply:active { background-blend-mode: multiply; }
+  .md-disabled-bg-blend-multiply:disabled { background-blend-mode: multiply; }
+  .md-focus-visible-bg-blend-multiply:focus-visible { background-blend-mode: multiply; }
+  .md-focus-within-bg-blend-multiply:focus-within { background-blend-mode: multiply; }
+  .group:hover .md-group-hover-bg-blend-multiply { background-blend-mode: multiply; }
+  .md-bg-blend-screen { background-blend-mode: screen; }
+  .md-hover-bg-blend-screen:hover { background-blend-mode: screen; }
+  .md-focus-bg-blend-screen:focus { background-blend-mode: screen; }
+  .md-active-bg-blend-screen:active { background-blend-mode: screen; }
+  .md-disabled-bg-blend-screen:disabled { background-blend-mode: screen; }
+  .md-focus-visible-bg-blend-screen:focus-visible { background-blend-mode: screen; }
+  .md-focus-within-bg-blend-screen:focus-within { background-blend-mode: screen; }
+  .group:hover .md-group-hover-bg-blend-screen { background-blend-mode: screen; }
+  .md-bg-blend-overlay { background-blend-mode: overlay; }
+  .md-hover-bg-blend-overlay:hover { background-blend-mode: overlay; }
+  .md-focus-bg-blend-overlay:focus { background-blend-mode: overlay; }
+  .md-active-bg-blend-overlay:active { background-blend-mode: overlay; }
+  .md-disabled-bg-blend-overlay:disabled { background-blend-mode: overlay; }
+  .md-focus-visible-bg-blend-overlay:focus-visible { background-blend-mode: overlay; }
+  .md-focus-within-bg-blend-overlay:focus-within { background-blend-mode: overlay; }
+  .group:hover .md-group-hover-bg-blend-overlay { background-blend-mode: overlay; }
+  .md-bg-blend-darken { background-blend-mode: darken; }
+  .md-hover-bg-blend-darken:hover { background-blend-mode: darken; }
+  .md-focus-bg-blend-darken:focus { background-blend-mode: darken; }
+  .md-active-bg-blend-darken:active { background-blend-mode: darken; }
+  .md-disabled-bg-blend-darken:disabled { background-blend-mode: darken; }
+  .md-focus-visible-bg-blend-darken:focus-visible { background-blend-mode: darken; }
+  .md-focus-within-bg-blend-darken:focus-within { background-blend-mode: darken; }
+  .group:hover .md-group-hover-bg-blend-darken { background-blend-mode: darken; }
+  .md-bg-blend-lighten { background-blend-mode: lighten; }
+  .md-hover-bg-blend-lighten:hover { background-blend-mode: lighten; }
+  .md-focus-bg-blend-lighten:focus { background-blend-mode: lighten; }
+  .md-active-bg-blend-lighten:active { background-blend-mode: lighten; }
+  .md-disabled-bg-blend-lighten:disabled { background-blend-mode: lighten; }
+  .md-focus-visible-bg-blend-lighten:focus-visible { background-blend-mode: lighten; }
+  .md-focus-within-bg-blend-lighten:focus-within { background-blend-mode: lighten; }
+  .group:hover .md-group-hover-bg-blend-lighten { background-blend-mode: lighten; }
+  .md-bg-blend-color-dodge { background-blend-mode: color-dodge; }
+  .md-hover-bg-blend-color-dodge:hover { background-blend-mode: color-dodge; }
+  .md-focus-bg-blend-color-dodge:focus { background-blend-mode: color-dodge; }
+  .md-active-bg-blend-color-dodge:active { background-blend-mode: color-dodge; }
+  .md-disabled-bg-blend-color-dodge:disabled { background-blend-mode: color-dodge; }
+  .md-focus-visible-bg-blend-color-dodge:focus-visible { background-blend-mode: color-dodge; }
+  .md-focus-within-bg-blend-color-dodge:focus-within { background-blend-mode: color-dodge; }
+  .group:hover .md-group-hover-bg-blend-color-dodge { background-blend-mode: color-dodge; }
+  .md-bg-blend-color-burn { background-blend-mode: color-burn; }
+  .md-hover-bg-blend-color-burn:hover { background-blend-mode: color-burn; }
+  .md-focus-bg-blend-color-burn:focus { background-blend-mode: color-burn; }
+  .md-active-bg-blend-color-burn:active { background-blend-mode: color-burn; }
+  .md-disabled-bg-blend-color-burn:disabled { background-blend-mode: color-burn; }
+  .md-focus-visible-bg-blend-color-burn:focus-visible { background-blend-mode: color-burn; }
+  .md-focus-within-bg-blend-color-burn:focus-within { background-blend-mode: color-burn; }
+  .group:hover .md-group-hover-bg-blend-color-burn { background-blend-mode: color-burn; }
+  .md-bg-blend-hard-light { background-blend-mode: hard-light; }
+  .md-hover-bg-blend-hard-light:hover { background-blend-mode: hard-light; }
+  .md-focus-bg-blend-hard-light:focus { background-blend-mode: hard-light; }
+  .md-active-bg-blend-hard-light:active { background-blend-mode: hard-light; }
+  .md-disabled-bg-blend-hard-light:disabled { background-blend-mode: hard-light; }
+  .md-focus-visible-bg-blend-hard-light:focus-visible { background-blend-mode: hard-light; }
+  .md-focus-within-bg-blend-hard-light:focus-within { background-blend-mode: hard-light; }
+  .group:hover .md-group-hover-bg-blend-hard-light { background-blend-mode: hard-light; }
+  .md-bg-blend-soft-light { background-blend-mode: soft-light; }
+  .md-hover-bg-blend-soft-light:hover { background-blend-mode: soft-light; }
+  .md-focus-bg-blend-soft-light:focus { background-blend-mode: soft-light; }
+  .md-active-bg-blend-soft-light:active { background-blend-mode: soft-light; }
+  .md-disabled-bg-blend-soft-light:disabled { background-blend-mode: soft-light; }
+  .md-focus-visible-bg-blend-soft-light:focus-visible { background-blend-mode: soft-light; }
+  .md-focus-within-bg-blend-soft-light:focus-within { background-blend-mode: soft-light; }
+  .group:hover .md-group-hover-bg-blend-soft-light { background-blend-mode: soft-light; }
+  .md-bg-blend-difference { background-blend-mode: difference; }
+  .md-hover-bg-blend-difference:hover { background-blend-mode: difference; }
+  .md-focus-bg-blend-difference:focus { background-blend-mode: difference; }
+  .md-active-bg-blend-difference:active { background-blend-mode: difference; }
+  .md-disabled-bg-blend-difference:disabled { background-blend-mode: difference; }
+  .md-focus-visible-bg-blend-difference:focus-visible { background-blend-mode: difference; }
+  .md-focus-within-bg-blend-difference:focus-within { background-blend-mode: difference; }
+  .group:hover .md-group-hover-bg-blend-difference { background-blend-mode: difference; }
+  .md-bg-blend-exclusion { background-blend-mode: exclusion; }
+  .md-hover-bg-blend-exclusion:hover { background-blend-mode: exclusion; }
+  .md-focus-bg-blend-exclusion:focus { background-blend-mode: exclusion; }
+  .md-active-bg-blend-exclusion:active { background-blend-mode: exclusion; }
+  .md-disabled-bg-blend-exclusion:disabled { background-blend-mode: exclusion; }
+  .md-focus-visible-bg-blend-exclusion:focus-visible { background-blend-mode: exclusion; }
+  .md-focus-within-bg-blend-exclusion:focus-within { background-blend-mode: exclusion; }
+  .group:hover .md-group-hover-bg-blend-exclusion { background-blend-mode: exclusion; }
+  .md-bg-blend-hue { background-blend-mode: hue; }
+  .md-hover-bg-blend-hue:hover { background-blend-mode: hue; }
+  .md-focus-bg-blend-hue:focus { background-blend-mode: hue; }
+  .md-active-bg-blend-hue:active { background-blend-mode: hue; }
+  .md-disabled-bg-blend-hue:disabled { background-blend-mode: hue; }
+  .md-focus-visible-bg-blend-hue:focus-visible { background-blend-mode: hue; }
+  .md-focus-within-bg-blend-hue:focus-within { background-blend-mode: hue; }
+  .group:hover .md-group-hover-bg-blend-hue { background-blend-mode: hue; }
+  .md-bg-blend-saturation { background-blend-mode: saturation; }
+  .md-hover-bg-blend-saturation:hover { background-blend-mode: saturation; }
+  .md-focus-bg-blend-saturation:focus { background-blend-mode: saturation; }
+  .md-active-bg-blend-saturation:active { background-blend-mode: saturation; }
+  .md-disabled-bg-blend-saturation:disabled { background-blend-mode: saturation; }
+  .md-focus-visible-bg-blend-saturation:focus-visible { background-blend-mode: saturation; }
+  .md-focus-within-bg-blend-saturation:focus-within { background-blend-mode: saturation; }
+  .group:hover .md-group-hover-bg-blend-saturation { background-blend-mode: saturation; }
+  .md-bg-blend-color { background-blend-mode: color; }
+  .md-hover-bg-blend-color:hover { background-blend-mode: color; }
+  .md-focus-bg-blend-color:focus { background-blend-mode: color; }
+  .md-active-bg-blend-color:active { background-blend-mode: color; }
+  .md-disabled-bg-blend-color:disabled { background-blend-mode: color; }
+  .md-focus-visible-bg-blend-color:focus-visible { background-blend-mode: color; }
+  .md-focus-within-bg-blend-color:focus-within { background-blend-mode: color; }
+  .group:hover .md-group-hover-bg-blend-color { background-blend-mode: color; }
+  .md-bg-blend-luminosity { background-blend-mode: luminosity; }
+  .md-hover-bg-blend-luminosity:hover { background-blend-mode: luminosity; }
+  .md-focus-bg-blend-luminosity:focus { background-blend-mode: luminosity; }
+  .md-active-bg-blend-luminosity:active { background-blend-mode: luminosity; }
+  .md-disabled-bg-blend-luminosity:disabled { background-blend-mode: luminosity; }
+  .md-focus-visible-bg-blend-luminosity:focus-visible { background-blend-mode: luminosity; }
+  .md-focus-within-bg-blend-luminosity:focus-within { background-blend-mode: luminosity; }
+  .group:hover .md-group-hover-bg-blend-luminosity { background-blend-mode: luminosity; }
+  .md-bg-blend-normal { background-blend-mode: normal; }
+  .md-hover-bg-blend-normal:hover { background-blend-mode: normal; }
+  .md-focus-bg-blend-normal:focus { background-blend-mode: normal; }
+  .md-active-bg-blend-normal:active { background-blend-mode: normal; }
+  .md-disabled-bg-blend-normal:disabled { background-blend-mode: normal; }
+  .md-focus-visible-bg-blend-normal:focus-visible { background-blend-mode: normal; }
+  .md-focus-within-bg-blend-normal:focus-within { background-blend-mode: normal; }
+  .group:hover .md-group-hover-bg-blend-normal { background-blend-mode: normal; }
+  .md-bg-blend-multiply { background-blend-mode: multiply; }
+  .md-hover-bg-blend-multiply:hover { background-blend-mode: multiply; }
+  .md-focus-bg-blend-multiply:focus { background-blend-mode: multiply; }
+  .md-active-bg-blend-multiply:active { background-blend-mode: multiply; }
+  .md-disabled-bg-blend-multiply:disabled { background-blend-mode: multiply; }
+  .md-focus-visible-bg-blend-multiply:focus-visible { background-blend-mode: multiply; }
+  .md-focus-within-bg-blend-multiply:focus-within { background-blend-mode: multiply; }
+  .group:hover .md-group-hover-bg-blend-multiply { background-blend-mode: multiply; }
+  .md-bg-blend-screen { background-blend-mode: screen; }
+  .md-hover-bg-blend-screen:hover { background-blend-mode: screen; }
+  .md-focus-bg-blend-screen:focus { background-blend-mode: screen; }
+  .md-active-bg-blend-screen:active { background-blend-mode: screen; }
+  .md-disabled-bg-blend-screen:disabled { background-blend-mode: screen; }
+  .md-focus-visible-bg-blend-screen:focus-visible { background-blend-mode: screen; }
+  .md-focus-within-bg-blend-screen:focus-within { background-blend-mode: screen; }
+  .group:hover .md-group-hover-bg-blend-screen { background-blend-mode: screen; }
+  .md-bg-blend-overlay { background-blend-mode: overlay; }
+  .md-hover-bg-blend-overlay:hover { background-blend-mode: overlay; }
+  .md-focus-bg-blend-overlay:focus { background-blend-mode: overlay; }
+  .md-active-bg-blend-overlay:active { background-blend-mode: overlay; }
+  .md-disabled-bg-blend-overlay:disabled { background-blend-mode: overlay; }
+  .md-focus-visible-bg-blend-overlay:focus-visible { background-blend-mode: overlay; }
+  .md-focus-within-bg-blend-overlay:focus-within { background-blend-mode: overlay; }
+  .group:hover .md-group-hover-bg-blend-overlay { background-blend-mode: overlay; }
+  .md-bg-blend-darken { background-blend-mode: darken; }
+  .md-hover-bg-blend-darken:hover { background-blend-mode: darken; }
+  .md-focus-bg-blend-darken:focus { background-blend-mode: darken; }
+  .md-active-bg-blend-darken:active { background-blend-mode: darken; }
+  .md-disabled-bg-blend-darken:disabled { background-blend-mode: darken; }
+  .md-focus-visible-bg-blend-darken:focus-visible { background-blend-mode: darken; }
+  .md-focus-within-bg-blend-darken:focus-within { background-blend-mode: darken; }
+  .group:hover .md-group-hover-bg-blend-darken { background-blend-mode: darken; }
+  .md-bg-blend-lighten { background-blend-mode: lighten; }
+  .md-hover-bg-blend-lighten:hover { background-blend-mode: lighten; }
+  .md-focus-bg-blend-lighten:focus { background-blend-mode: lighten; }
+  .md-active-bg-blend-lighten:active { background-blend-mode: lighten; }
+  .md-disabled-bg-blend-lighten:disabled { background-blend-mode: lighten; }
+  .md-focus-visible-bg-blend-lighten:focus-visible { background-blend-mode: lighten; }
+  .md-focus-within-bg-blend-lighten:focus-within { background-blend-mode: lighten; }
+  .group:hover .md-group-hover-bg-blend-lighten { background-blend-mode: lighten; }
+  .md-mix-blend-normal { mix-blend-mode: normal; }
+  .md-hover-mix-blend-normal:hover { mix-blend-mode: normal; }
+  .md-focus-mix-blend-normal:focus { mix-blend-mode: normal; }
+  .md-active-mix-blend-normal:active { mix-blend-mode: normal; }
+  .md-disabled-mix-blend-normal:disabled { mix-blend-mode: normal; }
+  .md-focus-visible-mix-blend-normal:focus-visible { mix-blend-mode: normal; }
+  .md-focus-within-mix-blend-normal:focus-within { mix-blend-mode: normal; }
+  .group:hover .md-group-hover-mix-blend-normal { mix-blend-mode: normal; }
+  .md-mix-blend-multiply { mix-blend-mode: multiply; }
+  .md-hover-mix-blend-multiply:hover { mix-blend-mode: multiply; }
+  .md-focus-mix-blend-multiply:focus { mix-blend-mode: multiply; }
+  .md-active-mix-blend-multiply:active { mix-blend-mode: multiply; }
+  .md-disabled-mix-blend-multiply:disabled { mix-blend-mode: multiply; }
+  .md-focus-visible-mix-blend-multiply:focus-visible { mix-blend-mode: multiply; }
+  .md-focus-within-mix-blend-multiply:focus-within { mix-blend-mode: multiply; }
+  .group:hover .md-group-hover-mix-blend-multiply { mix-blend-mode: multiply; }
+  .md-mix-blend-screen { mix-blend-mode: screen; }
+  .md-hover-mix-blend-screen:hover { mix-blend-mode: screen; }
+  .md-focus-mix-blend-screen:focus { mix-blend-mode: screen; }
+  .md-active-mix-blend-screen:active { mix-blend-mode: screen; }
+  .md-disabled-mix-blend-screen:disabled { mix-blend-mode: screen; }
+  .md-focus-visible-mix-blend-screen:focus-visible { mix-blend-mode: screen; }
+  .md-focus-within-mix-blend-screen:focus-within { mix-blend-mode: screen; }
+  .group:hover .md-group-hover-mix-blend-screen { mix-blend-mode: screen; }
+  .md-mix-blend-overlay { mix-blend-mode: overlay; }
+  .md-hover-mix-blend-overlay:hover { mix-blend-mode: overlay; }
+  .md-focus-mix-blend-overlay:focus { mix-blend-mode: overlay; }
+  .md-active-mix-blend-overlay:active { mix-blend-mode: overlay; }
+  .md-disabled-mix-blend-overlay:disabled { mix-blend-mode: overlay; }
+  .md-focus-visible-mix-blend-overlay:focus-visible { mix-blend-mode: overlay; }
+  .md-focus-within-mix-blend-overlay:focus-within { mix-blend-mode: overlay; }
+  .group:hover .md-group-hover-mix-blend-overlay { mix-blend-mode: overlay; }
+}
+
+/* LG Breakpoint */
+@media (min-width: 1024px) {
+  .lg-bg-blend-normal { background-blend-mode: normal; }
+  .lg-hover-bg-blend-normal:hover { background-blend-mode: normal; }
+  .lg-focus-bg-blend-normal:focus { background-blend-mode: normal; }
+  .lg-active-bg-blend-normal:active { background-blend-mode: normal; }
+  .lg-disabled-bg-blend-normal:disabled { background-blend-mode: normal; }
+  .lg-focus-visible-bg-blend-normal:focus-visible { background-blend-mode: normal; }
+  .lg-focus-within-bg-blend-normal:focus-within { background-blend-mode: normal; }
+  .group:hover .lg-group-hover-bg-blend-normal { background-blend-mode: normal; }
+  .lg-bg-blend-multiply { background-blend-mode: multiply; }
+  .lg-hover-bg-blend-multiply:hover { background-blend-mode: multiply; }
+  .lg-focus-bg-blend-multiply:focus { background-blend-mode: multiply; }
+  .lg-active-bg-blend-multiply:active { background-blend-mode: multiply; }
+  .lg-disabled-bg-blend-multiply:disabled { background-blend-mode: multiply; }
+  .lg-focus-visible-bg-blend-multiply:focus-visible { background-blend-mode: multiply; }
+  .lg-focus-within-bg-blend-multiply:focus-within { background-blend-mode: multiply; }
+  .group:hover .lg-group-hover-bg-blend-multiply { background-blend-mode: multiply; }
+  .lg-bg-blend-screen { background-blend-mode: screen; }
+  .lg-hover-bg-blend-screen:hover { background-blend-mode: screen; }
+  .lg-focus-bg-blend-screen:focus { background-blend-mode: screen; }
+  .lg-active-bg-blend-screen:active { background-blend-mode: screen; }
+  .lg-disabled-bg-blend-screen:disabled { background-blend-mode: screen; }
+  .lg-focus-visible-bg-blend-screen:focus-visible { background-blend-mode: screen; }
+  .lg-focus-within-bg-blend-screen:focus-within { background-blend-mode: screen; }
+  .group:hover .lg-group-hover-bg-blend-screen { background-blend-mode: screen; }
+  .lg-bg-blend-overlay { background-blend-mode: overlay; }
+  .lg-hover-bg-blend-overlay:hover { background-blend-mode: overlay; }
+  .lg-focus-bg-blend-overlay:focus { background-blend-mode: overlay; }
+  .lg-active-bg-blend-overlay:active { background-blend-mode: overlay; }
+  .lg-disabled-bg-blend-overlay:disabled { background-blend-mode: overlay; }
+  .lg-focus-visible-bg-blend-overlay:focus-visible { background-blend-mode: overlay; }
+  .lg-focus-within-bg-blend-overlay:focus-within { background-blend-mode: overlay; }
+  .group:hover .lg-group-hover-bg-blend-overlay { background-blend-mode: overlay; }
+  .lg-bg-blend-darken { background-blend-mode: darken; }
+  .lg-hover-bg-blend-darken:hover { background-blend-mode: darken; }
+  .lg-focus-bg-blend-darken:focus { background-blend-mode: darken; }
+  .lg-active-bg-blend-darken:active { background-blend-mode: darken; }
+  .lg-disabled-bg-blend-darken:disabled { background-blend-mode: darken; }
+  .lg-focus-visible-bg-blend-darken:focus-visible { background-blend-mode: darken; }
+  .lg-focus-within-bg-blend-darken:focus-within { background-blend-mode: darken; }
+  .group:hover .lg-group-hover-bg-blend-darken { background-blend-mode: darken; }
+  .lg-bg-blend-lighten { background-blend-mode: lighten; }
+  .lg-hover-bg-blend-lighten:hover { background-blend-mode: lighten; }
+  .lg-focus-bg-blend-lighten:focus { background-blend-mode: lighten; }
+  .lg-active-bg-blend-lighten:active { background-blend-mode: lighten; }
+  .lg-disabled-bg-blend-lighten:disabled { background-blend-mode: lighten; }
+  .lg-focus-visible-bg-blend-lighten:focus-visible { background-blend-mode: lighten; }
+  .lg-focus-within-bg-blend-lighten:focus-within { background-blend-mode: lighten; }
+  .group:hover .lg-group-hover-bg-blend-lighten { background-blend-mode: lighten; }
+  .lg-bg-blend-color-dodge { background-blend-mode: color-dodge; }
+  .lg-hover-bg-blend-color-dodge:hover { background-blend-mode: color-dodge; }
+  .lg-focus-bg-blend-color-dodge:focus { background-blend-mode: color-dodge; }
+  .lg-active-bg-blend-color-dodge:active { background-blend-mode: color-dodge; }
+  .lg-disabled-bg-blend-color-dodge:disabled { background-blend-mode: color-dodge; }
+  .lg-focus-visible-bg-blend-color-dodge:focus-visible { background-blend-mode: color-dodge; }
+  .lg-focus-within-bg-blend-color-dodge:focus-within { background-blend-mode: color-dodge; }
+  .group:hover .lg-group-hover-bg-blend-color-dodge { background-blend-mode: color-dodge; }
+  .lg-bg-blend-color-burn { background-blend-mode: color-burn; }
+  .lg-hover-bg-blend-color-burn:hover { background-blend-mode: color-burn; }
+  .lg-focus-bg-blend-color-burn:focus { background-blend-mode: color-burn; }
+  .lg-active-bg-blend-color-burn:active { background-blend-mode: color-burn; }
+  .lg-disabled-bg-blend-color-burn:disabled { background-blend-mode: color-burn; }
+  .lg-focus-visible-bg-blend-color-burn:focus-visible { background-blend-mode: color-burn; }
+  .lg-focus-within-bg-blend-color-burn:focus-within { background-blend-mode: color-burn; }
+  .group:hover .lg-group-hover-bg-blend-color-burn { background-blend-mode: color-burn; }
+  .lg-bg-blend-hard-light { background-blend-mode: hard-light; }
+  .lg-hover-bg-blend-hard-light:hover { background-blend-mode: hard-light; }
+  .lg-focus-bg-blend-hard-light:focus { background-blend-mode: hard-light; }
+  .lg-active-bg-blend-hard-light:active { background-blend-mode: hard-light; }
+  .lg-disabled-bg-blend-hard-light:disabled { background-blend-mode: hard-light; }
+  .lg-focus-visible-bg-blend-hard-light:focus-visible { background-blend-mode: hard-light; }
+  .lg-focus-within-bg-blend-hard-light:focus-within { background-blend-mode: hard-light; }
+  .group:hover .lg-group-hover-bg-blend-hard-light { background-blend-mode: hard-light; }
+  .lg-bg-blend-soft-light { background-blend-mode: soft-light; }
+  .lg-hover-bg-blend-soft-light:hover { background-blend-mode: soft-light; }
+  .lg-focus-bg-blend-soft-light:focus { background-blend-mode: soft-light; }
+  .lg-active-bg-blend-soft-light:active { background-blend-mode: soft-light; }
+  .lg-disabled-bg-blend-soft-light:disabled { background-blend-mode: soft-light; }
+  .lg-focus-visible-bg-blend-soft-light:focus-visible { background-blend-mode: soft-light; }
+  .lg-focus-within-bg-blend-soft-light:focus-within { background-blend-mode: soft-light; }
+  .group:hover .lg-group-hover-bg-blend-soft-light { background-blend-mode: soft-light; }
+  .lg-bg-blend-difference { background-blend-mode: difference; }
+  .lg-hover-bg-blend-difference:hover { background-blend-mode: difference; }
+  .lg-focus-bg-blend-difference:focus { background-blend-mode: difference; }
+  .lg-active-bg-blend-difference:active { background-blend-mode: difference; }
+  .lg-disabled-bg-blend-difference:disabled { background-blend-mode: difference; }
+  .lg-focus-visible-bg-blend-difference:focus-visible { background-blend-mode: difference; }
+  .lg-focus-within-bg-blend-difference:focus-within { background-blend-mode: difference; }
+  .group:hover .lg-group-hover-bg-blend-difference { background-blend-mode: difference; }
+  .lg-bg-blend-exclusion { background-blend-mode: exclusion; }
+  .lg-hover-bg-blend-exclusion:hover { background-blend-mode: exclusion; }
+  .lg-focus-bg-blend-exclusion:focus { background-blend-mode: exclusion; }
+  .lg-active-bg-blend-exclusion:active { background-blend-mode: exclusion; }
+  .lg-disabled-bg-blend-exclusion:disabled { background-blend-mode: exclusion; }
+  .lg-focus-visible-bg-blend-exclusion:focus-visible { background-blend-mode: exclusion; }
+  .lg-focus-within-bg-blend-exclusion:focus-within { background-blend-mode: exclusion; }
+  .group:hover .lg-group-hover-bg-blend-exclusion { background-blend-mode: exclusion; }
+  .lg-bg-blend-hue { background-blend-mode: hue; }
+  .lg-hover-bg-blend-hue:hover { background-blend-mode: hue; }
+  .lg-focus-bg-blend-hue:focus { background-blend-mode: hue; }
+  .lg-active-bg-blend-hue:active { background-blend-mode: hue; }
+  .lg-disabled-bg-blend-hue:disabled { background-blend-mode: hue; }
+  .lg-focus-visible-bg-blend-hue:focus-visible { background-blend-mode: hue; }
+  .lg-focus-within-bg-blend-hue:focus-within { background-blend-mode: hue; }
+  .group:hover .lg-group-hover-bg-blend-hue { background-blend-mode: hue; }
+  .lg-bg-blend-saturation { background-blend-mode: saturation; }
+  .lg-hover-bg-blend-saturation:hover { background-blend-mode: saturation; }
+  .lg-focus-bg-blend-saturation:focus { background-blend-mode: saturation; }
+  .lg-active-bg-blend-saturation:active { background-blend-mode: saturation; }
+  .lg-disabled-bg-blend-saturation:disabled { background-blend-mode: saturation; }
+  .lg-focus-visible-bg-blend-saturation:focus-visible { background-blend-mode: saturation; }
+  .lg-focus-within-bg-blend-saturation:focus-within { background-blend-mode: saturation; }
+  .group:hover .lg-group-hover-bg-blend-saturation { background-blend-mode: saturation; }
+  .lg-bg-blend-color { background-blend-mode: color; }
+  .lg-hover-bg-blend-color:hover { background-blend-mode: color; }
+  .lg-focus-bg-blend-color:focus { background-blend-mode: color; }
+  .lg-active-bg-blend-color:active { background-blend-mode: color; }
+  .lg-disabled-bg-blend-color:disabled { background-blend-mode: color; }
+  .lg-focus-visible-bg-blend-color:focus-visible { background-blend-mode: color; }
+  .lg-focus-within-bg-blend-color:focus-within { background-blend-mode: color; }
+  .group:hover .lg-group-hover-bg-blend-color { background-blend-mode: color; }
+  .lg-bg-blend-luminosity { background-blend-mode: luminosity; }
+  .lg-hover-bg-blend-luminosity:hover { background-blend-mode: luminosity; }
+  .lg-focus-bg-blend-luminosity:focus { background-blend-mode: luminosity; }
+  .lg-active-bg-blend-luminosity:active { background-blend-mode: luminosity; }
+  .lg-disabled-bg-blend-luminosity:disabled { background-blend-mode: luminosity; }
+  .lg-focus-visible-bg-blend-luminosity:focus-visible { background-blend-mode: luminosity; }
+  .lg-focus-within-bg-blend-luminosity:focus-within { background-blend-mode: luminosity; }
+  .group:hover .lg-group-hover-bg-blend-luminosity { background-blend-mode: luminosity; }
+  .lg-bg-blend-normal { background-blend-mode: normal; }
+  .lg-hover-bg-blend-normal:hover { background-blend-mode: normal; }
+  .lg-focus-bg-blend-normal:focus { background-blend-mode: normal; }
+  .lg-active-bg-blend-normal:active { background-blend-mode: normal; }
+  .lg-disabled-bg-blend-normal:disabled { background-blend-mode: normal; }
+  .lg-focus-visible-bg-blend-normal:focus-visible { background-blend-mode: normal; }
+  .lg-focus-within-bg-blend-normal:focus-within { background-blend-mode: normal; }
+  .group:hover .lg-group-hover-bg-blend-normal { background-blend-mode: normal; }
+  .lg-bg-blend-multiply { background-blend-mode: multiply; }
+  .lg-hover-bg-blend-multiply:hover { background-blend-mode: multiply; }
+  .lg-focus-bg-blend-multiply:focus { background-blend-mode: multiply; }
+  .lg-active-bg-blend-multiply:active { background-blend-mode: multiply; }
+  .lg-disabled-bg-blend-multiply:disabled { background-blend-mode: multiply; }
+  .lg-focus-visible-bg-blend-multiply:focus-visible { background-blend-mode: multiply; }
+  .lg-focus-within-bg-blend-multiply:focus-within { background-blend-mode: multiply; }
+  .group:hover .lg-group-hover-bg-blend-multiply { background-blend-mode: multiply; }
+  .lg-bg-blend-screen { background-blend-mode: screen; }
+  .lg-hover-bg-blend-screen:hover { background-blend-mode: screen; }
+  .lg-focus-bg-blend-screen:focus { background-blend-mode: screen; }
+  .lg-active-bg-blend-screen:active { background-blend-mode: screen; }
+  .lg-disabled-bg-blend-screen:disabled { background-blend-mode: screen; }
+  .lg-focus-visible-bg-blend-screen:focus-visible { background-blend-mode: screen; }
+  .lg-focus-within-bg-blend-screen:focus-within { background-blend-mode: screen; }
+  .group:hover .lg-group-hover-bg-blend-screen { background-blend-mode: screen; }
+  .lg-bg-blend-overlay { background-blend-mode: overlay; }
+  .lg-hover-bg-blend-overlay:hover { background-blend-mode: overlay; }
+  .lg-focus-bg-blend-overlay:focus { background-blend-mode: overlay; }
+  .lg-active-bg-blend-overlay:active { background-blend-mode: overlay; }
+  .lg-disabled-bg-blend-overlay:disabled { background-blend-mode: overlay; }
+  .lg-focus-visible-bg-blend-overlay:focus-visible { background-blend-mode: overlay; }
+  .lg-focus-within-bg-blend-overlay:focus-within { background-blend-mode: overlay; }
+  .group:hover .lg-group-hover-bg-blend-overlay { background-blend-mode: overlay; }
+  .lg-bg-blend-darken { background-blend-mode: darken; }
+  .lg-hover-bg-blend-darken:hover { background-blend-mode: darken; }
+  .lg-focus-bg-blend-darken:focus { background-blend-mode: darken; }
+  .lg-active-bg-blend-darken:active { background-blend-mode: darken; }
+  .lg-disabled-bg-blend-darken:disabled { background-blend-mode: darken; }
+  .lg-focus-visible-bg-blend-darken:focus-visible { background-blend-mode: darken; }
+  .lg-focus-within-bg-blend-darken:focus-within { background-blend-mode: darken; }
+  .group:hover .lg-group-hover-bg-blend-darken { background-blend-mode: darken; }
+  .lg-bg-blend-lighten { background-blend-mode: lighten; }
+  .lg-hover-bg-blend-lighten:hover { background-blend-mode: lighten; }
+  .lg-focus-bg-blend-lighten:focus { background-blend-mode: lighten; }
+  .lg-active-bg-blend-lighten:active { background-blend-mode: lighten; }
+  .lg-disabled-bg-blend-lighten:disabled { background-blend-mode: lighten; }
+  .lg-focus-visible-bg-blend-lighten:focus-visible { background-blend-mode: lighten; }
+  .lg-focus-within-bg-blend-lighten:focus-within { background-blend-mode: lighten; }
+  .group:hover .lg-group-hover-bg-blend-lighten { background-blend-mode: lighten; }
+  .lg-mix-blend-normal { mix-blend-mode: normal; }
+  .lg-hover-mix-blend-normal:hover { mix-blend-mode: normal; }
+  .lg-focus-mix-blend-normal:focus { mix-blend-mode: normal; }
+  .lg-active-mix-blend-normal:active { mix-blend-mode: normal; }
+  .lg-disabled-mix-blend-normal:disabled { mix-blend-mode: normal; }
+  .lg-focus-visible-mix-blend-normal:focus-visible { mix-blend-mode: normal; }
+  .lg-focus-within-mix-blend-normal:focus-within { mix-blend-mode: normal; }
+  .group:hover .lg-group-hover-mix-blend-normal { mix-blend-mode: normal; }
+  .lg-mix-blend-multiply { mix-blend-mode: multiply; }
+  .lg-hover-mix-blend-multiply:hover { mix-blend-mode: multiply; }
+  .lg-focus-mix-blend-multiply:focus { mix-blend-mode: multiply; }
+  .lg-active-mix-blend-multiply:active { mix-blend-mode: multiply; }
+  .lg-disabled-mix-blend-multiply:disabled { mix-blend-mode: multiply; }
+  .lg-focus-visible-mix-blend-multiply:focus-visible { mix-blend-mode: multiply; }
+  .lg-focus-within-mix-blend-multiply:focus-within { mix-blend-mode: multiply; }
+  .group:hover .lg-group-hover-mix-blend-multiply { mix-blend-mode: multiply; }
+  .lg-mix-blend-screen { mix-blend-mode: screen; }
+  .lg-hover-mix-blend-screen:hover { mix-blend-mode: screen; }
+  .lg-focus-mix-blend-screen:focus { mix-blend-mode: screen; }
+  .lg-active-mix-blend-screen:active { mix-blend-mode: screen; }
+  .lg-disabled-mix-blend-screen:disabled { mix-blend-mode: screen; }
+  .lg-focus-visible-mix-blend-screen:focus-visible { mix-blend-mode: screen; }
+  .lg-focus-within-mix-blend-screen:focus-within { mix-blend-mode: screen; }
+  .group:hover .lg-group-hover-mix-blend-screen { mix-blend-mode: screen; }
+  .lg-mix-blend-overlay { mix-blend-mode: overlay; }
+  .lg-hover-mix-blend-overlay:hover { mix-blend-mode: overlay; }
+  .lg-focus-mix-blend-overlay:focus { mix-blend-mode: overlay; }
+  .lg-active-mix-blend-overlay:active { mix-blend-mode: overlay; }
+  .lg-disabled-mix-blend-overlay:disabled { mix-blend-mode: overlay; }
+  .lg-focus-visible-mix-blend-overlay:focus-visible { mix-blend-mode: overlay; }
+  .lg-focus-within-mix-blend-overlay:focus-within { mix-blend-mode: overlay; }
+  .group:hover .lg-group-hover-mix-blend-overlay { mix-blend-mode: overlay; }
+}
+
+/* XL Breakpoint */
+@media (min-width: 1280px) {
+  .xl-bg-blend-normal { background-blend-mode: normal; }
+  .xl-hover-bg-blend-normal:hover { background-blend-mode: normal; }
+  .xl-focus-bg-blend-normal:focus { background-blend-mode: normal; }
+  .xl-active-bg-blend-normal:active { background-blend-mode: normal; }
+  .xl-disabled-bg-blend-normal:disabled { background-blend-mode: normal; }
+  .xl-focus-visible-bg-blend-normal:focus-visible { background-blend-mode: normal; }
+  .xl-focus-within-bg-blend-normal:focus-within { background-blend-mode: normal; }
+  .group:hover .xl-group-hover-bg-blend-normal { background-blend-mode: normal; }
+  .xl-bg-blend-multiply { background-blend-mode: multiply; }
+  .xl-hover-bg-blend-multiply:hover { background-blend-mode: multiply; }
+  .xl-focus-bg-blend-multiply:focus { background-blend-mode: multiply; }
+  .xl-active-bg-blend-multiply:active { background-blend-mode: multiply; }
+  .xl-disabled-bg-blend-multiply:disabled { background-blend-mode: multiply; }
+  .xl-focus-visible-bg-blend-multiply:focus-visible { background-blend-mode: multiply; }
+  .xl-focus-within-bg-blend-multiply:focus-within { background-blend-mode: multiply; }
+  .group:hover .xl-group-hover-bg-blend-multiply { background-blend-mode: multiply; }
+  .xl-bg-blend-screen { background-blend-mode: screen; }
+  .xl-hover-bg-blend-screen:hover { background-blend-mode: screen; }
+  .xl-focus-bg-blend-screen:focus { background-blend-mode: screen; }
+  .xl-active-bg-blend-screen:active { background-blend-mode: screen; }
+  .xl-disabled-bg-blend-screen:disabled { background-blend-mode: screen; }
+  .xl-focus-visible-bg-blend-screen:focus-visible { background-blend-mode: screen; }
+  .xl-focus-within-bg-blend-screen:focus-within { background-blend-mode: screen; }
+  .group:hover .xl-group-hover-bg-blend-screen { background-blend-mode: screen; }
+  .xl-bg-blend-overlay { background-blend-mode: overlay; }
+  .xl-hover-bg-blend-overlay:hover { background-blend-mode: overlay; }
+  .xl-focus-bg-blend-overlay:focus { background-blend-mode: overlay; }
+  .xl-active-bg-blend-overlay:active { background-blend-mode: overlay; }
+  .xl-disabled-bg-blend-overlay:disabled { background-blend-mode: overlay; }
+  .xl-focus-visible-bg-blend-overlay:focus-visible { background-blend-mode: overlay; }
+  .xl-focus-within-bg-blend-overlay:focus-within { background-blend-mode: overlay; }
+  .group:hover .xl-group-hover-bg-blend-overlay { background-blend-mode: overlay; }
+  .xl-bg-blend-darken { background-blend-mode: darken; }
+  .xl-hover-bg-blend-darken:hover { background-blend-mode: darken; }
+  .xl-focus-bg-blend-darken:focus { background-blend-mode: darken; }
+  .xl-active-bg-blend-darken:active { background-blend-mode: darken; }
+  .xl-disabled-bg-blend-darken:disabled { background-blend-mode: darken; }
+  .xl-focus-visible-bg-blend-darken:focus-visible { background-blend-mode: darken; }
+  .xl-focus-within-bg-blend-darken:focus-within { background-blend-mode: darken; }
+  .group:hover .xl-group-hover-bg-blend-darken { background-blend-mode: darken; }
+  .xl-bg-blend-lighten { background-blend-mode: lighten; }
+  .xl-hover-bg-blend-lighten:hover { background-blend-mode: lighten; }
+  .xl-focus-bg-blend-lighten:focus { background-blend-mode: lighten; }
+  .xl-active-bg-blend-lighten:active { background-blend-mode: lighten; }
+  .xl-disabled-bg-blend-lighten:disabled { background-blend-mode: lighten; }
+  .xl-focus-visible-bg-blend-lighten:focus-visible { background-blend-mode: lighten; }
+  .xl-focus-within-bg-blend-lighten:focus-within { background-blend-mode: lighten; }
+  .group:hover .xl-group-hover-bg-blend-lighten { background-blend-mode: lighten; }
+  .xl-bg-blend-color-dodge { background-blend-mode: color-dodge; }
+  .xl-hover-bg-blend-color-dodge:hover { background-blend-mode: color-dodge; }
+  .xl-focus-bg-blend-color-dodge:focus { background-blend-mode: color-dodge; }
+  .xl-active-bg-blend-color-dodge:active { background-blend-mode: color-dodge; }
+  .xl-disabled-bg-blend-color-dodge:disabled { background-blend-mode: color-dodge; }
+  .xl-focus-visible-bg-blend-color-dodge:focus-visible { background-blend-mode: color-dodge; }
+  .xl-focus-within-bg-blend-color-dodge:focus-within { background-blend-mode: color-dodge; }
+  .group:hover .xl-group-hover-bg-blend-color-dodge { background-blend-mode: color-dodge; }
+  .xl-bg-blend-color-burn { background-blend-mode: color-burn; }
+  .xl-hover-bg-blend-color-burn:hover { background-blend-mode: color-burn; }
+  .xl-focus-bg-blend-color-burn:focus { background-blend-mode: color-burn; }
+  .xl-active-bg-blend-color-burn:active { background-blend-mode: color-burn; }
+  .xl-disabled-bg-blend-color-burn:disabled { background-blend-mode: color-burn; }
+  .xl-focus-visible-bg-blend-color-burn:focus-visible { background-blend-mode: color-burn; }
+  .xl-focus-within-bg-blend-color-burn:focus-within { background-blend-mode: color-burn; }
+  .group:hover .xl-group-hover-bg-blend-color-burn { background-blend-mode: color-burn; }
+  .xl-bg-blend-hard-light { background-blend-mode: hard-light; }
+  .xl-hover-bg-blend-hard-light:hover { background-blend-mode: hard-light; }
+  .xl-focus-bg-blend-hard-light:focus { background-blend-mode: hard-light; }
+  .xl-active-bg-blend-hard-light:active { background-blend-mode: hard-light; }
+  .xl-disabled-bg-blend-hard-light:disabled { background-blend-mode: hard-light; }
+  .xl-focus-visible-bg-blend-hard-light:focus-visible { background-blend-mode: hard-light; }
+  .xl-focus-within-bg-blend-hard-light:focus-within { background-blend-mode: hard-light; }
+  .group:hover .xl-group-hover-bg-blend-hard-light { background-blend-mode: hard-light; }
+  .xl-bg-blend-soft-light { background-blend-mode: soft-light; }
+  .xl-hover-bg-blend-soft-light:hover { background-blend-mode: soft-light; }
+  .xl-focus-bg-blend-soft-light:focus { background-blend-mode: soft-light; }
+  .xl-active-bg-blend-soft-light:active { background-blend-mode: soft-light; }
+  .xl-disabled-bg-blend-soft-light:disabled { background-blend-mode: soft-light; }
+  .xl-focus-visible-bg-blend-soft-light:focus-visible { background-blend-mode: soft-light; }
+  .xl-focus-within-bg-blend-soft-light:focus-within { background-blend-mode: soft-light; }
+  .group:hover .xl-group-hover-bg-blend-soft-light { background-blend-mode: soft-light; }
+  .xl-bg-blend-difference { background-blend-mode: difference; }
+  .xl-hover-bg-blend-difference:hover { background-blend-mode: difference; }
+  .xl-focus-bg-blend-difference:focus { background-blend-mode: difference; }
+  .xl-active-bg-blend-difference:active { background-blend-mode: difference; }
+  .xl-disabled-bg-blend-difference:disabled { background-blend-mode: difference; }
+  .xl-focus-visible-bg-blend-difference:focus-visible { background-blend-mode: difference; }
+  .xl-focus-within-bg-blend-difference:focus-within { background-blend-mode: difference; }
+  .group:hover .xl-group-hover-bg-blend-difference { background-blend-mode: difference; }
+  .xl-bg-blend-exclusion { background-blend-mode: exclusion; }
+  .xl-hover-bg-blend-exclusion:hover { background-blend-mode: exclusion; }
+  .xl-focus-bg-blend-exclusion:focus { background-blend-mode: exclusion; }
+  .xl-active-bg-blend-exclusion:active { background-blend-mode: exclusion; }
+  .xl-disabled-bg-blend-exclusion:disabled { background-blend-mode: exclusion; }
+  .xl-focus-visible-bg-blend-exclusion:focus-visible { background-blend-mode: exclusion; }
+  .xl-focus-within-bg-blend-exclusion:focus-within { background-blend-mode: exclusion; }
+  .group:hover .xl-group-hover-bg-blend-exclusion { background-blend-mode: exclusion; }
+  .xl-bg-blend-hue { background-blend-mode: hue; }
+  .xl-hover-bg-blend-hue:hover { background-blend-mode: hue; }
+  .xl-focus-bg-blend-hue:focus { background-blend-mode: hue; }
+  .xl-active-bg-blend-hue:active { background-blend-mode: hue; }
+  .xl-disabled-bg-blend-hue:disabled { background-blend-mode: hue; }
+  .xl-focus-visible-bg-blend-hue:focus-visible { background-blend-mode: hue; }
+  .xl-focus-within-bg-blend-hue:focus-within { background-blend-mode: hue; }
+  .group:hover .xl-group-hover-bg-blend-hue { background-blend-mode: hue; }
+  .xl-bg-blend-saturation { background-blend-mode: saturation; }
+  .xl-hover-bg-blend-saturation:hover { background-blend-mode: saturation; }
+  .xl-focus-bg-blend-saturation:focus { background-blend-mode: saturation; }
+  .xl-active-bg-blend-saturation:active { background-blend-mode: saturation; }
+  .xl-disabled-bg-blend-saturation:disabled { background-blend-mode: saturation; }
+  .xl-focus-visible-bg-blend-saturation:focus-visible { background-blend-mode: saturation; }
+  .xl-focus-within-bg-blend-saturation:focus-within { background-blend-mode: saturation; }
+  .group:hover .xl-group-hover-bg-blend-saturation { background-blend-mode: saturation; }
+  .xl-bg-blend-color { background-blend-mode: color; }
+  .xl-hover-bg-blend-color:hover { background-blend-mode: color; }
+  .xl-focus-bg-blend-color:focus { background-blend-mode: color; }
+  .xl-active-bg-blend-color:active { background-blend-mode: color; }
+  .xl-disabled-bg-blend-color:disabled { background-blend-mode: color; }
+  .xl-focus-visible-bg-blend-color:focus-visible { background-blend-mode: color; }
+  .xl-focus-within-bg-blend-color:focus-within { background-blend-mode: color; }
+  .group:hover .xl-group-hover-bg-blend-color { background-blend-mode: color; }
+  .xl-bg-blend-luminosity { background-blend-mode: luminosity; }
+  .xl-hover-bg-blend-luminosity:hover { background-blend-mode: luminosity; }
+  .xl-focus-bg-blend-luminosity:focus { background-blend-mode: luminosity; }
+  .xl-active-bg-blend-luminosity:active { background-blend-mode: luminosity; }
+  .xl-disabled-bg-blend-luminosity:disabled { background-blend-mode: luminosity; }
+  .xl-focus-visible-bg-blend-luminosity:focus-visible { background-blend-mode: luminosity; }
+  .xl-focus-within-bg-blend-luminosity:focus-within { background-blend-mode: luminosity; }
+  .group:hover .xl-group-hover-bg-blend-luminosity { background-blend-mode: luminosity; }
+  .xl-bg-blend-normal { background-blend-mode: normal; }
+  .xl-hover-bg-blend-normal:hover { background-blend-mode: normal; }
+  .xl-focus-bg-blend-normal:focus { background-blend-mode: normal; }
+  .xl-active-bg-blend-normal:active { background-blend-mode: normal; }
+  .xl-disabled-bg-blend-normal:disabled { background-blend-mode: normal; }
+  .xl-focus-visible-bg-blend-normal:focus-visible { background-blend-mode: normal; }
+  .xl-focus-within-bg-blend-normal:focus-within { background-blend-mode: normal; }
+  .group:hover .xl-group-hover-bg-blend-normal { background-blend-mode: normal; }
+  .xl-bg-blend-multiply { background-blend-mode: multiply; }
+  .xl-hover-bg-blend-multiply:hover { background-blend-mode: multiply; }
+  .xl-focus-bg-blend-multiply:focus { background-blend-mode: multiply; }
+  .xl-active-bg-blend-multiply:active { background-blend-mode: multiply; }
+  .xl-disabled-bg-blend-multiply:disabled { background-blend-mode: multiply; }
+  .xl-focus-visible-bg-blend-multiply:focus-visible { background-blend-mode: multiply; }
+  .xl-focus-within-bg-blend-multiply:focus-within { background-blend-mode: multiply; }
+  .group:hover .xl-group-hover-bg-blend-multiply { background-blend-mode: multiply; }
+  .xl-bg-blend-screen { background-blend-mode: screen; }
+  .xl-hover-bg-blend-screen:hover { background-blend-mode: screen; }
+  .xl-focus-bg-blend-screen:focus { background-blend-mode: screen; }
+  .xl-active-bg-blend-screen:active { background-blend-mode: screen; }
+  .xl-disabled-bg-blend-screen:disabled { background-blend-mode: screen; }
+  .xl-focus-visible-bg-blend-screen:focus-visible { background-blend-mode: screen; }
+  .xl-focus-within-bg-blend-screen:focus-within { background-blend-mode: screen; }
+  .group:hover .xl-group-hover-bg-blend-screen { background-blend-mode: screen; }
+  .xl-bg-blend-overlay { background-blend-mode: overlay; }
+  .xl-hover-bg-blend-overlay:hover { background-blend-mode: overlay; }
+  .xl-focus-bg-blend-overlay:focus { background-blend-mode: overlay; }
+  .xl-active-bg-blend-overlay:active { background-blend-mode: overlay; }
+  .xl-disabled-bg-blend-overlay:disabled { background-blend-mode: overlay; }
+  .xl-focus-visible-bg-blend-overlay:focus-visible { background-blend-mode: overlay; }
+  .xl-focus-within-bg-blend-overlay:focus-within { background-blend-mode: overlay; }
+  .group:hover .xl-group-hover-bg-blend-overlay { background-blend-mode: overlay; }
+  .xl-bg-blend-darken { background-blend-mode: darken; }
+  .xl-hover-bg-blend-darken:hover { background-blend-mode: darken; }
+  .xl-focus-bg-blend-darken:focus { background-blend-mode: darken; }
+  .xl-active-bg-blend-darken:active { background-blend-mode: darken; }
+  .xl-disabled-bg-blend-darken:disabled { background-blend-mode: darken; }
+  .xl-focus-visible-bg-blend-darken:focus-visible { background-blend-mode: darken; }
+  .xl-focus-within-bg-blend-darken:focus-within { background-blend-mode: darken; }
+  .group:hover .xl-group-hover-bg-blend-darken { background-blend-mode: darken; }
+  .xl-bg-blend-lighten { background-blend-mode: lighten; }
+  .xl-hover-bg-blend-lighten:hover { background-blend-mode: lighten; }
+  .xl-focus-bg-blend-lighten:focus { background-blend-mode: lighten; }
+  .xl-active-bg-blend-lighten:active { background-blend-mode: lighten; }
+  .xl-disabled-bg-blend-lighten:disabled { background-blend-mode: lighten; }
+  .xl-focus-visible-bg-blend-lighten:focus-visible { background-blend-mode: lighten; }
+  .xl-focus-within-bg-blend-lighten:focus-within { background-blend-mode: lighten; }
+  .group:hover .xl-group-hover-bg-blend-lighten { background-blend-mode: lighten; }
+  .xl-mix-blend-normal { mix-blend-mode: normal; }
+  .xl-hover-mix-blend-normal:hover { mix-blend-mode: normal; }
+  .xl-focus-mix-blend-normal:focus { mix-blend-mode: normal; }
+  .xl-active-mix-blend-normal:active { mix-blend-mode: normal; }
+  .xl-disabled-mix-blend-normal:disabled { mix-blend-mode: normal; }
+  .xl-focus-visible-mix-blend-normal:focus-visible { mix-blend-mode: normal; }
+  .xl-focus-within-mix-blend-normal:focus-within { mix-blend-mode: normal; }
+  .group:hover .xl-group-hover-mix-blend-normal { mix-blend-mode: normal; }
+  .xl-mix-blend-multiply { mix-blend-mode: multiply; }
+  .xl-hover-mix-blend-multiply:hover { mix-blend-mode: multiply; }
+  .xl-focus-mix-blend-multiply:focus { mix-blend-mode: multiply; }
+  .xl-active-mix-blend-multiply:active { mix-blend-mode: multiply; }
+  .xl-disabled-mix-blend-multiply:disabled { mix-blend-mode: multiply; }
+  .xl-focus-visible-mix-blend-multiply:focus-visible { mix-blend-mode: multiply; }
+  .xl-focus-within-mix-blend-multiply:focus-within { mix-blend-mode: multiply; }
+  .group:hover .xl-group-hover-mix-blend-multiply { mix-blend-mode: multiply; }
+  .xl-mix-blend-screen { mix-blend-mode: screen; }
+  .xl-hover-mix-blend-screen:hover { mix-blend-mode: screen; }
+  .xl-focus-mix-blend-screen:focus { mix-blend-mode: screen; }
+  .xl-active-mix-blend-screen:active { mix-blend-mode: screen; }
+  .xl-disabled-mix-blend-screen:disabled { mix-blend-mode: screen; }
+  .xl-focus-visible-mix-blend-screen:focus-visible { mix-blend-mode: screen; }
+  .xl-focus-within-mix-blend-screen:focus-within { mix-blend-mode: screen; }
+  .group:hover .xl-group-hover-mix-blend-screen { mix-blend-mode: screen; }
+  .xl-mix-blend-overlay { mix-blend-mode: overlay; }
+  .xl-hover-mix-blend-overlay:hover { mix-blend-mode: overlay; }
+  .xl-focus-mix-blend-overlay:focus { mix-blend-mode: overlay; }
+  .xl-active-mix-blend-overlay:active { mix-blend-mode: overlay; }
+  .xl-disabled-mix-blend-overlay:disabled { mix-blend-mode: overlay; }
+  .xl-focus-visible-mix-blend-overlay:focus-visible { mix-blend-mode: overlay; }
+  .xl-focus-within-mix-blend-overlay:focus-within { mix-blend-mode: overlay; }
+  .group:hover .xl-group-hover-mix-blend-overlay { mix-blend-mode: overlay; }
+}
+
+/* UW Breakpoint */
+@media (min-width: 1536px) {
+  .uw-bg-blend-normal { background-blend-mode: normal; }
+  .uw-hover-bg-blend-normal:hover { background-blend-mode: normal; }
+  .uw-focus-bg-blend-normal:focus { background-blend-mode: normal; }
+  .uw-active-bg-blend-normal:active { background-blend-mode: normal; }
+  .uw-disabled-bg-blend-normal:disabled { background-blend-mode: normal; }
+  .uw-focus-visible-bg-blend-normal:focus-visible { background-blend-mode: normal; }
+  .uw-focus-within-bg-blend-normal:focus-within { background-blend-mode: normal; }
+  .group:hover .uw-group-hover-bg-blend-normal { background-blend-mode: normal; }
+  .uw-bg-blend-multiply { background-blend-mode: multiply; }
+  .uw-hover-bg-blend-multiply:hover { background-blend-mode: multiply; }
+  .uw-focus-bg-blend-multiply:focus { background-blend-mode: multiply; }
+  .uw-active-bg-blend-multiply:active { background-blend-mode: multiply; }
+  .uw-disabled-bg-blend-multiply:disabled { background-blend-mode: multiply; }
+  .uw-focus-visible-bg-blend-multiply:focus-visible { background-blend-mode: multiply; }
+  .uw-focus-within-bg-blend-multiply:focus-within { background-blend-mode: multiply; }
+  .group:hover .uw-group-hover-bg-blend-multiply { background-blend-mode: multiply; }
+  .uw-bg-blend-screen { background-blend-mode: screen; }
+  .uw-hover-bg-blend-screen:hover { background-blend-mode: screen; }
+  .uw-focus-bg-blend-screen:focus { background-blend-mode: screen; }
+  .uw-active-bg-blend-screen:active { background-blend-mode: screen; }
+  .uw-disabled-bg-blend-screen:disabled { background-blend-mode: screen; }
+  .uw-focus-visible-bg-blend-screen:focus-visible { background-blend-mode: screen; }
+  .uw-focus-within-bg-blend-screen:focus-within { background-blend-mode: screen; }
+  .group:hover .uw-group-hover-bg-blend-screen { background-blend-mode: screen; }
+  .uw-bg-blend-overlay { background-blend-mode: overlay; }
+  .uw-hover-bg-blend-overlay:hover { background-blend-mode: overlay; }
+  .uw-focus-bg-blend-overlay:focus { background-blend-mode: overlay; }
+  .uw-active-bg-blend-overlay:active { background-blend-mode: overlay; }
+  .uw-disabled-bg-blend-overlay:disabled { background-blend-mode: overlay; }
+  .uw-focus-visible-bg-blend-overlay:focus-visible { background-blend-mode: overlay; }
+  .uw-focus-within-bg-blend-overlay:focus-within { background-blend-mode: overlay; }
+  .group:hover .uw-group-hover-bg-blend-overlay { background-blend-mode: overlay; }
+  .uw-bg-blend-darken { background-blend-mode: darken; }
+  .uw-hover-bg-blend-darken:hover { background-blend-mode: darken; }
+  .uw-focus-bg-blend-darken:focus { background-blend-mode: darken; }
+  .uw-active-bg-blend-darken:active { background-blend-mode: darken; }
+  .uw-disabled-bg-blend-darken:disabled { background-blend-mode: darken; }
+  .uw-focus-visible-bg-blend-darken:focus-visible { background-blend-mode: darken; }
+  .uw-focus-within-bg-blend-darken:focus-within { background-blend-mode: darken; }
+  .group:hover .uw-group-hover-bg-blend-darken { background-blend-mode: darken; }
+  .uw-bg-blend-lighten { background-blend-mode: lighten; }
+  .uw-hover-bg-blend-lighten:hover { background-blend-mode: lighten; }
+  .uw-focus-bg-blend-lighten:focus { background-blend-mode: lighten; }
+  .uw-active-bg-blend-lighten:active { background-blend-mode: lighten; }
+  .uw-disabled-bg-blend-lighten:disabled { background-blend-mode: lighten; }
+  .uw-focus-visible-bg-blend-lighten:focus-visible { background-blend-mode: lighten; }
+  .uw-focus-within-bg-blend-lighten:focus-within { background-blend-mode: lighten; }
+  .group:hover .uw-group-hover-bg-blend-lighten { background-blend-mode: lighten; }
+  .uw-bg-blend-color-dodge { background-blend-mode: color-dodge; }
+  .uw-hover-bg-blend-color-dodge:hover { background-blend-mode: color-dodge; }
+  .uw-focus-bg-blend-color-dodge:focus { background-blend-mode: color-dodge; }
+  .uw-active-bg-blend-color-dodge:active { background-blend-mode: color-dodge; }
+  .uw-disabled-bg-blend-color-dodge:disabled { background-blend-mode: color-dodge; }
+  .uw-focus-visible-bg-blend-color-dodge:focus-visible { background-blend-mode: color-dodge; }
+  .uw-focus-within-bg-blend-color-dodge:focus-within { background-blend-mode: color-dodge; }
+  .group:hover .uw-group-hover-bg-blend-color-dodge { background-blend-mode: color-dodge; }
+  .uw-bg-blend-color-burn { background-blend-mode: color-burn; }
+  .uw-hover-bg-blend-color-burn:hover { background-blend-mode: color-burn; }
+  .uw-focus-bg-blend-color-burn:focus { background-blend-mode: color-burn; }
+  .uw-active-bg-blend-color-burn:active { background-blend-mode: color-burn; }
+  .uw-disabled-bg-blend-color-burn:disabled { background-blend-mode: color-burn; }
+  .uw-focus-visible-bg-blend-color-burn:focus-visible { background-blend-mode: color-burn; }
+  .uw-focus-within-bg-blend-color-burn:focus-within { background-blend-mode: color-burn; }
+  .group:hover .uw-group-hover-bg-blend-color-burn { background-blend-mode: color-burn; }
+  .uw-bg-blend-hard-light { background-blend-mode: hard-light; }
+  .uw-hover-bg-blend-hard-light:hover { background-blend-mode: hard-light; }
+  .uw-focus-bg-blend-hard-light:focus { background-blend-mode: hard-light; }
+  .uw-active-bg-blend-hard-light:active { background-blend-mode: hard-light; }
+  .uw-disabled-bg-blend-hard-light:disabled { background-blend-mode: hard-light; }
+  .uw-focus-visible-bg-blend-hard-light:focus-visible { background-blend-mode: hard-light; }
+  .uw-focus-within-bg-blend-hard-light:focus-within { background-blend-mode: hard-light; }
+  .group:hover .uw-group-hover-bg-blend-hard-light { background-blend-mode: hard-light; }
+  .uw-bg-blend-soft-light { background-blend-mode: soft-light; }
+  .uw-hover-bg-blend-soft-light:hover { background-blend-mode: soft-light; }
+  .uw-focus-bg-blend-soft-light:focus { background-blend-mode: soft-light; }
+  .uw-active-bg-blend-soft-light:active { background-blend-mode: soft-light; }
+  .uw-disabled-bg-blend-soft-light:disabled { background-blend-mode: soft-light; }
+  .uw-focus-visible-bg-blend-soft-light:focus-visible { background-blend-mode: soft-light; }
+  .uw-focus-within-bg-blend-soft-light:focus-within { background-blend-mode: soft-light; }
+  .group:hover .uw-group-hover-bg-blend-soft-light { background-blend-mode: soft-light; }
+  .uw-bg-blend-difference { background-blend-mode: difference; }
+  .uw-hover-bg-blend-difference:hover { background-blend-mode: difference; }
+  .uw-focus-bg-blend-difference:focus { background-blend-mode: difference; }
+  .uw-active-bg-blend-difference:active { background-blend-mode: difference; }
+  .uw-disabled-bg-blend-difference:disabled { background-blend-mode: difference; }
+  .uw-focus-visible-bg-blend-difference:focus-visible { background-blend-mode: difference; }
+  .uw-focus-within-bg-blend-difference:focus-within { background-blend-mode: difference; }
+  .group:hover .uw-group-hover-bg-blend-difference { background-blend-mode: difference; }
+  .uw-bg-blend-exclusion { background-blend-mode: exclusion; }
+  .uw-hover-bg-blend-exclusion:hover { background-blend-mode: exclusion; }
+  .uw-focus-bg-blend-exclusion:focus { background-blend-mode: exclusion; }
+  .uw-active-bg-blend-exclusion:active { background-blend-mode: exclusion; }
+  .uw-disabled-bg-blend-exclusion:disabled { background-blend-mode: exclusion; }
+  .uw-focus-visible-bg-blend-exclusion:focus-visible { background-blend-mode: exclusion; }
+  .uw-focus-within-bg-blend-exclusion:focus-within { background-blend-mode: exclusion; }
+  .group:hover .uw-group-hover-bg-blend-exclusion { background-blend-mode: exclusion; }
+  .uw-bg-blend-hue { background-blend-mode: hue; }
+  .uw-hover-bg-blend-hue:hover { background-blend-mode: hue; }
+  .uw-focus-bg-blend-hue:focus { background-blend-mode: hue; }
+  .uw-active-bg-blend-hue:active { background-blend-mode: hue; }
+  .uw-disabled-bg-blend-hue:disabled { background-blend-mode: hue; }
+  .uw-focus-visible-bg-blend-hue:focus-visible { background-blend-mode: hue; }
+  .uw-focus-within-bg-blend-hue:focus-within { background-blend-mode: hue; }
+  .group:hover .uw-group-hover-bg-blend-hue { background-blend-mode: hue; }
+  .uw-bg-blend-saturation { background-blend-mode: saturation; }
+  .uw-hover-bg-blend-saturation:hover { background-blend-mode: saturation; }
+  .uw-focus-bg-blend-saturation:focus { background-blend-mode: saturation; }
+  .uw-active-bg-blend-saturation:active { background-blend-mode: saturation; }
+  .uw-disabled-bg-blend-saturation:disabled { background-blend-mode: saturation; }
+  .uw-focus-visible-bg-blend-saturation:focus-visible { background-blend-mode: saturation; }
+  .uw-focus-within-bg-blend-saturation:focus-within { background-blend-mode: saturation; }
+  .group:hover .uw-group-hover-bg-blend-saturation { background-blend-mode: saturation; }
+  .uw-bg-blend-color { background-blend-mode: color; }
+  .uw-hover-bg-blend-color:hover { background-blend-mode: color; }
+  .uw-focus-bg-blend-color:focus { background-blend-mode: color; }
+  .uw-active-bg-blend-color:active { background-blend-mode: color; }
+  .uw-disabled-bg-blend-color:disabled { background-blend-mode: color; }
+  .uw-focus-visible-bg-blend-color:focus-visible { background-blend-mode: color; }
+  .uw-focus-within-bg-blend-color:focus-within { background-blend-mode: color; }
+  .group:hover .uw-group-hover-bg-blend-color { background-blend-mode: color; }
+  .uw-bg-blend-luminosity { background-blend-mode: luminosity; }
+  .uw-hover-bg-blend-luminosity:hover { background-blend-mode: luminosity; }
+  .uw-focus-bg-blend-luminosity:focus { background-blend-mode: luminosity; }
+  .uw-active-bg-blend-luminosity:active { background-blend-mode: luminosity; }
+  .uw-disabled-bg-blend-luminosity:disabled { background-blend-mode: luminosity; }
+  .uw-focus-visible-bg-blend-luminosity:focus-visible { background-blend-mode: luminosity; }
+  .uw-focus-within-bg-blend-luminosity:focus-within { background-blend-mode: luminosity; }
+  .group:hover .uw-group-hover-bg-blend-luminosity { background-blend-mode: luminosity; }
+  .uw-bg-blend-normal { background-blend-mode: normal; }
+  .uw-hover-bg-blend-normal:hover { background-blend-mode: normal; }
+  .uw-focus-bg-blend-normal:focus { background-blend-mode: normal; }
+  .uw-active-bg-blend-normal:active { background-blend-mode: normal; }
+  .uw-disabled-bg-blend-normal:disabled { background-blend-mode: normal; }
+  .uw-focus-visible-bg-blend-normal:focus-visible { background-blend-mode: normal; }
+  .uw-focus-within-bg-blend-normal:focus-within { background-blend-mode: normal; }
+  .group:hover .uw-group-hover-bg-blend-normal { background-blend-mode: normal; }
+  .uw-bg-blend-multiply { background-blend-mode: multiply; }
+  .uw-hover-bg-blend-multiply:hover { background-blend-mode: multiply; }
+  .uw-focus-bg-blend-multiply:focus { background-blend-mode: multiply; }
+  .uw-active-bg-blend-multiply:active { background-blend-mode: multiply; }
+  .uw-disabled-bg-blend-multiply:disabled { background-blend-mode: multiply; }
+  .uw-focus-visible-bg-blend-multiply:focus-visible { background-blend-mode: multiply; }
+  .uw-focus-within-bg-blend-multiply:focus-within { background-blend-mode: multiply; }
+  .group:hover .uw-group-hover-bg-blend-multiply { background-blend-mode: multiply; }
+  .uw-bg-blend-screen { background-blend-mode: screen; }
+  .uw-hover-bg-blend-screen:hover { background-blend-mode: screen; }
+  .uw-focus-bg-blend-screen:focus { background-blend-mode: screen; }
+  .uw-active-bg-blend-screen:active { background-blend-mode: screen; }
+  .uw-disabled-bg-blend-screen:disabled { background-blend-mode: screen; }
+  .uw-focus-visible-bg-blend-screen:focus-visible { background-blend-mode: screen; }
+  .uw-focus-within-bg-blend-screen:focus-within { background-blend-mode: screen; }
+  .group:hover .uw-group-hover-bg-blend-screen { background-blend-mode: screen; }
+  .uw-bg-blend-overlay { background-blend-mode: overlay; }
+  .uw-hover-bg-blend-overlay:hover { background-blend-mode: overlay; }
+  .uw-focus-bg-blend-overlay:focus { background-blend-mode: overlay; }
+  .uw-active-bg-blend-overlay:active { background-blend-mode: overlay; }
+  .uw-disabled-bg-blend-overlay:disabled { background-blend-mode: overlay; }
+  .uw-focus-visible-bg-blend-overlay:focus-visible { background-blend-mode: overlay; }
+  .uw-focus-within-bg-blend-overlay:focus-within { background-blend-mode: overlay; }
+  .group:hover .uw-group-hover-bg-blend-overlay { background-blend-mode: overlay; }
+  .uw-bg-blend-darken { background-blend-mode: darken; }
+  .uw-hover-bg-blend-darken:hover { background-blend-mode: darken; }
+  .uw-focus-bg-blend-darken:focus { background-blend-mode: darken; }
+  .uw-active-bg-blend-darken:active { background-blend-mode: darken; }
+  .uw-disabled-bg-blend-darken:disabled { background-blend-mode: darken; }
+  .uw-focus-visible-bg-blend-darken:focus-visible { background-blend-mode: darken; }
+  .uw-focus-within-bg-blend-darken:focus-within { background-blend-mode: darken; }
+  .group:hover .uw-group-hover-bg-blend-darken { background-blend-mode: darken; }
+  .uw-bg-blend-lighten { background-blend-mode: lighten; }
+  .uw-hover-bg-blend-lighten:hover { background-blend-mode: lighten; }
+  .uw-focus-bg-blend-lighten:focus { background-blend-mode: lighten; }
+  .uw-active-bg-blend-lighten:active { background-blend-mode: lighten; }
+  .uw-disabled-bg-blend-lighten:disabled { background-blend-mode: lighten; }
+  .uw-focus-visible-bg-blend-lighten:focus-visible { background-blend-mode: lighten; }
+  .uw-focus-within-bg-blend-lighten:focus-within { background-blend-mode: lighten; }
+  .group:hover .uw-group-hover-bg-blend-lighten { background-blend-mode: lighten; }
+  .uw-mix-blend-normal { mix-blend-mode: normal; }
+  .uw-hover-mix-blend-normal:hover { mix-blend-mode: normal; }
+  .uw-focus-mix-blend-normal:focus { mix-blend-mode: normal; }
+  .uw-active-mix-blend-normal:active { mix-blend-mode: normal; }
+  .uw-disabled-mix-blend-normal:disabled { mix-blend-mode: normal; }
+  .uw-focus-visible-mix-blend-normal:focus-visible { mix-blend-mode: normal; }
+  .uw-focus-within-mix-blend-normal:focus-within { mix-blend-mode: normal; }
+  .group:hover .uw-group-hover-mix-blend-normal { mix-blend-mode: normal; }
+  .uw-mix-blend-multiply { mix-blend-mode: multiply; }
+  .uw-hover-mix-blend-multiply:hover { mix-blend-mode: multiply; }
+  .uw-focus-mix-blend-multiply:focus { mix-blend-mode: multiply; }
+  .uw-active-mix-blend-multiply:active { mix-blend-mode: multiply; }
+  .uw-disabled-mix-blend-multiply:disabled { mix-blend-mode: multiply; }
+  .uw-focus-visible-mix-blend-multiply:focus-visible { mix-blend-mode: multiply; }
+  .uw-focus-within-mix-blend-multiply:focus-within { mix-blend-mode: multiply; }
+  .group:hover .uw-group-hover-mix-blend-multiply { mix-blend-mode: multiply; }
+  .uw-mix-blend-screen { mix-blend-mode: screen; }
+  .uw-hover-mix-blend-screen:hover { mix-blend-mode: screen; }
+  .uw-focus-mix-blend-screen:focus { mix-blend-mode: screen; }
+  .uw-active-mix-blend-screen:active { mix-blend-mode: screen; }
+  .uw-disabled-mix-blend-screen:disabled { mix-blend-mode: screen; }
+  .uw-focus-visible-mix-blend-screen:focus-visible { mix-blend-mode: screen; }
+  .uw-focus-within-mix-blend-screen:focus-within { mix-blend-mode: screen; }
+  .group:hover .uw-group-hover-mix-blend-screen { mix-blend-mode: screen; }
+  .uw-mix-blend-overlay { mix-blend-mode: overlay; }
+  .uw-hover-mix-blend-overlay:hover { mix-blend-mode: overlay; }
+  .uw-focus-mix-blend-overlay:focus { mix-blend-mode: overlay; }
+  .uw-active-mix-blend-overlay:active { mix-blend-mode: overlay; }
+  .uw-disabled-mix-blend-overlay:disabled { mix-blend-mode: overlay; }
+  .uw-focus-visible-mix-blend-overlay:focus-visible { mix-blend-mode: overlay; }
+  .uw-focus-within-mix-blend-overlay:focus-within { mix-blend-mode: overlay; }
+  .group:hover .uw-group-hover-mix-blend-overlay { mix-blend-mode: overlay; }
+}

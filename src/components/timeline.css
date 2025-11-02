@@ -76,11 +76,11 @@
 /* Dark Mode Support */
 html[data-theme="dark"] {
   .quanta-timeline-item::before {
-    box-shadow: 0 0 0 4px var(--quanta-slate-900);
+    box-shadow: 0 0 0 4px var(--quanta-grey-900);
   }
 
   .quanta-timeline-item.quanta-beginning::before {
-    background: var(--quanta-slate-900);
+    background: var(--quanta-grey-900);
   }
 
   .quanta-timeline-item {

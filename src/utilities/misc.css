@@ -1,0 +1,80 @@
+
+
+/* Clip Path */
+.clip-none { clip-path: none; }
+
+.clip-circle { clip-path: circle(50% at 50% 50%); }
+
+.clip-ellipse { clip-path: ellipse(50% 25% at 50% 50%); }
+
+.clip-inset { clip-path: inset(0); }
+
+.clip-triangle { clip-path: polygon(50% 0%, 0% 100%, 100% 100%); }
+
+/* Logical Properties (example scale 1rem, 2rem) */
+.margin-block-start-1 { margin-block-start: 1rem; }
+
+.margin-block-end-1 { margin-block-end: 1rem; }
+
+.margin-inline-start-1 { margin-inline-start: 1rem; }
+
+.margin-inline-end-1 { margin-inline-end: 1rem; }
+
+.padding-block-start-1 { padding-block-start: 1rem; }
+
+.padding-block-end-1 { padding-block-end: 1rem; }
+
+.padding-inline-start-1 { padding-inline-start: 1rem; }
+
+.padding-inline-end-1 { padding-inline-end: 1rem; }
+
+.break-after-auto { break-after: auto; }
+
+.break-after-avoid { break-after: avoid; }
+
+.break-after-all { break-after: all; }
+
+.break-after-avoid-page { break-after: avoid-page; }
+
+.break-after-page { break-after: page; }
+
+.break-after-left { break-after: left; }
+
+.break-after-right { break-after: right; }
+
+.break-after-column { break-after: column; }
+
+.break-before-auto { break-before: auto; }
+
+.break-before-avoid { break-before: avoid; }
+
+.break-before-all { break-before: all; }
+
+.break-before-avoid-page { break-before: avoid-page; }
+
+.break-before-page { break-before: page; }
+
+.break-before-left { break-before: left; }
+
+.break-before-right { break-before: right; }
+
+.break-before-column { break-before: column; }
+
+.break-inside-auto { break-inside: auto; }
+
+.break-inside-avoid { break-inside: avoid; }
+
+.break-inside-avoid-page { break-inside: avoid-page; }
+
+.break-inside-avoid-column { break-inside: avoid-column; }
+
+/* Clip Path */
+.clip-none { clip-path: none; }
+
+.clip-circle { clip-path: circle(50%); }
+
+.clip-ellipse { clip-path: ellipse(50% 75%); }
+
+.clip-inset { clip-path: inset(10%); }
+
+.clip-polygon { clip-path: polygon(0 0,100% 0,100% 100%,0 100%); }

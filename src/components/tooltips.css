@@ -2,7 +2,7 @@
 .quanta-tooltip {
   position: absolute;
   max-width: 200px;
-  background: var(--quanta-slate-800);
+  background: var(--quanta-grey-800);
   color: var(--white);
   padding: 0.5rem 0.75rem;
   font-size: var(--quanta-text-sm);
@@ -29,7 +29,7 @@
   transform: translateX(-50%);
   border-width: 8px;
   border-style: solid;
-  border-color: var(--quanta-slate-800) transparent transparent transparent;
+  border-color: var(--quanta-grey-800) transparent transparent transparent;
 }
 
 /* Size variants */

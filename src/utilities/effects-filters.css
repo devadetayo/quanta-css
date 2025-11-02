@@ -1,0 +1,124 @@
+
+
+.blur-none { filter: blur(0); }
+
+.blur-sm { filter: blur(2px); }
+
+.blur-md { filter: blur(8px); }
+
+.blur-lg { filter: blur(12px); }
+
+.blur-xl { filter: blur(20px); }
+
+.brightness-0 { filter: brightness(0); }
+
+.brightness-50 { filter: brightness(0.5); }
+
+.brightness-75 { filter: brightness(0.75); }
+
+.brightness-90 { filter: brightness(0.9); }
+
+.brightness-100 { filter: brightness(1); }
+
+.brightness-125 { filter: brightness(1.25); }
+
+.brightness-150 { filter: brightness(1.5); }
+
+.brightness-200 { filter: brightness(2); }
+
+.contrast-0 { filter: contrast(0); }
+
+.contrast-50 { filter: contrast(0.5); }
+
+.contrast-75 { filter: contrast(0.75); }
+
+.contrast-100 { filter: contrast(1); }
+
+.contrast-125 { filter: contrast(1.25); }
+
+.contrast-150 { filter: contrast(1.5); }
+
+.contrast-200 { filter: contrast(2); }
+
+.grayscale-0 { filter: grayscale(0); }
+
+.grayscale-100 { filter: grayscale(1); }
+
+.hue-rotate-0 { filter: hue-rotate(0deg); }
+
+.hue-rotate-45 { filter: hue-rotate(45deg); }
+
+.hue-rotate-90 { filter: hue-rotate(90deg); }
+
+.hue-rotate-180 { filter: hue-rotate(180deg); }
+
+.invert-0 { filter: invert(0); }
+
+.invert-100 { filter: invert(1); }
+
+.saturate-0 { filter: saturate(0); }
+
+.saturate-50 { filter: saturate(0.5); }
+
+.saturate-100 { filter: saturate(1); }
+
+.saturate-150 { filter: saturate(1.5); }
+
+.saturate-200 { filter: saturate(2); }
+
+.sepia-0 { filter: sepia(0); }
+
+.sepia-100 { filter: sepia(1); }
+
+/* =============================================================================
+   5. FILTERS & EFFECTS
+============================================================================= */
+
+.filter-none { filter: none; }
+
+.blur-sm { filter: blur(2px); }
+
+.blur-md { filter: blur(8px); }
+
+.blur-lg { filter: blur(12px); }
+
+.blur-xl { filter: blur(20px); }
+
+.brightness-50 { filter: brightness(0.5); }
+
+.brightness-100 { filter: brightness(1); }
+
+.brightness-150 { filter: brightness(1.5); }
+
+.contrast-50 { filter: contrast(0.5); }
+
+.contrast-100 { filter: contrast(1); }
+
+.saturate-150 { filter: saturate(1.5); }
+
+.hue-rotate-90 { filter: hue-rotate(90deg); }
+
+/* -----------------------------------------------------------------------------
+   14. Filters & Blend Modes
+----------------------------------------------------------------------------- */
+/* Filters */
+.filter-none { filter: none; }
+
+.filter-grayscale { filter: grayscale(100%); }
+
+.filter-blur { filter: blur(4px); }
+
+.filter-brightness-50 { filter: brightness(0.5); }
+
+.filter-contrast-125 { filter: contrast(1.25); }
+
+.filter-saturate-150 { filter: saturate(1.5); }
+
+.filter-sepia { filter: sepia(100%); }
+
+.filter-hue-rotate-90 { filter: hue-rotate(90deg); }
+
+/* Backdrop Filters */
+.backdrop-filter-none { backdrop-filter: none; }
+
+.backdrop-blur { backdrop-filter: blur(4px); }

@@ -1,0 +1,124 @@
+
+
+.text-neutral-50 { color: var(--quanta-neutral-50); }
+
+.text-neutral-100 { color: var(--quanta-neutral-100); }
+
+.text-neutral-200 { color: var(--quanta-neutral-200); }
+
+.text-neutral-300 { color: var(--quanta-neutral-300); }
+
+.text-neutral-400 { color: var(--quanta-neutral-400); }
+
+.text-neutral-500 { color: var(--quanta-neutral-500); }
+
+.text-neutral-600 { color: var(--quanta-neutral-600); }
+
+.text-neutral-700 { color: var(--quanta-neutral-700); }
+
+.text-neutral-800 { color: var(--quanta-neutral-800); }
+
+.text-neutral-900 { color: var(--quanta-neutral-900); }
+
+.bg-neutral-50 { background-color: var(--quanta-neutral-50); }
+
+.bg-neutral-100 { background-color: var(--quanta-neutral-100); }
+
+.bg-neutral-200 { background-color: var(--quanta-neutral-200); }
+
+.bg-neutral-300 { background-color: var(--quanta-neutral-300); }
+
+.bg-neutral-400 { background-color: var(--quanta-neutral-400); }
+
+.bg-neutral-500 { background-color: var(--quanta-neutral-500); }
+
+.bg-neutral-600 { background-color: var(--quanta-neutral-600); }
+
+.bg-neutral-700 { background-color: var(--quanta-neutral-700); }
+
+.bg-neutral-800 { background-color: var(--quanta-neutral-800); }
+
+.bg-neutral-900 { background-color: var(--quanta-neutral-900); }
+
+.border-neutral-50 { border-color: var(--quanta-neutral-50); }
+
+.border-neutral-100 { border-color: var(--quanta-neutral-100); }
+
+.border-neutral-200 { border-color: var(--quanta-neutral-200); }
+
+.border-neutral-300 { border-color: var(--quanta-neutral-300); }
+
+.border-neutral-400 { border-color: var(--quanta-neutral-400); }
+
+.border-neutral-500 { border-color: var(--quanta-neutral-500); }
+
+.border-neutral-600 { border-color: var(--quanta-neutral-600); }
+
+.border-neutral-700 { border-color: var(--quanta-neutral-700); }
+
+.border-neutral-800 { border-color: var(--quanta-neutral-800); }
+
+.border-neutral-900 { border-color: var(--quanta-neutral-900); }
+
+/* ─── Semantic Backgrounds ─────────────────────────── */
+.bg-primary { background-color: var(--quanta-primary); }
+
+.bg-secondary { background-color: var(--quanta-bg-secondary); }
+
+.bg-success { background-color: var(--quanta-bg-success); }
+
+.bg-warning { background-color: var(--quanta-bg-warning); }
+
+.bg-danger { background-color: var(--quanta-bg-danger); }
+
+.bg-info { background-color: var(--quanta-bg-info); }
+
+.bg-neutral { background-color: var(--quanta-bg-neutral); }
+
+.bg-accent { background-color: var(--quanta-bg-accent); }
+
+.bg-ghost { background-color: var(--quanta-bg-ghost); }
+
+.bg-link { background-color: var(--quanta-text-link); }
+
+/* ─── Semantic Text Colors ─────────────────────────── */
+.text-primary { color: var(--quanta-primary); }
+
+.text-secondary { color: var(--quanta-text-secondary); }
+
+.text-success { color: var(--quanta-text-success); }
+
+.text-warning { color: var(--quanta-text-warning); }
+
+.text-danger { color: var(--quanta-text-danger); }
+
+.text-info { color: var(--quanta-text-info); }
+
+.text-neutral { color: var(--quanta-text-neutral); }
+
+.text-accent { color: var(--quanta-text-accent); }
+
+.text-ghost { color: var(--quanta-text-ghost); }
+
+.text-link { color: var(--quanta-text-link); }
+
+/* ─── Semantic Border Colors ───────────────────────── */
+.border-primary { border-color: var(--quanta-border-primary); }
+
+.border-secondary { border-color: var(--quanta-border-secondary); }
+
+.border-success { border-color: var(--quanta-border-success); }
+
+.border-warning { border-color: var(--quanta-border-warning); }
+
+.border-danger { border-color: var(--quanta-border-danger); }
+
+.border-info { border-color: var(--quanta-border-info); }
+
+.border-neutral { border-color: var(--quanta-border-neutral); }
+
+.border-accent { border-color: var(--quanta-border-accent); }
+
+.border-ghost { border-color: var(--quanta-border-ghost); }
+
+.border-link { border-color: var(--quanta-text-link); }

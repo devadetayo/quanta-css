@@ -1,0 +1,1057 @@
+/* Quanta CSS v2.1 - animations Light Variants */
+
+/* State Variants */
+.hover-animate-fade:hover { animation: quanta-fade 0.5s ease-in-out both; }
+.focus-animate-fade:focus { animation: quanta-fade 0.5s ease-in-out both; }
+.active-animate-fade:active { animation: quanta-fade 0.5s ease-in-out both; }
+.disabled-animate-fade:disabled { animation: quanta-fade 0.5s ease-in-out both; }
+.focus-visible-animate-fade:focus-visible { animation: quanta-fade 0.5s ease-in-out both; }
+.focus-within-animate-fade:focus-within { animation: quanta-fade 0.5s ease-in-out both; }
+.group:hover .group-hover-animate-fade { animation: quanta-fade 0.5s ease-in-out both; }
+.hover-animate-slide-up:hover { animation: quanta-slide-up 0.5s ease-out both; }
+.focus-animate-slide-up:focus { animation: quanta-slide-up 0.5s ease-out both; }
+.active-animate-slide-up:active { animation: quanta-slide-up 0.5s ease-out both; }
+.disabled-animate-slide-up:disabled { animation: quanta-slide-up 0.5s ease-out both; }
+.focus-visible-animate-slide-up:focus-visible { animation: quanta-slide-up 0.5s ease-out both; }
+.focus-within-animate-slide-up:focus-within { animation: quanta-slide-up 0.5s ease-out both; }
+.group:hover .group-hover-animate-slide-up { animation: quanta-slide-up 0.5s ease-out both; }
+.hover-animate-slide-down:hover { animation: quanta-slide-down 0.5s ease-out both; }
+.focus-animate-slide-down:focus { animation: quanta-slide-down 0.5s ease-out both; }
+.active-animate-slide-down:active { animation: quanta-slide-down 0.5s ease-out both; }
+.disabled-animate-slide-down:disabled { animation: quanta-slide-down 0.5s ease-out both; }
+.focus-visible-animate-slide-down:focus-visible { animation: quanta-slide-down 0.5s ease-out both; }
+.focus-within-animate-slide-down:focus-within { animation: quanta-slide-down 0.5s ease-out both; }
+.group:hover .group-hover-animate-slide-down { animation: quanta-slide-down 0.5s ease-out both; }
+.hover-animate-slide-left:hover { animation: quanta-slide-left 0.5s ease-out both; }
+.focus-animate-slide-left:focus { animation: quanta-slide-left 0.5s ease-out both; }
+.active-animate-slide-left:active { animation: quanta-slide-left 0.5s ease-out both; }
+.disabled-animate-slide-left:disabled { animation: quanta-slide-left 0.5s ease-out both; }
+.focus-visible-animate-slide-left:focus-visible { animation: quanta-slide-left 0.5s ease-out both; }
+.focus-within-animate-slide-left:focus-within { animation: quanta-slide-left 0.5s ease-out both; }
+.group:hover .group-hover-animate-slide-left { animation: quanta-slide-left 0.5s ease-out both; }
+.hover-animate-slide-right:hover { animation: quanta-slide-right 0.5s ease-out both; }
+.focus-animate-slide-right:focus { animation: quanta-slide-right 0.5s ease-out both; }
+.active-animate-slide-right:active { animation: quanta-slide-right 0.5s ease-out both; }
+.disabled-animate-slide-right:disabled { animation: quanta-slide-right 0.5s ease-out both; }
+.focus-visible-animate-slide-right:focus-visible { animation: quanta-slide-right 0.5s ease-out both; }
+.focus-within-animate-slide-right:focus-within { animation: quanta-slide-right 0.5s ease-out both; }
+.group:hover .group-hover-animate-slide-right { animation: quanta-slide-right 0.5s ease-out both; }
+.hover-animate-bounce:hover { animation: quanta-bounce 1s infinite; }
+.focus-animate-bounce:focus { animation: quanta-bounce 1s infinite; }
+.active-animate-bounce:active { animation: quanta-bounce 1s infinite; }
+.disabled-animate-bounce:disabled { animation: quanta-bounce 1s infinite; }
+.focus-visible-animate-bounce:focus-visible { animation: quanta-bounce 1s infinite; }
+.focus-within-animate-bounce:focus-within { animation: quanta-bounce 1s infinite; }
+.group:hover .group-hover-animate-bounce { animation: quanta-bounce 1s infinite; }
+.hover-animate-spin:hover { animation: quanta-spin 1s linear infinite; }
+.focus-animate-spin:focus { animation: quanta-spin 1s linear infinite; }
+.active-animate-spin:active { animation: quanta-spin 1s linear infinite; }
+.disabled-animate-spin:disabled { animation: quanta-spin 1s linear infinite; }
+.focus-visible-animate-spin:focus-visible { animation: quanta-spin 1s linear infinite; }
+.focus-within-animate-spin:focus-within { animation: quanta-spin 1s linear infinite; }
+.group:hover .group-hover-animate-spin { animation: quanta-spin 1s linear infinite; }
+.hover-animate-pulse:hover { animation: quanta-pulse 1.5s ease-in-out infinite; }
+.focus-animate-pulse:focus { animation: quanta-pulse 1.5s ease-in-out infinite; }
+.active-animate-pulse:active { animation: quanta-pulse 1.5s ease-in-out infinite; }
+.disabled-animate-pulse:disabled { animation: quanta-pulse 1.5s ease-in-out infinite; }
+.focus-visible-animate-pulse:focus-visible { animation: quanta-pulse 1.5s ease-in-out infinite; }
+.focus-within-animate-pulse:focus-within { animation: quanta-pulse 1.5s ease-in-out infinite; }
+.group:hover .group-hover-animate-pulse { animation: quanta-pulse 1.5s ease-in-out infinite; }
+.hover-animate-shake:hover { animation: quanta-shake 0.8s ease-in-out both; }
+.focus-animate-shake:focus { animation: quanta-shake 0.8s ease-in-out both; }
+.active-animate-shake:active { animation: quanta-shake 0.8s ease-in-out both; }
+.disabled-animate-shake:disabled { animation: quanta-shake 0.8s ease-in-out both; }
+.focus-visible-animate-shake:focus-visible { animation: quanta-shake 0.8s ease-in-out both; }
+.focus-within-animate-shake:focus-within { animation: quanta-shake 0.8s ease-in-out both; }
+.group:hover .group-hover-animate-shake { animation: quanta-shake 0.8s ease-in-out both; }
+.hover-animate-wiggle:hover { animation: quanta-wiggle 1s ease-in-out both; }
+.focus-animate-wiggle:focus { animation: quanta-wiggle 1s ease-in-out both; }
+.active-animate-wiggle:active { animation: quanta-wiggle 1s ease-in-out both; }
+.disabled-animate-wiggle:disabled { animation: quanta-wiggle 1s ease-in-out both; }
+.focus-visible-animate-wiggle:focus-visible { animation: quanta-wiggle 1s ease-in-out both; }
+.focus-within-animate-wiggle:focus-within { animation: quanta-wiggle 1s ease-in-out both; }
+.group:hover .group-hover-animate-wiggle { animation: quanta-wiggle 1s ease-in-out both; }
+.hover-animate-zoom-in:hover { animation: quanta-zoom-in 0.5s ease-out both; }
+.focus-animate-zoom-in:focus { animation: quanta-zoom-in 0.5s ease-out both; }
+.active-animate-zoom-in:active { animation: quanta-zoom-in 0.5s ease-out both; }
+.disabled-animate-zoom-in:disabled { animation: quanta-zoom-in 0.5s ease-out both; }
+.focus-visible-animate-zoom-in:focus-visible { animation: quanta-zoom-in 0.5s ease-out both; }
+.focus-within-animate-zoom-in:focus-within { animation: quanta-zoom-in 0.5s ease-out both; }
+.group:hover .group-hover-animate-zoom-in { animation: quanta-zoom-in 0.5s ease-out both; }
+.hover-animate-zoom-out:hover { animation: quanta-zoom-out 0.5s ease-in both; }
+.focus-animate-zoom-out:focus { animation: quanta-zoom-out 0.5s ease-in both; }
+.active-animate-zoom-out:active { animation: quanta-zoom-out 0.5s ease-in both; }
+.disabled-animate-zoom-out:disabled { animation: quanta-zoom-out 0.5s ease-in both; }
+.focus-visible-animate-zoom-out:focus-visible { animation: quanta-zoom-out 0.5s ease-in both; }
+.focus-within-animate-zoom-out:focus-within { animation: quanta-zoom-out 0.5s ease-in both; }
+.group:hover .group-hover-animate-zoom-out { animation: quanta-zoom-out 0.5s ease-in both; }
+.hover-animate-heartbeat:hover { animation: quanta-heartbeat 1.2s ease-in-out infinite; }
+.focus-animate-heartbeat:focus { animation: quanta-heartbeat 1.2s ease-in-out infinite; }
+.active-animate-heartbeat:active { animation: quanta-heartbeat 1.2s ease-in-out infinite; }
+.disabled-animate-heartbeat:disabled { animation: quanta-heartbeat 1.2s ease-in-out infinite; }
+.focus-visible-animate-heartbeat:focus-visible { animation: quanta-heartbeat 1.2s ease-in-out infinite; }
+.focus-within-animate-heartbeat:focus-within { animation: quanta-heartbeat 1.2s ease-in-out infinite; }
+.group:hover .group-hover-animate-heartbeat { animation: quanta-heartbeat 1.2s ease-in-out infinite; }
+.hover-animate-ping:hover { animation: quanta-ping 1s cubic-bezier(0, 0, 0.2, 1) infinite; }
+.focus-animate-ping:focus { animation: quanta-ping 1s cubic-bezier(0, 0, 0.2, 1) infinite; }
+.active-animate-ping:active { animation: quanta-ping 1s cubic-bezier(0, 0, 0.2, 1) infinite; }
+.disabled-animate-ping:disabled { animation: quanta-ping 1s cubic-bezier(0, 0, 0.2, 1) infinite; }
+.focus-visible-animate-ping:focus-visible { animation: quanta-ping 1s cubic-bezier(0, 0, 0.2, 1) infinite; }
+.focus-within-animate-ping:focus-within { animation: quanta-ping 1s cubic-bezier(0, 0, 0.2, 1) infinite; }
+.group:hover .group-hover-animate-ping { animation: quanta-ping 1s cubic-bezier(0, 0, 0.2, 1) infinite; }
+.hover-animate-once:hover { animation-iteration-count: 1 !important; }
+.focus-animate-once:focus { animation-iteration-count: 1 !important; }
+.active-animate-once:active { animation-iteration-count: 1 !important; }
+.disabled-animate-once:disabled { animation-iteration-count: 1 !important; }
+.focus-visible-animate-once:focus-visible { animation-iteration-count: 1 !important; }
+.focus-within-animate-once:focus-within { animation-iteration-count: 1 !important; }
+.group:hover .group-hover-animate-once { animation-iteration-count: 1 !important; }
+.hover-animate-infinite:hover { animation-iteration-count: infinite !important; }
+.focus-animate-infinite:focus { animation-iteration-count: infinite !important; }
+.active-animate-infinite:active { animation-iteration-count: infinite !important; }
+.disabled-animate-infinite:disabled { animation-iteration-count: infinite !important; }
+.focus-visible-animate-infinite:focus-visible { animation-iteration-count: infinite !important; }
+.focus-within-animate-infinite:focus-within { animation-iteration-count: infinite !important; }
+.group:hover .group-hover-animate-infinite { animation-iteration-count: infinite !important; }
+.hover-animate-once-fill-forwards:hover { animation-iteration-count: 1 !important; animation-fill-mode: forwards !important; }
+.focus-animate-once-fill-forwards:focus { animation-iteration-count: 1 !important; animation-fill-mode: forwards !important; }
+.active-animate-once-fill-forwards:active { animation-iteration-count: 1 !important; animation-fill-mode: forwards !important; }
+.disabled-animate-once-fill-forwards:disabled { animation-iteration-count: 1 !important; animation-fill-mode: forwards !important; }
+.focus-visible-animate-once-fill-forwards:focus-visible { animation-iteration-count: 1 !important; animation-fill-mode: forwards !important; }
+.focus-within-animate-once-fill-forwards:focus-within { animation-iteration-count: 1 !important; animation-fill-mode: forwards !important; }
+.group:hover .group-hover-animate-once-fill-forwards { animation-iteration-count: 1 !important; animation-fill-mode: forwards !important; }
+.hover-animate-none:hover { animation: none !important; }
+.focus-animate-none:focus { animation: none !important; }
+.active-animate-none:active { animation: none !important; }
+.disabled-animate-none:disabled { animation: none !important; }
+.focus-visible-animate-none:focus-visible { animation: none !important; }
+.focus-within-animate-none:focus-within { animation: none !important; }
+.group:hover .group-hover-animate-none { animation: none !important; }
+.hover-animate-none:hover { animation: none; }
+.focus-animate-none:focus { animation: none; }
+.active-animate-none:active { animation: none; }
+.disabled-animate-none:disabled { animation: none; }
+.focus-visible-animate-none:focus-visible { animation: none; }
+.focus-within-animate-none:focus-within { animation: none; }
+.group:hover .group-hover-animate-none { animation: none; }
+.hover-animate-fade:hover { animation: fade 300ms ease-out both; }
+.focus-animate-fade:focus { animation: fade 300ms ease-out both; }
+.active-animate-fade:active { animation: fade 300ms ease-out both; }
+.disabled-animate-fade:disabled { animation: fade 300ms ease-out both; }
+.focus-visible-animate-fade:focus-visible { animation: fade 300ms ease-out both; }
+.focus-within-animate-fade:focus-within { animation: fade 300ms ease-out both; }
+.group:hover .group-hover-animate-fade { animation: fade 300ms ease-out both; }
+.hover-animate-slide-in:hover { animation: slide-in 500ms ease-out both; }
+.focus-animate-slide-in:focus { animation: slide-in 500ms ease-out both; }
+.active-animate-slide-in:active { animation: slide-in 500ms ease-out both; }
+.disabled-animate-slide-in:disabled { animation: slide-in 500ms ease-out both; }
+.focus-visible-animate-slide-in:focus-visible { animation: slide-in 500ms ease-out both; }
+.focus-within-animate-slide-in:focus-within { animation: slide-in 500ms ease-out both; }
+.group:hover .group-hover-animate-slide-in { animation: slide-in 500ms ease-out both; }
+.hover-animate-spin:hover { animation: spin 1s linear infinite; }
+.focus-animate-spin:focus { animation: spin 1s linear infinite; }
+.active-animate-spin:active { animation: spin 1s linear infinite; }
+.disabled-animate-spin:disabled { animation: spin 1s linear infinite; }
+.focus-visible-animate-spin:focus-visible { animation: spin 1s linear infinite; }
+.focus-within-animate-spin:focus-within { animation: spin 1s linear infinite; }
+.group:hover .group-hover-animate-spin { animation: spin 1s linear infinite; }
+
+/* SM Breakpoint */
+@media (min-width: 480px) {
+  .sm-animate-fade { animation: quanta-fade 0.5s ease-in-out both; }
+  .sm-hover-animate-fade:hover { animation: quanta-fade 0.5s ease-in-out both; }
+  .sm-focus-animate-fade:focus { animation: quanta-fade 0.5s ease-in-out both; }
+  .sm-active-animate-fade:active { animation: quanta-fade 0.5s ease-in-out both; }
+  .sm-disabled-animate-fade:disabled { animation: quanta-fade 0.5s ease-in-out both; }
+  .sm-focus-visible-animate-fade:focus-visible { animation: quanta-fade 0.5s ease-in-out both; }
+  .sm-focus-within-animate-fade:focus-within { animation: quanta-fade 0.5s ease-in-out both; }
+  .group:hover .sm-group-hover-animate-fade { animation: quanta-fade 0.5s ease-in-out both; }
+  .sm-animate-slide-up { animation: quanta-slide-up 0.5s ease-out both; }
+  .sm-hover-animate-slide-up:hover { animation: quanta-slide-up 0.5s ease-out both; }
+  .sm-focus-animate-slide-up:focus { animation: quanta-slide-up 0.5s ease-out both; }
+  .sm-active-animate-slide-up:active { animation: quanta-slide-up 0.5s ease-out both; }
+  .sm-disabled-animate-slide-up:disabled { animation: quanta-slide-up 0.5s ease-out both; }
+  .sm-focus-visible-animate-slide-up:focus-visible { animation: quanta-slide-up 0.5s ease-out both; }
+  .sm-focus-within-animate-slide-up:focus-within { animation: quanta-slide-up 0.5s ease-out both; }
+  .group:hover .sm-group-hover-animate-slide-up { animation: quanta-slide-up 0.5s ease-out both; }
+  .sm-animate-slide-down { animation: quanta-slide-down 0.5s ease-out both; }
+  .sm-hover-animate-slide-down:hover { animation: quanta-slide-down 0.5s ease-out both; }
+  .sm-focus-animate-slide-down:focus { animation: quanta-slide-down 0.5s ease-out both; }
+  .sm-active-animate-slide-down:active { animation: quanta-slide-down 0.5s ease-out both; }
+  .sm-disabled-animate-slide-down:disabled { animation: quanta-slide-down 0.5s ease-out both; }
+  .sm-focus-visible-animate-slide-down:focus-visible { animation: quanta-slide-down 0.5s ease-out both; }
+  .sm-focus-within-animate-slide-down:focus-within { animation: quanta-slide-down 0.5s ease-out both; }
+  .group:hover .sm-group-hover-animate-slide-down { animation: quanta-slide-down 0.5s ease-out both; }
+  .sm-animate-slide-left { animation: quanta-slide-left 0.5s ease-out both; }
+  .sm-hover-animate-slide-left:hover { animation: quanta-slide-left 0.5s ease-out both; }
+  .sm-focus-animate-slide-left:focus { animation: quanta-slide-left 0.5s ease-out both; }
+  .sm-active-animate-slide-left:active { animation: quanta-slide-left 0.5s ease-out both; }
+  .sm-disabled-animate-slide-left:disabled { animation: quanta-slide-left 0.5s ease-out both; }
+  .sm-focus-visible-animate-slide-left:focus-visible { animation: quanta-slide-left 0.5s ease-out both; }
+  .sm-focus-within-animate-slide-left:focus-within { animation: quanta-slide-left 0.5s ease-out both; }
+  .group:hover .sm-group-hover-animate-slide-left { animation: quanta-slide-left 0.5s ease-out both; }
+  .sm-animate-slide-right { animation: quanta-slide-right 0.5s ease-out both; }
+  .sm-hover-animate-slide-right:hover { animation: quanta-slide-right 0.5s ease-out both; }
+  .sm-focus-animate-slide-right:focus { animation: quanta-slide-right 0.5s ease-out both; }
+  .sm-active-animate-slide-right:active { animation: quanta-slide-right 0.5s ease-out both; }
+  .sm-disabled-animate-slide-right:disabled { animation: quanta-slide-right 0.5s ease-out both; }
+  .sm-focus-visible-animate-slide-right:focus-visible { animation: quanta-slide-right 0.5s ease-out both; }
+  .sm-focus-within-animate-slide-right:focus-within { animation: quanta-slide-right 0.5s ease-out both; }
+  .group:hover .sm-group-hover-animate-slide-right { animation: quanta-slide-right 0.5s ease-out both; }
+  .sm-animate-bounce { animation: quanta-bounce 1s infinite; }
+  .sm-hover-animate-bounce:hover { animation: quanta-bounce 1s infinite; }
+  .sm-focus-animate-bounce:focus { animation: quanta-bounce 1s infinite; }
+  .sm-active-animate-bounce:active { animation: quanta-bounce 1s infinite; }
+  .sm-disabled-animate-bounce:disabled { animation: quanta-bounce 1s infinite; }
+  .sm-focus-visible-animate-bounce:focus-visible { animation: quanta-bounce 1s infinite; }
+  .sm-focus-within-animate-bounce:focus-within { animation: quanta-bounce 1s infinite; }
+  .group:hover .sm-group-hover-animate-bounce { animation: quanta-bounce 1s infinite; }
+  .sm-animate-spin { animation: quanta-spin 1s linear infinite; }
+  .sm-hover-animate-spin:hover { animation: quanta-spin 1s linear infinite; }
+  .sm-focus-animate-spin:focus { animation: quanta-spin 1s linear infinite; }
+  .sm-active-animate-spin:active { animation: quanta-spin 1s linear infinite; }
+  .sm-disabled-animate-spin:disabled { animation: quanta-spin 1s linear infinite; }
+  .sm-focus-visible-animate-spin:focus-visible { animation: quanta-spin 1s linear infinite; }
+  .sm-focus-within-animate-spin:focus-within { animation: quanta-spin 1s linear infinite; }
+  .group:hover .sm-group-hover-animate-spin { animation: quanta-spin 1s linear infinite; }
+  .sm-animate-pulse { animation: quanta-pulse 1.5s ease-in-out infinite; }
+  .sm-hover-animate-pulse:hover { animation: quanta-pulse 1.5s ease-in-out infinite; }
+  .sm-focus-animate-pulse:focus { animation: quanta-pulse 1.5s ease-in-out infinite; }
+  .sm-active-animate-pulse:active { animation: quanta-pulse 1.5s ease-in-out infinite; }
+  .sm-disabled-animate-pulse:disabled { animation: quanta-pulse 1.5s ease-in-out infinite; }
+  .sm-focus-visible-animate-pulse:focus-visible { animation: quanta-pulse 1.5s ease-in-out infinite; }
+  .sm-focus-within-animate-pulse:focus-within { animation: quanta-pulse 1.5s ease-in-out infinite; }
+  .group:hover .sm-group-hover-animate-pulse { animation: quanta-pulse 1.5s ease-in-out infinite; }
+  .sm-animate-shake { animation: quanta-shake 0.8s ease-in-out both; }
+  .sm-hover-animate-shake:hover { animation: quanta-shake 0.8s ease-in-out both; }
+  .sm-focus-animate-shake:focus { animation: quanta-shake 0.8s ease-in-out both; }
+  .sm-active-animate-shake:active { animation: quanta-shake 0.8s ease-in-out both; }
+  .sm-disabled-animate-shake:disabled { animation: quanta-shake 0.8s ease-in-out both; }
+  .sm-focus-visible-animate-shake:focus-visible { animation: quanta-shake 0.8s ease-in-out both; }
+  .sm-focus-within-animate-shake:focus-within { animation: quanta-shake 0.8s ease-in-out both; }
+  .group:hover .sm-group-hover-animate-shake { animation: quanta-shake 0.8s ease-in-out both; }
+  .sm-animate-wiggle { animation: quanta-wiggle 1s ease-in-out both; }
+  .sm-hover-animate-wiggle:hover { animation: quanta-wiggle 1s ease-in-out both; }
+  .sm-focus-animate-wiggle:focus { animation: quanta-wiggle 1s ease-in-out both; }
+  .sm-active-animate-wiggle:active { animation: quanta-wiggle 1s ease-in-out both; }
+  .sm-disabled-animate-wiggle:disabled { animation: quanta-wiggle 1s ease-in-out both; }
+  .sm-focus-visible-animate-wiggle:focus-visible { animation: quanta-wiggle 1s ease-in-out both; }
+  .sm-focus-within-animate-wiggle:focus-within { animation: quanta-wiggle 1s ease-in-out both; }
+  .group:hover .sm-group-hover-animate-wiggle { animation: quanta-wiggle 1s ease-in-out both; }
+  .sm-animate-zoom-in { animation: quanta-zoom-in 0.5s ease-out both; }
+  .sm-hover-animate-zoom-in:hover { animation: quanta-zoom-in 0.5s ease-out both; }
+  .sm-focus-animate-zoom-in:focus { animation: quanta-zoom-in 0.5s ease-out both; }
+  .sm-active-animate-zoom-in:active { animation: quanta-zoom-in 0.5s ease-out both; }
+  .sm-disabled-animate-zoom-in:disabled { animation: quanta-zoom-in 0.5s ease-out both; }
+  .sm-focus-visible-animate-zoom-in:focus-visible { animation: quanta-zoom-in 0.5s ease-out both; }
+  .sm-focus-within-animate-zoom-in:focus-within { animation: quanta-zoom-in 0.5s ease-out both; }
+  .group:hover .sm-group-hover-animate-zoom-in { animation: quanta-zoom-in 0.5s ease-out both; }
+  .sm-animate-zoom-out { animation: quanta-zoom-out 0.5s ease-in both; }
+  .sm-hover-animate-zoom-out:hover { animation: quanta-zoom-out 0.5s ease-in both; }
+  .sm-focus-animate-zoom-out:focus { animation: quanta-zoom-out 0.5s ease-in both; }
+  .sm-active-animate-zoom-out:active { animation: quanta-zoom-out 0.5s ease-in both; }
+  .sm-disabled-animate-zoom-out:disabled { animation: quanta-zoom-out 0.5s ease-in both; }
+  .sm-focus-visible-animate-zoom-out:focus-visible { animation: quanta-zoom-out 0.5s ease-in both; }
+  .sm-focus-within-animate-zoom-out:focus-within { animation: quanta-zoom-out 0.5s ease-in both; }
+  .group:hover .sm-group-hover-animate-zoom-out { animation: quanta-zoom-out 0.5s ease-in both; }
+  .sm-animate-heartbeat { animation: quanta-heartbeat 1.2s ease-in-out infinite; }
+  .sm-hover-animate-heartbeat:hover { animation: quanta-heartbeat 1.2s ease-in-out infinite; }
+  .sm-focus-animate-heartbeat:focus { animation: quanta-heartbeat 1.2s ease-in-out infinite; }
+  .sm-active-animate-heartbeat:active { animation: quanta-heartbeat 1.2s ease-in-out infinite; }
+  .sm-disabled-animate-heartbeat:disabled { animation: quanta-heartbeat 1.2s ease-in-out infinite; }
+  .sm-focus-visible-animate-heartbeat:focus-visible { animation: quanta-heartbeat 1.2s ease-in-out infinite; }
+  .sm-focus-within-animate-heartbeat:focus-within { animation: quanta-heartbeat 1.2s ease-in-out infinite; }
+  .group:hover .sm-group-hover-animate-heartbeat { animation: quanta-heartbeat 1.2s ease-in-out infinite; }
+  .sm-animate-ping { animation: quanta-ping 1s cubic-bezier(0, 0, 0.2, 1) infinite; }
+  .sm-hover-animate-ping:hover { animation: quanta-ping 1s cubic-bezier(0, 0, 0.2, 1) infinite; }
+  .sm-focus-animate-ping:focus { animation: quanta-ping 1s cubic-bezier(0, 0, 0.2, 1) infinite; }
+  .sm-active-animate-ping:active { animation: quanta-ping 1s cubic-bezier(0, 0, 0.2, 1) infinite; }
+  .sm-disabled-animate-ping:disabled { animation: quanta-ping 1s cubic-bezier(0, 0, 0.2, 1) infinite; }
+  .sm-focus-visible-animate-ping:focus-visible { animation: quanta-ping 1s cubic-bezier(0, 0, 0.2, 1) infinite; }
+  .sm-focus-within-animate-ping:focus-within { animation: quanta-ping 1s cubic-bezier(0, 0, 0.2, 1) infinite; }
+  .group:hover .sm-group-hover-animate-ping { animation: quanta-ping 1s cubic-bezier(0, 0, 0.2, 1) infinite; }
+  .sm-animate-once { animation-iteration-count: 1 !important; }
+  .sm-hover-animate-once:hover { animation-iteration-count: 1 !important; }
+  .sm-focus-animate-once:focus { animation-iteration-count: 1 !important; }
+  .sm-active-animate-once:active { animation-iteration-count: 1 !important; }
+  .sm-disabled-animate-once:disabled { animation-iteration-count: 1 !important; }
+  .sm-focus-visible-animate-once:focus-visible { animation-iteration-count: 1 !important; }
+  .sm-focus-within-animate-once:focus-within { animation-iteration-count: 1 !important; }
+  .group:hover .sm-group-hover-animate-once { animation-iteration-count: 1 !important; }
+  .sm-animate-infinite { animation-iteration-count: infinite !important; }
+  .sm-hover-animate-infinite:hover { animation-iteration-count: infinite !important; }
+  .sm-focus-animate-infinite:focus { animation-iteration-count: infinite !important; }
+  .sm-active-animate-infinite:active { animation-iteration-count: infinite !important; }
+  .sm-disabled-animate-infinite:disabled { animation-iteration-count: infinite !important; }
+  .sm-focus-visible-animate-infinite:focus-visible { animation-iteration-count: infinite !important; }
+  .sm-focus-within-animate-infinite:focus-within { animation-iteration-count: infinite !important; }
+  .group:hover .sm-group-hover-animate-infinite { animation-iteration-count: infinite !important; }
+  .sm-animate-once-fill-forwards { animation-iteration-count: 1 !important; animation-fill-mode: forwards !important; }
+  .sm-hover-animate-once-fill-forwards:hover { animation-iteration-count: 1 !important; animation-fill-mode: forwards !important; }
+  .sm-focus-animate-once-fill-forwards:focus { animation-iteration-count: 1 !important; animation-fill-mode: forwards !important; }
+  .sm-active-animate-once-fill-forwards:active { animation-iteration-count: 1 !important; animation-fill-mode: forwards !important; }
+  .sm-disabled-animate-once-fill-forwards:disabled { animation-iteration-count: 1 !important; animation-fill-mode: forwards !important; }
+  .sm-focus-visible-animate-once-fill-forwards:focus-visible { animation-iteration-count: 1 !important; animation-fill-mode: forwards !important; }
+  .sm-focus-within-animate-once-fill-forwards:focus-within { animation-iteration-count: 1 !important; animation-fill-mode: forwards !important; }
+  .group:hover .sm-group-hover-animate-once-fill-forwards { animation-iteration-count: 1 !important; animation-fill-mode: forwards !important; }
+  .sm-animate-none { animation: none !important; }
+  .sm-hover-animate-none:hover { animation: none !important; }
+  .sm-focus-animate-none:focus { animation: none !important; }
+  .sm-active-animate-none:active { animation: none !important; }
+  .sm-disabled-animate-none:disabled { animation: none !important; }
+  .sm-focus-visible-animate-none:focus-visible { animation: none !important; }
+  .sm-focus-within-animate-none:focus-within { animation: none !important; }
+  .group:hover .sm-group-hover-animate-none { animation: none !important; }
+  .sm-animate-none { animation: none; }
+  .sm-hover-animate-none:hover { animation: none; }
+  .sm-focus-animate-none:focus { animation: none; }
+  .sm-active-animate-none:active { animation: none; }
+  .sm-disabled-animate-none:disabled { animation: none; }
+  .sm-focus-visible-animate-none:focus-visible { animation: none; }
+  .sm-focus-within-animate-none:focus-within { animation: none; }
+  .group:hover .sm-group-hover-animate-none { animation: none; }
+  .sm-animate-fade { animation: fade 300ms ease-out both; }
+  .sm-hover-animate-fade:hover { animation: fade 300ms ease-out both; }
+  .sm-focus-animate-fade:focus { animation: fade 300ms ease-out both; }
+  .sm-active-animate-fade:active { animation: fade 300ms ease-out both; }
+  .sm-disabled-animate-fade:disabled { animation: fade 300ms ease-out both; }
+  .sm-focus-visible-animate-fade:focus-visible { animation: fade 300ms ease-out both; }
+  .sm-focus-within-animate-fade:focus-within { animation: fade 300ms ease-out both; }
+  .group:hover .sm-group-hover-animate-fade { animation: fade 300ms ease-out both; }
+  .sm-animate-slide-in { animation: slide-in 500ms ease-out both; }
+  .sm-hover-animate-slide-in:hover { animation: slide-in 500ms ease-out both; }
+  .sm-focus-animate-slide-in:focus { animation: slide-in 500ms ease-out both; }
+  .sm-active-animate-slide-in:active { animation: slide-in 500ms ease-out both; }
+  .sm-disabled-animate-slide-in:disabled { animation: slide-in 500ms ease-out both; }
+  .sm-focus-visible-animate-slide-in:focus-visible { animation: slide-in 500ms ease-out both; }
+  .sm-focus-within-animate-slide-in:focus-within { animation: slide-in 500ms ease-out both; }
+  .group:hover .sm-group-hover-animate-slide-in { animation: slide-in 500ms ease-out both; }
+  .sm-animate-spin { animation: spin 1s linear infinite; }
+  .sm-hover-animate-spin:hover { animation: spin 1s linear infinite; }
+  .sm-focus-animate-spin:focus { animation: spin 1s linear infinite; }
+  .sm-active-animate-spin:active { animation: spin 1s linear infinite; }
+  .sm-disabled-animate-spin:disabled { animation: spin 1s linear infinite; }
+  .sm-focus-visible-animate-spin:focus-visible { animation: spin 1s linear infinite; }
+  .sm-focus-within-animate-spin:focus-within { animation: spin 1s linear infinite; }
+  .group:hover .sm-group-hover-animate-spin { animation: spin 1s linear infinite; }
+}
+
+/* MD Breakpoint */
+@media (min-width: 768px) {
+  .md-animate-fade { animation: quanta-fade 0.5s ease-in-out both; }
+  .md-hover-animate-fade:hover { animation: quanta-fade 0.5s ease-in-out both; }
+  .md-focus-animate-fade:focus { animation: quanta-fade 0.5s ease-in-out both; }
+  .md-active-animate-fade:active { animation: quanta-fade 0.5s ease-in-out both; }
+  .md-disabled-animate-fade:disabled { animation: quanta-fade 0.5s ease-in-out both; }
+  .md-focus-visible-animate-fade:focus-visible { animation: quanta-fade 0.5s ease-in-out both; }
+  .md-focus-within-animate-fade:focus-within { animation: quanta-fade 0.5s ease-in-out both; }
+  .group:hover .md-group-hover-animate-fade { animation: quanta-fade 0.5s ease-in-out both; }
+  .md-animate-slide-up { animation: quanta-slide-up 0.5s ease-out both; }
+  .md-hover-animate-slide-up:hover { animation: quanta-slide-up 0.5s ease-out both; }
+  .md-focus-animate-slide-up:focus { animation: quanta-slide-up 0.5s ease-out both; }
+  .md-active-animate-slide-up:active { animation: quanta-slide-up 0.5s ease-out both; }
+  .md-disabled-animate-slide-up:disabled { animation: quanta-slide-up 0.5s ease-out both; }
+  .md-focus-visible-animate-slide-up:focus-visible { animation: quanta-slide-up 0.5s ease-out both; }
+  .md-focus-within-animate-slide-up:focus-within { animation: quanta-slide-up 0.5s ease-out both; }
+  .group:hover .md-group-hover-animate-slide-up { animation: quanta-slide-up 0.5s ease-out both; }
+  .md-animate-slide-down { animation: quanta-slide-down 0.5s ease-out both; }
+  .md-hover-animate-slide-down:hover { animation: quanta-slide-down 0.5s ease-out both; }
+  .md-focus-animate-slide-down:focus { animation: quanta-slide-down 0.5s ease-out both; }
+  .md-active-animate-slide-down:active { animation: quanta-slide-down 0.5s ease-out both; }
+  .md-disabled-animate-slide-down:disabled { animation: quanta-slide-down 0.5s ease-out both; }
+  .md-focus-visible-animate-slide-down:focus-visible { animation: quanta-slide-down 0.5s ease-out both; }
+  .md-focus-within-animate-slide-down:focus-within { animation: quanta-slide-down 0.5s ease-out both; }
+  .group:hover .md-group-hover-animate-slide-down { animation: quanta-slide-down 0.5s ease-out both; }
+  .md-animate-slide-left { animation: quanta-slide-left 0.5s ease-out both; }
+  .md-hover-animate-slide-left:hover { animation: quanta-slide-left 0.5s ease-out both; }
+  .md-focus-animate-slide-left:focus { animation: quanta-slide-left 0.5s ease-out both; }
+  .md-active-animate-slide-left:active { animation: quanta-slide-left 0.5s ease-out both; }
+  .md-disabled-animate-slide-left:disabled { animation: quanta-slide-left 0.5s ease-out both; }
+  .md-focus-visible-animate-slide-left:focus-visible { animation: quanta-slide-left 0.5s ease-out both; }
+  .md-focus-within-animate-slide-left:focus-within { animation: quanta-slide-left 0.5s ease-out both; }
+  .group:hover .md-group-hover-animate-slide-left { animation: quanta-slide-left 0.5s ease-out both; }
+  .md-animate-slide-right { animation: quanta-slide-right 0.5s ease-out both; }
+  .md-hover-animate-slide-right:hover { animation: quanta-slide-right 0.5s ease-out both; }
+  .md-focus-animate-slide-right:focus { animation: quanta-slide-right 0.5s ease-out both; }
+  .md-active-animate-slide-right:active { animation: quanta-slide-right 0.5s ease-out both; }
+  .md-disabled-animate-slide-right:disabled { animation: quanta-slide-right 0.5s ease-out both; }
+  .md-focus-visible-animate-slide-right:focus-visible { animation: quanta-slide-right 0.5s ease-out both; }
+  .md-focus-within-animate-slide-right:focus-within { animation: quanta-slide-right 0.5s ease-out both; }
+  .group:hover .md-group-hover-animate-slide-right { animation: quanta-slide-right 0.5s ease-out both; }
+  .md-animate-bounce { animation: quanta-bounce 1s infinite; }
+  .md-hover-animate-bounce:hover { animation: quanta-bounce 1s infinite; }
+  .md-focus-animate-bounce:focus { animation: quanta-bounce 1s infinite; }
+  .md-active-animate-bounce:active { animation: quanta-bounce 1s infinite; }
+  .md-disabled-animate-bounce:disabled { animation: quanta-bounce 1s infinite; }
+  .md-focus-visible-animate-bounce:focus-visible { animation: quanta-bounce 1s infinite; }
+  .md-focus-within-animate-bounce:focus-within { animation: quanta-bounce 1s infinite; }
+  .group:hover .md-group-hover-animate-bounce { animation: quanta-bounce 1s infinite; }
+  .md-animate-spin { animation: quanta-spin 1s linear infinite; }
+  .md-hover-animate-spin:hover { animation: quanta-spin 1s linear infinite; }
+  .md-focus-animate-spin:focus { animation: quanta-spin 1s linear infinite; }
+  .md-active-animate-spin:active { animation: quanta-spin 1s linear infinite; }
+  .md-disabled-animate-spin:disabled { animation: quanta-spin 1s linear infinite; }
+  .md-focus-visible-animate-spin:focus-visible { animation: quanta-spin 1s linear infinite; }
+  .md-focus-within-animate-spin:focus-within { animation: quanta-spin 1s linear infinite; }
+  .group:hover .md-group-hover-animate-spin { animation: quanta-spin 1s linear infinite; }
+  .md-animate-pulse { animation: quanta-pulse 1.5s ease-in-out infinite; }
+  .md-hover-animate-pulse:hover { animation: quanta-pulse 1.5s ease-in-out infinite; }
+  .md-focus-animate-pulse:focus { animation: quanta-pulse 1.5s ease-in-out infinite; }
+  .md-active-animate-pulse:active { animation: quanta-pulse 1.5s ease-in-out infinite; }
+  .md-disabled-animate-pulse:disabled { animation: quanta-pulse 1.5s ease-in-out infinite; }
+  .md-focus-visible-animate-pulse:focus-visible { animation: quanta-pulse 1.5s ease-in-out infinite; }
+  .md-focus-within-animate-pulse:focus-within { animation: quanta-pulse 1.5s ease-in-out infinite; }
+  .group:hover .md-group-hover-animate-pulse { animation: quanta-pulse 1.5s ease-in-out infinite; }
+  .md-animate-shake { animation: quanta-shake 0.8s ease-in-out both; }
+  .md-hover-animate-shake:hover { animation: quanta-shake 0.8s ease-in-out both; }
+  .md-focus-animate-shake:focus { animation: quanta-shake 0.8s ease-in-out both; }
+  .md-active-animate-shake:active { animation: quanta-shake 0.8s ease-in-out both; }
+  .md-disabled-animate-shake:disabled { animation: quanta-shake 0.8s ease-in-out both; }
+  .md-focus-visible-animate-shake:focus-visible { animation: quanta-shake 0.8s ease-in-out both; }
+  .md-focus-within-animate-shake:focus-within { animation: quanta-shake 0.8s ease-in-out both; }
+  .group:hover .md-group-hover-animate-shake { animation: quanta-shake 0.8s ease-in-out both; }
+  .md-animate-wiggle { animation: quanta-wiggle 1s ease-in-out both; }
+  .md-hover-animate-wiggle:hover { animation: quanta-wiggle 1s ease-in-out both; }
+  .md-focus-animate-wiggle:focus { animation: quanta-wiggle 1s ease-in-out both; }
+  .md-active-animate-wiggle:active { animation: quanta-wiggle 1s ease-in-out both; }
+  .md-disabled-animate-wiggle:disabled { animation: quanta-wiggle 1s ease-in-out both; }
+  .md-focus-visible-animate-wiggle:focus-visible { animation: quanta-wiggle 1s ease-in-out both; }
+  .md-focus-within-animate-wiggle:focus-within { animation: quanta-wiggle 1s ease-in-out both; }
+  .group:hover .md-group-hover-animate-wiggle { animation: quanta-wiggle 1s ease-in-out both; }
+  .md-animate-zoom-in { animation: quanta-zoom-in 0.5s ease-out both; }
+  .md-hover-animate-zoom-in:hover { animation: quanta-zoom-in 0.5s ease-out both; }
+  .md-focus-animate-zoom-in:focus { animation: quanta-zoom-in 0.5s ease-out both; }
+  .md-active-animate-zoom-in:active { animation: quanta-zoom-in 0.5s ease-out both; }
+  .md-disabled-animate-zoom-in:disabled { animation: quanta-zoom-in 0.5s ease-out both; }
+  .md-focus-visible-animate-zoom-in:focus-visible { animation: quanta-zoom-in 0.5s ease-out both; }
+  .md-focus-within-animate-zoom-in:focus-within { animation: quanta-zoom-in 0.5s ease-out both; }
+  .group:hover .md-group-hover-animate-zoom-in { animation: quanta-zoom-in 0.5s ease-out both; }
+  .md-animate-zoom-out { animation: quanta-zoom-out 0.5s ease-in both; }
+  .md-hover-animate-zoom-out:hover { animation: quanta-zoom-out 0.5s ease-in both; }
+  .md-focus-animate-zoom-out:focus { animation: quanta-zoom-out 0.5s ease-in both; }
+  .md-active-animate-zoom-out:active { animation: quanta-zoom-out 0.5s ease-in both; }
+  .md-disabled-animate-zoom-out:disabled { animation: quanta-zoom-out 0.5s ease-in both; }
+  .md-focus-visible-animate-zoom-out:focus-visible { animation: quanta-zoom-out 0.5s ease-in both; }
+  .md-focus-within-animate-zoom-out:focus-within { animation: quanta-zoom-out 0.5s ease-in both; }
+  .group:hover .md-group-hover-animate-zoom-out { animation: quanta-zoom-out 0.5s ease-in both; }
+  .md-animate-heartbeat { animation: quanta-heartbeat 1.2s ease-in-out infinite; }
+  .md-hover-animate-heartbeat:hover { animation: quanta-heartbeat 1.2s ease-in-out infinite; }
+  .md-focus-animate-heartbeat:focus { animation: quanta-heartbeat 1.2s ease-in-out infinite; }
+  .md-active-animate-heartbeat:active { animation: quanta-heartbeat 1.2s ease-in-out infinite; }
+  .md-disabled-animate-heartbeat:disabled { animation: quanta-heartbeat 1.2s ease-in-out infinite; }
+  .md-focus-visible-animate-heartbeat:focus-visible { animation: quanta-heartbeat 1.2s ease-in-out infinite; }
+  .md-focus-within-animate-heartbeat:focus-within { animation: quanta-heartbeat 1.2s ease-in-out infinite; }
+  .group:hover .md-group-hover-animate-heartbeat { animation: quanta-heartbeat 1.2s ease-in-out infinite; }
+  .md-animate-ping { animation: quanta-ping 1s cubic-bezier(0, 0, 0.2, 1) infinite; }
+  .md-hover-animate-ping:hover { animation: quanta-ping 1s cubic-bezier(0, 0, 0.2, 1) infinite; }
+  .md-focus-animate-ping:focus { animation: quanta-ping 1s cubic-bezier(0, 0, 0.2, 1) infinite; }
+  .md-active-animate-ping:active { animation: quanta-ping 1s cubic-bezier(0, 0, 0.2, 1) infinite; }
+  .md-disabled-animate-ping:disabled { animation: quanta-ping 1s cubic-bezier(0, 0, 0.2, 1) infinite; }
+  .md-focus-visible-animate-ping:focus-visible { animation: quanta-ping 1s cubic-bezier(0, 0, 0.2, 1) infinite; }
+  .md-focus-within-animate-ping:focus-within { animation: quanta-ping 1s cubic-bezier(0, 0, 0.2, 1) infinite; }
+  .group:hover .md-group-hover-animate-ping { animation: quanta-ping 1s cubic-bezier(0, 0, 0.2, 1) infinite; }
+  .md-animate-once { animation-iteration-count: 1 !important; }
+  .md-hover-animate-once:hover { animation-iteration-count: 1 !important; }
+  .md-focus-animate-once:focus { animation-iteration-count: 1 !important; }
+  .md-active-animate-once:active { animation-iteration-count: 1 !important; }
+  .md-disabled-animate-once:disabled { animation-iteration-count: 1 !important; }
+  .md-focus-visible-animate-once:focus-visible { animation-iteration-count: 1 !important; }
+  .md-focus-within-animate-once:focus-within { animation-iteration-count: 1 !important; }
+  .group:hover .md-group-hover-animate-once { animation-iteration-count: 1 !important; }
+  .md-animate-infinite { animation-iteration-count: infinite !important; }
+  .md-hover-animate-infinite:hover { animation-iteration-count: infinite !important; }
+  .md-focus-animate-infinite:focus { animation-iteration-count: infinite !important; }
+  .md-active-animate-infinite:active { animation-iteration-count: infinite !important; }
+  .md-disabled-animate-infinite:disabled { animation-iteration-count: infinite !important; }
+  .md-focus-visible-animate-infinite:focus-visible { animation-iteration-count: infinite !important; }
+  .md-focus-within-animate-infinite:focus-within { animation-iteration-count: infinite !important; }
+  .group:hover .md-group-hover-animate-infinite { animation-iteration-count: infinite !important; }
+  .md-animate-once-fill-forwards { animation-iteration-count: 1 !important; animation-fill-mode: forwards !important; }
+  .md-hover-animate-once-fill-forwards:hover { animation-iteration-count: 1 !important; animation-fill-mode: forwards !important; }
+  .md-focus-animate-once-fill-forwards:focus { animation-iteration-count: 1 !important; animation-fill-mode: forwards !important; }
+  .md-active-animate-once-fill-forwards:active { animation-iteration-count: 1 !important; animation-fill-mode: forwards !important; }
+  .md-disabled-animate-once-fill-forwards:disabled { animation-iteration-count: 1 !important; animation-fill-mode: forwards !important; }
+  .md-focus-visible-animate-once-fill-forwards:focus-visible { animation-iteration-count: 1 !important; animation-fill-mode: forwards !important; }
+  .md-focus-within-animate-once-fill-forwards:focus-within { animation-iteration-count: 1 !important; animation-fill-mode: forwards !important; }
+  .group:hover .md-group-hover-animate-once-fill-forwards { animation-iteration-count: 1 !important; animation-fill-mode: forwards !important; }
+  .md-animate-none { animation: none !important; }
+  .md-hover-animate-none:hover { animation: none !important; }
+  .md-focus-animate-none:focus { animation: none !important; }
+  .md-active-animate-none:active { animation: none !important; }
+  .md-disabled-animate-none:disabled { animation: none !important; }
+  .md-focus-visible-animate-none:focus-visible { animation: none !important; }
+  .md-focus-within-animate-none:focus-within { animation: none !important; }
+  .group:hover .md-group-hover-animate-none { animation: none !important; }
+  .md-animate-none { animation: none; }
+  .md-hover-animate-none:hover { animation: none; }
+  .md-focus-animate-none:focus { animation: none; }
+  .md-active-animate-none:active { animation: none; }
+  .md-disabled-animate-none:disabled { animation: none; }
+  .md-focus-visible-animate-none:focus-visible { animation: none; }
+  .md-focus-within-animate-none:focus-within { animation: none; }
+  .group:hover .md-group-hover-animate-none { animation: none; }
+  .md-animate-fade { animation: fade 300ms ease-out both; }
+  .md-hover-animate-fade:hover { animation: fade 300ms ease-out both; }
+  .md-focus-animate-fade:focus { animation: fade 300ms ease-out both; }
+  .md-active-animate-fade:active { animation: fade 300ms ease-out both; }
+  .md-disabled-animate-fade:disabled { animation: fade 300ms ease-out both; }
+  .md-focus-visible-animate-fade:focus-visible { animation: fade 300ms ease-out both; }
+  .md-focus-within-animate-fade:focus-within { animation: fade 300ms ease-out both; }
+  .group:hover .md-group-hover-animate-fade { animation: fade 300ms ease-out both; }
+  .md-animate-slide-in { animation: slide-in 500ms ease-out both; }
+  .md-hover-animate-slide-in:hover { animation: slide-in 500ms ease-out both; }
+  .md-focus-animate-slide-in:focus { animation: slide-in 500ms ease-out both; }
+  .md-active-animate-slide-in:active { animation: slide-in 500ms ease-out both; }
+  .md-disabled-animate-slide-in:disabled { animation: slide-in 500ms ease-out both; }
+  .md-focus-visible-animate-slide-in:focus-visible { animation: slide-in 500ms ease-out both; }
+  .md-focus-within-animate-slide-in:focus-within { animation: slide-in 500ms ease-out both; }
+  .group:hover .md-group-hover-animate-slide-in { animation: slide-in 500ms ease-out both; }
+  .md-animate-spin { animation: spin 1s linear infinite; }
+  .md-hover-animate-spin:hover { animation: spin 1s linear infinite; }
+  .md-focus-animate-spin:focus { animation: spin 1s linear infinite; }
+  .md-active-animate-spin:active { animation: spin 1s linear infinite; }
+  .md-disabled-animate-spin:disabled { animation: spin 1s linear infinite; }
+  .md-focus-visible-animate-spin:focus-visible { animation: spin 1s linear infinite; }
+  .md-focus-within-animate-spin:focus-within { animation: spin 1s linear infinite; }
+  .group:hover .md-group-hover-animate-spin { animation: spin 1s linear infinite; }
+}
+
+/* LG Breakpoint */
+@media (min-width: 1024px) {
+  .lg-animate-fade { animation: quanta-fade 0.5s ease-in-out both; }
+  .lg-hover-animate-fade:hover { animation: quanta-fade 0.5s ease-in-out both; }
+  .lg-focus-animate-fade:focus { animation: quanta-fade 0.5s ease-in-out both; }
+  .lg-active-animate-fade:active { animation: quanta-fade 0.5s ease-in-out both; }
+  .lg-disabled-animate-fade:disabled { animation: quanta-fade 0.5s ease-in-out both; }
+  .lg-focus-visible-animate-fade:focus-visible { animation: quanta-fade 0.5s ease-in-out both; }
+  .lg-focus-within-animate-fade:focus-within { animation: quanta-fade 0.5s ease-in-out both; }
+  .group:hover .lg-group-hover-animate-fade { animation: quanta-fade 0.5s ease-in-out both; }
+  .lg-animate-slide-up { animation: quanta-slide-up 0.5s ease-out both; }
+  .lg-hover-animate-slide-up:hover { animation: quanta-slide-up 0.5s ease-out both; }
+  .lg-focus-animate-slide-up:focus { animation: quanta-slide-up 0.5s ease-out both; }
+  .lg-active-animate-slide-up:active { animation: quanta-slide-up 0.5s ease-out both; }
+  .lg-disabled-animate-slide-up:disabled { animation: quanta-slide-up 0.5s ease-out both; }
+  .lg-focus-visible-animate-slide-up:focus-visible { animation: quanta-slide-up 0.5s ease-out both; }
+  .lg-focus-within-animate-slide-up:focus-within { animation: quanta-slide-up 0.5s ease-out both; }
+  .group:hover .lg-group-hover-animate-slide-up { animation: quanta-slide-up 0.5s ease-out both; }
+  .lg-animate-slide-down { animation: quanta-slide-down 0.5s ease-out both; }
+  .lg-hover-animate-slide-down:hover { animation: quanta-slide-down 0.5s ease-out both; }
+  .lg-focus-animate-slide-down:focus { animation: quanta-slide-down 0.5s ease-out both; }
+  .lg-active-animate-slide-down:active { animation: quanta-slide-down 0.5s ease-out both; }
+  .lg-disabled-animate-slide-down:disabled { animation: quanta-slide-down 0.5s ease-out both; }
+  .lg-focus-visible-animate-slide-down:focus-visible { animation: quanta-slide-down 0.5s ease-out both; }
+  .lg-focus-within-animate-slide-down:focus-within { animation: quanta-slide-down 0.5s ease-out both; }
+  .group:hover .lg-group-hover-animate-slide-down { animation: quanta-slide-down 0.5s ease-out both; }
+  .lg-animate-slide-left { animation: quanta-slide-left 0.5s ease-out both; }
+  .lg-hover-animate-slide-left:hover { animation: quanta-slide-left 0.5s ease-out both; }
+  .lg-focus-animate-slide-left:focus { animation: quanta-slide-left 0.5s ease-out both; }
+  .lg-active-animate-slide-left:active { animation: quanta-slide-left 0.5s ease-out both; }
+  .lg-disabled-animate-slide-left:disabled { animation: quanta-slide-left 0.5s ease-out both; }
+  .lg-focus-visible-animate-slide-left:focus-visible { animation: quanta-slide-left 0.5s ease-out both; }
+  .lg-focus-within-animate-slide-left:focus-within { animation: quanta-slide-left 0.5s ease-out both; }
+  .group:hover .lg-group-hover-animate-slide-left { animation: quanta-slide-left 0.5s ease-out both; }
+  .lg-animate-slide-right { animation: quanta-slide-right 0.5s ease-out both; }
+  .lg-hover-animate-slide-right:hover { animation: quanta-slide-right 0.5s ease-out both; }
+  .lg-focus-animate-slide-right:focus { animation: quanta-slide-right 0.5s ease-out both; }
+  .lg-active-animate-slide-right:active { animation: quanta-slide-right 0.5s ease-out both; }
+  .lg-disabled-animate-slide-right:disabled { animation: quanta-slide-right 0.5s ease-out both; }
+  .lg-focus-visible-animate-slide-right:focus-visible { animation: quanta-slide-right 0.5s ease-out both; }
+  .lg-focus-within-animate-slide-right:focus-within { animation: quanta-slide-right 0.5s ease-out both; }
+  .group:hover .lg-group-hover-animate-slide-right { animation: quanta-slide-right 0.5s ease-out both; }
+  .lg-animate-bounce { animation: quanta-bounce 1s infinite; }
+  .lg-hover-animate-bounce:hover { animation: quanta-bounce 1s infinite; }
+  .lg-focus-animate-bounce:focus { animation: quanta-bounce 1s infinite; }
+  .lg-active-animate-bounce:active { animation: quanta-bounce 1s infinite; }
+  .lg-disabled-animate-bounce:disabled { animation: quanta-bounce 1s infinite; }
+  .lg-focus-visible-animate-bounce:focus-visible { animation: quanta-bounce 1s infinite; }
+  .lg-focus-within-animate-bounce:focus-within { animation: quanta-bounce 1s infinite; }
+  .group:hover .lg-group-hover-animate-bounce { animation: quanta-bounce 1s infinite; }
+  .lg-animate-spin { animation: quanta-spin 1s linear infinite; }
+  .lg-hover-animate-spin:hover { animation: quanta-spin 1s linear infinite; }
+  .lg-focus-animate-spin:focus { animation: quanta-spin 1s linear infinite; }
+  .lg-active-animate-spin:active { animation: quanta-spin 1s linear infinite; }
+  .lg-disabled-animate-spin:disabled { animation: quanta-spin 1s linear infinite; }
+  .lg-focus-visible-animate-spin:focus-visible { animation: quanta-spin 1s linear infinite; }
+  .lg-focus-within-animate-spin:focus-within { animation: quanta-spin 1s linear infinite; }
+  .group:hover .lg-group-hover-animate-spin { animation: quanta-spin 1s linear infinite; }
+  .lg-animate-pulse { animation: quanta-pulse 1.5s ease-in-out infinite; }
+  .lg-hover-animate-pulse:hover { animation: quanta-pulse 1.5s ease-in-out infinite; }
+  .lg-focus-animate-pulse:focus { animation: quanta-pulse 1.5s ease-in-out infinite; }
+  .lg-active-animate-pulse:active { animation: quanta-pulse 1.5s ease-in-out infinite; }
+  .lg-disabled-animate-pulse:disabled { animation: quanta-pulse 1.5s ease-in-out infinite; }
+  .lg-focus-visible-animate-pulse:focus-visible { animation: quanta-pulse 1.5s ease-in-out infinite; }
+  .lg-focus-within-animate-pulse:focus-within { animation: quanta-pulse 1.5s ease-in-out infinite; }
+  .group:hover .lg-group-hover-animate-pulse { animation: quanta-pulse 1.5s ease-in-out infinite; }
+  .lg-animate-shake { animation: quanta-shake 0.8s ease-in-out both; }
+  .lg-hover-animate-shake:hover { animation: quanta-shake 0.8s ease-in-out both; }
+  .lg-focus-animate-shake:focus { animation: quanta-shake 0.8s ease-in-out both; }
+  .lg-active-animate-shake:active { animation: quanta-shake 0.8s ease-in-out both; }
+  .lg-disabled-animate-shake:disabled { animation: quanta-shake 0.8s ease-in-out both; }
+  .lg-focus-visible-animate-shake:focus-visible { animation: quanta-shake 0.8s ease-in-out both; }
+  .lg-focus-within-animate-shake:focus-within { animation: quanta-shake 0.8s ease-in-out both; }
+  .group:hover .lg-group-hover-animate-shake { animation: quanta-shake 0.8s ease-in-out both; }
+  .lg-animate-wiggle { animation: quanta-wiggle 1s ease-in-out both; }
+  .lg-hover-animate-wiggle:hover { animation: quanta-wiggle 1s ease-in-out both; }
+  .lg-focus-animate-wiggle:focus { animation: quanta-wiggle 1s ease-in-out both; }
+  .lg-active-animate-wiggle:active { animation: quanta-wiggle 1s ease-in-out both; }
+  .lg-disabled-animate-wiggle:disabled { animation: quanta-wiggle 1s ease-in-out both; }
+  .lg-focus-visible-animate-wiggle:focus-visible { animation: quanta-wiggle 1s ease-in-out both; }
+  .lg-focus-within-animate-wiggle:focus-within { animation: quanta-wiggle 1s ease-in-out both; }
+  .group:hover .lg-group-hover-animate-wiggle { animation: quanta-wiggle 1s ease-in-out both; }
+  .lg-animate-zoom-in { animation: quanta-zoom-in 0.5s ease-out both; }
+  .lg-hover-animate-zoom-in:hover { animation: quanta-zoom-in 0.5s ease-out both; }
+  .lg-focus-animate-zoom-in:focus { animation: quanta-zoom-in 0.5s ease-out both; }
+  .lg-active-animate-zoom-in:active { animation: quanta-zoom-in 0.5s ease-out both; }
+  .lg-disabled-animate-zoom-in:disabled { animation: quanta-zoom-in 0.5s ease-out both; }
+  .lg-focus-visible-animate-zoom-in:focus-visible { animation: quanta-zoom-in 0.5s ease-out both; }
+  .lg-focus-within-animate-zoom-in:focus-within { animation: quanta-zoom-in 0.5s ease-out both; }
+  .group:hover .lg-group-hover-animate-zoom-in { animation: quanta-zoom-in 0.5s ease-out both; }
+  .lg-animate-zoom-out { animation: quanta-zoom-out 0.5s ease-in both; }
+  .lg-hover-animate-zoom-out:hover { animation: quanta-zoom-out 0.5s ease-in both; }
+  .lg-focus-animate-zoom-out:focus { animation: quanta-zoom-out 0.5s ease-in both; }
+  .lg-active-animate-zoom-out:active { animation: quanta-zoom-out 0.5s ease-in both; }
+  .lg-disabled-animate-zoom-out:disabled { animation: quanta-zoom-out 0.5s ease-in both; }
+  .lg-focus-visible-animate-zoom-out:focus-visible { animation: quanta-zoom-out 0.5s ease-in both; }
+  .lg-focus-within-animate-zoom-out:focus-within { animation: quanta-zoom-out 0.5s ease-in both; }
+  .group:hover .lg-group-hover-animate-zoom-out { animation: quanta-zoom-out 0.5s ease-in both; }
+  .lg-animate-heartbeat { animation: quanta-heartbeat 1.2s ease-in-out infinite; }
+  .lg-hover-animate-heartbeat:hover { animation: quanta-heartbeat 1.2s ease-in-out infinite; }
+  .lg-focus-animate-heartbeat:focus { animation: quanta-heartbeat 1.2s ease-in-out infinite; }
+  .lg-active-animate-heartbeat:active { animation: quanta-heartbeat 1.2s ease-in-out infinite; }
+  .lg-disabled-animate-heartbeat:disabled { animation: quanta-heartbeat 1.2s ease-in-out infinite; }
+  .lg-focus-visible-animate-heartbeat:focus-visible { animation: quanta-heartbeat 1.2s ease-in-out infinite; }
+  .lg-focus-within-animate-heartbeat:focus-within { animation: quanta-heartbeat 1.2s ease-in-out infinite; }
+  .group:hover .lg-group-hover-animate-heartbeat { animation: quanta-heartbeat 1.2s ease-in-out infinite; }
+  .lg-animate-ping { animation: quanta-ping 1s cubic-bezier(0, 0, 0.2, 1) infinite; }
+  .lg-hover-animate-ping:hover { animation: quanta-ping 1s cubic-bezier(0, 0, 0.2, 1) infinite; }
+  .lg-focus-animate-ping:focus { animation: quanta-ping 1s cubic-bezier(0, 0, 0.2, 1) infinite; }
+  .lg-active-animate-ping:active { animation: quanta-ping 1s cubic-bezier(0, 0, 0.2, 1) infinite; }
+  .lg-disabled-animate-ping:disabled { animation: quanta-ping 1s cubic-bezier(0, 0, 0.2, 1) infinite; }
+  .lg-focus-visible-animate-ping:focus-visible { animation: quanta-ping 1s cubic-bezier(0, 0, 0.2, 1) infinite; }
+  .lg-focus-within-animate-ping:focus-within { animation: quanta-ping 1s cubic-bezier(0, 0, 0.2, 1) infinite; }
+  .group:hover .lg-group-hover-animate-ping { animation: quanta-ping 1s cubic-bezier(0, 0, 0.2, 1) infinite; }
+  .lg-animate-once { animation-iteration-count: 1 !important; }
+  .lg-hover-animate-once:hover { animation-iteration-count: 1 !important; }
+  .lg-focus-animate-once:focus { animation-iteration-count: 1 !important; }
+  .lg-active-animate-once:active { animation-iteration-count: 1 !important; }
+  .lg-disabled-animate-once:disabled { animation-iteration-count: 1 !important; }
+  .lg-focus-visible-animate-once:focus-visible { animation-iteration-count: 1 !important; }
+  .lg-focus-within-animate-once:focus-within { animation-iteration-count: 1 !important; }
+  .group:hover .lg-group-hover-animate-once { animation-iteration-count: 1 !important; }
+  .lg-animate-infinite { animation-iteration-count: infinite !important; }
+  .lg-hover-animate-infinite:hover { animation-iteration-count: infinite !important; }
+  .lg-focus-animate-infinite:focus { animation-iteration-count: infinite !important; }
+  .lg-active-animate-infinite:active { animation-iteration-count: infinite !important; }
+  .lg-disabled-animate-infinite:disabled { animation-iteration-count: infinite !important; }
+  .lg-focus-visible-animate-infinite:focus-visible { animation-iteration-count: infinite !important; }
+  .lg-focus-within-animate-infinite:focus-within { animation-iteration-count: infinite !important; }
+  .group:hover .lg-group-hover-animate-infinite { animation-iteration-count: infinite !important; }
+  .lg-animate-once-fill-forwards { animation-iteration-count: 1 !important; animation-fill-mode: forwards !important; }
+  .lg-hover-animate-once-fill-forwards:hover { animation-iteration-count: 1 !important; animation-fill-mode: forwards !important; }
+  .lg-focus-animate-once-fill-forwards:focus { animation-iteration-count: 1 !important; animation-fill-mode: forwards !important; }
+  .lg-active-animate-once-fill-forwards:active { animation-iteration-count: 1 !important; animation-fill-mode: forwards !important; }
+  .lg-disabled-animate-once-fill-forwards:disabled { animation-iteration-count: 1 !important; animation-fill-mode: forwards !important; }
+  .lg-focus-visible-animate-once-fill-forwards:focus-visible { animation-iteration-count: 1 !important; animation-fill-mode: forwards !important; }
+  .lg-focus-within-animate-once-fill-forwards:focus-within { animation-iteration-count: 1 !important; animation-fill-mode: forwards !important; }
+  .group:hover .lg-group-hover-animate-once-fill-forwards { animation-iteration-count: 1 !important; animation-fill-mode: forwards !important; }
+  .lg-animate-none { animation: none !important; }
+  .lg-hover-animate-none:hover { animation: none !important; }
+  .lg-focus-animate-none:focus { animation: none !important; }
+  .lg-active-animate-none:active { animation: none !important; }
+  .lg-disabled-animate-none:disabled { animation: none !important; }
+  .lg-focus-visible-animate-none:focus-visible { animation: none !important; }
+  .lg-focus-within-animate-none:focus-within { animation: none !important; }
+  .group:hover .lg-group-hover-animate-none { animation: none !important; }
+  .lg-animate-none { animation: none; }
+  .lg-hover-animate-none:hover { animation: none; }
+  .lg-focus-animate-none:focus { animation: none; }
+  .lg-active-animate-none:active { animation: none; }
+  .lg-disabled-animate-none:disabled { animation: none; }
+  .lg-focus-visible-animate-none:focus-visible { animation: none; }
+  .lg-focus-within-animate-none:focus-within { animation: none; }
+  .group:hover .lg-group-hover-animate-none { animation: none; }
+  .lg-animate-fade { animation: fade 300ms ease-out both; }
+  .lg-hover-animate-fade:hover { animation: fade 300ms ease-out both; }
+  .lg-focus-animate-fade:focus { animation: fade 300ms ease-out both; }
+  .lg-active-animate-fade:active { animation: fade 300ms ease-out both; }
+  .lg-disabled-animate-fade:disabled { animation: fade 300ms ease-out both; }
+  .lg-focus-visible-animate-fade:focus-visible { animation: fade 300ms ease-out both; }
+  .lg-focus-within-animate-fade:focus-within { animation: fade 300ms ease-out both; }
+  .group:hover .lg-group-hover-animate-fade { animation: fade 300ms ease-out both; }
+  .lg-animate-slide-in { animation: slide-in 500ms ease-out both; }
+  .lg-hover-animate-slide-in:hover { animation: slide-in 500ms ease-out both; }
+  .lg-focus-animate-slide-in:focus { animation: slide-in 500ms ease-out both; }
+  .lg-active-animate-slide-in:active { animation: slide-in 500ms ease-out both; }
+  .lg-disabled-animate-slide-in:disabled { animation: slide-in 500ms ease-out both; }
+  .lg-focus-visible-animate-slide-in:focus-visible { animation: slide-in 500ms ease-out both; }
+  .lg-focus-within-animate-slide-in:focus-within { animation: slide-in 500ms ease-out both; }
+  .group:hover .lg-group-hover-animate-slide-in { animation: slide-in 500ms ease-out both; }
+  .lg-animate-spin { animation: spin 1s linear infinite; }
+  .lg-hover-animate-spin:hover { animation: spin 1s linear infinite; }
+  .lg-focus-animate-spin:focus { animation: spin 1s linear infinite; }
+  .lg-active-animate-spin:active { animation: spin 1s linear infinite; }
+  .lg-disabled-animate-spin:disabled { animation: spin 1s linear infinite; }
+  .lg-focus-visible-animate-spin:focus-visible { animation: spin 1s linear infinite; }
+  .lg-focus-within-animate-spin:focus-within { animation: spin 1s linear infinite; }
+  .group:hover .lg-group-hover-animate-spin { animation: spin 1s linear infinite; }
+}
+
+/* XL Breakpoint */
+@media (min-width: 1280px) {
+  .xl-animate-fade { animation: quanta-fade 0.5s ease-in-out both; }
+  .xl-hover-animate-fade:hover { animation: quanta-fade 0.5s ease-in-out both; }
+  .xl-focus-animate-fade:focus { animation: quanta-fade 0.5s ease-in-out both; }
+  .xl-active-animate-fade:active { animation: quanta-fade 0.5s ease-in-out both; }
+  .xl-disabled-animate-fade:disabled { animation: quanta-fade 0.5s ease-in-out both; }
+  .xl-focus-visible-animate-fade:focus-visible { animation: quanta-fade 0.5s ease-in-out both; }
+  .xl-focus-within-animate-fade:focus-within { animation: quanta-fade 0.5s ease-in-out both; }
+  .group:hover .xl-group-hover-animate-fade { animation: quanta-fade 0.5s ease-in-out both; }
+  .xl-animate-slide-up { animation: quanta-slide-up 0.5s ease-out both; }
+  .xl-hover-animate-slide-up:hover { animation: quanta-slide-up 0.5s ease-out both; }
+  .xl-focus-animate-slide-up:focus { animation: quanta-slide-up 0.5s ease-out both; }
+  .xl-active-animate-slide-up:active { animation: quanta-slide-up 0.5s ease-out both; }
+  .xl-disabled-animate-slide-up:disabled { animation: quanta-slide-up 0.5s ease-out both; }
+  .xl-focus-visible-animate-slide-up:focus-visible { animation: quanta-slide-up 0.5s ease-out both; }
+  .xl-focus-within-animate-slide-up:focus-within { animation: quanta-slide-up 0.5s ease-out both; }
+  .group:hover .xl-group-hover-animate-slide-up { animation: quanta-slide-up 0.5s ease-out both; }
+  .xl-animate-slide-down { animation: quanta-slide-down 0.5s ease-out both; }
+  .xl-hover-animate-slide-down:hover { animation: quanta-slide-down 0.5s ease-out both; }
+  .xl-focus-animate-slide-down:focus { animation: quanta-slide-down 0.5s ease-out both; }
+  .xl-active-animate-slide-down:active { animation: quanta-slide-down 0.5s ease-out both; }
+  .xl-disabled-animate-slide-down:disabled { animation: quanta-slide-down 0.5s ease-out both; }
+  .xl-focus-visible-animate-slide-down:focus-visible { animation: quanta-slide-down 0.5s ease-out both; }
+  .xl-focus-within-animate-slide-down:focus-within { animation: quanta-slide-down 0.5s ease-out both; }
+  .group:hover .xl-group-hover-animate-slide-down { animation: quanta-slide-down 0.5s ease-out both; }
+  .xl-animate-slide-left { animation: quanta-slide-left 0.5s ease-out both; }
+  .xl-hover-animate-slide-left:hover { animation: quanta-slide-left 0.5s ease-out both; }
+  .xl-focus-animate-slide-left:focus { animation: quanta-slide-left 0.5s ease-out both; }
+  .xl-active-animate-slide-left:active { animation: quanta-slide-left 0.5s ease-out both; }
+  .xl-disabled-animate-slide-left:disabled { animation: quanta-slide-left 0.5s ease-out both; }
+  .xl-focus-visible-animate-slide-left:focus-visible { animation: quanta-slide-left 0.5s ease-out both; }
+  .xl-focus-within-animate-slide-left:focus-within { animation: quanta-slide-left 0.5s ease-out both; }
+  .group:hover .xl-group-hover-animate-slide-left { animation: quanta-slide-left 0.5s ease-out both; }
+  .xl-animate-slide-right { animation: quanta-slide-right 0.5s ease-out both; }
+  .xl-hover-animate-slide-right:hover { animation: quanta-slide-right 0.5s ease-out both; }
+  .xl-focus-animate-slide-right:focus { animation: quanta-slide-right 0.5s ease-out both; }
+  .xl-active-animate-slide-right:active { animation: quanta-slide-right 0.5s ease-out both; }
+  .xl-disabled-animate-slide-right:disabled { animation: quanta-slide-right 0.5s ease-out both; }
+  .xl-focus-visible-animate-slide-right:focus-visible { animation: quanta-slide-right 0.5s ease-out both; }
+  .xl-focus-within-animate-slide-right:focus-within { animation: quanta-slide-right 0.5s ease-out both; }
+  .group:hover .xl-group-hover-animate-slide-right { animation: quanta-slide-right 0.5s ease-out both; }
+  .xl-animate-bounce { animation: quanta-bounce 1s infinite; }
+  .xl-hover-animate-bounce:hover { animation: quanta-bounce 1s infinite; }
+  .xl-focus-animate-bounce:focus { animation: quanta-bounce 1s infinite; }
+  .xl-active-animate-bounce:active { animation: quanta-bounce 1s infinite; }
+  .xl-disabled-animate-bounce:disabled { animation: quanta-bounce 1s infinite; }
+  .xl-focus-visible-animate-bounce:focus-visible { animation: quanta-bounce 1s infinite; }
+  .xl-focus-within-animate-bounce:focus-within { animation: quanta-bounce 1s infinite; }
+  .group:hover .xl-group-hover-animate-bounce { animation: quanta-bounce 1s infinite; }
+  .xl-animate-spin { animation: quanta-spin 1s linear infinite; }
+  .xl-hover-animate-spin:hover { animation: quanta-spin 1s linear infinite; }
+  .xl-focus-animate-spin:focus { animation: quanta-spin 1s linear infinite; }
+  .xl-active-animate-spin:active { animation: quanta-spin 1s linear infinite; }
+  .xl-disabled-animate-spin:disabled { animation: quanta-spin 1s linear infinite; }
+  .xl-focus-visible-animate-spin:focus-visible { animation: quanta-spin 1s linear infinite; }
+  .xl-focus-within-animate-spin:focus-within { animation: quanta-spin 1s linear infinite; }
+  .group:hover .xl-group-hover-animate-spin { animation: quanta-spin 1s linear infinite; }
+  .xl-animate-pulse { animation: quanta-pulse 1.5s ease-in-out infinite; }
+  .xl-hover-animate-pulse:hover { animation: quanta-pulse 1.5s ease-in-out infinite; }
+  .xl-focus-animate-pulse:focus { animation: quanta-pulse 1.5s ease-in-out infinite; }
+  .xl-active-animate-pulse:active { animation: quanta-pulse 1.5s ease-in-out infinite; }
+  .xl-disabled-animate-pulse:disabled { animation: quanta-pulse 1.5s ease-in-out infinite; }
+  .xl-focus-visible-animate-pulse:focus-visible { animation: quanta-pulse 1.5s ease-in-out infinite; }
+  .xl-focus-within-animate-pulse:focus-within { animation: quanta-pulse 1.5s ease-in-out infinite; }
+  .group:hover .xl-group-hover-animate-pulse { animation: quanta-pulse 1.5s ease-in-out infinite; }
+  .xl-animate-shake { animation: quanta-shake 0.8s ease-in-out both; }
+  .xl-hover-animate-shake:hover { animation: quanta-shake 0.8s ease-in-out both; }
+  .xl-focus-animate-shake:focus { animation: quanta-shake 0.8s ease-in-out both; }
+  .xl-active-animate-shake:active { animation: quanta-shake 0.8s ease-in-out both; }
+  .xl-disabled-animate-shake:disabled { animation: quanta-shake 0.8s ease-in-out both; }
+  .xl-focus-visible-animate-shake:focus-visible { animation: quanta-shake 0.8s ease-in-out both; }
+  .xl-focus-within-animate-shake:focus-within { animation: quanta-shake 0.8s ease-in-out both; }
+  .group:hover .xl-group-hover-animate-shake { animation: quanta-shake 0.8s ease-in-out both; }
+  .xl-animate-wiggle { animation: quanta-wiggle 1s ease-in-out both; }
+  .xl-hover-animate-wiggle:hover { animation: quanta-wiggle 1s ease-in-out both; }
+  .xl-focus-animate-wiggle:focus { animation: quanta-wiggle 1s ease-in-out both; }
+  .xl-active-animate-wiggle:active { animation: quanta-wiggle 1s ease-in-out both; }
+  .xl-disabled-animate-wiggle:disabled { animation: quanta-wiggle 1s ease-in-out both; }
+  .xl-focus-visible-animate-wiggle:focus-visible { animation: quanta-wiggle 1s ease-in-out both; }
+  .xl-focus-within-animate-wiggle:focus-within { animation: quanta-wiggle 1s ease-in-out both; }
+  .group:hover .xl-group-hover-animate-wiggle { animation: quanta-wiggle 1s ease-in-out both; }
+  .xl-animate-zoom-in { animation: quanta-zoom-in 0.5s ease-out both; }
+  .xl-hover-animate-zoom-in:hover { animation: quanta-zoom-in 0.5s ease-out both; }
+  .xl-focus-animate-zoom-in:focus { animation: quanta-zoom-in 0.5s ease-out both; }
+  .xl-active-animate-zoom-in:active { animation: quanta-zoom-in 0.5s ease-out both; }
+  .xl-disabled-animate-zoom-in:disabled { animation: quanta-zoom-in 0.5s ease-out both; }
+  .xl-focus-visible-animate-zoom-in:focus-visible { animation: quanta-zoom-in 0.5s ease-out both; }
+  .xl-focus-within-animate-zoom-in:focus-within { animation: quanta-zoom-in 0.5s ease-out both; }
+  .group:hover .xl-group-hover-animate-zoom-in { animation: quanta-zoom-in 0.5s ease-out both; }
+  .xl-animate-zoom-out { animation: quanta-zoom-out 0.5s ease-in both; }
+  .xl-hover-animate-zoom-out:hover { animation: quanta-zoom-out 0.5s ease-in both; }
+  .xl-focus-animate-zoom-out:focus { animation: quanta-zoom-out 0.5s ease-in both; }
+  .xl-active-animate-zoom-out:active { animation: quanta-zoom-out 0.5s ease-in both; }
+  .xl-disabled-animate-zoom-out:disabled { animation: quanta-zoom-out 0.5s ease-in both; }
+  .xl-focus-visible-animate-zoom-out:focus-visible { animation: quanta-zoom-out 0.5s ease-in both; }
+  .xl-focus-within-animate-zoom-out:focus-within { animation: quanta-zoom-out 0.5s ease-in both; }
+  .group:hover .xl-group-hover-animate-zoom-out { animation: quanta-zoom-out 0.5s ease-in both; }
+  .xl-animate-heartbeat { animation: quanta-heartbeat 1.2s ease-in-out infinite; }
+  .xl-hover-animate-heartbeat:hover { animation: quanta-heartbeat 1.2s ease-in-out infinite; }
+  .xl-focus-animate-heartbeat:focus { animation: quanta-heartbeat 1.2s ease-in-out infinite; }
+  .xl-active-animate-heartbeat:active { animation: quanta-heartbeat 1.2s ease-in-out infinite; }
+  .xl-disabled-animate-heartbeat:disabled { animation: quanta-heartbeat 1.2s ease-in-out infinite; }
+  .xl-focus-visible-animate-heartbeat:focus-visible { animation: quanta-heartbeat 1.2s ease-in-out infinite; }
+  .xl-focus-within-animate-heartbeat:focus-within { animation: quanta-heartbeat 1.2s ease-in-out infinite; }
+  .group:hover .xl-group-hover-animate-heartbeat { animation: quanta-heartbeat 1.2s ease-in-out infinite; }
+  .xl-animate-ping { animation: quanta-ping 1s cubic-bezier(0, 0, 0.2, 1) infinite; }
+  .xl-hover-animate-ping:hover { animation: quanta-ping 1s cubic-bezier(0, 0, 0.2, 1) infinite; }
+  .xl-focus-animate-ping:focus { animation: quanta-ping 1s cubic-bezier(0, 0, 0.2, 1) infinite; }
+  .xl-active-animate-ping:active { animation: quanta-ping 1s cubic-bezier(0, 0, 0.2, 1) infinite; }
+  .xl-disabled-animate-ping:disabled { animation: quanta-ping 1s cubic-bezier(0, 0, 0.2, 1) infinite; }
+  .xl-focus-visible-animate-ping:focus-visible { animation: quanta-ping 1s cubic-bezier(0, 0, 0.2, 1) infinite; }
+  .xl-focus-within-animate-ping:focus-within { animation: quanta-ping 1s cubic-bezier(0, 0, 0.2, 1) infinite; }
+  .group:hover .xl-group-hover-animate-ping { animation: quanta-ping 1s cubic-bezier(0, 0, 0.2, 1) infinite; }
+  .xl-animate-once { animation-iteration-count: 1 !important; }
+  .xl-hover-animate-once:hover { animation-iteration-count: 1 !important; }
+  .xl-focus-animate-once:focus { animation-iteration-count: 1 !important; }
+  .xl-active-animate-once:active { animation-iteration-count: 1 !important; }
+  .xl-disabled-animate-once:disabled { animation-iteration-count: 1 !important; }
+  .xl-focus-visible-animate-once:focus-visible { animation-iteration-count: 1 !important; }
+  .xl-focus-within-animate-once:focus-within { animation-iteration-count: 1 !important; }
+  .group:hover .xl-group-hover-animate-once { animation-iteration-count: 1 !important; }
+  .xl-animate-infinite { animation-iteration-count: infinite !important; }
+  .xl-hover-animate-infinite:hover { animation-iteration-count: infinite !important; }
+  .xl-focus-animate-infinite:focus { animation-iteration-count: infinite !important; }
+  .xl-active-animate-infinite:active { animation-iteration-count: infinite !important; }
+  .xl-disabled-animate-infinite:disabled { animation-iteration-count: infinite !important; }
+  .xl-focus-visible-animate-infinite:focus-visible { animation-iteration-count: infinite !important; }
+  .xl-focus-within-animate-infinite:focus-within { animation-iteration-count: infinite !important; }
+  .group:hover .xl-group-hover-animate-infinite { animation-iteration-count: infinite !important; }
+  .xl-animate-once-fill-forwards { animation-iteration-count: 1 !important; animation-fill-mode: forwards !important; }
+  .xl-hover-animate-once-fill-forwards:hover { animation-iteration-count: 1 !important; animation-fill-mode: forwards !important; }
+  .xl-focus-animate-once-fill-forwards:focus { animation-iteration-count: 1 !important; animation-fill-mode: forwards !important; }
+  .xl-active-animate-once-fill-forwards:active { animation-iteration-count: 1 !important; animation-fill-mode: forwards !important; }
+  .xl-disabled-animate-once-fill-forwards:disabled { animation-iteration-count: 1 !important; animation-fill-mode: forwards !important; }
+  .xl-focus-visible-animate-once-fill-forwards:focus-visible { animation-iteration-count: 1 !important; animation-fill-mode: forwards !important; }
+  .xl-focus-within-animate-once-fill-forwards:focus-within { animation-iteration-count: 1 !important; animation-fill-mode: forwards !important; }
+  .group:hover .xl-group-hover-animate-once-fill-forwards { animation-iteration-count: 1 !important; animation-fill-mode: forwards !important; }
+  .xl-animate-none { animation: none !important; }
+  .xl-hover-animate-none:hover { animation: none !important; }
+  .xl-focus-animate-none:focus { animation: none !important; }
+  .xl-active-animate-none:active { animation: none !important; }
+  .xl-disabled-animate-none:disabled { animation: none !important; }
+  .xl-focus-visible-animate-none:focus-visible { animation: none !important; }
+  .xl-focus-within-animate-none:focus-within { animation: none !important; }
+  .group:hover .xl-group-hover-animate-none { animation: none !important; }
+  .xl-animate-none { animation: none; }
+  .xl-hover-animate-none:hover { animation: none; }
+  .xl-focus-animate-none:focus { animation: none; }
+  .xl-active-animate-none:active { animation: none; }
+  .xl-disabled-animate-none:disabled { animation: none; }
+  .xl-focus-visible-animate-none:focus-visible { animation: none; }
+  .xl-focus-within-animate-none:focus-within { animation: none; }
+  .group:hover .xl-group-hover-animate-none { animation: none; }
+  .xl-animate-fade { animation: fade 300ms ease-out both; }
+  .xl-hover-animate-fade:hover { animation: fade 300ms ease-out both; }
+  .xl-focus-animate-fade:focus { animation: fade 300ms ease-out both; }
+  .xl-active-animate-fade:active { animation: fade 300ms ease-out both; }
+  .xl-disabled-animate-fade:disabled { animation: fade 300ms ease-out both; }
+  .xl-focus-visible-animate-fade:focus-visible { animation: fade 300ms ease-out both; }
+  .xl-focus-within-animate-fade:focus-within { animation: fade 300ms ease-out both; }
+  .group:hover .xl-group-hover-animate-fade { animation: fade 300ms ease-out both; }
+  .xl-animate-slide-in { animation: slide-in 500ms ease-out both; }
+  .xl-hover-animate-slide-in:hover { animation: slide-in 500ms ease-out both; }
+  .xl-focus-animate-slide-in:focus { animation: slide-in 500ms ease-out both; }
+  .xl-active-animate-slide-in:active { animation: slide-in 500ms ease-out both; }
+  .xl-disabled-animate-slide-in:disabled { animation: slide-in 500ms ease-out both; }
+  .xl-focus-visible-animate-slide-in:focus-visible { animation: slide-in 500ms ease-out both; }
+  .xl-focus-within-animate-slide-in:focus-within { animation: slide-in 500ms ease-out both; }
+  .group:hover .xl-group-hover-animate-slide-in { animation: slide-in 500ms ease-out both; }
+  .xl-animate-spin { animation: spin 1s linear infinite; }
+  .xl-hover-animate-spin:hover { animation: spin 1s linear infinite; }
+  .xl-focus-animate-spin:focus { animation: spin 1s linear infinite; }
+  .xl-active-animate-spin:active { animation: spin 1s linear infinite; }
+  .xl-disabled-animate-spin:disabled { animation: spin 1s linear infinite; }
+  .xl-focus-visible-animate-spin:focus-visible { animation: spin 1s linear infinite; }
+  .xl-focus-within-animate-spin:focus-within { animation: spin 1s linear infinite; }
+  .group:hover .xl-group-hover-animate-spin { animation: spin 1s linear infinite; }
+}
+
+/* UW Breakpoint */
+@media (min-width: 1536px) {
+  .uw-animate-fade { animation: quanta-fade 0.5s ease-in-out both; }
+  .uw-hover-animate-fade:hover { animation: quanta-fade 0.5s ease-in-out both; }
+  .uw-focus-animate-fade:focus { animation: quanta-fade 0.5s ease-in-out both; }
+  .uw-active-animate-fade:active { animation: quanta-fade 0.5s ease-in-out both; }
+  .uw-disabled-animate-fade:disabled { animation: quanta-fade 0.5s ease-in-out both; }
+  .uw-focus-visible-animate-fade:focus-visible { animation: quanta-fade 0.5s ease-in-out both; }
+  .uw-focus-within-animate-fade:focus-within { animation: quanta-fade 0.5s ease-in-out both; }
+  .group:hover .uw-group-hover-animate-fade { animation: quanta-fade 0.5s ease-in-out both; }
+  .uw-animate-slide-up { animation: quanta-slide-up 0.5s ease-out both; }
+  .uw-hover-animate-slide-up:hover { animation: quanta-slide-up 0.5s ease-out both; }
+  .uw-focus-animate-slide-up:focus { animation: quanta-slide-up 0.5s ease-out both; }
+  .uw-active-animate-slide-up:active { animation: quanta-slide-up 0.5s ease-out both; }
+  .uw-disabled-animate-slide-up:disabled { animation: quanta-slide-up 0.5s ease-out both; }
+  .uw-focus-visible-animate-slide-up:focus-visible { animation: quanta-slide-up 0.5s ease-out both; }
+  .uw-focus-within-animate-slide-up:focus-within { animation: quanta-slide-up 0.5s ease-out both; }
+  .group:hover .uw-group-hover-animate-slide-up { animation: quanta-slide-up 0.5s ease-out both; }
+  .uw-animate-slide-down { animation: quanta-slide-down 0.5s ease-out both; }
+  .uw-hover-animate-slide-down:hover { animation: quanta-slide-down 0.5s ease-out both; }
+  .uw-focus-animate-slide-down:focus { animation: quanta-slide-down 0.5s ease-out both; }
+  .uw-active-animate-slide-down:active { animation: quanta-slide-down 0.5s ease-out both; }
+  .uw-disabled-animate-slide-down:disabled { animation: quanta-slide-down 0.5s ease-out both; }
+  .uw-focus-visible-animate-slide-down:focus-visible { animation: quanta-slide-down 0.5s ease-out both; }
+  .uw-focus-within-animate-slide-down:focus-within { animation: quanta-slide-down 0.5s ease-out both; }
+  .group:hover .uw-group-hover-animate-slide-down { animation: quanta-slide-down 0.5s ease-out both; }
+  .uw-animate-slide-left { animation: quanta-slide-left 0.5s ease-out both; }
+  .uw-hover-animate-slide-left:hover { animation: quanta-slide-left 0.5s ease-out both; }
+  .uw-focus-animate-slide-left:focus { animation: quanta-slide-left 0.5s ease-out both; }
+  .uw-active-animate-slide-left:active { animation: quanta-slide-left 0.5s ease-out both; }
+  .uw-disabled-animate-slide-left:disabled { animation: quanta-slide-left 0.5s ease-out both; }
+  .uw-focus-visible-animate-slide-left:focus-visible { animation: quanta-slide-left 0.5s ease-out both; }
+  .uw-focus-within-animate-slide-left:focus-within { animation: quanta-slide-left 0.5s ease-out both; }
+  .group:hover .uw-group-hover-animate-slide-left { animation: quanta-slide-left 0.5s ease-out both; }
+  .uw-animate-slide-right { animation: quanta-slide-right 0.5s ease-out both; }
+  .uw-hover-animate-slide-right:hover { animation: quanta-slide-right 0.5s ease-out both; }
+  .uw-focus-animate-slide-right:focus { animation: quanta-slide-right 0.5s ease-out both; }
+  .uw-active-animate-slide-right:active { animation: quanta-slide-right 0.5s ease-out both; }
+  .uw-disabled-animate-slide-right:disabled { animation: quanta-slide-right 0.5s ease-out both; }
+  .uw-focus-visible-animate-slide-right:focus-visible { animation: quanta-slide-right 0.5s ease-out both; }
+  .uw-focus-within-animate-slide-right:focus-within { animation: quanta-slide-right 0.5s ease-out both; }
+  .group:hover .uw-group-hover-animate-slide-right { animation: quanta-slide-right 0.5s ease-out both; }
+  .uw-animate-bounce { animation: quanta-bounce 1s infinite; }
+  .uw-hover-animate-bounce:hover { animation: quanta-bounce 1s infinite; }
+  .uw-focus-animate-bounce:focus { animation: quanta-bounce 1s infinite; }
+  .uw-active-animate-bounce:active { animation: quanta-bounce 1s infinite; }
+  .uw-disabled-animate-bounce:disabled { animation: quanta-bounce 1s infinite; }
+  .uw-focus-visible-animate-bounce:focus-visible { animation: quanta-bounce 1s infinite; }
+  .uw-focus-within-animate-bounce:focus-within { animation: quanta-bounce 1s infinite; }
+  .group:hover .uw-group-hover-animate-bounce { animation: quanta-bounce 1s infinite; }
+  .uw-animate-spin { animation: quanta-spin 1s linear infinite; }
+  .uw-hover-animate-spin:hover { animation: quanta-spin 1s linear infinite; }
+  .uw-focus-animate-spin:focus { animation: quanta-spin 1s linear infinite; }
+  .uw-active-animate-spin:active { animation: quanta-spin 1s linear infinite; }
+  .uw-disabled-animate-spin:disabled { animation: quanta-spin 1s linear infinite; }
+  .uw-focus-visible-animate-spin:focus-visible { animation: quanta-spin 1s linear infinite; }
+  .uw-focus-within-animate-spin:focus-within { animation: quanta-spin 1s linear infinite; }
+  .group:hover .uw-group-hover-animate-spin { animation: quanta-spin 1s linear infinite; }
+  .uw-animate-pulse { animation: quanta-pulse 1.5s ease-in-out infinite; }
+  .uw-hover-animate-pulse:hover { animation: quanta-pulse 1.5s ease-in-out infinite; }
+  .uw-focus-animate-pulse:focus { animation: quanta-pulse 1.5s ease-in-out infinite; }
+  .uw-active-animate-pulse:active { animation: quanta-pulse 1.5s ease-in-out infinite; }
+  .uw-disabled-animate-pulse:disabled { animation: quanta-pulse 1.5s ease-in-out infinite; }
+  .uw-focus-visible-animate-pulse:focus-visible { animation: quanta-pulse 1.5s ease-in-out infinite; }
+  .uw-focus-within-animate-pulse:focus-within { animation: quanta-pulse 1.5s ease-in-out infinite; }
+  .group:hover .uw-group-hover-animate-pulse { animation: quanta-pulse 1.5s ease-in-out infinite; }
+  .uw-animate-shake { animation: quanta-shake 0.8s ease-in-out both; }
+  .uw-hover-animate-shake:hover { animation: quanta-shake 0.8s ease-in-out both; }
+  .uw-focus-animate-shake:focus { animation: quanta-shake 0.8s ease-in-out both; }
+  .uw-active-animate-shake:active { animation: quanta-shake 0.8s ease-in-out both; }
+  .uw-disabled-animate-shake:disabled { animation: quanta-shake 0.8s ease-in-out both; }
+  .uw-focus-visible-animate-shake:focus-visible { animation: quanta-shake 0.8s ease-in-out both; }
+  .uw-focus-within-animate-shake:focus-within { animation: quanta-shake 0.8s ease-in-out both; }
+  .group:hover .uw-group-hover-animate-shake { animation: quanta-shake 0.8s ease-in-out both; }
+  .uw-animate-wiggle { animation: quanta-wiggle 1s ease-in-out both; }
+  .uw-hover-animate-wiggle:hover { animation: quanta-wiggle 1s ease-in-out both; }
+  .uw-focus-animate-wiggle:focus { animation: quanta-wiggle 1s ease-in-out both; }
+  .uw-active-animate-wiggle:active { animation: quanta-wiggle 1s ease-in-out both; }
+  .uw-disabled-animate-wiggle:disabled { animation: quanta-wiggle 1s ease-in-out both; }
+  .uw-focus-visible-animate-wiggle:focus-visible { animation: quanta-wiggle 1s ease-in-out both; }
+  .uw-focus-within-animate-wiggle:focus-within { animation: quanta-wiggle 1s ease-in-out both; }
+  .group:hover .uw-group-hover-animate-wiggle { animation: quanta-wiggle 1s ease-in-out both; }
+  .uw-animate-zoom-in { animation: quanta-zoom-in 0.5s ease-out both; }
+  .uw-hover-animate-zoom-in:hover { animation: quanta-zoom-in 0.5s ease-out both; }
+  .uw-focus-animate-zoom-in:focus { animation: quanta-zoom-in 0.5s ease-out both; }
+  .uw-active-animate-zoom-in:active { animation: quanta-zoom-in 0.5s ease-out both; }
+  .uw-disabled-animate-zoom-in:disabled { animation: quanta-zoom-in 0.5s ease-out both; }
+  .uw-focus-visible-animate-zoom-in:focus-visible { animation: quanta-zoom-in 0.5s ease-out both; }
+  .uw-focus-within-animate-zoom-in:focus-within { animation: quanta-zoom-in 0.5s ease-out both; }
+  .group:hover .uw-group-hover-animate-zoom-in { animation: quanta-zoom-in 0.5s ease-out both; }
+  .uw-animate-zoom-out { animation: quanta-zoom-out 0.5s ease-in both; }
+  .uw-hover-animate-zoom-out:hover { animation: quanta-zoom-out 0.5s ease-in both; }
+  .uw-focus-animate-zoom-out:focus { animation: quanta-zoom-out 0.5s ease-in both; }
+  .uw-active-animate-zoom-out:active { animation: quanta-zoom-out 0.5s ease-in both; }
+  .uw-disabled-animate-zoom-out:disabled { animation: quanta-zoom-out 0.5s ease-in both; }
+  .uw-focus-visible-animate-zoom-out:focus-visible { animation: quanta-zoom-out 0.5s ease-in both; }
+  .uw-focus-within-animate-zoom-out:focus-within { animation: quanta-zoom-out 0.5s ease-in both; }
+  .group:hover .uw-group-hover-animate-zoom-out { animation: quanta-zoom-out 0.5s ease-in both; }
+  .uw-animate-heartbeat { animation: quanta-heartbeat 1.2s ease-in-out infinite; }
+  .uw-hover-animate-heartbeat:hover { animation: quanta-heartbeat 1.2s ease-in-out infinite; }
+  .uw-focus-animate-heartbeat:focus { animation: quanta-heartbeat 1.2s ease-in-out infinite; }
+  .uw-active-animate-heartbeat:active { animation: quanta-heartbeat 1.2s ease-in-out infinite; }
+  .uw-disabled-animate-heartbeat:disabled { animation: quanta-heartbeat 1.2s ease-in-out infinite; }
+  .uw-focus-visible-animate-heartbeat:focus-visible { animation: quanta-heartbeat 1.2s ease-in-out infinite; }
+  .uw-focus-within-animate-heartbeat:focus-within { animation: quanta-heartbeat 1.2s ease-in-out infinite; }
+  .group:hover .uw-group-hover-animate-heartbeat { animation: quanta-heartbeat 1.2s ease-in-out infinite; }
+  .uw-animate-ping { animation: quanta-ping 1s cubic-bezier(0, 0, 0.2, 1) infinite; }
+  .uw-hover-animate-ping:hover { animation: quanta-ping 1s cubic-bezier(0, 0, 0.2, 1) infinite; }
+  .uw-focus-animate-ping:focus { animation: quanta-ping 1s cubic-bezier(0, 0, 0.2, 1) infinite; }
+  .uw-active-animate-ping:active { animation: quanta-ping 1s cubic-bezier(0, 0, 0.2, 1) infinite; }
+  .uw-disabled-animate-ping:disabled { animation: quanta-ping 1s cubic-bezier(0, 0, 0.2, 1) infinite; }
+  .uw-focus-visible-animate-ping:focus-visible { animation: quanta-ping 1s cubic-bezier(0, 0, 0.2, 1) infinite; }
+  .uw-focus-within-animate-ping:focus-within { animation: quanta-ping 1s cubic-bezier(0, 0, 0.2, 1) infinite; }
+  .group:hover .uw-group-hover-animate-ping { animation: quanta-ping 1s cubic-bezier(0, 0, 0.2, 1) infinite; }
+  .uw-animate-once { animation-iteration-count: 1 !important; }
+  .uw-hover-animate-once:hover { animation-iteration-count: 1 !important; }
+  .uw-focus-animate-once:focus { animation-iteration-count: 1 !important; }
+  .uw-active-animate-once:active { animation-iteration-count: 1 !important; }
+  .uw-disabled-animate-once:disabled { animation-iteration-count: 1 !important; }
+  .uw-focus-visible-animate-once:focus-visible { animation-iteration-count: 1 !important; }
+  .uw-focus-within-animate-once:focus-within { animation-iteration-count: 1 !important; }
+  .group:hover .uw-group-hover-animate-once { animation-iteration-count: 1 !important; }
+  .uw-animate-infinite { animation-iteration-count: infinite !important; }
+  .uw-hover-animate-infinite:hover { animation-iteration-count: infinite !important; }
+  .uw-focus-animate-infinite:focus { animation-iteration-count: infinite !important; }
+  .uw-active-animate-infinite:active { animation-iteration-count: infinite !important; }
+  .uw-disabled-animate-infinite:disabled { animation-iteration-count: infinite !important; }
+  .uw-focus-visible-animate-infinite:focus-visible { animation-iteration-count: infinite !important; }
+  .uw-focus-within-animate-infinite:focus-within { animation-iteration-count: infinite !important; }
+  .group:hover .uw-group-hover-animate-infinite { animation-iteration-count: infinite !important; }
+  .uw-animate-once-fill-forwards { animation-iteration-count: 1 !important; animation-fill-mode: forwards !important; }
+  .uw-hover-animate-once-fill-forwards:hover { animation-iteration-count: 1 !important; animation-fill-mode: forwards !important; }
+  .uw-focus-animate-once-fill-forwards:focus { animation-iteration-count: 1 !important; animation-fill-mode: forwards !important; }
+  .uw-active-animate-once-fill-forwards:active { animation-iteration-count: 1 !important; animation-fill-mode: forwards !important; }
+  .uw-disabled-animate-once-fill-forwards:disabled { animation-iteration-count: 1 !important; animation-fill-mode: forwards !important; }
+  .uw-focus-visible-animate-once-fill-forwards:focus-visible { animation-iteration-count: 1 !important; animation-fill-mode: forwards !important; }
+  .uw-focus-within-animate-once-fill-forwards:focus-within { animation-iteration-count: 1 !important; animation-fill-mode: forwards !important; }
+  .group:hover .uw-group-hover-animate-once-fill-forwards { animation-iteration-count: 1 !important; animation-fill-mode: forwards !important; }
+  .uw-animate-none { animation: none !important; }
+  .uw-hover-animate-none:hover { animation: none !important; }
+  .uw-focus-animate-none:focus { animation: none !important; }
+  .uw-active-animate-none:active { animation: none !important; }
+  .uw-disabled-animate-none:disabled { animation: none !important; }
+  .uw-focus-visible-animate-none:focus-visible { animation: none !important; }
+  .uw-focus-within-animate-none:focus-within { animation: none !important; }
+  .group:hover .uw-group-hover-animate-none { animation: none !important; }
+  .uw-animate-none { animation: none; }
+  .uw-hover-animate-none:hover { animation: none; }
+  .uw-focus-animate-none:focus { animation: none; }
+  .uw-active-animate-none:active { animation: none; }
+  .uw-disabled-animate-none:disabled { animation: none; }
+  .uw-focus-visible-animate-none:focus-visible { animation: none; }
+  .uw-focus-within-animate-none:focus-within { animation: none; }
+  .group:hover .uw-group-hover-animate-none { animation: none; }
+  .uw-animate-fade { animation: fade 300ms ease-out both; }
+  .uw-hover-animate-fade:hover { animation: fade 300ms ease-out both; }
+  .uw-focus-animate-fade:focus { animation: fade 300ms ease-out both; }
+  .uw-active-animate-fade:active { animation: fade 300ms ease-out both; }
+  .uw-disabled-animate-fade:disabled { animation: fade 300ms ease-out both; }
+  .uw-focus-visible-animate-fade:focus-visible { animation: fade 300ms ease-out both; }
+  .uw-focus-within-animate-fade:focus-within { animation: fade 300ms ease-out both; }
+  .group:hover .uw-group-hover-animate-fade { animation: fade 300ms ease-out both; }
+  .uw-animate-slide-in { animation: slide-in 500ms ease-out both; }
+  .uw-hover-animate-slide-in:hover { animation: slide-in 500ms ease-out both; }
+  .uw-focus-animate-slide-in:focus { animation: slide-in 500ms ease-out both; }
+  .uw-active-animate-slide-in:active { animation: slide-in 500ms ease-out both; }
+  .uw-disabled-animate-slide-in:disabled { animation: slide-in 500ms ease-out both; }
+  .uw-focus-visible-animate-slide-in:focus-visible { animation: slide-in 500ms ease-out both; }
+  .uw-focus-within-animate-slide-in:focus-within { animation: slide-in 500ms ease-out both; }
+  .group:hover .uw-group-hover-animate-slide-in { animation: slide-in 500ms ease-out both; }
+  .uw-animate-spin { animation: spin 1s linear infinite; }
+  .uw-hover-animate-spin:hover { animation: spin 1s linear infinite; }
+  .uw-focus-animate-spin:focus { animation: spin 1s linear infinite; }
+  .uw-active-animate-spin:active { animation: spin 1s linear infinite; }
+  .uw-disabled-animate-spin:disabled { animation: spin 1s linear infinite; }
+  .uw-focus-visible-animate-spin:focus-visible { animation: spin 1s linear infinite; }
+  .uw-focus-within-animate-spin:focus-within { animation: spin 1s linear infinite; }
+  .group:hover .uw-group-hover-animate-spin { animation: spin 1s linear infinite; }
+}

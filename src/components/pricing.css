@@ -68,6 +68,9 @@
 .quanta-plan-features li {
   margin-bottom: var(--quanta-space-2);
   position: relative;
+  display: flex;
+  align-items: start;
+  gap: 0.4rem;
 }
 
 .quanta-plan-features li .check-icon {
@@ -123,11 +126,11 @@ html[data-theme="dark"] .quanta-plan-glass {
 
 /* Dark mode tweaks */
 html[data-theme="dark"] .quanta-plan {
-  background: var(--quanta-slate-800);
+  background: var(--quanta-grey-800);
 }
 
 html[data-theme="dark"] .quanta-plan-outline {
-  border-color: var(--quanta-slate-600);
+  border-color: var(--quanta-grey-600);
 }
 
 /* Responsive tweaks */

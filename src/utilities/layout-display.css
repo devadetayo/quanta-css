@@ -1,0 +1,37 @@
+
+
+/* -- Display Utilities (d-) -- */
+.d-block { display: block; }
+
+.d-inline { display: inline; }
+
+.d-inline-block { display: inline-block; }
+
+.d-flex { display: flex; }
+
+.d-inline-flex { display: inline-flex; }
+
+.d-grid { display: grid; }
+
+.d-inline-grid { display: inline-grid; }
+
+.d-none { display: none; }
+
+/* -- Visibility Utilities -- */
+.visible { visibility: visible; }
+
+.hidden { visibility: hidden; }
+
+.collapse { visibility: collapse; }
+
+.backface-visible { backface-visibility: visible; }
+
+.backface-hidden { backface-visibility: hidden; }
+
+.content-hidden { content-visibility: hidden; }
+
+.content-visible { content-visibility: visible; }
+
+.backface-visible { backface-visibility: visible; }
+
+.backface-hidden { backface-visibility: hidden; }

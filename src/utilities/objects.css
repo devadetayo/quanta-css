@@ -1,0 +1,29 @@
+
+
+.object-contain { object-fit: contain; }
+
+.object-cover { object-fit: cover; }
+
+.object-fill { object-fit: fill; }
+
+.object-none { object-fit: none; }
+
+.object-scale-down { object-fit: scale-down; }
+
+.object-top { object-position: top; }
+
+.object-bottom { object-position: bottom; }
+
+.object-center { object-position: center; }
+
+.object-left { object-position: left; }
+
+.object-right { object-position: right; }
+
+.object-left-top { object-position: left top; }
+
+.object-right-top { object-position: right top; }
+
+.object-left-bottom { object-position: left bottom; }
+
+.object-right-bottom { object-position: right bottom; }

@@ -1,8 +1,93 @@
-@import "../tokens/color-tokens.css";
-@import "./reset.css";
-@import "./variables.css";
-@import "./normalize.css";
-@import "./litezen-variants.css";
-@import "./reset.css";
-@import "./responsive.css";
-@import "./states.css";
+/**
+ * Quanta CSS v2.1 - Utilities Index (Light Mode)
+ * Import all utility modules and light variants
+ */
+
+@import './reset.css';
+@import './normalize.css';
+@import './variables.css';
+
+@import './color-tokens.css';
+
+@import './_helpers.css';
+
+@import './accessibility.css';
+@import './animations.css';
+@import './backgrounds.css';
+@import './blending.css';
+@import './borders-radius.css';
+@import './borders-style.css';
+@import './borders-width.css';
+@import './colors-background.css';
+@import './colors-border.css';
+@import './colors-semantic.css';
+@import './colors-text.css';
+@import './core.css';
+@import './effects-filters.css';
+@import './effects-opacity.css';
+@import './effects-shadow.css';
+@import './effects-z-index.css';
+@import './gradients.css';
+@import './interactivity.css';
+@import './layout-display.css';
+@import './layout-flexbox.css';
+@import './layout-grid.css';
+@import './layout-misc.css';
+@import './layout-overflow.css';
+@import './layout-position.css';
+@import './misc.css';
+@import './objects.css';
+@import './rings-outlines.css';
+@import './sizing-combined.css';
+@import './sizing-height.css';
+@import './sizing-width.css';
+@import './spacing-gap.css';
+@import './spacing-margin.css';
+@import './spacing-padding.css';
+@import './svg.css';
+@import './transforms.css';
+@import './transitions.css';
+@import './transparency.css';
+@import './typography-advanced.css';
+@import './typography-fonts.css';
+@import './typography-text.css';
+
+/* Light Mode Variants */
+@import './variants/animations.css';
+@import './variants/backgrounds.css';
+@import './variants/blending.css';
+@import './variants/borders-radius.css';
+@import './variants/borders-style.css';
+@import './variants/borders-width.css';
+@import './variants/colors-background.css';
+@import './variants/colors-border.css';
+@import './variants/colors-semantic.css';
+@import './variants/colors-text.css';
+@import './variants/effects-filters.css';
+@import './variants/effects-opacity.css';
+@import './variants/effects-shadow.css';
+@import './variants/effects-z-index.css';
+@import './variants/gradients.css';
+@import './variants/interactivity.css';
+@import './variants/layout-display.css';
+@import './variants/layout-flexbox.css';
+@import './variants/layout-grid.css';
+@import './variants/layout-misc.css';
+@import './variants/layout-overflow.css';
+@import './variants/layout-position.css';
+@import './variants/misc.css';
+@import './variants/objects.css';
+@import './variants/rings-outlines.css';
+@import './variants/sizing-combined.css';
+@import './variants/sizing-height.css';
+@import './variants/sizing-width.css';
+@import './variants/spacing-gap.css';
+@import './variants/spacing-margin.css';
+@import './variants/spacing-padding.css';
+@import './variants/svg.css';
+@import './variants/transforms.css';
+@import './variants/transitions.css';
+@import './variants/transparency.css';
+@import './variants/typography-advanced.css';
+@import './variants/typography-fonts.css';
+@import './variants/typography-text.css';

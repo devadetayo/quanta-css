@@ -1,6 +1,6 @@
 {
   "name": "quanta-css",
-  "version": "1.1.2",
+  "version": "1.1.3",
   "description": "Quanta CSS — a component + utility-first CSS framework with built-in dark mode and theming.",
   "main": "dist/quanta.css",
   "style": "dist/quanta.css",
@@ -12,15 +12,6 @@
     "build.js",
     "postcss.config.js"
   ],
-  "scripts": {
-    "build": "node build.js",
-    "watch": "chokidar \"src/**/*.css\" -c \"npm run build\"",
-    "zip:utils": "npm run build && zip -j dist/quanta-utils.zip dist/utilities.css dist/utilities.min.css",
-    "zip:comps": "npm run build && zip -j dist/quanta-components.zip dist/components.css dist/components.min.css",
-    "zip": "npm run zip:utils && npm run zip:comps && zip -j dist/quanta.zip dist/quanta.css dist/quanta.min.css",
-    "prepare": "npm run build",
-    "prepublishOnly": "npm run build"
-  },
   "repository": {
     "type": "git",
     "url": "https://github.com/devadetayo/quanta-css.git"

@@ -36,7 +36,7 @@
   transform: translateY(-50%);
   height: 8px;
   width: 100%;
-  background-color: var(--quanta-slate-100);
+  background-color: var(--quanta-grey-100);
   border-radius: var(--quanta-rounded-full);
   z-index: 1;
   pointer-events: none;
@@ -97,7 +97,7 @@
   position: absolute;
   top: -40px;
   transform: translateX(-50%);
-  background: var(--quanta-slate-100);
+  background: var(--quanta-grey-100);
   color: var(--black);
   font-size: var(--quanta-text-xs);
   padding: var(--quanta-space-1) var(--quanta-space-2);
@@ -154,7 +154,7 @@
 /* Dark mode */
 html[data-theme="dark"] {
   .quanta-range-track {
-    background-color: var(--quanta-slate-700);
+    background-color: var(--quanta-grey-700);
   }
 
   .quanta-range-fill {
@@ -162,7 +162,7 @@ html[data-theme="dark"] {
   }
 
   .quanta-range::-webkit-slider-thumb {
-    background-color: var(--quanta-slate-900);
+    background-color: var(--quanta-grey-900);
   }
 
   .quanta-range:hover::-webkit-slider-thumb {
@@ -174,7 +174,7 @@ html[data-theme="dark"] {
   }
 
   .quanta-range-value {
-    background-color: var(--quanta-slate-800);
+    background-color: var(--quanta-grey-800);
     color: var(--white);
   }
 }

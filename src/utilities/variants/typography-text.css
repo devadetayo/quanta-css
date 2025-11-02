@@ -1,0 +1,775 @@
+/* Quanta CSS v2.1 - typography-text Light Variants */
+
+/* State Variants */
+.hover-text-xs:hover { font-size: 0.5rem; }
+.focus-text-xs:focus { font-size: 0.5rem; }
+.active-text-xs:active { font-size: 0.5rem; }
+.disabled-text-xs:disabled { font-size: 0.5rem; }
+.focus-visible-text-xs:focus-visible { font-size: 0.5rem; }
+.focus-within-text-xs:focus-within { font-size: 0.5rem; }
+.group:hover .group-hover-text-xs { font-size: 0.5rem; }
+.hover-text-sm:hover { font-size: 0.875rem; }
+.focus-text-sm:focus { font-size: 0.875rem; }
+.active-text-sm:active { font-size: 0.875rem; }
+.disabled-text-sm:disabled { font-size: 0.875rem; }
+.focus-visible-text-sm:focus-visible { font-size: 0.875rem; }
+.focus-within-text-sm:focus-within { font-size: 0.875rem; }
+.group:hover .group-hover-text-sm { font-size: 0.875rem; }
+.hover-text-base:hover { font-size: 1rem; }
+.focus-text-base:focus { font-size: 1rem; }
+.active-text-base:active { font-size: 1rem; }
+.disabled-text-base:disabled { font-size: 1rem; }
+.focus-visible-text-base:focus-visible { font-size: 1rem; }
+.focus-within-text-base:focus-within { font-size: 1rem; }
+.group:hover .group-hover-text-base { font-size: 1rem; }
+.hover-text-lg:hover { font-size: 1.125rem; }
+.focus-text-lg:focus { font-size: 1.125rem; }
+.active-text-lg:active { font-size: 1.125rem; }
+.disabled-text-lg:disabled { font-size: 1.125rem; }
+.focus-visible-text-lg:focus-visible { font-size: 1.125rem; }
+.focus-within-text-lg:focus-within { font-size: 1.125rem; }
+.group:hover .group-hover-text-lg { font-size: 1.125rem; }
+.hover-text-xl:hover { font-size: 2rem; }
+.focus-text-xl:focus { font-size: 2rem; }
+.active-text-xl:active { font-size: 2rem; }
+.disabled-text-xl:disabled { font-size: 2rem; }
+.focus-visible-text-xl:focus-visible { font-size: 2rem; }
+.focus-within-text-xl:focus-within { font-size: 2rem; }
+.group:hover .group-hover-text-xl { font-size: 2rem; }
+.hover-text-2xl:hover { font-size: 2.5rem; }
+.focus-text-2xl:focus { font-size: 2.5rem; }
+.active-text-2xl:active { font-size: 2.5rem; }
+.disabled-text-2xl:disabled { font-size: 2.5rem; }
+.focus-visible-text-2xl:focus-visible { font-size: 2.5rem; }
+.focus-within-text-2xl:focus-within { font-size: 2.5rem; }
+.group:hover .group-hover-text-2xl { font-size: 2.5rem; }
+.hover-text-3xl:hover { font-size: 3rem; }
+.focus-text-3xl:focus { font-size: 3rem; }
+.active-text-3xl:active { font-size: 3rem; }
+.disabled-text-3xl:disabled { font-size: 3rem; }
+.focus-visible-text-3xl:focus-visible { font-size: 3rem; }
+.focus-within-text-3xl:focus-within { font-size: 3rem; }
+.group:hover .group-hover-text-3xl { font-size: 3rem; }
+.hover-text-ellipsis:hover { text-overflow: ellipsis; overflow: hidden; white-space: nowrap; }
+.focus-text-ellipsis:focus { text-overflow: ellipsis; overflow: hidden; white-space: nowrap; }
+.active-text-ellipsis:active { text-overflow: ellipsis; overflow: hidden; white-space: nowrap; }
+.disabled-text-ellipsis:disabled { text-overflow: ellipsis; overflow: hidden; white-space: nowrap; }
+.focus-visible-text-ellipsis:focus-visible { text-overflow: ellipsis; overflow: hidden; white-space: nowrap; }
+.focus-within-text-ellipsis:focus-within { text-overflow: ellipsis; overflow: hidden; white-space: nowrap; }
+.group:hover .group-hover-text-ellipsis { text-overflow: ellipsis; overflow: hidden; white-space: nowrap; }
+.hover-text-clip:hover { text-overflow: clip; overflow: hidden; white-space: nowrap; }
+.focus-text-clip:focus { text-overflow: clip; overflow: hidden; white-space: nowrap; }
+.active-text-clip:active { text-overflow: clip; overflow: hidden; white-space: nowrap; }
+.disabled-text-clip:disabled { text-overflow: clip; overflow: hidden; white-space: nowrap; }
+.focus-visible-text-clip:focus-visible { text-overflow: clip; overflow: hidden; white-space: nowrap; }
+.focus-within-text-clip:focus-within { text-overflow: clip; overflow: hidden; white-space: nowrap; }
+.group:hover .group-hover-text-clip { text-overflow: clip; overflow: hidden; white-space: nowrap; }
+.hover-text-left:hover { text-align: left; }
+.focus-text-left:focus { text-align: left; }
+.active-text-left:active { text-align: left; }
+.disabled-text-left:disabled { text-align: left; }
+.focus-visible-text-left:focus-visible { text-align: left; }
+.focus-within-text-left:focus-within { text-align: left; }
+.group:hover .group-hover-text-left { text-align: left; }
+.hover-text-center:hover { text-align: center; }
+.focus-text-center:focus { text-align: center; }
+.active-text-center:active { text-align: center; }
+.disabled-text-center:disabled { text-align: center; }
+.focus-visible-text-center:focus-visible { text-align: center; }
+.focus-within-text-center:focus-within { text-align: center; }
+.group:hover .group-hover-text-center { text-align: center; }
+.hover-text-right:hover { text-align: right; }
+.focus-text-right:focus { text-align: right; }
+.active-text-right:active { text-align: right; }
+.disabled-text-right:disabled { text-align: right; }
+.focus-visible-text-right:focus-visible { text-align: right; }
+.focus-within-text-right:focus-within { text-align: right; }
+.group:hover .group-hover-text-right { text-align: right; }
+.hover-text-justify:hover { text-align: justify; }
+.focus-text-justify:focus { text-align: justify; }
+.active-text-justify:active { text-align: justify; }
+.disabled-text-justify:disabled { text-align: justify; }
+.focus-visible-text-justify:focus-visible { text-align: justify; }
+.focus-within-text-justify:focus-within { text-align: justify; }
+.group:hover .group-hover-text-justify { text-align: justify; }
+.hover-text-uppercase:hover { text-transform: uppercase; }
+.focus-text-uppercase:focus { text-transform: uppercase; }
+.active-text-uppercase:active { text-transform: uppercase; }
+.disabled-text-uppercase:disabled { text-transform: uppercase; }
+.focus-visible-text-uppercase:focus-visible { text-transform: uppercase; }
+.focus-within-text-uppercase:focus-within { text-transform: uppercase; }
+.group:hover .group-hover-text-uppercase { text-transform: uppercase; }
+.hover-text-lowercase:hover { text-transform: lowercase; }
+.focus-text-lowercase:focus { text-transform: lowercase; }
+.active-text-lowercase:active { text-transform: lowercase; }
+.disabled-text-lowercase:disabled { text-transform: lowercase; }
+.focus-visible-text-lowercase:focus-visible { text-transform: lowercase; }
+.focus-within-text-lowercase:focus-within { text-transform: lowercase; }
+.group:hover .group-hover-text-lowercase { text-transform: lowercase; }
+.hover-text-capitalize:hover { text-transform: capitalize; }
+.focus-text-capitalize:focus { text-transform: capitalize; }
+.active-text-capitalize:active { text-transform: capitalize; }
+.disabled-text-capitalize:disabled { text-transform: capitalize; }
+.focus-visible-text-capitalize:focus-visible { text-transform: capitalize; }
+.focus-within-text-capitalize:focus-within { text-transform: capitalize; }
+.group:hover .group-hover-text-capitalize { text-transform: capitalize; }
+
+/* SM Breakpoint */
+@media (min-width: 480px) {
+  .sm-text-xs { font-size: 0.5rem; }
+  .sm-hover-text-xs:hover { font-size: 0.5rem; }
+  .sm-focus-text-xs:focus { font-size: 0.5rem; }
+  .sm-active-text-xs:active { font-size: 0.5rem; }
+  .sm-disabled-text-xs:disabled { font-size: 0.5rem; }
+  .sm-focus-visible-text-xs:focus-visible { font-size: 0.5rem; }
+  .sm-focus-within-text-xs:focus-within { font-size: 0.5rem; }
+  .group:hover .sm-group-hover-text-xs { font-size: 0.5rem; }
+  .sm-text-sm { font-size: 0.875rem; }
+  .sm-hover-text-sm:hover { font-size: 0.875rem; }
+  .sm-focus-text-sm:focus { font-size: 0.875rem; }
+  .sm-active-text-sm:active { font-size: 0.875rem; }
+  .sm-disabled-text-sm:disabled { font-size: 0.875rem; }
+  .sm-focus-visible-text-sm:focus-visible { font-size: 0.875rem; }
+  .sm-focus-within-text-sm:focus-within { font-size: 0.875rem; }
+  .group:hover .sm-group-hover-text-sm { font-size: 0.875rem; }
+  .sm-text-base { font-size: 1rem; }
+  .sm-hover-text-base:hover { font-size: 1rem; }
+  .sm-focus-text-base:focus { font-size: 1rem; }
+  .sm-active-text-base:active { font-size: 1rem; }
+  .sm-disabled-text-base:disabled { font-size: 1rem; }
+  .sm-focus-visible-text-base:focus-visible { font-size: 1rem; }
+  .sm-focus-within-text-base:focus-within { font-size: 1rem; }
+  .group:hover .sm-group-hover-text-base { font-size: 1rem; }
+  .sm-text-lg { font-size: 1.125rem; }
+  .sm-hover-text-lg:hover { font-size: 1.125rem; }
+  .sm-focus-text-lg:focus { font-size: 1.125rem; }
+  .sm-active-text-lg:active { font-size: 1.125rem; }
+  .sm-disabled-text-lg:disabled { font-size: 1.125rem; }
+  .sm-focus-visible-text-lg:focus-visible { font-size: 1.125rem; }
+  .sm-focus-within-text-lg:focus-within { font-size: 1.125rem; }
+  .group:hover .sm-group-hover-text-lg { font-size: 1.125rem; }
+  .sm-text-xl { font-size: 2rem; }
+  .sm-hover-text-xl:hover { font-size: 2rem; }
+  .sm-focus-text-xl:focus { font-size: 2rem; }
+  .sm-active-text-xl:active { font-size: 2rem; }
+  .sm-disabled-text-xl:disabled { font-size: 2rem; }
+  .sm-focus-visible-text-xl:focus-visible { font-size: 2rem; }
+  .sm-focus-within-text-xl:focus-within { font-size: 2rem; }
+  .group:hover .sm-group-hover-text-xl { font-size: 2rem; }
+  .sm-text-2xl { font-size: 2.5rem; }
+  .sm-hover-text-2xl:hover { font-size: 2.5rem; }
+  .sm-focus-text-2xl:focus { font-size: 2.5rem; }
+  .sm-active-text-2xl:active { font-size: 2.5rem; }
+  .sm-disabled-text-2xl:disabled { font-size: 2.5rem; }
+  .sm-focus-visible-text-2xl:focus-visible { font-size: 2.5rem; }
+  .sm-focus-within-text-2xl:focus-within { font-size: 2.5rem; }
+  .group:hover .sm-group-hover-text-2xl { font-size: 2.5rem; }
+  .sm-text-3xl { font-size: 3rem; }
+  .sm-hover-text-3xl:hover { font-size: 3rem; }
+  .sm-focus-text-3xl:focus { font-size: 3rem; }
+  .sm-active-text-3xl:active { font-size: 3rem; }
+  .sm-disabled-text-3xl:disabled { font-size: 3rem; }
+  .sm-focus-visible-text-3xl:focus-visible { font-size: 3rem; }
+  .sm-focus-within-text-3xl:focus-within { font-size: 3rem; }
+  .group:hover .sm-group-hover-text-3xl { font-size: 3rem; }
+  .sm-text-ellipsis { text-overflow: ellipsis; overflow: hidden; white-space: nowrap; }
+  .sm-hover-text-ellipsis:hover { text-overflow: ellipsis; overflow: hidden; white-space: nowrap; }
+  .sm-focus-text-ellipsis:focus { text-overflow: ellipsis; overflow: hidden; white-space: nowrap; }
+  .sm-active-text-ellipsis:active { text-overflow: ellipsis; overflow: hidden; white-space: nowrap; }
+  .sm-disabled-text-ellipsis:disabled { text-overflow: ellipsis; overflow: hidden; white-space: nowrap; }
+  .sm-focus-visible-text-ellipsis:focus-visible { text-overflow: ellipsis; overflow: hidden; white-space: nowrap; }
+  .sm-focus-within-text-ellipsis:focus-within { text-overflow: ellipsis; overflow: hidden; white-space: nowrap; }
+  .group:hover .sm-group-hover-text-ellipsis { text-overflow: ellipsis; overflow: hidden; white-space: nowrap; }
+  .sm-text-clip { text-overflow: clip; overflow: hidden; white-space: nowrap; }
+  .sm-hover-text-clip:hover { text-overflow: clip; overflow: hidden; white-space: nowrap; }
+  .sm-focus-text-clip:focus { text-overflow: clip; overflow: hidden; white-space: nowrap; }
+  .sm-active-text-clip:active { text-overflow: clip; overflow: hidden; white-space: nowrap; }
+  .sm-disabled-text-clip:disabled { text-overflow: clip; overflow: hidden; white-space: nowrap; }
+  .sm-focus-visible-text-clip:focus-visible { text-overflow: clip; overflow: hidden; white-space: nowrap; }
+  .sm-focus-within-text-clip:focus-within { text-overflow: clip; overflow: hidden; white-space: nowrap; }
+  .group:hover .sm-group-hover-text-clip { text-overflow: clip; overflow: hidden; white-space: nowrap; }
+  .sm-text-left { text-align: left; }
+  .sm-hover-text-left:hover { text-align: left; }
+  .sm-focus-text-left:focus { text-align: left; }
+  .sm-active-text-left:active { text-align: left; }
+  .sm-disabled-text-left:disabled { text-align: left; }
+  .sm-focus-visible-text-left:focus-visible { text-align: left; }
+  .sm-focus-within-text-left:focus-within { text-align: left; }
+  .group:hover .sm-group-hover-text-left { text-align: left; }
+  .sm-text-center { text-align: center; }
+  .sm-hover-text-center:hover { text-align: center; }
+  .sm-focus-text-center:focus { text-align: center; }
+  .sm-active-text-center:active { text-align: center; }
+  .sm-disabled-text-center:disabled { text-align: center; }
+  .sm-focus-visible-text-center:focus-visible { text-align: center; }
+  .sm-focus-within-text-center:focus-within { text-align: center; }
+  .group:hover .sm-group-hover-text-center { text-align: center; }
+  .sm-text-right { text-align: right; }
+  .sm-hover-text-right:hover { text-align: right; }
+  .sm-focus-text-right:focus { text-align: right; }
+  .sm-active-text-right:active { text-align: right; }
+  .sm-disabled-text-right:disabled { text-align: right; }
+  .sm-focus-visible-text-right:focus-visible { text-align: right; }
+  .sm-focus-within-text-right:focus-within { text-align: right; }
+  .group:hover .sm-group-hover-text-right { text-align: right; }
+  .sm-text-justify { text-align: justify; }
+  .sm-hover-text-justify:hover { text-align: justify; }
+  .sm-focus-text-justify:focus { text-align: justify; }
+  .sm-active-text-justify:active { text-align: justify; }
+  .sm-disabled-text-justify:disabled { text-align: justify; }
+  .sm-focus-visible-text-justify:focus-visible { text-align: justify; }
+  .sm-focus-within-text-justify:focus-within { text-align: justify; }
+  .group:hover .sm-group-hover-text-justify { text-align: justify; }
+  .sm-text-uppercase { text-transform: uppercase; }
+  .sm-hover-text-uppercase:hover { text-transform: uppercase; }
+  .sm-focus-text-uppercase:focus { text-transform: uppercase; }
+  .sm-active-text-uppercase:active { text-transform: uppercase; }
+  .sm-disabled-text-uppercase:disabled { text-transform: uppercase; }
+  .sm-focus-visible-text-uppercase:focus-visible { text-transform: uppercase; }
+  .sm-focus-within-text-uppercase:focus-within { text-transform: uppercase; }
+  .group:hover .sm-group-hover-text-uppercase { text-transform: uppercase; }
+  .sm-text-lowercase { text-transform: lowercase; }
+  .sm-hover-text-lowercase:hover { text-transform: lowercase; }
+  .sm-focus-text-lowercase:focus { text-transform: lowercase; }
+  .sm-active-text-lowercase:active { text-transform: lowercase; }
+  .sm-disabled-text-lowercase:disabled { text-transform: lowercase; }
+  .sm-focus-visible-text-lowercase:focus-visible { text-transform: lowercase; }
+  .sm-focus-within-text-lowercase:focus-within { text-transform: lowercase; }
+  .group:hover .sm-group-hover-text-lowercase { text-transform: lowercase; }
+  .sm-text-capitalize { text-transform: capitalize; }
+  .sm-hover-text-capitalize:hover { text-transform: capitalize; }
+  .sm-focus-text-capitalize:focus { text-transform: capitalize; }
+  .sm-active-text-capitalize:active { text-transform: capitalize; }
+  .sm-disabled-text-capitalize:disabled { text-transform: capitalize; }
+  .sm-focus-visible-text-capitalize:focus-visible { text-transform: capitalize; }
+  .sm-focus-within-text-capitalize:focus-within { text-transform: capitalize; }
+  .group:hover .sm-group-hover-text-capitalize { text-transform: capitalize; }
+}
+
+/* MD Breakpoint */
+@media (min-width: 768px) {
+  .md-text-xs { font-size: 0.5rem; }
+  .md-hover-text-xs:hover { font-size: 0.5rem; }
+  .md-focus-text-xs:focus { font-size: 0.5rem; }
+  .md-active-text-xs:active { font-size: 0.5rem; }
+  .md-disabled-text-xs:disabled { font-size: 0.5rem; }
+  .md-focus-visible-text-xs:focus-visible { font-size: 0.5rem; }
+  .md-focus-within-text-xs:focus-within { font-size: 0.5rem; }
+  .group:hover .md-group-hover-text-xs { font-size: 0.5rem; }
+  .md-text-sm { font-size: 0.875rem; }
+  .md-hover-text-sm:hover { font-size: 0.875rem; }
+  .md-focus-text-sm:focus { font-size: 0.875rem; }
+  .md-active-text-sm:active { font-size: 0.875rem; }
+  .md-disabled-text-sm:disabled { font-size: 0.875rem; }
+  .md-focus-visible-text-sm:focus-visible { font-size: 0.875rem; }
+  .md-focus-within-text-sm:focus-within { font-size: 0.875rem; }
+  .group:hover .md-group-hover-text-sm { font-size: 0.875rem; }
+  .md-text-base { font-size: 1rem; }
+  .md-hover-text-base:hover { font-size: 1rem; }
+  .md-focus-text-base:focus { font-size: 1rem; }
+  .md-active-text-base:active { font-size: 1rem; }
+  .md-disabled-text-base:disabled { font-size: 1rem; }
+  .md-focus-visible-text-base:focus-visible { font-size: 1rem; }
+  .md-focus-within-text-base:focus-within { font-size: 1rem; }
+  .group:hover .md-group-hover-text-base { font-size: 1rem; }
+  .md-text-lg { font-size: 1.125rem; }
+  .md-hover-text-lg:hover { font-size: 1.125rem; }
+  .md-focus-text-lg:focus { font-size: 1.125rem; }
+  .md-active-text-lg:active { font-size: 1.125rem; }
+  .md-disabled-text-lg:disabled { font-size: 1.125rem; }
+  .md-focus-visible-text-lg:focus-visible { font-size: 1.125rem; }
+  .md-focus-within-text-lg:focus-within { font-size: 1.125rem; }
+  .group:hover .md-group-hover-text-lg { font-size: 1.125rem; }
+  .md-text-xl { font-size: 2rem; }
+  .md-hover-text-xl:hover { font-size: 2rem; }
+  .md-focus-text-xl:focus { font-size: 2rem; }
+  .md-active-text-xl:active { font-size: 2rem; }
+  .md-disabled-text-xl:disabled { font-size: 2rem; }
+  .md-focus-visible-text-xl:focus-visible { font-size: 2rem; }
+  .md-focus-within-text-xl:focus-within { font-size: 2rem; }
+  .group:hover .md-group-hover-text-xl { font-size: 2rem; }
+  .md-text-2xl { font-size: 2.5rem; }
+  .md-hover-text-2xl:hover { font-size: 2.5rem; }
+  .md-focus-text-2xl:focus { font-size: 2.5rem; }
+  .md-active-text-2xl:active { font-size: 2.5rem; }
+  .md-disabled-text-2xl:disabled { font-size: 2.5rem; }
+  .md-focus-visible-text-2xl:focus-visible { font-size: 2.5rem; }
+  .md-focus-within-text-2xl:focus-within { font-size: 2.5rem; }
+  .group:hover .md-group-hover-text-2xl { font-size: 2.5rem; }
+  .md-text-3xl { font-size: 3rem; }
+  .md-hover-text-3xl:hover { font-size: 3rem; }
+  .md-focus-text-3xl:focus { font-size: 3rem; }
+  .md-active-text-3xl:active { font-size: 3rem; }
+  .md-disabled-text-3xl:disabled { font-size: 3rem; }
+  .md-focus-visible-text-3xl:focus-visible { font-size: 3rem; }
+  .md-focus-within-text-3xl:focus-within { font-size: 3rem; }
+  .group:hover .md-group-hover-text-3xl { font-size: 3rem; }
+  .md-text-ellipsis { text-overflow: ellipsis; overflow: hidden; white-space: nowrap; }
+  .md-hover-text-ellipsis:hover { text-overflow: ellipsis; overflow: hidden; white-space: nowrap; }
+  .md-focus-text-ellipsis:focus { text-overflow: ellipsis; overflow: hidden; white-space: nowrap; }
+  .md-active-text-ellipsis:active { text-overflow: ellipsis; overflow: hidden; white-space: nowrap; }
+  .md-disabled-text-ellipsis:disabled { text-overflow: ellipsis; overflow: hidden; white-space: nowrap; }
+  .md-focus-visible-text-ellipsis:focus-visible { text-overflow: ellipsis; overflow: hidden; white-space: nowrap; }
+  .md-focus-within-text-ellipsis:focus-within { text-overflow: ellipsis; overflow: hidden; white-space: nowrap; }
+  .group:hover .md-group-hover-text-ellipsis { text-overflow: ellipsis; overflow: hidden; white-space: nowrap; }
+  .md-text-clip { text-overflow: clip; overflow: hidden; white-space: nowrap; }
+  .md-hover-text-clip:hover { text-overflow: clip; overflow: hidden; white-space: nowrap; }
+  .md-focus-text-clip:focus { text-overflow: clip; overflow: hidden; white-space: nowrap; }
+  .md-active-text-clip:active { text-overflow: clip; overflow: hidden; white-space: nowrap; }
+  .md-disabled-text-clip:disabled { text-overflow: clip; overflow: hidden; white-space: nowrap; }
+  .md-focus-visible-text-clip:focus-visible { text-overflow: clip; overflow: hidden; white-space: nowrap; }
+  .md-focus-within-text-clip:focus-within { text-overflow: clip; overflow: hidden; white-space: nowrap; }
+  .group:hover .md-group-hover-text-clip { text-overflow: clip; overflow: hidden; white-space: nowrap; }
+  .md-text-left { text-align: left; }
+  .md-hover-text-left:hover { text-align: left; }
+  .md-focus-text-left:focus { text-align: left; }
+  .md-active-text-left:active { text-align: left; }
+  .md-disabled-text-left:disabled { text-align: left; }
+  .md-focus-visible-text-left:focus-visible { text-align: left; }
+  .md-focus-within-text-left:focus-within { text-align: left; }
+  .group:hover .md-group-hover-text-left { text-align: left; }
+  .md-text-center { text-align: center; }
+  .md-hover-text-center:hover { text-align: center; }
+  .md-focus-text-center:focus { text-align: center; }
+  .md-active-text-center:active { text-align: center; }
+  .md-disabled-text-center:disabled { text-align: center; }
+  .md-focus-visible-text-center:focus-visible { text-align: center; }
+  .md-focus-within-text-center:focus-within { text-align: center; }
+  .group:hover .md-group-hover-text-center { text-align: center; }
+  .md-text-right { text-align: right; }
+  .md-hover-text-right:hover { text-align: right; }
+  .md-focus-text-right:focus { text-align: right; }
+  .md-active-text-right:active { text-align: right; }
+  .md-disabled-text-right:disabled { text-align: right; }
+  .md-focus-visible-text-right:focus-visible { text-align: right; }
+  .md-focus-within-text-right:focus-within { text-align: right; }
+  .group:hover .md-group-hover-text-right { text-align: right; }
+  .md-text-justify { text-align: justify; }
+  .md-hover-text-justify:hover { text-align: justify; }
+  .md-focus-text-justify:focus { text-align: justify; }
+  .md-active-text-justify:active { text-align: justify; }
+  .md-disabled-text-justify:disabled { text-align: justify; }
+  .md-focus-visible-text-justify:focus-visible { text-align: justify; }
+  .md-focus-within-text-justify:focus-within { text-align: justify; }
+  .group:hover .md-group-hover-text-justify { text-align: justify; }
+  .md-text-uppercase { text-transform: uppercase; }
+  .md-hover-text-uppercase:hover { text-transform: uppercase; }
+  .md-focus-text-uppercase:focus { text-transform: uppercase; }
+  .md-active-text-uppercase:active { text-transform: uppercase; }
+  .md-disabled-text-uppercase:disabled { text-transform: uppercase; }
+  .md-focus-visible-text-uppercase:focus-visible { text-transform: uppercase; }
+  .md-focus-within-text-uppercase:focus-within { text-transform: uppercase; }
+  .group:hover .md-group-hover-text-uppercase { text-transform: uppercase; }
+  .md-text-lowercase { text-transform: lowercase; }
+  .md-hover-text-lowercase:hover { text-transform: lowercase; }
+  .md-focus-text-lowercase:focus { text-transform: lowercase; }
+  .md-active-text-lowercase:active { text-transform: lowercase; }
+  .md-disabled-text-lowercase:disabled { text-transform: lowercase; }
+  .md-focus-visible-text-lowercase:focus-visible { text-transform: lowercase; }
+  .md-focus-within-text-lowercase:focus-within { text-transform: lowercase; }
+  .group:hover .md-group-hover-text-lowercase { text-transform: lowercase; }
+  .md-text-capitalize { text-transform: capitalize; }
+  .md-hover-text-capitalize:hover { text-transform: capitalize; }
+  .md-focus-text-capitalize:focus { text-transform: capitalize; }
+  .md-active-text-capitalize:active { text-transform: capitalize; }
+  .md-disabled-text-capitalize:disabled { text-transform: capitalize; }
+  .md-focus-visible-text-capitalize:focus-visible { text-transform: capitalize; }
+  .md-focus-within-text-capitalize:focus-within { text-transform: capitalize; }
+  .group:hover .md-group-hover-text-capitalize { text-transform: capitalize; }
+}
+
+/* LG Breakpoint */
+@media (min-width: 1024px) {
+  .lg-text-xs { font-size: 0.5rem; }
+  .lg-hover-text-xs:hover { font-size: 0.5rem; }
+  .lg-focus-text-xs:focus { font-size: 0.5rem; }
+  .lg-active-text-xs:active { font-size: 0.5rem; }
+  .lg-disabled-text-xs:disabled { font-size: 0.5rem; }
+  .lg-focus-visible-text-xs:focus-visible { font-size: 0.5rem; }
+  .lg-focus-within-text-xs:focus-within { font-size: 0.5rem; }
+  .group:hover .lg-group-hover-text-xs { font-size: 0.5rem; }
+  .lg-text-sm { font-size: 0.875rem; }
+  .lg-hover-text-sm:hover { font-size: 0.875rem; }
+  .lg-focus-text-sm:focus { font-size: 0.875rem; }
+  .lg-active-text-sm:active { font-size: 0.875rem; }
+  .lg-disabled-text-sm:disabled { font-size: 0.875rem; }
+  .lg-focus-visible-text-sm:focus-visible { font-size: 0.875rem; }
+  .lg-focus-within-text-sm:focus-within { font-size: 0.875rem; }
+  .group:hover .lg-group-hover-text-sm { font-size: 0.875rem; }
+  .lg-text-base { font-size: 1rem; }
+  .lg-hover-text-base:hover { font-size: 1rem; }
+  .lg-focus-text-base:focus { font-size: 1rem; }
+  .lg-active-text-base:active { font-size: 1rem; }
+  .lg-disabled-text-base:disabled { font-size: 1rem; }
+  .lg-focus-visible-text-base:focus-visible { font-size: 1rem; }
+  .lg-focus-within-text-base:focus-within { font-size: 1rem; }
+  .group:hover .lg-group-hover-text-base { font-size: 1rem; }
+  .lg-text-lg { font-size: 1.125rem; }
+  .lg-hover-text-lg:hover { font-size: 1.125rem; }
+  .lg-focus-text-lg:focus { font-size: 1.125rem; }
+  .lg-active-text-lg:active { font-size: 1.125rem; }
+  .lg-disabled-text-lg:disabled { font-size: 1.125rem; }
+  .lg-focus-visible-text-lg:focus-visible { font-size: 1.125rem; }
+  .lg-focus-within-text-lg:focus-within { font-size: 1.125rem; }
+  .group:hover .lg-group-hover-text-lg { font-size: 1.125rem; }
+  .lg-text-xl { font-size: 2rem; }
+  .lg-hover-text-xl:hover { font-size: 2rem; }
+  .lg-focus-text-xl:focus { font-size: 2rem; }
+  .lg-active-text-xl:active { font-size: 2rem; }
+  .lg-disabled-text-xl:disabled { font-size: 2rem; }
+  .lg-focus-visible-text-xl:focus-visible { font-size: 2rem; }
+  .lg-focus-within-text-xl:focus-within { font-size: 2rem; }
+  .group:hover .lg-group-hover-text-xl { font-size: 2rem; }
+  .lg-text-2xl { font-size: 2.5rem; }
+  .lg-hover-text-2xl:hover { font-size: 2.5rem; }
+  .lg-focus-text-2xl:focus { font-size: 2.5rem; }
+  .lg-active-text-2xl:active { font-size: 2.5rem; }
+  .lg-disabled-text-2xl:disabled { font-size: 2.5rem; }
+  .lg-focus-visible-text-2xl:focus-visible { font-size: 2.5rem; }
+  .lg-focus-within-text-2xl:focus-within { font-size: 2.5rem; }
+  .group:hover .lg-group-hover-text-2xl { font-size: 2.5rem; }
+  .lg-text-3xl { font-size: 3rem; }
+  .lg-hover-text-3xl:hover { font-size: 3rem; }
+  .lg-focus-text-3xl:focus { font-size: 3rem; }
+  .lg-active-text-3xl:active { font-size: 3rem; }
+  .lg-disabled-text-3xl:disabled { font-size: 3rem; }
+  .lg-focus-visible-text-3xl:focus-visible { font-size: 3rem; }
+  .lg-focus-within-text-3xl:focus-within { font-size: 3rem; }
+  .group:hover .lg-group-hover-text-3xl { font-size: 3rem; }
+  .lg-text-ellipsis { text-overflow: ellipsis; overflow: hidden; white-space: nowrap; }
+  .lg-hover-text-ellipsis:hover { text-overflow: ellipsis; overflow: hidden; white-space: nowrap; }
+  .lg-focus-text-ellipsis:focus { text-overflow: ellipsis; overflow: hidden; white-space: nowrap; }
+  .lg-active-text-ellipsis:active { text-overflow: ellipsis; overflow: hidden; white-space: nowrap; }
+  .lg-disabled-text-ellipsis:disabled { text-overflow: ellipsis; overflow: hidden; white-space: nowrap; }
+  .lg-focus-visible-text-ellipsis:focus-visible { text-overflow: ellipsis; overflow: hidden; white-space: nowrap; }
+  .lg-focus-within-text-ellipsis:focus-within { text-overflow: ellipsis; overflow: hidden; white-space: nowrap; }
+  .group:hover .lg-group-hover-text-ellipsis { text-overflow: ellipsis; overflow: hidden; white-space: nowrap; }
+  .lg-text-clip { text-overflow: clip; overflow: hidden; white-space: nowrap; }
+  .lg-hover-text-clip:hover { text-overflow: clip; overflow: hidden; white-space: nowrap; }
+  .lg-focus-text-clip:focus { text-overflow: clip; overflow: hidden; white-space: nowrap; }
+  .lg-active-text-clip:active { text-overflow: clip; overflow: hidden; white-space: nowrap; }
+  .lg-disabled-text-clip:disabled { text-overflow: clip; overflow: hidden; white-space: nowrap; }
+  .lg-focus-visible-text-clip:focus-visible { text-overflow: clip; overflow: hidden; white-space: nowrap; }
+  .lg-focus-within-text-clip:focus-within { text-overflow: clip; overflow: hidden; white-space: nowrap; }
+  .group:hover .lg-group-hover-text-clip { text-overflow: clip; overflow: hidden; white-space: nowrap; }
+  .lg-text-left { text-align: left; }
+  .lg-hover-text-left:hover { text-align: left; }
+  .lg-focus-text-left:focus { text-align: left; }
+  .lg-active-text-left:active { text-align: left; }
+  .lg-disabled-text-left:disabled { text-align: left; }
+  .lg-focus-visible-text-left:focus-visible { text-align: left; }
+  .lg-focus-within-text-left:focus-within { text-align: left; }
+  .group:hover .lg-group-hover-text-left { text-align: left; }
+  .lg-text-center { text-align: center; }
+  .lg-hover-text-center:hover { text-align: center; }
+  .lg-focus-text-center:focus { text-align: center; }
+  .lg-active-text-center:active { text-align: center; }
+  .lg-disabled-text-center:disabled { text-align: center; }
+  .lg-focus-visible-text-center:focus-visible { text-align: center; }
+  .lg-focus-within-text-center:focus-within { text-align: center; }
+  .group:hover .lg-group-hover-text-center { text-align: center; }
+  .lg-text-right { text-align: right; }
+  .lg-hover-text-right:hover { text-align: right; }
+  .lg-focus-text-right:focus { text-align: right; }
+  .lg-active-text-right:active { text-align: right; }
+  .lg-disabled-text-right:disabled { text-align: right; }
+  .lg-focus-visible-text-right:focus-visible { text-align: right; }
+  .lg-focus-within-text-right:focus-within { text-align: right; }
+  .group:hover .lg-group-hover-text-right { text-align: right; }
+  .lg-text-justify { text-align: justify; }
+  .lg-hover-text-justify:hover { text-align: justify; }
+  .lg-focus-text-justify:focus { text-align: justify; }
+  .lg-active-text-justify:active { text-align: justify; }
+  .lg-disabled-text-justify:disabled { text-align: justify; }
+  .lg-focus-visible-text-justify:focus-visible { text-align: justify; }
+  .lg-focus-within-text-justify:focus-within { text-align: justify; }
+  .group:hover .lg-group-hover-text-justify { text-align: justify; }
+  .lg-text-uppercase { text-transform: uppercase; }
+  .lg-hover-text-uppercase:hover { text-transform: uppercase; }
+  .lg-focus-text-uppercase:focus { text-transform: uppercase; }
+  .lg-active-text-uppercase:active { text-transform: uppercase; }
+  .lg-disabled-text-uppercase:disabled { text-transform: uppercase; }
+  .lg-focus-visible-text-uppercase:focus-visible { text-transform: uppercase; }
+  .lg-focus-within-text-uppercase:focus-within { text-transform: uppercase; }
+  .group:hover .lg-group-hover-text-uppercase { text-transform: uppercase; }
+  .lg-text-lowercase { text-transform: lowercase; }
+  .lg-hover-text-lowercase:hover { text-transform: lowercase; }
+  .lg-focus-text-lowercase:focus { text-transform: lowercase; }
+  .lg-active-text-lowercase:active { text-transform: lowercase; }
+  .lg-disabled-text-lowercase:disabled { text-transform: lowercase; }
+  .lg-focus-visible-text-lowercase:focus-visible { text-transform: lowercase; }
+  .lg-focus-within-text-lowercase:focus-within { text-transform: lowercase; }
+  .group:hover .lg-group-hover-text-lowercase { text-transform: lowercase; }
+  .lg-text-capitalize { text-transform: capitalize; }
+  .lg-hover-text-capitalize:hover { text-transform: capitalize; }
+  .lg-focus-text-capitalize:focus { text-transform: capitalize; }
+  .lg-active-text-capitalize:active { text-transform: capitalize; }
+  .lg-disabled-text-capitalize:disabled { text-transform: capitalize; }
+  .lg-focus-visible-text-capitalize:focus-visible { text-transform: capitalize; }
+  .lg-focus-within-text-capitalize:focus-within { text-transform: capitalize; }
+  .group:hover .lg-group-hover-text-capitalize { text-transform: capitalize; }
+}
+
+/* XL Breakpoint */
+@media (min-width: 1280px) {
+  .xl-text-xs { font-size: 0.5rem; }
+  .xl-hover-text-xs:hover { font-size: 0.5rem; }
+  .xl-focus-text-xs:focus { font-size: 0.5rem; }
+  .xl-active-text-xs:active { font-size: 0.5rem; }
+  .xl-disabled-text-xs:disabled { font-size: 0.5rem; }
+  .xl-focus-visible-text-xs:focus-visible { font-size: 0.5rem; }
+  .xl-focus-within-text-xs:focus-within { font-size: 0.5rem; }
+  .group:hover .xl-group-hover-text-xs { font-size: 0.5rem; }
+  .xl-text-sm { font-size: 0.875rem; }
+  .xl-hover-text-sm:hover { font-size: 0.875rem; }
+  .xl-focus-text-sm:focus { font-size: 0.875rem; }
+  .xl-active-text-sm:active { font-size: 0.875rem; }
+  .xl-disabled-text-sm:disabled { font-size: 0.875rem; }
+  .xl-focus-visible-text-sm:focus-visible { font-size: 0.875rem; }
+  .xl-focus-within-text-sm:focus-within { font-size: 0.875rem; }
+  .group:hover .xl-group-hover-text-sm { font-size: 0.875rem; }
+  .xl-text-base { font-size: 1rem; }
+  .xl-hover-text-base:hover { font-size: 1rem; }
+  .xl-focus-text-base:focus { font-size: 1rem; }
+  .xl-active-text-base:active { font-size: 1rem; }
+  .xl-disabled-text-base:disabled { font-size: 1rem; }
+  .xl-focus-visible-text-base:focus-visible { font-size: 1rem; }
+  .xl-focus-within-text-base:focus-within { font-size: 1rem; }
+  .group:hover .xl-group-hover-text-base { font-size: 1rem; }
+  .xl-text-lg { font-size: 1.125rem; }
+  .xl-hover-text-lg:hover { font-size: 1.125rem; }
+  .xl-focus-text-lg:focus { font-size: 1.125rem; }
+  .xl-active-text-lg:active { font-size: 1.125rem; }
+  .xl-disabled-text-lg:disabled { font-size: 1.125rem; }
+  .xl-focus-visible-text-lg:focus-visible { font-size: 1.125rem; }
+  .xl-focus-within-text-lg:focus-within { font-size: 1.125rem; }
+  .group:hover .xl-group-hover-text-lg { font-size: 1.125rem; }
+  .xl-text-xl { font-size: 2rem; }
+  .xl-hover-text-xl:hover { font-size: 2rem; }
+  .xl-focus-text-xl:focus { font-size: 2rem; }
+  .xl-active-text-xl:active { font-size: 2rem; }
+  .xl-disabled-text-xl:disabled { font-size: 2rem; }
+  .xl-focus-visible-text-xl:focus-visible { font-size: 2rem; }
+  .xl-focus-within-text-xl:focus-within { font-size: 2rem; }
+  .group:hover .xl-group-hover-text-xl { font-size: 2rem; }
+  .xl-text-2xl { font-size: 2.5rem; }
+  .xl-hover-text-2xl:hover { font-size: 2.5rem; }
+  .xl-focus-text-2xl:focus { font-size: 2.5rem; }
+  .xl-active-text-2xl:active { font-size: 2.5rem; }
+  .xl-disabled-text-2xl:disabled { font-size: 2.5rem; }
+  .xl-focus-visible-text-2xl:focus-visible { font-size: 2.5rem; }
+  .xl-focus-within-text-2xl:focus-within { font-size: 2.5rem; }
+  .group:hover .xl-group-hover-text-2xl { font-size: 2.5rem; }
+  .xl-text-3xl { font-size: 3rem; }
+  .xl-hover-text-3xl:hover { font-size: 3rem; }
+  .xl-focus-text-3xl:focus { font-size: 3rem; }
+  .xl-active-text-3xl:active { font-size: 3rem; }
+  .xl-disabled-text-3xl:disabled { font-size: 3rem; }
+  .xl-focus-visible-text-3xl:focus-visible { font-size: 3rem; }
+  .xl-focus-within-text-3xl:focus-within { font-size: 3rem; }
+  .group:hover .xl-group-hover-text-3xl { font-size: 3rem; }
+  .xl-text-ellipsis { text-overflow: ellipsis; overflow: hidden; white-space: nowrap; }
+  .xl-hover-text-ellipsis:hover { text-overflow: ellipsis; overflow: hidden; white-space: nowrap; }
+  .xl-focus-text-ellipsis:focus { text-overflow: ellipsis; overflow: hidden; white-space: nowrap; }
+  .xl-active-text-ellipsis:active { text-overflow: ellipsis; overflow: hidden; white-space: nowrap; }
+  .xl-disabled-text-ellipsis:disabled { text-overflow: ellipsis; overflow: hidden; white-space: nowrap; }
+  .xl-focus-visible-text-ellipsis:focus-visible { text-overflow: ellipsis; overflow: hidden; white-space: nowrap; }
+  .xl-focus-within-text-ellipsis:focus-within { text-overflow: ellipsis; overflow: hidden; white-space: nowrap; }
+  .group:hover .xl-group-hover-text-ellipsis { text-overflow: ellipsis; overflow: hidden; white-space: nowrap; }
+  .xl-text-clip { text-overflow: clip; overflow: hidden; white-space: nowrap; }
+  .xl-hover-text-clip:hover { text-overflow: clip; overflow: hidden; white-space: nowrap; }
+  .xl-focus-text-clip:focus { text-overflow: clip; overflow: hidden; white-space: nowrap; }
+  .xl-active-text-clip:active { text-overflow: clip; overflow: hidden; white-space: nowrap; }
+  .xl-disabled-text-clip:disabled { text-overflow: clip; overflow: hidden; white-space: nowrap; }
+  .xl-focus-visible-text-clip:focus-visible { text-overflow: clip; overflow: hidden; white-space: nowrap; }
+  .xl-focus-within-text-clip:focus-within { text-overflow: clip; overflow: hidden; white-space: nowrap; }
+  .group:hover .xl-group-hover-text-clip { text-overflow: clip; overflow: hidden; white-space: nowrap; }
+  .xl-text-left { text-align: left; }
+  .xl-hover-text-left:hover { text-align: left; }
+  .xl-focus-text-left:focus { text-align: left; }
+  .xl-active-text-left:active { text-align: left; }
+  .xl-disabled-text-left:disabled { text-align: left; }
+  .xl-focus-visible-text-left:focus-visible { text-align: left; }
+  .xl-focus-within-text-left:focus-within { text-align: left; }
+  .group:hover .xl-group-hover-text-left { text-align: left; }
+  .xl-text-center { text-align: center; }
+  .xl-hover-text-center:hover { text-align: center; }
+  .xl-focus-text-center:focus { text-align: center; }
+  .xl-active-text-center:active { text-align: center; }
+  .xl-disabled-text-center:disabled { text-align: center; }
+  .xl-focus-visible-text-center:focus-visible { text-align: center; }
+  .xl-focus-within-text-center:focus-within { text-align: center; }
+  .group:hover .xl-group-hover-text-center { text-align: center; }
+  .xl-text-right { text-align: right; }
+  .xl-hover-text-right:hover { text-align: right; }
+  .xl-focus-text-right:focus { text-align: right; }
+  .xl-active-text-right:active { text-align: right; }
+  .xl-disabled-text-right:disabled { text-align: right; }
+  .xl-focus-visible-text-right:focus-visible { text-align: right; }
+  .xl-focus-within-text-right:focus-within { text-align: right; }
+  .group:hover .xl-group-hover-text-right { text-align: right; }
+  .xl-text-justify { text-align: justify; }
+  .xl-hover-text-justify:hover { text-align: justify; }
+  .xl-focus-text-justify:focus { text-align: justify; }
+  .xl-active-text-justify:active { text-align: justify; }
+  .xl-disabled-text-justify:disabled { text-align: justify; }
+  .xl-focus-visible-text-justify:focus-visible { text-align: justify; }
+  .xl-focus-within-text-justify:focus-within { text-align: justify; }
+  .group:hover .xl-group-hover-text-justify { text-align: justify; }
+  .xl-text-uppercase { text-transform: uppercase; }
+  .xl-hover-text-uppercase:hover { text-transform: uppercase; }
+  .xl-focus-text-uppercase:focus { text-transform: uppercase; }
+  .xl-active-text-uppercase:active { text-transform: uppercase; }
+  .xl-disabled-text-uppercase:disabled { text-transform: uppercase; }
+  .xl-focus-visible-text-uppercase:focus-visible { text-transform: uppercase; }
+  .xl-focus-within-text-uppercase:focus-within { text-transform: uppercase; }
+  .group:hover .xl-group-hover-text-uppercase { text-transform: uppercase; }
+  .xl-text-lowercase { text-transform: lowercase; }
+  .xl-hover-text-lowercase:hover { text-transform: lowercase; }
+  .xl-focus-text-lowercase:focus { text-transform: lowercase; }
+  .xl-active-text-lowercase:active { text-transform: lowercase; }
+  .xl-disabled-text-lowercase:disabled { text-transform: lowercase; }
+  .xl-focus-visible-text-lowercase:focus-visible { text-transform: lowercase; }
+  .xl-focus-within-text-lowercase:focus-within { text-transform: lowercase; }
+  .group:hover .xl-group-hover-text-lowercase { text-transform: lowercase; }
+  .xl-text-capitalize { text-transform: capitalize; }
+  .xl-hover-text-capitalize:hover { text-transform: capitalize; }
+  .xl-focus-text-capitalize:focus { text-transform: capitalize; }
+  .xl-active-text-capitalize:active { text-transform: capitalize; }
+  .xl-disabled-text-capitalize:disabled { text-transform: capitalize; }
+  .xl-focus-visible-text-capitalize:focus-visible { text-transform: capitalize; }
+  .xl-focus-within-text-capitalize:focus-within { text-transform: capitalize; }
+  .group:hover .xl-group-hover-text-capitalize { text-transform: capitalize; }
+}
+
+/* UW Breakpoint */
+@media (min-width: 1536px) {
+  .uw-text-xs { font-size: 0.5rem; }
+  .uw-hover-text-xs:hover { font-size: 0.5rem; }
+  .uw-focus-text-xs:focus { font-size: 0.5rem; }
+  .uw-active-text-xs:active { font-size: 0.5rem; }
+  .uw-disabled-text-xs:disabled { font-size: 0.5rem; }
+  .uw-focus-visible-text-xs:focus-visible { font-size: 0.5rem; }
+  .uw-focus-within-text-xs:focus-within { font-size: 0.5rem; }
+  .group:hover .uw-group-hover-text-xs { font-size: 0.5rem; }
+  .uw-text-sm { font-size: 0.875rem; }
+  .uw-hover-text-sm:hover { font-size: 0.875rem; }
+  .uw-focus-text-sm:focus { font-size: 0.875rem; }
+  .uw-active-text-sm:active { font-size: 0.875rem; }
+  .uw-disabled-text-sm:disabled { font-size: 0.875rem; }
+  .uw-focus-visible-text-sm:focus-visible { font-size: 0.875rem; }
+  .uw-focus-within-text-sm:focus-within { font-size: 0.875rem; }
+  .group:hover .uw-group-hover-text-sm { font-size: 0.875rem; }
+  .uw-text-base { font-size: 1rem; }
+  .uw-hover-text-base:hover { font-size: 1rem; }
+  .uw-focus-text-base:focus { font-size: 1rem; }
+  .uw-active-text-base:active { font-size: 1rem; }
+  .uw-disabled-text-base:disabled { font-size: 1rem; }
+  .uw-focus-visible-text-base:focus-visible { font-size: 1rem; }
+  .uw-focus-within-text-base:focus-within { font-size: 1rem; }
+  .group:hover .uw-group-hover-text-base { font-size: 1rem; }
+  .uw-text-lg { font-size: 1.125rem; }
+  .uw-hover-text-lg:hover { font-size: 1.125rem; }
+  .uw-focus-text-lg:focus { font-size: 1.125rem; }
+  .uw-active-text-lg:active { font-size: 1.125rem; }
+  .uw-disabled-text-lg:disabled { font-size: 1.125rem; }
+  .uw-focus-visible-text-lg:focus-visible { font-size: 1.125rem; }
+  .uw-focus-within-text-lg:focus-within { font-size: 1.125rem; }
+  .group:hover .uw-group-hover-text-lg { font-size: 1.125rem; }
+  .uw-text-xl { font-size: 2rem; }
+  .uw-hover-text-xl:hover { font-size: 2rem; }
+  .uw-focus-text-xl:focus { font-size: 2rem; }
+  .uw-active-text-xl:active { font-size: 2rem; }
+  .uw-disabled-text-xl:disabled { font-size: 2rem; }
+  .uw-focus-visible-text-xl:focus-visible { font-size: 2rem; }
+  .uw-focus-within-text-xl:focus-within { font-size: 2rem; }
+  .group:hover .uw-group-hover-text-xl { font-size: 2rem; }
+  .uw-text-2xl { font-size: 2.5rem; }
+  .uw-hover-text-2xl:hover { font-size: 2.5rem; }
+  .uw-focus-text-2xl:focus { font-size: 2.5rem; }
+  .uw-active-text-2xl:active { font-size: 2.5rem; }
+  .uw-disabled-text-2xl:disabled { font-size: 2.5rem; }
+  .uw-focus-visible-text-2xl:focus-visible { font-size: 2.5rem; }
+  .uw-focus-within-text-2xl:focus-within { font-size: 2.5rem; }
+  .group:hover .uw-group-hover-text-2xl { font-size: 2.5rem; }
+  .uw-text-3xl { font-size: 3rem; }
+  .uw-hover-text-3xl:hover { font-size: 3rem; }
+  .uw-focus-text-3xl:focus { font-size: 3rem; }
+  .uw-active-text-3xl:active { font-size: 3rem; }
+  .uw-disabled-text-3xl:disabled { font-size: 3rem; }
+  .uw-focus-visible-text-3xl:focus-visible { font-size: 3rem; }
+  .uw-focus-within-text-3xl:focus-within { font-size: 3rem; }
+  .group:hover .uw-group-hover-text-3xl { font-size: 3rem; }
+  .uw-text-ellipsis { text-overflow: ellipsis; overflow: hidden; white-space: nowrap; }
+  .uw-hover-text-ellipsis:hover { text-overflow: ellipsis; overflow: hidden; white-space: nowrap; }
+  .uw-focus-text-ellipsis:focus { text-overflow: ellipsis; overflow: hidden; white-space: nowrap; }
+  .uw-active-text-ellipsis:active { text-overflow: ellipsis; overflow: hidden; white-space: nowrap; }
+  .uw-disabled-text-ellipsis:disabled { text-overflow: ellipsis; overflow: hidden; white-space: nowrap; }
+  .uw-focus-visible-text-ellipsis:focus-visible { text-overflow: ellipsis; overflow: hidden; white-space: nowrap; }
+  .uw-focus-within-text-ellipsis:focus-within { text-overflow: ellipsis; overflow: hidden; white-space: nowrap; }
+  .group:hover .uw-group-hover-text-ellipsis { text-overflow: ellipsis; overflow: hidden; white-space: nowrap; }
+  .uw-text-clip { text-overflow: clip; overflow: hidden; white-space: nowrap; }
+  .uw-hover-text-clip:hover { text-overflow: clip; overflow: hidden; white-space: nowrap; }
+  .uw-focus-text-clip:focus { text-overflow: clip; overflow: hidden; white-space: nowrap; }
+  .uw-active-text-clip:active { text-overflow: clip; overflow: hidden; white-space: nowrap; }
+  .uw-disabled-text-clip:disabled { text-overflow: clip; overflow: hidden; white-space: nowrap; }
+  .uw-focus-visible-text-clip:focus-visible { text-overflow: clip; overflow: hidden; white-space: nowrap; }
+  .uw-focus-within-text-clip:focus-within { text-overflow: clip; overflow: hidden; white-space: nowrap; }
+  .group:hover .uw-group-hover-text-clip { text-overflow: clip; overflow: hidden; white-space: nowrap; }
+  .uw-text-left { text-align: left; }
+  .uw-hover-text-left:hover { text-align: left; }
+  .uw-focus-text-left:focus { text-align: left; }
+  .uw-active-text-left:active { text-align: left; }
+  .uw-disabled-text-left:disabled { text-align: left; }
+  .uw-focus-visible-text-left:focus-visible { text-align: left; }
+  .uw-focus-within-text-left:focus-within { text-align: left; }
+  .group:hover .uw-group-hover-text-left { text-align: left; }
+  .uw-text-center { text-align: center; }
+  .uw-hover-text-center:hover { text-align: center; }
+  .uw-focus-text-center:focus { text-align: center; }
+  .uw-active-text-center:active { text-align: center; }
+  .uw-disabled-text-center:disabled { text-align: center; }
+  .uw-focus-visible-text-center:focus-visible { text-align: center; }
+  .uw-focus-within-text-center:focus-within { text-align: center; }
+  .group:hover .uw-group-hover-text-center { text-align: center; }
+  .uw-text-right { text-align: right; }
+  .uw-hover-text-right:hover { text-align: right; }
+  .uw-focus-text-right:focus { text-align: right; }
+  .uw-active-text-right:active { text-align: right; }
+  .uw-disabled-text-right:disabled { text-align: right; }
+  .uw-focus-visible-text-right:focus-visible { text-align: right; }
+  .uw-focus-within-text-right:focus-within { text-align: right; }
+  .group:hover .uw-group-hover-text-right { text-align: right; }
+  .uw-text-justify { text-align: justify; }
+  .uw-hover-text-justify:hover { text-align: justify; }
+  .uw-focus-text-justify:focus { text-align: justify; }
+  .uw-active-text-justify:active { text-align: justify; }
+  .uw-disabled-text-justify:disabled { text-align: justify; }
+  .uw-focus-visible-text-justify:focus-visible { text-align: justify; }
+  .uw-focus-within-text-justify:focus-within { text-align: justify; }
+  .group:hover .uw-group-hover-text-justify { text-align: justify; }
+  .uw-text-uppercase { text-transform: uppercase; }
+  .uw-hover-text-uppercase:hover { text-transform: uppercase; }
+  .uw-focus-text-uppercase:focus { text-transform: uppercase; }
+  .uw-active-text-uppercase:active { text-transform: uppercase; }
+  .uw-disabled-text-uppercase:disabled { text-transform: uppercase; }
+  .uw-focus-visible-text-uppercase:focus-visible { text-transform: uppercase; }
+  .uw-focus-within-text-uppercase:focus-within { text-transform: uppercase; }
+  .group:hover .uw-group-hover-text-uppercase { text-transform: uppercase; }
+  .uw-text-lowercase { text-transform: lowercase; }
+  .uw-hover-text-lowercase:hover { text-transform: lowercase; }
+  .uw-focus-text-lowercase:focus { text-transform: lowercase; }
+  .uw-active-text-lowercase:active { text-transform: lowercase; }
+  .uw-disabled-text-lowercase:disabled { text-transform: lowercase; }
+  .uw-focus-visible-text-lowercase:focus-visible { text-transform: lowercase; }
+  .uw-focus-within-text-lowercase:focus-within { text-transform: lowercase; }
+  .group:hover .uw-group-hover-text-lowercase { text-transform: lowercase; }
+  .uw-text-capitalize { text-transform: capitalize; }
+  .uw-hover-text-capitalize:hover { text-transform: capitalize; }
+  .uw-focus-text-capitalize:focus { text-transform: capitalize; }
+  .uw-active-text-capitalize:active { text-transform: capitalize; }
+  .uw-disabled-text-capitalize:disabled { text-transform: capitalize; }
+  .uw-focus-visible-text-capitalize:focus-visible { text-transform: capitalize; }
+  .uw-focus-within-text-capitalize:focus-within { text-transform: capitalize; }
+  .group:hover .uw-group-hover-text-capitalize { text-transform: capitalize; }
+}

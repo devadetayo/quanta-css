@@ -1,0 +1,240 @@
+
+
+/*----------------------------------------------------
+  Whitespace (normal, nowrap, pre, pre-line, pre-wrap)
+----------------------------------------------------*/
+.whitespace-normal { white-space: normal; }
+
+.whitespace-nowrap { white-space: nowrap; }
+
+.whitespace-pre { white-space: pre; }
+
+.whitespace-pre-line { white-space: pre-line; }
+
+.whitespace-pre-wrap { white-space: pre-wrap; }
+
+/* -- Overflow Utilities -- */
+.overflow-auto { overflow: auto; }
+
+.overflow-hidden { overflow: hidden; }
+
+.overflow-visible { overflow: visible; }
+
+.overflow-scroll { overflow: scroll; }
+
+/* Overflow X & Y */
+.overflow-x-auto { overflow-x: auto; }
+
+.overflow-x-hidden { overflow-x: hidden; }
+
+.overflow-x-visible { overflow-x: visible; }
+
+.overflow-x-scroll { overflow-x: scroll; }
+
+.overflow-y-auto { overflow-y: auto; }
+
+.overflow-y-hidden { overflow-y: hidden; }
+
+.overflow-y-visible { overflow-y: visible; }
+
+.overflow-y-scroll { overflow-y: scroll; }
+
+/*----------------------------------------------------
+  Letter Spacing (tracking)
+----------------------------------------------------*/
+.tracking-tighter { letter-spacing: -0.05em; }
+
+.tracking-tight { letter-spacing: -0.025em; }
+
+.tracking-normal { letter-spacing: 0; }
+
+.tracking-wide { letter-spacing: 0.025em; }
+
+.tracking-wider { letter-spacing: 0.05em; }
+
+.tracking-widest { letter-spacing: 0.1em; }
+
+.decoration-solid { text-decoration-style: solid; }
+
+.decoration-double { text-decoration-style: double; }
+
+.decoration-dotted { text-decoration-style: dotted; }
+
+.decoration-dashed { text-decoration-style: dashed; }
+
+.decoration-wavy { text-decoration-style: wavy; }
+
+.decoration-0 { text-decoration-thickness: 0; }
+
+.decoration-1 { text-decoration-thickness: 1px; }
+
+.decoration-2 { text-decoration-thickness: 2px; }
+
+.decoration-4 { text-decoration-thickness: 4px; }
+
+.decoration-8 { text-decoration-thickness: 8px; }
+
+.underline-offset-0 { text-underline-offset: 0; }
+
+.underline-offset-1 { text-underline-offset: 1px; }
+
+.underline-offset-2 { text-underline-offset: 2px; }
+
+.underline-offset-4 { text-underline-offset: 4px; }
+
+.underline-offset-8 { text-underline-offset: 8px; }
+
+.indent-0 { text-indent: 0; }
+
+.indent-1 { text-indent: 0.25rem; }
+
+.indent-2 { text-indent: 0.5rem; }
+
+.indent-4 { text-indent: 1rem; }
+
+.indent-8 { text-indent: 2rem; }
+
+/*----------------------------------------------------
+  Word Break, Overflow Wrap, Hyphens
+----------------------------------------------------*/
+.break-normal { word-break: normal; }
+
+.break-words { word-break: break-word; }
+
+.break-all { word-break: break-all; }
+
+.overflow-normal { overflow-wrap: normal; }
+
+.overflow-break { overflow-wrap: break-word; }
+
+.hyphens-none { hyphens: none; }
+
+.hyphens-manual { hyphens: manual; }
+
+.hyphens-auto { hyphens: auto; }
+
+/*----------------------------------------------------
+  Word Break, Overflow Wrap, Hyphens
+----------------------------------------------------*/
+.break-normal { word-break: normal; }
+
+.break-words { word-break: break-word; }
+
+.break-all { word-break: break-all; }
+
+.overflow-normal { overflow-wrap: normal; }
+
+.overflow-break { overflow-wrap: break-word; }
+
+.hyphens-none { hyphens: none; }
+
+.hyphens-manual { hyphens: manual; }
+
+.hyphens-auto { hyphens: auto; }
+
+.line-height-1 { line-height: 1; }
+
+.line-height-2 { line-height: 1.25; }
+
+.line-height-3 { line-height: 1.375; }
+
+.line-height-4 { line-height: 1.5; }
+
+.line-height-5 { line-height: 1.625; }
+
+.line-height-6 { line-height: 1.75; }
+
+.line-height-7 { line-height: 2; }
+
+/* ----------------------------------------
+   Letter Spacing
+---------------------------------------- */
+.tracking-tight { letter-spacing: -0.05em; }
+
+.tracking-normal { letter-spacing: 0; }
+
+.tracking-wide { letter-spacing: 0.05em; }
+
+.line-clamp-1 { overflow: hidden; display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 1; }
+
+.line-clamp-2 { overflow: hidden; display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 2; }
+
+.line-clamp-3 { overflow: hidden; display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 3; }
+
+.line-clamp-4 { overflow: hidden; display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 4; }
+
+.line-clamp-5 { overflow: hidden; display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 5; }
+
+.line-clamp-6 { overflow: hidden; display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 6; }
+
+.list-style-image-none { list-style-image: none; }
+
+.list-style-position-inside { list-style-position: inside; }
+
+.list-style-position-outside { list-style-position: outside; }
+
+.list-style-type-none { list-style-type: none; }
+
+.list-style-type-disc { list-style-type: disc; }
+
+.list-style-type-circle { list-style-type: circle; }
+
+.list-style-type-square { list-style-type: square; }
+
+.list-style-type-decimal { list-style-type: decimal; }
+
+.list-style-type-lower_roman { list-style-type: lower-roman; }
+
+.list-style-type-upper_roman { list-style-type: upper-roman; }
+
+.list-style-type-lower_alpha { list-style-type: lower-alpha; }
+
+.list-style-type-upper_alpha { list-style-type: upper-alpha; }
+
+/* -----------------------------------------------------------------------------
+   15. Box-model Extras
+----------------------------------------------------------------------------- */
+/* Box Decoration Break */
+.decoration-slice { box-decoration-break: slice; }
+
+.decoration-clone { box-decoration-break: clone; }
+
+.break-after-auto { break-after: auto; }
+
+.break-after-avoid { break-after: avoid; }
+
+.break-after-all { break-after: all; }
+
+.break-after-avoid-page { break-after: avoid-page; }
+
+.break-after-page { break-after: page; }
+
+.break-after-left { break-after: left; }
+
+.break-after-right { break-after: right; }
+
+.break-after-column { break-after: column; }
+
+.break-before-auto { break-before: auto; }
+
+.break-before-avoid { break-before: avoid; }
+
+.break-before-all { break-before: all; }
+
+.break-before-avoid-page { break-before: avoid-page; }
+
+.break-before-page { break-before: page; }
+
+.break-before-left { break-before: left; }
+
+.break-before-right { break-before: right; }
+
+.break-before-column { break-before: column; }
+
+.break-inside-auto { break-inside: auto; }
+
+.break-inside-avoid { break-inside: avoid; }
+
+.break-inside-avoid-page { break-inside: avoid-page; }
+
+.break-inside-avoid-column { break-inside: avoid-column; }

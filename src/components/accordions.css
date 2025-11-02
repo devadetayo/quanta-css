@@ -41,8 +41,8 @@
   max-height: 0;
   overflow: hidden;
   padding: 0 var(--quanta-space-6);
-  transition: max-height var(--quanta-duration-normal) var(--quanta-ease-default),
-              padding var(--quanta-duration-fast);
+  transition: max-height var(--quanta-duration-normal) var(--quanta-ease-default), padding var(--quanta-duration-fast);
+  background: var(--white);   
 }
 
 .quanta-accordion-content[aria-hidden="false"] {
@@ -51,13 +51,13 @@
 }
 
 /* ─── Card Style ───────────────────────── */
-.quanta-accordion.card .quanta-accordion-item {
+.quanta-accordion.quanta-accordion-card .quanta-accordion-item {
   background-color: var(--white);
   border-radius: var(--quanta-rounded-lg);
   box-shadow: var(--quanta-shadow-md);
 }
 
-.quanta-accordion.card .quanta-accordion-item:hover {
+.quanta-accordion.quanta-accordion-card .quanta-accordion-item:hover {
   box-shadow: var(--quanta-shadow-lg);
 }
 
@@ -66,7 +66,7 @@
 }
 
 /* ─── Block Style ──────────────────────── */
-.quanta-accordion.block .quanta-accordion-item {
+.quanta-accordion.quanta-accordion-block .quanta-accordion-item {
   border-radius: 0;
   border: none;
   background-color: transparent;
@@ -74,13 +74,12 @@
   border-bottom: 2px solid var(--quanta-border-color);
 }
 
-.quanta-accordion.block .quanta-accordion-header {
-  background: transparent;
+.quanta-accordion.quanta-accordion-block .quanta-accordion-header {
   padding-left: 0;
   padding-right: 0;
 }
 
-.quanta-accordion.block .quanta-accordion-content {
+.quanta-accordion.quanta-accordion-block .quanta-accordion-content {
   padding-left: 0;
   padding-right: 0;
 }
@@ -94,18 +93,19 @@
 
 /* ─── Dark Mode ───────────────────────── */
 html[data-theme="dark"] {
-  .quanta-accordion.card .quanta-accordion-item {
-    background-color: var(--quanta-slate-800);
+  .quanta-accordion.quanta-accordion-card .quanta-accordion-item {
+    background-color: var(--quanta-grey-800);
     color: var(--quanta-text-default);
   }
 
   .quanta-accordion-header, .quanta-accordion-content {
-    background-color: transparent;
+    background: var(--quanta-grey-800);
     color: var(--quanta-text-default);
   }
 
   .quanta-accordion.quanta-accordion-outline .quanta-accordion-item {
     border-color: var(--quanta-border-color);
+    background: transparent;
   }
 }
 

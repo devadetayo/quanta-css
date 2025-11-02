@@ -129,7 +129,7 @@
 }
 
 .quanta-day:hover {
-  background-color: var(--quanta-slate-100);
+  background-color: var(--quanta-grey-100);
   color: var(--black);
   transform: translateY(-2px);
 }
@@ -150,16 +150,16 @@
 }
 
 html[data-theme="dark"] .quanta-datepicker-popup {
-  background-color: var(--quanta-slate-800);
+  background-color: var(--quanta-grey-800);
   box-shadow: var(--quanta-shadow-xl);
 }
 
 html[data-theme="dark"] .quanta-datepicker input{
-  background: var(--quanta-slate-800);
+  background: var(--quanta-grey-800);
 }
 
 html[data-theme="dark"] .quanta-day:hover {
-  background-color: var(--quanta-slate-900);
+  background-color: var(--quanta-grey-900);
   color: var(--white);
 }
 

@@ -22,7 +22,7 @@
   align-items: center;
   padding: var(--quanta-space-2);
   border-radius: var(--quanta-rounded-lg);
-  background-color: var(--quanta-slate-100);
+  background-color: var(--quanta-grey-100);
 }
 
 /* ─── Classic Upload ───────────────────────────────────── */
@@ -63,7 +63,7 @@
   border-radius: var(--quanta-rounded-md);
   font-size: var(--quanta-text-sm);
   text-align: center;
-  border: 2px dashed var(--quanta-slate-200);
+  border: 2px dashed var(--quanta-grey-200);
   width: 100%;
 }
 
@@ -95,7 +95,7 @@
   justify-content: center;
   min-height: 180px;
   background-color: var(--white);
-  border: 3px dashed var(--quanta-slate-300);
+  border: 3px dashed var(--quanta-grey-300);
   border-radius: var(--quanta-rounded-lg);
   color: var(--upload-text-color);
   text-align: center;
@@ -191,7 +191,7 @@
   align-items: center;
   justify-content: space-between;
   padding: var(--quanta-space-2) var(--quanta-space-3);
-  background-color: var(--quanta-slate-200);
+  background-color: var(--quanta-grey-200);
   color: var(--black);
   border-radius: var(--quanta-rounded-md);
   gap: var(--quanta-space-2);
@@ -230,7 +230,7 @@
 .quanta-image-box-preview {
   width: 100%;
   aspect-ratio: 16/9;
-  border: 2px dashed var(--quanta-slate-200);
+  border: 2px dashed var(--quanta-grey-200);
   border-radius: var(--quanta-rounded-md);
   overflow: hidden;
   display: none;
@@ -263,22 +263,22 @@
 /* ─── Dark Mode ───────────────────────────────────────── */
 html[data-theme="dark"]{
   .quanta-single-file-upload-wrapper{
-    background-color: var(--quanta-slate-800);
+    background-color: var(--quanta-grey-800);
   }
 
   .quanta-file-upload-box {
-    border-color: var(--quanta-slate-700);
+    border-color: var(--quanta-grey-700);
   }
 
   .quanta-file-upload-modern {
-    border-color: var(--quanta-slate-700);
-    background: var(--quanta-slate-900);
+    border-color: var(--quanta-grey-700);
+    background: var(--quanta-grey-900);
     color: var(--upload-text-color);
   }
 
   .quanta-file-item,
   .quanta-file-thumbnail {
-    background-color: var(--quanta-slate-700);
+    background-color: var(--quanta-grey-700);
     color: var(--quanta-text-default);
   }
 }

@@ -67,7 +67,7 @@
 .quanta-spinner-bar {
   width: 100%;
   height: 8px;
-  background-color: var(--quanta-slate-100);
+  background-color: var(--quanta-grey-100);
   border-radius: var(--quanta-rounded-md);
   position: relative;
   overflow: hidden;
@@ -175,7 +175,7 @@ html[data-theme="dark"] {
   }
 
   .quanta-spinner-bar {
-    background-color: var(--quanta-slate-800);
+    background-color: var(--quanta-grey-800);
   }
 
   .quanta-spinner-bar .quanta-bar {

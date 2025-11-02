@@ -435,12 +435,12 @@
 
 html[data-theme="dark"] .quanta-custom-select,
 html[data-theme="dark"] .quanta-custom-options {
-  background: var(--quanta-slate-800);
+  background: var(--quanta-grey-800);
   color: var(--quanta-text-default);
 }
 
 html[data-theme="dark"] .quanta-switch-slider {
-  background: var(--quanta-slate-600);
+  background: var(--quanta-grey-600);
 }
 
 html[data-theme="dark"] .quanta-custom-selected::after {
@@ -482,19 +482,19 @@ html[data-theme="dark"] .quanta-switch-outline-neutral   .quanta-switch-slider {
 html[data-theme="dark"] .quanta-custom-form-textarea,
 html[data-theme="dark"] .quanta-custom-form-select,
 html[data-theme="dark"] .quanta-custom-form-search .quanta-custom-form-input {
-  background: var(--quanta-slate-800);
+  background: var(--quanta-grey-800);
   color: var(--quanta-text-default);
   border-color: var(--quanta-border-color);
 }
 html[data-theme="dark"] .quanta-custom-checkbox-box,
 html[data-theme="dark"] .quanta-custom-radio-box {
-  background: var(--quanta-slate-800);
+  background: var(--quanta-grey-800);
   border-color: var(--quanta-border-color);
 }
 
 html[data-theme="dark"] .quanta-switch-outline .quanta-switch-outline-slider {
-  border: 1px solid var(--quanta-slate-400);
+  border: 1px solid var(--quanta-grey-400);
 }
 html[data-theme="dark"] .quanta-switch-outline .quanta-switch-outline-slider::before {
-  background: var(--quanta-slate-400);
+  background: var(--quanta-grey-400);
 }

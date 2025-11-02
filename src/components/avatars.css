@@ -25,7 +25,7 @@
 .quanta-avatar-info     { background-color: var(--quanta-bg-info);    color: var(--white); }
 .quanta-avatar-secondary { background-color: var(--quanta-bg-secondary); color: var(--white); }
 .quanta-avatar-light    { background-color: var(--quanta-grey-100); color: var(--quanta-grey-800); }
-.quanta-avatar-dark     { background-color: var(--quanta-slate-800); color: var(--white); }
+.quanta-avatar-dark     { background-color: var(--quanta-grey-800); color: var(--white); }
 
 /* ─── Dark Mode Adaptations ─────────────────────────────── */
 html[data-theme="dark"] {
@@ -59,7 +59,7 @@ html[data-theme="dark"] {
   height: 18px;
   border-radius: 50%;
   border: 2px solid var(--quanta-white);
-  background-color: var(--quanta-slate-50); /* default fallback */
+  background-color: var(--quanta-grey-50); /* default fallback */
   font-size: .7rem;
   display: flex;
   align-items: center;
@@ -74,7 +74,7 @@ html[data-theme="dark"] {
   height: 12px;
   border-radius: 50%;
   border: 2px solid var(--quanta-white);
-  background-color: var(--quanta-slate-50); /* default fallback */
+  background-color: var(--quanta-grey-50); /* default fallback */
 }
 
 /* Badge Variants */
@@ -118,12 +118,5 @@ html[data-theme="dark"] {
 
 /* Dark mode fix */
 html[data-theme="dark"] .quanta-avatar-badge {
-  border-color: var(--quanta-slate-800);
-}
-
-
-/* Theme support */
-html[data-theme="dark"] .quanta-avatar {
-  background-color: var(--quanta-slate-700);
-  color: var(--quanta-text-light);
+  border-color: var(--quanta-grey-800);
 }

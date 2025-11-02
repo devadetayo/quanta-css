@@ -1,0 +1,681 @@
+/* Quanta CSS v2.1 - objects Light Variants */
+
+/* State Variants */
+.hover-object-contain:hover { object-fit: contain; }
+.focus-object-contain:focus { object-fit: contain; }
+.active-object-contain:active { object-fit: contain; }
+.disabled-object-contain:disabled { object-fit: contain; }
+.focus-visible-object-contain:focus-visible { object-fit: contain; }
+.focus-within-object-contain:focus-within { object-fit: contain; }
+.group:hover .group-hover-object-contain { object-fit: contain; }
+.hover-object-cover:hover { object-fit: cover; }
+.focus-object-cover:focus { object-fit: cover; }
+.active-object-cover:active { object-fit: cover; }
+.disabled-object-cover:disabled { object-fit: cover; }
+.focus-visible-object-cover:focus-visible { object-fit: cover; }
+.focus-within-object-cover:focus-within { object-fit: cover; }
+.group:hover .group-hover-object-cover { object-fit: cover; }
+.hover-object-fill:hover { object-fit: fill; }
+.focus-object-fill:focus { object-fit: fill; }
+.active-object-fill:active { object-fit: fill; }
+.disabled-object-fill:disabled { object-fit: fill; }
+.focus-visible-object-fill:focus-visible { object-fit: fill; }
+.focus-within-object-fill:focus-within { object-fit: fill; }
+.group:hover .group-hover-object-fill { object-fit: fill; }
+.hover-object-none:hover { object-fit: none; }
+.focus-object-none:focus { object-fit: none; }
+.active-object-none:active { object-fit: none; }
+.disabled-object-none:disabled { object-fit: none; }
+.focus-visible-object-none:focus-visible { object-fit: none; }
+.focus-within-object-none:focus-within { object-fit: none; }
+.group:hover .group-hover-object-none { object-fit: none; }
+.hover-object-scale-down:hover { object-fit: scale-down; }
+.focus-object-scale-down:focus { object-fit: scale-down; }
+.active-object-scale-down:active { object-fit: scale-down; }
+.disabled-object-scale-down:disabled { object-fit: scale-down; }
+.focus-visible-object-scale-down:focus-visible { object-fit: scale-down; }
+.focus-within-object-scale-down:focus-within { object-fit: scale-down; }
+.group:hover .group-hover-object-scale-down { object-fit: scale-down; }
+.hover-object-top:hover { object-position: top; }
+.focus-object-top:focus { object-position: top; }
+.active-object-top:active { object-position: top; }
+.disabled-object-top:disabled { object-position: top; }
+.focus-visible-object-top:focus-visible { object-position: top; }
+.focus-within-object-top:focus-within { object-position: top; }
+.group:hover .group-hover-object-top { object-position: top; }
+.hover-object-bottom:hover { object-position: bottom; }
+.focus-object-bottom:focus { object-position: bottom; }
+.active-object-bottom:active { object-position: bottom; }
+.disabled-object-bottom:disabled { object-position: bottom; }
+.focus-visible-object-bottom:focus-visible { object-position: bottom; }
+.focus-within-object-bottom:focus-within { object-position: bottom; }
+.group:hover .group-hover-object-bottom { object-position: bottom; }
+.hover-object-center:hover { object-position: center; }
+.focus-object-center:focus { object-position: center; }
+.active-object-center:active { object-position: center; }
+.disabled-object-center:disabled { object-position: center; }
+.focus-visible-object-center:focus-visible { object-position: center; }
+.focus-within-object-center:focus-within { object-position: center; }
+.group:hover .group-hover-object-center { object-position: center; }
+.hover-object-left:hover { object-position: left; }
+.focus-object-left:focus { object-position: left; }
+.active-object-left:active { object-position: left; }
+.disabled-object-left:disabled { object-position: left; }
+.focus-visible-object-left:focus-visible { object-position: left; }
+.focus-within-object-left:focus-within { object-position: left; }
+.group:hover .group-hover-object-left { object-position: left; }
+.hover-object-right:hover { object-position: right; }
+.focus-object-right:focus { object-position: right; }
+.active-object-right:active { object-position: right; }
+.disabled-object-right:disabled { object-position: right; }
+.focus-visible-object-right:focus-visible { object-position: right; }
+.focus-within-object-right:focus-within { object-position: right; }
+.group:hover .group-hover-object-right { object-position: right; }
+.hover-object-left-top:hover { object-position: left top; }
+.focus-object-left-top:focus { object-position: left top; }
+.active-object-left-top:active { object-position: left top; }
+.disabled-object-left-top:disabled { object-position: left top; }
+.focus-visible-object-left-top:focus-visible { object-position: left top; }
+.focus-within-object-left-top:focus-within { object-position: left top; }
+.group:hover .group-hover-object-left-top { object-position: left top; }
+.hover-object-right-top:hover { object-position: right top; }
+.focus-object-right-top:focus { object-position: right top; }
+.active-object-right-top:active { object-position: right top; }
+.disabled-object-right-top:disabled { object-position: right top; }
+.focus-visible-object-right-top:focus-visible { object-position: right top; }
+.focus-within-object-right-top:focus-within { object-position: right top; }
+.group:hover .group-hover-object-right-top { object-position: right top; }
+.hover-object-left-bottom:hover { object-position: left bottom; }
+.focus-object-left-bottom:focus { object-position: left bottom; }
+.active-object-left-bottom:active { object-position: left bottom; }
+.disabled-object-left-bottom:disabled { object-position: left bottom; }
+.focus-visible-object-left-bottom:focus-visible { object-position: left bottom; }
+.focus-within-object-left-bottom:focus-within { object-position: left bottom; }
+.group:hover .group-hover-object-left-bottom { object-position: left bottom; }
+.hover-object-right-bottom:hover { object-position: right bottom; }
+.focus-object-right-bottom:focus { object-position: right bottom; }
+.active-object-right-bottom:active { object-position: right bottom; }
+.disabled-object-right-bottom:disabled { object-position: right bottom; }
+.focus-visible-object-right-bottom:focus-visible { object-position: right bottom; }
+.focus-within-object-right-bottom:focus-within { object-position: right bottom; }
+.group:hover .group-hover-object-right-bottom { object-position: right bottom; }
+
+/* SM Breakpoint */
+@media (min-width: 480px) {
+  .sm-object-contain { object-fit: contain; }
+  .sm-hover-object-contain:hover { object-fit: contain; }
+  .sm-focus-object-contain:focus { object-fit: contain; }
+  .sm-active-object-contain:active { object-fit: contain; }
+  .sm-disabled-object-contain:disabled { object-fit: contain; }
+  .sm-focus-visible-object-contain:focus-visible { object-fit: contain; }
+  .sm-focus-within-object-contain:focus-within { object-fit: contain; }
+  .group:hover .sm-group-hover-object-contain { object-fit: contain; }
+  .sm-object-cover { object-fit: cover; }
+  .sm-hover-object-cover:hover { object-fit: cover; }
+  .sm-focus-object-cover:focus { object-fit: cover; }
+  .sm-active-object-cover:active { object-fit: cover; }
+  .sm-disabled-object-cover:disabled { object-fit: cover; }
+  .sm-focus-visible-object-cover:focus-visible { object-fit: cover; }
+  .sm-focus-within-object-cover:focus-within { object-fit: cover; }
+  .group:hover .sm-group-hover-object-cover { object-fit: cover; }
+  .sm-object-fill { object-fit: fill; }
+  .sm-hover-object-fill:hover { object-fit: fill; }
+  .sm-focus-object-fill:focus { object-fit: fill; }
+  .sm-active-object-fill:active { object-fit: fill; }
+  .sm-disabled-object-fill:disabled { object-fit: fill; }
+  .sm-focus-visible-object-fill:focus-visible { object-fit: fill; }
+  .sm-focus-within-object-fill:focus-within { object-fit: fill; }
+  .group:hover .sm-group-hover-object-fill { object-fit: fill; }
+  .sm-object-none { object-fit: none; }
+  .sm-hover-object-none:hover { object-fit: none; }
+  .sm-focus-object-none:focus { object-fit: none; }
+  .sm-active-object-none:active { object-fit: none; }
+  .sm-disabled-object-none:disabled { object-fit: none; }
+  .sm-focus-visible-object-none:focus-visible { object-fit: none; }
+  .sm-focus-within-object-none:focus-within { object-fit: none; }
+  .group:hover .sm-group-hover-object-none { object-fit: none; }
+  .sm-object-scale-down { object-fit: scale-down; }
+  .sm-hover-object-scale-down:hover { object-fit: scale-down; }
+  .sm-focus-object-scale-down:focus { object-fit: scale-down; }
+  .sm-active-object-scale-down:active { object-fit: scale-down; }
+  .sm-disabled-object-scale-down:disabled { object-fit: scale-down; }
+  .sm-focus-visible-object-scale-down:focus-visible { object-fit: scale-down; }
+  .sm-focus-within-object-scale-down:focus-within { object-fit: scale-down; }
+  .group:hover .sm-group-hover-object-scale-down { object-fit: scale-down; }
+  .sm-object-top { object-position: top; }
+  .sm-hover-object-top:hover { object-position: top; }
+  .sm-focus-object-top:focus { object-position: top; }
+  .sm-active-object-top:active { object-position: top; }
+  .sm-disabled-object-top:disabled { object-position: top; }
+  .sm-focus-visible-object-top:focus-visible { object-position: top; }
+  .sm-focus-within-object-top:focus-within { object-position: top; }
+  .group:hover .sm-group-hover-object-top { object-position: top; }
+  .sm-object-bottom { object-position: bottom; }
+  .sm-hover-object-bottom:hover { object-position: bottom; }
+  .sm-focus-object-bottom:focus { object-position: bottom; }
+  .sm-active-object-bottom:active { object-position: bottom; }
+  .sm-disabled-object-bottom:disabled { object-position: bottom; }
+  .sm-focus-visible-object-bottom:focus-visible { object-position: bottom; }
+  .sm-focus-within-object-bottom:focus-within { object-position: bottom; }
+  .group:hover .sm-group-hover-object-bottom { object-position: bottom; }
+  .sm-object-center { object-position: center; }
+  .sm-hover-object-center:hover { object-position: center; }
+  .sm-focus-object-center:focus { object-position: center; }
+  .sm-active-object-center:active { object-position: center; }
+  .sm-disabled-object-center:disabled { object-position: center; }
+  .sm-focus-visible-object-center:focus-visible { object-position: center; }
+  .sm-focus-within-object-center:focus-within { object-position: center; }
+  .group:hover .sm-group-hover-object-center { object-position: center; }
+  .sm-object-left { object-position: left; }
+  .sm-hover-object-left:hover { object-position: left; }
+  .sm-focus-object-left:focus { object-position: left; }
+  .sm-active-object-left:active { object-position: left; }
+  .sm-disabled-object-left:disabled { object-position: left; }
+  .sm-focus-visible-object-left:focus-visible { object-position: left; }
+  .sm-focus-within-object-left:focus-within { object-position: left; }
+  .group:hover .sm-group-hover-object-left { object-position: left; }
+  .sm-object-right { object-position: right; }
+  .sm-hover-object-right:hover { object-position: right; }
+  .sm-focus-object-right:focus { object-position: right; }
+  .sm-active-object-right:active { object-position: right; }
+  .sm-disabled-object-right:disabled { object-position: right; }
+  .sm-focus-visible-object-right:focus-visible { object-position: right; }
+  .sm-focus-within-object-right:focus-within { object-position: right; }
+  .group:hover .sm-group-hover-object-right { object-position: right; }
+  .sm-object-left-top { object-position: left top; }
+  .sm-hover-object-left-top:hover { object-position: left top; }
+  .sm-focus-object-left-top:focus { object-position: left top; }
+  .sm-active-object-left-top:active { object-position: left top; }
+  .sm-disabled-object-left-top:disabled { object-position: left top; }
+  .sm-focus-visible-object-left-top:focus-visible { object-position: left top; }
+  .sm-focus-within-object-left-top:focus-within { object-position: left top; }
+  .group:hover .sm-group-hover-object-left-top { object-position: left top; }
+  .sm-object-right-top { object-position: right top; }
+  .sm-hover-object-right-top:hover { object-position: right top; }
+  .sm-focus-object-right-top:focus { object-position: right top; }
+  .sm-active-object-right-top:active { object-position: right top; }
+  .sm-disabled-object-right-top:disabled { object-position: right top; }
+  .sm-focus-visible-object-right-top:focus-visible { object-position: right top; }
+  .sm-focus-within-object-right-top:focus-within { object-position: right top; }
+  .group:hover .sm-group-hover-object-right-top { object-position: right top; }
+  .sm-object-left-bottom { object-position: left bottom; }
+  .sm-hover-object-left-bottom:hover { object-position: left bottom; }
+  .sm-focus-object-left-bottom:focus { object-position: left bottom; }
+  .sm-active-object-left-bottom:active { object-position: left bottom; }
+  .sm-disabled-object-left-bottom:disabled { object-position: left bottom; }
+  .sm-focus-visible-object-left-bottom:focus-visible { object-position: left bottom; }
+  .sm-focus-within-object-left-bottom:focus-within { object-position: left bottom; }
+  .group:hover .sm-group-hover-object-left-bottom { object-position: left bottom; }
+  .sm-object-right-bottom { object-position: right bottom; }
+  .sm-hover-object-right-bottom:hover { object-position: right bottom; }
+  .sm-focus-object-right-bottom:focus { object-position: right bottom; }
+  .sm-active-object-right-bottom:active { object-position: right bottom; }
+  .sm-disabled-object-right-bottom:disabled { object-position: right bottom; }
+  .sm-focus-visible-object-right-bottom:focus-visible { object-position: right bottom; }
+  .sm-focus-within-object-right-bottom:focus-within { object-position: right bottom; }
+  .group:hover .sm-group-hover-object-right-bottom { object-position: right bottom; }
+}
+
+/* MD Breakpoint */
+@media (min-width: 768px) {
+  .md-object-contain { object-fit: contain; }
+  .md-hover-object-contain:hover { object-fit: contain; }
+  .md-focus-object-contain:focus { object-fit: contain; }
+  .md-active-object-contain:active { object-fit: contain; }
+  .md-disabled-object-contain:disabled { object-fit: contain; }
+  .md-focus-visible-object-contain:focus-visible { object-fit: contain; }
+  .md-focus-within-object-contain:focus-within { object-fit: contain; }
+  .group:hover .md-group-hover-object-contain { object-fit: contain; }
+  .md-object-cover { object-fit: cover; }
+  .md-hover-object-cover:hover { object-fit: cover; }
+  .md-focus-object-cover:focus { object-fit: cover; }
+  .md-active-object-cover:active { object-fit: cover; }
+  .md-disabled-object-cover:disabled { object-fit: cover; }
+  .md-focus-visible-object-cover:focus-visible { object-fit: cover; }
+  .md-focus-within-object-cover:focus-within { object-fit: cover; }
+  .group:hover .md-group-hover-object-cover { object-fit: cover; }
+  .md-object-fill { object-fit: fill; }
+  .md-hover-object-fill:hover { object-fit: fill; }
+  .md-focus-object-fill:focus { object-fit: fill; }
+  .md-active-object-fill:active { object-fit: fill; }
+  .md-disabled-object-fill:disabled { object-fit: fill; }
+  .md-focus-visible-object-fill:focus-visible { object-fit: fill; }
+  .md-focus-within-object-fill:focus-within { object-fit: fill; }
+  .group:hover .md-group-hover-object-fill { object-fit: fill; }
+  .md-object-none { object-fit: none; }
+  .md-hover-object-none:hover { object-fit: none; }
+  .md-focus-object-none:focus { object-fit: none; }
+  .md-active-object-none:active { object-fit: none; }
+  .md-disabled-object-none:disabled { object-fit: none; }
+  .md-focus-visible-object-none:focus-visible { object-fit: none; }
+  .md-focus-within-object-none:focus-within { object-fit: none; }
+  .group:hover .md-group-hover-object-none { object-fit: none; }
+  .md-object-scale-down { object-fit: scale-down; }
+  .md-hover-object-scale-down:hover { object-fit: scale-down; }
+  .md-focus-object-scale-down:focus { object-fit: scale-down; }
+  .md-active-object-scale-down:active { object-fit: scale-down; }
+  .md-disabled-object-scale-down:disabled { object-fit: scale-down; }
+  .md-focus-visible-object-scale-down:focus-visible { object-fit: scale-down; }
+  .md-focus-within-object-scale-down:focus-within { object-fit: scale-down; }
+  .group:hover .md-group-hover-object-scale-down { object-fit: scale-down; }
+  .md-object-top { object-position: top; }
+  .md-hover-object-top:hover { object-position: top; }
+  .md-focus-object-top:focus { object-position: top; }
+  .md-active-object-top:active { object-position: top; }
+  .md-disabled-object-top:disabled { object-position: top; }
+  .md-focus-visible-object-top:focus-visible { object-position: top; }
+  .md-focus-within-object-top:focus-within { object-position: top; }
+  .group:hover .md-group-hover-object-top { object-position: top; }
+  .md-object-bottom { object-position: bottom; }
+  .md-hover-object-bottom:hover { object-position: bottom; }
+  .md-focus-object-bottom:focus { object-position: bottom; }
+  .md-active-object-bottom:active { object-position: bottom; }
+  .md-disabled-object-bottom:disabled { object-position: bottom; }
+  .md-focus-visible-object-bottom:focus-visible { object-position: bottom; }
+  .md-focus-within-object-bottom:focus-within { object-position: bottom; }
+  .group:hover .md-group-hover-object-bottom { object-position: bottom; }
+  .md-object-center { object-position: center; }
+  .md-hover-object-center:hover { object-position: center; }
+  .md-focus-object-center:focus { object-position: center; }
+  .md-active-object-center:active { object-position: center; }
+  .md-disabled-object-center:disabled { object-position: center; }
+  .md-focus-visible-object-center:focus-visible { object-position: center; }
+  .md-focus-within-object-center:focus-within { object-position: center; }
+  .group:hover .md-group-hover-object-center { object-position: center; }
+  .md-object-left { object-position: left; }
+  .md-hover-object-left:hover { object-position: left; }
+  .md-focus-object-left:focus { object-position: left; }
+  .md-active-object-left:active { object-position: left; }
+  .md-disabled-object-left:disabled { object-position: left; }
+  .md-focus-visible-object-left:focus-visible { object-position: left; }
+  .md-focus-within-object-left:focus-within { object-position: left; }
+  .group:hover .md-group-hover-object-left { object-position: left; }
+  .md-object-right { object-position: right; }
+  .md-hover-object-right:hover { object-position: right; }
+  .md-focus-object-right:focus { object-position: right; }
+  .md-active-object-right:active { object-position: right; }
+  .md-disabled-object-right:disabled { object-position: right; }
+  .md-focus-visible-object-right:focus-visible { object-position: right; }
+  .md-focus-within-object-right:focus-within { object-position: right; }
+  .group:hover .md-group-hover-object-right { object-position: right; }
+  .md-object-left-top { object-position: left top; }
+  .md-hover-object-left-top:hover { object-position: left top; }
+  .md-focus-object-left-top:focus { object-position: left top; }
+  .md-active-object-left-top:active { object-position: left top; }
+  .md-disabled-object-left-top:disabled { object-position: left top; }
+  .md-focus-visible-object-left-top:focus-visible { object-position: left top; }
+  .md-focus-within-object-left-top:focus-within { object-position: left top; }
+  .group:hover .md-group-hover-object-left-top { object-position: left top; }
+  .md-object-right-top { object-position: right top; }
+  .md-hover-object-right-top:hover { object-position: right top; }
+  .md-focus-object-right-top:focus { object-position: right top; }
+  .md-active-object-right-top:active { object-position: right top; }
+  .md-disabled-object-right-top:disabled { object-position: right top; }
+  .md-focus-visible-object-right-top:focus-visible { object-position: right top; }
+  .md-focus-within-object-right-top:focus-within { object-position: right top; }
+  .group:hover .md-group-hover-object-right-top { object-position: right top; }
+  .md-object-left-bottom { object-position: left bottom; }
+  .md-hover-object-left-bottom:hover { object-position: left bottom; }
+  .md-focus-object-left-bottom:focus { object-position: left bottom; }
+  .md-active-object-left-bottom:active { object-position: left bottom; }
+  .md-disabled-object-left-bottom:disabled { object-position: left bottom; }
+  .md-focus-visible-object-left-bottom:focus-visible { object-position: left bottom; }
+  .md-focus-within-object-left-bottom:focus-within { object-position: left bottom; }
+  .group:hover .md-group-hover-object-left-bottom { object-position: left bottom; }
+  .md-object-right-bottom { object-position: right bottom; }
+  .md-hover-object-right-bottom:hover { object-position: right bottom; }
+  .md-focus-object-right-bottom:focus { object-position: right bottom; }
+  .md-active-object-right-bottom:active { object-position: right bottom; }
+  .md-disabled-object-right-bottom:disabled { object-position: right bottom; }
+  .md-focus-visible-object-right-bottom:focus-visible { object-position: right bottom; }
+  .md-focus-within-object-right-bottom:focus-within { object-position: right bottom; }
+  .group:hover .md-group-hover-object-right-bottom { object-position: right bottom; }
+}
+
+/* LG Breakpoint */
+@media (min-width: 1024px) {
+  .lg-object-contain { object-fit: contain; }
+  .lg-hover-object-contain:hover { object-fit: contain; }
+  .lg-focus-object-contain:focus { object-fit: contain; }
+  .lg-active-object-contain:active { object-fit: contain; }
+  .lg-disabled-object-contain:disabled { object-fit: contain; }
+  .lg-focus-visible-object-contain:focus-visible { object-fit: contain; }
+  .lg-focus-within-object-contain:focus-within { object-fit: contain; }
+  .group:hover .lg-group-hover-object-contain { object-fit: contain; }
+  .lg-object-cover { object-fit: cover; }
+  .lg-hover-object-cover:hover { object-fit: cover; }
+  .lg-focus-object-cover:focus { object-fit: cover; }
+  .lg-active-object-cover:active { object-fit: cover; }
+  .lg-disabled-object-cover:disabled { object-fit: cover; }
+  .lg-focus-visible-object-cover:focus-visible { object-fit: cover; }
+  .lg-focus-within-object-cover:focus-within { object-fit: cover; }
+  .group:hover .lg-group-hover-object-cover { object-fit: cover; }
+  .lg-object-fill { object-fit: fill; }
+  .lg-hover-object-fill:hover { object-fit: fill; }
+  .lg-focus-object-fill:focus { object-fit: fill; }
+  .lg-active-object-fill:active { object-fit: fill; }
+  .lg-disabled-object-fill:disabled { object-fit: fill; }
+  .lg-focus-visible-object-fill:focus-visible { object-fit: fill; }
+  .lg-focus-within-object-fill:focus-within { object-fit: fill; }
+  .group:hover .lg-group-hover-object-fill { object-fit: fill; }
+  .lg-object-none { object-fit: none; }
+  .lg-hover-object-none:hover { object-fit: none; }
+  .lg-focus-object-none:focus { object-fit: none; }
+  .lg-active-object-none:active { object-fit: none; }
+  .lg-disabled-object-none:disabled { object-fit: none; }
+  .lg-focus-visible-object-none:focus-visible { object-fit: none; }
+  .lg-focus-within-object-none:focus-within { object-fit: none; }
+  .group:hover .lg-group-hover-object-none { object-fit: none; }
+  .lg-object-scale-down { object-fit: scale-down; }
+  .lg-hover-object-scale-down:hover { object-fit: scale-down; }
+  .lg-focus-object-scale-down:focus { object-fit: scale-down; }
+  .lg-active-object-scale-down:active { object-fit: scale-down; }
+  .lg-disabled-object-scale-down:disabled { object-fit: scale-down; }
+  .lg-focus-visible-object-scale-down:focus-visible { object-fit: scale-down; }
+  .lg-focus-within-object-scale-down:focus-within { object-fit: scale-down; }
+  .group:hover .lg-group-hover-object-scale-down { object-fit: scale-down; }
+  .lg-object-top { object-position: top; }
+  .lg-hover-object-top:hover { object-position: top; }
+  .lg-focus-object-top:focus { object-position: top; }
+  .lg-active-object-top:active { object-position: top; }
+  .lg-disabled-object-top:disabled { object-position: top; }
+  .lg-focus-visible-object-top:focus-visible { object-position: top; }
+  .lg-focus-within-object-top:focus-within { object-position: top; }
+  .group:hover .lg-group-hover-object-top { object-position: top; }
+  .lg-object-bottom { object-position: bottom; }
+  .lg-hover-object-bottom:hover { object-position: bottom; }
+  .lg-focus-object-bottom:focus { object-position: bottom; }
+  .lg-active-object-bottom:active { object-position: bottom; }
+  .lg-disabled-object-bottom:disabled { object-position: bottom; }
+  .lg-focus-visible-object-bottom:focus-visible { object-position: bottom; }
+  .lg-focus-within-object-bottom:focus-within { object-position: bottom; }
+  .group:hover .lg-group-hover-object-bottom { object-position: bottom; }
+  .lg-object-center { object-position: center; }
+  .lg-hover-object-center:hover { object-position: center; }
+  .lg-focus-object-center:focus { object-position: center; }
+  .lg-active-object-center:active { object-position: center; }
+  .lg-disabled-object-center:disabled { object-position: center; }
+  .lg-focus-visible-object-center:focus-visible { object-position: center; }
+  .lg-focus-within-object-center:focus-within { object-position: center; }
+  .group:hover .lg-group-hover-object-center { object-position: center; }
+  .lg-object-left { object-position: left; }
+  .lg-hover-object-left:hover { object-position: left; }
+  .lg-focus-object-left:focus { object-position: left; }
+  .lg-active-object-left:active { object-position: left; }
+  .lg-disabled-object-left:disabled { object-position: left; }
+  .lg-focus-visible-object-left:focus-visible { object-position: left; }
+  .lg-focus-within-object-left:focus-within { object-position: left; }
+  .group:hover .lg-group-hover-object-left { object-position: left; }
+  .lg-object-right { object-position: right; }
+  .lg-hover-object-right:hover { object-position: right; }
+  .lg-focus-object-right:focus { object-position: right; }
+  .lg-active-object-right:active { object-position: right; }
+  .lg-disabled-object-right:disabled { object-position: right; }
+  .lg-focus-visible-object-right:focus-visible { object-position: right; }
+  .lg-focus-within-object-right:focus-within { object-position: right; }
+  .group:hover .lg-group-hover-object-right { object-position: right; }
+  .lg-object-left-top { object-position: left top; }
+  .lg-hover-object-left-top:hover { object-position: left top; }
+  .lg-focus-object-left-top:focus { object-position: left top; }
+  .lg-active-object-left-top:active { object-position: left top; }
+  .lg-disabled-object-left-top:disabled { object-position: left top; }
+  .lg-focus-visible-object-left-top:focus-visible { object-position: left top; }
+  .lg-focus-within-object-left-top:focus-within { object-position: left top; }
+  .group:hover .lg-group-hover-object-left-top { object-position: left top; }
+  .lg-object-right-top { object-position: right top; }
+  .lg-hover-object-right-top:hover { object-position: right top; }
+  .lg-focus-object-right-top:focus { object-position: right top; }
+  .lg-active-object-right-top:active { object-position: right top; }
+  .lg-disabled-object-right-top:disabled { object-position: right top; }
+  .lg-focus-visible-object-right-top:focus-visible { object-position: right top; }
+  .lg-focus-within-object-right-top:focus-within { object-position: right top; }
+  .group:hover .lg-group-hover-object-right-top { object-position: right top; }
+  .lg-object-left-bottom { object-position: left bottom; }
+  .lg-hover-object-left-bottom:hover { object-position: left bottom; }
+  .lg-focus-object-left-bottom:focus { object-position: left bottom; }
+  .lg-active-object-left-bottom:active { object-position: left bottom; }
+  .lg-disabled-object-left-bottom:disabled { object-position: left bottom; }
+  .lg-focus-visible-object-left-bottom:focus-visible { object-position: left bottom; }
+  .lg-focus-within-object-left-bottom:focus-within { object-position: left bottom; }
+  .group:hover .lg-group-hover-object-left-bottom { object-position: left bottom; }
+  .lg-object-right-bottom { object-position: right bottom; }
+  .lg-hover-object-right-bottom:hover { object-position: right bottom; }
+  .lg-focus-object-right-bottom:focus { object-position: right bottom; }
+  .lg-active-object-right-bottom:active { object-position: right bottom; }
+  .lg-disabled-object-right-bottom:disabled { object-position: right bottom; }
+  .lg-focus-visible-object-right-bottom:focus-visible { object-position: right bottom; }
+  .lg-focus-within-object-right-bottom:focus-within { object-position: right bottom; }
+  .group:hover .lg-group-hover-object-right-bottom { object-position: right bottom; }
+}
+
+/* XL Breakpoint */
+@media (min-width: 1280px) {
+  .xl-object-contain { object-fit: contain; }
+  .xl-hover-object-contain:hover { object-fit: contain; }
+  .xl-focus-object-contain:focus { object-fit: contain; }
+  .xl-active-object-contain:active { object-fit: contain; }
+  .xl-disabled-object-contain:disabled { object-fit: contain; }
+  .xl-focus-visible-object-contain:focus-visible { object-fit: contain; }
+  .xl-focus-within-object-contain:focus-within { object-fit: contain; }
+  .group:hover .xl-group-hover-object-contain { object-fit: contain; }
+  .xl-object-cover { object-fit: cover; }
+  .xl-hover-object-cover:hover { object-fit: cover; }
+  .xl-focus-object-cover:focus { object-fit: cover; }
+  .xl-active-object-cover:active { object-fit: cover; }
+  .xl-disabled-object-cover:disabled { object-fit: cover; }
+  .xl-focus-visible-object-cover:focus-visible { object-fit: cover; }
+  .xl-focus-within-object-cover:focus-within { object-fit: cover; }
+  .group:hover .xl-group-hover-object-cover { object-fit: cover; }
+  .xl-object-fill { object-fit: fill; }
+  .xl-hover-object-fill:hover { object-fit: fill; }
+  .xl-focus-object-fill:focus { object-fit: fill; }
+  .xl-active-object-fill:active { object-fit: fill; }
+  .xl-disabled-object-fill:disabled { object-fit: fill; }
+  .xl-focus-visible-object-fill:focus-visible { object-fit: fill; }
+  .xl-focus-within-object-fill:focus-within { object-fit: fill; }
+  .group:hover .xl-group-hover-object-fill { object-fit: fill; }
+  .xl-object-none { object-fit: none; }
+  .xl-hover-object-none:hover { object-fit: none; }
+  .xl-focus-object-none:focus { object-fit: none; }
+  .xl-active-object-none:active { object-fit: none; }
+  .xl-disabled-object-none:disabled { object-fit: none; }
+  .xl-focus-visible-object-none:focus-visible { object-fit: none; }
+  .xl-focus-within-object-none:focus-within { object-fit: none; }
+  .group:hover .xl-group-hover-object-none { object-fit: none; }
+  .xl-object-scale-down { object-fit: scale-down; }
+  .xl-hover-object-scale-down:hover { object-fit: scale-down; }
+  .xl-focus-object-scale-down:focus { object-fit: scale-down; }
+  .xl-active-object-scale-down:active { object-fit: scale-down; }
+  .xl-disabled-object-scale-down:disabled { object-fit: scale-down; }
+  .xl-focus-visible-object-scale-down:focus-visible { object-fit: scale-down; }
+  .xl-focus-within-object-scale-down:focus-within { object-fit: scale-down; }
+  .group:hover .xl-group-hover-object-scale-down { object-fit: scale-down; }
+  .xl-object-top { object-position: top; }
+  .xl-hover-object-top:hover { object-position: top; }
+  .xl-focus-object-top:focus { object-position: top; }
+  .xl-active-object-top:active { object-position: top; }
+  .xl-disabled-object-top:disabled { object-position: top; }
+  .xl-focus-visible-object-top:focus-visible { object-position: top; }
+  .xl-focus-within-object-top:focus-within { object-position: top; }
+  .group:hover .xl-group-hover-object-top { object-position: top; }
+  .xl-object-bottom { object-position: bottom; }
+  .xl-hover-object-bottom:hover { object-position: bottom; }
+  .xl-focus-object-bottom:focus { object-position: bottom; }
+  .xl-active-object-bottom:active { object-position: bottom; }
+  .xl-disabled-object-bottom:disabled { object-position: bottom; }
+  .xl-focus-visible-object-bottom:focus-visible { object-position: bottom; }
+  .xl-focus-within-object-bottom:focus-within { object-position: bottom; }
+  .group:hover .xl-group-hover-object-bottom { object-position: bottom; }
+  .xl-object-center { object-position: center; }
+  .xl-hover-object-center:hover { object-position: center; }
+  .xl-focus-object-center:focus { object-position: center; }
+  .xl-active-object-center:active { object-position: center; }
+  .xl-disabled-object-center:disabled { object-position: center; }
+  .xl-focus-visible-object-center:focus-visible { object-position: center; }
+  .xl-focus-within-object-center:focus-within { object-position: center; }
+  .group:hover .xl-group-hover-object-center { object-position: center; }
+  .xl-object-left { object-position: left; }
+  .xl-hover-object-left:hover { object-position: left; }
+  .xl-focus-object-left:focus { object-position: left; }
+  .xl-active-object-left:active { object-position: left; }
+  .xl-disabled-object-left:disabled { object-position: left; }
+  .xl-focus-visible-object-left:focus-visible { object-position: left; }
+  .xl-focus-within-object-left:focus-within { object-position: left; }
+  .group:hover .xl-group-hover-object-left { object-position: left; }
+  .xl-object-right { object-position: right; }
+  .xl-hover-object-right:hover { object-position: right; }
+  .xl-focus-object-right:focus { object-position: right; }
+  .xl-active-object-right:active { object-position: right; }
+  .xl-disabled-object-right:disabled { object-position: right; }
+  .xl-focus-visible-object-right:focus-visible { object-position: right; }
+  .xl-focus-within-object-right:focus-within { object-position: right; }
+  .group:hover .xl-group-hover-object-right { object-position: right; }
+  .xl-object-left-top { object-position: left top; }
+  .xl-hover-object-left-top:hover { object-position: left top; }
+  .xl-focus-object-left-top:focus { object-position: left top; }
+  .xl-active-object-left-top:active { object-position: left top; }
+  .xl-disabled-object-left-top:disabled { object-position: left top; }
+  .xl-focus-visible-object-left-top:focus-visible { object-position: left top; }
+  .xl-focus-within-object-left-top:focus-within { object-position: left top; }
+  .group:hover .xl-group-hover-object-left-top { object-position: left top; }
+  .xl-object-right-top { object-position: right top; }
+  .xl-hover-object-right-top:hover { object-position: right top; }
+  .xl-focus-object-right-top:focus { object-position: right top; }
+  .xl-active-object-right-top:active { object-position: right top; }
+  .xl-disabled-object-right-top:disabled { object-position: right top; }
+  .xl-focus-visible-object-right-top:focus-visible { object-position: right top; }
+  .xl-focus-within-object-right-top:focus-within { object-position: right top; }
+  .group:hover .xl-group-hover-object-right-top { object-position: right top; }
+  .xl-object-left-bottom { object-position: left bottom; }
+  .xl-hover-object-left-bottom:hover { object-position: left bottom; }
+  .xl-focus-object-left-bottom:focus { object-position: left bottom; }
+  .xl-active-object-left-bottom:active { object-position: left bottom; }
+  .xl-disabled-object-left-bottom:disabled { object-position: left bottom; }
+  .xl-focus-visible-object-left-bottom:focus-visible { object-position: left bottom; }
+  .xl-focus-within-object-left-bottom:focus-within { object-position: left bottom; }
+  .group:hover .xl-group-hover-object-left-bottom { object-position: left bottom; }
+  .xl-object-right-bottom { object-position: right bottom; }
+  .xl-hover-object-right-bottom:hover { object-position: right bottom; }
+  .xl-focus-object-right-bottom:focus { object-position: right bottom; }
+  .xl-active-object-right-bottom:active { object-position: right bottom; }
+  .xl-disabled-object-right-bottom:disabled { object-position: right bottom; }
+  .xl-focus-visible-object-right-bottom:focus-visible { object-position: right bottom; }
+  .xl-focus-within-object-right-bottom:focus-within { object-position: right bottom; }
+  .group:hover .xl-group-hover-object-right-bottom { object-position: right bottom; }
+}
+
+/* UW Breakpoint */
+@media (min-width: 1536px) {
+  .uw-object-contain { object-fit: contain; }
+  .uw-hover-object-contain:hover { object-fit: contain; }
+  .uw-focus-object-contain:focus { object-fit: contain; }
+  .uw-active-object-contain:active { object-fit: contain; }
+  .uw-disabled-object-contain:disabled { object-fit: contain; }
+  .uw-focus-visible-object-contain:focus-visible { object-fit: contain; }
+  .uw-focus-within-object-contain:focus-within { object-fit: contain; }
+  .group:hover .uw-group-hover-object-contain { object-fit: contain; }
+  .uw-object-cover { object-fit: cover; }
+  .uw-hover-object-cover:hover { object-fit: cover; }
+  .uw-focus-object-cover:focus { object-fit: cover; }
+  .uw-active-object-cover:active { object-fit: cover; }
+  .uw-disabled-object-cover:disabled { object-fit: cover; }
+  .uw-focus-visible-object-cover:focus-visible { object-fit: cover; }
+  .uw-focus-within-object-cover:focus-within { object-fit: cover; }
+  .group:hover .uw-group-hover-object-cover { object-fit: cover; }
+  .uw-object-fill { object-fit: fill; }
+  .uw-hover-object-fill:hover { object-fit: fill; }
+  .uw-focus-object-fill:focus { object-fit: fill; }
+  .uw-active-object-fill:active { object-fit: fill; }
+  .uw-disabled-object-fill:disabled { object-fit: fill; }
+  .uw-focus-visible-object-fill:focus-visible { object-fit: fill; }
+  .uw-focus-within-object-fill:focus-within { object-fit: fill; }
+  .group:hover .uw-group-hover-object-fill { object-fit: fill; }
+  .uw-object-none { object-fit: none; }
+  .uw-hover-object-none:hover { object-fit: none; }
+  .uw-focus-object-none:focus { object-fit: none; }
+  .uw-active-object-none:active { object-fit: none; }
+  .uw-disabled-object-none:disabled { object-fit: none; }
+  .uw-focus-visible-object-none:focus-visible { object-fit: none; }
+  .uw-focus-within-object-none:focus-within { object-fit: none; }
+  .group:hover .uw-group-hover-object-none { object-fit: none; }
+  .uw-object-scale-down { object-fit: scale-down; }
+  .uw-hover-object-scale-down:hover { object-fit: scale-down; }
+  .uw-focus-object-scale-down:focus { object-fit: scale-down; }
+  .uw-active-object-scale-down:active { object-fit: scale-down; }
+  .uw-disabled-object-scale-down:disabled { object-fit: scale-down; }
+  .uw-focus-visible-object-scale-down:focus-visible { object-fit: scale-down; }
+  .uw-focus-within-object-scale-down:focus-within { object-fit: scale-down; }
+  .group:hover .uw-group-hover-object-scale-down { object-fit: scale-down; }
+  .uw-object-top { object-position: top; }
+  .uw-hover-object-top:hover { object-position: top; }
+  .uw-focus-object-top:focus { object-position: top; }
+  .uw-active-object-top:active { object-position: top; }
+  .uw-disabled-object-top:disabled { object-position: top; }
+  .uw-focus-visible-object-top:focus-visible { object-position: top; }
+  .uw-focus-within-object-top:focus-within { object-position: top; }
+  .group:hover .uw-group-hover-object-top { object-position: top; }
+  .uw-object-bottom { object-position: bottom; }
+  .uw-hover-object-bottom:hover { object-position: bottom; }
+  .uw-focus-object-bottom:focus { object-position: bottom; }
+  .uw-active-object-bottom:active { object-position: bottom; }
+  .uw-disabled-object-bottom:disabled { object-position: bottom; }
+  .uw-focus-visible-object-bottom:focus-visible { object-position: bottom; }
+  .uw-focus-within-object-bottom:focus-within { object-position: bottom; }
+  .group:hover .uw-group-hover-object-bottom { object-position: bottom; }
+  .uw-object-center { object-position: center; }
+  .uw-hover-object-center:hover { object-position: center; }
+  .uw-focus-object-center:focus { object-position: center; }
+  .uw-active-object-center:active { object-position: center; }
+  .uw-disabled-object-center:disabled { object-position: center; }
+  .uw-focus-visible-object-center:focus-visible { object-position: center; }
+  .uw-focus-within-object-center:focus-within { object-position: center; }
+  .group:hover .uw-group-hover-object-center { object-position: center; }
+  .uw-object-left { object-position: left; }
+  .uw-hover-object-left:hover { object-position: left; }
+  .uw-focus-object-left:focus { object-position: left; }
+  .uw-active-object-left:active { object-position: left; }
+  .uw-disabled-object-left:disabled { object-position: left; }
+  .uw-focus-visible-object-left:focus-visible { object-position: left; }
+  .uw-focus-within-object-left:focus-within { object-position: left; }
+  .group:hover .uw-group-hover-object-left { object-position: left; }
+  .uw-object-right { object-position: right; }
+  .uw-hover-object-right:hover { object-position: right; }
+  .uw-focus-object-right:focus { object-position: right; }
+  .uw-active-object-right:active { object-position: right; }
+  .uw-disabled-object-right:disabled { object-position: right; }
+  .uw-focus-visible-object-right:focus-visible { object-position: right; }
+  .uw-focus-within-object-right:focus-within { object-position: right; }
+  .group:hover .uw-group-hover-object-right { object-position: right; }
+  .uw-object-left-top { object-position: left top; }
+  .uw-hover-object-left-top:hover { object-position: left top; }
+  .uw-focus-object-left-top:focus { object-position: left top; }
+  .uw-active-object-left-top:active { object-position: left top; }
+  .uw-disabled-object-left-top:disabled { object-position: left top; }
+  .uw-focus-visible-object-left-top:focus-visible { object-position: left top; }
+  .uw-focus-within-object-left-top:focus-within { object-position: left top; }
+  .group:hover .uw-group-hover-object-left-top { object-position: left top; }
+  .uw-object-right-top { object-position: right top; }
+  .uw-hover-object-right-top:hover { object-position: right top; }
+  .uw-focus-object-right-top:focus { object-position: right top; }
+  .uw-active-object-right-top:active { object-position: right top; }
+  .uw-disabled-object-right-top:disabled { object-position: right top; }
+  .uw-focus-visible-object-right-top:focus-visible { object-position: right top; }
+  .uw-focus-within-object-right-top:focus-within { object-position: right top; }
+  .group:hover .uw-group-hover-object-right-top { object-position: right top; }
+  .uw-object-left-bottom { object-position: left bottom; }
+  .uw-hover-object-left-bottom:hover { object-position: left bottom; }
+  .uw-focus-object-left-bottom:focus { object-position: left bottom; }
+  .uw-active-object-left-bottom:active { object-position: left bottom; }
+  .uw-disabled-object-left-bottom:disabled { object-position: left bottom; }
+  .uw-focus-visible-object-left-bottom:focus-visible { object-position: left bottom; }
+  .uw-focus-within-object-left-bottom:focus-within { object-position: left bottom; }
+  .group:hover .uw-group-hover-object-left-bottom { object-position: left bottom; }
+  .uw-object-right-bottom { object-position: right bottom; }
+  .uw-hover-object-right-bottom:hover { object-position: right bottom; }
+  .uw-focus-object-right-bottom:focus { object-position: right bottom; }
+  .uw-active-object-right-bottom:active { object-position: right bottom; }
+  .uw-disabled-object-right-bottom:disabled { object-position: right bottom; }
+  .uw-focus-visible-object-right-bottom:focus-visible { object-position: right bottom; }
+  .uw-focus-within-object-right-bottom:focus-within { object-position: right bottom; }
+  .group:hover .uw-group-hover-object-right-bottom { object-position: right bottom; }
+}

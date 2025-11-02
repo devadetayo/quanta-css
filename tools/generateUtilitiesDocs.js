@@ -75,7 +75,7 @@ if (!fs.existsSync(templatePath)) {
 //    Added new categories per request
 const categoryMap = {
   core: ["container", "box-border", "box-content"],
-
+  appearance: ["appearance-"],
   // Spacing/margin/padding
   padding: ["p-", "pt-", "pr-", "pb-", "pl-", "px-", "py-"],
   "padding-block": ["padding-block"],
@@ -92,7 +92,8 @@ const categoryMap = {
   ],
 
   // Size/width/height
-  size: ["w-", "h-", "min-w-", "max-w-", "min-h-", "max-h-"],
+  width: ["w-", "min-w-", "max-w-"],
+  height: ["h-", "min-h-", "max-h-"],
 
   // Typography/text
   typography: [

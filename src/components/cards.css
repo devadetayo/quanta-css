@@ -35,7 +35,6 @@
 .quanta-card-outline {
   border: 2px solid var(--quanta-border-color);
   box-shadow: none;
-  background-image: linear-gradient(to top, var(--quanta-blue-50), var(--quanta-bg-default));
   background-color: transparent;
 }
 
@@ -112,7 +111,7 @@
 /* ─── Dark Mode ─────────────────────────── */
 html[data-theme="dark"] {
   .quanta-card {
-    background-color: var(--quanta-slate-800);
+    background-color: var(--quanta-grey-800);
     color: var(--quanta-text-default);
   }
 
@@ -124,7 +123,7 @@ html[data-theme="dark"] {
   }
 
   .quanta-card-solid {
-    background-color: var(--quanta-slate-800);
+    background-color: var(--quanta-grey-800);
     color: var(--quanta-text-secondary);
   }
 

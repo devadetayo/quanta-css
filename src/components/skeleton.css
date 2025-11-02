@@ -1,7 +1,7 @@
 .quanta-skeleton {
   position: relative;
   display: inline-block;
-  background-color: var(--quanta-slate-200);
+  background-color: var(--quanta-grey-200);
   animation: quanta-opacity 1.5s infinite ease-in-out;
   border-radius: var(--quanta-rounded-md);
   overflow: hidden;
@@ -81,7 +81,7 @@
 
 /* ─── Dark Mode Support ───────────────── */
 html[data-theme="dark"] .quanta-skeleton {
-  background-color: var(--quanta-slate-700);
+  background-color: var(--quanta-grey-700);
 }
 
 html[data-theme="dark"] .quanta-skeleton::before {

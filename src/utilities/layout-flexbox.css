@@ -1,0 +1,144 @@
+
+
+/* -- Flexbox Utilities (flex-) */
+.flex-row { flex-direction: row; }
+
+.flex-col { flex-direction: column; }
+
+.flex-row-reverse { flex-direction: row-reverse; }
+
+.flex-col-reverse { flex-direction: column-reverse; }
+
+.flex-wrap { flex-wrap: wrap; }
+
+.flex-nowrap { flex-wrap: nowrap; }
+
+.flex-wrap-reverse { flex-wrap: wrap-reverse; }
+
+.flex-1 { flex: 1; }
+
+.flex-auto { flex: auto; }
+
+.flex-initial { flex: initial; }
+
+.flex-none { flex: none; }
+
+.flex-grow-0 { flex-grow: 0; }
+
+.flex-grow-1 { flex-grow: 1; }
+
+.flex-shrink-0 { flex-shrink: 0; }
+
+.flex-shrink-1 { flex-shrink: 1; }
+
+.flex-basis-0 { flex-basis: 0; }
+
+.flex-basis-auto { flex-basis: auto; }
+
+.flex-basis-full { flex-basis: 100%; }
+
+.flex-basis-half { flex-basis: 50%; }
+
+.flex-basis-one-third { flex-basis: 33.3333%; }
+
+.flex-basis-two-third { flex-basis: 66.6667%; }
+
+.flex-basis-one-quarter { flex-basis: 25%; }
+
+.flex-basis-three-quarter { flex-basis: 75%; }
+
+.flex-basis-one-fifth { flex-basis: 20%; }
+
+.flex-basis-two-fifth { flex-basis: 40%; }
+
+.flex-basis-three-fifth { flex-basis: 60%; }
+
+.flex-basis-four-fifth { flex-basis: 80%; }
+
+/*----------------------------------------------------
+  Order (0 → 12, first, last)
+----------------------------------------------------*/
+.order-first { order: -1; }
+
+.order-last { order: 9999; }
+
+.order-0 { order: 0; }
+
+.order-1 { order: 1; }
+
+.order-2 { order: 2; }
+
+.order-3 { order: 3; }
+
+.order-4 { order: 4; }
+
+.order-5 { order: 5; }
+
+.order-6 { order: 6; }
+
+.order-7 { order: 7; }
+
+.order-8 { order: 8; }
+
+.order-9 { order: 9; }
+
+.order-10 { order: 10; }
+
+.order-11 { order: 11; }
+
+.order-12 { order: 12; }
+
+/* ─── Justify Content ──────────────────────────────────── */
+.justify-start { justify-content: flex-start; }
+
+.justify-center { justify-content: center; }
+
+.justify-end { justify-content: flex-end; }
+
+.justify-between { justify-content: space-between; }
+
+.justify-around { justify-content: space-around; }
+
+.justify-evenly { justify-content: space-evenly; }
+
+/* ─── Align Items ─────────────────────────────────────── */
+.items-start { align-items: flex-start; }
+
+.items-center { align-items: center; }
+
+.items-end { align-items: flex-end; }
+
+.items-baseline { align-items: baseline; }
+
+.items-stretch { align-items: stretch; }
+
+/* ─── Align Content (Grid) ───────────────────────────── */
+.content-start { align-content: flex-start; }
+
+.content-center { align-content: center; }
+
+.content-end { align-content: flex-end; }
+
+.content-between { align-content: space-between; }
+
+.content-around { align-content: space-around; }
+
+.content-evenly { align-content: space-evenly; }
+
+/* ─── Align Self ──────────────────────────────────────── */
+.self-auto { align-self: auto; }
+
+.self-start { align-self: flex-start; }
+
+.self-center { align-self: center; }
+
+.self-end { align-self: flex-end; }
+
+.self-stretch { align-self: stretch; }
+
+/* Content Visibility */
+.content-auto { content-visibility: auto; }
+
+.content-hidden { content-visibility: hidden; }
+
+.content-visible { content-visibility: visible; }

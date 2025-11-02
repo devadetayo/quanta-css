@@ -1,0 +1,1809 @@
+/* Quanta CSS v2.1 - misc Light Variants */
+
+/* State Variants */
+.hover-clip-none:hover { clip-path: none; }
+.focus-clip-none:focus { clip-path: none; }
+.active-clip-none:active { clip-path: none; }
+.disabled-clip-none:disabled { clip-path: none; }
+.focus-visible-clip-none:focus-visible { clip-path: none; }
+.focus-within-clip-none:focus-within { clip-path: none; }
+.group:hover .group-hover-clip-none { clip-path: none; }
+.hover-clip-circle:hover { clip-path: circle(50% at 50% 50%); }
+.focus-clip-circle:focus { clip-path: circle(50% at 50% 50%); }
+.active-clip-circle:active { clip-path: circle(50% at 50% 50%); }
+.disabled-clip-circle:disabled { clip-path: circle(50% at 50% 50%); }
+.focus-visible-clip-circle:focus-visible { clip-path: circle(50% at 50% 50%); }
+.focus-within-clip-circle:focus-within { clip-path: circle(50% at 50% 50%); }
+.group:hover .group-hover-clip-circle { clip-path: circle(50% at 50% 50%); }
+.hover-clip-ellipse:hover { clip-path: ellipse(50% 25% at 50% 50%); }
+.focus-clip-ellipse:focus { clip-path: ellipse(50% 25% at 50% 50%); }
+.active-clip-ellipse:active { clip-path: ellipse(50% 25% at 50% 50%); }
+.disabled-clip-ellipse:disabled { clip-path: ellipse(50% 25% at 50% 50%); }
+.focus-visible-clip-ellipse:focus-visible { clip-path: ellipse(50% 25% at 50% 50%); }
+.focus-within-clip-ellipse:focus-within { clip-path: ellipse(50% 25% at 50% 50%); }
+.group:hover .group-hover-clip-ellipse { clip-path: ellipse(50% 25% at 50% 50%); }
+.hover-clip-inset:hover { clip-path: inset(0); }
+.focus-clip-inset:focus { clip-path: inset(0); }
+.active-clip-inset:active { clip-path: inset(0); }
+.disabled-clip-inset:disabled { clip-path: inset(0); }
+.focus-visible-clip-inset:focus-visible { clip-path: inset(0); }
+.focus-within-clip-inset:focus-within { clip-path: inset(0); }
+.group:hover .group-hover-clip-inset { clip-path: inset(0); }
+.hover-clip-triangle:hover { clip-path: polygon(50% 0%, 0% 100%, 100% 100%); }
+.focus-clip-triangle:focus { clip-path: polygon(50% 0%, 0% 100%, 100% 100%); }
+.active-clip-triangle:active { clip-path: polygon(50% 0%, 0% 100%, 100% 100%); }
+.disabled-clip-triangle:disabled { clip-path: polygon(50% 0%, 0% 100%, 100% 100%); }
+.focus-visible-clip-triangle:focus-visible { clip-path: polygon(50% 0%, 0% 100%, 100% 100%); }
+.focus-within-clip-triangle:focus-within { clip-path: polygon(50% 0%, 0% 100%, 100% 100%); }
+.group:hover .group-hover-clip-triangle { clip-path: polygon(50% 0%, 0% 100%, 100% 100%); }
+.hover-margin-block-start-1:hover { margin-block-start: 1rem; }
+.focus-margin-block-start-1:focus { margin-block-start: 1rem; }
+.active-margin-block-start-1:active { margin-block-start: 1rem; }
+.disabled-margin-block-start-1:disabled { margin-block-start: 1rem; }
+.focus-visible-margin-block-start-1:focus-visible { margin-block-start: 1rem; }
+.focus-within-margin-block-start-1:focus-within { margin-block-start: 1rem; }
+.group:hover .group-hover-margin-block-start-1 { margin-block-start: 1rem; }
+.hover-margin-block-end-1:hover { margin-block-end: 1rem; }
+.focus-margin-block-end-1:focus { margin-block-end: 1rem; }
+.active-margin-block-end-1:active { margin-block-end: 1rem; }
+.disabled-margin-block-end-1:disabled { margin-block-end: 1rem; }
+.focus-visible-margin-block-end-1:focus-visible { margin-block-end: 1rem; }
+.focus-within-margin-block-end-1:focus-within { margin-block-end: 1rem; }
+.group:hover .group-hover-margin-block-end-1 { margin-block-end: 1rem; }
+.hover-margin-inline-start-1:hover { margin-inline-start: 1rem; }
+.focus-margin-inline-start-1:focus { margin-inline-start: 1rem; }
+.active-margin-inline-start-1:active { margin-inline-start: 1rem; }
+.disabled-margin-inline-start-1:disabled { margin-inline-start: 1rem; }
+.focus-visible-margin-inline-start-1:focus-visible { margin-inline-start: 1rem; }
+.focus-within-margin-inline-start-1:focus-within { margin-inline-start: 1rem; }
+.group:hover .group-hover-margin-inline-start-1 { margin-inline-start: 1rem; }
+.hover-margin-inline-end-1:hover { margin-inline-end: 1rem; }
+.focus-margin-inline-end-1:focus { margin-inline-end: 1rem; }
+.active-margin-inline-end-1:active { margin-inline-end: 1rem; }
+.disabled-margin-inline-end-1:disabled { margin-inline-end: 1rem; }
+.focus-visible-margin-inline-end-1:focus-visible { margin-inline-end: 1rem; }
+.focus-within-margin-inline-end-1:focus-within { margin-inline-end: 1rem; }
+.group:hover .group-hover-margin-inline-end-1 { margin-inline-end: 1rem; }
+.hover-padding-block-start-1:hover { padding-block-start: 1rem; }
+.focus-padding-block-start-1:focus { padding-block-start: 1rem; }
+.active-padding-block-start-1:active { padding-block-start: 1rem; }
+.disabled-padding-block-start-1:disabled { padding-block-start: 1rem; }
+.focus-visible-padding-block-start-1:focus-visible { padding-block-start: 1rem; }
+.focus-within-padding-block-start-1:focus-within { padding-block-start: 1rem; }
+.group:hover .group-hover-padding-block-start-1 { padding-block-start: 1rem; }
+.hover-padding-block-end-1:hover { padding-block-end: 1rem; }
+.focus-padding-block-end-1:focus { padding-block-end: 1rem; }
+.active-padding-block-end-1:active { padding-block-end: 1rem; }
+.disabled-padding-block-end-1:disabled { padding-block-end: 1rem; }
+.focus-visible-padding-block-end-1:focus-visible { padding-block-end: 1rem; }
+.focus-within-padding-block-end-1:focus-within { padding-block-end: 1rem; }
+.group:hover .group-hover-padding-block-end-1 { padding-block-end: 1rem; }
+.hover-padding-inline-start-1:hover { padding-inline-start: 1rem; }
+.focus-padding-inline-start-1:focus { padding-inline-start: 1rem; }
+.active-padding-inline-start-1:active { padding-inline-start: 1rem; }
+.disabled-padding-inline-start-1:disabled { padding-inline-start: 1rem; }
+.focus-visible-padding-inline-start-1:focus-visible { padding-inline-start: 1rem; }
+.focus-within-padding-inline-start-1:focus-within { padding-inline-start: 1rem; }
+.group:hover .group-hover-padding-inline-start-1 { padding-inline-start: 1rem; }
+.hover-padding-inline-end-1:hover { padding-inline-end: 1rem; }
+.focus-padding-inline-end-1:focus { padding-inline-end: 1rem; }
+.active-padding-inline-end-1:active { padding-inline-end: 1rem; }
+.disabled-padding-inline-end-1:disabled { padding-inline-end: 1rem; }
+.focus-visible-padding-inline-end-1:focus-visible { padding-inline-end: 1rem; }
+.focus-within-padding-inline-end-1:focus-within { padding-inline-end: 1rem; }
+.group:hover .group-hover-padding-inline-end-1 { padding-inline-end: 1rem; }
+.hover-break-after-auto:hover { break-after: auto; }
+.focus-break-after-auto:focus { break-after: auto; }
+.active-break-after-auto:active { break-after: auto; }
+.disabled-break-after-auto:disabled { break-after: auto; }
+.focus-visible-break-after-auto:focus-visible { break-after: auto; }
+.focus-within-break-after-auto:focus-within { break-after: auto; }
+.group:hover .group-hover-break-after-auto { break-after: auto; }
+.hover-break-after-avoid:hover { break-after: avoid; }
+.focus-break-after-avoid:focus { break-after: avoid; }
+.active-break-after-avoid:active { break-after: avoid; }
+.disabled-break-after-avoid:disabled { break-after: avoid; }
+.focus-visible-break-after-avoid:focus-visible { break-after: avoid; }
+.focus-within-break-after-avoid:focus-within { break-after: avoid; }
+.group:hover .group-hover-break-after-avoid { break-after: avoid; }
+.hover-break-after-all:hover { break-after: all; }
+.focus-break-after-all:focus { break-after: all; }
+.active-break-after-all:active { break-after: all; }
+.disabled-break-after-all:disabled { break-after: all; }
+.focus-visible-break-after-all:focus-visible { break-after: all; }
+.focus-within-break-after-all:focus-within { break-after: all; }
+.group:hover .group-hover-break-after-all { break-after: all; }
+.hover-break-after-avoid-page:hover { break-after: avoid-page; }
+.focus-break-after-avoid-page:focus { break-after: avoid-page; }
+.active-break-after-avoid-page:active { break-after: avoid-page; }
+.disabled-break-after-avoid-page:disabled { break-after: avoid-page; }
+.focus-visible-break-after-avoid-page:focus-visible { break-after: avoid-page; }
+.focus-within-break-after-avoid-page:focus-within { break-after: avoid-page; }
+.group:hover .group-hover-break-after-avoid-page { break-after: avoid-page; }
+.hover-break-after-page:hover { break-after: page; }
+.focus-break-after-page:focus { break-after: page; }
+.active-break-after-page:active { break-after: page; }
+.disabled-break-after-page:disabled { break-after: page; }
+.focus-visible-break-after-page:focus-visible { break-after: page; }
+.focus-within-break-after-page:focus-within { break-after: page; }
+.group:hover .group-hover-break-after-page { break-after: page; }
+.hover-break-after-left:hover { break-after: left; }
+.focus-break-after-left:focus { break-after: left; }
+.active-break-after-left:active { break-after: left; }
+.disabled-break-after-left:disabled { break-after: left; }
+.focus-visible-break-after-left:focus-visible { break-after: left; }
+.focus-within-break-after-left:focus-within { break-after: left; }
+.group:hover .group-hover-break-after-left { break-after: left; }
+.hover-break-after-right:hover { break-after: right; }
+.focus-break-after-right:focus { break-after: right; }
+.active-break-after-right:active { break-after: right; }
+.disabled-break-after-right:disabled { break-after: right; }
+.focus-visible-break-after-right:focus-visible { break-after: right; }
+.focus-within-break-after-right:focus-within { break-after: right; }
+.group:hover .group-hover-break-after-right { break-after: right; }
+.hover-break-after-column:hover { break-after: column; }
+.focus-break-after-column:focus { break-after: column; }
+.active-break-after-column:active { break-after: column; }
+.disabled-break-after-column:disabled { break-after: column; }
+.focus-visible-break-after-column:focus-visible { break-after: column; }
+.focus-within-break-after-column:focus-within { break-after: column; }
+.group:hover .group-hover-break-after-column { break-after: column; }
+.hover-break-before-auto:hover { break-before: auto; }
+.focus-break-before-auto:focus { break-before: auto; }
+.active-break-before-auto:active { break-before: auto; }
+.disabled-break-before-auto:disabled { break-before: auto; }
+.focus-visible-break-before-auto:focus-visible { break-before: auto; }
+.focus-within-break-before-auto:focus-within { break-before: auto; }
+.group:hover .group-hover-break-before-auto { break-before: auto; }
+.hover-break-before-avoid:hover { break-before: avoid; }
+.focus-break-before-avoid:focus { break-before: avoid; }
+.active-break-before-avoid:active { break-before: avoid; }
+.disabled-break-before-avoid:disabled { break-before: avoid; }
+.focus-visible-break-before-avoid:focus-visible { break-before: avoid; }
+.focus-within-break-before-avoid:focus-within { break-before: avoid; }
+.group:hover .group-hover-break-before-avoid { break-before: avoid; }
+.hover-break-before-all:hover { break-before: all; }
+.focus-break-before-all:focus { break-before: all; }
+.active-break-before-all:active { break-before: all; }
+.disabled-break-before-all:disabled { break-before: all; }
+.focus-visible-break-before-all:focus-visible { break-before: all; }
+.focus-within-break-before-all:focus-within { break-before: all; }
+.group:hover .group-hover-break-before-all { break-before: all; }
+.hover-break-before-avoid-page:hover { break-before: avoid-page; }
+.focus-break-before-avoid-page:focus { break-before: avoid-page; }
+.active-break-before-avoid-page:active { break-before: avoid-page; }
+.disabled-break-before-avoid-page:disabled { break-before: avoid-page; }
+.focus-visible-break-before-avoid-page:focus-visible { break-before: avoid-page; }
+.focus-within-break-before-avoid-page:focus-within { break-before: avoid-page; }
+.group:hover .group-hover-break-before-avoid-page { break-before: avoid-page; }
+.hover-break-before-page:hover { break-before: page; }
+.focus-break-before-page:focus { break-before: page; }
+.active-break-before-page:active { break-before: page; }
+.disabled-break-before-page:disabled { break-before: page; }
+.focus-visible-break-before-page:focus-visible { break-before: page; }
+.focus-within-break-before-page:focus-within { break-before: page; }
+.group:hover .group-hover-break-before-page { break-before: page; }
+.hover-break-before-left:hover { break-before: left; }
+.focus-break-before-left:focus { break-before: left; }
+.active-break-before-left:active { break-before: left; }
+.disabled-break-before-left:disabled { break-before: left; }
+.focus-visible-break-before-left:focus-visible { break-before: left; }
+.focus-within-break-before-left:focus-within { break-before: left; }
+.group:hover .group-hover-break-before-left { break-before: left; }
+.hover-break-before-right:hover { break-before: right; }
+.focus-break-before-right:focus { break-before: right; }
+.active-break-before-right:active { break-before: right; }
+.disabled-break-before-right:disabled { break-before: right; }
+.focus-visible-break-before-right:focus-visible { break-before: right; }
+.focus-within-break-before-right:focus-within { break-before: right; }
+.group:hover .group-hover-break-before-right { break-before: right; }
+.hover-break-before-column:hover { break-before: column; }
+.focus-break-before-column:focus { break-before: column; }
+.active-break-before-column:active { break-before: column; }
+.disabled-break-before-column:disabled { break-before: column; }
+.focus-visible-break-before-column:focus-visible { break-before: column; }
+.focus-within-break-before-column:focus-within { break-before: column; }
+.group:hover .group-hover-break-before-column { break-before: column; }
+.hover-break-inside-auto:hover { break-inside: auto; }
+.focus-break-inside-auto:focus { break-inside: auto; }
+.active-break-inside-auto:active { break-inside: auto; }
+.disabled-break-inside-auto:disabled { break-inside: auto; }
+.focus-visible-break-inside-auto:focus-visible { break-inside: auto; }
+.focus-within-break-inside-auto:focus-within { break-inside: auto; }
+.group:hover .group-hover-break-inside-auto { break-inside: auto; }
+.hover-break-inside-avoid:hover { break-inside: avoid; }
+.focus-break-inside-avoid:focus { break-inside: avoid; }
+.active-break-inside-avoid:active { break-inside: avoid; }
+.disabled-break-inside-avoid:disabled { break-inside: avoid; }
+.focus-visible-break-inside-avoid:focus-visible { break-inside: avoid; }
+.focus-within-break-inside-avoid:focus-within { break-inside: avoid; }
+.group:hover .group-hover-break-inside-avoid { break-inside: avoid; }
+.hover-break-inside-avoid-page:hover { break-inside: avoid-page; }
+.focus-break-inside-avoid-page:focus { break-inside: avoid-page; }
+.active-break-inside-avoid-page:active { break-inside: avoid-page; }
+.disabled-break-inside-avoid-page:disabled { break-inside: avoid-page; }
+.focus-visible-break-inside-avoid-page:focus-visible { break-inside: avoid-page; }
+.focus-within-break-inside-avoid-page:focus-within { break-inside: avoid-page; }
+.group:hover .group-hover-break-inside-avoid-page { break-inside: avoid-page; }
+.hover-break-inside-avoid-column:hover { break-inside: avoid-column; }
+.focus-break-inside-avoid-column:focus { break-inside: avoid-column; }
+.active-break-inside-avoid-column:active { break-inside: avoid-column; }
+.disabled-break-inside-avoid-column:disabled { break-inside: avoid-column; }
+.focus-visible-break-inside-avoid-column:focus-visible { break-inside: avoid-column; }
+.focus-within-break-inside-avoid-column:focus-within { break-inside: avoid-column; }
+.group:hover .group-hover-break-inside-avoid-column { break-inside: avoid-column; }
+.hover-clip-none:hover { clip-path: none; }
+.focus-clip-none:focus { clip-path: none; }
+.active-clip-none:active { clip-path: none; }
+.disabled-clip-none:disabled { clip-path: none; }
+.focus-visible-clip-none:focus-visible { clip-path: none; }
+.focus-within-clip-none:focus-within { clip-path: none; }
+.group:hover .group-hover-clip-none { clip-path: none; }
+.hover-clip-circle:hover { clip-path: circle(50%); }
+.focus-clip-circle:focus { clip-path: circle(50%); }
+.active-clip-circle:active { clip-path: circle(50%); }
+.disabled-clip-circle:disabled { clip-path: circle(50%); }
+.focus-visible-clip-circle:focus-visible { clip-path: circle(50%); }
+.focus-within-clip-circle:focus-within { clip-path: circle(50%); }
+.group:hover .group-hover-clip-circle { clip-path: circle(50%); }
+.hover-clip-ellipse:hover { clip-path: ellipse(50% 75%); }
+.focus-clip-ellipse:focus { clip-path: ellipse(50% 75%); }
+.active-clip-ellipse:active { clip-path: ellipse(50% 75%); }
+.disabled-clip-ellipse:disabled { clip-path: ellipse(50% 75%); }
+.focus-visible-clip-ellipse:focus-visible { clip-path: ellipse(50% 75%); }
+.focus-within-clip-ellipse:focus-within { clip-path: ellipse(50% 75%); }
+.group:hover .group-hover-clip-ellipse { clip-path: ellipse(50% 75%); }
+.hover-clip-inset:hover { clip-path: inset(10%); }
+.focus-clip-inset:focus { clip-path: inset(10%); }
+.active-clip-inset:active { clip-path: inset(10%); }
+.disabled-clip-inset:disabled { clip-path: inset(10%); }
+.focus-visible-clip-inset:focus-visible { clip-path: inset(10%); }
+.focus-within-clip-inset:focus-within { clip-path: inset(10%); }
+.group:hover .group-hover-clip-inset { clip-path: inset(10%); }
+.hover-clip-polygon:hover { clip-path: polygon(0 0,100% 0,100% 100%,0 100%); }
+.focus-clip-polygon:focus { clip-path: polygon(0 0,100% 0,100% 100%,0 100%); }
+.active-clip-polygon:active { clip-path: polygon(0 0,100% 0,100% 100%,0 100%); }
+.disabled-clip-polygon:disabled { clip-path: polygon(0 0,100% 0,100% 100%,0 100%); }
+.focus-visible-clip-polygon:focus-visible { clip-path: polygon(0 0,100% 0,100% 100%,0 100%); }
+.focus-within-clip-polygon:focus-within { clip-path: polygon(0 0,100% 0,100% 100%,0 100%); }
+.group:hover .group-hover-clip-polygon { clip-path: polygon(0 0,100% 0,100% 100%,0 100%); }
+
+/* SM Breakpoint */
+@media (min-width: 480px) {
+  .sm-clip-none { clip-path: none; }
+  .sm-hover-clip-none:hover { clip-path: none; }
+  .sm-focus-clip-none:focus { clip-path: none; }
+  .sm-active-clip-none:active { clip-path: none; }
+  .sm-disabled-clip-none:disabled { clip-path: none; }
+  .sm-focus-visible-clip-none:focus-visible { clip-path: none; }
+  .sm-focus-within-clip-none:focus-within { clip-path: none; }
+  .group:hover .sm-group-hover-clip-none { clip-path: none; }
+  .sm-clip-circle { clip-path: circle(50% at 50% 50%); }
+  .sm-hover-clip-circle:hover { clip-path: circle(50% at 50% 50%); }
+  .sm-focus-clip-circle:focus { clip-path: circle(50% at 50% 50%); }
+  .sm-active-clip-circle:active { clip-path: circle(50% at 50% 50%); }
+  .sm-disabled-clip-circle:disabled { clip-path: circle(50% at 50% 50%); }
+  .sm-focus-visible-clip-circle:focus-visible { clip-path: circle(50% at 50% 50%); }
+  .sm-focus-within-clip-circle:focus-within { clip-path: circle(50% at 50% 50%); }
+  .group:hover .sm-group-hover-clip-circle { clip-path: circle(50% at 50% 50%); }
+  .sm-clip-ellipse { clip-path: ellipse(50% 25% at 50% 50%); }
+  .sm-hover-clip-ellipse:hover { clip-path: ellipse(50% 25% at 50% 50%); }
+  .sm-focus-clip-ellipse:focus { clip-path: ellipse(50% 25% at 50% 50%); }
+  .sm-active-clip-ellipse:active { clip-path: ellipse(50% 25% at 50% 50%); }
+  .sm-disabled-clip-ellipse:disabled { clip-path: ellipse(50% 25% at 50% 50%); }
+  .sm-focus-visible-clip-ellipse:focus-visible { clip-path: ellipse(50% 25% at 50% 50%); }
+  .sm-focus-within-clip-ellipse:focus-within { clip-path: ellipse(50% 25% at 50% 50%); }
+  .group:hover .sm-group-hover-clip-ellipse { clip-path: ellipse(50% 25% at 50% 50%); }
+  .sm-clip-inset { clip-path: inset(0); }
+  .sm-hover-clip-inset:hover { clip-path: inset(0); }
+  .sm-focus-clip-inset:focus { clip-path: inset(0); }
+  .sm-active-clip-inset:active { clip-path: inset(0); }
+  .sm-disabled-clip-inset:disabled { clip-path: inset(0); }
+  .sm-focus-visible-clip-inset:focus-visible { clip-path: inset(0); }
+  .sm-focus-within-clip-inset:focus-within { clip-path: inset(0); }
+  .group:hover .sm-group-hover-clip-inset { clip-path: inset(0); }
+  .sm-clip-triangle { clip-path: polygon(50% 0%, 0% 100%, 100% 100%); }
+  .sm-hover-clip-triangle:hover { clip-path: polygon(50% 0%, 0% 100%, 100% 100%); }
+  .sm-focus-clip-triangle:focus { clip-path: polygon(50% 0%, 0% 100%, 100% 100%); }
+  .sm-active-clip-triangle:active { clip-path: polygon(50% 0%, 0% 100%, 100% 100%); }
+  .sm-disabled-clip-triangle:disabled { clip-path: polygon(50% 0%, 0% 100%, 100% 100%); }
+  .sm-focus-visible-clip-triangle:focus-visible { clip-path: polygon(50% 0%, 0% 100%, 100% 100%); }
+  .sm-focus-within-clip-triangle:focus-within { clip-path: polygon(50% 0%, 0% 100%, 100% 100%); }
+  .group:hover .sm-group-hover-clip-triangle { clip-path: polygon(50% 0%, 0% 100%, 100% 100%); }
+  .sm-margin-block-start-1 { margin-block-start: 1rem; }
+  .sm-hover-margin-block-start-1:hover { margin-block-start: 1rem; }
+  .sm-focus-margin-block-start-1:focus { margin-block-start: 1rem; }
+  .sm-active-margin-block-start-1:active { margin-block-start: 1rem; }
+  .sm-disabled-margin-block-start-1:disabled { margin-block-start: 1rem; }
+  .sm-focus-visible-margin-block-start-1:focus-visible { margin-block-start: 1rem; }
+  .sm-focus-within-margin-block-start-1:focus-within { margin-block-start: 1rem; }
+  .group:hover .sm-group-hover-margin-block-start-1 { margin-block-start: 1rem; }
+  .sm-margin-block-end-1 { margin-block-end: 1rem; }
+  .sm-hover-margin-block-end-1:hover { margin-block-end: 1rem; }
+  .sm-focus-margin-block-end-1:focus { margin-block-end: 1rem; }
+  .sm-active-margin-block-end-1:active { margin-block-end: 1rem; }
+  .sm-disabled-margin-block-end-1:disabled { margin-block-end: 1rem; }
+  .sm-focus-visible-margin-block-end-1:focus-visible { margin-block-end: 1rem; }
+  .sm-focus-within-margin-block-end-1:focus-within { margin-block-end: 1rem; }
+  .group:hover .sm-group-hover-margin-block-end-1 { margin-block-end: 1rem; }
+  .sm-margin-inline-start-1 { margin-inline-start: 1rem; }
+  .sm-hover-margin-inline-start-1:hover { margin-inline-start: 1rem; }
+  .sm-focus-margin-inline-start-1:focus { margin-inline-start: 1rem; }
+  .sm-active-margin-inline-start-1:active { margin-inline-start: 1rem; }
+  .sm-disabled-margin-inline-start-1:disabled { margin-inline-start: 1rem; }
+  .sm-focus-visible-margin-inline-start-1:focus-visible { margin-inline-start: 1rem; }
+  .sm-focus-within-margin-inline-start-1:focus-within { margin-inline-start: 1rem; }
+  .group:hover .sm-group-hover-margin-inline-start-1 { margin-inline-start: 1rem; }
+  .sm-margin-inline-end-1 { margin-inline-end: 1rem; }
+  .sm-hover-margin-inline-end-1:hover { margin-inline-end: 1rem; }
+  .sm-focus-margin-inline-end-1:focus { margin-inline-end: 1rem; }
+  .sm-active-margin-inline-end-1:active { margin-inline-end: 1rem; }
+  .sm-disabled-margin-inline-end-1:disabled { margin-inline-end: 1rem; }
+  .sm-focus-visible-margin-inline-end-1:focus-visible { margin-inline-end: 1rem; }
+  .sm-focus-within-margin-inline-end-1:focus-within { margin-inline-end: 1rem; }
+  .group:hover .sm-group-hover-margin-inline-end-1 { margin-inline-end: 1rem; }
+  .sm-padding-block-start-1 { padding-block-start: 1rem; }
+  .sm-hover-padding-block-start-1:hover { padding-block-start: 1rem; }
+  .sm-focus-padding-block-start-1:focus { padding-block-start: 1rem; }
+  .sm-active-padding-block-start-1:active { padding-block-start: 1rem; }
+  .sm-disabled-padding-block-start-1:disabled { padding-block-start: 1rem; }
+  .sm-focus-visible-padding-block-start-1:focus-visible { padding-block-start: 1rem; }
+  .sm-focus-within-padding-block-start-1:focus-within { padding-block-start: 1rem; }
+  .group:hover .sm-group-hover-padding-block-start-1 { padding-block-start: 1rem; }
+  .sm-padding-block-end-1 { padding-block-end: 1rem; }
+  .sm-hover-padding-block-end-1:hover { padding-block-end: 1rem; }
+  .sm-focus-padding-block-end-1:focus { padding-block-end: 1rem; }
+  .sm-active-padding-block-end-1:active { padding-block-end: 1rem; }
+  .sm-disabled-padding-block-end-1:disabled { padding-block-end: 1rem; }
+  .sm-focus-visible-padding-block-end-1:focus-visible { padding-block-end: 1rem; }
+  .sm-focus-within-padding-block-end-1:focus-within { padding-block-end: 1rem; }
+  .group:hover .sm-group-hover-padding-block-end-1 { padding-block-end: 1rem; }
+  .sm-padding-inline-start-1 { padding-inline-start: 1rem; }
+  .sm-hover-padding-inline-start-1:hover { padding-inline-start: 1rem; }
+  .sm-focus-padding-inline-start-1:focus { padding-inline-start: 1rem; }
+  .sm-active-padding-inline-start-1:active { padding-inline-start: 1rem; }
+  .sm-disabled-padding-inline-start-1:disabled { padding-inline-start: 1rem; }
+  .sm-focus-visible-padding-inline-start-1:focus-visible { padding-inline-start: 1rem; }
+  .sm-focus-within-padding-inline-start-1:focus-within { padding-inline-start: 1rem; }
+  .group:hover .sm-group-hover-padding-inline-start-1 { padding-inline-start: 1rem; }
+  .sm-padding-inline-end-1 { padding-inline-end: 1rem; }
+  .sm-hover-padding-inline-end-1:hover { padding-inline-end: 1rem; }
+  .sm-focus-padding-inline-end-1:focus { padding-inline-end: 1rem; }
+  .sm-active-padding-inline-end-1:active { padding-inline-end: 1rem; }
+  .sm-disabled-padding-inline-end-1:disabled { padding-inline-end: 1rem; }
+  .sm-focus-visible-padding-inline-end-1:focus-visible { padding-inline-end: 1rem; }
+  .sm-focus-within-padding-inline-end-1:focus-within { padding-inline-end: 1rem; }
+  .group:hover .sm-group-hover-padding-inline-end-1 { padding-inline-end: 1rem; }
+  .sm-break-after-auto { break-after: auto; }
+  .sm-hover-break-after-auto:hover { break-after: auto; }
+  .sm-focus-break-after-auto:focus { break-after: auto; }
+  .sm-active-break-after-auto:active { break-after: auto; }
+  .sm-disabled-break-after-auto:disabled { break-after: auto; }
+  .sm-focus-visible-break-after-auto:focus-visible { break-after: auto; }
+  .sm-focus-within-break-after-auto:focus-within { break-after: auto; }
+  .group:hover .sm-group-hover-break-after-auto { break-after: auto; }
+  .sm-break-after-avoid { break-after: avoid; }
+  .sm-hover-break-after-avoid:hover { break-after: avoid; }
+  .sm-focus-break-after-avoid:focus { break-after: avoid; }
+  .sm-active-break-after-avoid:active { break-after: avoid; }
+  .sm-disabled-break-after-avoid:disabled { break-after: avoid; }
+  .sm-focus-visible-break-after-avoid:focus-visible { break-after: avoid; }
+  .sm-focus-within-break-after-avoid:focus-within { break-after: avoid; }
+  .group:hover .sm-group-hover-break-after-avoid { break-after: avoid; }
+  .sm-break-after-all { break-after: all; }
+  .sm-hover-break-after-all:hover { break-after: all; }
+  .sm-focus-break-after-all:focus { break-after: all; }
+  .sm-active-break-after-all:active { break-after: all; }
+  .sm-disabled-break-after-all:disabled { break-after: all; }
+  .sm-focus-visible-break-after-all:focus-visible { break-after: all; }
+  .sm-focus-within-break-after-all:focus-within { break-after: all; }
+  .group:hover .sm-group-hover-break-after-all { break-after: all; }
+  .sm-break-after-avoid-page { break-after: avoid-page; }
+  .sm-hover-break-after-avoid-page:hover { break-after: avoid-page; }
+  .sm-focus-break-after-avoid-page:focus { break-after: avoid-page; }
+  .sm-active-break-after-avoid-page:active { break-after: avoid-page; }
+  .sm-disabled-break-after-avoid-page:disabled { break-after: avoid-page; }
+  .sm-focus-visible-break-after-avoid-page:focus-visible { break-after: avoid-page; }
+  .sm-focus-within-break-after-avoid-page:focus-within { break-after: avoid-page; }
+  .group:hover .sm-group-hover-break-after-avoid-page { break-after: avoid-page; }
+  .sm-break-after-page { break-after: page; }
+  .sm-hover-break-after-page:hover { break-after: page; }
+  .sm-focus-break-after-page:focus { break-after: page; }
+  .sm-active-break-after-page:active { break-after: page; }
+  .sm-disabled-break-after-page:disabled { break-after: page; }
+  .sm-focus-visible-break-after-page:focus-visible { break-after: page; }
+  .sm-focus-within-break-after-page:focus-within { break-after: page; }
+  .group:hover .sm-group-hover-break-after-page { break-after: page; }
+  .sm-break-after-left { break-after: left; }
+  .sm-hover-break-after-left:hover { break-after: left; }
+  .sm-focus-break-after-left:focus { break-after: left; }
+  .sm-active-break-after-left:active { break-after: left; }
+  .sm-disabled-break-after-left:disabled { break-after: left; }
+  .sm-focus-visible-break-after-left:focus-visible { break-after: left; }
+  .sm-focus-within-break-after-left:focus-within { break-after: left; }
+  .group:hover .sm-group-hover-break-after-left { break-after: left; }
+  .sm-break-after-right { break-after: right; }
+  .sm-hover-break-after-right:hover { break-after: right; }
+  .sm-focus-break-after-right:focus { break-after: right; }
+  .sm-active-break-after-right:active { break-after: right; }
+  .sm-disabled-break-after-right:disabled { break-after: right; }
+  .sm-focus-visible-break-after-right:focus-visible { break-after: right; }
+  .sm-focus-within-break-after-right:focus-within { break-after: right; }
+  .group:hover .sm-group-hover-break-after-right { break-after: right; }
+  .sm-break-after-column { break-after: column; }
+  .sm-hover-break-after-column:hover { break-after: column; }
+  .sm-focus-break-after-column:focus { break-after: column; }
+  .sm-active-break-after-column:active { break-after: column; }
+  .sm-disabled-break-after-column:disabled { break-after: column; }
+  .sm-focus-visible-break-after-column:focus-visible { break-after: column; }
+  .sm-focus-within-break-after-column:focus-within { break-after: column; }
+  .group:hover .sm-group-hover-break-after-column { break-after: column; }
+  .sm-break-before-auto { break-before: auto; }
+  .sm-hover-break-before-auto:hover { break-before: auto; }
+  .sm-focus-break-before-auto:focus { break-before: auto; }
+  .sm-active-break-before-auto:active { break-before: auto; }
+  .sm-disabled-break-before-auto:disabled { break-before: auto; }
+  .sm-focus-visible-break-before-auto:focus-visible { break-before: auto; }
+  .sm-focus-within-break-before-auto:focus-within { break-before: auto; }
+  .group:hover .sm-group-hover-break-before-auto { break-before: auto; }
+  .sm-break-before-avoid { break-before: avoid; }
+  .sm-hover-break-before-avoid:hover { break-before: avoid; }
+  .sm-focus-break-before-avoid:focus { break-before: avoid; }
+  .sm-active-break-before-avoid:active { break-before: avoid; }
+  .sm-disabled-break-before-avoid:disabled { break-before: avoid; }
+  .sm-focus-visible-break-before-avoid:focus-visible { break-before: avoid; }
+  .sm-focus-within-break-before-avoid:focus-within { break-before: avoid; }
+  .group:hover .sm-group-hover-break-before-avoid { break-before: avoid; }
+  .sm-break-before-all { break-before: all; }
+  .sm-hover-break-before-all:hover { break-before: all; }
+  .sm-focus-break-before-all:focus { break-before: all; }
+  .sm-active-break-before-all:active { break-before: all; }
+  .sm-disabled-break-before-all:disabled { break-before: all; }
+  .sm-focus-visible-break-before-all:focus-visible { break-before: all; }
+  .sm-focus-within-break-before-all:focus-within { break-before: all; }
+  .group:hover .sm-group-hover-break-before-all { break-before: all; }
+  .sm-break-before-avoid-page { break-before: avoid-page; }
+  .sm-hover-break-before-avoid-page:hover { break-before: avoid-page; }
+  .sm-focus-break-before-avoid-page:focus { break-before: avoid-page; }
+  .sm-active-break-before-avoid-page:active { break-before: avoid-page; }
+  .sm-disabled-break-before-avoid-page:disabled { break-before: avoid-page; }
+  .sm-focus-visible-break-before-avoid-page:focus-visible { break-before: avoid-page; }
+  .sm-focus-within-break-before-avoid-page:focus-within { break-before: avoid-page; }
+  .group:hover .sm-group-hover-break-before-avoid-page { break-before: avoid-page; }
+  .sm-break-before-page { break-before: page; }
+  .sm-hover-break-before-page:hover { break-before: page; }
+  .sm-focus-break-before-page:focus { break-before: page; }
+  .sm-active-break-before-page:active { break-before: page; }
+  .sm-disabled-break-before-page:disabled { break-before: page; }
+  .sm-focus-visible-break-before-page:focus-visible { break-before: page; }
+  .sm-focus-within-break-before-page:focus-within { break-before: page; }
+  .group:hover .sm-group-hover-break-before-page { break-before: page; }
+  .sm-break-before-left { break-before: left; }
+  .sm-hover-break-before-left:hover { break-before: left; }
+  .sm-focus-break-before-left:focus { break-before: left; }
+  .sm-active-break-before-left:active { break-before: left; }
+  .sm-disabled-break-before-left:disabled { break-before: left; }
+  .sm-focus-visible-break-before-left:focus-visible { break-before: left; }
+  .sm-focus-within-break-before-left:focus-within { break-before: left; }
+  .group:hover .sm-group-hover-break-before-left { break-before: left; }
+  .sm-break-before-right { break-before: right; }
+  .sm-hover-break-before-right:hover { break-before: right; }
+  .sm-focus-break-before-right:focus { break-before: right; }
+  .sm-active-break-before-right:active { break-before: right; }
+  .sm-disabled-break-before-right:disabled { break-before: right; }
+  .sm-focus-visible-break-before-right:focus-visible { break-before: right; }
+  .sm-focus-within-break-before-right:focus-within { break-before: right; }
+  .group:hover .sm-group-hover-break-before-right { break-before: right; }
+  .sm-break-before-column { break-before: column; }
+  .sm-hover-break-before-column:hover { break-before: column; }
+  .sm-focus-break-before-column:focus { break-before: column; }
+  .sm-active-break-before-column:active { break-before: column; }
+  .sm-disabled-break-before-column:disabled { break-before: column; }
+  .sm-focus-visible-break-before-column:focus-visible { break-before: column; }
+  .sm-focus-within-break-before-column:focus-within { break-before: column; }
+  .group:hover .sm-group-hover-break-before-column { break-before: column; }
+  .sm-break-inside-auto { break-inside: auto; }
+  .sm-hover-break-inside-auto:hover { break-inside: auto; }
+  .sm-focus-break-inside-auto:focus { break-inside: auto; }
+  .sm-active-break-inside-auto:active { break-inside: auto; }
+  .sm-disabled-break-inside-auto:disabled { break-inside: auto; }
+  .sm-focus-visible-break-inside-auto:focus-visible { break-inside: auto; }
+  .sm-focus-within-break-inside-auto:focus-within { break-inside: auto; }
+  .group:hover .sm-group-hover-break-inside-auto { break-inside: auto; }
+  .sm-break-inside-avoid { break-inside: avoid; }
+  .sm-hover-break-inside-avoid:hover { break-inside: avoid; }
+  .sm-focus-break-inside-avoid:focus { break-inside: avoid; }
+  .sm-active-break-inside-avoid:active { break-inside: avoid; }
+  .sm-disabled-break-inside-avoid:disabled { break-inside: avoid; }
+  .sm-focus-visible-break-inside-avoid:focus-visible { break-inside: avoid; }
+  .sm-focus-within-break-inside-avoid:focus-within { break-inside: avoid; }
+  .group:hover .sm-group-hover-break-inside-avoid { break-inside: avoid; }
+  .sm-break-inside-avoid-page { break-inside: avoid-page; }
+  .sm-hover-break-inside-avoid-page:hover { break-inside: avoid-page; }
+  .sm-focus-break-inside-avoid-page:focus { break-inside: avoid-page; }
+  .sm-active-break-inside-avoid-page:active { break-inside: avoid-page; }
+  .sm-disabled-break-inside-avoid-page:disabled { break-inside: avoid-page; }
+  .sm-focus-visible-break-inside-avoid-page:focus-visible { break-inside: avoid-page; }
+  .sm-focus-within-break-inside-avoid-page:focus-within { break-inside: avoid-page; }
+  .group:hover .sm-group-hover-break-inside-avoid-page { break-inside: avoid-page; }
+  .sm-break-inside-avoid-column { break-inside: avoid-column; }
+  .sm-hover-break-inside-avoid-column:hover { break-inside: avoid-column; }
+  .sm-focus-break-inside-avoid-column:focus { break-inside: avoid-column; }
+  .sm-active-break-inside-avoid-column:active { break-inside: avoid-column; }
+  .sm-disabled-break-inside-avoid-column:disabled { break-inside: avoid-column; }
+  .sm-focus-visible-break-inside-avoid-column:focus-visible { break-inside: avoid-column; }
+  .sm-focus-within-break-inside-avoid-column:focus-within { break-inside: avoid-column; }
+  .group:hover .sm-group-hover-break-inside-avoid-column { break-inside: avoid-column; }
+  .sm-clip-none { clip-path: none; }
+  .sm-hover-clip-none:hover { clip-path: none; }
+  .sm-focus-clip-none:focus { clip-path: none; }
+  .sm-active-clip-none:active { clip-path: none; }
+  .sm-disabled-clip-none:disabled { clip-path: none; }
+  .sm-focus-visible-clip-none:focus-visible { clip-path: none; }
+  .sm-focus-within-clip-none:focus-within { clip-path: none; }
+  .group:hover .sm-group-hover-clip-none { clip-path: none; }
+  .sm-clip-circle { clip-path: circle(50%); }
+  .sm-hover-clip-circle:hover { clip-path: circle(50%); }
+  .sm-focus-clip-circle:focus { clip-path: circle(50%); }
+  .sm-active-clip-circle:active { clip-path: circle(50%); }
+  .sm-disabled-clip-circle:disabled { clip-path: circle(50%); }
+  .sm-focus-visible-clip-circle:focus-visible { clip-path: circle(50%); }
+  .sm-focus-within-clip-circle:focus-within { clip-path: circle(50%); }
+  .group:hover .sm-group-hover-clip-circle { clip-path: circle(50%); }
+  .sm-clip-ellipse { clip-path: ellipse(50% 75%); }
+  .sm-hover-clip-ellipse:hover { clip-path: ellipse(50% 75%); }
+  .sm-focus-clip-ellipse:focus { clip-path: ellipse(50% 75%); }
+  .sm-active-clip-ellipse:active { clip-path: ellipse(50% 75%); }
+  .sm-disabled-clip-ellipse:disabled { clip-path: ellipse(50% 75%); }
+  .sm-focus-visible-clip-ellipse:focus-visible { clip-path: ellipse(50% 75%); }
+  .sm-focus-within-clip-ellipse:focus-within { clip-path: ellipse(50% 75%); }
+  .group:hover .sm-group-hover-clip-ellipse { clip-path: ellipse(50% 75%); }
+  .sm-clip-inset { clip-path: inset(10%); }
+  .sm-hover-clip-inset:hover { clip-path: inset(10%); }
+  .sm-focus-clip-inset:focus { clip-path: inset(10%); }
+  .sm-active-clip-inset:active { clip-path: inset(10%); }
+  .sm-disabled-clip-inset:disabled { clip-path: inset(10%); }
+  .sm-focus-visible-clip-inset:focus-visible { clip-path: inset(10%); }
+  .sm-focus-within-clip-inset:focus-within { clip-path: inset(10%); }
+  .group:hover .sm-group-hover-clip-inset { clip-path: inset(10%); }
+  .sm-clip-polygon { clip-path: polygon(0 0,100% 0,100% 100%,0 100%); }
+  .sm-hover-clip-polygon:hover { clip-path: polygon(0 0,100% 0,100% 100%,0 100%); }
+  .sm-focus-clip-polygon:focus { clip-path: polygon(0 0,100% 0,100% 100%,0 100%); }
+  .sm-active-clip-polygon:active { clip-path: polygon(0 0,100% 0,100% 100%,0 100%); }
+  .sm-disabled-clip-polygon:disabled { clip-path: polygon(0 0,100% 0,100% 100%,0 100%); }
+  .sm-focus-visible-clip-polygon:focus-visible { clip-path: polygon(0 0,100% 0,100% 100%,0 100%); }
+  .sm-focus-within-clip-polygon:focus-within { clip-path: polygon(0 0,100% 0,100% 100%,0 100%); }
+  .group:hover .sm-group-hover-clip-polygon { clip-path: polygon(0 0,100% 0,100% 100%,0 100%); }
+}
+
+/* MD Breakpoint */
+@media (min-width: 768px) {
+  .md-clip-none { clip-path: none; }
+  .md-hover-clip-none:hover { clip-path: none; }
+  .md-focus-clip-none:focus { clip-path: none; }
+  .md-active-clip-none:active { clip-path: none; }
+  .md-disabled-clip-none:disabled { clip-path: none; }
+  .md-focus-visible-clip-none:focus-visible { clip-path: none; }
+  .md-focus-within-clip-none:focus-within { clip-path: none; }
+  .group:hover .md-group-hover-clip-none { clip-path: none; }
+  .md-clip-circle { clip-path: circle(50% at 50% 50%); }
+  .md-hover-clip-circle:hover { clip-path: circle(50% at 50% 50%); }
+  .md-focus-clip-circle:focus { clip-path: circle(50% at 50% 50%); }
+  .md-active-clip-circle:active { clip-path: circle(50% at 50% 50%); }
+  .md-disabled-clip-circle:disabled { clip-path: circle(50% at 50% 50%); }
+  .md-focus-visible-clip-circle:focus-visible { clip-path: circle(50% at 50% 50%); }
+  .md-focus-within-clip-circle:focus-within { clip-path: circle(50% at 50% 50%); }
+  .group:hover .md-group-hover-clip-circle { clip-path: circle(50% at 50% 50%); }
+  .md-clip-ellipse { clip-path: ellipse(50% 25% at 50% 50%); }
+  .md-hover-clip-ellipse:hover { clip-path: ellipse(50% 25% at 50% 50%); }
+  .md-focus-clip-ellipse:focus { clip-path: ellipse(50% 25% at 50% 50%); }
+  .md-active-clip-ellipse:active { clip-path: ellipse(50% 25% at 50% 50%); }
+  .md-disabled-clip-ellipse:disabled { clip-path: ellipse(50% 25% at 50% 50%); }
+  .md-focus-visible-clip-ellipse:focus-visible { clip-path: ellipse(50% 25% at 50% 50%); }
+  .md-focus-within-clip-ellipse:focus-within { clip-path: ellipse(50% 25% at 50% 50%); }
+  .group:hover .md-group-hover-clip-ellipse { clip-path: ellipse(50% 25% at 50% 50%); }
+  .md-clip-inset { clip-path: inset(0); }
+  .md-hover-clip-inset:hover { clip-path: inset(0); }
+  .md-focus-clip-inset:focus { clip-path: inset(0); }
+  .md-active-clip-inset:active { clip-path: inset(0); }
+  .md-disabled-clip-inset:disabled { clip-path: inset(0); }
+  .md-focus-visible-clip-inset:focus-visible { clip-path: inset(0); }
+  .md-focus-within-clip-inset:focus-within { clip-path: inset(0); }
+  .group:hover .md-group-hover-clip-inset { clip-path: inset(0); }
+  .md-clip-triangle { clip-path: polygon(50% 0%, 0% 100%, 100% 100%); }
+  .md-hover-clip-triangle:hover { clip-path: polygon(50% 0%, 0% 100%, 100% 100%); }
+  .md-focus-clip-triangle:focus { clip-path: polygon(50% 0%, 0% 100%, 100% 100%); }
+  .md-active-clip-triangle:active { clip-path: polygon(50% 0%, 0% 100%, 100% 100%); }
+  .md-disabled-clip-triangle:disabled { clip-path: polygon(50% 0%, 0% 100%, 100% 100%); }
+  .md-focus-visible-clip-triangle:focus-visible { clip-path: polygon(50% 0%, 0% 100%, 100% 100%); }
+  .md-focus-within-clip-triangle:focus-within { clip-path: polygon(50% 0%, 0% 100%, 100% 100%); }
+  .group:hover .md-group-hover-clip-triangle { clip-path: polygon(50% 0%, 0% 100%, 100% 100%); }
+  .md-margin-block-start-1 { margin-block-start: 1rem; }
+  .md-hover-margin-block-start-1:hover { margin-block-start: 1rem; }
+  .md-focus-margin-block-start-1:focus { margin-block-start: 1rem; }
+  .md-active-margin-block-start-1:active { margin-block-start: 1rem; }
+  .md-disabled-margin-block-start-1:disabled { margin-block-start: 1rem; }
+  .md-focus-visible-margin-block-start-1:focus-visible { margin-block-start: 1rem; }
+  .md-focus-within-margin-block-start-1:focus-within { margin-block-start: 1rem; }
+  .group:hover .md-group-hover-margin-block-start-1 { margin-block-start: 1rem; }
+  .md-margin-block-end-1 { margin-block-end: 1rem; }
+  .md-hover-margin-block-end-1:hover { margin-block-end: 1rem; }
+  .md-focus-margin-block-end-1:focus { margin-block-end: 1rem; }
+  .md-active-margin-block-end-1:active { margin-block-end: 1rem; }
+  .md-disabled-margin-block-end-1:disabled { margin-block-end: 1rem; }
+  .md-focus-visible-margin-block-end-1:focus-visible { margin-block-end: 1rem; }
+  .md-focus-within-margin-block-end-1:focus-within { margin-block-end: 1rem; }
+  .group:hover .md-group-hover-margin-block-end-1 { margin-block-end: 1rem; }
+  .md-margin-inline-start-1 { margin-inline-start: 1rem; }
+  .md-hover-margin-inline-start-1:hover { margin-inline-start: 1rem; }
+  .md-focus-margin-inline-start-1:focus { margin-inline-start: 1rem; }
+  .md-active-margin-inline-start-1:active { margin-inline-start: 1rem; }
+  .md-disabled-margin-inline-start-1:disabled { margin-inline-start: 1rem; }
+  .md-focus-visible-margin-inline-start-1:focus-visible { margin-inline-start: 1rem; }
+  .md-focus-within-margin-inline-start-1:focus-within { margin-inline-start: 1rem; }
+  .group:hover .md-group-hover-margin-inline-start-1 { margin-inline-start: 1rem; }
+  .md-margin-inline-end-1 { margin-inline-end: 1rem; }
+  .md-hover-margin-inline-end-1:hover { margin-inline-end: 1rem; }
+  .md-focus-margin-inline-end-1:focus { margin-inline-end: 1rem; }
+  .md-active-margin-inline-end-1:active { margin-inline-end: 1rem; }
+  .md-disabled-margin-inline-end-1:disabled { margin-inline-end: 1rem; }
+  .md-focus-visible-margin-inline-end-1:focus-visible { margin-inline-end: 1rem; }
+  .md-focus-within-margin-inline-end-1:focus-within { margin-inline-end: 1rem; }
+  .group:hover .md-group-hover-margin-inline-end-1 { margin-inline-end: 1rem; }
+  .md-padding-block-start-1 { padding-block-start: 1rem; }
+  .md-hover-padding-block-start-1:hover { padding-block-start: 1rem; }
+  .md-focus-padding-block-start-1:focus { padding-block-start: 1rem; }
+  .md-active-padding-block-start-1:active { padding-block-start: 1rem; }
+  .md-disabled-padding-block-start-1:disabled { padding-block-start: 1rem; }
+  .md-focus-visible-padding-block-start-1:focus-visible { padding-block-start: 1rem; }
+  .md-focus-within-padding-block-start-1:focus-within { padding-block-start: 1rem; }
+  .group:hover .md-group-hover-padding-block-start-1 { padding-block-start: 1rem; }
+  .md-padding-block-end-1 { padding-block-end: 1rem; }
+  .md-hover-padding-block-end-1:hover { padding-block-end: 1rem; }
+  .md-focus-padding-block-end-1:focus { padding-block-end: 1rem; }
+  .md-active-padding-block-end-1:active { padding-block-end: 1rem; }
+  .md-disabled-padding-block-end-1:disabled { padding-block-end: 1rem; }
+  .md-focus-visible-padding-block-end-1:focus-visible { padding-block-end: 1rem; }
+  .md-focus-within-padding-block-end-1:focus-within { padding-block-end: 1rem; }
+  .group:hover .md-group-hover-padding-block-end-1 { padding-block-end: 1rem; }
+  .md-padding-inline-start-1 { padding-inline-start: 1rem; }
+  .md-hover-padding-inline-start-1:hover { padding-inline-start: 1rem; }
+  .md-focus-padding-inline-start-1:focus { padding-inline-start: 1rem; }
+  .md-active-padding-inline-start-1:active { padding-inline-start: 1rem; }
+  .md-disabled-padding-inline-start-1:disabled { padding-inline-start: 1rem; }
+  .md-focus-visible-padding-inline-start-1:focus-visible { padding-inline-start: 1rem; }
+  .md-focus-within-padding-inline-start-1:focus-within { padding-inline-start: 1rem; }
+  .group:hover .md-group-hover-padding-inline-start-1 { padding-inline-start: 1rem; }
+  .md-padding-inline-end-1 { padding-inline-end: 1rem; }
+  .md-hover-padding-inline-end-1:hover { padding-inline-end: 1rem; }
+  .md-focus-padding-inline-end-1:focus { padding-inline-end: 1rem; }
+  .md-active-padding-inline-end-1:active { padding-inline-end: 1rem; }
+  .md-disabled-padding-inline-end-1:disabled { padding-inline-end: 1rem; }
+  .md-focus-visible-padding-inline-end-1:focus-visible { padding-inline-end: 1rem; }
+  .md-focus-within-padding-inline-end-1:focus-within { padding-inline-end: 1rem; }
+  .group:hover .md-group-hover-padding-inline-end-1 { padding-inline-end: 1rem; }
+  .md-break-after-auto { break-after: auto; }
+  .md-hover-break-after-auto:hover { break-after: auto; }
+  .md-focus-break-after-auto:focus { break-after: auto; }
+  .md-active-break-after-auto:active { break-after: auto; }
+  .md-disabled-break-after-auto:disabled { break-after: auto; }
+  .md-focus-visible-break-after-auto:focus-visible { break-after: auto; }
+  .md-focus-within-break-after-auto:focus-within { break-after: auto; }
+  .group:hover .md-group-hover-break-after-auto { break-after: auto; }
+  .md-break-after-avoid { break-after: avoid; }
+  .md-hover-break-after-avoid:hover { break-after: avoid; }
+  .md-focus-break-after-avoid:focus { break-after: avoid; }
+  .md-active-break-after-avoid:active { break-after: avoid; }
+  .md-disabled-break-after-avoid:disabled { break-after: avoid; }
+  .md-focus-visible-break-after-avoid:focus-visible { break-after: avoid; }
+  .md-focus-within-break-after-avoid:focus-within { break-after: avoid; }
+  .group:hover .md-group-hover-break-after-avoid { break-after: avoid; }
+  .md-break-after-all { break-after: all; }
+  .md-hover-break-after-all:hover { break-after: all; }
+  .md-focus-break-after-all:focus { break-after: all; }
+  .md-active-break-after-all:active { break-after: all; }
+  .md-disabled-break-after-all:disabled { break-after: all; }
+  .md-focus-visible-break-after-all:focus-visible { break-after: all; }
+  .md-focus-within-break-after-all:focus-within { break-after: all; }
+  .group:hover .md-group-hover-break-after-all { break-after: all; }
+  .md-break-after-avoid-page { break-after: avoid-page; }
+  .md-hover-break-after-avoid-page:hover { break-after: avoid-page; }
+  .md-focus-break-after-avoid-page:focus { break-after: avoid-page; }
+  .md-active-break-after-avoid-page:active { break-after: avoid-page; }
+  .md-disabled-break-after-avoid-page:disabled { break-after: avoid-page; }
+  .md-focus-visible-break-after-avoid-page:focus-visible { break-after: avoid-page; }
+  .md-focus-within-break-after-avoid-page:focus-within { break-after: avoid-page; }
+  .group:hover .md-group-hover-break-after-avoid-page { break-after: avoid-page; }
+  .md-break-after-page { break-after: page; }
+  .md-hover-break-after-page:hover { break-after: page; }
+  .md-focus-break-after-page:focus { break-after: page; }
+  .md-active-break-after-page:active { break-after: page; }
+  .md-disabled-break-after-page:disabled { break-after: page; }
+  .md-focus-visible-break-after-page:focus-visible { break-after: page; }
+  .md-focus-within-break-after-page:focus-within { break-after: page; }
+  .group:hover .md-group-hover-break-after-page { break-after: page; }
+  .md-break-after-left { break-after: left; }
+  .md-hover-break-after-left:hover { break-after: left; }
+  .md-focus-break-after-left:focus { break-after: left; }
+  .md-active-break-after-left:active { break-after: left; }
+  .md-disabled-break-after-left:disabled { break-after: left; }
+  .md-focus-visible-break-after-left:focus-visible { break-after: left; }
+  .md-focus-within-break-after-left:focus-within { break-after: left; }
+  .group:hover .md-group-hover-break-after-left { break-after: left; }
+  .md-break-after-right { break-after: right; }
+  .md-hover-break-after-right:hover { break-after: right; }
+  .md-focus-break-after-right:focus { break-after: right; }
+  .md-active-break-after-right:active { break-after: right; }
+  .md-disabled-break-after-right:disabled { break-after: right; }
+  .md-focus-visible-break-after-right:focus-visible { break-after: right; }
+  .md-focus-within-break-after-right:focus-within { break-after: right; }
+  .group:hover .md-group-hover-break-after-right { break-after: right; }
+  .md-break-after-column { break-after: column; }
+  .md-hover-break-after-column:hover { break-after: column; }
+  .md-focus-break-after-column:focus { break-after: column; }
+  .md-active-break-after-column:active { break-after: column; }
+  .md-disabled-break-after-column:disabled { break-after: column; }
+  .md-focus-visible-break-after-column:focus-visible { break-after: column; }
+  .md-focus-within-break-after-column:focus-within { break-after: column; }
+  .group:hover .md-group-hover-break-after-column { break-after: column; }
+  .md-break-before-auto { break-before: auto; }
+  .md-hover-break-before-auto:hover { break-before: auto; }
+  .md-focus-break-before-auto:focus { break-before: auto; }
+  .md-active-break-before-auto:active { break-before: auto; }
+  .md-disabled-break-before-auto:disabled { break-before: auto; }
+  .md-focus-visible-break-before-auto:focus-visible { break-before: auto; }
+  .md-focus-within-break-before-auto:focus-within { break-before: auto; }
+  .group:hover .md-group-hover-break-before-auto { break-before: auto; }
+  .md-break-before-avoid { break-before: avoid; }
+  .md-hover-break-before-avoid:hover { break-before: avoid; }
+  .md-focus-break-before-avoid:focus { break-before: avoid; }
+  .md-active-break-before-avoid:active { break-before: avoid; }
+  .md-disabled-break-before-avoid:disabled { break-before: avoid; }
+  .md-focus-visible-break-before-avoid:focus-visible { break-before: avoid; }
+  .md-focus-within-break-before-avoid:focus-within { break-before: avoid; }
+  .group:hover .md-group-hover-break-before-avoid { break-before: avoid; }
+  .md-break-before-all { break-before: all; }
+  .md-hover-break-before-all:hover { break-before: all; }
+  .md-focus-break-before-all:focus { break-before: all; }
+  .md-active-break-before-all:active { break-before: all; }
+  .md-disabled-break-before-all:disabled { break-before: all; }
+  .md-focus-visible-break-before-all:focus-visible { break-before: all; }
+  .md-focus-within-break-before-all:focus-within { break-before: all; }
+  .group:hover .md-group-hover-break-before-all { break-before: all; }
+  .md-break-before-avoid-page { break-before: avoid-page; }
+  .md-hover-break-before-avoid-page:hover { break-before: avoid-page; }
+  .md-focus-break-before-avoid-page:focus { break-before: avoid-page; }
+  .md-active-break-before-avoid-page:active { break-before: avoid-page; }
+  .md-disabled-break-before-avoid-page:disabled { break-before: avoid-page; }
+  .md-focus-visible-break-before-avoid-page:focus-visible { break-before: avoid-page; }
+  .md-focus-within-break-before-avoid-page:focus-within { break-before: avoid-page; }
+  .group:hover .md-group-hover-break-before-avoid-page { break-before: avoid-page; }
+  .md-break-before-page { break-before: page; }
+  .md-hover-break-before-page:hover { break-before: page; }
+  .md-focus-break-before-page:focus { break-before: page; }
+  .md-active-break-before-page:active { break-before: page; }
+  .md-disabled-break-before-page:disabled { break-before: page; }
+  .md-focus-visible-break-before-page:focus-visible { break-before: page; }
+  .md-focus-within-break-before-page:focus-within { break-before: page; }
+  .group:hover .md-group-hover-break-before-page { break-before: page; }
+  .md-break-before-left { break-before: left; }
+  .md-hover-break-before-left:hover { break-before: left; }
+  .md-focus-break-before-left:focus { break-before: left; }
+  .md-active-break-before-left:active { break-before: left; }
+  .md-disabled-break-before-left:disabled { break-before: left; }
+  .md-focus-visible-break-before-left:focus-visible { break-before: left; }
+  .md-focus-within-break-before-left:focus-within { break-before: left; }
+  .group:hover .md-group-hover-break-before-left { break-before: left; }
+  .md-break-before-right { break-before: right; }
+  .md-hover-break-before-right:hover { break-before: right; }
+  .md-focus-break-before-right:focus { break-before: right; }
+  .md-active-break-before-right:active { break-before: right; }
+  .md-disabled-break-before-right:disabled { break-before: right; }
+  .md-focus-visible-break-before-right:focus-visible { break-before: right; }
+  .md-focus-within-break-before-right:focus-within { break-before: right; }
+  .group:hover .md-group-hover-break-before-right { break-before: right; }
+  .md-break-before-column { break-before: column; }
+  .md-hover-break-before-column:hover { break-before: column; }
+  .md-focus-break-before-column:focus { break-before: column; }
+  .md-active-break-before-column:active { break-before: column; }
+  .md-disabled-break-before-column:disabled { break-before: column; }
+  .md-focus-visible-break-before-column:focus-visible { break-before: column; }
+  .md-focus-within-break-before-column:focus-within { break-before: column; }
+  .group:hover .md-group-hover-break-before-column { break-before: column; }
+  .md-break-inside-auto { break-inside: auto; }
+  .md-hover-break-inside-auto:hover { break-inside: auto; }
+  .md-focus-break-inside-auto:focus { break-inside: auto; }
+  .md-active-break-inside-auto:active { break-inside: auto; }
+  .md-disabled-break-inside-auto:disabled { break-inside: auto; }
+  .md-focus-visible-break-inside-auto:focus-visible { break-inside: auto; }
+  .md-focus-within-break-inside-auto:focus-within { break-inside: auto; }
+  .group:hover .md-group-hover-break-inside-auto { break-inside: auto; }
+  .md-break-inside-avoid { break-inside: avoid; }
+  .md-hover-break-inside-avoid:hover { break-inside: avoid; }
+  .md-focus-break-inside-avoid:focus { break-inside: avoid; }
+  .md-active-break-inside-avoid:active { break-inside: avoid; }
+  .md-disabled-break-inside-avoid:disabled { break-inside: avoid; }
+  .md-focus-visible-break-inside-avoid:focus-visible { break-inside: avoid; }
+  .md-focus-within-break-inside-avoid:focus-within { break-inside: avoid; }
+  .group:hover .md-group-hover-break-inside-avoid { break-inside: avoid; }
+  .md-break-inside-avoid-page { break-inside: avoid-page; }
+  .md-hover-break-inside-avoid-page:hover { break-inside: avoid-page; }
+  .md-focus-break-inside-avoid-page:focus { break-inside: avoid-page; }
+  .md-active-break-inside-avoid-page:active { break-inside: avoid-page; }
+  .md-disabled-break-inside-avoid-page:disabled { break-inside: avoid-page; }
+  .md-focus-visible-break-inside-avoid-page:focus-visible { break-inside: avoid-page; }
+  .md-focus-within-break-inside-avoid-page:focus-within { break-inside: avoid-page; }
+  .group:hover .md-group-hover-break-inside-avoid-page { break-inside: avoid-page; }
+  .md-break-inside-avoid-column { break-inside: avoid-column; }
+  .md-hover-break-inside-avoid-column:hover { break-inside: avoid-column; }
+  .md-focus-break-inside-avoid-column:focus { break-inside: avoid-column; }
+  .md-active-break-inside-avoid-column:active { break-inside: avoid-column; }
+  .md-disabled-break-inside-avoid-column:disabled { break-inside: avoid-column; }
+  .md-focus-visible-break-inside-avoid-column:focus-visible { break-inside: avoid-column; }
+  .md-focus-within-break-inside-avoid-column:focus-within { break-inside: avoid-column; }
+  .group:hover .md-group-hover-break-inside-avoid-column { break-inside: avoid-column; }
+  .md-clip-none { clip-path: none; }
+  .md-hover-clip-none:hover { clip-path: none; }
+  .md-focus-clip-none:focus { clip-path: none; }
+  .md-active-clip-none:active { clip-path: none; }
+  .md-disabled-clip-none:disabled { clip-path: none; }
+  .md-focus-visible-clip-none:focus-visible { clip-path: none; }
+  .md-focus-within-clip-none:focus-within { clip-path: none; }
+  .group:hover .md-group-hover-clip-none { clip-path: none; }
+  .md-clip-circle { clip-path: circle(50%); }
+  .md-hover-clip-circle:hover { clip-path: circle(50%); }
+  .md-focus-clip-circle:focus { clip-path: circle(50%); }
+  .md-active-clip-circle:active { clip-path: circle(50%); }
+  .md-disabled-clip-circle:disabled { clip-path: circle(50%); }
+  .md-focus-visible-clip-circle:focus-visible { clip-path: circle(50%); }
+  .md-focus-within-clip-circle:focus-within { clip-path: circle(50%); }
+  .group:hover .md-group-hover-clip-circle { clip-path: circle(50%); }
+  .md-clip-ellipse { clip-path: ellipse(50% 75%); }
+  .md-hover-clip-ellipse:hover { clip-path: ellipse(50% 75%); }
+  .md-focus-clip-ellipse:focus { clip-path: ellipse(50% 75%); }
+  .md-active-clip-ellipse:active { clip-path: ellipse(50% 75%); }
+  .md-disabled-clip-ellipse:disabled { clip-path: ellipse(50% 75%); }
+  .md-focus-visible-clip-ellipse:focus-visible { clip-path: ellipse(50% 75%); }
+  .md-focus-within-clip-ellipse:focus-within { clip-path: ellipse(50% 75%); }
+  .group:hover .md-group-hover-clip-ellipse { clip-path: ellipse(50% 75%); }
+  .md-clip-inset { clip-path: inset(10%); }
+  .md-hover-clip-inset:hover { clip-path: inset(10%); }
+  .md-focus-clip-inset:focus { clip-path: inset(10%); }
+  .md-active-clip-inset:active { clip-path: inset(10%); }
+  .md-disabled-clip-inset:disabled { clip-path: inset(10%); }
+  .md-focus-visible-clip-inset:focus-visible { clip-path: inset(10%); }
+  .md-focus-within-clip-inset:focus-within { clip-path: inset(10%); }
+  .group:hover .md-group-hover-clip-inset { clip-path: inset(10%); }
+  .md-clip-polygon { clip-path: polygon(0 0,100% 0,100% 100%,0 100%); }
+  .md-hover-clip-polygon:hover { clip-path: polygon(0 0,100% 0,100% 100%,0 100%); }
+  .md-focus-clip-polygon:focus { clip-path: polygon(0 0,100% 0,100% 100%,0 100%); }
+  .md-active-clip-polygon:active { clip-path: polygon(0 0,100% 0,100% 100%,0 100%); }
+  .md-disabled-clip-polygon:disabled { clip-path: polygon(0 0,100% 0,100% 100%,0 100%); }
+  .md-focus-visible-clip-polygon:focus-visible { clip-path: polygon(0 0,100% 0,100% 100%,0 100%); }
+  .md-focus-within-clip-polygon:focus-within { clip-path: polygon(0 0,100% 0,100% 100%,0 100%); }
+  .group:hover .md-group-hover-clip-polygon { clip-path: polygon(0 0,100% 0,100% 100%,0 100%); }
+}
+
+/* LG Breakpoint */
+@media (min-width: 1024px) {
+  .lg-clip-none { clip-path: none; }
+  .lg-hover-clip-none:hover { clip-path: none; }
+  .lg-focus-clip-none:focus { clip-path: none; }
+  .lg-active-clip-none:active { clip-path: none; }
+  .lg-disabled-clip-none:disabled { clip-path: none; }
+  .lg-focus-visible-clip-none:focus-visible { clip-path: none; }
+  .lg-focus-within-clip-none:focus-within { clip-path: none; }
+  .group:hover .lg-group-hover-clip-none { clip-path: none; }
+  .lg-clip-circle { clip-path: circle(50% at 50% 50%); }
+  .lg-hover-clip-circle:hover { clip-path: circle(50% at 50% 50%); }
+  .lg-focus-clip-circle:focus { clip-path: circle(50% at 50% 50%); }
+  .lg-active-clip-circle:active { clip-path: circle(50% at 50% 50%); }
+  .lg-disabled-clip-circle:disabled { clip-path: circle(50% at 50% 50%); }
+  .lg-focus-visible-clip-circle:focus-visible { clip-path: circle(50% at 50% 50%); }
+  .lg-focus-within-clip-circle:focus-within { clip-path: circle(50% at 50% 50%); }
+  .group:hover .lg-group-hover-clip-circle { clip-path: circle(50% at 50% 50%); }
+  .lg-clip-ellipse { clip-path: ellipse(50% 25% at 50% 50%); }
+  .lg-hover-clip-ellipse:hover { clip-path: ellipse(50% 25% at 50% 50%); }
+  .lg-focus-clip-ellipse:focus { clip-path: ellipse(50% 25% at 50% 50%); }
+  .lg-active-clip-ellipse:active { clip-path: ellipse(50% 25% at 50% 50%); }
+  .lg-disabled-clip-ellipse:disabled { clip-path: ellipse(50% 25% at 50% 50%); }
+  .lg-focus-visible-clip-ellipse:focus-visible { clip-path: ellipse(50% 25% at 50% 50%); }
+  .lg-focus-within-clip-ellipse:focus-within { clip-path: ellipse(50% 25% at 50% 50%); }
+  .group:hover .lg-group-hover-clip-ellipse { clip-path: ellipse(50% 25% at 50% 50%); }
+  .lg-clip-inset { clip-path: inset(0); }
+  .lg-hover-clip-inset:hover { clip-path: inset(0); }
+  .lg-focus-clip-inset:focus { clip-path: inset(0); }
+  .lg-active-clip-inset:active { clip-path: inset(0); }
+  .lg-disabled-clip-inset:disabled { clip-path: inset(0); }
+  .lg-focus-visible-clip-inset:focus-visible { clip-path: inset(0); }
+  .lg-focus-within-clip-inset:focus-within { clip-path: inset(0); }
+  .group:hover .lg-group-hover-clip-inset { clip-path: inset(0); }
+  .lg-clip-triangle { clip-path: polygon(50% 0%, 0% 100%, 100% 100%); }
+  .lg-hover-clip-triangle:hover { clip-path: polygon(50% 0%, 0% 100%, 100% 100%); }
+  .lg-focus-clip-triangle:focus { clip-path: polygon(50% 0%, 0% 100%, 100% 100%); }
+  .lg-active-clip-triangle:active { clip-path: polygon(50% 0%, 0% 100%, 100% 100%); }
+  .lg-disabled-clip-triangle:disabled { clip-path: polygon(50% 0%, 0% 100%, 100% 100%); }
+  .lg-focus-visible-clip-triangle:focus-visible { clip-path: polygon(50% 0%, 0% 100%, 100% 100%); }
+  .lg-focus-within-clip-triangle:focus-within { clip-path: polygon(50% 0%, 0% 100%, 100% 100%); }
+  .group:hover .lg-group-hover-clip-triangle { clip-path: polygon(50% 0%, 0% 100%, 100% 100%); }
+  .lg-margin-block-start-1 { margin-block-start: 1rem; }
+  .lg-hover-margin-block-start-1:hover { margin-block-start: 1rem; }
+  .lg-focus-margin-block-start-1:focus { margin-block-start: 1rem; }
+  .lg-active-margin-block-start-1:active { margin-block-start: 1rem; }
+  .lg-disabled-margin-block-start-1:disabled { margin-block-start: 1rem; }
+  .lg-focus-visible-margin-block-start-1:focus-visible { margin-block-start: 1rem; }
+  .lg-focus-within-margin-block-start-1:focus-within { margin-block-start: 1rem; }
+  .group:hover .lg-group-hover-margin-block-start-1 { margin-block-start: 1rem; }
+  .lg-margin-block-end-1 { margin-block-end: 1rem; }
+  .lg-hover-margin-block-end-1:hover { margin-block-end: 1rem; }
+  .lg-focus-margin-block-end-1:focus { margin-block-end: 1rem; }
+  .lg-active-margin-block-end-1:active { margin-block-end: 1rem; }
+  .lg-disabled-margin-block-end-1:disabled { margin-block-end: 1rem; }
+  .lg-focus-visible-margin-block-end-1:focus-visible { margin-block-end: 1rem; }
+  .lg-focus-within-margin-block-end-1:focus-within { margin-block-end: 1rem; }
+  .group:hover .lg-group-hover-margin-block-end-1 { margin-block-end: 1rem; }
+  .lg-margin-inline-start-1 { margin-inline-start: 1rem; }
+  .lg-hover-margin-inline-start-1:hover { margin-inline-start: 1rem; }
+  .lg-focus-margin-inline-start-1:focus { margin-inline-start: 1rem; }
+  .lg-active-margin-inline-start-1:active { margin-inline-start: 1rem; }
+  .lg-disabled-margin-inline-start-1:disabled { margin-inline-start: 1rem; }
+  .lg-focus-visible-margin-inline-start-1:focus-visible { margin-inline-start: 1rem; }
+  .lg-focus-within-margin-inline-start-1:focus-within { margin-inline-start: 1rem; }
+  .group:hover .lg-group-hover-margin-inline-start-1 { margin-inline-start: 1rem; }
+  .lg-margin-inline-end-1 { margin-inline-end: 1rem; }
+  .lg-hover-margin-inline-end-1:hover { margin-inline-end: 1rem; }
+  .lg-focus-margin-inline-end-1:focus { margin-inline-end: 1rem; }
+  .lg-active-margin-inline-end-1:active { margin-inline-end: 1rem; }
+  .lg-disabled-margin-inline-end-1:disabled { margin-inline-end: 1rem; }
+  .lg-focus-visible-margin-inline-end-1:focus-visible { margin-inline-end: 1rem; }
+  .lg-focus-within-margin-inline-end-1:focus-within { margin-inline-end: 1rem; }
+  .group:hover .lg-group-hover-margin-inline-end-1 { margin-inline-end: 1rem; }
+  .lg-padding-block-start-1 { padding-block-start: 1rem; }
+  .lg-hover-padding-block-start-1:hover { padding-block-start: 1rem; }
+  .lg-focus-padding-block-start-1:focus { padding-block-start: 1rem; }
+  .lg-active-padding-block-start-1:active { padding-block-start: 1rem; }
+  .lg-disabled-padding-block-start-1:disabled { padding-block-start: 1rem; }
+  .lg-focus-visible-padding-block-start-1:focus-visible { padding-block-start: 1rem; }
+  .lg-focus-within-padding-block-start-1:focus-within { padding-block-start: 1rem; }
+  .group:hover .lg-group-hover-padding-block-start-1 { padding-block-start: 1rem; }
+  .lg-padding-block-end-1 { padding-block-end: 1rem; }
+  .lg-hover-padding-block-end-1:hover { padding-block-end: 1rem; }
+  .lg-focus-padding-block-end-1:focus { padding-block-end: 1rem; }
+  .lg-active-padding-block-end-1:active { padding-block-end: 1rem; }
+  .lg-disabled-padding-block-end-1:disabled { padding-block-end: 1rem; }
+  .lg-focus-visible-padding-block-end-1:focus-visible { padding-block-end: 1rem; }
+  .lg-focus-within-padding-block-end-1:focus-within { padding-block-end: 1rem; }
+  .group:hover .lg-group-hover-padding-block-end-1 { padding-block-end: 1rem; }
+  .lg-padding-inline-start-1 { padding-inline-start: 1rem; }
+  .lg-hover-padding-inline-start-1:hover { padding-inline-start: 1rem; }
+  .lg-focus-padding-inline-start-1:focus { padding-inline-start: 1rem; }
+  .lg-active-padding-inline-start-1:active { padding-inline-start: 1rem; }
+  .lg-disabled-padding-inline-start-1:disabled { padding-inline-start: 1rem; }
+  .lg-focus-visible-padding-inline-start-1:focus-visible { padding-inline-start: 1rem; }
+  .lg-focus-within-padding-inline-start-1:focus-within { padding-inline-start: 1rem; }
+  .group:hover .lg-group-hover-padding-inline-start-1 { padding-inline-start: 1rem; }
+  .lg-padding-inline-end-1 { padding-inline-end: 1rem; }
+  .lg-hover-padding-inline-end-1:hover { padding-inline-end: 1rem; }
+  .lg-focus-padding-inline-end-1:focus { padding-inline-end: 1rem; }
+  .lg-active-padding-inline-end-1:active { padding-inline-end: 1rem; }
+  .lg-disabled-padding-inline-end-1:disabled { padding-inline-end: 1rem; }
+  .lg-focus-visible-padding-inline-end-1:focus-visible { padding-inline-end: 1rem; }
+  .lg-focus-within-padding-inline-end-1:focus-within { padding-inline-end: 1rem; }
+  .group:hover .lg-group-hover-padding-inline-end-1 { padding-inline-end: 1rem; }
+  .lg-break-after-auto { break-after: auto; }
+  .lg-hover-break-after-auto:hover { break-after: auto; }
+  .lg-focus-break-after-auto:focus { break-after: auto; }
+  .lg-active-break-after-auto:active { break-after: auto; }
+  .lg-disabled-break-after-auto:disabled { break-after: auto; }
+  .lg-focus-visible-break-after-auto:focus-visible { break-after: auto; }
+  .lg-focus-within-break-after-auto:focus-within { break-after: auto; }
+  .group:hover .lg-group-hover-break-after-auto { break-after: auto; }
+  .lg-break-after-avoid { break-after: avoid; }
+  .lg-hover-break-after-avoid:hover { break-after: avoid; }
+  .lg-focus-break-after-avoid:focus { break-after: avoid; }
+  .lg-active-break-after-avoid:active { break-after: avoid; }
+  .lg-disabled-break-after-avoid:disabled { break-after: avoid; }
+  .lg-focus-visible-break-after-avoid:focus-visible { break-after: avoid; }
+  .lg-focus-within-break-after-avoid:focus-within { break-after: avoid; }
+  .group:hover .lg-group-hover-break-after-avoid { break-after: avoid; }
+  .lg-break-after-all { break-after: all; }
+  .lg-hover-break-after-all:hover { break-after: all; }
+  .lg-focus-break-after-all:focus { break-after: all; }
+  .lg-active-break-after-all:active { break-after: all; }
+  .lg-disabled-break-after-all:disabled { break-after: all; }
+  .lg-focus-visible-break-after-all:focus-visible { break-after: all; }
+  .lg-focus-within-break-after-all:focus-within { break-after: all; }
+  .group:hover .lg-group-hover-break-after-all { break-after: all; }
+  .lg-break-after-avoid-page { break-after: avoid-page; }
+  .lg-hover-break-after-avoid-page:hover { break-after: avoid-page; }
+  .lg-focus-break-after-avoid-page:focus { break-after: avoid-page; }
+  .lg-active-break-after-avoid-page:active { break-after: avoid-page; }
+  .lg-disabled-break-after-avoid-page:disabled { break-after: avoid-page; }
+  .lg-focus-visible-break-after-avoid-page:focus-visible { break-after: avoid-page; }
+  .lg-focus-within-break-after-avoid-page:focus-within { break-after: avoid-page; }
+  .group:hover .lg-group-hover-break-after-avoid-page { break-after: avoid-page; }
+  .lg-break-after-page { break-after: page; }
+  .lg-hover-break-after-page:hover { break-after: page; }
+  .lg-focus-break-after-page:focus { break-after: page; }
+  .lg-active-break-after-page:active { break-after: page; }
+  .lg-disabled-break-after-page:disabled { break-after: page; }
+  .lg-focus-visible-break-after-page:focus-visible { break-after: page; }
+  .lg-focus-within-break-after-page:focus-within { break-after: page; }
+  .group:hover .lg-group-hover-break-after-page { break-after: page; }
+  .lg-break-after-left { break-after: left; }
+  .lg-hover-break-after-left:hover { break-after: left; }
+  .lg-focus-break-after-left:focus { break-after: left; }
+  .lg-active-break-after-left:active { break-after: left; }
+  .lg-disabled-break-after-left:disabled { break-after: left; }
+  .lg-focus-visible-break-after-left:focus-visible { break-after: left; }
+  .lg-focus-within-break-after-left:focus-within { break-after: left; }
+  .group:hover .lg-group-hover-break-after-left { break-after: left; }
+  .lg-break-after-right { break-after: right; }
+  .lg-hover-break-after-right:hover { break-after: right; }
+  .lg-focus-break-after-right:focus { break-after: right; }
+  .lg-active-break-after-right:active { break-after: right; }
+  .lg-disabled-break-after-right:disabled { break-after: right; }
+  .lg-focus-visible-break-after-right:focus-visible { break-after: right; }
+  .lg-focus-within-break-after-right:focus-within { break-after: right; }
+  .group:hover .lg-group-hover-break-after-right { break-after: right; }
+  .lg-break-after-column { break-after: column; }
+  .lg-hover-break-after-column:hover { break-after: column; }
+  .lg-focus-break-after-column:focus { break-after: column; }
+  .lg-active-break-after-column:active { break-after: column; }
+  .lg-disabled-break-after-column:disabled { break-after: column; }
+  .lg-focus-visible-break-after-column:focus-visible { break-after: column; }
+  .lg-focus-within-break-after-column:focus-within { break-after: column; }
+  .group:hover .lg-group-hover-break-after-column { break-after: column; }
+  .lg-break-before-auto { break-before: auto; }
+  .lg-hover-break-before-auto:hover { break-before: auto; }
+  .lg-focus-break-before-auto:focus { break-before: auto; }
+  .lg-active-break-before-auto:active { break-before: auto; }
+  .lg-disabled-break-before-auto:disabled { break-before: auto; }
+  .lg-focus-visible-break-before-auto:focus-visible { break-before: auto; }
+  .lg-focus-within-break-before-auto:focus-within { break-before: auto; }
+  .group:hover .lg-group-hover-break-before-auto { break-before: auto; }
+  .lg-break-before-avoid { break-before: avoid; }
+  .lg-hover-break-before-avoid:hover { break-before: avoid; }
+  .lg-focus-break-before-avoid:focus { break-before: avoid; }
+  .lg-active-break-before-avoid:active { break-before: avoid; }
+  .lg-disabled-break-before-avoid:disabled { break-before: avoid; }
+  .lg-focus-visible-break-before-avoid:focus-visible { break-before: avoid; }
+  .lg-focus-within-break-before-avoid:focus-within { break-before: avoid; }
+  .group:hover .lg-group-hover-break-before-avoid { break-before: avoid; }
+  .lg-break-before-all { break-before: all; }
+  .lg-hover-break-before-all:hover { break-before: all; }
+  .lg-focus-break-before-all:focus { break-before: all; }
+  .lg-active-break-before-all:active { break-before: all; }
+  .lg-disabled-break-before-all:disabled { break-before: all; }
+  .lg-focus-visible-break-before-all:focus-visible { break-before: all; }
+  .lg-focus-within-break-before-all:focus-within { break-before: all; }
+  .group:hover .lg-group-hover-break-before-all { break-before: all; }
+  .lg-break-before-avoid-page { break-before: avoid-page; }
+  .lg-hover-break-before-avoid-page:hover { break-before: avoid-page; }
+  .lg-focus-break-before-avoid-page:focus { break-before: avoid-page; }
+  .lg-active-break-before-avoid-page:active { break-before: avoid-page; }
+  .lg-disabled-break-before-avoid-page:disabled { break-before: avoid-page; }
+  .lg-focus-visible-break-before-avoid-page:focus-visible { break-before: avoid-page; }
+  .lg-focus-within-break-before-avoid-page:focus-within { break-before: avoid-page; }
+  .group:hover .lg-group-hover-break-before-avoid-page { break-before: avoid-page; }
+  .lg-break-before-page { break-before: page; }
+  .lg-hover-break-before-page:hover { break-before: page; }
+  .lg-focus-break-before-page:focus { break-before: page; }
+  .lg-active-break-before-page:active { break-before: page; }
+  .lg-disabled-break-before-page:disabled { break-before: page; }
+  .lg-focus-visible-break-before-page:focus-visible { break-before: page; }
+  .lg-focus-within-break-before-page:focus-within { break-before: page; }
+  .group:hover .lg-group-hover-break-before-page { break-before: page; }
+  .lg-break-before-left { break-before: left; }
+  .lg-hover-break-before-left:hover { break-before: left; }
+  .lg-focus-break-before-left:focus { break-before: left; }
+  .lg-active-break-before-left:active { break-before: left; }
+  .lg-disabled-break-before-left:disabled { break-before: left; }
+  .lg-focus-visible-break-before-left:focus-visible { break-before: left; }
+  .lg-focus-within-break-before-left:focus-within { break-before: left; }
+  .group:hover .lg-group-hover-break-before-left { break-before: left; }
+  .lg-break-before-right { break-before: right; }
+  .lg-hover-break-before-right:hover { break-before: right; }
+  .lg-focus-break-before-right:focus { break-before: right; }
+  .lg-active-break-before-right:active { break-before: right; }
+  .lg-disabled-break-before-right:disabled { break-before: right; }
+  .lg-focus-visible-break-before-right:focus-visible { break-before: right; }
+  .lg-focus-within-break-before-right:focus-within { break-before: right; }
+  .group:hover .lg-group-hover-break-before-right { break-before: right; }
+  .lg-break-before-column { break-before: column; }
+  .lg-hover-break-before-column:hover { break-before: column; }
+  .lg-focus-break-before-column:focus { break-before: column; }
+  .lg-active-break-before-column:active { break-before: column; }
+  .lg-disabled-break-before-column:disabled { break-before: column; }
+  .lg-focus-visible-break-before-column:focus-visible { break-before: column; }
+  .lg-focus-within-break-before-column:focus-within { break-before: column; }
+  .group:hover .lg-group-hover-break-before-column { break-before: column; }
+  .lg-break-inside-auto { break-inside: auto; }
+  .lg-hover-break-inside-auto:hover { break-inside: auto; }
+  .lg-focus-break-inside-auto:focus { break-inside: auto; }
+  .lg-active-break-inside-auto:active { break-inside: auto; }
+  .lg-disabled-break-inside-auto:disabled { break-inside: auto; }
+  .lg-focus-visible-break-inside-auto:focus-visible { break-inside: auto; }
+  .lg-focus-within-break-inside-auto:focus-within { break-inside: auto; }
+  .group:hover .lg-group-hover-break-inside-auto { break-inside: auto; }
+  .lg-break-inside-avoid { break-inside: avoid; }
+  .lg-hover-break-inside-avoid:hover { break-inside: avoid; }
+  .lg-focus-break-inside-avoid:focus { break-inside: avoid; }
+  .lg-active-break-inside-avoid:active { break-inside: avoid; }
+  .lg-disabled-break-inside-avoid:disabled { break-inside: avoid; }
+  .lg-focus-visible-break-inside-avoid:focus-visible { break-inside: avoid; }
+  .lg-focus-within-break-inside-avoid:focus-within { break-inside: avoid; }
+  .group:hover .lg-group-hover-break-inside-avoid { break-inside: avoid; }
+  .lg-break-inside-avoid-page { break-inside: avoid-page; }
+  .lg-hover-break-inside-avoid-page:hover { break-inside: avoid-page; }
+  .lg-focus-break-inside-avoid-page:focus { break-inside: avoid-page; }
+  .lg-active-break-inside-avoid-page:active { break-inside: avoid-page; }
+  .lg-disabled-break-inside-avoid-page:disabled { break-inside: avoid-page; }
+  .lg-focus-visible-break-inside-avoid-page:focus-visible { break-inside: avoid-page; }
+  .lg-focus-within-break-inside-avoid-page:focus-within { break-inside: avoid-page; }
+  .group:hover .lg-group-hover-break-inside-avoid-page { break-inside: avoid-page; }
+  .lg-break-inside-avoid-column { break-inside: avoid-column; }
+  .lg-hover-break-inside-avoid-column:hover { break-inside: avoid-column; }
+  .lg-focus-break-inside-avoid-column:focus { break-inside: avoid-column; }
+  .lg-active-break-inside-avoid-column:active { break-inside: avoid-column; }
+  .lg-disabled-break-inside-avoid-column:disabled { break-inside: avoid-column; }
+  .lg-focus-visible-break-inside-avoid-column:focus-visible { break-inside: avoid-column; }
+  .lg-focus-within-break-inside-avoid-column:focus-within { break-inside: avoid-column; }
+  .group:hover .lg-group-hover-break-inside-avoid-column { break-inside: avoid-column; }
+  .lg-clip-none { clip-path: none; }
+  .lg-hover-clip-none:hover { clip-path: none; }
+  .lg-focus-clip-none:focus { clip-path: none; }
+  .lg-active-clip-none:active { clip-path: none; }
+  .lg-disabled-clip-none:disabled { clip-path: none; }
+  .lg-focus-visible-clip-none:focus-visible { clip-path: none; }
+  .lg-focus-within-clip-none:focus-within { clip-path: none; }
+  .group:hover .lg-group-hover-clip-none { clip-path: none; }
+  .lg-clip-circle { clip-path: circle(50%); }
+  .lg-hover-clip-circle:hover { clip-path: circle(50%); }
+  .lg-focus-clip-circle:focus { clip-path: circle(50%); }
+  .lg-active-clip-circle:active { clip-path: circle(50%); }
+  .lg-disabled-clip-circle:disabled { clip-path: circle(50%); }
+  .lg-focus-visible-clip-circle:focus-visible { clip-path: circle(50%); }
+  .lg-focus-within-clip-circle:focus-within { clip-path: circle(50%); }
+  .group:hover .lg-group-hover-clip-circle { clip-path: circle(50%); }
+  .lg-clip-ellipse { clip-path: ellipse(50% 75%); }
+  .lg-hover-clip-ellipse:hover { clip-path: ellipse(50% 75%); }
+  .lg-focus-clip-ellipse:focus { clip-path: ellipse(50% 75%); }
+  .lg-active-clip-ellipse:active { clip-path: ellipse(50% 75%); }
+  .lg-disabled-clip-ellipse:disabled { clip-path: ellipse(50% 75%); }
+  .lg-focus-visible-clip-ellipse:focus-visible { clip-path: ellipse(50% 75%); }
+  .lg-focus-within-clip-ellipse:focus-within { clip-path: ellipse(50% 75%); }
+  .group:hover .lg-group-hover-clip-ellipse { clip-path: ellipse(50% 75%); }
+  .lg-clip-inset { clip-path: inset(10%); }
+  .lg-hover-clip-inset:hover { clip-path: inset(10%); }
+  .lg-focus-clip-inset:focus { clip-path: inset(10%); }
+  .lg-active-clip-inset:active { clip-path: inset(10%); }
+  .lg-disabled-clip-inset:disabled { clip-path: inset(10%); }
+  .lg-focus-visible-clip-inset:focus-visible { clip-path: inset(10%); }
+  .lg-focus-within-clip-inset:focus-within { clip-path: inset(10%); }
+  .group:hover .lg-group-hover-clip-inset { clip-path: inset(10%); }
+  .lg-clip-polygon { clip-path: polygon(0 0,100% 0,100% 100%,0 100%); }
+  .lg-hover-clip-polygon:hover { clip-path: polygon(0 0,100% 0,100% 100%,0 100%); }
+  .lg-focus-clip-polygon:focus { clip-path: polygon(0 0,100% 0,100% 100%,0 100%); }
+  .lg-active-clip-polygon:active { clip-path: polygon(0 0,100% 0,100% 100%,0 100%); }
+  .lg-disabled-clip-polygon:disabled { clip-path: polygon(0 0,100% 0,100% 100%,0 100%); }
+  .lg-focus-visible-clip-polygon:focus-visible { clip-path: polygon(0 0,100% 0,100% 100%,0 100%); }
+  .lg-focus-within-clip-polygon:focus-within { clip-path: polygon(0 0,100% 0,100% 100%,0 100%); }
+  .group:hover .lg-group-hover-clip-polygon { clip-path: polygon(0 0,100% 0,100% 100%,0 100%); }
+}
+
+/* XL Breakpoint */
+@media (min-width: 1280px) {
+  .xl-clip-none { clip-path: none; }
+  .xl-hover-clip-none:hover { clip-path: none; }
+  .xl-focus-clip-none:focus { clip-path: none; }
+  .xl-active-clip-none:active { clip-path: none; }
+  .xl-disabled-clip-none:disabled { clip-path: none; }
+  .xl-focus-visible-clip-none:focus-visible { clip-path: none; }
+  .xl-focus-within-clip-none:focus-within { clip-path: none; }
+  .group:hover .xl-group-hover-clip-none { clip-path: none; }
+  .xl-clip-circle { clip-path: circle(50% at 50% 50%); }
+  .xl-hover-clip-circle:hover { clip-path: circle(50% at 50% 50%); }
+  .xl-focus-clip-circle:focus { clip-path: circle(50% at 50% 50%); }
+  .xl-active-clip-circle:active { clip-path: circle(50% at 50% 50%); }
+  .xl-disabled-clip-circle:disabled { clip-path: circle(50% at 50% 50%); }
+  .xl-focus-visible-clip-circle:focus-visible { clip-path: circle(50% at 50% 50%); }
+  .xl-focus-within-clip-circle:focus-within { clip-path: circle(50% at 50% 50%); }
+  .group:hover .xl-group-hover-clip-circle { clip-path: circle(50% at 50% 50%); }
+  .xl-clip-ellipse { clip-path: ellipse(50% 25% at 50% 50%); }
+  .xl-hover-clip-ellipse:hover { clip-path: ellipse(50% 25% at 50% 50%); }
+  .xl-focus-clip-ellipse:focus { clip-path: ellipse(50% 25% at 50% 50%); }
+  .xl-active-clip-ellipse:active { clip-path: ellipse(50% 25% at 50% 50%); }
+  .xl-disabled-clip-ellipse:disabled { clip-path: ellipse(50% 25% at 50% 50%); }
+  .xl-focus-visible-clip-ellipse:focus-visible { clip-path: ellipse(50% 25% at 50% 50%); }
+  .xl-focus-within-clip-ellipse:focus-within { clip-path: ellipse(50% 25% at 50% 50%); }
+  .group:hover .xl-group-hover-clip-ellipse { clip-path: ellipse(50% 25% at 50% 50%); }
+  .xl-clip-inset { clip-path: inset(0); }
+  .xl-hover-clip-inset:hover { clip-path: inset(0); }
+  .xl-focus-clip-inset:focus { clip-path: inset(0); }
+  .xl-active-clip-inset:active { clip-path: inset(0); }
+  .xl-disabled-clip-inset:disabled { clip-path: inset(0); }
+  .xl-focus-visible-clip-inset:focus-visible { clip-path: inset(0); }
+  .xl-focus-within-clip-inset:focus-within { clip-path: inset(0); }
+  .group:hover .xl-group-hover-clip-inset { clip-path: inset(0); }
+  .xl-clip-triangle { clip-path: polygon(50% 0%, 0% 100%, 100% 100%); }
+  .xl-hover-clip-triangle:hover { clip-path: polygon(50% 0%, 0% 100%, 100% 100%); }
+  .xl-focus-clip-triangle:focus { clip-path: polygon(50% 0%, 0% 100%, 100% 100%); }
+  .xl-active-clip-triangle:active { clip-path: polygon(50% 0%, 0% 100%, 100% 100%); }
+  .xl-disabled-clip-triangle:disabled { clip-path: polygon(50% 0%, 0% 100%, 100% 100%); }
+  .xl-focus-visible-clip-triangle:focus-visible { clip-path: polygon(50% 0%, 0% 100%, 100% 100%); }
+  .xl-focus-within-clip-triangle:focus-within { clip-path: polygon(50% 0%, 0% 100%, 100% 100%); }
+  .group:hover .xl-group-hover-clip-triangle { clip-path: polygon(50% 0%, 0% 100%, 100% 100%); }
+  .xl-margin-block-start-1 { margin-block-start: 1rem; }
+  .xl-hover-margin-block-start-1:hover { margin-block-start: 1rem; }
+  .xl-focus-margin-block-start-1:focus { margin-block-start: 1rem; }
+  .xl-active-margin-block-start-1:active { margin-block-start: 1rem; }
+  .xl-disabled-margin-block-start-1:disabled { margin-block-start: 1rem; }
+  .xl-focus-visible-margin-block-start-1:focus-visible { margin-block-start: 1rem; }
+  .xl-focus-within-margin-block-start-1:focus-within { margin-block-start: 1rem; }
+  .group:hover .xl-group-hover-margin-block-start-1 { margin-block-start: 1rem; }
+  .xl-margin-block-end-1 { margin-block-end: 1rem; }
+  .xl-hover-margin-block-end-1:hover { margin-block-end: 1rem; }
+  .xl-focus-margin-block-end-1:focus { margin-block-end: 1rem; }
+  .xl-active-margin-block-end-1:active { margin-block-end: 1rem; }
+  .xl-disabled-margin-block-end-1:disabled { margin-block-end: 1rem; }
+  .xl-focus-visible-margin-block-end-1:focus-visible { margin-block-end: 1rem; }
+  .xl-focus-within-margin-block-end-1:focus-within { margin-block-end: 1rem; }
+  .group:hover .xl-group-hover-margin-block-end-1 { margin-block-end: 1rem; }
+  .xl-margin-inline-start-1 { margin-inline-start: 1rem; }
+  .xl-hover-margin-inline-start-1:hover { margin-inline-start: 1rem; }
+  .xl-focus-margin-inline-start-1:focus { margin-inline-start: 1rem; }
+  .xl-active-margin-inline-start-1:active { margin-inline-start: 1rem; }
+  .xl-disabled-margin-inline-start-1:disabled { margin-inline-start: 1rem; }
+  .xl-focus-visible-margin-inline-start-1:focus-visible { margin-inline-start: 1rem; }
+  .xl-focus-within-margin-inline-start-1:focus-within { margin-inline-start: 1rem; }
+  .group:hover .xl-group-hover-margin-inline-start-1 { margin-inline-start: 1rem; }
+  .xl-margin-inline-end-1 { margin-inline-end: 1rem; }
+  .xl-hover-margin-inline-end-1:hover { margin-inline-end: 1rem; }
+  .xl-focus-margin-inline-end-1:focus { margin-inline-end: 1rem; }
+  .xl-active-margin-inline-end-1:active { margin-inline-end: 1rem; }
+  .xl-disabled-margin-inline-end-1:disabled { margin-inline-end: 1rem; }
+  .xl-focus-visible-margin-inline-end-1:focus-visible { margin-inline-end: 1rem; }
+  .xl-focus-within-margin-inline-end-1:focus-within { margin-inline-end: 1rem; }
+  .group:hover .xl-group-hover-margin-inline-end-1 { margin-inline-end: 1rem; }
+  .xl-padding-block-start-1 { padding-block-start: 1rem; }
+  .xl-hover-padding-block-start-1:hover { padding-block-start: 1rem; }
+  .xl-focus-padding-block-start-1:focus { padding-block-start: 1rem; }
+  .xl-active-padding-block-start-1:active { padding-block-start: 1rem; }
+  .xl-disabled-padding-block-start-1:disabled { padding-block-start: 1rem; }
+  .xl-focus-visible-padding-block-start-1:focus-visible { padding-block-start: 1rem; }
+  .xl-focus-within-padding-block-start-1:focus-within { padding-block-start: 1rem; }
+  .group:hover .xl-group-hover-padding-block-start-1 { padding-block-start: 1rem; }
+  .xl-padding-block-end-1 { padding-block-end: 1rem; }
+  .xl-hover-padding-block-end-1:hover { padding-block-end: 1rem; }
+  .xl-focus-padding-block-end-1:focus { padding-block-end: 1rem; }
+  .xl-active-padding-block-end-1:active { padding-block-end: 1rem; }
+  .xl-disabled-padding-block-end-1:disabled { padding-block-end: 1rem; }
+  .xl-focus-visible-padding-block-end-1:focus-visible { padding-block-end: 1rem; }
+  .xl-focus-within-padding-block-end-1:focus-within { padding-block-end: 1rem; }
+  .group:hover .xl-group-hover-padding-block-end-1 { padding-block-end: 1rem; }
+  .xl-padding-inline-start-1 { padding-inline-start: 1rem; }
+  .xl-hover-padding-inline-start-1:hover { padding-inline-start: 1rem; }
+  .xl-focus-padding-inline-start-1:focus { padding-inline-start: 1rem; }
+  .xl-active-padding-inline-start-1:active { padding-inline-start: 1rem; }
+  .xl-disabled-padding-inline-start-1:disabled { padding-inline-start: 1rem; }
+  .xl-focus-visible-padding-inline-start-1:focus-visible { padding-inline-start: 1rem; }
+  .xl-focus-within-padding-inline-start-1:focus-within { padding-inline-start: 1rem; }
+  .group:hover .xl-group-hover-padding-inline-start-1 { padding-inline-start: 1rem; }
+  .xl-padding-inline-end-1 { padding-inline-end: 1rem; }
+  .xl-hover-padding-inline-end-1:hover { padding-inline-end: 1rem; }
+  .xl-focus-padding-inline-end-1:focus { padding-inline-end: 1rem; }
+  .xl-active-padding-inline-end-1:active { padding-inline-end: 1rem; }
+  .xl-disabled-padding-inline-end-1:disabled { padding-inline-end: 1rem; }
+  .xl-focus-visible-padding-inline-end-1:focus-visible { padding-inline-end: 1rem; }
+  .xl-focus-within-padding-inline-end-1:focus-within { padding-inline-end: 1rem; }
+  .group:hover .xl-group-hover-padding-inline-end-1 { padding-inline-end: 1rem; }
+  .xl-break-after-auto { break-after: auto; }
+  .xl-hover-break-after-auto:hover { break-after: auto; }
+  .xl-focus-break-after-auto:focus { break-after: auto; }
+  .xl-active-break-after-auto:active { break-after: auto; }
+  .xl-disabled-break-after-auto:disabled { break-after: auto; }
+  .xl-focus-visible-break-after-auto:focus-visible { break-after: auto; }
+  .xl-focus-within-break-after-auto:focus-within { break-after: auto; }
+  .group:hover .xl-group-hover-break-after-auto { break-after: auto; }
+  .xl-break-after-avoid { break-after: avoid; }
+  .xl-hover-break-after-avoid:hover { break-after: avoid; }
+  .xl-focus-break-after-avoid:focus { break-after: avoid; }
+  .xl-active-break-after-avoid:active { break-after: avoid; }
+  .xl-disabled-break-after-avoid:disabled { break-after: avoid; }
+  .xl-focus-visible-break-after-avoid:focus-visible { break-after: avoid; }
+  .xl-focus-within-break-after-avoid:focus-within { break-after: avoid; }
+  .group:hover .xl-group-hover-break-after-avoid { break-after: avoid; }
+  .xl-break-after-all { break-after: all; }
+  .xl-hover-break-after-all:hover { break-after: all; }
+  .xl-focus-break-after-all:focus { break-after: all; }
+  .xl-active-break-after-all:active { break-after: all; }
+  .xl-disabled-break-after-all:disabled { break-after: all; }
+  .xl-focus-visible-break-after-all:focus-visible { break-after: all; }
+  .xl-focus-within-break-after-all:focus-within { break-after: all; }
+  .group:hover .xl-group-hover-break-after-all { break-after: all; }
+  .xl-break-after-avoid-page { break-after: avoid-page; }
+  .xl-hover-break-after-avoid-page:hover { break-after: avoid-page; }
+  .xl-focus-break-after-avoid-page:focus { break-after: avoid-page; }
+  .xl-active-break-after-avoid-page:active { break-after: avoid-page; }
+  .xl-disabled-break-after-avoid-page:disabled { break-after: avoid-page; }
+  .xl-focus-visible-break-after-avoid-page:focus-visible { break-after: avoid-page; }
+  .xl-focus-within-break-after-avoid-page:focus-within { break-after: avoid-page; }
+  .group:hover .xl-group-hover-break-after-avoid-page { break-after: avoid-page; }
+  .xl-break-after-page { break-after: page; }
+  .xl-hover-break-after-page:hover { break-after: page; }
+  .xl-focus-break-after-page:focus { break-after: page; }
+  .xl-active-break-after-page:active { break-after: page; }
+  .xl-disabled-break-after-page:disabled { break-after: page; }
+  .xl-focus-visible-break-after-page:focus-visible { break-after: page; }
+  .xl-focus-within-break-after-page:focus-within { break-after: page; }
+  .group:hover .xl-group-hover-break-after-page { break-after: page; }
+  .xl-break-after-left { break-after: left; }
+  .xl-hover-break-after-left:hover { break-after: left; }
+  .xl-focus-break-after-left:focus { break-after: left; }
+  .xl-active-break-after-left:active { break-after: left; }
+  .xl-disabled-break-after-left:disabled { break-after: left; }
+  .xl-focus-visible-break-after-left:focus-visible { break-after: left; }
+  .xl-focus-within-break-after-left:focus-within { break-after: left; }
+  .group:hover .xl-group-hover-break-after-left { break-after: left; }
+  .xl-break-after-right { break-after: right; }
+  .xl-hover-break-after-right:hover { break-after: right; }
+  .xl-focus-break-after-right:focus { break-after: right; }
+  .xl-active-break-after-right:active { break-after: right; }
+  .xl-disabled-break-after-right:disabled { break-after: right; }
+  .xl-focus-visible-break-after-right:focus-visible { break-after: right; }
+  .xl-focus-within-break-after-right:focus-within { break-after: right; }
+  .group:hover .xl-group-hover-break-after-right { break-after: right; }
+  .xl-break-after-column { break-after: column; }
+  .xl-hover-break-after-column:hover { break-after: column; }
+  .xl-focus-break-after-column:focus { break-after: column; }
+  .xl-active-break-after-column:active { break-after: column; }
+  .xl-disabled-break-after-column:disabled { break-after: column; }
+  .xl-focus-visible-break-after-column:focus-visible { break-after: column; }
+  .xl-focus-within-break-after-column:focus-within { break-after: column; }
+  .group:hover .xl-group-hover-break-after-column { break-after: column; }
+  .xl-break-before-auto { break-before: auto; }
+  .xl-hover-break-before-auto:hover { break-before: auto; }
+  .xl-focus-break-before-auto:focus { break-before: auto; }
+  .xl-active-break-before-auto:active { break-before: auto; }
+  .xl-disabled-break-before-auto:disabled { break-before: auto; }
+  .xl-focus-visible-break-before-auto:focus-visible { break-before: auto; }
+  .xl-focus-within-break-before-auto:focus-within { break-before: auto; }
+  .group:hover .xl-group-hover-break-before-auto { break-before: auto; }
+  .xl-break-before-avoid { break-before: avoid; }
+  .xl-hover-break-before-avoid:hover { break-before: avoid; }
+  .xl-focus-break-before-avoid:focus { break-before: avoid; }
+  .xl-active-break-before-avoid:active { break-before: avoid; }
+  .xl-disabled-break-before-avoid:disabled { break-before: avoid; }
+  .xl-focus-visible-break-before-avoid:focus-visible { break-before: avoid; }
+  .xl-focus-within-break-before-avoid:focus-within { break-before: avoid; }
+  .group:hover .xl-group-hover-break-before-avoid { break-before: avoid; }
+  .xl-break-before-all { break-before: all; }
+  .xl-hover-break-before-all:hover { break-before: all; }
+  .xl-focus-break-before-all:focus { break-before: all; }
+  .xl-active-break-before-all:active { break-before: all; }
+  .xl-disabled-break-before-all:disabled { break-before: all; }
+  .xl-focus-visible-break-before-all:focus-visible { break-before: all; }
+  .xl-focus-within-break-before-all:focus-within { break-before: all; }
+  .group:hover .xl-group-hover-break-before-all { break-before: all; }
+  .xl-break-before-avoid-page { break-before: avoid-page; }
+  .xl-hover-break-before-avoid-page:hover { break-before: avoid-page; }
+  .xl-focus-break-before-avoid-page:focus { break-before: avoid-page; }
+  .xl-active-break-before-avoid-page:active { break-before: avoid-page; }
+  .xl-disabled-break-before-avoid-page:disabled { break-before: avoid-page; }
+  .xl-focus-visible-break-before-avoid-page:focus-visible { break-before: avoid-page; }
+  .xl-focus-within-break-before-avoid-page:focus-within { break-before: avoid-page; }
+  .group:hover .xl-group-hover-break-before-avoid-page { break-before: avoid-page; }
+  .xl-break-before-page { break-before: page; }
+  .xl-hover-break-before-page:hover { break-before: page; }
+  .xl-focus-break-before-page:focus { break-before: page; }
+  .xl-active-break-before-page:active { break-before: page; }
+  .xl-disabled-break-before-page:disabled { break-before: page; }
+  .xl-focus-visible-break-before-page:focus-visible { break-before: page; }
+  .xl-focus-within-break-before-page:focus-within { break-before: page; }
+  .group:hover .xl-group-hover-break-before-page { break-before: page; }
+  .xl-break-before-left { break-before: left; }
+  .xl-hover-break-before-left:hover { break-before: left; }
+  .xl-focus-break-before-left:focus { break-before: left; }
+  .xl-active-break-before-left:active { break-before: left; }
+  .xl-disabled-break-before-left:disabled { break-before: left; }
+  .xl-focus-visible-break-before-left:focus-visible { break-before: left; }
+  .xl-focus-within-break-before-left:focus-within { break-before: left; }
+  .group:hover .xl-group-hover-break-before-left { break-before: left; }
+  .xl-break-before-right { break-before: right; }
+  .xl-hover-break-before-right:hover { break-before: right; }
+  .xl-focus-break-before-right:focus { break-before: right; }
+  .xl-active-break-before-right:active { break-before: right; }
+  .xl-disabled-break-before-right:disabled { break-before: right; }
+  .xl-focus-visible-break-before-right:focus-visible { break-before: right; }
+  .xl-focus-within-break-before-right:focus-within { break-before: right; }
+  .group:hover .xl-group-hover-break-before-right { break-before: right; }
+  .xl-break-before-column { break-before: column; }
+  .xl-hover-break-before-column:hover { break-before: column; }
+  .xl-focus-break-before-column:focus { break-before: column; }
+  .xl-active-break-before-column:active { break-before: column; }
+  .xl-disabled-break-before-column:disabled { break-before: column; }
+  .xl-focus-visible-break-before-column:focus-visible { break-before: column; }
+  .xl-focus-within-break-before-column:focus-within { break-before: column; }
+  .group:hover .xl-group-hover-break-before-column { break-before: column; }
+  .xl-break-inside-auto { break-inside: auto; }
+  .xl-hover-break-inside-auto:hover { break-inside: auto; }
+  .xl-focus-break-inside-auto:focus { break-inside: auto; }
+  .xl-active-break-inside-auto:active { break-inside: auto; }
+  .xl-disabled-break-inside-auto:disabled { break-inside: auto; }
+  .xl-focus-visible-break-inside-auto:focus-visible { break-inside: auto; }
+  .xl-focus-within-break-inside-auto:focus-within { break-inside: auto; }
+  .group:hover .xl-group-hover-break-inside-auto { break-inside: auto; }
+  .xl-break-inside-avoid { break-inside: avoid; }
+  .xl-hover-break-inside-avoid:hover { break-inside: avoid; }
+  .xl-focus-break-inside-avoid:focus { break-inside: avoid; }
+  .xl-active-break-inside-avoid:active { break-inside: avoid; }
+  .xl-disabled-break-inside-avoid:disabled { break-inside: avoid; }
+  .xl-focus-visible-break-inside-avoid:focus-visible { break-inside: avoid; }
+  .xl-focus-within-break-inside-avoid:focus-within { break-inside: avoid; }
+  .group:hover .xl-group-hover-break-inside-avoid { break-inside: avoid; }
+  .xl-break-inside-avoid-page { break-inside: avoid-page; }
+  .xl-hover-break-inside-avoid-page:hover { break-inside: avoid-page; }
+  .xl-focus-break-inside-avoid-page:focus { break-inside: avoid-page; }
+  .xl-active-break-inside-avoid-page:active { break-inside: avoid-page; }
+  .xl-disabled-break-inside-avoid-page:disabled { break-inside: avoid-page; }
+  .xl-focus-visible-break-inside-avoid-page:focus-visible { break-inside: avoid-page; }
+  .xl-focus-within-break-inside-avoid-page:focus-within { break-inside: avoid-page; }
+  .group:hover .xl-group-hover-break-inside-avoid-page { break-inside: avoid-page; }
+  .xl-break-inside-avoid-column { break-inside: avoid-column; }
+  .xl-hover-break-inside-avoid-column:hover { break-inside: avoid-column; }
+  .xl-focus-break-inside-avoid-column:focus { break-inside: avoid-column; }
+  .xl-active-break-inside-avoid-column:active { break-inside: avoid-column; }
+  .xl-disabled-break-inside-avoid-column:disabled { break-inside: avoid-column; }
+  .xl-focus-visible-break-inside-avoid-column:focus-visible { break-inside: avoid-column; }
+  .xl-focus-within-break-inside-avoid-column:focus-within { break-inside: avoid-column; }
+  .group:hover .xl-group-hover-break-inside-avoid-column { break-inside: avoid-column; }
+  .xl-clip-none { clip-path: none; }
+  .xl-hover-clip-none:hover { clip-path: none; }
+  .xl-focus-clip-none:focus { clip-path: none; }
+  .xl-active-clip-none:active { clip-path: none; }
+  .xl-disabled-clip-none:disabled { clip-path: none; }
+  .xl-focus-visible-clip-none:focus-visible { clip-path: none; }
+  .xl-focus-within-clip-none:focus-within { clip-path: none; }
+  .group:hover .xl-group-hover-clip-none { clip-path: none; }
+  .xl-clip-circle { clip-path: circle(50%); }
+  .xl-hover-clip-circle:hover { clip-path: circle(50%); }
+  .xl-focus-clip-circle:focus { clip-path: circle(50%); }
+  .xl-active-clip-circle:active { clip-path: circle(50%); }
+  .xl-disabled-clip-circle:disabled { clip-path: circle(50%); }
+  .xl-focus-visible-clip-circle:focus-visible { clip-path: circle(50%); }
+  .xl-focus-within-clip-circle:focus-within { clip-path: circle(50%); }
+  .group:hover .xl-group-hover-clip-circle { clip-path: circle(50%); }
+  .xl-clip-ellipse { clip-path: ellipse(50% 75%); }
+  .xl-hover-clip-ellipse:hover { clip-path: ellipse(50% 75%); }
+  .xl-focus-clip-ellipse:focus { clip-path: ellipse(50% 75%); }
+  .xl-active-clip-ellipse:active { clip-path: ellipse(50% 75%); }
+  .xl-disabled-clip-ellipse:disabled { clip-path: ellipse(50% 75%); }
+  .xl-focus-visible-clip-ellipse:focus-visible { clip-path: ellipse(50% 75%); }
+  .xl-focus-within-clip-ellipse:focus-within { clip-path: ellipse(50% 75%); }
+  .group:hover .xl-group-hover-clip-ellipse { clip-path: ellipse(50% 75%); }
+  .xl-clip-inset { clip-path: inset(10%); }
+  .xl-hover-clip-inset:hover { clip-path: inset(10%); }
+  .xl-focus-clip-inset:focus { clip-path: inset(10%); }
+  .xl-active-clip-inset:active { clip-path: inset(10%); }
+  .xl-disabled-clip-inset:disabled { clip-path: inset(10%); }
+  .xl-focus-visible-clip-inset:focus-visible { clip-path: inset(10%); }
+  .xl-focus-within-clip-inset:focus-within { clip-path: inset(10%); }
+  .group:hover .xl-group-hover-clip-inset { clip-path: inset(10%); }
+  .xl-clip-polygon { clip-path: polygon(0 0,100% 0,100% 100%,0 100%); }
+  .xl-hover-clip-polygon:hover { clip-path: polygon(0 0,100% 0,100% 100%,0 100%); }
+  .xl-focus-clip-polygon:focus { clip-path: polygon(0 0,100% 0,100% 100%,0 100%); }
+  .xl-active-clip-polygon:active { clip-path: polygon(0 0,100% 0,100% 100%,0 100%); }
+  .xl-disabled-clip-polygon:disabled { clip-path: polygon(0 0,100% 0,100% 100%,0 100%); }
+  .xl-focus-visible-clip-polygon:focus-visible { clip-path: polygon(0 0,100% 0,100% 100%,0 100%); }
+  .xl-focus-within-clip-polygon:focus-within { clip-path: polygon(0 0,100% 0,100% 100%,0 100%); }
+  .group:hover .xl-group-hover-clip-polygon { clip-path: polygon(0 0,100% 0,100% 100%,0 100%); }
+}
+
+/* UW Breakpoint */
+@media (min-width: 1536px) {
+  .uw-clip-none { clip-path: none; }
+  .uw-hover-clip-none:hover { clip-path: none; }
+  .uw-focus-clip-none:focus { clip-path: none; }
+  .uw-active-clip-none:active { clip-path: none; }
+  .uw-disabled-clip-none:disabled { clip-path: none; }
+  .uw-focus-visible-clip-none:focus-visible { clip-path: none; }
+  .uw-focus-within-clip-none:focus-within { clip-path: none; }
+  .group:hover .uw-group-hover-clip-none { clip-path: none; }
+  .uw-clip-circle { clip-path: circle(50% at 50% 50%); }
+  .uw-hover-clip-circle:hover { clip-path: circle(50% at 50% 50%); }
+  .uw-focus-clip-circle:focus { clip-path: circle(50% at 50% 50%); }
+  .uw-active-clip-circle:active { clip-path: circle(50% at 50% 50%); }
+  .uw-disabled-clip-circle:disabled { clip-path: circle(50% at 50% 50%); }
+  .uw-focus-visible-clip-circle:focus-visible { clip-path: circle(50% at 50% 50%); }
+  .uw-focus-within-clip-circle:focus-within { clip-path: circle(50% at 50% 50%); }
+  .group:hover .uw-group-hover-clip-circle { clip-path: circle(50% at 50% 50%); }
+  .uw-clip-ellipse { clip-path: ellipse(50% 25% at 50% 50%); }
+  .uw-hover-clip-ellipse:hover { clip-path: ellipse(50% 25% at 50% 50%); }
+  .uw-focus-clip-ellipse:focus { clip-path: ellipse(50% 25% at 50% 50%); }
+  .uw-active-clip-ellipse:active { clip-path: ellipse(50% 25% at 50% 50%); }
+  .uw-disabled-clip-ellipse:disabled { clip-path: ellipse(50% 25% at 50% 50%); }
+  .uw-focus-visible-clip-ellipse:focus-visible { clip-path: ellipse(50% 25% at 50% 50%); }
+  .uw-focus-within-clip-ellipse:focus-within { clip-path: ellipse(50% 25% at 50% 50%); }
+  .group:hover .uw-group-hover-clip-ellipse { clip-path: ellipse(50% 25% at 50% 50%); }
+  .uw-clip-inset { clip-path: inset(0); }
+  .uw-hover-clip-inset:hover { clip-path: inset(0); }
+  .uw-focus-clip-inset:focus { clip-path: inset(0); }
+  .uw-active-clip-inset:active { clip-path: inset(0); }
+  .uw-disabled-clip-inset:disabled { clip-path: inset(0); }
+  .uw-focus-visible-clip-inset:focus-visible { clip-path: inset(0); }
+  .uw-focus-within-clip-inset:focus-within { clip-path: inset(0); }
+  .group:hover .uw-group-hover-clip-inset { clip-path: inset(0); }
+  .uw-clip-triangle { clip-path: polygon(50% 0%, 0% 100%, 100% 100%); }
+  .uw-hover-clip-triangle:hover { clip-path: polygon(50% 0%, 0% 100%, 100% 100%); }
+  .uw-focus-clip-triangle:focus { clip-path: polygon(50% 0%, 0% 100%, 100% 100%); }
+  .uw-active-clip-triangle:active { clip-path: polygon(50% 0%, 0% 100%, 100% 100%); }
+  .uw-disabled-clip-triangle:disabled { clip-path: polygon(50% 0%, 0% 100%, 100% 100%); }
+  .uw-focus-visible-clip-triangle:focus-visible { clip-path: polygon(50% 0%, 0% 100%, 100% 100%); }
+  .uw-focus-within-clip-triangle:focus-within { clip-path: polygon(50% 0%, 0% 100%, 100% 100%); }
+  .group:hover .uw-group-hover-clip-triangle { clip-path: polygon(50% 0%, 0% 100%, 100% 100%); }
+  .uw-margin-block-start-1 { margin-block-start: 1rem; }
+  .uw-hover-margin-block-start-1:hover { margin-block-start: 1rem; }
+  .uw-focus-margin-block-start-1:focus { margin-block-start: 1rem; }
+  .uw-active-margin-block-start-1:active { margin-block-start: 1rem; }
+  .uw-disabled-margin-block-start-1:disabled { margin-block-start: 1rem; }
+  .uw-focus-visible-margin-block-start-1:focus-visible { margin-block-start: 1rem; }
+  .uw-focus-within-margin-block-start-1:focus-within { margin-block-start: 1rem; }
+  .group:hover .uw-group-hover-margin-block-start-1 { margin-block-start: 1rem; }
+  .uw-margin-block-end-1 { margin-block-end: 1rem; }
+  .uw-hover-margin-block-end-1:hover { margin-block-end: 1rem; }
+  .uw-focus-margin-block-end-1:focus { margin-block-end: 1rem; }
+  .uw-active-margin-block-end-1:active { margin-block-end: 1rem; }
+  .uw-disabled-margin-block-end-1:disabled { margin-block-end: 1rem; }
+  .uw-focus-visible-margin-block-end-1:focus-visible { margin-block-end: 1rem; }
+  .uw-focus-within-margin-block-end-1:focus-within { margin-block-end: 1rem; }
+  .group:hover .uw-group-hover-margin-block-end-1 { margin-block-end: 1rem; }
+  .uw-margin-inline-start-1 { margin-inline-start: 1rem; }
+  .uw-hover-margin-inline-start-1:hover { margin-inline-start: 1rem; }
+  .uw-focus-margin-inline-start-1:focus { margin-inline-start: 1rem; }
+  .uw-active-margin-inline-start-1:active { margin-inline-start: 1rem; }
+  .uw-disabled-margin-inline-start-1:disabled { margin-inline-start: 1rem; }
+  .uw-focus-visible-margin-inline-start-1:focus-visible { margin-inline-start: 1rem; }
+  .uw-focus-within-margin-inline-start-1:focus-within { margin-inline-start: 1rem; }
+  .group:hover .uw-group-hover-margin-inline-start-1 { margin-inline-start: 1rem; }
+  .uw-margin-inline-end-1 { margin-inline-end: 1rem; }
+  .uw-hover-margin-inline-end-1:hover { margin-inline-end: 1rem; }
+  .uw-focus-margin-inline-end-1:focus { margin-inline-end: 1rem; }
+  .uw-active-margin-inline-end-1:active { margin-inline-end: 1rem; }
+  .uw-disabled-margin-inline-end-1:disabled { margin-inline-end: 1rem; }
+  .uw-focus-visible-margin-inline-end-1:focus-visible { margin-inline-end: 1rem; }
+  .uw-focus-within-margin-inline-end-1:focus-within { margin-inline-end: 1rem; }
+  .group:hover .uw-group-hover-margin-inline-end-1 { margin-inline-end: 1rem; }
+  .uw-padding-block-start-1 { padding-block-start: 1rem; }
+  .uw-hover-padding-block-start-1:hover { padding-block-start: 1rem; }
+  .uw-focus-padding-block-start-1:focus { padding-block-start: 1rem; }
+  .uw-active-padding-block-start-1:active { padding-block-start: 1rem; }
+  .uw-disabled-padding-block-start-1:disabled { padding-block-start: 1rem; }
+  .uw-focus-visible-padding-block-start-1:focus-visible { padding-block-start: 1rem; }
+  .uw-focus-within-padding-block-start-1:focus-within { padding-block-start: 1rem; }
+  .group:hover .uw-group-hover-padding-block-start-1 { padding-block-start: 1rem; }
+  .uw-padding-block-end-1 { padding-block-end: 1rem; }
+  .uw-hover-padding-block-end-1:hover { padding-block-end: 1rem; }
+  .uw-focus-padding-block-end-1:focus { padding-block-end: 1rem; }
+  .uw-active-padding-block-end-1:active { padding-block-end: 1rem; }
+  .uw-disabled-padding-block-end-1:disabled { padding-block-end: 1rem; }
+  .uw-focus-visible-padding-block-end-1:focus-visible { padding-block-end: 1rem; }
+  .uw-focus-within-padding-block-end-1:focus-within { padding-block-end: 1rem; }
+  .group:hover .uw-group-hover-padding-block-end-1 { padding-block-end: 1rem; }
+  .uw-padding-inline-start-1 { padding-inline-start: 1rem; }
+  .uw-hover-padding-inline-start-1:hover { padding-inline-start: 1rem; }
+  .uw-focus-padding-inline-start-1:focus { padding-inline-start: 1rem; }
+  .uw-active-padding-inline-start-1:active { padding-inline-start: 1rem; }
+  .uw-disabled-padding-inline-start-1:disabled { padding-inline-start: 1rem; }
+  .uw-focus-visible-padding-inline-start-1:focus-visible { padding-inline-start: 1rem; }
+  .uw-focus-within-padding-inline-start-1:focus-within { padding-inline-start: 1rem; }
+  .group:hover .uw-group-hover-padding-inline-start-1 { padding-inline-start: 1rem; }
+  .uw-padding-inline-end-1 { padding-inline-end: 1rem; }
+  .uw-hover-padding-inline-end-1:hover { padding-inline-end: 1rem; }
+  .uw-focus-padding-inline-end-1:focus { padding-inline-end: 1rem; }
+  .uw-active-padding-inline-end-1:active { padding-inline-end: 1rem; }
+  .uw-disabled-padding-inline-end-1:disabled { padding-inline-end: 1rem; }
+  .uw-focus-visible-padding-inline-end-1:focus-visible { padding-inline-end: 1rem; }
+  .uw-focus-within-padding-inline-end-1:focus-within { padding-inline-end: 1rem; }
+  .group:hover .uw-group-hover-padding-inline-end-1 { padding-inline-end: 1rem; }
+  .uw-break-after-auto { break-after: auto; }
+  .uw-hover-break-after-auto:hover { break-after: auto; }
+  .uw-focus-break-after-auto:focus { break-after: auto; }
+  .uw-active-break-after-auto:active { break-after: auto; }
+  .uw-disabled-break-after-auto:disabled { break-after: auto; }
+  .uw-focus-visible-break-after-auto:focus-visible { break-after: auto; }
+  .uw-focus-within-break-after-auto:focus-within { break-after: auto; }
+  .group:hover .uw-group-hover-break-after-auto { break-after: auto; }
+  .uw-break-after-avoid { break-after: avoid; }
+  .uw-hover-break-after-avoid:hover { break-after: avoid; }
+  .uw-focus-break-after-avoid:focus { break-after: avoid; }
+  .uw-active-break-after-avoid:active { break-after: avoid; }
+  .uw-disabled-break-after-avoid:disabled { break-after: avoid; }
+  .uw-focus-visible-break-after-avoid:focus-visible { break-after: avoid; }
+  .uw-focus-within-break-after-avoid:focus-within { break-after: avoid; }
+  .group:hover .uw-group-hover-break-after-avoid { break-after: avoid; }
+  .uw-break-after-all { break-after: all; }
+  .uw-hover-break-after-all:hover { break-after: all; }
+  .uw-focus-break-after-all:focus { break-after: all; }
+  .uw-active-break-after-all:active { break-after: all; }
+  .uw-disabled-break-after-all:disabled { break-after: all; }
+  .uw-focus-visible-break-after-all:focus-visible { break-after: all; }
+  .uw-focus-within-break-after-all:focus-within { break-after: all; }
+  .group:hover .uw-group-hover-break-after-all { break-after: all; }
+  .uw-break-after-avoid-page { break-after: avoid-page; }
+  .uw-hover-break-after-avoid-page:hover { break-after: avoid-page; }
+  .uw-focus-break-after-avoid-page:focus { break-after: avoid-page; }
+  .uw-active-break-after-avoid-page:active { break-after: avoid-page; }
+  .uw-disabled-break-after-avoid-page:disabled { break-after: avoid-page; }
+  .uw-focus-visible-break-after-avoid-page:focus-visible { break-after: avoid-page; }
+  .uw-focus-within-break-after-avoid-page:focus-within { break-after: avoid-page; }
+  .group:hover .uw-group-hover-break-after-avoid-page { break-after: avoid-page; }
+  .uw-break-after-page { break-after: page; }
+  .uw-hover-break-after-page:hover { break-after: page; }
+  .uw-focus-break-after-page:focus { break-after: page; }
+  .uw-active-break-after-page:active { break-after: page; }
+  .uw-disabled-break-after-page:disabled { break-after: page; }
+  .uw-focus-visible-break-after-page:focus-visible { break-after: page; }
+  .uw-focus-within-break-after-page:focus-within { break-after: page; }
+  .group:hover .uw-group-hover-break-after-page { break-after: page; }
+  .uw-break-after-left { break-after: left; }
+  .uw-hover-break-after-left:hover { break-after: left; }
+  .uw-focus-break-after-left:focus { break-after: left; }
+  .uw-active-break-after-left:active { break-after: left; }
+  .uw-disabled-break-after-left:disabled { break-after: left; }
+  .uw-focus-visible-break-after-left:focus-visible { break-after: left; }
+  .uw-focus-within-break-after-left:focus-within { break-after: left; }
+  .group:hover .uw-group-hover-break-after-left { break-after: left; }
+  .uw-break-after-right { break-after: right; }
+  .uw-hover-break-after-right:hover { break-after: right; }
+  .uw-focus-break-after-right:focus { break-after: right; }
+  .uw-active-break-after-right:active { break-after: right; }
+  .uw-disabled-break-after-right:disabled { break-after: right; }
+  .uw-focus-visible-break-after-right:focus-visible { break-after: right; }
+  .uw-focus-within-break-after-right:focus-within { break-after: right; }
+  .group:hover .uw-group-hover-break-after-right { break-after: right; }
+  .uw-break-after-column { break-after: column; }
+  .uw-hover-break-after-column:hover { break-after: column; }
+  .uw-focus-break-after-column:focus { break-after: column; }
+  .uw-active-break-after-column:active { break-after: column; }
+  .uw-disabled-break-after-column:disabled { break-after: column; }
+  .uw-focus-visible-break-after-column:focus-visible { break-after: column; }
+  .uw-focus-within-break-after-column:focus-within { break-after: column; }
+  .group:hover .uw-group-hover-break-after-column { break-after: column; }
+  .uw-break-before-auto { break-before: auto; }
+  .uw-hover-break-before-auto:hover { break-before: auto; }
+  .uw-focus-break-before-auto:focus { break-before: auto; }
+  .uw-active-break-before-auto:active { break-before: auto; }
+  .uw-disabled-break-before-auto:disabled { break-before: auto; }
+  .uw-focus-visible-break-before-auto:focus-visible { break-before: auto; }
+  .uw-focus-within-break-before-auto:focus-within { break-before: auto; }
+  .group:hover .uw-group-hover-break-before-auto { break-before: auto; }
+  .uw-break-before-avoid { break-before: avoid; }
+  .uw-hover-break-before-avoid:hover { break-before: avoid; }
+  .uw-focus-break-before-avoid:focus { break-before: avoid; }
+  .uw-active-break-before-avoid:active { break-before: avoid; }
+  .uw-disabled-break-before-avoid:disabled { break-before: avoid; }
+  .uw-focus-visible-break-before-avoid:focus-visible { break-before: avoid; }
+  .uw-focus-within-break-before-avoid:focus-within { break-before: avoid; }
+  .group:hover .uw-group-hover-break-before-avoid { break-before: avoid; }
+  .uw-break-before-all { break-before: all; }
+  .uw-hover-break-before-all:hover { break-before: all; }
+  .uw-focus-break-before-all:focus { break-before: all; }
+  .uw-active-break-before-all:active { break-before: all; }
+  .uw-disabled-break-before-all:disabled { break-before: all; }
+  .uw-focus-visible-break-before-all:focus-visible { break-before: all; }
+  .uw-focus-within-break-before-all:focus-within { break-before: all; }
+  .group:hover .uw-group-hover-break-before-all { break-before: all; }
+  .uw-break-before-avoid-page { break-before: avoid-page; }
+  .uw-hover-break-before-avoid-page:hover { break-before: avoid-page; }
+  .uw-focus-break-before-avoid-page:focus { break-before: avoid-page; }
+  .uw-active-break-before-avoid-page:active { break-before: avoid-page; }
+  .uw-disabled-break-before-avoid-page:disabled { break-before: avoid-page; }
+  .uw-focus-visible-break-before-avoid-page:focus-visible { break-before: avoid-page; }
+  .uw-focus-within-break-before-avoid-page:focus-within { break-before: avoid-page; }
+  .group:hover .uw-group-hover-break-before-avoid-page { break-before: avoid-page; }
+  .uw-break-before-page { break-before: page; }
+  .uw-hover-break-before-page:hover { break-before: page; }
+  .uw-focus-break-before-page:focus { break-before: page; }
+  .uw-active-break-before-page:active { break-before: page; }
+  .uw-disabled-break-before-page:disabled { break-before: page; }
+  .uw-focus-visible-break-before-page:focus-visible { break-before: page; }
+  .uw-focus-within-break-before-page:focus-within { break-before: page; }
+  .group:hover .uw-group-hover-break-before-page { break-before: page; }
+  .uw-break-before-left { break-before: left; }
+  .uw-hover-break-before-left:hover { break-before: left; }
+  .uw-focus-break-before-left:focus { break-before: left; }
+  .uw-active-break-before-left:active { break-before: left; }
+  .uw-disabled-break-before-left:disabled { break-before: left; }
+  .uw-focus-visible-break-before-left:focus-visible { break-before: left; }
+  .uw-focus-within-break-before-left:focus-within { break-before: left; }
+  .group:hover .uw-group-hover-break-before-left { break-before: left; }
+  .uw-break-before-right { break-before: right; }
+  .uw-hover-break-before-right:hover { break-before: right; }
+  .uw-focus-break-before-right:focus { break-before: right; }
+  .uw-active-break-before-right:active { break-before: right; }
+  .uw-disabled-break-before-right:disabled { break-before: right; }
+  .uw-focus-visible-break-before-right:focus-visible { break-before: right; }
+  .uw-focus-within-break-before-right:focus-within { break-before: right; }
+  .group:hover .uw-group-hover-break-before-right { break-before: right; }
+  .uw-break-before-column { break-before: column; }
+  .uw-hover-break-before-column:hover { break-before: column; }
+  .uw-focus-break-before-column:focus { break-before: column; }
+  .uw-active-break-before-column:active { break-before: column; }
+  .uw-disabled-break-before-column:disabled { break-before: column; }
+  .uw-focus-visible-break-before-column:focus-visible { break-before: column; }
+  .uw-focus-within-break-before-column:focus-within { break-before: column; }
+  .group:hover .uw-group-hover-break-before-column { break-before: column; }
+  .uw-break-inside-auto { break-inside: auto; }
+  .uw-hover-break-inside-auto:hover { break-inside: auto; }
+  .uw-focus-break-inside-auto:focus { break-inside: auto; }
+  .uw-active-break-inside-auto:active { break-inside: auto; }
+  .uw-disabled-break-inside-auto:disabled { break-inside: auto; }
+  .uw-focus-visible-break-inside-auto:focus-visible { break-inside: auto; }
+  .uw-focus-within-break-inside-auto:focus-within { break-inside: auto; }
+  .group:hover .uw-group-hover-break-inside-auto { break-inside: auto; }
+  .uw-break-inside-avoid { break-inside: avoid; }
+  .uw-hover-break-inside-avoid:hover { break-inside: avoid; }
+  .uw-focus-break-inside-avoid:focus { break-inside: avoid; }
+  .uw-active-break-inside-avoid:active { break-inside: avoid; }
+  .uw-disabled-break-inside-avoid:disabled { break-inside: avoid; }
+  .uw-focus-visible-break-inside-avoid:focus-visible { break-inside: avoid; }
+  .uw-focus-within-break-inside-avoid:focus-within { break-inside: avoid; }
+  .group:hover .uw-group-hover-break-inside-avoid { break-inside: avoid; }
+  .uw-break-inside-avoid-page { break-inside: avoid-page; }
+  .uw-hover-break-inside-avoid-page:hover { break-inside: avoid-page; }
+  .uw-focus-break-inside-avoid-page:focus { break-inside: avoid-page; }
+  .uw-active-break-inside-avoid-page:active { break-inside: avoid-page; }
+  .uw-disabled-break-inside-avoid-page:disabled { break-inside: avoid-page; }
+  .uw-focus-visible-break-inside-avoid-page:focus-visible { break-inside: avoid-page; }
+  .uw-focus-within-break-inside-avoid-page:focus-within { break-inside: avoid-page; }
+  .group:hover .uw-group-hover-break-inside-avoid-page { break-inside: avoid-page; }
+  .uw-break-inside-avoid-column { break-inside: avoid-column; }
+  .uw-hover-break-inside-avoid-column:hover { break-inside: avoid-column; }
+  .uw-focus-break-inside-avoid-column:focus { break-inside: avoid-column; }
+  .uw-active-break-inside-avoid-column:active { break-inside: avoid-column; }
+  .uw-disabled-break-inside-avoid-column:disabled { break-inside: avoid-column; }
+  .uw-focus-visible-break-inside-avoid-column:focus-visible { break-inside: avoid-column; }
+  .uw-focus-within-break-inside-avoid-column:focus-within { break-inside: avoid-column; }
+  .group:hover .uw-group-hover-break-inside-avoid-column { break-inside: avoid-column; }
+  .uw-clip-none { clip-path: none; }
+  .uw-hover-clip-none:hover { clip-path: none; }
+  .uw-focus-clip-none:focus { clip-path: none; }
+  .uw-active-clip-none:active { clip-path: none; }
+  .uw-disabled-clip-none:disabled { clip-path: none; }
+  .uw-focus-visible-clip-none:focus-visible { clip-path: none; }
+  .uw-focus-within-clip-none:focus-within { clip-path: none; }
+  .group:hover .uw-group-hover-clip-none { clip-path: none; }
+  .uw-clip-circle { clip-path: circle(50%); }
+  .uw-hover-clip-circle:hover { clip-path: circle(50%); }
+  .uw-focus-clip-circle:focus { clip-path: circle(50%); }
+  .uw-active-clip-circle:active { clip-path: circle(50%); }
+  .uw-disabled-clip-circle:disabled { clip-path: circle(50%); }
+  .uw-focus-visible-clip-circle:focus-visible { clip-path: circle(50%); }
+  .uw-focus-within-clip-circle:focus-within { clip-path: circle(50%); }
+  .group:hover .uw-group-hover-clip-circle { clip-path: circle(50%); }
+  .uw-clip-ellipse { clip-path: ellipse(50% 75%); }
+  .uw-hover-clip-ellipse:hover { clip-path: ellipse(50% 75%); }
+  .uw-focus-clip-ellipse:focus { clip-path: ellipse(50% 75%); }
+  .uw-active-clip-ellipse:active { clip-path: ellipse(50% 75%); }
+  .uw-disabled-clip-ellipse:disabled { clip-path: ellipse(50% 75%); }
+  .uw-focus-visible-clip-ellipse:focus-visible { clip-path: ellipse(50% 75%); }
+  .uw-focus-within-clip-ellipse:focus-within { clip-path: ellipse(50% 75%); }
+  .group:hover .uw-group-hover-clip-ellipse { clip-path: ellipse(50% 75%); }
+  .uw-clip-inset { clip-path: inset(10%); }
+  .uw-hover-clip-inset:hover { clip-path: inset(10%); }
+  .uw-focus-clip-inset:focus { clip-path: inset(10%); }
+  .uw-active-clip-inset:active { clip-path: inset(10%); }
+  .uw-disabled-clip-inset:disabled { clip-path: inset(10%); }
+  .uw-focus-visible-clip-inset:focus-visible { clip-path: inset(10%); }
+  .uw-focus-within-clip-inset:focus-within { clip-path: inset(10%); }
+  .group:hover .uw-group-hover-clip-inset { clip-path: inset(10%); }
+  .uw-clip-polygon { clip-path: polygon(0 0,100% 0,100% 100%,0 100%); }
+  .uw-hover-clip-polygon:hover { clip-path: polygon(0 0,100% 0,100% 100%,0 100%); }
+  .uw-focus-clip-polygon:focus { clip-path: polygon(0 0,100% 0,100% 100%,0 100%); }
+  .uw-active-clip-polygon:active { clip-path: polygon(0 0,100% 0,100% 100%,0 100%); }
+  .uw-disabled-clip-polygon:disabled { clip-path: polygon(0 0,100% 0,100% 100%,0 100%); }
+  .uw-focus-visible-clip-polygon:focus-visible { clip-path: polygon(0 0,100% 0,100% 100%,0 100%); }
+  .uw-focus-within-clip-polygon:focus-within { clip-path: polygon(0 0,100% 0,100% 100%,0 100%); }
+  .group:hover .uw-group-hover-clip-polygon { clip-path: polygon(0 0,100% 0,100% 100%,0 100%); }
+}

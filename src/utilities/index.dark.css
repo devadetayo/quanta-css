@@ -1,0 +1,45 @@
+/**
+ * Quanta CSS v2.1 - Utilities Dark Mode Index
+ * Import all dark mode variants
+ * Use together with index.css for full dark mode support
+ */
+
+/* Dark Mode Variants */
+@import './variants/animations.dark.css';
+@import './variants/backgrounds.dark.css';
+@import './variants/blending.dark.css';
+@import './variants/borders-radius.dark.css';
+@import './variants/borders-style.dark.css';
+@import './variants/borders-width.dark.css';
+@import './variants/colors-background.dark.css';
+@import './variants/colors-border.dark.css';
+@import './variants/colors-semantic.dark.css';
+@import './variants/colors-text.dark.css';
+@import './variants/effects-filters.dark.css';
+@import './variants/effects-opacity.dark.css';
+@import './variants/effects-shadow.dark.css';
+@import './variants/effects-z-index.dark.css';
+@import './variants/gradients.dark.css';
+@import './variants/interactivity.dark.css';
+@import './variants/layout-display.dark.css';
+@import './variants/layout-flexbox.dark.css';
+@import './variants/layout-grid.dark.css';
+@import './variants/layout-misc.dark.css';
+@import './variants/layout-overflow.dark.css';
+@import './variants/layout-position.dark.css';
+@import './variants/misc.dark.css';
+@import './variants/objects.dark.css';
+@import './variants/rings-outlines.dark.css';
+@import './variants/sizing-combined.dark.css';
+@import './variants/sizing-height.dark.css';
+@import './variants/sizing-width.dark.css';
+@import './variants/spacing-gap.dark.css';
+@import './variants/spacing-margin.dark.css';
+@import './variants/spacing-padding.dark.css';
+@import './variants/svg.dark.css';
+@import './variants/transforms.dark.css';
+@import './variants/transitions.dark.css';
+@import './variants/transparency.dark.css';
+@import './variants/typography-advanced.dark.css';
+@import './variants/typography-fonts.dark.css';
+@import './variants/typography-text.dark.css';

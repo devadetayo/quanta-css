@@ -1,0 +1,69 @@
+
+
+/* =============================================================================
+   VARIABLES & COLORS
+============================================================================= */
+@import '../tokens/color-tokens.css';
+@import 'variables.css';
+
+/* Default thin scrollbar */
+::-webkit-scrollbar { width: 6px;
+  height: 6px; }
+
+::-webkit-scrollbar-track { background: transparent; }
+
+::-webkit-scrollbar-thumb { background-color: var(--quanta-slate-300);
+  border-radius: var(--quanta-rounded-md); }
+
+/* Hover effect */
+::-webkit-scrollbar-thumb:hover { background-color: var(--quanta-slate-500); }
+
+/* Firefox support */
+* { scrollbar-width: thin;
+  scrollbar-color: var(--quanta-slate-400) transparent; }
+
+html[data-theme="dark"] ::-webkit-scrollbar-thumb { background-color: var(--quanta-slate-600); }
+
+html[data-theme="dark"] ::-webkit-scrollbar-thumb:hover { background-color: var(--quanta-slate-500); }
+
+html[data-theme="dark"] * { scrollbar-color: var(--quanta-slate-600) transparent; }
+
+/* ---------------------------
+  QUANTA TRANSLUCENT UTILS
+  Pure CSS (no Sass/JS). Usage:
+    <div class="bg-tp-blue-500 bg-tp-20">...</div>
+    <p class="text-tp-red-400 text-tp-50">...</p>
+    <div class="border-tp-slate-300 border-tp-30" style="border-width:1px">...</div>
+
+  NOTE: You must define RGB tokens for every color/shade you want to use:
+    --quanta-blue-500-rgb: 59 130 246;
+
+  The RGB token format is: three numbers separated by spaces: "R G B".
+  --------------------------- */
+
+/* Example :root rgb tokens (add the rest to your tokens file) */
+:root { /* example tokens (tailwind-ish values) */
+  --quanta-blue-50-rgb: 239 246 255;
+  --quanta-blue-100-rgb: 219 234 254;
+  --quanta-blue-200-rgb: 191 219 254;
+  --quanta-blue-300-rgb: 147 197 253;
+  --quanta-blue-400-rgb: 96 165 250;
+  --quanta-blue-500-rgb: 59 130 246;
+  --quanta-blue-600-rgb: 37 99 235;
+  --quanta-blue-700-rgb: 29 78 216;
+  --quanta-blue-800-rgb: 30 64 175;
+  --quanta-blue-900-rgb: 30 58 138;
+
+  --quanta-red-500-rgb: 239 68 68;
+  --quanta-red-400-rgb: 248 113 113;
+
+  --quanta-green-500-rgb: 34 197 94;
+  --quanta-slate-300-rgb: 203 213 225;
+
+  /* defaults for the consumer variables (safe fallbacks) */
+  --bg-opacity: 1;
+  --text-opacity: 1;
+  --border-opacity: 1;
+  --bg-rgb: 255 255 255;
+  --text-rgb: 0 0 0;
+  --border-rgb: 148 163 184; }

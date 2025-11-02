@@ -91,7 +91,7 @@
 /* ─── Dark Mode ──────────────────────────────── */
 html[data-theme="dark"] {
   .quanta-modal {
-    background-color: var(--quanta-slate-800);
+    background-color: var(--quanta-grey-800);
     color: var(--quanta-text-light);
     box-shadow: var(--quanta-shadow-2xl);
   }

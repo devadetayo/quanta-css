@@ -1,0 +1,60 @@
+
+
+/*----------------------------------------------------
+  Background Utilities
+----------------------------------------------------*/
+.bg-attachment-fixed { background-attachment: fixed; }
+
+.bg-attachment-local { background-attachment: local; }
+
+.bg-attachment-scroll { background-attachment: scroll; }
+
+.bg-clip-border { background-clip: border-box; }
+
+.bg-clip-padding { background-clip: padding-box; }
+
+.bg-clip-content { background-clip: content-box; }
+
+.bg-image-none { background-image: none; }
+
+.bg-image-gradient-to-r { background-image: linear-gradient(to right, var(--quanta-from-color)); }
+
+.bg-origin-border { background-origin: border-box; }
+
+.bg-origin-padding { background-origin: padding-box; }
+
+.bg-origin-content { background-origin: content-box; }
+
+.bg-position-center { background-position: center; }
+
+.bg-position-top { background-position: top; }
+
+.bg-position-bottom { background-position: bottom; }
+
+.bg-position-left { background-position: left; }
+
+.bg-position-right { background-position: right; }
+
+.bg-position-top-left { background-position: top left; }
+
+.bg-position-top-right { background-position: top right; }
+
+.bg-position-bottom-left { background-position: bottom left; }
+
+.bg-position-bottom-right { background-position: bottom right; }
+
+.bg-repeat-none { background-repeat: no-repeat; }
+
+.bg-repeat-x { background-repeat: repeat-x; }
+
+.bg-repeat-y { background-repeat: repeat-y; }
+
+.bg-repeat-round { background-repeat: round; }
+
+.bg-repeat-space { background-repeat: space; }
+
+.bg-size-auto { background-size: auto; }
+
+.bg-size-cover { background-size: cover; }
+
+.bg-size-contain { background-size: contain; }

@@ -1,0 +1,1245 @@
+/* Quanta CSS v2.1 - layout-misc Light Variants */
+
+/* State Variants */
+.hover-clear-left:hover { clear: left; }
+.focus-clear-left:focus { clear: left; }
+.active-clear-left:active { clear: left; }
+.disabled-clear-left:disabled { clear: left; }
+.focus-visible-clear-left:focus-visible { clear: left; }
+.focus-within-clear-left:focus-within { clear: left; }
+.group:hover .group-hover-clear-left { clear: left; }
+.hover-clear-right:hover { clear: right; }
+.focus-clear-right:focus { clear: right; }
+.active-clear-right:active { clear: right; }
+.disabled-clear-right:disabled { clear: right; }
+.focus-visible-clear-right:focus-visible { clear: right; }
+.focus-within-clear-right:focus-within { clear: right; }
+.group:hover .group-hover-clear-right { clear: right; }
+.hover-clear-both:hover { clear: both; }
+.focus-clear-both:focus { clear: both; }
+.active-clear-both:active { clear: both; }
+.disabled-clear-both:disabled { clear: both; }
+.focus-visible-clear-both:focus-visible { clear: both; }
+.focus-within-clear-both:focus-within { clear: both; }
+.group:hover .group-hover-clear-both { clear: both; }
+.hover-float-left:hover { float: left; }
+.focus-float-left:focus { float: left; }
+.active-float-left:active { float: left; }
+.disabled-float-left:disabled { float: left; }
+.focus-visible-float-left:focus-visible { float: left; }
+.focus-within-float-left:focus-within { float: left; }
+.group:hover .group-hover-float-left { float: left; }
+.hover-float-right:hover { float: right; }
+.focus-float-right:focus { float: right; }
+.active-float-right:active { float: right; }
+.disabled-float-right:disabled { float: right; }
+.focus-visible-float-right:focus-visible { float: right; }
+.focus-within-float-right:focus-within { float: right; }
+.group:hover .group-hover-float-right { float: right; }
+.hover-float-none:hover { float: none; }
+.focus-float-none:focus { float: none; }
+.active-float-none:active { float: none; }
+.disabled-float-none:disabled { float: none; }
+.focus-visible-float-none:focus-visible { float: none; }
+.focus-within-float-none:focus-within { float: none; }
+.group:hover .group-hover-float-none { float: none; }
+.hover-box-decoration-slice:hover { box-decoration-break: slice;
+  -webkit-box-decoration-break: slice; /* for Safari */ }
+.focus-box-decoration-slice:focus { box-decoration-break: slice;
+  -webkit-box-decoration-break: slice; /* for Safari */ }
+.active-box-decoration-slice:active { box-decoration-break: slice;
+  -webkit-box-decoration-break: slice; /* for Safari */ }
+.disabled-box-decoration-slice:disabled { box-decoration-break: slice;
+  -webkit-box-decoration-break: slice; /* for Safari */ }
+.focus-visible-box-decoration-slice:focus-visible { box-decoration-break: slice;
+  -webkit-box-decoration-break: slice; /* for Safari */ }
+.focus-within-box-decoration-slice:focus-within { box-decoration-break: slice;
+  -webkit-box-decoration-break: slice; /* for Safari */ }
+.group:hover .group-hover-box-decoration-slice { box-decoration-break: slice;
+  -webkit-box-decoration-break: slice; /* for Safari */ }
+.hover-box-decoration-clone:hover { box-decoration-break: clone;
+  -webkit-box-decoration-break: clone; /* for Safari */ }
+.focus-box-decoration-clone:focus { box-decoration-break: clone;
+  -webkit-box-decoration-break: clone; /* for Safari */ }
+.active-box-decoration-clone:active { box-decoration-break: clone;
+  -webkit-box-decoration-break: clone; /* for Safari */ }
+.disabled-box-decoration-clone:disabled { box-decoration-break: clone;
+  -webkit-box-decoration-break: clone; /* for Safari */ }
+.focus-visible-box-decoration-clone:focus-visible { box-decoration-break: clone;
+  -webkit-box-decoration-break: clone; /* for Safari */ }
+.focus-within-box-decoration-clone:focus-within { box-decoration-break: clone;
+  -webkit-box-decoration-break: clone; /* for Safari */ }
+.group:hover .group-hover-box-decoration-clone { box-decoration-break: clone;
+  -webkit-box-decoration-break: clone; /* for Safari */ }
+.hover-aspect-auto:hover { aspect-ratio: auto; }
+.focus-aspect-auto:focus { aspect-ratio: auto; }
+.active-aspect-auto:active { aspect-ratio: auto; }
+.disabled-aspect-auto:disabled { aspect-ratio: auto; }
+.focus-visible-aspect-auto:focus-visible { aspect-ratio: auto; }
+.focus-within-aspect-auto:focus-within { aspect-ratio: auto; }
+.group:hover .group-hover-aspect-auto { aspect-ratio: auto; }
+.hover-aspect-square:hover { aspect-ratio: 1 / 1; }
+.focus-aspect-square:focus { aspect-ratio: 1 / 1; }
+.active-aspect-square:active { aspect-ratio: 1 / 1; }
+.disabled-aspect-square:disabled { aspect-ratio: 1 / 1; }
+.focus-visible-aspect-square:focus-visible { aspect-ratio: 1 / 1; }
+.focus-within-aspect-square:focus-within { aspect-ratio: 1 / 1; }
+.group:hover .group-hover-aspect-square { aspect-ratio: 1 / 1; }
+.hover-aspect-video:hover { aspect-ratio: 16 / 9; }
+.focus-aspect-video:focus { aspect-ratio: 16 / 9; }
+.active-aspect-video:active { aspect-ratio: 16 / 9; }
+.disabled-aspect-video:disabled { aspect-ratio: 16 / 9; }
+.focus-visible-aspect-video:focus-visible { aspect-ratio: 16 / 9; }
+.focus-within-aspect-video:focus-within { aspect-ratio: 16 / 9; }
+.group:hover .group-hover-aspect-video { aspect-ratio: 16 / 9; }
+.hover-aspect-ar_4_3:hover { aspect-ratio: 4 / 3; }
+.focus-aspect-ar_4_3:focus { aspect-ratio: 4 / 3; }
+.active-aspect-ar_4_3:active { aspect-ratio: 4 / 3; }
+.disabled-aspect-ar_4_3:disabled { aspect-ratio: 4 / 3; }
+.focus-visible-aspect-ar_4_3:focus-visible { aspect-ratio: 4 / 3; }
+.focus-within-aspect-ar_4_3:focus-within { aspect-ratio: 4 / 3; }
+.group:hover .group-hover-aspect-ar_4_3 { aspect-ratio: 4 / 3; }
+.hover-isolation-auto:hover { isolation: auto; }
+.focus-isolation-auto:focus { isolation: auto; }
+.active-isolation-auto:active { isolation: auto; }
+.disabled-isolation-auto:disabled { isolation: auto; }
+.focus-visible-isolation-auto:focus-visible { isolation: auto; }
+.focus-within-isolation-auto:focus-within { isolation: auto; }
+.group:hover .group-hover-isolation-auto { isolation: auto; }
+.hover-isolation-isolate:hover { isolation: isolate; }
+.focus-isolation-isolate:focus { isolation: isolate; }
+.active-isolation-isolate:active { isolation: isolate; }
+.disabled-isolation-isolate:disabled { isolation: isolate; }
+.focus-visible-isolation-isolate:focus-visible { isolation: isolate; }
+.focus-within-isolation-isolate:focus-within { isolation: isolate; }
+.group:hover .group-hover-isolation-isolate { isolation: isolate; }
+.hover-contain-none:hover { contain: none; }
+.focus-contain-none:focus { contain: none; }
+.active-contain-none:active { contain: none; }
+.disabled-contain-none:disabled { contain: none; }
+.focus-visible-contain-none:focus-visible { contain: none; }
+.focus-within-contain-none:focus-within { contain: none; }
+.group:hover .group-hover-contain-none { contain: none; }
+.hover-contain-layout:hover { contain: layout; }
+.focus-contain-layout:focus { contain: layout; }
+.active-contain-layout:active { contain: layout; }
+.disabled-contain-layout:disabled { contain: layout; }
+.focus-visible-contain-layout:focus-visible { contain: layout; }
+.focus-within-contain-layout:focus-within { contain: layout; }
+.group:hover .group-hover-contain-layout { contain: layout; }
+.hover-contain-size:hover { contain: size; }
+.focus-contain-size:focus { contain: size; }
+.active-contain-size:active { contain: size; }
+.disabled-contain-size:disabled { contain: size; }
+.focus-visible-contain-size:focus-visible { contain: size; }
+.focus-within-contain-size:focus-within { contain: size; }
+.group:hover .group-hover-contain-size { contain: size; }
+.hover-contain-style:hover { contain: style; }
+.focus-contain-style:focus { contain: style; }
+.active-contain-style:active { contain: style; }
+.disabled-contain-style:disabled { contain: style; }
+.focus-visible-contain-style:focus-visible { contain: style; }
+.focus-within-contain-style:focus-within { contain: style; }
+.group:hover .group-hover-contain-style { contain: style; }
+.hover-contain-paint:hover { contain: paint; }
+.focus-contain-paint:focus { contain: paint; }
+.active-contain-paint:active { contain: paint; }
+.disabled-contain-paint:disabled { contain: paint; }
+.focus-visible-contain-paint:focus-visible { contain: paint; }
+.focus-within-contain-paint:focus-within { contain: paint; }
+.group:hover .group-hover-contain-paint { contain: paint; }
+.hover-contain-content:hover { contain: content; }
+.focus-contain-content:focus { contain: content; }
+.active-contain-content:active { contain: content; }
+.disabled-contain-content:disabled { contain: content; }
+.focus-visible-contain-content:focus-visible { contain: content; }
+.focus-within-contain-content:focus-within { contain: content; }
+.group:hover .group-hover-contain-content { contain: content; }
+.hover-box-border:hover { box-sizing: border-box; }
+.focus-box-border:focus { box-sizing: border-box; }
+.active-box-border:active { box-sizing: border-box; }
+.disabled-box-border:disabled { box-sizing: border-box; }
+.focus-visible-box-border:focus-visible { box-sizing: border-box; }
+.focus-within-box-border:focus-within { box-sizing: border-box; }
+.group:hover .group-hover-box-border { box-sizing: border-box; }
+.hover-box-content:hover { box-sizing: content-box; }
+.focus-box-content:focus { box-sizing: content-box; }
+.active-box-content:active { box-sizing: content-box; }
+.disabled-box-content:disabled { box-sizing: content-box; }
+.focus-visible-box-content:focus-visible { box-sizing: content-box; }
+.focus-within-box-content:focus-within { box-sizing: content-box; }
+.group:hover .group-hover-box-content { box-sizing: content-box; }
+.hover-box-border:hover { box-sizing: border-box; }
+.focus-box-border:focus { box-sizing: border-box; }
+.active-box-border:active { box-sizing: border-box; }
+.disabled-box-border:disabled { box-sizing: border-box; }
+.focus-visible-box-border:focus-visible { box-sizing: border-box; }
+.focus-within-box-border:focus-within { box-sizing: border-box; }
+.group:hover .group-hover-box-border { box-sizing: border-box; }
+.hover-box-content:hover { box-sizing: content-box; }
+.focus-box-content:focus { box-sizing: content-box; }
+.active-box-content:active { box-sizing: content-box; }
+.disabled-box-content:disabled { box-sizing: content-box; }
+.focus-visible-box-content:focus-visible { box-sizing: content-box; }
+.focus-within-box-content:focus-within { box-sizing: content-box; }
+.group:hover .group-hover-box-content { box-sizing: content-box; }
+
+/* SM Breakpoint */
+@media (min-width: 480px) {
+  .sm-clear-left { clear: left; }
+  .sm-hover-clear-left:hover { clear: left; }
+  .sm-focus-clear-left:focus { clear: left; }
+  .sm-active-clear-left:active { clear: left; }
+  .sm-disabled-clear-left:disabled { clear: left; }
+  .sm-focus-visible-clear-left:focus-visible { clear: left; }
+  .sm-focus-within-clear-left:focus-within { clear: left; }
+  .group:hover .sm-group-hover-clear-left { clear: left; }
+  .sm-clear-right { clear: right; }
+  .sm-hover-clear-right:hover { clear: right; }
+  .sm-focus-clear-right:focus { clear: right; }
+  .sm-active-clear-right:active { clear: right; }
+  .sm-disabled-clear-right:disabled { clear: right; }
+  .sm-focus-visible-clear-right:focus-visible { clear: right; }
+  .sm-focus-within-clear-right:focus-within { clear: right; }
+  .group:hover .sm-group-hover-clear-right { clear: right; }
+  .sm-clear-both { clear: both; }
+  .sm-hover-clear-both:hover { clear: both; }
+  .sm-focus-clear-both:focus { clear: both; }
+  .sm-active-clear-both:active { clear: both; }
+  .sm-disabled-clear-both:disabled { clear: both; }
+  .sm-focus-visible-clear-both:focus-visible { clear: both; }
+  .sm-focus-within-clear-both:focus-within { clear: both; }
+  .group:hover .sm-group-hover-clear-both { clear: both; }
+  .sm-float-left { float: left; }
+  .sm-hover-float-left:hover { float: left; }
+  .sm-focus-float-left:focus { float: left; }
+  .sm-active-float-left:active { float: left; }
+  .sm-disabled-float-left:disabled { float: left; }
+  .sm-focus-visible-float-left:focus-visible { float: left; }
+  .sm-focus-within-float-left:focus-within { float: left; }
+  .group:hover .sm-group-hover-float-left { float: left; }
+  .sm-float-right { float: right; }
+  .sm-hover-float-right:hover { float: right; }
+  .sm-focus-float-right:focus { float: right; }
+  .sm-active-float-right:active { float: right; }
+  .sm-disabled-float-right:disabled { float: right; }
+  .sm-focus-visible-float-right:focus-visible { float: right; }
+  .sm-focus-within-float-right:focus-within { float: right; }
+  .group:hover .sm-group-hover-float-right { float: right; }
+  .sm-float-none { float: none; }
+  .sm-hover-float-none:hover { float: none; }
+  .sm-focus-float-none:focus { float: none; }
+  .sm-active-float-none:active { float: none; }
+  .sm-disabled-float-none:disabled { float: none; }
+  .sm-focus-visible-float-none:focus-visible { float: none; }
+  .sm-focus-within-float-none:focus-within { float: none; }
+  .group:hover .sm-group-hover-float-none { float: none; }
+  .sm-box-decoration-slice { box-decoration-break: slice;
+  -webkit-box-decoration-break: slice; /* for Safari */ }
+  .sm-hover-box-decoration-slice:hover { box-decoration-break: slice;
+  -webkit-box-decoration-break: slice; /* for Safari */ }
+  .sm-focus-box-decoration-slice:focus { box-decoration-break: slice;
+  -webkit-box-decoration-break: slice; /* for Safari */ }
+  .sm-active-box-decoration-slice:active { box-decoration-break: slice;
+  -webkit-box-decoration-break: slice; /* for Safari */ }
+  .sm-disabled-box-decoration-slice:disabled { box-decoration-break: slice;
+  -webkit-box-decoration-break: slice; /* for Safari */ }
+  .sm-focus-visible-box-decoration-slice:focus-visible { box-decoration-break: slice;
+  -webkit-box-decoration-break: slice; /* for Safari */ }
+  .sm-focus-within-box-decoration-slice:focus-within { box-decoration-break: slice;
+  -webkit-box-decoration-break: slice; /* for Safari */ }
+  .group:hover .sm-group-hover-box-decoration-slice { box-decoration-break: slice;
+  -webkit-box-decoration-break: slice; /* for Safari */ }
+  .sm-box-decoration-clone { box-decoration-break: clone;
+  -webkit-box-decoration-break: clone; /* for Safari */ }
+  .sm-hover-box-decoration-clone:hover { box-decoration-break: clone;
+  -webkit-box-decoration-break: clone; /* for Safari */ }
+  .sm-focus-box-decoration-clone:focus { box-decoration-break: clone;
+  -webkit-box-decoration-break: clone; /* for Safari */ }
+  .sm-active-box-decoration-clone:active { box-decoration-break: clone;
+  -webkit-box-decoration-break: clone; /* for Safari */ }
+  .sm-disabled-box-decoration-clone:disabled { box-decoration-break: clone;
+  -webkit-box-decoration-break: clone; /* for Safari */ }
+  .sm-focus-visible-box-decoration-clone:focus-visible { box-decoration-break: clone;
+  -webkit-box-decoration-break: clone; /* for Safari */ }
+  .sm-focus-within-box-decoration-clone:focus-within { box-decoration-break: clone;
+  -webkit-box-decoration-break: clone; /* for Safari */ }
+  .group:hover .sm-group-hover-box-decoration-clone { box-decoration-break: clone;
+  -webkit-box-decoration-break: clone; /* for Safari */ }
+  .sm-aspect-auto { aspect-ratio: auto; }
+  .sm-hover-aspect-auto:hover { aspect-ratio: auto; }
+  .sm-focus-aspect-auto:focus { aspect-ratio: auto; }
+  .sm-active-aspect-auto:active { aspect-ratio: auto; }
+  .sm-disabled-aspect-auto:disabled { aspect-ratio: auto; }
+  .sm-focus-visible-aspect-auto:focus-visible { aspect-ratio: auto; }
+  .sm-focus-within-aspect-auto:focus-within { aspect-ratio: auto; }
+  .group:hover .sm-group-hover-aspect-auto { aspect-ratio: auto; }
+  .sm-aspect-square { aspect-ratio: 1 / 1; }
+  .sm-hover-aspect-square:hover { aspect-ratio: 1 / 1; }
+  .sm-focus-aspect-square:focus { aspect-ratio: 1 / 1; }
+  .sm-active-aspect-square:active { aspect-ratio: 1 / 1; }
+  .sm-disabled-aspect-square:disabled { aspect-ratio: 1 / 1; }
+  .sm-focus-visible-aspect-square:focus-visible { aspect-ratio: 1 / 1; }
+  .sm-focus-within-aspect-square:focus-within { aspect-ratio: 1 / 1; }
+  .group:hover .sm-group-hover-aspect-square { aspect-ratio: 1 / 1; }
+  .sm-aspect-video { aspect-ratio: 16 / 9; }
+  .sm-hover-aspect-video:hover { aspect-ratio: 16 / 9; }
+  .sm-focus-aspect-video:focus { aspect-ratio: 16 / 9; }
+  .sm-active-aspect-video:active { aspect-ratio: 16 / 9; }
+  .sm-disabled-aspect-video:disabled { aspect-ratio: 16 / 9; }
+  .sm-focus-visible-aspect-video:focus-visible { aspect-ratio: 16 / 9; }
+  .sm-focus-within-aspect-video:focus-within { aspect-ratio: 16 / 9; }
+  .group:hover .sm-group-hover-aspect-video { aspect-ratio: 16 / 9; }
+  .sm-aspect-ar_4_3 { aspect-ratio: 4 / 3; }
+  .sm-hover-aspect-ar_4_3:hover { aspect-ratio: 4 / 3; }
+  .sm-focus-aspect-ar_4_3:focus { aspect-ratio: 4 / 3; }
+  .sm-active-aspect-ar_4_3:active { aspect-ratio: 4 / 3; }
+  .sm-disabled-aspect-ar_4_3:disabled { aspect-ratio: 4 / 3; }
+  .sm-focus-visible-aspect-ar_4_3:focus-visible { aspect-ratio: 4 / 3; }
+  .sm-focus-within-aspect-ar_4_3:focus-within { aspect-ratio: 4 / 3; }
+  .group:hover .sm-group-hover-aspect-ar_4_3 { aspect-ratio: 4 / 3; }
+  .sm-isolation-auto { isolation: auto; }
+  .sm-hover-isolation-auto:hover { isolation: auto; }
+  .sm-focus-isolation-auto:focus { isolation: auto; }
+  .sm-active-isolation-auto:active { isolation: auto; }
+  .sm-disabled-isolation-auto:disabled { isolation: auto; }
+  .sm-focus-visible-isolation-auto:focus-visible { isolation: auto; }
+  .sm-focus-within-isolation-auto:focus-within { isolation: auto; }
+  .group:hover .sm-group-hover-isolation-auto { isolation: auto; }
+  .sm-isolation-isolate { isolation: isolate; }
+  .sm-hover-isolation-isolate:hover { isolation: isolate; }
+  .sm-focus-isolation-isolate:focus { isolation: isolate; }
+  .sm-active-isolation-isolate:active { isolation: isolate; }
+  .sm-disabled-isolation-isolate:disabled { isolation: isolate; }
+  .sm-focus-visible-isolation-isolate:focus-visible { isolation: isolate; }
+  .sm-focus-within-isolation-isolate:focus-within { isolation: isolate; }
+  .group:hover .sm-group-hover-isolation-isolate { isolation: isolate; }
+  .sm-contain-none { contain: none; }
+  .sm-hover-contain-none:hover { contain: none; }
+  .sm-focus-contain-none:focus { contain: none; }
+  .sm-active-contain-none:active { contain: none; }
+  .sm-disabled-contain-none:disabled { contain: none; }
+  .sm-focus-visible-contain-none:focus-visible { contain: none; }
+  .sm-focus-within-contain-none:focus-within { contain: none; }
+  .group:hover .sm-group-hover-contain-none { contain: none; }
+  .sm-contain-layout { contain: layout; }
+  .sm-hover-contain-layout:hover { contain: layout; }
+  .sm-focus-contain-layout:focus { contain: layout; }
+  .sm-active-contain-layout:active { contain: layout; }
+  .sm-disabled-contain-layout:disabled { contain: layout; }
+  .sm-focus-visible-contain-layout:focus-visible { contain: layout; }
+  .sm-focus-within-contain-layout:focus-within { contain: layout; }
+  .group:hover .sm-group-hover-contain-layout { contain: layout; }
+  .sm-contain-size { contain: size; }
+  .sm-hover-contain-size:hover { contain: size; }
+  .sm-focus-contain-size:focus { contain: size; }
+  .sm-active-contain-size:active { contain: size; }
+  .sm-disabled-contain-size:disabled { contain: size; }
+  .sm-focus-visible-contain-size:focus-visible { contain: size; }
+  .sm-focus-within-contain-size:focus-within { contain: size; }
+  .group:hover .sm-group-hover-contain-size { contain: size; }
+  .sm-contain-style { contain: style; }
+  .sm-hover-contain-style:hover { contain: style; }
+  .sm-focus-contain-style:focus { contain: style; }
+  .sm-active-contain-style:active { contain: style; }
+  .sm-disabled-contain-style:disabled { contain: style; }
+  .sm-focus-visible-contain-style:focus-visible { contain: style; }
+  .sm-focus-within-contain-style:focus-within { contain: style; }
+  .group:hover .sm-group-hover-contain-style { contain: style; }
+  .sm-contain-paint { contain: paint; }
+  .sm-hover-contain-paint:hover { contain: paint; }
+  .sm-focus-contain-paint:focus { contain: paint; }
+  .sm-active-contain-paint:active { contain: paint; }
+  .sm-disabled-contain-paint:disabled { contain: paint; }
+  .sm-focus-visible-contain-paint:focus-visible { contain: paint; }
+  .sm-focus-within-contain-paint:focus-within { contain: paint; }
+  .group:hover .sm-group-hover-contain-paint { contain: paint; }
+  .sm-contain-content { contain: content; }
+  .sm-hover-contain-content:hover { contain: content; }
+  .sm-focus-contain-content:focus { contain: content; }
+  .sm-active-contain-content:active { contain: content; }
+  .sm-disabled-contain-content:disabled { contain: content; }
+  .sm-focus-visible-contain-content:focus-visible { contain: content; }
+  .sm-focus-within-contain-content:focus-within { contain: content; }
+  .group:hover .sm-group-hover-contain-content { contain: content; }
+  .sm-box-border { box-sizing: border-box; }
+  .sm-hover-box-border:hover { box-sizing: border-box; }
+  .sm-focus-box-border:focus { box-sizing: border-box; }
+  .sm-active-box-border:active { box-sizing: border-box; }
+  .sm-disabled-box-border:disabled { box-sizing: border-box; }
+  .sm-focus-visible-box-border:focus-visible { box-sizing: border-box; }
+  .sm-focus-within-box-border:focus-within { box-sizing: border-box; }
+  .group:hover .sm-group-hover-box-border { box-sizing: border-box; }
+  .sm-box-content { box-sizing: content-box; }
+  .sm-hover-box-content:hover { box-sizing: content-box; }
+  .sm-focus-box-content:focus { box-sizing: content-box; }
+  .sm-active-box-content:active { box-sizing: content-box; }
+  .sm-disabled-box-content:disabled { box-sizing: content-box; }
+  .sm-focus-visible-box-content:focus-visible { box-sizing: content-box; }
+  .sm-focus-within-box-content:focus-within { box-sizing: content-box; }
+  .group:hover .sm-group-hover-box-content { box-sizing: content-box; }
+  .sm-box-border { box-sizing: border-box; }
+  .sm-hover-box-border:hover { box-sizing: border-box; }
+  .sm-focus-box-border:focus { box-sizing: border-box; }
+  .sm-active-box-border:active { box-sizing: border-box; }
+  .sm-disabled-box-border:disabled { box-sizing: border-box; }
+  .sm-focus-visible-box-border:focus-visible { box-sizing: border-box; }
+  .sm-focus-within-box-border:focus-within { box-sizing: border-box; }
+  .group:hover .sm-group-hover-box-border { box-sizing: border-box; }
+  .sm-box-content { box-sizing: content-box; }
+  .sm-hover-box-content:hover { box-sizing: content-box; }
+  .sm-focus-box-content:focus { box-sizing: content-box; }
+  .sm-active-box-content:active { box-sizing: content-box; }
+  .sm-disabled-box-content:disabled { box-sizing: content-box; }
+  .sm-focus-visible-box-content:focus-visible { box-sizing: content-box; }
+  .sm-focus-within-box-content:focus-within { box-sizing: content-box; }
+  .group:hover .sm-group-hover-box-content { box-sizing: content-box; }
+}
+
+/* MD Breakpoint */
+@media (min-width: 768px) {
+  .md-clear-left { clear: left; }
+  .md-hover-clear-left:hover { clear: left; }
+  .md-focus-clear-left:focus { clear: left; }
+  .md-active-clear-left:active { clear: left; }
+  .md-disabled-clear-left:disabled { clear: left; }
+  .md-focus-visible-clear-left:focus-visible { clear: left; }
+  .md-focus-within-clear-left:focus-within { clear: left; }
+  .group:hover .md-group-hover-clear-left { clear: left; }
+  .md-clear-right { clear: right; }
+  .md-hover-clear-right:hover { clear: right; }
+  .md-focus-clear-right:focus { clear: right; }
+  .md-active-clear-right:active { clear: right; }
+  .md-disabled-clear-right:disabled { clear: right; }
+  .md-focus-visible-clear-right:focus-visible { clear: right; }
+  .md-focus-within-clear-right:focus-within { clear: right; }
+  .group:hover .md-group-hover-clear-right { clear: right; }
+  .md-clear-both { clear: both; }
+  .md-hover-clear-both:hover { clear: both; }
+  .md-focus-clear-both:focus { clear: both; }
+  .md-active-clear-both:active { clear: both; }
+  .md-disabled-clear-both:disabled { clear: both; }
+  .md-focus-visible-clear-both:focus-visible { clear: both; }
+  .md-focus-within-clear-both:focus-within { clear: both; }
+  .group:hover .md-group-hover-clear-both { clear: both; }
+  .md-float-left { float: left; }
+  .md-hover-float-left:hover { float: left; }
+  .md-focus-float-left:focus { float: left; }
+  .md-active-float-left:active { float: left; }
+  .md-disabled-float-left:disabled { float: left; }
+  .md-focus-visible-float-left:focus-visible { float: left; }
+  .md-focus-within-float-left:focus-within { float: left; }
+  .group:hover .md-group-hover-float-left { float: left; }
+  .md-float-right { float: right; }
+  .md-hover-float-right:hover { float: right; }
+  .md-focus-float-right:focus { float: right; }
+  .md-active-float-right:active { float: right; }
+  .md-disabled-float-right:disabled { float: right; }
+  .md-focus-visible-float-right:focus-visible { float: right; }
+  .md-focus-within-float-right:focus-within { float: right; }
+  .group:hover .md-group-hover-float-right { float: right; }
+  .md-float-none { float: none; }
+  .md-hover-float-none:hover { float: none; }
+  .md-focus-float-none:focus { float: none; }
+  .md-active-float-none:active { float: none; }
+  .md-disabled-float-none:disabled { float: none; }
+  .md-focus-visible-float-none:focus-visible { float: none; }
+  .md-focus-within-float-none:focus-within { float: none; }
+  .group:hover .md-group-hover-float-none { float: none; }
+  .md-box-decoration-slice { box-decoration-break: slice;
+  -webkit-box-decoration-break: slice; /* for Safari */ }
+  .md-hover-box-decoration-slice:hover { box-decoration-break: slice;
+  -webkit-box-decoration-break: slice; /* for Safari */ }
+  .md-focus-box-decoration-slice:focus { box-decoration-break: slice;
+  -webkit-box-decoration-break: slice; /* for Safari */ }
+  .md-active-box-decoration-slice:active { box-decoration-break: slice;
+  -webkit-box-decoration-break: slice; /* for Safari */ }
+  .md-disabled-box-decoration-slice:disabled { box-decoration-break: slice;
+  -webkit-box-decoration-break: slice; /* for Safari */ }
+  .md-focus-visible-box-decoration-slice:focus-visible { box-decoration-break: slice;
+  -webkit-box-decoration-break: slice; /* for Safari */ }
+  .md-focus-within-box-decoration-slice:focus-within { box-decoration-break: slice;
+  -webkit-box-decoration-break: slice; /* for Safari */ }
+  .group:hover .md-group-hover-box-decoration-slice { box-decoration-break: slice;
+  -webkit-box-decoration-break: slice; /* for Safari */ }
+  .md-box-decoration-clone { box-decoration-break: clone;
+  -webkit-box-decoration-break: clone; /* for Safari */ }
+  .md-hover-box-decoration-clone:hover { box-decoration-break: clone;
+  -webkit-box-decoration-break: clone; /* for Safari */ }
+  .md-focus-box-decoration-clone:focus { box-decoration-break: clone;
+  -webkit-box-decoration-break: clone; /* for Safari */ }
+  .md-active-box-decoration-clone:active { box-decoration-break: clone;
+  -webkit-box-decoration-break: clone; /* for Safari */ }
+  .md-disabled-box-decoration-clone:disabled { box-decoration-break: clone;
+  -webkit-box-decoration-break: clone; /* for Safari */ }
+  .md-focus-visible-box-decoration-clone:focus-visible { box-decoration-break: clone;
+  -webkit-box-decoration-break: clone; /* for Safari */ }
+  .md-focus-within-box-decoration-clone:focus-within { box-decoration-break: clone;
+  -webkit-box-decoration-break: clone; /* for Safari */ }
+  .group:hover .md-group-hover-box-decoration-clone { box-decoration-break: clone;
+  -webkit-box-decoration-break: clone; /* for Safari */ }
+  .md-aspect-auto { aspect-ratio: auto; }
+  .md-hover-aspect-auto:hover { aspect-ratio: auto; }
+  .md-focus-aspect-auto:focus { aspect-ratio: auto; }
+  .md-active-aspect-auto:active { aspect-ratio: auto; }
+  .md-disabled-aspect-auto:disabled { aspect-ratio: auto; }
+  .md-focus-visible-aspect-auto:focus-visible { aspect-ratio: auto; }
+  .md-focus-within-aspect-auto:focus-within { aspect-ratio: auto; }
+  .group:hover .md-group-hover-aspect-auto { aspect-ratio: auto; }
+  .md-aspect-square { aspect-ratio: 1 / 1; }
+  .md-hover-aspect-square:hover { aspect-ratio: 1 / 1; }
+  .md-focus-aspect-square:focus { aspect-ratio: 1 / 1; }
+  .md-active-aspect-square:active { aspect-ratio: 1 / 1; }
+  .md-disabled-aspect-square:disabled { aspect-ratio: 1 / 1; }
+  .md-focus-visible-aspect-square:focus-visible { aspect-ratio: 1 / 1; }
+  .md-focus-within-aspect-square:focus-within { aspect-ratio: 1 / 1; }
+  .group:hover .md-group-hover-aspect-square { aspect-ratio: 1 / 1; }
+  .md-aspect-video { aspect-ratio: 16 / 9; }
+  .md-hover-aspect-video:hover { aspect-ratio: 16 / 9; }
+  .md-focus-aspect-video:focus { aspect-ratio: 16 / 9; }
+  .md-active-aspect-video:active { aspect-ratio: 16 / 9; }
+  .md-disabled-aspect-video:disabled { aspect-ratio: 16 / 9; }
+  .md-focus-visible-aspect-video:focus-visible { aspect-ratio: 16 / 9; }
+  .md-focus-within-aspect-video:focus-within { aspect-ratio: 16 / 9; }
+  .group:hover .md-group-hover-aspect-video { aspect-ratio: 16 / 9; }
+  .md-aspect-ar_4_3 { aspect-ratio: 4 / 3; }
+  .md-hover-aspect-ar_4_3:hover { aspect-ratio: 4 / 3; }
+  .md-focus-aspect-ar_4_3:focus { aspect-ratio: 4 / 3; }
+  .md-active-aspect-ar_4_3:active { aspect-ratio: 4 / 3; }
+  .md-disabled-aspect-ar_4_3:disabled { aspect-ratio: 4 / 3; }
+  .md-focus-visible-aspect-ar_4_3:focus-visible { aspect-ratio: 4 / 3; }
+  .md-focus-within-aspect-ar_4_3:focus-within { aspect-ratio: 4 / 3; }
+  .group:hover .md-group-hover-aspect-ar_4_3 { aspect-ratio: 4 / 3; }
+  .md-isolation-auto { isolation: auto; }
+  .md-hover-isolation-auto:hover { isolation: auto; }
+  .md-focus-isolation-auto:focus { isolation: auto; }
+  .md-active-isolation-auto:active { isolation: auto; }
+  .md-disabled-isolation-auto:disabled { isolation: auto; }
+  .md-focus-visible-isolation-auto:focus-visible { isolation: auto; }
+  .md-focus-within-isolation-auto:focus-within { isolation: auto; }
+  .group:hover .md-group-hover-isolation-auto { isolation: auto; }
+  .md-isolation-isolate { isolation: isolate; }
+  .md-hover-isolation-isolate:hover { isolation: isolate; }
+  .md-focus-isolation-isolate:focus { isolation: isolate; }
+  .md-active-isolation-isolate:active { isolation: isolate; }
+  .md-disabled-isolation-isolate:disabled { isolation: isolate; }
+  .md-focus-visible-isolation-isolate:focus-visible { isolation: isolate; }
+  .md-focus-within-isolation-isolate:focus-within { isolation: isolate; }
+  .group:hover .md-group-hover-isolation-isolate { isolation: isolate; }
+  .md-contain-none { contain: none; }
+  .md-hover-contain-none:hover { contain: none; }
+  .md-focus-contain-none:focus { contain: none; }
+  .md-active-contain-none:active { contain: none; }
+  .md-disabled-contain-none:disabled { contain: none; }
+  .md-focus-visible-contain-none:focus-visible { contain: none; }
+  .md-focus-within-contain-none:focus-within { contain: none; }
+  .group:hover .md-group-hover-contain-none { contain: none; }
+  .md-contain-layout { contain: layout; }
+  .md-hover-contain-layout:hover { contain: layout; }
+  .md-focus-contain-layout:focus { contain: layout; }
+  .md-active-contain-layout:active { contain: layout; }
+  .md-disabled-contain-layout:disabled { contain: layout; }
+  .md-focus-visible-contain-layout:focus-visible { contain: layout; }
+  .md-focus-within-contain-layout:focus-within { contain: layout; }
+  .group:hover .md-group-hover-contain-layout { contain: layout; }
+  .md-contain-size { contain: size; }
+  .md-hover-contain-size:hover { contain: size; }
+  .md-focus-contain-size:focus { contain: size; }
+  .md-active-contain-size:active { contain: size; }
+  .md-disabled-contain-size:disabled { contain: size; }
+  .md-focus-visible-contain-size:focus-visible { contain: size; }
+  .md-focus-within-contain-size:focus-within { contain: size; }
+  .group:hover .md-group-hover-contain-size { contain: size; }
+  .md-contain-style { contain: style; }
+  .md-hover-contain-style:hover { contain: style; }
+  .md-focus-contain-style:focus { contain: style; }
+  .md-active-contain-style:active { contain: style; }
+  .md-disabled-contain-style:disabled { contain: style; }
+  .md-focus-visible-contain-style:focus-visible { contain: style; }
+  .md-focus-within-contain-style:focus-within { contain: style; }
+  .group:hover .md-group-hover-contain-style { contain: style; }
+  .md-contain-paint { contain: paint; }
+  .md-hover-contain-paint:hover { contain: paint; }
+  .md-focus-contain-paint:focus { contain: paint; }
+  .md-active-contain-paint:active { contain: paint; }
+  .md-disabled-contain-paint:disabled { contain: paint; }
+  .md-focus-visible-contain-paint:focus-visible { contain: paint; }
+  .md-focus-within-contain-paint:focus-within { contain: paint; }
+  .group:hover .md-group-hover-contain-paint { contain: paint; }
+  .md-contain-content { contain: content; }
+  .md-hover-contain-content:hover { contain: content; }
+  .md-focus-contain-content:focus { contain: content; }
+  .md-active-contain-content:active { contain: content; }
+  .md-disabled-contain-content:disabled { contain: content; }
+  .md-focus-visible-contain-content:focus-visible { contain: content; }
+  .md-focus-within-contain-content:focus-within { contain: content; }
+  .group:hover .md-group-hover-contain-content { contain: content; }
+  .md-box-border { box-sizing: border-box; }
+  .md-hover-box-border:hover { box-sizing: border-box; }
+  .md-focus-box-border:focus { box-sizing: border-box; }
+  .md-active-box-border:active { box-sizing: border-box; }
+  .md-disabled-box-border:disabled { box-sizing: border-box; }
+  .md-focus-visible-box-border:focus-visible { box-sizing: border-box; }
+  .md-focus-within-box-border:focus-within { box-sizing: border-box; }
+  .group:hover .md-group-hover-box-border { box-sizing: border-box; }
+  .md-box-content { box-sizing: content-box; }
+  .md-hover-box-content:hover { box-sizing: content-box; }
+  .md-focus-box-content:focus { box-sizing: content-box; }
+  .md-active-box-content:active { box-sizing: content-box; }
+  .md-disabled-box-content:disabled { box-sizing: content-box; }
+  .md-focus-visible-box-content:focus-visible { box-sizing: content-box; }
+  .md-focus-within-box-content:focus-within { box-sizing: content-box; }
+  .group:hover .md-group-hover-box-content { box-sizing: content-box; }
+  .md-box-border { box-sizing: border-box; }
+  .md-hover-box-border:hover { box-sizing: border-box; }
+  .md-focus-box-border:focus { box-sizing: border-box; }
+  .md-active-box-border:active { box-sizing: border-box; }
+  .md-disabled-box-border:disabled { box-sizing: border-box; }
+  .md-focus-visible-box-border:focus-visible { box-sizing: border-box; }
+  .md-focus-within-box-border:focus-within { box-sizing: border-box; }
+  .group:hover .md-group-hover-box-border { box-sizing: border-box; }
+  .md-box-content { box-sizing: content-box; }
+  .md-hover-box-content:hover { box-sizing: content-box; }
+  .md-focus-box-content:focus { box-sizing: content-box; }
+  .md-active-box-content:active { box-sizing: content-box; }
+  .md-disabled-box-content:disabled { box-sizing: content-box; }
+  .md-focus-visible-box-content:focus-visible { box-sizing: content-box; }
+  .md-focus-within-box-content:focus-within { box-sizing: content-box; }
+  .group:hover .md-group-hover-box-content { box-sizing: content-box; }
+}
+
+/* LG Breakpoint */
+@media (min-width: 1024px) {
+  .lg-clear-left { clear: left; }
+  .lg-hover-clear-left:hover { clear: left; }
+  .lg-focus-clear-left:focus { clear: left; }
+  .lg-active-clear-left:active { clear: left; }
+  .lg-disabled-clear-left:disabled { clear: left; }
+  .lg-focus-visible-clear-left:focus-visible { clear: left; }
+  .lg-focus-within-clear-left:focus-within { clear: left; }
+  .group:hover .lg-group-hover-clear-left { clear: left; }
+  .lg-clear-right { clear: right; }
+  .lg-hover-clear-right:hover { clear: right; }
+  .lg-focus-clear-right:focus { clear: right; }
+  .lg-active-clear-right:active { clear: right; }
+  .lg-disabled-clear-right:disabled { clear: right; }
+  .lg-focus-visible-clear-right:focus-visible { clear: right; }
+  .lg-focus-within-clear-right:focus-within { clear: right; }
+  .group:hover .lg-group-hover-clear-right { clear: right; }
+  .lg-clear-both { clear: both; }
+  .lg-hover-clear-both:hover { clear: both; }
+  .lg-focus-clear-both:focus { clear: both; }
+  .lg-active-clear-both:active { clear: both; }
+  .lg-disabled-clear-both:disabled { clear: both; }
+  .lg-focus-visible-clear-both:focus-visible { clear: both; }
+  .lg-focus-within-clear-both:focus-within { clear: both; }
+  .group:hover .lg-group-hover-clear-both { clear: both; }
+  .lg-float-left { float: left; }
+  .lg-hover-float-left:hover { float: left; }
+  .lg-focus-float-left:focus { float: left; }
+  .lg-active-float-left:active { float: left; }
+  .lg-disabled-float-left:disabled { float: left; }
+  .lg-focus-visible-float-left:focus-visible { float: left; }
+  .lg-focus-within-float-left:focus-within { float: left; }
+  .group:hover .lg-group-hover-float-left { float: left; }
+  .lg-float-right { float: right; }
+  .lg-hover-float-right:hover { float: right; }
+  .lg-focus-float-right:focus { float: right; }
+  .lg-active-float-right:active { float: right; }
+  .lg-disabled-float-right:disabled { float: right; }
+  .lg-focus-visible-float-right:focus-visible { float: right; }
+  .lg-focus-within-float-right:focus-within { float: right; }
+  .group:hover .lg-group-hover-float-right { float: right; }
+  .lg-float-none { float: none; }
+  .lg-hover-float-none:hover { float: none; }
+  .lg-focus-float-none:focus { float: none; }
+  .lg-active-float-none:active { float: none; }
+  .lg-disabled-float-none:disabled { float: none; }
+  .lg-focus-visible-float-none:focus-visible { float: none; }
+  .lg-focus-within-float-none:focus-within { float: none; }
+  .group:hover .lg-group-hover-float-none { float: none; }
+  .lg-box-decoration-slice { box-decoration-break: slice;
+  -webkit-box-decoration-break: slice; /* for Safari */ }
+  .lg-hover-box-decoration-slice:hover { box-decoration-break: slice;
+  -webkit-box-decoration-break: slice; /* for Safari */ }
+  .lg-focus-box-decoration-slice:focus { box-decoration-break: slice;
+  -webkit-box-decoration-break: slice; /* for Safari */ }
+  .lg-active-box-decoration-slice:active { box-decoration-break: slice;
+  -webkit-box-decoration-break: slice; /* for Safari */ }
+  .lg-disabled-box-decoration-slice:disabled { box-decoration-break: slice;
+  -webkit-box-decoration-break: slice; /* for Safari */ }
+  .lg-focus-visible-box-decoration-slice:focus-visible { box-decoration-break: slice;
+  -webkit-box-decoration-break: slice; /* for Safari */ }
+  .lg-focus-within-box-decoration-slice:focus-within { box-decoration-break: slice;
+  -webkit-box-decoration-break: slice; /* for Safari */ }
+  .group:hover .lg-group-hover-box-decoration-slice { box-decoration-break: slice;
+  -webkit-box-decoration-break: slice; /* for Safari */ }
+  .lg-box-decoration-clone { box-decoration-break: clone;
+  -webkit-box-decoration-break: clone; /* for Safari */ }
+  .lg-hover-box-decoration-clone:hover { box-decoration-break: clone;
+  -webkit-box-decoration-break: clone; /* for Safari */ }
+  .lg-focus-box-decoration-clone:focus { box-decoration-break: clone;
+  -webkit-box-decoration-break: clone; /* for Safari */ }
+  .lg-active-box-decoration-clone:active { box-decoration-break: clone;
+  -webkit-box-decoration-break: clone; /* for Safari */ }
+  .lg-disabled-box-decoration-clone:disabled { box-decoration-break: clone;
+  -webkit-box-decoration-break: clone; /* for Safari */ }
+  .lg-focus-visible-box-decoration-clone:focus-visible { box-decoration-break: clone;
+  -webkit-box-decoration-break: clone; /* for Safari */ }
+  .lg-focus-within-box-decoration-clone:focus-within { box-decoration-break: clone;
+  -webkit-box-decoration-break: clone; /* for Safari */ }
+  .group:hover .lg-group-hover-box-decoration-clone { box-decoration-break: clone;
+  -webkit-box-decoration-break: clone; /* for Safari */ }
+  .lg-aspect-auto { aspect-ratio: auto; }
+  .lg-hover-aspect-auto:hover { aspect-ratio: auto; }
+  .lg-focus-aspect-auto:focus { aspect-ratio: auto; }
+  .lg-active-aspect-auto:active { aspect-ratio: auto; }
+  .lg-disabled-aspect-auto:disabled { aspect-ratio: auto; }
+  .lg-focus-visible-aspect-auto:focus-visible { aspect-ratio: auto; }
+  .lg-focus-within-aspect-auto:focus-within { aspect-ratio: auto; }
+  .group:hover .lg-group-hover-aspect-auto { aspect-ratio: auto; }
+  .lg-aspect-square { aspect-ratio: 1 / 1; }
+  .lg-hover-aspect-square:hover { aspect-ratio: 1 / 1; }
+  .lg-focus-aspect-square:focus { aspect-ratio: 1 / 1; }
+  .lg-active-aspect-square:active { aspect-ratio: 1 / 1; }
+  .lg-disabled-aspect-square:disabled { aspect-ratio: 1 / 1; }
+  .lg-focus-visible-aspect-square:focus-visible { aspect-ratio: 1 / 1; }
+  .lg-focus-within-aspect-square:focus-within { aspect-ratio: 1 / 1; }
+  .group:hover .lg-group-hover-aspect-square { aspect-ratio: 1 / 1; }
+  .lg-aspect-video { aspect-ratio: 16 / 9; }
+  .lg-hover-aspect-video:hover { aspect-ratio: 16 / 9; }
+  .lg-focus-aspect-video:focus { aspect-ratio: 16 / 9; }
+  .lg-active-aspect-video:active { aspect-ratio: 16 / 9; }
+  .lg-disabled-aspect-video:disabled { aspect-ratio: 16 / 9; }
+  .lg-focus-visible-aspect-video:focus-visible { aspect-ratio: 16 / 9; }
+  .lg-focus-within-aspect-video:focus-within { aspect-ratio: 16 / 9; }
+  .group:hover .lg-group-hover-aspect-video { aspect-ratio: 16 / 9; }
+  .lg-aspect-ar_4_3 { aspect-ratio: 4 / 3; }
+  .lg-hover-aspect-ar_4_3:hover { aspect-ratio: 4 / 3; }
+  .lg-focus-aspect-ar_4_3:focus { aspect-ratio: 4 / 3; }
+  .lg-active-aspect-ar_4_3:active { aspect-ratio: 4 / 3; }
+  .lg-disabled-aspect-ar_4_3:disabled { aspect-ratio: 4 / 3; }
+  .lg-focus-visible-aspect-ar_4_3:focus-visible { aspect-ratio: 4 / 3; }
+  .lg-focus-within-aspect-ar_4_3:focus-within { aspect-ratio: 4 / 3; }
+  .group:hover .lg-group-hover-aspect-ar_4_3 { aspect-ratio: 4 / 3; }
+  .lg-isolation-auto { isolation: auto; }
+  .lg-hover-isolation-auto:hover { isolation: auto; }
+  .lg-focus-isolation-auto:focus { isolation: auto; }
+  .lg-active-isolation-auto:active { isolation: auto; }
+  .lg-disabled-isolation-auto:disabled { isolation: auto; }
+  .lg-focus-visible-isolation-auto:focus-visible { isolation: auto; }
+  .lg-focus-within-isolation-auto:focus-within { isolation: auto; }
+  .group:hover .lg-group-hover-isolation-auto { isolation: auto; }
+  .lg-isolation-isolate { isolation: isolate; }
+  .lg-hover-isolation-isolate:hover { isolation: isolate; }
+  .lg-focus-isolation-isolate:focus { isolation: isolate; }
+  .lg-active-isolation-isolate:active { isolation: isolate; }
+  .lg-disabled-isolation-isolate:disabled { isolation: isolate; }
+  .lg-focus-visible-isolation-isolate:focus-visible { isolation: isolate; }
+  .lg-focus-within-isolation-isolate:focus-within { isolation: isolate; }
+  .group:hover .lg-group-hover-isolation-isolate { isolation: isolate; }
+  .lg-contain-none { contain: none; }
+  .lg-hover-contain-none:hover { contain: none; }
+  .lg-focus-contain-none:focus { contain: none; }
+  .lg-active-contain-none:active { contain: none; }
+  .lg-disabled-contain-none:disabled { contain: none; }
+  .lg-focus-visible-contain-none:focus-visible { contain: none; }
+  .lg-focus-within-contain-none:focus-within { contain: none; }
+  .group:hover .lg-group-hover-contain-none { contain: none; }
+  .lg-contain-layout { contain: layout; }
+  .lg-hover-contain-layout:hover { contain: layout; }
+  .lg-focus-contain-layout:focus { contain: layout; }
+  .lg-active-contain-layout:active { contain: layout; }
+  .lg-disabled-contain-layout:disabled { contain: layout; }
+  .lg-focus-visible-contain-layout:focus-visible { contain: layout; }
+  .lg-focus-within-contain-layout:focus-within { contain: layout; }
+  .group:hover .lg-group-hover-contain-layout { contain: layout; }
+  .lg-contain-size { contain: size; }
+  .lg-hover-contain-size:hover { contain: size; }
+  .lg-focus-contain-size:focus { contain: size; }
+  .lg-active-contain-size:active { contain: size; }
+  .lg-disabled-contain-size:disabled { contain: size; }
+  .lg-focus-visible-contain-size:focus-visible { contain: size; }
+  .lg-focus-within-contain-size:focus-within { contain: size; }
+  .group:hover .lg-group-hover-contain-size { contain: size; }
+  .lg-contain-style { contain: style; }
+  .lg-hover-contain-style:hover { contain: style; }
+  .lg-focus-contain-style:focus { contain: style; }
+  .lg-active-contain-style:active { contain: style; }
+  .lg-disabled-contain-style:disabled { contain: style; }
+  .lg-focus-visible-contain-style:focus-visible { contain: style; }
+  .lg-focus-within-contain-style:focus-within { contain: style; }
+  .group:hover .lg-group-hover-contain-style { contain: style; }
+  .lg-contain-paint { contain: paint; }
+  .lg-hover-contain-paint:hover { contain: paint; }
+  .lg-focus-contain-paint:focus { contain: paint; }
+  .lg-active-contain-paint:active { contain: paint; }
+  .lg-disabled-contain-paint:disabled { contain: paint; }
+  .lg-focus-visible-contain-paint:focus-visible { contain: paint; }
+  .lg-focus-within-contain-paint:focus-within { contain: paint; }
+  .group:hover .lg-group-hover-contain-paint { contain: paint; }
+  .lg-contain-content { contain: content; }
+  .lg-hover-contain-content:hover { contain: content; }
+  .lg-focus-contain-content:focus { contain: content; }
+  .lg-active-contain-content:active { contain: content; }
+  .lg-disabled-contain-content:disabled { contain: content; }
+  .lg-focus-visible-contain-content:focus-visible { contain: content; }
+  .lg-focus-within-contain-content:focus-within { contain: content; }
+  .group:hover .lg-group-hover-contain-content { contain: content; }
+  .lg-box-border { box-sizing: border-box; }
+  .lg-hover-box-border:hover { box-sizing: border-box; }
+  .lg-focus-box-border:focus { box-sizing: border-box; }
+  .lg-active-box-border:active { box-sizing: border-box; }
+  .lg-disabled-box-border:disabled { box-sizing: border-box; }
+  .lg-focus-visible-box-border:focus-visible { box-sizing: border-box; }
+  .lg-focus-within-box-border:focus-within { box-sizing: border-box; }
+  .group:hover .lg-group-hover-box-border { box-sizing: border-box; }
+  .lg-box-content { box-sizing: content-box; }
+  .lg-hover-box-content:hover { box-sizing: content-box; }
+  .lg-focus-box-content:focus { box-sizing: content-box; }
+  .lg-active-box-content:active { box-sizing: content-box; }
+  .lg-disabled-box-content:disabled { box-sizing: content-box; }
+  .lg-focus-visible-box-content:focus-visible { box-sizing: content-box; }
+  .lg-focus-within-box-content:focus-within { box-sizing: content-box; }
+  .group:hover .lg-group-hover-box-content { box-sizing: content-box; }
+  .lg-box-border { box-sizing: border-box; }
+  .lg-hover-box-border:hover { box-sizing: border-box; }
+  .lg-focus-box-border:focus { box-sizing: border-box; }
+  .lg-active-box-border:active { box-sizing: border-box; }
+  .lg-disabled-box-border:disabled { box-sizing: border-box; }
+  .lg-focus-visible-box-border:focus-visible { box-sizing: border-box; }
+  .lg-focus-within-box-border:focus-within { box-sizing: border-box; }
+  .group:hover .lg-group-hover-box-border { box-sizing: border-box; }
+  .lg-box-content { box-sizing: content-box; }
+  .lg-hover-box-content:hover { box-sizing: content-box; }
+  .lg-focus-box-content:focus { box-sizing: content-box; }
+  .lg-active-box-content:active { box-sizing: content-box; }
+  .lg-disabled-box-content:disabled { box-sizing: content-box; }
+  .lg-focus-visible-box-content:focus-visible { box-sizing: content-box; }
+  .lg-focus-within-box-content:focus-within { box-sizing: content-box; }
+  .group:hover .lg-group-hover-box-content { box-sizing: content-box; }
+}
+
+/* XL Breakpoint */
+@media (min-width: 1280px) {
+  .xl-clear-left { clear: left; }
+  .xl-hover-clear-left:hover { clear: left; }
+  .xl-focus-clear-left:focus { clear: left; }
+  .xl-active-clear-left:active { clear: left; }
+  .xl-disabled-clear-left:disabled { clear: left; }
+  .xl-focus-visible-clear-left:focus-visible { clear: left; }
+  .xl-focus-within-clear-left:focus-within { clear: left; }
+  .group:hover .xl-group-hover-clear-left { clear: left; }
+  .xl-clear-right { clear: right; }
+  .xl-hover-clear-right:hover { clear: right; }
+  .xl-focus-clear-right:focus { clear: right; }
+  .xl-active-clear-right:active { clear: right; }
+  .xl-disabled-clear-right:disabled { clear: right; }
+  .xl-focus-visible-clear-right:focus-visible { clear: right; }
+  .xl-focus-within-clear-right:focus-within { clear: right; }
+  .group:hover .xl-group-hover-clear-right { clear: right; }
+  .xl-clear-both { clear: both; }
+  .xl-hover-clear-both:hover { clear: both; }
+  .xl-focus-clear-both:focus { clear: both; }
+  .xl-active-clear-both:active { clear: both; }
+  .xl-disabled-clear-both:disabled { clear: both; }
+  .xl-focus-visible-clear-both:focus-visible { clear: both; }
+  .xl-focus-within-clear-both:focus-within { clear: both; }
+  .group:hover .xl-group-hover-clear-both { clear: both; }
+  .xl-float-left { float: left; }
+  .xl-hover-float-left:hover { float: left; }
+  .xl-focus-float-left:focus { float: left; }
+  .xl-active-float-left:active { float: left; }
+  .xl-disabled-float-left:disabled { float: left; }
+  .xl-focus-visible-float-left:focus-visible { float: left; }
+  .xl-focus-within-float-left:focus-within { float: left; }
+  .group:hover .xl-group-hover-float-left { float: left; }
+  .xl-float-right { float: right; }
+  .xl-hover-float-right:hover { float: right; }
+  .xl-focus-float-right:focus { float: right; }
+  .xl-active-float-right:active { float: right; }
+  .xl-disabled-float-right:disabled { float: right; }
+  .xl-focus-visible-float-right:focus-visible { float: right; }
+  .xl-focus-within-float-right:focus-within { float: right; }
+  .group:hover .xl-group-hover-float-right { float: right; }
+  .xl-float-none { float: none; }
+  .xl-hover-float-none:hover { float: none; }
+  .xl-focus-float-none:focus { float: none; }
+  .xl-active-float-none:active { float: none; }
+  .xl-disabled-float-none:disabled { float: none; }
+  .xl-focus-visible-float-none:focus-visible { float: none; }
+  .xl-focus-within-float-none:focus-within { float: none; }
+  .group:hover .xl-group-hover-float-none { float: none; }
+  .xl-box-decoration-slice { box-decoration-break: slice;
+  -webkit-box-decoration-break: slice; /* for Safari */ }
+  .xl-hover-box-decoration-slice:hover { box-decoration-break: slice;
+  -webkit-box-decoration-break: slice; /* for Safari */ }
+  .xl-focus-box-decoration-slice:focus { box-decoration-break: slice;
+  -webkit-box-decoration-break: slice; /* for Safari */ }
+  .xl-active-box-decoration-slice:active { box-decoration-break: slice;
+  -webkit-box-decoration-break: slice; /* for Safari */ }
+  .xl-disabled-box-decoration-slice:disabled { box-decoration-break: slice;
+  -webkit-box-decoration-break: slice; /* for Safari */ }
+  .xl-focus-visible-box-decoration-slice:focus-visible { box-decoration-break: slice;
+  -webkit-box-decoration-break: slice; /* for Safari */ }
+  .xl-focus-within-box-decoration-slice:focus-within { box-decoration-break: slice;
+  -webkit-box-decoration-break: slice; /* for Safari */ }
+  .group:hover .xl-group-hover-box-decoration-slice { box-decoration-break: slice;
+  -webkit-box-decoration-break: slice; /* for Safari */ }
+  .xl-box-decoration-clone { box-decoration-break: clone;
+  -webkit-box-decoration-break: clone; /* for Safari */ }
+  .xl-hover-box-decoration-clone:hover { box-decoration-break: clone;
+  -webkit-box-decoration-break: clone; /* for Safari */ }
+  .xl-focus-box-decoration-clone:focus { box-decoration-break: clone;
+  -webkit-box-decoration-break: clone; /* for Safari */ }
+  .xl-active-box-decoration-clone:active { box-decoration-break: clone;
+  -webkit-box-decoration-break: clone; /* for Safari */ }
+  .xl-disabled-box-decoration-clone:disabled { box-decoration-break: clone;
+  -webkit-box-decoration-break: clone; /* for Safari */ }
+  .xl-focus-visible-box-decoration-clone:focus-visible { box-decoration-break: clone;
+  -webkit-box-decoration-break: clone; /* for Safari */ }
+  .xl-focus-within-box-decoration-clone:focus-within { box-decoration-break: clone;
+  -webkit-box-decoration-break: clone; /* for Safari */ }
+  .group:hover .xl-group-hover-box-decoration-clone { box-decoration-break: clone;
+  -webkit-box-decoration-break: clone; /* for Safari */ }
+  .xl-aspect-auto { aspect-ratio: auto; }
+  .xl-hover-aspect-auto:hover { aspect-ratio: auto; }
+  .xl-focus-aspect-auto:focus { aspect-ratio: auto; }
+  .xl-active-aspect-auto:active { aspect-ratio: auto; }
+  .xl-disabled-aspect-auto:disabled { aspect-ratio: auto; }
+  .xl-focus-visible-aspect-auto:focus-visible { aspect-ratio: auto; }
+  .xl-focus-within-aspect-auto:focus-within { aspect-ratio: auto; }
+  .group:hover .xl-group-hover-aspect-auto { aspect-ratio: auto; }
+  .xl-aspect-square { aspect-ratio: 1 / 1; }
+  .xl-hover-aspect-square:hover { aspect-ratio: 1 / 1; }
+  .xl-focus-aspect-square:focus { aspect-ratio: 1 / 1; }
+  .xl-active-aspect-square:active { aspect-ratio: 1 / 1; }
+  .xl-disabled-aspect-square:disabled { aspect-ratio: 1 / 1; }
+  .xl-focus-visible-aspect-square:focus-visible { aspect-ratio: 1 / 1; }
+  .xl-focus-within-aspect-square:focus-within { aspect-ratio: 1 / 1; }
+  .group:hover .xl-group-hover-aspect-square { aspect-ratio: 1 / 1; }
+  .xl-aspect-video { aspect-ratio: 16 / 9; }
+  .xl-hover-aspect-video:hover { aspect-ratio: 16 / 9; }
+  .xl-focus-aspect-video:focus { aspect-ratio: 16 / 9; }
+  .xl-active-aspect-video:active { aspect-ratio: 16 / 9; }
+  .xl-disabled-aspect-video:disabled { aspect-ratio: 16 / 9; }
+  .xl-focus-visible-aspect-video:focus-visible { aspect-ratio: 16 / 9; }
+  .xl-focus-within-aspect-video:focus-within { aspect-ratio: 16 / 9; }
+  .group:hover .xl-group-hover-aspect-video { aspect-ratio: 16 / 9; }
+  .xl-aspect-ar_4_3 { aspect-ratio: 4 / 3; }
+  .xl-hover-aspect-ar_4_3:hover { aspect-ratio: 4 / 3; }
+  .xl-focus-aspect-ar_4_3:focus { aspect-ratio: 4 / 3; }
+  .xl-active-aspect-ar_4_3:active { aspect-ratio: 4 / 3; }
+  .xl-disabled-aspect-ar_4_3:disabled { aspect-ratio: 4 / 3; }
+  .xl-focus-visible-aspect-ar_4_3:focus-visible { aspect-ratio: 4 / 3; }
+  .xl-focus-within-aspect-ar_4_3:focus-within { aspect-ratio: 4 / 3; }
+  .group:hover .xl-group-hover-aspect-ar_4_3 { aspect-ratio: 4 / 3; }
+  .xl-isolation-auto { isolation: auto; }
+  .xl-hover-isolation-auto:hover { isolation: auto; }
+  .xl-focus-isolation-auto:focus { isolation: auto; }
+  .xl-active-isolation-auto:active { isolation: auto; }
+  .xl-disabled-isolation-auto:disabled { isolation: auto; }
+  .xl-focus-visible-isolation-auto:focus-visible { isolation: auto; }
+  .xl-focus-within-isolation-auto:focus-within { isolation: auto; }
+  .group:hover .xl-group-hover-isolation-auto { isolation: auto; }
+  .xl-isolation-isolate { isolation: isolate; }
+  .xl-hover-isolation-isolate:hover { isolation: isolate; }
+  .xl-focus-isolation-isolate:focus { isolation: isolate; }
+  .xl-active-isolation-isolate:active { isolation: isolate; }
+  .xl-disabled-isolation-isolate:disabled { isolation: isolate; }
+  .xl-focus-visible-isolation-isolate:focus-visible { isolation: isolate; }
+  .xl-focus-within-isolation-isolate:focus-within { isolation: isolate; }
+  .group:hover .xl-group-hover-isolation-isolate { isolation: isolate; }
+  .xl-contain-none { contain: none; }
+  .xl-hover-contain-none:hover { contain: none; }
+  .xl-focus-contain-none:focus { contain: none; }
+  .xl-active-contain-none:active { contain: none; }
+  .xl-disabled-contain-none:disabled { contain: none; }
+  .xl-focus-visible-contain-none:focus-visible { contain: none; }
+  .xl-focus-within-contain-none:focus-within { contain: none; }
+  .group:hover .xl-group-hover-contain-none { contain: none; }
+  .xl-contain-layout { contain: layout; }
+  .xl-hover-contain-layout:hover { contain: layout; }
+  .xl-focus-contain-layout:focus { contain: layout; }
+  .xl-active-contain-layout:active { contain: layout; }
+  .xl-disabled-contain-layout:disabled { contain: layout; }
+  .xl-focus-visible-contain-layout:focus-visible { contain: layout; }
+  .xl-focus-within-contain-layout:focus-within { contain: layout; }
+  .group:hover .xl-group-hover-contain-layout { contain: layout; }
+  .xl-contain-size { contain: size; }
+  .xl-hover-contain-size:hover { contain: size; }
+  .xl-focus-contain-size:focus { contain: size; }
+  .xl-active-contain-size:active { contain: size; }
+  .xl-disabled-contain-size:disabled { contain: size; }
+  .xl-focus-visible-contain-size:focus-visible { contain: size; }
+  .xl-focus-within-contain-size:focus-within { contain: size; }
+  .group:hover .xl-group-hover-contain-size { contain: size; }
+  .xl-contain-style { contain: style; }
+  .xl-hover-contain-style:hover { contain: style; }
+  .xl-focus-contain-style:focus { contain: style; }
+  .xl-active-contain-style:active { contain: style; }
+  .xl-disabled-contain-style:disabled { contain: style; }
+  .xl-focus-visible-contain-style:focus-visible { contain: style; }
+  .xl-focus-within-contain-style:focus-within { contain: style; }
+  .group:hover .xl-group-hover-contain-style { contain: style; }
+  .xl-contain-paint { contain: paint; }
+  .xl-hover-contain-paint:hover { contain: paint; }
+  .xl-focus-contain-paint:focus { contain: paint; }
+  .xl-active-contain-paint:active { contain: paint; }
+  .xl-disabled-contain-paint:disabled { contain: paint; }
+  .xl-focus-visible-contain-paint:focus-visible { contain: paint; }
+  .xl-focus-within-contain-paint:focus-within { contain: paint; }
+  .group:hover .xl-group-hover-contain-paint { contain: paint; }
+  .xl-contain-content { contain: content; }
+  .xl-hover-contain-content:hover { contain: content; }
+  .xl-focus-contain-content:focus { contain: content; }
+  .xl-active-contain-content:active { contain: content; }
+  .xl-disabled-contain-content:disabled { contain: content; }
+  .xl-focus-visible-contain-content:focus-visible { contain: content; }
+  .xl-focus-within-contain-content:focus-within { contain: content; }
+  .group:hover .xl-group-hover-contain-content { contain: content; }
+  .xl-box-border { box-sizing: border-box; }
+  .xl-hover-box-border:hover { box-sizing: border-box; }
+  .xl-focus-box-border:focus { box-sizing: border-box; }
+  .xl-active-box-border:active { box-sizing: border-box; }
+  .xl-disabled-box-border:disabled { box-sizing: border-box; }
+  .xl-focus-visible-box-border:focus-visible { box-sizing: border-box; }
+  .xl-focus-within-box-border:focus-within { box-sizing: border-box; }
+  .group:hover .xl-group-hover-box-border { box-sizing: border-box; }
+  .xl-box-content { box-sizing: content-box; }
+  .xl-hover-box-content:hover { box-sizing: content-box; }
+  .xl-focus-box-content:focus { box-sizing: content-box; }
+  .xl-active-box-content:active { box-sizing: content-box; }
+  .xl-disabled-box-content:disabled { box-sizing: content-box; }
+  .xl-focus-visible-box-content:focus-visible { box-sizing: content-box; }
+  .xl-focus-within-box-content:focus-within { box-sizing: content-box; }
+  .group:hover .xl-group-hover-box-content { box-sizing: content-box; }
+  .xl-box-border { box-sizing: border-box; }
+  .xl-hover-box-border:hover { box-sizing: border-box; }
+  .xl-focus-box-border:focus { box-sizing: border-box; }
+  .xl-active-box-border:active { box-sizing: border-box; }
+  .xl-disabled-box-border:disabled { box-sizing: border-box; }
+  .xl-focus-visible-box-border:focus-visible { box-sizing: border-box; }
+  .xl-focus-within-box-border:focus-within { box-sizing: border-box; }
+  .group:hover .xl-group-hover-box-border { box-sizing: border-box; }
+  .xl-box-content { box-sizing: content-box; }
+  .xl-hover-box-content:hover { box-sizing: content-box; }
+  .xl-focus-box-content:focus { box-sizing: content-box; }
+  .xl-active-box-content:active { box-sizing: content-box; }
+  .xl-disabled-box-content:disabled { box-sizing: content-box; }
+  .xl-focus-visible-box-content:focus-visible { box-sizing: content-box; }
+  .xl-focus-within-box-content:focus-within { box-sizing: content-box; }
+  .group:hover .xl-group-hover-box-content { box-sizing: content-box; }
+}
+
+/* UW Breakpoint */
+@media (min-width: 1536px) {
+  .uw-clear-left { clear: left; }
+  .uw-hover-clear-left:hover { clear: left; }
+  .uw-focus-clear-left:focus { clear: left; }
+  .uw-active-clear-left:active { clear: left; }
+  .uw-disabled-clear-left:disabled { clear: left; }
+  .uw-focus-visible-clear-left:focus-visible { clear: left; }
+  .uw-focus-within-clear-left:focus-within { clear: left; }
+  .group:hover .uw-group-hover-clear-left { clear: left; }
+  .uw-clear-right { clear: right; }
+  .uw-hover-clear-right:hover { clear: right; }
+  .uw-focus-clear-right:focus { clear: right; }
+  .uw-active-clear-right:active { clear: right; }
+  .uw-disabled-clear-right:disabled { clear: right; }
+  .uw-focus-visible-clear-right:focus-visible { clear: right; }
+  .uw-focus-within-clear-right:focus-within { clear: right; }
+  .group:hover .uw-group-hover-clear-right { clear: right; }
+  .uw-clear-both { clear: both; }
+  .uw-hover-clear-both:hover { clear: both; }
+  .uw-focus-clear-both:focus { clear: both; }
+  .uw-active-clear-both:active { clear: both; }
+  .uw-disabled-clear-both:disabled { clear: both; }
+  .uw-focus-visible-clear-both:focus-visible { clear: both; }
+  .uw-focus-within-clear-both:focus-within { clear: both; }
+  .group:hover .uw-group-hover-clear-both { clear: both; }
+  .uw-float-left { float: left; }
+  .uw-hover-float-left:hover { float: left; }
+  .uw-focus-float-left:focus { float: left; }
+  .uw-active-float-left:active { float: left; }
+  .uw-disabled-float-left:disabled { float: left; }
+  .uw-focus-visible-float-left:focus-visible { float: left; }
+  .uw-focus-within-float-left:focus-within { float: left; }
+  .group:hover .uw-group-hover-float-left { float: left; }
+  .uw-float-right { float: right; }
+  .uw-hover-float-right:hover { float: right; }
+  .uw-focus-float-right:focus { float: right; }
+  .uw-active-float-right:active { float: right; }
+  .uw-disabled-float-right:disabled { float: right; }
+  .uw-focus-visible-float-right:focus-visible { float: right; }
+  .uw-focus-within-float-right:focus-within { float: right; }
+  .group:hover .uw-group-hover-float-right { float: right; }
+  .uw-float-none { float: none; }
+  .uw-hover-float-none:hover { float: none; }
+  .uw-focus-float-none:focus { float: none; }
+  .uw-active-float-none:active { float: none; }
+  .uw-disabled-float-none:disabled { float: none; }
+  .uw-focus-visible-float-none:focus-visible { float: none; }
+  .uw-focus-within-float-none:focus-within { float: none; }
+  .group:hover .uw-group-hover-float-none { float: none; }
+  .uw-box-decoration-slice { box-decoration-break: slice;
+  -webkit-box-decoration-break: slice; /* for Safari */ }
+  .uw-hover-box-decoration-slice:hover { box-decoration-break: slice;
+  -webkit-box-decoration-break: slice; /* for Safari */ }
+  .uw-focus-box-decoration-slice:focus { box-decoration-break: slice;
+  -webkit-box-decoration-break: slice; /* for Safari */ }
+  .uw-active-box-decoration-slice:active { box-decoration-break: slice;
+  -webkit-box-decoration-break: slice; /* for Safari */ }
+  .uw-disabled-box-decoration-slice:disabled { box-decoration-break: slice;
+  -webkit-box-decoration-break: slice; /* for Safari */ }
+  .uw-focus-visible-box-decoration-slice:focus-visible { box-decoration-break: slice;
+  -webkit-box-decoration-break: slice; /* for Safari */ }
+  .uw-focus-within-box-decoration-slice:focus-within { box-decoration-break: slice;
+  -webkit-box-decoration-break: slice; /* for Safari */ }
+  .group:hover .uw-group-hover-box-decoration-slice { box-decoration-break: slice;
+  -webkit-box-decoration-break: slice; /* for Safari */ }
+  .uw-box-decoration-clone { box-decoration-break: clone;
+  -webkit-box-decoration-break: clone; /* for Safari */ }
+  .uw-hover-box-decoration-clone:hover { box-decoration-break: clone;
+  -webkit-box-decoration-break: clone; /* for Safari */ }
+  .uw-focus-box-decoration-clone:focus { box-decoration-break: clone;
+  -webkit-box-decoration-break: clone; /* for Safari */ }
+  .uw-active-box-decoration-clone:active { box-decoration-break: clone;
+  -webkit-box-decoration-break: clone; /* for Safari */ }
+  .uw-disabled-box-decoration-clone:disabled { box-decoration-break: clone;
+  -webkit-box-decoration-break: clone; /* for Safari */ }
+  .uw-focus-visible-box-decoration-clone:focus-visible { box-decoration-break: clone;
+  -webkit-box-decoration-break: clone; /* for Safari */ }
+  .uw-focus-within-box-decoration-clone:focus-within { box-decoration-break: clone;
+  -webkit-box-decoration-break: clone; /* for Safari */ }
+  .group:hover .uw-group-hover-box-decoration-clone { box-decoration-break: clone;
+  -webkit-box-decoration-break: clone; /* for Safari */ }
+  .uw-aspect-auto { aspect-ratio: auto; }
+  .uw-hover-aspect-auto:hover { aspect-ratio: auto; }
+  .uw-focus-aspect-auto:focus { aspect-ratio: auto; }
+  .uw-active-aspect-auto:active { aspect-ratio: auto; }
+  .uw-disabled-aspect-auto:disabled { aspect-ratio: auto; }
+  .uw-focus-visible-aspect-auto:focus-visible { aspect-ratio: auto; }
+  .uw-focus-within-aspect-auto:focus-within { aspect-ratio: auto; }
+  .group:hover .uw-group-hover-aspect-auto { aspect-ratio: auto; }
+  .uw-aspect-square { aspect-ratio: 1 / 1; }
+  .uw-hover-aspect-square:hover { aspect-ratio: 1 / 1; }
+  .uw-focus-aspect-square:focus { aspect-ratio: 1 / 1; }
+  .uw-active-aspect-square:active { aspect-ratio: 1 / 1; }
+  .uw-disabled-aspect-square:disabled { aspect-ratio: 1 / 1; }
+  .uw-focus-visible-aspect-square:focus-visible { aspect-ratio: 1 / 1; }
+  .uw-focus-within-aspect-square:focus-within { aspect-ratio: 1 / 1; }
+  .group:hover .uw-group-hover-aspect-square { aspect-ratio: 1 / 1; }
+  .uw-aspect-video { aspect-ratio: 16 / 9; }
+  .uw-hover-aspect-video:hover { aspect-ratio: 16 / 9; }
+  .uw-focus-aspect-video:focus { aspect-ratio: 16 / 9; }
+  .uw-active-aspect-video:active { aspect-ratio: 16 / 9; }
+  .uw-disabled-aspect-video:disabled { aspect-ratio: 16 / 9; }
+  .uw-focus-visible-aspect-video:focus-visible { aspect-ratio: 16 / 9; }
+  .uw-focus-within-aspect-video:focus-within { aspect-ratio: 16 / 9; }
+  .group:hover .uw-group-hover-aspect-video { aspect-ratio: 16 / 9; }
+  .uw-aspect-ar_4_3 { aspect-ratio: 4 / 3; }
+  .uw-hover-aspect-ar_4_3:hover { aspect-ratio: 4 / 3; }
+  .uw-focus-aspect-ar_4_3:focus { aspect-ratio: 4 / 3; }
+  .uw-active-aspect-ar_4_3:active { aspect-ratio: 4 / 3; }
+  .uw-disabled-aspect-ar_4_3:disabled { aspect-ratio: 4 / 3; }
+  .uw-focus-visible-aspect-ar_4_3:focus-visible { aspect-ratio: 4 / 3; }
+  .uw-focus-within-aspect-ar_4_3:focus-within { aspect-ratio: 4 / 3; }
+  .group:hover .uw-group-hover-aspect-ar_4_3 { aspect-ratio: 4 / 3; }
+  .uw-isolation-auto { isolation: auto; }
+  .uw-hover-isolation-auto:hover { isolation: auto; }
+  .uw-focus-isolation-auto:focus { isolation: auto; }
+  .uw-active-isolation-auto:active { isolation: auto; }
+  .uw-disabled-isolation-auto:disabled { isolation: auto; }
+  .uw-focus-visible-isolation-auto:focus-visible { isolation: auto; }
+  .uw-focus-within-isolation-auto:focus-within { isolation: auto; }
+  .group:hover .uw-group-hover-isolation-auto { isolation: auto; }
+  .uw-isolation-isolate { isolation: isolate; }
+  .uw-hover-isolation-isolate:hover { isolation: isolate; }
+  .uw-focus-isolation-isolate:focus { isolation: isolate; }
+  .uw-active-isolation-isolate:active { isolation: isolate; }
+  .uw-disabled-isolation-isolate:disabled { isolation: isolate; }
+  .uw-focus-visible-isolation-isolate:focus-visible { isolation: isolate; }
+  .uw-focus-within-isolation-isolate:focus-within { isolation: isolate; }
+  .group:hover .uw-group-hover-isolation-isolate { isolation: isolate; }
+  .uw-contain-none { contain: none; }
+  .uw-hover-contain-none:hover { contain: none; }
+  .uw-focus-contain-none:focus { contain: none; }
+  .uw-active-contain-none:active { contain: none; }
+  .uw-disabled-contain-none:disabled { contain: none; }
+  .uw-focus-visible-contain-none:focus-visible { contain: none; }
+  .uw-focus-within-contain-none:focus-within { contain: none; }
+  .group:hover .uw-group-hover-contain-none { contain: none; }
+  .uw-contain-layout { contain: layout; }
+  .uw-hover-contain-layout:hover { contain: layout; }
+  .uw-focus-contain-layout:focus { contain: layout; }
+  .uw-active-contain-layout:active { contain: layout; }
+  .uw-disabled-contain-layout:disabled { contain: layout; }
+  .uw-focus-visible-contain-layout:focus-visible { contain: layout; }
+  .uw-focus-within-contain-layout:focus-within { contain: layout; }
+  .group:hover .uw-group-hover-contain-layout { contain: layout; }
+  .uw-contain-size { contain: size; }
+  .uw-hover-contain-size:hover { contain: size; }
+  .uw-focus-contain-size:focus { contain: size; }
+  .uw-active-contain-size:active { contain: size; }
+  .uw-disabled-contain-size:disabled { contain: size; }
+  .uw-focus-visible-contain-size:focus-visible { contain: size; }
+  .uw-focus-within-contain-size:focus-within { contain: size; }
+  .group:hover .uw-group-hover-contain-size { contain: size; }
+  .uw-contain-style { contain: style; }
+  .uw-hover-contain-style:hover { contain: style; }
+  .uw-focus-contain-style:focus { contain: style; }
+  .uw-active-contain-style:active { contain: style; }
+  .uw-disabled-contain-style:disabled { contain: style; }
+  .uw-focus-visible-contain-style:focus-visible { contain: style; }
+  .uw-focus-within-contain-style:focus-within { contain: style; }
+  .group:hover .uw-group-hover-contain-style { contain: style; }
+  .uw-contain-paint { contain: paint; }
+  .uw-hover-contain-paint:hover { contain: paint; }
+  .uw-focus-contain-paint:focus { contain: paint; }
+  .uw-active-contain-paint:active { contain: paint; }
+  .uw-disabled-contain-paint:disabled { contain: paint; }
+  .uw-focus-visible-contain-paint:focus-visible { contain: paint; }
+  .uw-focus-within-contain-paint:focus-within { contain: paint; }
+  .group:hover .uw-group-hover-contain-paint { contain: paint; }
+  .uw-contain-content { contain: content; }
+  .uw-hover-contain-content:hover { contain: content; }
+  .uw-focus-contain-content:focus { contain: content; }
+  .uw-active-contain-content:active { contain: content; }
+  .uw-disabled-contain-content:disabled { contain: content; }
+  .uw-focus-visible-contain-content:focus-visible { contain: content; }
+  .uw-focus-within-contain-content:focus-within { contain: content; }
+  .group:hover .uw-group-hover-contain-content { contain: content; }
+  .uw-box-border { box-sizing: border-box; }
+  .uw-hover-box-border:hover { box-sizing: border-box; }
+  .uw-focus-box-border:focus { box-sizing: border-box; }
+  .uw-active-box-border:active { box-sizing: border-box; }
+  .uw-disabled-box-border:disabled { box-sizing: border-box; }
+  .uw-focus-visible-box-border:focus-visible { box-sizing: border-box; }
+  .uw-focus-within-box-border:focus-within { box-sizing: border-box; }
+  .group:hover .uw-group-hover-box-border { box-sizing: border-box; }
+  .uw-box-content { box-sizing: content-box; }
+  .uw-hover-box-content:hover { box-sizing: content-box; }
+  .uw-focus-box-content:focus { box-sizing: content-box; }
+  .uw-active-box-content:active { box-sizing: content-box; }
+  .uw-disabled-box-content:disabled { box-sizing: content-box; }
+  .uw-focus-visible-box-content:focus-visible { box-sizing: content-box; }
+  .uw-focus-within-box-content:focus-within { box-sizing: content-box; }
+  .group:hover .uw-group-hover-box-content { box-sizing: content-box; }
+  .uw-box-border { box-sizing: border-box; }
+  .uw-hover-box-border:hover { box-sizing: border-box; }
+  .uw-focus-box-border:focus { box-sizing: border-box; }
+  .uw-active-box-border:active { box-sizing: border-box; }
+  .uw-disabled-box-border:disabled { box-sizing: border-box; }
+  .uw-focus-visible-box-border:focus-visible { box-sizing: border-box; }
+  .uw-focus-within-box-border:focus-within { box-sizing: border-box; }
+  .group:hover .uw-group-hover-box-border { box-sizing: border-box; }
+  .uw-box-content { box-sizing: content-box; }
+  .uw-hover-box-content:hover { box-sizing: content-box; }
+  .uw-focus-box-content:focus { box-sizing: content-box; }
+  .uw-active-box-content:active { box-sizing: content-box; }
+  .uw-disabled-box-content:disabled { box-sizing: content-box; }
+  .uw-focus-visible-box-content:focus-visible { box-sizing: content-box; }
+  .uw-focus-within-box-content:focus-within { box-sizing: content-box; }
+  .group:hover .uw-group-hover-box-content { box-sizing: content-box; }
+}

@@ -1,0 +1,399 @@
+/* Quanta CSS v2.1 - svg Light Variants */
+
+/* State Variants */
+.hover-fill-current:hover { fill: currentColor; }
+.focus-fill-current:focus { fill: currentColor; }
+.active-fill-current:active { fill: currentColor; }
+.disabled-fill-current:disabled { fill: currentColor; }
+.focus-visible-fill-current:focus-visible { fill: currentColor; }
+.focus-within-fill-current:focus-within { fill: currentColor; }
+.group:hover .group-hover-fill-current { fill: currentColor; }
+.hover-fill-none:hover { fill: none; }
+.focus-fill-none:focus { fill: none; }
+.active-fill-none:active { fill: none; }
+.disabled-fill-none:disabled { fill: none; }
+.focus-visible-fill-none:focus-visible { fill: none; }
+.focus-within-fill-none:focus-within { fill: none; }
+.group:hover .group-hover-fill-none { fill: none; }
+.hover-stroke-current:hover { stroke: currentColor; }
+.focus-stroke-current:focus { stroke: currentColor; }
+.active-stroke-current:active { stroke: currentColor; }
+.disabled-stroke-current:disabled { stroke: currentColor; }
+.focus-visible-stroke-current:focus-visible { stroke: currentColor; }
+.focus-within-stroke-current:focus-within { stroke: currentColor; }
+.group:hover .group-hover-stroke-current { stroke: currentColor; }
+.hover-stroke-0:hover { stroke-width: 0; }
+.focus-stroke-0:focus { stroke-width: 0; }
+.active-stroke-0:active { stroke-width: 0; }
+.disabled-stroke-0:disabled { stroke-width: 0; }
+.focus-visible-stroke-0:focus-visible { stroke-width: 0; }
+.focus-within-stroke-0:focus-within { stroke-width: 0; }
+.group:hover .group-hover-stroke-0 { stroke-width: 0; }
+.hover-stroke-1:hover { stroke-width: 1; }
+.focus-stroke-1:focus { stroke-width: 1; }
+.active-stroke-1:active { stroke-width: 1; }
+.disabled-stroke-1:disabled { stroke-width: 1; }
+.focus-visible-stroke-1:focus-visible { stroke-width: 1; }
+.focus-within-stroke-1:focus-within { stroke-width: 1; }
+.group:hover .group-hover-stroke-1 { stroke-width: 1; }
+.hover-stroke-2:hover { stroke-width: 2; }
+.focus-stroke-2:focus { stroke-width: 2; }
+.active-stroke-2:active { stroke-width: 2; }
+.disabled-stroke-2:disabled { stroke-width: 2; }
+.focus-visible-stroke-2:focus-visible { stroke-width: 2; }
+.focus-within-stroke-2:focus-within { stroke-width: 2; }
+.group:hover .group-hover-stroke-2 { stroke-width: 2; }
+.hover-stroke-4:hover { stroke-width: 4; }
+.focus-stroke-4:focus { stroke-width: 4; }
+.active-stroke-4:active { stroke-width: 4; }
+.disabled-stroke-4:disabled { stroke-width: 4; }
+.focus-visible-stroke-4:focus-visible { stroke-width: 4; }
+.focus-within-stroke-4:focus-within { stroke-width: 4; }
+.group:hover .group-hover-stroke-4 { stroke-width: 4; }
+.hover-stroke-8:hover { stroke-width: 8; }
+.focus-stroke-8:focus { stroke-width: 8; }
+.active-stroke-8:active { stroke-width: 8; }
+.disabled-stroke-8:disabled { stroke-width: 8; }
+.focus-visible-stroke-8:focus-visible { stroke-width: 8; }
+.focus-within-stroke-8:focus-within { stroke-width: 8; }
+.group:hover .group-hover-stroke-8 { stroke-width: 8; }
+
+/* SM Breakpoint */
+@media (min-width: 480px) {
+  .sm-fill-current { fill: currentColor; }
+  .sm-hover-fill-current:hover { fill: currentColor; }
+  .sm-focus-fill-current:focus { fill: currentColor; }
+  .sm-active-fill-current:active { fill: currentColor; }
+  .sm-disabled-fill-current:disabled { fill: currentColor; }
+  .sm-focus-visible-fill-current:focus-visible { fill: currentColor; }
+  .sm-focus-within-fill-current:focus-within { fill: currentColor; }
+  .group:hover .sm-group-hover-fill-current { fill: currentColor; }
+  .sm-fill-none { fill: none; }
+  .sm-hover-fill-none:hover { fill: none; }
+  .sm-focus-fill-none:focus { fill: none; }
+  .sm-active-fill-none:active { fill: none; }
+  .sm-disabled-fill-none:disabled { fill: none; }
+  .sm-focus-visible-fill-none:focus-visible { fill: none; }
+  .sm-focus-within-fill-none:focus-within { fill: none; }
+  .group:hover .sm-group-hover-fill-none { fill: none; }
+  .sm-stroke-current { stroke: currentColor; }
+  .sm-hover-stroke-current:hover { stroke: currentColor; }
+  .sm-focus-stroke-current:focus { stroke: currentColor; }
+  .sm-active-stroke-current:active { stroke: currentColor; }
+  .sm-disabled-stroke-current:disabled { stroke: currentColor; }
+  .sm-focus-visible-stroke-current:focus-visible { stroke: currentColor; }
+  .sm-focus-within-stroke-current:focus-within { stroke: currentColor; }
+  .group:hover .sm-group-hover-stroke-current { stroke: currentColor; }
+  .sm-stroke-0 { stroke-width: 0; }
+  .sm-hover-stroke-0:hover { stroke-width: 0; }
+  .sm-focus-stroke-0:focus { stroke-width: 0; }
+  .sm-active-stroke-0:active { stroke-width: 0; }
+  .sm-disabled-stroke-0:disabled { stroke-width: 0; }
+  .sm-focus-visible-stroke-0:focus-visible { stroke-width: 0; }
+  .sm-focus-within-stroke-0:focus-within { stroke-width: 0; }
+  .group:hover .sm-group-hover-stroke-0 { stroke-width: 0; }
+  .sm-stroke-1 { stroke-width: 1; }
+  .sm-hover-stroke-1:hover { stroke-width: 1; }
+  .sm-focus-stroke-1:focus { stroke-width: 1; }
+  .sm-active-stroke-1:active { stroke-width: 1; }
+  .sm-disabled-stroke-1:disabled { stroke-width: 1; }
+  .sm-focus-visible-stroke-1:focus-visible { stroke-width: 1; }
+  .sm-focus-within-stroke-1:focus-within { stroke-width: 1; }
+  .group:hover .sm-group-hover-stroke-1 { stroke-width: 1; }
+  .sm-stroke-2 { stroke-width: 2; }
+  .sm-hover-stroke-2:hover { stroke-width: 2; }
+  .sm-focus-stroke-2:focus { stroke-width: 2; }
+  .sm-active-stroke-2:active { stroke-width: 2; }
+  .sm-disabled-stroke-2:disabled { stroke-width: 2; }
+  .sm-focus-visible-stroke-2:focus-visible { stroke-width: 2; }
+  .sm-focus-within-stroke-2:focus-within { stroke-width: 2; }
+  .group:hover .sm-group-hover-stroke-2 { stroke-width: 2; }
+  .sm-stroke-4 { stroke-width: 4; }
+  .sm-hover-stroke-4:hover { stroke-width: 4; }
+  .sm-focus-stroke-4:focus { stroke-width: 4; }
+  .sm-active-stroke-4:active { stroke-width: 4; }
+  .sm-disabled-stroke-4:disabled { stroke-width: 4; }
+  .sm-focus-visible-stroke-4:focus-visible { stroke-width: 4; }
+  .sm-focus-within-stroke-4:focus-within { stroke-width: 4; }
+  .group:hover .sm-group-hover-stroke-4 { stroke-width: 4; }
+  .sm-stroke-8 { stroke-width: 8; }
+  .sm-hover-stroke-8:hover { stroke-width: 8; }
+  .sm-focus-stroke-8:focus { stroke-width: 8; }
+  .sm-active-stroke-8:active { stroke-width: 8; }
+  .sm-disabled-stroke-8:disabled { stroke-width: 8; }
+  .sm-focus-visible-stroke-8:focus-visible { stroke-width: 8; }
+  .sm-focus-within-stroke-8:focus-within { stroke-width: 8; }
+  .group:hover .sm-group-hover-stroke-8 { stroke-width: 8; }
+}
+
+/* MD Breakpoint */
+@media (min-width: 768px) {
+  .md-fill-current { fill: currentColor; }
+  .md-hover-fill-current:hover { fill: currentColor; }
+  .md-focus-fill-current:focus { fill: currentColor; }
+  .md-active-fill-current:active { fill: currentColor; }
+  .md-disabled-fill-current:disabled { fill: currentColor; }
+  .md-focus-visible-fill-current:focus-visible { fill: currentColor; }
+  .md-focus-within-fill-current:focus-within { fill: currentColor; }
+  .group:hover .md-group-hover-fill-current { fill: currentColor; }
+  .md-fill-none { fill: none; }
+  .md-hover-fill-none:hover { fill: none; }
+  .md-focus-fill-none:focus { fill: none; }
+  .md-active-fill-none:active { fill: none; }
+  .md-disabled-fill-none:disabled { fill: none; }
+  .md-focus-visible-fill-none:focus-visible { fill: none; }
+  .md-focus-within-fill-none:focus-within { fill: none; }
+  .group:hover .md-group-hover-fill-none { fill: none; }
+  .md-stroke-current { stroke: currentColor; }
+  .md-hover-stroke-current:hover { stroke: currentColor; }
+  .md-focus-stroke-current:focus { stroke: currentColor; }
+  .md-active-stroke-current:active { stroke: currentColor; }
+  .md-disabled-stroke-current:disabled { stroke: currentColor; }
+  .md-focus-visible-stroke-current:focus-visible { stroke: currentColor; }
+  .md-focus-within-stroke-current:focus-within { stroke: currentColor; }
+  .group:hover .md-group-hover-stroke-current { stroke: currentColor; }
+  .md-stroke-0 { stroke-width: 0; }
+  .md-hover-stroke-0:hover { stroke-width: 0; }
+  .md-focus-stroke-0:focus { stroke-width: 0; }
+  .md-active-stroke-0:active { stroke-width: 0; }
+  .md-disabled-stroke-0:disabled { stroke-width: 0; }
+  .md-focus-visible-stroke-0:focus-visible { stroke-width: 0; }
+  .md-focus-within-stroke-0:focus-within { stroke-width: 0; }
+  .group:hover .md-group-hover-stroke-0 { stroke-width: 0; }
+  .md-stroke-1 { stroke-width: 1; }
+  .md-hover-stroke-1:hover { stroke-width: 1; }
+  .md-focus-stroke-1:focus { stroke-width: 1; }
+  .md-active-stroke-1:active { stroke-width: 1; }
+  .md-disabled-stroke-1:disabled { stroke-width: 1; }
+  .md-focus-visible-stroke-1:focus-visible { stroke-width: 1; }
+  .md-focus-within-stroke-1:focus-within { stroke-width: 1; }
+  .group:hover .md-group-hover-stroke-1 { stroke-width: 1; }
+  .md-stroke-2 { stroke-width: 2; }
+  .md-hover-stroke-2:hover { stroke-width: 2; }
+  .md-focus-stroke-2:focus { stroke-width: 2; }
+  .md-active-stroke-2:active { stroke-width: 2; }
+  .md-disabled-stroke-2:disabled { stroke-width: 2; }
+  .md-focus-visible-stroke-2:focus-visible { stroke-width: 2; }
+  .md-focus-within-stroke-2:focus-within { stroke-width: 2; }
+  .group:hover .md-group-hover-stroke-2 { stroke-width: 2; }
+  .md-stroke-4 { stroke-width: 4; }
+  .md-hover-stroke-4:hover { stroke-width: 4; }
+  .md-focus-stroke-4:focus { stroke-width: 4; }
+  .md-active-stroke-4:active { stroke-width: 4; }
+  .md-disabled-stroke-4:disabled { stroke-width: 4; }
+  .md-focus-visible-stroke-4:focus-visible { stroke-width: 4; }
+  .md-focus-within-stroke-4:focus-within { stroke-width: 4; }
+  .group:hover .md-group-hover-stroke-4 { stroke-width: 4; }
+  .md-stroke-8 { stroke-width: 8; }
+  .md-hover-stroke-8:hover { stroke-width: 8; }
+  .md-focus-stroke-8:focus { stroke-width: 8; }
+  .md-active-stroke-8:active { stroke-width: 8; }
+  .md-disabled-stroke-8:disabled { stroke-width: 8; }
+  .md-focus-visible-stroke-8:focus-visible { stroke-width: 8; }
+  .md-focus-within-stroke-8:focus-within { stroke-width: 8; }
+  .group:hover .md-group-hover-stroke-8 { stroke-width: 8; }
+}
+
+/* LG Breakpoint */
+@media (min-width: 1024px) {
+  .lg-fill-current { fill: currentColor; }
+  .lg-hover-fill-current:hover { fill: currentColor; }
+  .lg-focus-fill-current:focus { fill: currentColor; }
+  .lg-active-fill-current:active { fill: currentColor; }
+  .lg-disabled-fill-current:disabled { fill: currentColor; }
+  .lg-focus-visible-fill-current:focus-visible { fill: currentColor; }
+  .lg-focus-within-fill-current:focus-within { fill: currentColor; }
+  .group:hover .lg-group-hover-fill-current { fill: currentColor; }
+  .lg-fill-none { fill: none; }
+  .lg-hover-fill-none:hover { fill: none; }
+  .lg-focus-fill-none:focus { fill: none; }
+  .lg-active-fill-none:active { fill: none; }
+  .lg-disabled-fill-none:disabled { fill: none; }
+  .lg-focus-visible-fill-none:focus-visible { fill: none; }
+  .lg-focus-within-fill-none:focus-within { fill: none; }
+  .group:hover .lg-group-hover-fill-none { fill: none; }
+  .lg-stroke-current { stroke: currentColor; }
+  .lg-hover-stroke-current:hover { stroke: currentColor; }
+  .lg-focus-stroke-current:focus { stroke: currentColor; }
+  .lg-active-stroke-current:active { stroke: currentColor; }
+  .lg-disabled-stroke-current:disabled { stroke: currentColor; }
+  .lg-focus-visible-stroke-current:focus-visible { stroke: currentColor; }
+  .lg-focus-within-stroke-current:focus-within { stroke: currentColor; }
+  .group:hover .lg-group-hover-stroke-current { stroke: currentColor; }
+  .lg-stroke-0 { stroke-width: 0; }
+  .lg-hover-stroke-0:hover { stroke-width: 0; }
+  .lg-focus-stroke-0:focus { stroke-width: 0; }
+  .lg-active-stroke-0:active { stroke-width: 0; }
+  .lg-disabled-stroke-0:disabled { stroke-width: 0; }
+  .lg-focus-visible-stroke-0:focus-visible { stroke-width: 0; }
+  .lg-focus-within-stroke-0:focus-within { stroke-width: 0; }
+  .group:hover .lg-group-hover-stroke-0 { stroke-width: 0; }
+  .lg-stroke-1 { stroke-width: 1; }
+  .lg-hover-stroke-1:hover { stroke-width: 1; }
+  .lg-focus-stroke-1:focus { stroke-width: 1; }
+  .lg-active-stroke-1:active { stroke-width: 1; }
+  .lg-disabled-stroke-1:disabled { stroke-width: 1; }
+  .lg-focus-visible-stroke-1:focus-visible { stroke-width: 1; }
+  .lg-focus-within-stroke-1:focus-within { stroke-width: 1; }
+  .group:hover .lg-group-hover-stroke-1 { stroke-width: 1; }
+  .lg-stroke-2 { stroke-width: 2; }
+  .lg-hover-stroke-2:hover { stroke-width: 2; }
+  .lg-focus-stroke-2:focus { stroke-width: 2; }
+  .lg-active-stroke-2:active { stroke-width: 2; }
+  .lg-disabled-stroke-2:disabled { stroke-width: 2; }
+  .lg-focus-visible-stroke-2:focus-visible { stroke-width: 2; }
+  .lg-focus-within-stroke-2:focus-within { stroke-width: 2; }
+  .group:hover .lg-group-hover-stroke-2 { stroke-width: 2; }
+  .lg-stroke-4 { stroke-width: 4; }
+  .lg-hover-stroke-4:hover { stroke-width: 4; }
+  .lg-focus-stroke-4:focus { stroke-width: 4; }
+  .lg-active-stroke-4:active { stroke-width: 4; }
+  .lg-disabled-stroke-4:disabled { stroke-width: 4; }
+  .lg-focus-visible-stroke-4:focus-visible { stroke-width: 4; }
+  .lg-focus-within-stroke-4:focus-within { stroke-width: 4; }
+  .group:hover .lg-group-hover-stroke-4 { stroke-width: 4; }
+  .lg-stroke-8 { stroke-width: 8; }
+  .lg-hover-stroke-8:hover { stroke-width: 8; }
+  .lg-focus-stroke-8:focus { stroke-width: 8; }
+  .lg-active-stroke-8:active { stroke-width: 8; }
+  .lg-disabled-stroke-8:disabled { stroke-width: 8; }
+  .lg-focus-visible-stroke-8:focus-visible { stroke-width: 8; }
+  .lg-focus-within-stroke-8:focus-within { stroke-width: 8; }
+  .group:hover .lg-group-hover-stroke-8 { stroke-width: 8; }
+}
+
+/* XL Breakpoint */
+@media (min-width: 1280px) {
+  .xl-fill-current { fill: currentColor; }
+  .xl-hover-fill-current:hover { fill: currentColor; }
+  .xl-focus-fill-current:focus { fill: currentColor; }
+  .xl-active-fill-current:active { fill: currentColor; }
+  .xl-disabled-fill-current:disabled { fill: currentColor; }
+  .xl-focus-visible-fill-current:focus-visible { fill: currentColor; }
+  .xl-focus-within-fill-current:focus-within { fill: currentColor; }
+  .group:hover .xl-group-hover-fill-current { fill: currentColor; }
+  .xl-fill-none { fill: none; }
+  .xl-hover-fill-none:hover { fill: none; }
+  .xl-focus-fill-none:focus { fill: none; }
+  .xl-active-fill-none:active { fill: none; }
+  .xl-disabled-fill-none:disabled { fill: none; }
+  .xl-focus-visible-fill-none:focus-visible { fill: none; }
+  .xl-focus-within-fill-none:focus-within { fill: none; }
+  .group:hover .xl-group-hover-fill-none { fill: none; }
+  .xl-stroke-current { stroke: currentColor; }
+  .xl-hover-stroke-current:hover { stroke: currentColor; }
+  .xl-focus-stroke-current:focus { stroke: currentColor; }
+  .xl-active-stroke-current:active { stroke: currentColor; }
+  .xl-disabled-stroke-current:disabled { stroke: currentColor; }
+  .xl-focus-visible-stroke-current:focus-visible { stroke: currentColor; }
+  .xl-focus-within-stroke-current:focus-within { stroke: currentColor; }
+  .group:hover .xl-group-hover-stroke-current { stroke: currentColor; }
+  .xl-stroke-0 { stroke-width: 0; }
+  .xl-hover-stroke-0:hover { stroke-width: 0; }
+  .xl-focus-stroke-0:focus { stroke-width: 0; }
+  .xl-active-stroke-0:active { stroke-width: 0; }
+  .xl-disabled-stroke-0:disabled { stroke-width: 0; }
+  .xl-focus-visible-stroke-0:focus-visible { stroke-width: 0; }
+  .xl-focus-within-stroke-0:focus-within { stroke-width: 0; }
+  .group:hover .xl-group-hover-stroke-0 { stroke-width: 0; }
+  .xl-stroke-1 { stroke-width: 1; }
+  .xl-hover-stroke-1:hover { stroke-width: 1; }
+  .xl-focus-stroke-1:focus { stroke-width: 1; }
+  .xl-active-stroke-1:active { stroke-width: 1; }
+  .xl-disabled-stroke-1:disabled { stroke-width: 1; }
+  .xl-focus-visible-stroke-1:focus-visible { stroke-width: 1; }
+  .xl-focus-within-stroke-1:focus-within { stroke-width: 1; }
+  .group:hover .xl-group-hover-stroke-1 { stroke-width: 1; }
+  .xl-stroke-2 { stroke-width: 2; }
+  .xl-hover-stroke-2:hover { stroke-width: 2; }
+  .xl-focus-stroke-2:focus { stroke-width: 2; }
+  .xl-active-stroke-2:active { stroke-width: 2; }
+  .xl-disabled-stroke-2:disabled { stroke-width: 2; }
+  .xl-focus-visible-stroke-2:focus-visible { stroke-width: 2; }
+  .xl-focus-within-stroke-2:focus-within { stroke-width: 2; }
+  .group:hover .xl-group-hover-stroke-2 { stroke-width: 2; }
+  .xl-stroke-4 { stroke-width: 4; }
+  .xl-hover-stroke-4:hover { stroke-width: 4; }
+  .xl-focus-stroke-4:focus { stroke-width: 4; }
+  .xl-active-stroke-4:active { stroke-width: 4; }
+  .xl-disabled-stroke-4:disabled { stroke-width: 4; }
+  .xl-focus-visible-stroke-4:focus-visible { stroke-width: 4; }
+  .xl-focus-within-stroke-4:focus-within { stroke-width: 4; }
+  .group:hover .xl-group-hover-stroke-4 { stroke-width: 4; }
+  .xl-stroke-8 { stroke-width: 8; }
+  .xl-hover-stroke-8:hover { stroke-width: 8; }
+  .xl-focus-stroke-8:focus { stroke-width: 8; }
+  .xl-active-stroke-8:active { stroke-width: 8; }
+  .xl-disabled-stroke-8:disabled { stroke-width: 8; }
+  .xl-focus-visible-stroke-8:focus-visible { stroke-width: 8; }
+  .xl-focus-within-stroke-8:focus-within { stroke-width: 8; }
+  .group:hover .xl-group-hover-stroke-8 { stroke-width: 8; }
+}
+
+/* UW Breakpoint */
+@media (min-width: 1536px) {
+  .uw-fill-current { fill: currentColor; }
+  .uw-hover-fill-current:hover { fill: currentColor; }
+  .uw-focus-fill-current:focus { fill: currentColor; }
+  .uw-active-fill-current:active { fill: currentColor; }
+  .uw-disabled-fill-current:disabled { fill: currentColor; }
+  .uw-focus-visible-fill-current:focus-visible { fill: currentColor; }
+  .uw-focus-within-fill-current:focus-within { fill: currentColor; }
+  .group:hover .uw-group-hover-fill-current { fill: currentColor; }
+  .uw-fill-none { fill: none; }
+  .uw-hover-fill-none:hover { fill: none; }
+  .uw-focus-fill-none:focus { fill: none; }
+  .uw-active-fill-none:active { fill: none; }
+  .uw-disabled-fill-none:disabled { fill: none; }
+  .uw-focus-visible-fill-none:focus-visible { fill: none; }
+  .uw-focus-within-fill-none:focus-within { fill: none; }
+  .group:hover .uw-group-hover-fill-none { fill: none; }
+  .uw-stroke-current { stroke: currentColor; }
+  .uw-hover-stroke-current:hover { stroke: currentColor; }
+  .uw-focus-stroke-current:focus { stroke: currentColor; }
+  .uw-active-stroke-current:active { stroke: currentColor; }
+  .uw-disabled-stroke-current:disabled { stroke: currentColor; }
+  .uw-focus-visible-stroke-current:focus-visible { stroke: currentColor; }
+  .uw-focus-within-stroke-current:focus-within { stroke: currentColor; }
+  .group:hover .uw-group-hover-stroke-current { stroke: currentColor; }
+  .uw-stroke-0 { stroke-width: 0; }
+  .uw-hover-stroke-0:hover { stroke-width: 0; }
+  .uw-focus-stroke-0:focus { stroke-width: 0; }
+  .uw-active-stroke-0:active { stroke-width: 0; }
+  .uw-disabled-stroke-0:disabled { stroke-width: 0; }
+  .uw-focus-visible-stroke-0:focus-visible { stroke-width: 0; }
+  .uw-focus-within-stroke-0:focus-within { stroke-width: 0; }
+  .group:hover .uw-group-hover-stroke-0 { stroke-width: 0; }
+  .uw-stroke-1 { stroke-width: 1; }
+  .uw-hover-stroke-1:hover { stroke-width: 1; }
+  .uw-focus-stroke-1:focus { stroke-width: 1; }
+  .uw-active-stroke-1:active { stroke-width: 1; }
+  .uw-disabled-stroke-1:disabled { stroke-width: 1; }
+  .uw-focus-visible-stroke-1:focus-visible { stroke-width: 1; }
+  .uw-focus-within-stroke-1:focus-within { stroke-width: 1; }
+  .group:hover .uw-group-hover-stroke-1 { stroke-width: 1; }
+  .uw-stroke-2 { stroke-width: 2; }
+  .uw-hover-stroke-2:hover { stroke-width: 2; }
+  .uw-focus-stroke-2:focus { stroke-width: 2; }
+  .uw-active-stroke-2:active { stroke-width: 2; }
+  .uw-disabled-stroke-2:disabled { stroke-width: 2; }
+  .uw-focus-visible-stroke-2:focus-visible { stroke-width: 2; }
+  .uw-focus-within-stroke-2:focus-within { stroke-width: 2; }
+  .group:hover .uw-group-hover-stroke-2 { stroke-width: 2; }
+  .uw-stroke-4 { stroke-width: 4; }
+  .uw-hover-stroke-4:hover { stroke-width: 4; }
+  .uw-focus-stroke-4:focus { stroke-width: 4; }
+  .uw-active-stroke-4:active { stroke-width: 4; }
+  .uw-disabled-stroke-4:disabled { stroke-width: 4; }
+  .uw-focus-visible-stroke-4:focus-visible { stroke-width: 4; }
+  .uw-focus-within-stroke-4:focus-within { stroke-width: 4; }
+  .group:hover .uw-group-hover-stroke-4 { stroke-width: 4; }
+  .uw-stroke-8 { stroke-width: 8; }
+  .uw-hover-stroke-8:hover { stroke-width: 8; }
+  .uw-focus-stroke-8:focus { stroke-width: 8; }
+  .uw-active-stroke-8:active { stroke-width: 8; }
+  .uw-disabled-stroke-8:disabled { stroke-width: 8; }
+  .uw-focus-visible-stroke-8:focus-visible { stroke-width: 8; }
+  .uw-focus-within-stroke-8:focus-within { stroke-width: 8; }
+  .group:hover .uw-group-hover-stroke-8 { stroke-width: 8; }
+}

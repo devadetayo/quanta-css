@@ -7,7 +7,7 @@
 
 .quanta-rating-star {
   font-size: 1.5rem;
-  color: var(--quanta-slate-400);
+  color: var(--quanta-grey-400);
   transition: color 0.2s;
   position: relative;
 }
@@ -72,7 +72,7 @@
 
 /* ─── Dark Mode ─────────────────────────────── */
 html[data-theme="dark"] .quanta-rating-star {
-  color: var(--quanta-slate-600);
+  color: var(--quanta-grey-600);
 }
 
 html[data-theme="dark"] .quanta-rating.primary .quanta-rating-star.filled,

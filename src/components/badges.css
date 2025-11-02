@@ -93,20 +93,20 @@
 
 /* ─── Dark Mode ────────────────────────────────────────── */
 html[data-theme="dark"] .quanta-badge {
-  background-color: var(--quanta-slate-800);
+  background-color: var(--quanta-grey-800);
 }
 html[data-theme="dark"] .quanta-badge-primary    { background-color: var(--quanta-primary); }
-html[data-theme="dark"] .quanta-badge-success    { background-color: var(--quanta-success); }
-html[data-theme="dark"] .quanta-badge-warning    { background-color: var(--quanta-warning); }
-html[data-theme="dark"] .quanta-badge-danger     { background-color: var(--quanta-danger); }
-html[data-theme="dark"] .quanta-badge-info       { background-color: var(--quanta-info-hover); }
-html[data-theme="dark"] .quanta-badge-neutral    { background-color: var(--quanta-slate-600); color: var(--quanta-grey-100); }
+html[data-theme="dark"] .quanta-badge-success    { background-color: var(--quanta-bg-success); }
+html[data-theme="dark"] .quanta-badge-warning    { background-color: var(--quanta-bg-warning); }
+html[data-theme="dark"] .quanta-badge-danger     { background-color: var(--quanta-bg-danger); }
+html[data-theme="dark"] .quanta-badge-info       { background-color: var(--quanta-bg-info); }
+html[data-theme="dark"] .quanta-badge-neutral    { background-color: var(--quanta-grey-600); color: var(--quanta-grey-100); }
 html[data-theme="dark"] .quanta-badge-light      { background-color: var(--quanta-grey-200); color: var(--quanta-grey-900); }
 html[data-theme="dark"] .quanta-badge-dark       { background-color: var(--quanta-grey-900); color: var(--white); }
 
 html[data-theme="dark"] .quanta-badge-count,
 html[data-theme="dark"] .quanta-badge-dot {
-  border-color: var(--quanta-slate-900);
+  border-color: var(--quanta-grey-900);
 }
 
 /* ─── Accessibility ───────────────────────────────────── */

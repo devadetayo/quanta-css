@@ -1,0 +1,56 @@
+
+
+/* -- Overflow Utilities -- */
+.overflow-auto { overflow: auto; }
+
+.overflow-hidden { overflow: hidden; }
+
+.overflow-visible { overflow: visible; }
+
+.overflow-scroll { overflow: scroll; }
+
+/* Overflow X & Y */
+.overflow-x-auto { overflow-x: auto; }
+
+.overflow-x-hidden { overflow-x: hidden; }
+
+.overflow-x-visible { overflow-x: visible; }
+
+.overflow-x-scroll { overflow-x: scroll; }
+
+.overflow-y-auto { overflow-y: auto; }
+
+.overflow-y-hidden { overflow-y: hidden; }
+
+.overflow-y-visible { overflow-y: visible; }
+
+.overflow-y-scroll { overflow-y: scroll; }
+
+.overflow-normal { overflow-wrap: normal; }
+
+.overflow-break { overflow-wrap: break-word; }
+
+.overflow-normal { overflow-wrap: normal; }
+
+.overflow-break { overflow-wrap: break-word; }
+
+/* Global */
+.overscroll-auto { overscroll-behavior: auto; }
+
+.overscroll-contain { overscroll-behavior: contain; }
+
+.overscroll-none { overscroll-behavior: none; }
+
+/* X-axis only */
+.overscroll-x-auto { overscroll-behavior-x: auto; }
+
+.overscroll-x-contain { overscroll-behavior-x: contain; }
+
+.overscroll-x-none { overscroll-behavior-x: none; }
+
+/* Y-axis only */
+.overscroll-y-auto { overscroll-behavior-y: auto; }
+
+.overscroll-y-contain { overscroll-behavior-y: contain; }
+
+.overscroll-y-none { overscroll-behavior-y: none; }

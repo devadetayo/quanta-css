@@ -1,0 +1,1089 @@
+
+
+/* Accent Color Utilities */
+.accent-auto { accent-color: auto; }
+
+.accent-transparent { accent-color: transparent; }
+
+.accent-red-50 { accent-color: var(--quanta-red-50); }
+
+.accent-red-100 { accent-color: var(--quanta-red-100); }
+
+.accent-red-200 { accent-color: var(--quanta-red-200); }
+
+.accent-red-300 { accent-color: var(--quanta-red-300); }
+
+.accent-red-400 { accent-color: var(--quanta-red-400); }
+
+.accent-red-500 { accent-color: var(--quanta-red-500); }
+
+.accent-red-600 { accent-color: var(--quanta-red-600); }
+
+.accent-red-700 { accent-color: var(--quanta-red-700); }
+
+.accent-red-800 { accent-color: var(--quanta-red-800); }
+
+.accent-red-900 { accent-color: var(--quanta-red-900); }
+
+.accent-orange-50 { accent-color: var(--quanta-orange-50); }
+
+.accent-orange-100 { accent-color: var(--quanta-orange-100); }
+
+.accent-orange-200 { accent-color: var(--quanta-orange-200); }
+
+.accent-orange-300 { accent-color: var(--quanta-orange-300); }
+
+.accent-orange-400 { accent-color: var(--quanta-orange-400); }
+
+.accent-orange-500 { accent-color: var(--quanta-orange-500); }
+
+.accent-orange-600 { accent-color: var(--quanta-orange-600); }
+
+.accent-orange-700 { accent-color: var(--quanta-orange-700); }
+
+.accent-orange-800 { accent-color: var(--quanta-orange-800); }
+
+.accent-orange-900 { accent-color: var(--quanta-orange-900); }
+
+.accent-teal-50 { accent-color: var(--quanta-teal-50); }
+
+.accent-teal-100 { accent-color: var(--quanta-teal-100); }
+
+.accent-teal-200 { accent-color: var(--quanta-teal-200); }
+
+.accent-teal-300 { accent-color: var(--quanta-teal-300); }
+
+.accent-teal-400 { accent-color: var(--quanta-teal-400); }
+
+.accent-teal-500 { accent-color: var(--quanta-teal-500); }
+
+.accent-teal-600 { accent-color: var(--quanta-teal-600); }
+
+.accent-teal-700 { accent-color: var(--quanta-teal-700); }
+
+.accent-teal-800 { accent-color: var(--quanta-teal-800); }
+
+.accent-teal-900 { accent-color: var(--quanta-teal-900); }
+
+.accent-purple-50 { accent-color: var(--quanta-purple-50); }
+
+.accent-purple-100 { accent-color: var(--quanta-purple-100); }
+
+.accent-purple-200 { accent-color: var(--quanta-purple-200); }
+
+.accent-purple-300 { accent-color: var(--quanta-purple-300); }
+
+.accent-purple-400 { accent-color: var(--quanta-purple-400); }
+
+.accent-purple-500 { accent-color: var(--quanta-purple-500); }
+
+.accent-purple-600 { accent-color: var(--quanta-purple-600); }
+
+.accent-purple-700 { accent-color: var(--quanta-purple-700); }
+
+.accent-purple-800 { accent-color: var(--quanta-purple-800); }
+
+.accent-purple-900 { accent-color: var(--quanta-purple-900); }
+
+.accent-indigo-50 { accent-color: var(--quanta-indigo-50); }
+
+.accent-indigo-100 { accent-color: var(--quanta-indigo-100); }
+
+.accent-indigo-200 { accent-color: var(--quanta-indigo-200); }
+
+.accent-indigo-300 { accent-color: var(--quanta-indigo-300); }
+
+.accent-indigo-400 { accent-color: var(--quanta-indigo-400); }
+
+.accent-indigo-500 { accent-color: var(--quanta-indigo-500); }
+
+.accent-indigo-600 { accent-color: var(--quanta-indigo-600); }
+
+.accent-indigo-700 { accent-color: var(--quanta-indigo-700); }
+
+.accent-indigo-800 { accent-color: var(--quanta-indigo-800); }
+
+.accent-indigo-900 { accent-color: var(--quanta-indigo-900); }
+
+.accent-yellow-50 { accent-color: var(--quanta-yellow-50); }
+
+.accent-yellow-100 { accent-color: var(--quanta-yellow-100); }
+
+.accent-yellow-200 { accent-color: var(--quanta-yellow-200); }
+
+.accent-yellow-300 { accent-color: var(--quanta-yellow-300); }
+
+.accent-yellow-400 { accent-color: var(--quanta-yellow-400); }
+
+.accent-yellow-500 { accent-color: var(--quanta-yellow-500); }
+
+.accent-yellow-600 { accent-color: var(--quanta-yellow-600); }
+
+.accent-yellow-700 { accent-color: var(--quanta-yellow-700); }
+
+.accent-yellow-800 { accent-color: var(--quanta-yellow-800); }
+
+.accent-yellow-900 { accent-color: var(--quanta-yellow-900); }
+
+.accent-pink-50 { accent-color: var(--quanta-pink-50); }
+
+.accent-pink-100 { accent-color: var(--quanta-pink-100); }
+
+.accent-pink-200 { accent-color: var(--quanta-pink-200); }
+
+.accent-pink-300 { accent-color: var(--quanta-pink-300); }
+
+.accent-pink-400 { accent-color: var(--quanta-pink-400); }
+
+.accent-pink-500 { accent-color: var(--quanta-pink-500); }
+
+.accent-pink-600 { accent-color: var(--quanta-pink-600); }
+
+.accent-pink-700 { accent-color: var(--quanta-pink-700); }
+
+.accent-pink-800 { accent-color: var(--quanta-pink-800); }
+
+.accent-pink-900 { accent-color: var(--quanta-pink-900); }
+
+.accent-grey-50 { accent-color: var(--quanta-grey-50); }
+
+.accent-grey-100 { accent-color: var(--quanta-grey-100); }
+
+.accent-grey-200 { accent-color: var(--quanta-grey-200); }
+
+.accent-grey-300 { accent-color: var(--quanta-grey-300); }
+
+.accent-grey-400 { accent-color: var(--quanta-grey-400); }
+
+.accent-grey-500 { accent-color: var(--quanta-grey-500); }
+
+.accent-grey-600 { accent-color: var(--quanta-grey-600); }
+
+.accent-grey-700 { accent-color: var(--quanta-grey-700); }
+
+.accent-grey-800 { accent-color: var(--quanta-grey-800); }
+
+.accent-grey-900 { accent-color: var(--quanta-grey-900); }
+
+.accent-zinc-50 { accent-color: var(--quanta-zinc-50); }
+
+.accent-zinc-100 { accent-color: var(--quanta-zinc-100); }
+
+.accent-zinc-200 { accent-color: var(--quanta-zinc-200); }
+
+.accent-zinc-300 { accent-color: var(--quanta-zinc-300); }
+
+.accent-zinc-400 { accent-color: var(--quanta-zinc-400); }
+
+.accent-zinc-500 { accent-color: var(--quanta-zinc-500); }
+
+.accent-zinc-600 { accent-color: var(--quanta-zinc-600); }
+
+.accent-zinc-700 { accent-color: var(--quanta-zinc-700); }
+
+.accent-zinc-800 { accent-color: var(--quanta-zinc-800); }
+
+.accent-zinc-900 { accent-color: var(--quanta-zinc-900); }
+
+.accent-neutral-50 { accent-color: var(--quanta-neutral-50); }
+
+.accent-neutral-100 { accent-color: var(--quanta-neutral-100); }
+
+.accent-neutral-200 { accent-color: var(--quanta-neutral-200); }
+
+.accent-neutral-300 { accent-color: var(--quanta-neutral-300); }
+
+.accent-neutral-400 { accent-color: var(--quanta-neutral-400); }
+
+.accent-neutral-500 { accent-color: var(--quanta-neutral-500); }
+
+.accent-neutral-600 { accent-color: var(--quanta-neutral-600); }
+
+.accent-neutral-700 { accent-color: var(--quanta-neutral-700); }
+
+.accent-neutral-800 { accent-color: var(--quanta-neutral-800); }
+
+.accent-neutral-900 { accent-color: var(--quanta-neutral-900); }
+
+.accent-lime-50 { accent-color: var(--quanta-lime-50); }
+
+.accent-lime-100 { accent-color: var(--quanta-lime-100); }
+
+.accent-lime-200 { accent-color: var(--quanta-lime-200); }
+
+.accent-lime-300 { accent-color: var(--quanta-lime-300); }
+
+.accent-lime-400 { accent-color: var(--quanta-lime-400); }
+
+.accent-lime-500 { accent-color: var(--quanta-lime-500); }
+
+.accent-lime-600 { accent-color: var(--quanta-lime-600); }
+
+.accent-lime-700 { accent-color: var(--quanta-lime-700); }
+
+.accent-lime-800 { accent-color: var(--quanta-lime-800); }
+
+.accent-lime-900 { accent-color: var(--quanta-lime-900); }
+
+.accent-cyan-50 { accent-color: var(--quanta-cyan-50); }
+
+.accent-cyan-100 { accent-color: var(--quanta-cyan-100); }
+
+.accent-cyan-200 { accent-color: var(--quanta-cyan-200); }
+
+.accent-cyan-300 { accent-color: var(--quanta-cyan-300); }
+
+.accent-cyan-400 { accent-color: var(--quanta-cyan-400); }
+
+.accent-cyan-500 { accent-color: var(--quanta-cyan-500); }
+
+.accent-cyan-600 { accent-color: var(--quanta-cyan-600); }
+
+.accent-cyan-700 { accent-color: var(--quanta-cyan-700); }
+
+.accent-cyan-800 { accent-color: var(--quanta-cyan-800); }
+
+.accent-cyan-900 { accent-color: var(--quanta-cyan-900); }
+
+.accent-sky-50 { accent-color: var(--quanta-sky-50); }
+
+.accent-sky-100 { accent-color: var(--quanta-sky-100); }
+
+.accent-sky-200 { accent-color: var(--quanta-sky-200); }
+
+.accent-sky-300 { accent-color: var(--quanta-sky-300); }
+
+.accent-sky-400 { accent-color: var(--quanta-sky-400); }
+
+.accent-sky-500 { accent-color: var(--quanta-sky-500); }
+
+.accent-sky-600 { accent-color: var(--quanta-sky-600); }
+
+.accent-sky-700 { accent-color: var(--quanta-sky-700); }
+
+.accent-sky-800 { accent-color: var(--quanta-sky-800); }
+
+.accent-sky-900 { accent-color: var(--quanta-sky-900); }
+
+.accent-violet-50 { accent-color: var(--quanta-violet-50); }
+
+.accent-violet-100 { accent-color: var(--quanta-violet-100); }
+
+.accent-violet-200 { accent-color: var(--quanta-violet-200); }
+
+.accent-violet-300 { accent-color: var(--quanta-violet-300); }
+
+.accent-violet-400 { accent-color: var(--quanta-violet-400); }
+
+.accent-violet-500 { accent-color: var(--quanta-violet-500); }
+
+.accent-violet-600 { accent-color: var(--quanta-violet-600); }
+
+.accent-violet-700 { accent-color: var(--quanta-violet-700); }
+
+.accent-violet-800 { accent-color: var(--quanta-violet-800); }
+
+.accent-violet-900 { accent-color: var(--quanta-violet-900); }
+
+.accent-rose-50 { accent-color: var(--quanta-rose-50); }
+
+.accent-rose-100 { accent-color: var(--quanta-rose-100); }
+
+.accent-rose-200 { accent-color: var(--quanta-rose-200); }
+
+.accent-rose-300 { accent-color: var(--quanta-rose-300); }
+
+.accent-rose-400 { accent-color: var(--quanta-rose-400); }
+
+.accent-rose-500 { accent-color: var(--quanta-rose-500); }
+
+.accent-rose-600 { accent-color: var(--quanta-rose-600); }
+
+.accent-rose-700 { accent-color: var(--quanta-rose-700); }
+
+.accent-rose-800 { accent-color: var(--quanta-rose-800); }
+
+.accent-rose-900 { accent-color: var(--quanta-rose-900); }
+
+.accent-slate-50 { accent-color: var(--quanta-slate-50); }
+
+.accent-slate-100 { accent-color: var(--quanta-slate-100); }
+
+.accent-slate-200 { accent-color: var(--quanta-slate-200); }
+
+.accent-slate-300 { accent-color: var(--quanta-slate-300); }
+
+.accent-slate-400 { accent-color: var(--quanta-slate-400); }
+
+.accent-slate-500 { accent-color: var(--quanta-slate-500); }
+
+.accent-slate-600 { accent-color: var(--quanta-slate-600); }
+
+.accent-slate-700 { accent-color: var(--quanta-slate-700); }
+
+.accent-slate-800 { accent-color: var(--quanta-slate-800); }
+
+.accent-slate-900 { accent-color: var(--quanta-slate-900); }
+
+.accent-blue-50 { accent-color: var(--quanta-blue-50); }
+
+.accent-blue-100 { accent-color: var(--quanta-blue-100); }
+
+.accent-blue-200 { accent-color: var(--quanta-blue-200); }
+
+.accent-blue-300 { accent-color: var(--quanta-blue-300); }
+
+.accent-blue-400 { accent-color: var(--quanta-blue-400); }
+
+.accent-blue-500 { accent-color: var(--quanta-blue-500); }
+
+.accent-blue-600 { accent-color: var(--quanta-blue-600); }
+
+.accent-blue-700 { accent-color: var(--quanta-blue-700); }
+
+.accent-blue-800 { accent-color: var(--quanta-blue-800); }
+
+.accent-blue-900 { accent-color: var(--quanta-blue-900); }
+
+.accent-green-50 { accent-color: var(--quanta-green-50); }
+
+.accent-green-100 { accent-color: var(--quanta-green-100); }
+
+.accent-green-200 { accent-color: var(--quanta-green-200); }
+
+.accent-green-300 { accent-color: var(--quanta-green-300); }
+
+.accent-green-400 { accent-color: var(--quanta-green-400); }
+
+.accent-green-500 { accent-color: var(--quanta-green-500); }
+
+.accent-green-600 { accent-color: var(--quanta-green-600); }
+
+.accent-green-700 { accent-color: var(--quanta-green-700); }
+
+.accent-green-800 { accent-color: var(--quanta-green-800); }
+
+.accent-green-900 { accent-color: var(--quanta-green-900); }
+
+.appearance-none { appearance: none; }
+
+.appearance-auto { appearance: auto; }
+
+/* Caret Color Utilities */
+.caret-red-50 { caret-color: var(--quanta-red-50); }
+
+.caret-red-100 { caret-color: var(--quanta-red-100); }
+
+.caret-red-200 { caret-color: var(--quanta-red-200); }
+
+.caret-red-300 { caret-color: var(--quanta-red-300); }
+
+.caret-red-400 { caret-color: var(--quanta-red-400); }
+
+.caret-red-500 { caret-color: var(--quanta-red-500); }
+
+.caret-red-600 { caret-color: var(--quanta-red-600); }
+
+.caret-red-700 { caret-color: var(--quanta-red-700); }
+
+.caret-red-800 { caret-color: var(--quanta-red-800); }
+
+.caret-red-900 { caret-color: var(--quanta-red-900); }
+
+.caret-orange-50 { caret-color: var(--quanta-orange-50); }
+
+.caret-orange-100 { caret-color: var(--quanta-orange-100); }
+
+.caret-orange-200 { caret-color: var(--quanta-orange-200); }
+
+.caret-orange-300 { caret-color: var(--quanta-orange-300); }
+
+.caret-orange-400 { caret-color: var(--quanta-orange-400); }
+
+.caret-orange-500 { caret-color: var(--quanta-orange-500); }
+
+.caret-orange-600 { caret-color: var(--quanta-orange-600); }
+
+.caret-orange-700 { caret-color: var(--quanta-orange-700); }
+
+.caret-orange-800 { caret-color: var(--quanta-orange-800); }
+
+.caret-orange-900 { caret-color: var(--quanta-orange-900); }
+
+.caret-teal-50 { caret-color: var(--quanta-teal-50); }
+
+.caret-teal-100 { caret-color: var(--quanta-teal-100); }
+
+.caret-teal-200 { caret-color: var(--quanta-teal-200); }
+
+.caret-teal-300 { caret-color: var(--quanta-teal-300); }
+
+.caret-teal-400 { caret-color: var(--quanta-teal-400); }
+
+.caret-teal-500 { caret-color: var(--quanta-teal-500); }
+
+.caret-teal-600 { caret-color: var(--quanta-teal-600); }
+
+.caret-teal-700 { caret-color: var(--quanta-teal-700); }
+
+.caret-teal-800 { caret-color: var(--quanta-teal-800); }
+
+.caret-teal-900 { caret-color: var(--quanta-teal-900); }
+
+.caret-purple-50 { caret-color: var(--quanta-purple-50); }
+
+.caret-purple-100 { caret-color: var(--quanta-purple-100); }
+
+.caret-purple-200 { caret-color: var(--quanta-purple-200); }
+
+.caret-purple-300 { caret-color: var(--quanta-purple-300); }
+
+.caret-purple-400 { caret-color: var(--quanta-purple-400); }
+
+.caret-purple-500 { caret-color: var(--quanta-purple-500); }
+
+.caret-purple-600 { caret-color: var(--quanta-purple-600); }
+
+.caret-purple-700 { caret-color: var(--quanta-purple-700); }
+
+.caret-purple-800 { caret-color: var(--quanta-purple-800); }
+
+.caret-purple-900 { caret-color: var(--quanta-purple-900); }
+
+.caret-indigo-50 { caret-color: var(--quanta-indigo-50); }
+
+.caret-indigo-100 { caret-color: var(--quanta-indigo-100); }
+
+.caret-indigo-200 { caret-color: var(--quanta-indigo-200); }
+
+.caret-indigo-300 { caret-color: var(--quanta-indigo-300); }
+
+.caret-indigo-400 { caret-color: var(--quanta-indigo-400); }
+
+.caret-indigo-500 { caret-color: var(--quanta-indigo-500); }
+
+.caret-indigo-600 { caret-color: var(--quanta-indigo-600); }
+
+.caret-indigo-700 { caret-color: var(--quanta-indigo-700); }
+
+.caret-indigo-800 { caret-color: var(--quanta-indigo-800); }
+
+.caret-indigo-900 { caret-color: var(--quanta-indigo-900); }
+
+.caret-yellow-50 { caret-color: var(--quanta-yellow-50); }
+
+.caret-yellow-100 { caret-color: var(--quanta-yellow-100); }
+
+.caret-yellow-200 { caret-color: var(--quanta-yellow-200); }
+
+.caret-yellow-300 { caret-color: var(--quanta-yellow-300); }
+
+.caret-yellow-400 { caret-color: var(--quanta-yellow-400); }
+
+.caret-yellow-500 { caret-color: var(--quanta-yellow-500); }
+
+.caret-yellow-600 { caret-color: var(--quanta-yellow-600); }
+
+.caret-yellow-700 { caret-color: var(--quanta-yellow-700); }
+
+.caret-yellow-800 { caret-color: var(--quanta-yellow-800); }
+
+.caret-yellow-900 { caret-color: var(--quanta-yellow-900); }
+
+.caret-pink-50 { caret-color: var(--quanta-pink-50); }
+
+.caret-pink-100 { caret-color: var(--quanta-pink-100); }
+
+.caret-pink-200 { caret-color: var(--quanta-pink-200); }
+
+.caret-pink-300 { caret-color: var(--quanta-pink-300); }
+
+.caret-pink-400 { caret-color: var(--quanta-pink-400); }
+
+.caret-pink-500 { caret-color: var(--quanta-pink-500); }
+
+.caret-pink-600 { caret-color: var(--quanta-pink-600); }
+
+.caret-pink-700 { caret-color: var(--quanta-pink-700); }
+
+.caret-pink-800 { caret-color: var(--quanta-pink-800); }
+
+.caret-pink-900 { caret-color: var(--quanta-pink-900); }
+
+.caret-grey-50 { caret-color: var(--quanta-grey-50); }
+
+.caret-grey-100 { caret-color: var(--quanta-grey-100); }
+
+.caret-grey-200 { caret-color: var(--quanta-grey-200); }
+
+.caret-grey-300 { caret-color: var(--quanta-grey-300); }
+
+.caret-grey-400 { caret-color: var(--quanta-grey-400); }
+
+.caret-grey-500 { caret-color: var(--quanta-grey-500); }
+
+.caret-grey-600 { caret-color: var(--quanta-grey-600); }
+
+.caret-grey-700 { caret-color: var(--quanta-grey-700); }
+
+.caret-grey-800 { caret-color: var(--quanta-grey-800); }
+
+.caret-grey-900 { caret-color: var(--quanta-grey-900); }
+
+.caret-zinc-50 { caret-color: var(--quanta-zinc-50); }
+
+.caret-zinc-100 { caret-color: var(--quanta-zinc-100); }
+
+.caret-zinc-200 { caret-color: var(--quanta-zinc-200); }
+
+.caret-zinc-300 { caret-color: var(--quanta-zinc-300); }
+
+.caret-zinc-400 { caret-color: var(--quanta-zinc-400); }
+
+.caret-zinc-500 { caret-color: var(--quanta-zinc-500); }
+
+.caret-zinc-600 { caret-color: var(--quanta-zinc-600); }
+
+.caret-zinc-700 { caret-color: var(--quanta-zinc-700); }
+
+.caret-zinc-800 { caret-color: var(--quanta-zinc-800); }
+
+.caret-zinc-900 { caret-color: var(--quanta-zinc-900); }
+
+.caret-neutral-50 { caret-color: var(--quanta-neutral-50); }
+
+.caret-neutral-100 { caret-color: var(--quanta-neutral-100); }
+
+.caret-neutral-200 { caret-color: var(--quanta-neutral-200); }
+
+.caret-neutral-300 { caret-color: var(--quanta-neutral-300); }
+
+.caret-neutral-400 { caret-color: var(--quanta-neutral-400); }
+
+.caret-neutral-500 { caret-color: var(--quanta-neutral-500); }
+
+.caret-neutral-600 { caret-color: var(--quanta-neutral-600); }
+
+.caret-neutral-700 { caret-color: var(--quanta-neutral-700); }
+
+.caret-neutral-800 { caret-color: var(--quanta-neutral-800); }
+
+.caret-neutral-900 { caret-color: var(--quanta-neutral-900); }
+
+.caret-lime-50 { caret-color: var(--quanta-lime-50); }
+
+.caret-lime-100 { caret-color: var(--quanta-lime-100); }
+
+.caret-lime-200 { caret-color: var(--quanta-lime-200); }
+
+.caret-lime-300 { caret-color: var(--quanta-lime-300); }
+
+.caret-lime-400 { caret-color: var(--quanta-lime-400); }
+
+.caret-lime-500 { caret-color: var(--quanta-lime-500); }
+
+.caret-lime-600 { caret-color: var(--quanta-lime-600); }
+
+.caret-lime-700 { caret-color: var(--quanta-lime-700); }
+
+.caret-lime-800 { caret-color: var(--quanta-lime-800); }
+
+.caret-lime-900 { caret-color: var(--quanta-lime-900); }
+
+.caret-cyan-50 { caret-color: var(--quanta-cyan-50); }
+
+.caret-cyan-100 { caret-color: var(--quanta-cyan-100); }
+
+.caret-cyan-200 { caret-color: var(--quanta-cyan-200); }
+
+.caret-cyan-300 { caret-color: var(--quanta-cyan-300); }
+
+.caret-cyan-400 { caret-color: var(--quanta-cyan-400); }
+
+.caret-cyan-500 { caret-color: var(--quanta-cyan-500); }
+
+.caret-cyan-600 { caret-color: var(--quanta-cyan-600); }
+
+.caret-cyan-700 { caret-color: var(--quanta-cyan-700); }
+
+.caret-cyan-800 { caret-color: var(--quanta-cyan-800); }
+
+.caret-cyan-900 { caret-color: var(--quanta-cyan-900); }
+
+.caret-sky-50 { caret-color: var(--quanta-sky-50); }
+
+.caret-sky-100 { caret-color: var(--quanta-sky-100); }
+
+.caret-sky-200 { caret-color: var(--quanta-sky-200); }
+
+.caret-sky-300 { caret-color: var(--quanta-sky-300); }
+
+.caret-sky-400 { caret-color: var(--quanta-sky-400); }
+
+.caret-sky-500 { caret-color: var(--quanta-sky-500); }
+
+.caret-sky-600 { caret-color: var(--quanta-sky-600); }
+
+.caret-sky-700 { caret-color: var(--quanta-sky-700); }
+
+.caret-sky-800 { caret-color: var(--quanta-sky-800); }
+
+.caret-sky-900 { caret-color: var(--quanta-sky-900); }
+
+.caret-violet-50 { caret-color: var(--quanta-violet-50); }
+
+.caret-violet-100 { caret-color: var(--quanta-violet-100); }
+
+.caret-violet-200 { caret-color: var(--quanta-violet-200); }
+
+.caret-violet-300 { caret-color: var(--quanta-violet-300); }
+
+.caret-violet-400 { caret-color: var(--quanta-violet-400); }
+
+.caret-violet-500 { caret-color: var(--quanta-violet-500); }
+
+.caret-violet-600 { caret-color: var(--quanta-violet-600); }
+
+.caret-violet-700 { caret-color: var(--quanta-violet-700); }
+
+.caret-violet-800 { caret-color: var(--quanta-violet-800); }
+
+.caret-violet-900 { caret-color: var(--quanta-violet-900); }
+
+.caret-rose-50 { caret-color: var(--quanta-rose-50); }
+
+.caret-rose-100 { caret-color: var(--quanta-rose-100); }
+
+.caret-rose-200 { caret-color: var(--quanta-rose-200); }
+
+.caret-rose-300 { caret-color: var(--quanta-rose-300); }
+
+.caret-rose-400 { caret-color: var(--quanta-rose-400); }
+
+.caret-rose-500 { caret-color: var(--quanta-rose-500); }
+
+.caret-rose-600 { caret-color: var(--quanta-rose-600); }
+
+.caret-rose-700 { caret-color: var(--quanta-rose-700); }
+
+.caret-rose-800 { caret-color: var(--quanta-rose-800); }
+
+.caret-rose-900 { caret-color: var(--quanta-rose-900); }
+
+.caret-slate-50 { caret-color: var(--quanta-slate-50); }
+
+.caret-slate-100 { caret-color: var(--quanta-slate-100); }
+
+.caret-slate-200 { caret-color: var(--quanta-slate-200); }
+
+.caret-slate-300 { caret-color: var(--quanta-slate-300); }
+
+.caret-slate-400 { caret-color: var(--quanta-slate-400); }
+
+.caret-slate-500 { caret-color: var(--quanta-slate-500); }
+
+.caret-slate-600 { caret-color: var(--quanta-slate-600); }
+
+.caret-slate-700 { caret-color: var(--quanta-slate-700); }
+
+.caret-slate-800 { caret-color: var(--quanta-slate-800); }
+
+.caret-slate-900 { caret-color: var(--quanta-slate-900); }
+
+.caret-blue-50 { caret-color: var(--quanta-blue-50); }
+
+.caret-blue-100 { caret-color: var(--quanta-blue-100); }
+
+.caret-blue-200 { caret-color: var(--quanta-blue-200); }
+
+.caret-blue-300 { caret-color: var(--quanta-blue-300); }
+
+.caret-blue-400 { caret-color: var(--quanta-blue-400); }
+
+.caret-blue-500 { caret-color: var(--quanta-blue-500); }
+
+.caret-blue-600 { caret-color: var(--quanta-blue-600); }
+
+.caret-blue-700 { caret-color: var(--quanta-blue-700); }
+
+.caret-blue-800 { caret-color: var(--quanta-blue-800); }
+
+.caret-blue-900 { caret-color: var(--quanta-blue-900); }
+
+.caret-green-50 { caret-color: var(--quanta-green-50); }
+
+.caret-green-100 { caret-color: var(--quanta-green-100); }
+
+.caret-green-200 { caret-color: var(--quanta-green-200); }
+
+.caret-green-300 { caret-color: var(--quanta-green-300); }
+
+.caret-green-400 { caret-color: var(--quanta-green-400); }
+
+.caret-green-500 { caret-color: var(--quanta-green-500); }
+
+.caret-green-600 { caret-color: var(--quanta-green-600); }
+
+.caret-green-700 { caret-color: var(--quanta-green-700); }
+
+.caret-green-800 { caret-color: var(--quanta-green-800); }
+
+.caret-green-900 { caret-color: var(--quanta-green-900); }
+
+.caret-black { caret-color: var(--black); }
+
+.caret-white { caret-color: var(--white); }
+
+.color-scheme-light { color-scheme: light; }
+
+.color-scheme-dark { color-scheme: dark; }
+
+.color-scheme-normal { color-scheme: normal; }
+
+.cursor-auto { cursor: auto; }
+
+.cursor-default { cursor: default; }
+
+.cursor-pointer { cursor: pointer; }
+
+.cursor-wait { cursor: wait; }
+
+.cursor-text { cursor: text; }
+
+.cursor-move { cursor: move; }
+
+.cursor-not-allowed { cursor: not-allowed; }
+
+.cursor-none { cursor: none; }
+
+.pointer-events-none { pointer-events: none; }
+
+.pointer-events-auto { pointer-events: auto; }
+
+.resize-none { resize: none; }
+
+.resize-x { resize: horizontal; }
+
+.resize-y { resize: vertical; }
+
+.scroll-auto { scroll-behavior: auto; }
+
+.scroll-smooth { scroll-behavior: smooth; }
+
+.scroll-m-0 { scroll-margin: 0rem; }
+
+.scroll-p-0 { scroll-padding: 0rem; }
+
+.scroll-m-0_125 { scroll-margin: 0.125rem; }
+
+.scroll-p-0_125 { scroll-padding: 0.125rem; }
+
+.scroll-m-0_25 { scroll-margin: 0.25rem; }
+
+.scroll-p-0_25 { scroll-padding: 0.25rem; }
+
+.scroll-m-0_5 { scroll-margin: 0.5rem; }
+
+.scroll-p-0_5 { scroll-padding: 0.5rem; }
+
+.scroll-m-0_75 { scroll-margin: 0.75rem; }
+
+.scroll-p-0_75 { scroll-padding: 0.75rem; }
+
+.scroll-m-1 { scroll-margin: 1rem; }
+
+.scroll-p-1 { scroll-padding: 1rem; }
+
+.scroll-m-1_5 { scroll-margin: 1.5rem; }
+
+.scroll-p-1_5 { scroll-padding: 1.5rem; }
+
+.scroll-m-2 { scroll-margin: 2rem; }
+
+.scroll-p-2 { scroll-padding: 2rem; }
+
+.scroll-m-3 { scroll-margin: 3rem; }
+
+.scroll-p-3 { scroll-padding: 3rem; }
+
+.scroll-m-4 { scroll-margin: 4rem; }
+
+.scroll-p-4 { scroll-padding: 4rem; }
+
+.snap-x { scroll-snap-type: x mandatory; }
+
+.snap-y { scroll-snap-type: y mandatory; }
+
+.snap-both { scroll-snap-type: both mandatory; }
+
+.snap-align-start { scroll-snap-align: start; }
+
+.snap-align-end { scroll-snap-align: end; }
+
+.snap-align-center { scroll-snap-align: center; }
+
+.snap-align-none { scroll-snap-align: none; }
+
+.snap-stop-normal { scroll-snap-stop: normal; }
+
+.snap-stop-always { scroll-snap-stop: always; }
+
+.touch-auto { touch-action: auto; }
+
+.touch-none { touch-action: none; }
+
+.touch-pan_x { touch-action: pan-x; }
+
+.touch-pan_y { touch-action: pan-y; }
+
+.touch-manipulation { touch-action: manipulation; }
+
+.select-auto { user-select: auto; }
+
+.select-none { user-select: none; }
+
+.select-text { user-select: text; }
+
+.select-all { user-select: all; }
+
+.select-contain { user-select: contain; }
+
+.will-change-auto { will-change: auto; }
+
+.will-change-scroll { will-change: scroll; }
+
+.will-change-transform { will-change: transform; }
+
+.will-change-opacity { will-change: opacity; }
+
+.will-change-contents { will-change: contents; }
+
+/* =============================================================================
+   UI & INTERACTIVITY (Section 12)
+============================================================================= */
+
+/* =============================================================================
+   12. UI & INTERACTIVITY
+============================================================================= */
+
+/* Color Scheme */
+.color-scheme-light { color-scheme: light; }
+
+.color-scheme-dark { color-scheme: dark; }
+
+.color-scheme-normal { color-scheme: normal; }
+
+/* Cursors */
+.cursor-auto { cursor: auto; }
+
+.cursor-default { cursor: default; }
+
+.cursor-pointer { cursor: pointer; }
+
+.cursor-wait { cursor: wait; }
+
+.cursor-text { cursor: text; }
+
+.cursor-move { cursor: move; }
+
+.cursor-not-allowed { cursor: not-allowed; }
+
+.cursor-none { cursor: none; }
+
+/* Pointer Events */
+.pointer-events-none { pointer-events: none; }
+
+.pointer-events-auto { pointer-events: auto; }
+
+/* Resize */
+.resize-none { resize: none; }
+
+.resize-x { resize: horizontal; }
+
+.resize-y { resize: vertical; }
+
+/* Scroll Behavior */
+.scroll-auto { scroll-behavior: auto; }
+
+.scroll-smooth { scroll-behavior: smooth; }
+
+/* Scroll Margin & Padding */
+.scroll-m-0 { scroll-margin: 0; }
+
+.scroll-m-1 { scroll-margin: 0.25rem; }
+
+.scroll-m-2 { scroll-margin: 0.5rem; }
+
+.scroll-m-4 { scroll-margin: 1rem; }
+
+.scroll-m-8 { scroll-margin: 2rem; }
+
+/* ... add additional values as needed ... */
+
+.scroll-p-0 { scroll-padding: 0; }
+
+.scroll-p-1 { scroll-padding: 0.25rem; }
+
+.scroll-p-2 { scroll-padding: 0.5rem; }
+
+.scroll-p-4 { scroll-padding: 1rem; }
+
+.scroll-p-8 { scroll-padding: 2rem; }
+
+/* ... add additional values as needed ... */
+
+/* Scroll Snap */
+.snap-x { scroll-snap-type: x mandatory; }
+
+.snap-y { scroll-snap-type: y mandatory; }
+
+.snap-both { scroll-snap-type: both mandatory; }
+
+.snap-align-start { scroll-snap-align: start; }
+
+.snap-align-center { scroll-snap-align: center; }
+
+.snap-align-end { scroll-snap-align: end; }
+
+.snap-align-none { scroll-snap-align: none; }
+
+.snap-stop-normal { scroll-snap-stop: normal; }
+
+.snap-stop-always { scroll-snap-stop: always; }
+
+/* Touch Action */
+.touch-auto { touch-action: auto; }
+
+.touch-none { touch-action: none; }
+
+.touch-pan-x { touch-action: pan-x; }
+
+.touch-pan-y { touch-action: pan-y; }
+
+.touch-manipulation { touch-action: manipulation; }
+
+/* User Select */
+.select-auto { user-select: auto; }
+
+.select-none { user-select: none; }
+
+.select-text { user-select: text; }
+
+.select-all { user-select: all; }
+
+.select-contain { user-select: contain; }
+
+/* Will Change */
+.will-change-auto { will-change: auto; }
+
+.will-change-scroll { will-change: scroll; }
+
+.will-change-transform { will-change: transform; }
+
+.will-change-opacity { will-change: opacity; }
+
+.will-change-contents { will-change: contents; }
+
+/* Field Sizing */
+.field-sizing-auto { block-size: auto; inline-size: auto; }
+
+.field-sizing-fill { block-size: 100%; inline-size: 100%; }
+
+.field-sizing-min { block-size: min-content; inline-size: min-content; }
+
+.field-sizing-max { block-size: max-content; inline-size: max-content; }
+
+/* Accent & Appearance */
+.accent-auto { accent-color: auto; }
+
+.accent-current { accent-color: currentColor; }
+
+.appearance-none { appearance: none; }
+
+/* Cursor */
+.cursor-auto { cursor: auto; }
+
+.cursor-pointer { cursor: pointer; }
+
+.cursor-default { cursor: default; }
+
+.cursor-wait { cursor: wait; }
+
+.cursor-text { cursor: text; }
+
+.cursor-move { cursor: move; }
+
+.cursor-not-allowed { cursor: not-allowed; }
+
+/* Pointer events */
+.pointer-events-auto { pointer-events: auto; }
+
+.pointer-events-none { pointer-events: none; }
+
+/* -----------------------------------------------------------------------------
+   17. Miscellaneous Utilities
+----------------------------------------------------------------------------- */
+/* Resize */
+.resize-none { resize: none; }
+
+.resize-y { resize: vertical; }
+
+.resize-x { resize: horizontal; }
+
+/* Scroll behavior */
+.scroll-auto { scroll-behavior: auto; }
+
+.scroll-smooth { scroll-behavior: smooth; }
+
+/* Scroll margin */
+.scroll-m-0 { scroll-margin: 0; }
+
+.scroll-m-1 { scroll-margin: 0.25rem; }
+
+.scroll-m-2 { scroll-margin: 0.5rem; }
+
+.scroll-m-4 { scroll-margin: 1rem; }
+
+.scroll-m-8 { scroll-margin: 2rem; }
+
+.scroll-p-0 { scroll-padding: 0; }
+
+.scroll-p-1 { scroll-padding: 0.25rem; }
+
+.scroll-p-2 { scroll-padding: 0.5rem; }
+
+.scroll-p-4 { scroll-padding: 1rem; }
+
+.scroll-p-8 { scroll-padding: 2rem; }
+
+/* -----------------------------------------------------------------------------
+   18. Utilities You Requested
+----------------------------------------------------------------------------- */
+/* Touch action */
+.touch-auto { touch-action: auto; }
+
+.touch-none { touch-action: none; }
+
+.touch-pan-x { touch-action: pan-x; }
+
+.touch-pan-y { touch-action: pan-y; }
+
+.touch-manipulation { touch-action: manipulation; }
+
+/* User select */
+.select-none { user-select: none; }
+
+.select-text { user-select: text; }
+
+.select-all { user-select: all; }
+
+.select-auto { user-select: auto; }
+
+/* Will change */
+.will-change-auto { will-change: auto; }
+
+.will-change-scroll { will-change: scroll-position; }
+
+.will-change-transform { will-change: transform; }
+
+.will-change-opacity { will-change: opacity; }

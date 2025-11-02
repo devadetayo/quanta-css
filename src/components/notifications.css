@@ -114,7 +114,7 @@
 
 /* Dark Mode */
 html[data-theme='dark'] .quanta-toast {
-  background-color: var(--quanta-slate-800);
+  background-color: var(--quanta-grey-800);
   color: var(--quanta-text-default);
 }
 

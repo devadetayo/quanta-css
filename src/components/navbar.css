@@ -96,7 +96,7 @@
 
 /* ─── Dark Mode ─────────────────────────────────────── */
 html[data-theme="dark"] .quanta-navbar {
-  background: var(--quanta-slate-900);
+  background: var(--quanta-grey-900);
 }
 
 html[data-theme="dark"] .quanta-nav-link,

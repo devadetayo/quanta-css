@@ -1,0 +1,1480 @@
+/* Quanta CSS v2.1 - sizing-combined Light Variants */
+
+/* State Variants */
+.hover-size-0:hover { width: 0; height: 0; }
+.focus-size-0:focus { width: 0; height: 0; }
+.active-size-0:active { width: 0; height: 0; }
+.disabled-size-0:disabled { width: 0; height: 0; }
+.focus-visible-size-0:focus-visible { width: 0; height: 0; }
+.focus-within-size-0:focus-within { width: 0; height: 0; }
+.group:hover .group-hover-size-0 { width: 0; height: 0; }
+.hover-25rem:hover { width: 0.25rem; height: 0.25rem; }
+.focus-25rem:focus { width: 0.25rem; height: 0.25rem; }
+.active-25rem:active { width: 0.25rem; height: 0.25rem; }
+.disabled-25rem:disabled { width: 0.25rem; height: 0.25rem; }
+.focus-visible-25rem:focus-visible { width: 0.25rem; height: 0.25rem; }
+.focus-within-25rem:focus-within { width: 0.25rem; height: 0.25rem; }
+.group:hover .group-hover-25rem { width: 0.25rem; height: 0.25rem; }
+.hover-size-1:hover { width: 0.25rem; height: 0.25rem; }
+.focus-size-1:focus { width: 0.25rem; height: 0.25rem; }
+.active-size-1:active { width: 0.25rem; height: 0.25rem; }
+.disabled-size-1:disabled { width: 0.25rem; height: 0.25rem; }
+.focus-visible-size-1:focus-visible { width: 0.25rem; height: 0.25rem; }
+.focus-within-size-1:focus-within { width: 0.25rem; height: 0.25rem; }
+.group:hover .group-hover-size-1 { width: 0.25rem; height: 0.25rem; }
+.hover-size-2:hover { width: 0.5rem; height: 0.5rem; }
+.focus-size-2:focus { width: 0.5rem; height: 0.5rem; }
+.active-size-2:active { width: 0.5rem; height: 0.5rem; }
+.disabled-size-2:disabled { width: 0.5rem; height: 0.5rem; }
+.focus-visible-size-2:focus-visible { width: 0.5rem; height: 0.5rem; }
+.focus-within-size-2:focus-within { width: 0.5rem; height: 0.5rem; }
+.group:hover .group-hover-size-2 { width: 0.5rem; height: 0.5rem; }
+.hover-size-3:hover { width: 0.75rem; height: 0.75rem; }
+.focus-size-3:focus { width: 0.75rem; height: 0.75rem; }
+.active-size-3:active { width: 0.75rem; height: 0.75rem; }
+.disabled-size-3:disabled { width: 0.75rem; height: 0.75rem; }
+.focus-visible-size-3:focus-visible { width: 0.75rem; height: 0.75rem; }
+.focus-within-size-3:focus-within { width: 0.75rem; height: 0.75rem; }
+.group:hover .group-hover-size-3 { width: 0.75rem; height: 0.75rem; }
+.hover-size-4:hover { width: 1rem; height: 1rem; }
+.focus-size-4:focus { width: 1rem; height: 1rem; }
+.active-size-4:active { width: 1rem; height: 1rem; }
+.disabled-size-4:disabled { width: 1rem; height: 1rem; }
+.focus-visible-size-4:focus-visible { width: 1rem; height: 1rem; }
+.focus-within-size-4:focus-within { width: 1rem; height: 1rem; }
+.group:hover .group-hover-size-4 { width: 1rem; height: 1rem; }
+.hover-size-5:hover { width: 1.25rem; height: 1.25rem; }
+.focus-size-5:focus { width: 1.25rem; height: 1.25rem; }
+.active-size-5:active { width: 1.25rem; height: 1.25rem; }
+.disabled-size-5:disabled { width: 1.25rem; height: 1.25rem; }
+.focus-visible-size-5:focus-visible { width: 1.25rem; height: 1.25rem; }
+.focus-within-size-5:focus-within { width: 1.25rem; height: 1.25rem; }
+.group:hover .group-hover-size-5 { width: 1.25rem; height: 1.25rem; }
+.hover-size-6:hover { width: 1.5rem; height: 1.5rem; }
+.focus-size-6:focus { width: 1.5rem; height: 1.5rem; }
+.active-size-6:active { width: 1.5rem; height: 1.5rem; }
+.disabled-size-6:disabled { width: 1.5rem; height: 1.5rem; }
+.focus-visible-size-6:focus-visible { width: 1.5rem; height: 1.5rem; }
+.focus-within-size-6:focus-within { width: 1.5rem; height: 1.5rem; }
+.group:hover .group-hover-size-6 { width: 1.5rem; height: 1.5rem; }
+.hover-size-7:hover { width: 1.75rem; height: 1.75rem; }
+.focus-size-7:focus { width: 1.75rem; height: 1.75rem; }
+.active-size-7:active { width: 1.75rem; height: 1.75rem; }
+.disabled-size-7:disabled { width: 1.75rem; height: 1.75rem; }
+.focus-visible-size-7:focus-visible { width: 1.75rem; height: 1.75rem; }
+.focus-within-size-7:focus-within { width: 1.75rem; height: 1.75rem; }
+.group:hover .group-hover-size-7 { width: 1.75rem; height: 1.75rem; }
+.hover-size-8:hover { width: 2rem; height: 2rem; }
+.focus-size-8:focus { width: 2rem; height: 2rem; }
+.active-size-8:active { width: 2rem; height: 2rem; }
+.disabled-size-8:disabled { width: 2rem; height: 2rem; }
+.focus-visible-size-8:focus-visible { width: 2rem; height: 2rem; }
+.focus-within-size-8:focus-within { width: 2rem; height: 2rem; }
+.group:hover .group-hover-size-8 { width: 2rem; height: 2rem; }
+.hover-size-9:hover { width: 2.25rem; height: 2.25rem; }
+.focus-size-9:focus { width: 2.25rem; height: 2.25rem; }
+.active-size-9:active { width: 2.25rem; height: 2.25rem; }
+.disabled-size-9:disabled { width: 2.25rem; height: 2.25rem; }
+.focus-visible-size-9:focus-visible { width: 2.25rem; height: 2.25rem; }
+.focus-within-size-9:focus-within { width: 2.25rem; height: 2.25rem; }
+.group:hover .group-hover-size-9 { width: 2.25rem; height: 2.25rem; }
+.hover-size-10:hover { width: 2.5rem; height: 2.5rem; }
+.focus-size-10:focus { width: 2.5rem; height: 2.5rem; }
+.active-size-10:active { width: 2.5rem; height: 2.5rem; }
+.disabled-size-10:disabled { width: 2.5rem; height: 2.5rem; }
+.focus-visible-size-10:focus-visible { width: 2.5rem; height: 2.5rem; }
+.focus-within-size-10:focus-within { width: 2.5rem; height: 2.5rem; }
+.group:hover .group-hover-size-10 { width: 2.5rem; height: 2.5rem; }
+.hover-size-11:hover { width: 2.75rem; height: 2.75rem; }
+.focus-size-11:focus { width: 2.75rem; height: 2.75rem; }
+.active-size-11:active { width: 2.75rem; height: 2.75rem; }
+.disabled-size-11:disabled { width: 2.75rem; height: 2.75rem; }
+.focus-visible-size-11:focus-visible { width: 2.75rem; height: 2.75rem; }
+.focus-within-size-11:focus-within { width: 2.75rem; height: 2.75rem; }
+.group:hover .group-hover-size-11 { width: 2.75rem; height: 2.75rem; }
+.hover-size-12:hover { width: 3rem; height: 3rem; }
+.focus-size-12:focus { width: 3rem; height: 3rem; }
+.active-size-12:active { width: 3rem; height: 3rem; }
+.disabled-size-12:disabled { width: 3rem; height: 3rem; }
+.focus-visible-size-12:focus-visible { width: 3rem; height: 3rem; }
+.focus-within-size-12:focus-within { width: 3rem; height: 3rem; }
+.group:hover .group-hover-size-12 { width: 3rem; height: 3rem; }
+.hover-size-14:hover { width: 3.5rem; height: 3.5rem; }
+.focus-size-14:focus { width: 3.5rem; height: 3.5rem; }
+.active-size-14:active { width: 3.5rem; height: 3.5rem; }
+.disabled-size-14:disabled { width: 3.5rem; height: 3.5rem; }
+.focus-visible-size-14:focus-visible { width: 3.5rem; height: 3.5rem; }
+.focus-within-size-14:focus-within { width: 3.5rem; height: 3.5rem; }
+.group:hover .group-hover-size-14 { width: 3.5rem; height: 3.5rem; }
+.hover-size-16:hover { width: 4rem; height: 4rem; }
+.focus-size-16:focus { width: 4rem; height: 4rem; }
+.active-size-16:active { width: 4rem; height: 4rem; }
+.disabled-size-16:disabled { width: 4rem; height: 4rem; }
+.focus-visible-size-16:focus-visible { width: 4rem; height: 4rem; }
+.focus-within-size-16:focus-within { width: 4rem; height: 4rem; }
+.group:hover .group-hover-size-16 { width: 4rem; height: 4rem; }
+.hover-size-20:hover { width: 5rem; height: 5rem; }
+.focus-size-20:focus { width: 5rem; height: 5rem; }
+.active-size-20:active { width: 5rem; height: 5rem; }
+.disabled-size-20:disabled { width: 5rem; height: 5rem; }
+.focus-visible-size-20:focus-visible { width: 5rem; height: 5rem; }
+.focus-within-size-20:focus-within { width: 5rem; height: 5rem; }
+.group:hover .group-hover-size-20 { width: 5rem; height: 5rem; }
+.hover-size-24:hover { width: 6rem; height: 6rem; }
+.focus-size-24:focus { width: 6rem; height: 6rem; }
+.active-size-24:active { width: 6rem; height: 6rem; }
+.disabled-size-24:disabled { width: 6rem; height: 6rem; }
+.focus-visible-size-24:focus-visible { width: 6rem; height: 6rem; }
+.focus-within-size-24:focus-within { width: 6rem; height: 6rem; }
+.group:hover .group-hover-size-24 { width: 6rem; height: 6rem; }
+.hover-size-28:hover { width: 7rem; height: 7rem; }
+.focus-size-28:focus { width: 7rem; height: 7rem; }
+.active-size-28:active { width: 7rem; height: 7rem; }
+.disabled-size-28:disabled { width: 7rem; height: 7rem; }
+.focus-visible-size-28:focus-visible { width: 7rem; height: 7rem; }
+.focus-within-size-28:focus-within { width: 7rem; height: 7rem; }
+.group:hover .group-hover-size-28 { width: 7rem; height: 7rem; }
+.hover-size-32:hover { width: 8rem; height: 8rem; }
+.focus-size-32:focus { width: 8rem; height: 8rem; }
+.active-size-32:active { width: 8rem; height: 8rem; }
+.disabled-size-32:disabled { width: 8rem; height: 8rem; }
+.focus-visible-size-32:focus-visible { width: 8rem; height: 8rem; }
+.focus-within-size-32:focus-within { width: 8rem; height: 8rem; }
+.group:hover .group-hover-size-32 { width: 8rem; height: 8rem; }
+.hover-size-36:hover { width: 9rem; height: 9rem; }
+.focus-size-36:focus { width: 9rem; height: 9rem; }
+.active-size-36:active { width: 9rem; height: 9rem; }
+.disabled-size-36:disabled { width: 9rem; height: 9rem; }
+.focus-visible-size-36:focus-visible { width: 9rem; height: 9rem; }
+.focus-within-size-36:focus-within { width: 9rem; height: 9rem; }
+.group:hover .group-hover-size-36 { width: 9rem; height: 9rem; }
+.hover-size-40:hover { width: 10rem; height: 10rem; }
+.focus-size-40:focus { width: 10rem; height: 10rem; }
+.active-size-40:active { width: 10rem; height: 10rem; }
+.disabled-size-40:disabled { width: 10rem; height: 10rem; }
+.focus-visible-size-40:focus-visible { width: 10rem; height: 10rem; }
+.focus-within-size-40:focus-within { width: 10rem; height: 10rem; }
+.group:hover .group-hover-size-40 { width: 10rem; height: 10rem; }
+.hover-size-44:hover { width: 11rem; height: 11rem; }
+.focus-size-44:focus { width: 11rem; height: 11rem; }
+.active-size-44:active { width: 11rem; height: 11rem; }
+.disabled-size-44:disabled { width: 11rem; height: 11rem; }
+.focus-visible-size-44:focus-visible { width: 11rem; height: 11rem; }
+.focus-within-size-44:focus-within { width: 11rem; height: 11rem; }
+.group:hover .group-hover-size-44 { width: 11rem; height: 11rem; }
+.hover-size-48:hover { width: 12rem; height: 12rem; }
+.focus-size-48:focus { width: 12rem; height: 12rem; }
+.active-size-48:active { width: 12rem; height: 12rem; }
+.disabled-size-48:disabled { width: 12rem; height: 12rem; }
+.focus-visible-size-48:focus-visible { width: 12rem; height: 12rem; }
+.focus-within-size-48:focus-within { width: 12rem; height: 12rem; }
+.group:hover .group-hover-size-48 { width: 12rem; height: 12rem; }
+.hover-size-52:hover { width: 13rem; height: 13rem; }
+.focus-size-52:focus { width: 13rem; height: 13rem; }
+.active-size-52:active { width: 13rem; height: 13rem; }
+.disabled-size-52:disabled { width: 13rem; height: 13rem; }
+.focus-visible-size-52:focus-visible { width: 13rem; height: 13rem; }
+.focus-within-size-52:focus-within { width: 13rem; height: 13rem; }
+.group:hover .group-hover-size-52 { width: 13rem; height: 13rem; }
+.hover-size-56:hover { width: 14rem; height: 14rem; }
+.focus-size-56:focus { width: 14rem; height: 14rem; }
+.active-size-56:active { width: 14rem; height: 14rem; }
+.disabled-size-56:disabled { width: 14rem; height: 14rem; }
+.focus-visible-size-56:focus-visible { width: 14rem; height: 14rem; }
+.focus-within-size-56:focus-within { width: 14rem; height: 14rem; }
+.group:hover .group-hover-size-56 { width: 14rem; height: 14rem; }
+.hover-size-60:hover { width: 15rem; height: 15rem; }
+.focus-size-60:focus { width: 15rem; height: 15rem; }
+.active-size-60:active { width: 15rem; height: 15rem; }
+.disabled-size-60:disabled { width: 15rem; height: 15rem; }
+.focus-visible-size-60:focus-visible { width: 15rem; height: 15rem; }
+.focus-within-size-60:focus-within { width: 15rem; height: 15rem; }
+.group:hover .group-hover-size-60 { width: 15rem; height: 15rem; }
+.hover-size-64:hover { width: 16rem; height: 16rem; }
+.focus-size-64:focus { width: 16rem; height: 16rem; }
+.active-size-64:active { width: 16rem; height: 16rem; }
+.disabled-size-64:disabled { width: 16rem; height: 16rem; }
+.focus-visible-size-64:focus-visible { width: 16rem; height: 16rem; }
+.focus-within-size-64:focus-within { width: 16rem; height: 16rem; }
+.group:hover .group-hover-size-64 { width: 16rem; height: 16rem; }
+.hover-size-72:hover { width: 18rem; height: 18rem; }
+.focus-size-72:focus { width: 18rem; height: 18rem; }
+.active-size-72:active { width: 18rem; height: 18rem; }
+.disabled-size-72:disabled { width: 18rem; height: 18rem; }
+.focus-visible-size-72:focus-visible { width: 18rem; height: 18rem; }
+.focus-within-size-72:focus-within { width: 18rem; height: 18rem; }
+.group:hover .group-hover-size-72 { width: 18rem; height: 18rem; }
+.hover-size-80:hover { width: 20rem; height: 20rem; }
+.focus-size-80:focus { width: 20rem; height: 20rem; }
+.active-size-80:active { width: 20rem; height: 20rem; }
+.disabled-size-80:disabled { width: 20rem; height: 20rem; }
+.focus-visible-size-80:focus-visible { width: 20rem; height: 20rem; }
+.focus-within-size-80:focus-within { width: 20rem; height: 20rem; }
+.group:hover .group-hover-size-80 { width: 20rem; height: 20rem; }
+.hover-size-96:hover { width: 24rem; height: 24rem; }
+.focus-size-96:focus { width: 24rem; height: 24rem; }
+.active-size-96:active { width: 24rem; height: 24rem; }
+.disabled-size-96:disabled { width: 24rem; height: 24rem; }
+.focus-visible-size-96:focus-visible { width: 24rem; height: 24rem; }
+.focus-within-size-96:focus-within { width: 24rem; height: 24rem; }
+.group:hover .group-hover-size-96 { width: 24rem; height: 24rem; }
+
+/* SM Breakpoint */
+@media (min-width: 480px) {
+  .sm-size-0 { width: 0; height: 0; }
+  .sm-hover-size-0:hover { width: 0; height: 0; }
+  .sm-focus-size-0:focus { width: 0; height: 0; }
+  .sm-active-size-0:active { width: 0; height: 0; }
+  .sm-disabled-size-0:disabled { width: 0; height: 0; }
+  .sm-focus-visible-size-0:focus-visible { width: 0; height: 0; }
+  .sm-focus-within-size-0:focus-within { width: 0; height: 0; }
+  .group:hover .sm-group-hover-size-0 { width: 0; height: 0; }
+  .sm-25rem { width: 0.25rem; height: 0.25rem; }
+  .sm-hover-25rem:hover { width: 0.25rem; height: 0.25rem; }
+  .sm-focus-25rem:focus { width: 0.25rem; height: 0.25rem; }
+  .sm-active-25rem:active { width: 0.25rem; height: 0.25rem; }
+  .sm-disabled-25rem:disabled { width: 0.25rem; height: 0.25rem; }
+  .sm-focus-visible-25rem:focus-visible { width: 0.25rem; height: 0.25rem; }
+  .sm-focus-within-25rem:focus-within { width: 0.25rem; height: 0.25rem; }
+  .group:hover .sm-group-hover-25rem { width: 0.25rem; height: 0.25rem; }
+  .sm-size-1 { width: 0.25rem; height: 0.25rem; }
+  .sm-hover-size-1:hover { width: 0.25rem; height: 0.25rem; }
+  .sm-focus-size-1:focus { width: 0.25rem; height: 0.25rem; }
+  .sm-active-size-1:active { width: 0.25rem; height: 0.25rem; }
+  .sm-disabled-size-1:disabled { width: 0.25rem; height: 0.25rem; }
+  .sm-focus-visible-size-1:focus-visible { width: 0.25rem; height: 0.25rem; }
+  .sm-focus-within-size-1:focus-within { width: 0.25rem; height: 0.25rem; }
+  .group:hover .sm-group-hover-size-1 { width: 0.25rem; height: 0.25rem; }
+  .sm-size-2 { width: 0.5rem; height: 0.5rem; }
+  .sm-hover-size-2:hover { width: 0.5rem; height: 0.5rem; }
+  .sm-focus-size-2:focus { width: 0.5rem; height: 0.5rem; }
+  .sm-active-size-2:active { width: 0.5rem; height: 0.5rem; }
+  .sm-disabled-size-2:disabled { width: 0.5rem; height: 0.5rem; }
+  .sm-focus-visible-size-2:focus-visible { width: 0.5rem; height: 0.5rem; }
+  .sm-focus-within-size-2:focus-within { width: 0.5rem; height: 0.5rem; }
+  .group:hover .sm-group-hover-size-2 { width: 0.5rem; height: 0.5rem; }
+  .sm-size-3 { width: 0.75rem; height: 0.75rem; }
+  .sm-hover-size-3:hover { width: 0.75rem; height: 0.75rem; }
+  .sm-focus-size-3:focus { width: 0.75rem; height: 0.75rem; }
+  .sm-active-size-3:active { width: 0.75rem; height: 0.75rem; }
+  .sm-disabled-size-3:disabled { width: 0.75rem; height: 0.75rem; }
+  .sm-focus-visible-size-3:focus-visible { width: 0.75rem; height: 0.75rem; }
+  .sm-focus-within-size-3:focus-within { width: 0.75rem; height: 0.75rem; }
+  .group:hover .sm-group-hover-size-3 { width: 0.75rem; height: 0.75rem; }
+  .sm-size-4 { width: 1rem; height: 1rem; }
+  .sm-hover-size-4:hover { width: 1rem; height: 1rem; }
+  .sm-focus-size-4:focus { width: 1rem; height: 1rem; }
+  .sm-active-size-4:active { width: 1rem; height: 1rem; }
+  .sm-disabled-size-4:disabled { width: 1rem; height: 1rem; }
+  .sm-focus-visible-size-4:focus-visible { width: 1rem; height: 1rem; }
+  .sm-focus-within-size-4:focus-within { width: 1rem; height: 1rem; }
+  .group:hover .sm-group-hover-size-4 { width: 1rem; height: 1rem; }
+  .sm-size-5 { width: 1.25rem; height: 1.25rem; }
+  .sm-hover-size-5:hover { width: 1.25rem; height: 1.25rem; }
+  .sm-focus-size-5:focus { width: 1.25rem; height: 1.25rem; }
+  .sm-active-size-5:active { width: 1.25rem; height: 1.25rem; }
+  .sm-disabled-size-5:disabled { width: 1.25rem; height: 1.25rem; }
+  .sm-focus-visible-size-5:focus-visible { width: 1.25rem; height: 1.25rem; }
+  .sm-focus-within-size-5:focus-within { width: 1.25rem; height: 1.25rem; }
+  .group:hover .sm-group-hover-size-5 { width: 1.25rem; height: 1.25rem; }
+  .sm-size-6 { width: 1.5rem; height: 1.5rem; }
+  .sm-hover-size-6:hover { width: 1.5rem; height: 1.5rem; }
+  .sm-focus-size-6:focus { width: 1.5rem; height: 1.5rem; }
+  .sm-active-size-6:active { width: 1.5rem; height: 1.5rem; }
+  .sm-disabled-size-6:disabled { width: 1.5rem; height: 1.5rem; }
+  .sm-focus-visible-size-6:focus-visible { width: 1.5rem; height: 1.5rem; }
+  .sm-focus-within-size-6:focus-within { width: 1.5rem; height: 1.5rem; }
+  .group:hover .sm-group-hover-size-6 { width: 1.5rem; height: 1.5rem; }
+  .sm-size-7 { width: 1.75rem; height: 1.75rem; }
+  .sm-hover-size-7:hover { width: 1.75rem; height: 1.75rem; }
+  .sm-focus-size-7:focus { width: 1.75rem; height: 1.75rem; }
+  .sm-active-size-7:active { width: 1.75rem; height: 1.75rem; }
+  .sm-disabled-size-7:disabled { width: 1.75rem; height: 1.75rem; }
+  .sm-focus-visible-size-7:focus-visible { width: 1.75rem; height: 1.75rem; }
+  .sm-focus-within-size-7:focus-within { width: 1.75rem; height: 1.75rem; }
+  .group:hover .sm-group-hover-size-7 { width: 1.75rem; height: 1.75rem; }
+  .sm-size-8 { width: 2rem; height: 2rem; }
+  .sm-hover-size-8:hover { width: 2rem; height: 2rem; }
+  .sm-focus-size-8:focus { width: 2rem; height: 2rem; }
+  .sm-active-size-8:active { width: 2rem; height: 2rem; }
+  .sm-disabled-size-8:disabled { width: 2rem; height: 2rem; }
+  .sm-focus-visible-size-8:focus-visible { width: 2rem; height: 2rem; }
+  .sm-focus-within-size-8:focus-within { width: 2rem; height: 2rem; }
+  .group:hover .sm-group-hover-size-8 { width: 2rem; height: 2rem; }
+  .sm-size-9 { width: 2.25rem; height: 2.25rem; }
+  .sm-hover-size-9:hover { width: 2.25rem; height: 2.25rem; }
+  .sm-focus-size-9:focus { width: 2.25rem; height: 2.25rem; }
+  .sm-active-size-9:active { width: 2.25rem; height: 2.25rem; }
+  .sm-disabled-size-9:disabled { width: 2.25rem; height: 2.25rem; }
+  .sm-focus-visible-size-9:focus-visible { width: 2.25rem; height: 2.25rem; }
+  .sm-focus-within-size-9:focus-within { width: 2.25rem; height: 2.25rem; }
+  .group:hover .sm-group-hover-size-9 { width: 2.25rem; height: 2.25rem; }
+  .sm-size-10 { width: 2.5rem; height: 2.5rem; }
+  .sm-hover-size-10:hover { width: 2.5rem; height: 2.5rem; }
+  .sm-focus-size-10:focus { width: 2.5rem; height: 2.5rem; }
+  .sm-active-size-10:active { width: 2.5rem; height: 2.5rem; }
+  .sm-disabled-size-10:disabled { width: 2.5rem; height: 2.5rem; }
+  .sm-focus-visible-size-10:focus-visible { width: 2.5rem; height: 2.5rem; }
+  .sm-focus-within-size-10:focus-within { width: 2.5rem; height: 2.5rem; }
+  .group:hover .sm-group-hover-size-10 { width: 2.5rem; height: 2.5rem; }
+  .sm-size-11 { width: 2.75rem; height: 2.75rem; }
+  .sm-hover-size-11:hover { width: 2.75rem; height: 2.75rem; }
+  .sm-focus-size-11:focus { width: 2.75rem; height: 2.75rem; }
+  .sm-active-size-11:active { width: 2.75rem; height: 2.75rem; }
+  .sm-disabled-size-11:disabled { width: 2.75rem; height: 2.75rem; }
+  .sm-focus-visible-size-11:focus-visible { width: 2.75rem; height: 2.75rem; }
+  .sm-focus-within-size-11:focus-within { width: 2.75rem; height: 2.75rem; }
+  .group:hover .sm-group-hover-size-11 { width: 2.75rem; height: 2.75rem; }
+  .sm-size-12 { width: 3rem; height: 3rem; }
+  .sm-hover-size-12:hover { width: 3rem; height: 3rem; }
+  .sm-focus-size-12:focus { width: 3rem; height: 3rem; }
+  .sm-active-size-12:active { width: 3rem; height: 3rem; }
+  .sm-disabled-size-12:disabled { width: 3rem; height: 3rem; }
+  .sm-focus-visible-size-12:focus-visible { width: 3rem; height: 3rem; }
+  .sm-focus-within-size-12:focus-within { width: 3rem; height: 3rem; }
+  .group:hover .sm-group-hover-size-12 { width: 3rem; height: 3rem; }
+  .sm-size-14 { width: 3.5rem; height: 3.5rem; }
+  .sm-hover-size-14:hover { width: 3.5rem; height: 3.5rem; }
+  .sm-focus-size-14:focus { width: 3.5rem; height: 3.5rem; }
+  .sm-active-size-14:active { width: 3.5rem; height: 3.5rem; }
+  .sm-disabled-size-14:disabled { width: 3.5rem; height: 3.5rem; }
+  .sm-focus-visible-size-14:focus-visible { width: 3.5rem; height: 3.5rem; }
+  .sm-focus-within-size-14:focus-within { width: 3.5rem; height: 3.5rem; }
+  .group:hover .sm-group-hover-size-14 { width: 3.5rem; height: 3.5rem; }
+  .sm-size-16 { width: 4rem; height: 4rem; }
+  .sm-hover-size-16:hover { width: 4rem; height: 4rem; }
+  .sm-focus-size-16:focus { width: 4rem; height: 4rem; }
+  .sm-active-size-16:active { width: 4rem; height: 4rem; }
+  .sm-disabled-size-16:disabled { width: 4rem; height: 4rem; }
+  .sm-focus-visible-size-16:focus-visible { width: 4rem; height: 4rem; }
+  .sm-focus-within-size-16:focus-within { width: 4rem; height: 4rem; }
+  .group:hover .sm-group-hover-size-16 { width: 4rem; height: 4rem; }
+  .sm-size-20 { width: 5rem; height: 5rem; }
+  .sm-hover-size-20:hover { width: 5rem; height: 5rem; }
+  .sm-focus-size-20:focus { width: 5rem; height: 5rem; }
+  .sm-active-size-20:active { width: 5rem; height: 5rem; }
+  .sm-disabled-size-20:disabled { width: 5rem; height: 5rem; }
+  .sm-focus-visible-size-20:focus-visible { width: 5rem; height: 5rem; }
+  .sm-focus-within-size-20:focus-within { width: 5rem; height: 5rem; }
+  .group:hover .sm-group-hover-size-20 { width: 5rem; height: 5rem; }
+  .sm-size-24 { width: 6rem; height: 6rem; }
+  .sm-hover-size-24:hover { width: 6rem; height: 6rem; }
+  .sm-focus-size-24:focus { width: 6rem; height: 6rem; }
+  .sm-active-size-24:active { width: 6rem; height: 6rem; }
+  .sm-disabled-size-24:disabled { width: 6rem; height: 6rem; }
+  .sm-focus-visible-size-24:focus-visible { width: 6rem; height: 6rem; }
+  .sm-focus-within-size-24:focus-within { width: 6rem; height: 6rem; }
+  .group:hover .sm-group-hover-size-24 { width: 6rem; height: 6rem; }
+  .sm-size-28 { width: 7rem; height: 7rem; }
+  .sm-hover-size-28:hover { width: 7rem; height: 7rem; }
+  .sm-focus-size-28:focus { width: 7rem; height: 7rem; }
+  .sm-active-size-28:active { width: 7rem; height: 7rem; }
+  .sm-disabled-size-28:disabled { width: 7rem; height: 7rem; }
+  .sm-focus-visible-size-28:focus-visible { width: 7rem; height: 7rem; }
+  .sm-focus-within-size-28:focus-within { width: 7rem; height: 7rem; }
+  .group:hover .sm-group-hover-size-28 { width: 7rem; height: 7rem; }
+  .sm-size-32 { width: 8rem; height: 8rem; }
+  .sm-hover-size-32:hover { width: 8rem; height: 8rem; }
+  .sm-focus-size-32:focus { width: 8rem; height: 8rem; }
+  .sm-active-size-32:active { width: 8rem; height: 8rem; }
+  .sm-disabled-size-32:disabled { width: 8rem; height: 8rem; }
+  .sm-focus-visible-size-32:focus-visible { width: 8rem; height: 8rem; }
+  .sm-focus-within-size-32:focus-within { width: 8rem; height: 8rem; }
+  .group:hover .sm-group-hover-size-32 { width: 8rem; height: 8rem; }
+  .sm-size-36 { width: 9rem; height: 9rem; }
+  .sm-hover-size-36:hover { width: 9rem; height: 9rem; }
+  .sm-focus-size-36:focus { width: 9rem; height: 9rem; }
+  .sm-active-size-36:active { width: 9rem; height: 9rem; }
+  .sm-disabled-size-36:disabled { width: 9rem; height: 9rem; }
+  .sm-focus-visible-size-36:focus-visible { width: 9rem; height: 9rem; }
+  .sm-focus-within-size-36:focus-within { width: 9rem; height: 9rem; }
+  .group:hover .sm-group-hover-size-36 { width: 9rem; height: 9rem; }
+  .sm-size-40 { width: 10rem; height: 10rem; }
+  .sm-hover-size-40:hover { width: 10rem; height: 10rem; }
+  .sm-focus-size-40:focus { width: 10rem; height: 10rem; }
+  .sm-active-size-40:active { width: 10rem; height: 10rem; }
+  .sm-disabled-size-40:disabled { width: 10rem; height: 10rem; }
+  .sm-focus-visible-size-40:focus-visible { width: 10rem; height: 10rem; }
+  .sm-focus-within-size-40:focus-within { width: 10rem; height: 10rem; }
+  .group:hover .sm-group-hover-size-40 { width: 10rem; height: 10rem; }
+  .sm-size-44 { width: 11rem; height: 11rem; }
+  .sm-hover-size-44:hover { width: 11rem; height: 11rem; }
+  .sm-focus-size-44:focus { width: 11rem; height: 11rem; }
+  .sm-active-size-44:active { width: 11rem; height: 11rem; }
+  .sm-disabled-size-44:disabled { width: 11rem; height: 11rem; }
+  .sm-focus-visible-size-44:focus-visible { width: 11rem; height: 11rem; }
+  .sm-focus-within-size-44:focus-within { width: 11rem; height: 11rem; }
+  .group:hover .sm-group-hover-size-44 { width: 11rem; height: 11rem; }
+  .sm-size-48 { width: 12rem; height: 12rem; }
+  .sm-hover-size-48:hover { width: 12rem; height: 12rem; }
+  .sm-focus-size-48:focus { width: 12rem; height: 12rem; }
+  .sm-active-size-48:active { width: 12rem; height: 12rem; }
+  .sm-disabled-size-48:disabled { width: 12rem; height: 12rem; }
+  .sm-focus-visible-size-48:focus-visible { width: 12rem; height: 12rem; }
+  .sm-focus-within-size-48:focus-within { width: 12rem; height: 12rem; }
+  .group:hover .sm-group-hover-size-48 { width: 12rem; height: 12rem; }
+  .sm-size-52 { width: 13rem; height: 13rem; }
+  .sm-hover-size-52:hover { width: 13rem; height: 13rem; }
+  .sm-focus-size-52:focus { width: 13rem; height: 13rem; }
+  .sm-active-size-52:active { width: 13rem; height: 13rem; }
+  .sm-disabled-size-52:disabled { width: 13rem; height: 13rem; }
+  .sm-focus-visible-size-52:focus-visible { width: 13rem; height: 13rem; }
+  .sm-focus-within-size-52:focus-within { width: 13rem; height: 13rem; }
+  .group:hover .sm-group-hover-size-52 { width: 13rem; height: 13rem; }
+  .sm-size-56 { width: 14rem; height: 14rem; }
+  .sm-hover-size-56:hover { width: 14rem; height: 14rem; }
+  .sm-focus-size-56:focus { width: 14rem; height: 14rem; }
+  .sm-active-size-56:active { width: 14rem; height: 14rem; }
+  .sm-disabled-size-56:disabled { width: 14rem; height: 14rem; }
+  .sm-focus-visible-size-56:focus-visible { width: 14rem; height: 14rem; }
+  .sm-focus-within-size-56:focus-within { width: 14rem; height: 14rem; }
+  .group:hover .sm-group-hover-size-56 { width: 14rem; height: 14rem; }
+  .sm-size-60 { width: 15rem; height: 15rem; }
+  .sm-hover-size-60:hover { width: 15rem; height: 15rem; }
+  .sm-focus-size-60:focus { width: 15rem; height: 15rem; }
+  .sm-active-size-60:active { width: 15rem; height: 15rem; }
+  .sm-disabled-size-60:disabled { width: 15rem; height: 15rem; }
+  .sm-focus-visible-size-60:focus-visible { width: 15rem; height: 15rem; }
+  .sm-focus-within-size-60:focus-within { width: 15rem; height: 15rem; }
+  .group:hover .sm-group-hover-size-60 { width: 15rem; height: 15rem; }
+  .sm-size-64 { width: 16rem; height: 16rem; }
+  .sm-hover-size-64:hover { width: 16rem; height: 16rem; }
+  .sm-focus-size-64:focus { width: 16rem; height: 16rem; }
+  .sm-active-size-64:active { width: 16rem; height: 16rem; }
+  .sm-disabled-size-64:disabled { width: 16rem; height: 16rem; }
+  .sm-focus-visible-size-64:focus-visible { width: 16rem; height: 16rem; }
+  .sm-focus-within-size-64:focus-within { width: 16rem; height: 16rem; }
+  .group:hover .sm-group-hover-size-64 { width: 16rem; height: 16rem; }
+  .sm-size-72 { width: 18rem; height: 18rem; }
+  .sm-hover-size-72:hover { width: 18rem; height: 18rem; }
+  .sm-focus-size-72:focus { width: 18rem; height: 18rem; }
+  .sm-active-size-72:active { width: 18rem; height: 18rem; }
+  .sm-disabled-size-72:disabled { width: 18rem; height: 18rem; }
+  .sm-focus-visible-size-72:focus-visible { width: 18rem; height: 18rem; }
+  .sm-focus-within-size-72:focus-within { width: 18rem; height: 18rem; }
+  .group:hover .sm-group-hover-size-72 { width: 18rem; height: 18rem; }
+  .sm-size-80 { width: 20rem; height: 20rem; }
+  .sm-hover-size-80:hover { width: 20rem; height: 20rem; }
+  .sm-focus-size-80:focus { width: 20rem; height: 20rem; }
+  .sm-active-size-80:active { width: 20rem; height: 20rem; }
+  .sm-disabled-size-80:disabled { width: 20rem; height: 20rem; }
+  .sm-focus-visible-size-80:focus-visible { width: 20rem; height: 20rem; }
+  .sm-focus-within-size-80:focus-within { width: 20rem; height: 20rem; }
+  .group:hover .sm-group-hover-size-80 { width: 20rem; height: 20rem; }
+  .sm-size-96 { width: 24rem; height: 24rem; }
+  .sm-hover-size-96:hover { width: 24rem; height: 24rem; }
+  .sm-focus-size-96:focus { width: 24rem; height: 24rem; }
+  .sm-active-size-96:active { width: 24rem; height: 24rem; }
+  .sm-disabled-size-96:disabled { width: 24rem; height: 24rem; }
+  .sm-focus-visible-size-96:focus-visible { width: 24rem; height: 24rem; }
+  .sm-focus-within-size-96:focus-within { width: 24rem; height: 24rem; }
+  .group:hover .sm-group-hover-size-96 { width: 24rem; height: 24rem; }
+}
+
+/* MD Breakpoint */
+@media (min-width: 768px) {
+  .md-size-0 { width: 0; height: 0; }
+  .md-hover-size-0:hover { width: 0; height: 0; }
+  .md-focus-size-0:focus { width: 0; height: 0; }
+  .md-active-size-0:active { width: 0; height: 0; }
+  .md-disabled-size-0:disabled { width: 0; height: 0; }
+  .md-focus-visible-size-0:focus-visible { width: 0; height: 0; }
+  .md-focus-within-size-0:focus-within { width: 0; height: 0; }
+  .group:hover .md-group-hover-size-0 { width: 0; height: 0; }
+  .md-25rem { width: 0.25rem; height: 0.25rem; }
+  .md-hover-25rem:hover { width: 0.25rem; height: 0.25rem; }
+  .md-focus-25rem:focus { width: 0.25rem; height: 0.25rem; }
+  .md-active-25rem:active { width: 0.25rem; height: 0.25rem; }
+  .md-disabled-25rem:disabled { width: 0.25rem; height: 0.25rem; }
+  .md-focus-visible-25rem:focus-visible { width: 0.25rem; height: 0.25rem; }
+  .md-focus-within-25rem:focus-within { width: 0.25rem; height: 0.25rem; }
+  .group:hover .md-group-hover-25rem { width: 0.25rem; height: 0.25rem; }
+  .md-size-1 { width: 0.25rem; height: 0.25rem; }
+  .md-hover-size-1:hover { width: 0.25rem; height: 0.25rem; }
+  .md-focus-size-1:focus { width: 0.25rem; height: 0.25rem; }
+  .md-active-size-1:active { width: 0.25rem; height: 0.25rem; }
+  .md-disabled-size-1:disabled { width: 0.25rem; height: 0.25rem; }
+  .md-focus-visible-size-1:focus-visible { width: 0.25rem; height: 0.25rem; }
+  .md-focus-within-size-1:focus-within { width: 0.25rem; height: 0.25rem; }
+  .group:hover .md-group-hover-size-1 { width: 0.25rem; height: 0.25rem; }
+  .md-size-2 { width: 0.5rem; height: 0.5rem; }
+  .md-hover-size-2:hover { width: 0.5rem; height: 0.5rem; }
+  .md-focus-size-2:focus { width: 0.5rem; height: 0.5rem; }
+  .md-active-size-2:active { width: 0.5rem; height: 0.5rem; }
+  .md-disabled-size-2:disabled { width: 0.5rem; height: 0.5rem; }
+  .md-focus-visible-size-2:focus-visible { width: 0.5rem; height: 0.5rem; }
+  .md-focus-within-size-2:focus-within { width: 0.5rem; height: 0.5rem; }
+  .group:hover .md-group-hover-size-2 { width: 0.5rem; height: 0.5rem; }
+  .md-size-3 { width: 0.75rem; height: 0.75rem; }
+  .md-hover-size-3:hover { width: 0.75rem; height: 0.75rem; }
+  .md-focus-size-3:focus { width: 0.75rem; height: 0.75rem; }
+  .md-active-size-3:active { width: 0.75rem; height: 0.75rem; }
+  .md-disabled-size-3:disabled { width: 0.75rem; height: 0.75rem; }
+  .md-focus-visible-size-3:focus-visible { width: 0.75rem; height: 0.75rem; }
+  .md-focus-within-size-3:focus-within { width: 0.75rem; height: 0.75rem; }
+  .group:hover .md-group-hover-size-3 { width: 0.75rem; height: 0.75rem; }
+  .md-size-4 { width: 1rem; height: 1rem; }
+  .md-hover-size-4:hover { width: 1rem; height: 1rem; }
+  .md-focus-size-4:focus { width: 1rem; height: 1rem; }
+  .md-active-size-4:active { width: 1rem; height: 1rem; }
+  .md-disabled-size-4:disabled { width: 1rem; height: 1rem; }
+  .md-focus-visible-size-4:focus-visible { width: 1rem; height: 1rem; }
+  .md-focus-within-size-4:focus-within { width: 1rem; height: 1rem; }
+  .group:hover .md-group-hover-size-4 { width: 1rem; height: 1rem; }
+  .md-size-5 { width: 1.25rem; height: 1.25rem; }
+  .md-hover-size-5:hover { width: 1.25rem; height: 1.25rem; }
+  .md-focus-size-5:focus { width: 1.25rem; height: 1.25rem; }
+  .md-active-size-5:active { width: 1.25rem; height: 1.25rem; }
+  .md-disabled-size-5:disabled { width: 1.25rem; height: 1.25rem; }
+  .md-focus-visible-size-5:focus-visible { width: 1.25rem; height: 1.25rem; }
+  .md-focus-within-size-5:focus-within { width: 1.25rem; height: 1.25rem; }
+  .group:hover .md-group-hover-size-5 { width: 1.25rem; height: 1.25rem; }
+  .md-size-6 { width: 1.5rem; height: 1.5rem; }
+  .md-hover-size-6:hover { width: 1.5rem; height: 1.5rem; }
+  .md-focus-size-6:focus { width: 1.5rem; height: 1.5rem; }
+  .md-active-size-6:active { width: 1.5rem; height: 1.5rem; }
+  .md-disabled-size-6:disabled { width: 1.5rem; height: 1.5rem; }
+  .md-focus-visible-size-6:focus-visible { width: 1.5rem; height: 1.5rem; }
+  .md-focus-within-size-6:focus-within { width: 1.5rem; height: 1.5rem; }
+  .group:hover .md-group-hover-size-6 { width: 1.5rem; height: 1.5rem; }
+  .md-size-7 { width: 1.75rem; height: 1.75rem; }
+  .md-hover-size-7:hover { width: 1.75rem; height: 1.75rem; }
+  .md-focus-size-7:focus { width: 1.75rem; height: 1.75rem; }
+  .md-active-size-7:active { width: 1.75rem; height: 1.75rem; }
+  .md-disabled-size-7:disabled { width: 1.75rem; height: 1.75rem; }
+  .md-focus-visible-size-7:focus-visible { width: 1.75rem; height: 1.75rem; }
+  .md-focus-within-size-7:focus-within { width: 1.75rem; height: 1.75rem; }
+  .group:hover .md-group-hover-size-7 { width: 1.75rem; height: 1.75rem; }
+  .md-size-8 { width: 2rem; height: 2rem; }
+  .md-hover-size-8:hover { width: 2rem; height: 2rem; }
+  .md-focus-size-8:focus { width: 2rem; height: 2rem; }
+  .md-active-size-8:active { width: 2rem; height: 2rem; }
+  .md-disabled-size-8:disabled { width: 2rem; height: 2rem; }
+  .md-focus-visible-size-8:focus-visible { width: 2rem; height: 2rem; }
+  .md-focus-within-size-8:focus-within { width: 2rem; height: 2rem; }
+  .group:hover .md-group-hover-size-8 { width: 2rem; height: 2rem; }
+  .md-size-9 { width: 2.25rem; height: 2.25rem; }
+  .md-hover-size-9:hover { width: 2.25rem; height: 2.25rem; }
+  .md-focus-size-9:focus { width: 2.25rem; height: 2.25rem; }
+  .md-active-size-9:active { width: 2.25rem; height: 2.25rem; }
+  .md-disabled-size-9:disabled { width: 2.25rem; height: 2.25rem; }
+  .md-focus-visible-size-9:focus-visible { width: 2.25rem; height: 2.25rem; }
+  .md-focus-within-size-9:focus-within { width: 2.25rem; height: 2.25rem; }
+  .group:hover .md-group-hover-size-9 { width: 2.25rem; height: 2.25rem; }
+  .md-size-10 { width: 2.5rem; height: 2.5rem; }
+  .md-hover-size-10:hover { width: 2.5rem; height: 2.5rem; }
+  .md-focus-size-10:focus { width: 2.5rem; height: 2.5rem; }
+  .md-active-size-10:active { width: 2.5rem; height: 2.5rem; }
+  .md-disabled-size-10:disabled { width: 2.5rem; height: 2.5rem; }
+  .md-focus-visible-size-10:focus-visible { width: 2.5rem; height: 2.5rem; }
+  .md-focus-within-size-10:focus-within { width: 2.5rem; height: 2.5rem; }
+  .group:hover .md-group-hover-size-10 { width: 2.5rem; height: 2.5rem; }
+  .md-size-11 { width: 2.75rem; height: 2.75rem; }
+  .md-hover-size-11:hover { width: 2.75rem; height: 2.75rem; }
+  .md-focus-size-11:focus { width: 2.75rem; height: 2.75rem; }
+  .md-active-size-11:active { width: 2.75rem; height: 2.75rem; }
+  .md-disabled-size-11:disabled { width: 2.75rem; height: 2.75rem; }
+  .md-focus-visible-size-11:focus-visible { width: 2.75rem; height: 2.75rem; }
+  .md-focus-within-size-11:focus-within { width: 2.75rem; height: 2.75rem; }
+  .group:hover .md-group-hover-size-11 { width: 2.75rem; height: 2.75rem; }
+  .md-size-12 { width: 3rem; height: 3rem; }
+  .md-hover-size-12:hover { width: 3rem; height: 3rem; }
+  .md-focus-size-12:focus { width: 3rem; height: 3rem; }
+  .md-active-size-12:active { width: 3rem; height: 3rem; }
+  .md-disabled-size-12:disabled { width: 3rem; height: 3rem; }
+  .md-focus-visible-size-12:focus-visible { width: 3rem; height: 3rem; }
+  .md-focus-within-size-12:focus-within { width: 3rem; height: 3rem; }
+  .group:hover .md-group-hover-size-12 { width: 3rem; height: 3rem; }
+  .md-size-14 { width: 3.5rem; height: 3.5rem; }
+  .md-hover-size-14:hover { width: 3.5rem; height: 3.5rem; }
+  .md-focus-size-14:focus { width: 3.5rem; height: 3.5rem; }
+  .md-active-size-14:active { width: 3.5rem; height: 3.5rem; }
+  .md-disabled-size-14:disabled { width: 3.5rem; height: 3.5rem; }
+  .md-focus-visible-size-14:focus-visible { width: 3.5rem; height: 3.5rem; }
+  .md-focus-within-size-14:focus-within { width: 3.5rem; height: 3.5rem; }
+  .group:hover .md-group-hover-size-14 { width: 3.5rem; height: 3.5rem; }
+  .md-size-16 { width: 4rem; height: 4rem; }
+  .md-hover-size-16:hover { width: 4rem; height: 4rem; }
+  .md-focus-size-16:focus { width: 4rem; height: 4rem; }
+  .md-active-size-16:active { width: 4rem; height: 4rem; }
+  .md-disabled-size-16:disabled { width: 4rem; height: 4rem; }
+  .md-focus-visible-size-16:focus-visible { width: 4rem; height: 4rem; }
+  .md-focus-within-size-16:focus-within { width: 4rem; height: 4rem; }
+  .group:hover .md-group-hover-size-16 { width: 4rem; height: 4rem; }
+  .md-size-20 { width: 5rem; height: 5rem; }
+  .md-hover-size-20:hover { width: 5rem; height: 5rem; }
+  .md-focus-size-20:focus { width: 5rem; height: 5rem; }
+  .md-active-size-20:active { width: 5rem; height: 5rem; }
+  .md-disabled-size-20:disabled { width: 5rem; height: 5rem; }
+  .md-focus-visible-size-20:focus-visible { width: 5rem; height: 5rem; }
+  .md-focus-within-size-20:focus-within { width: 5rem; height: 5rem; }
+  .group:hover .md-group-hover-size-20 { width: 5rem; height: 5rem; }
+  .md-size-24 { width: 6rem; height: 6rem; }
+  .md-hover-size-24:hover { width: 6rem; height: 6rem; }
+  .md-focus-size-24:focus { width: 6rem; height: 6rem; }
+  .md-active-size-24:active { width: 6rem; height: 6rem; }
+  .md-disabled-size-24:disabled { width: 6rem; height: 6rem; }
+  .md-focus-visible-size-24:focus-visible { width: 6rem; height: 6rem; }
+  .md-focus-within-size-24:focus-within { width: 6rem; height: 6rem; }
+  .group:hover .md-group-hover-size-24 { width: 6rem; height: 6rem; }
+  .md-size-28 { width: 7rem; height: 7rem; }
+  .md-hover-size-28:hover { width: 7rem; height: 7rem; }
+  .md-focus-size-28:focus { width: 7rem; height: 7rem; }
+  .md-active-size-28:active { width: 7rem; height: 7rem; }
+  .md-disabled-size-28:disabled { width: 7rem; height: 7rem; }
+  .md-focus-visible-size-28:focus-visible { width: 7rem; height: 7rem; }
+  .md-focus-within-size-28:focus-within { width: 7rem; height: 7rem; }
+  .group:hover .md-group-hover-size-28 { width: 7rem; height: 7rem; }
+  .md-size-32 { width: 8rem; height: 8rem; }
+  .md-hover-size-32:hover { width: 8rem; height: 8rem; }
+  .md-focus-size-32:focus { width: 8rem; height: 8rem; }
+  .md-active-size-32:active { width: 8rem; height: 8rem; }
+  .md-disabled-size-32:disabled { width: 8rem; height: 8rem; }
+  .md-focus-visible-size-32:focus-visible { width: 8rem; height: 8rem; }
+  .md-focus-within-size-32:focus-within { width: 8rem; height: 8rem; }
+  .group:hover .md-group-hover-size-32 { width: 8rem; height: 8rem; }
+  .md-size-36 { width: 9rem; height: 9rem; }
+  .md-hover-size-36:hover { width: 9rem; height: 9rem; }
+  .md-focus-size-36:focus { width: 9rem; height: 9rem; }
+  .md-active-size-36:active { width: 9rem; height: 9rem; }
+  .md-disabled-size-36:disabled { width: 9rem; height: 9rem; }
+  .md-focus-visible-size-36:focus-visible { width: 9rem; height: 9rem; }
+  .md-focus-within-size-36:focus-within { width: 9rem; height: 9rem; }
+  .group:hover .md-group-hover-size-36 { width: 9rem; height: 9rem; }
+  .md-size-40 { width: 10rem; height: 10rem; }
+  .md-hover-size-40:hover { width: 10rem; height: 10rem; }
+  .md-focus-size-40:focus { width: 10rem; height: 10rem; }
+  .md-active-size-40:active { width: 10rem; height: 10rem; }
+  .md-disabled-size-40:disabled { width: 10rem; height: 10rem; }
+  .md-focus-visible-size-40:focus-visible { width: 10rem; height: 10rem; }
+  .md-focus-within-size-40:focus-within { width: 10rem; height: 10rem; }
+  .group:hover .md-group-hover-size-40 { width: 10rem; height: 10rem; }
+  .md-size-44 { width: 11rem; height: 11rem; }
+  .md-hover-size-44:hover { width: 11rem; height: 11rem; }
+  .md-focus-size-44:focus { width: 11rem; height: 11rem; }
+  .md-active-size-44:active { width: 11rem; height: 11rem; }
+  .md-disabled-size-44:disabled { width: 11rem; height: 11rem; }
+  .md-focus-visible-size-44:focus-visible { width: 11rem; height: 11rem; }
+  .md-focus-within-size-44:focus-within { width: 11rem; height: 11rem; }
+  .group:hover .md-group-hover-size-44 { width: 11rem; height: 11rem; }
+  .md-size-48 { width: 12rem; height: 12rem; }
+  .md-hover-size-48:hover { width: 12rem; height: 12rem; }
+  .md-focus-size-48:focus { width: 12rem; height: 12rem; }
+  .md-active-size-48:active { width: 12rem; height: 12rem; }
+  .md-disabled-size-48:disabled { width: 12rem; height: 12rem; }
+  .md-focus-visible-size-48:focus-visible { width: 12rem; height: 12rem; }
+  .md-focus-within-size-48:focus-within { width: 12rem; height: 12rem; }
+  .group:hover .md-group-hover-size-48 { width: 12rem; height: 12rem; }
+  .md-size-52 { width: 13rem; height: 13rem; }
+  .md-hover-size-52:hover { width: 13rem; height: 13rem; }
+  .md-focus-size-52:focus { width: 13rem; height: 13rem; }
+  .md-active-size-52:active { width: 13rem; height: 13rem; }
+  .md-disabled-size-52:disabled { width: 13rem; height: 13rem; }
+  .md-focus-visible-size-52:focus-visible { width: 13rem; height: 13rem; }
+  .md-focus-within-size-52:focus-within { width: 13rem; height: 13rem; }
+  .group:hover .md-group-hover-size-52 { width: 13rem; height: 13rem; }
+  .md-size-56 { width: 14rem; height: 14rem; }
+  .md-hover-size-56:hover { width: 14rem; height: 14rem; }
+  .md-focus-size-56:focus { width: 14rem; height: 14rem; }
+  .md-active-size-56:active { width: 14rem; height: 14rem; }
+  .md-disabled-size-56:disabled { width: 14rem; height: 14rem; }
+  .md-focus-visible-size-56:focus-visible { width: 14rem; height: 14rem; }
+  .md-focus-within-size-56:focus-within { width: 14rem; height: 14rem; }
+  .group:hover .md-group-hover-size-56 { width: 14rem; height: 14rem; }
+  .md-size-60 { width: 15rem; height: 15rem; }
+  .md-hover-size-60:hover { width: 15rem; height: 15rem; }
+  .md-focus-size-60:focus { width: 15rem; height: 15rem; }
+  .md-active-size-60:active { width: 15rem; height: 15rem; }
+  .md-disabled-size-60:disabled { width: 15rem; height: 15rem; }
+  .md-focus-visible-size-60:focus-visible { width: 15rem; height: 15rem; }
+  .md-focus-within-size-60:focus-within { width: 15rem; height: 15rem; }
+  .group:hover .md-group-hover-size-60 { width: 15rem; height: 15rem; }
+  .md-size-64 { width: 16rem; height: 16rem; }
+  .md-hover-size-64:hover { width: 16rem; height: 16rem; }
+  .md-focus-size-64:focus { width: 16rem; height: 16rem; }
+  .md-active-size-64:active { width: 16rem; height: 16rem; }
+  .md-disabled-size-64:disabled { width: 16rem; height: 16rem; }
+  .md-focus-visible-size-64:focus-visible { width: 16rem; height: 16rem; }
+  .md-focus-within-size-64:focus-within { width: 16rem; height: 16rem; }
+  .group:hover .md-group-hover-size-64 { width: 16rem; height: 16rem; }
+  .md-size-72 { width: 18rem; height: 18rem; }
+  .md-hover-size-72:hover { width: 18rem; height: 18rem; }
+  .md-focus-size-72:focus { width: 18rem; height: 18rem; }
+  .md-active-size-72:active { width: 18rem; height: 18rem; }
+  .md-disabled-size-72:disabled { width: 18rem; height: 18rem; }
+  .md-focus-visible-size-72:focus-visible { width: 18rem; height: 18rem; }
+  .md-focus-within-size-72:focus-within { width: 18rem; height: 18rem; }
+  .group:hover .md-group-hover-size-72 { width: 18rem; height: 18rem; }
+  .md-size-80 { width: 20rem; height: 20rem; }
+  .md-hover-size-80:hover { width: 20rem; height: 20rem; }
+  .md-focus-size-80:focus { width: 20rem; height: 20rem; }
+  .md-active-size-80:active { width: 20rem; height: 20rem; }
+  .md-disabled-size-80:disabled { width: 20rem; height: 20rem; }
+  .md-focus-visible-size-80:focus-visible { width: 20rem; height: 20rem; }
+  .md-focus-within-size-80:focus-within { width: 20rem; height: 20rem; }
+  .group:hover .md-group-hover-size-80 { width: 20rem; height: 20rem; }
+  .md-size-96 { width: 24rem; height: 24rem; }
+  .md-hover-size-96:hover { width: 24rem; height: 24rem; }
+  .md-focus-size-96:focus { width: 24rem; height: 24rem; }
+  .md-active-size-96:active { width: 24rem; height: 24rem; }
+  .md-disabled-size-96:disabled { width: 24rem; height: 24rem; }
+  .md-focus-visible-size-96:focus-visible { width: 24rem; height: 24rem; }
+  .md-focus-within-size-96:focus-within { width: 24rem; height: 24rem; }
+  .group:hover .md-group-hover-size-96 { width: 24rem; height: 24rem; }
+}
+
+/* LG Breakpoint */
+@media (min-width: 1024px) {
+  .lg-size-0 { width: 0; height: 0; }
+  .lg-hover-size-0:hover { width: 0; height: 0; }
+  .lg-focus-size-0:focus { width: 0; height: 0; }
+  .lg-active-size-0:active { width: 0; height: 0; }
+  .lg-disabled-size-0:disabled { width: 0; height: 0; }
+  .lg-focus-visible-size-0:focus-visible { width: 0; height: 0; }
+  .lg-focus-within-size-0:focus-within { width: 0; height: 0; }
+  .group:hover .lg-group-hover-size-0 { width: 0; height: 0; }
+  .lg-25rem { width: 0.25rem; height: 0.25rem; }
+  .lg-hover-25rem:hover { width: 0.25rem; height: 0.25rem; }
+  .lg-focus-25rem:focus { width: 0.25rem; height: 0.25rem; }
+  .lg-active-25rem:active { width: 0.25rem; height: 0.25rem; }
+  .lg-disabled-25rem:disabled { width: 0.25rem; height: 0.25rem; }
+  .lg-focus-visible-25rem:focus-visible { width: 0.25rem; height: 0.25rem; }
+  .lg-focus-within-25rem:focus-within { width: 0.25rem; height: 0.25rem; }
+  .group:hover .lg-group-hover-25rem { width: 0.25rem; height: 0.25rem; }
+  .lg-size-1 { width: 0.25rem; height: 0.25rem; }
+  .lg-hover-size-1:hover { width: 0.25rem; height: 0.25rem; }
+  .lg-focus-size-1:focus { width: 0.25rem; height: 0.25rem; }
+  .lg-active-size-1:active { width: 0.25rem; height: 0.25rem; }
+  .lg-disabled-size-1:disabled { width: 0.25rem; height: 0.25rem; }
+  .lg-focus-visible-size-1:focus-visible { width: 0.25rem; height: 0.25rem; }
+  .lg-focus-within-size-1:focus-within { width: 0.25rem; height: 0.25rem; }
+  .group:hover .lg-group-hover-size-1 { width: 0.25rem; height: 0.25rem; }
+  .lg-size-2 { width: 0.5rem; height: 0.5rem; }
+  .lg-hover-size-2:hover { width: 0.5rem; height: 0.5rem; }
+  .lg-focus-size-2:focus { width: 0.5rem; height: 0.5rem; }
+  .lg-active-size-2:active { width: 0.5rem; height: 0.5rem; }
+  .lg-disabled-size-2:disabled { width: 0.5rem; height: 0.5rem; }
+  .lg-focus-visible-size-2:focus-visible { width: 0.5rem; height: 0.5rem; }
+  .lg-focus-within-size-2:focus-within { width: 0.5rem; height: 0.5rem; }
+  .group:hover .lg-group-hover-size-2 { width: 0.5rem; height: 0.5rem; }
+  .lg-size-3 { width: 0.75rem; height: 0.75rem; }
+  .lg-hover-size-3:hover { width: 0.75rem; height: 0.75rem; }
+  .lg-focus-size-3:focus { width: 0.75rem; height: 0.75rem; }
+  .lg-active-size-3:active { width: 0.75rem; height: 0.75rem; }
+  .lg-disabled-size-3:disabled { width: 0.75rem; height: 0.75rem; }
+  .lg-focus-visible-size-3:focus-visible { width: 0.75rem; height: 0.75rem; }
+  .lg-focus-within-size-3:focus-within { width: 0.75rem; height: 0.75rem; }
+  .group:hover .lg-group-hover-size-3 { width: 0.75rem; height: 0.75rem; }
+  .lg-size-4 { width: 1rem; height: 1rem; }
+  .lg-hover-size-4:hover { width: 1rem; height: 1rem; }
+  .lg-focus-size-4:focus { width: 1rem; height: 1rem; }
+  .lg-active-size-4:active { width: 1rem; height: 1rem; }
+  .lg-disabled-size-4:disabled { width: 1rem; height: 1rem; }
+  .lg-focus-visible-size-4:focus-visible { width: 1rem; height: 1rem; }
+  .lg-focus-within-size-4:focus-within { width: 1rem; height: 1rem; }
+  .group:hover .lg-group-hover-size-4 { width: 1rem; height: 1rem; }
+  .lg-size-5 { width: 1.25rem; height: 1.25rem; }
+  .lg-hover-size-5:hover { width: 1.25rem; height: 1.25rem; }
+  .lg-focus-size-5:focus { width: 1.25rem; height: 1.25rem; }
+  .lg-active-size-5:active { width: 1.25rem; height: 1.25rem; }
+  .lg-disabled-size-5:disabled { width: 1.25rem; height: 1.25rem; }
+  .lg-focus-visible-size-5:focus-visible { width: 1.25rem; height: 1.25rem; }
+  .lg-focus-within-size-5:focus-within { width: 1.25rem; height: 1.25rem; }
+  .group:hover .lg-group-hover-size-5 { width: 1.25rem; height: 1.25rem; }
+  .lg-size-6 { width: 1.5rem; height: 1.5rem; }
+  .lg-hover-size-6:hover { width: 1.5rem; height: 1.5rem; }
+  .lg-focus-size-6:focus { width: 1.5rem; height: 1.5rem; }
+  .lg-active-size-6:active { width: 1.5rem; height: 1.5rem; }
+  .lg-disabled-size-6:disabled { width: 1.5rem; height: 1.5rem; }
+  .lg-focus-visible-size-6:focus-visible { width: 1.5rem; height: 1.5rem; }
+  .lg-focus-within-size-6:focus-within { width: 1.5rem; height: 1.5rem; }
+  .group:hover .lg-group-hover-size-6 { width: 1.5rem; height: 1.5rem; }
+  .lg-size-7 { width: 1.75rem; height: 1.75rem; }
+  .lg-hover-size-7:hover { width: 1.75rem; height: 1.75rem; }
+  .lg-focus-size-7:focus { width: 1.75rem; height: 1.75rem; }
+  .lg-active-size-7:active { width: 1.75rem; height: 1.75rem; }
+  .lg-disabled-size-7:disabled { width: 1.75rem; height: 1.75rem; }
+  .lg-focus-visible-size-7:focus-visible { width: 1.75rem; height: 1.75rem; }
+  .lg-focus-within-size-7:focus-within { width: 1.75rem; height: 1.75rem; }
+  .group:hover .lg-group-hover-size-7 { width: 1.75rem; height: 1.75rem; }
+  .lg-size-8 { width: 2rem; height: 2rem; }
+  .lg-hover-size-8:hover { width: 2rem; height: 2rem; }
+  .lg-focus-size-8:focus { width: 2rem; height: 2rem; }
+  .lg-active-size-8:active { width: 2rem; height: 2rem; }
+  .lg-disabled-size-8:disabled { width: 2rem; height: 2rem; }
+  .lg-focus-visible-size-8:focus-visible { width: 2rem; height: 2rem; }
+  .lg-focus-within-size-8:focus-within { width: 2rem; height: 2rem; }
+  .group:hover .lg-group-hover-size-8 { width: 2rem; height: 2rem; }
+  .lg-size-9 { width: 2.25rem; height: 2.25rem; }
+  .lg-hover-size-9:hover { width: 2.25rem; height: 2.25rem; }
+  .lg-focus-size-9:focus { width: 2.25rem; height: 2.25rem; }
+  .lg-active-size-9:active { width: 2.25rem; height: 2.25rem; }
+  .lg-disabled-size-9:disabled { width: 2.25rem; height: 2.25rem; }
+  .lg-focus-visible-size-9:focus-visible { width: 2.25rem; height: 2.25rem; }
+  .lg-focus-within-size-9:focus-within { width: 2.25rem; height: 2.25rem; }
+  .group:hover .lg-group-hover-size-9 { width: 2.25rem; height: 2.25rem; }
+  .lg-size-10 { width: 2.5rem; height: 2.5rem; }
+  .lg-hover-size-10:hover { width: 2.5rem; height: 2.5rem; }
+  .lg-focus-size-10:focus { width: 2.5rem; height: 2.5rem; }
+  .lg-active-size-10:active { width: 2.5rem; height: 2.5rem; }
+  .lg-disabled-size-10:disabled { width: 2.5rem; height: 2.5rem; }
+  .lg-focus-visible-size-10:focus-visible { width: 2.5rem; height: 2.5rem; }
+  .lg-focus-within-size-10:focus-within { width: 2.5rem; height: 2.5rem; }
+  .group:hover .lg-group-hover-size-10 { width: 2.5rem; height: 2.5rem; }
+  .lg-size-11 { width: 2.75rem; height: 2.75rem; }
+  .lg-hover-size-11:hover { width: 2.75rem; height: 2.75rem; }
+  .lg-focus-size-11:focus { width: 2.75rem; height: 2.75rem; }
+  .lg-active-size-11:active { width: 2.75rem; height: 2.75rem; }
+  .lg-disabled-size-11:disabled { width: 2.75rem; height: 2.75rem; }
+  .lg-focus-visible-size-11:focus-visible { width: 2.75rem; height: 2.75rem; }
+  .lg-focus-within-size-11:focus-within { width: 2.75rem; height: 2.75rem; }
+  .group:hover .lg-group-hover-size-11 { width: 2.75rem; height: 2.75rem; }
+  .lg-size-12 { width: 3rem; height: 3rem; }
+  .lg-hover-size-12:hover { width: 3rem; height: 3rem; }
+  .lg-focus-size-12:focus { width: 3rem; height: 3rem; }
+  .lg-active-size-12:active { width: 3rem; height: 3rem; }
+  .lg-disabled-size-12:disabled { width: 3rem; height: 3rem; }
+  .lg-focus-visible-size-12:focus-visible { width: 3rem; height: 3rem; }
+  .lg-focus-within-size-12:focus-within { width: 3rem; height: 3rem; }
+  .group:hover .lg-group-hover-size-12 { width: 3rem; height: 3rem; }
+  .lg-size-14 { width: 3.5rem; height: 3.5rem; }
+  .lg-hover-size-14:hover { width: 3.5rem; height: 3.5rem; }
+  .lg-focus-size-14:focus { width: 3.5rem; height: 3.5rem; }
+  .lg-active-size-14:active { width: 3.5rem; height: 3.5rem; }
+  .lg-disabled-size-14:disabled { width: 3.5rem; height: 3.5rem; }
+  .lg-focus-visible-size-14:focus-visible { width: 3.5rem; height: 3.5rem; }
+  .lg-focus-within-size-14:focus-within { width: 3.5rem; height: 3.5rem; }
+  .group:hover .lg-group-hover-size-14 { width: 3.5rem; height: 3.5rem; }
+  .lg-size-16 { width: 4rem; height: 4rem; }
+  .lg-hover-size-16:hover { width: 4rem; height: 4rem; }
+  .lg-focus-size-16:focus { width: 4rem; height: 4rem; }
+  .lg-active-size-16:active { width: 4rem; height: 4rem; }
+  .lg-disabled-size-16:disabled { width: 4rem; height: 4rem; }
+  .lg-focus-visible-size-16:focus-visible { width: 4rem; height: 4rem; }
+  .lg-focus-within-size-16:focus-within { width: 4rem; height: 4rem; }
+  .group:hover .lg-group-hover-size-16 { width: 4rem; height: 4rem; }
+  .lg-size-20 { width: 5rem; height: 5rem; }
+  .lg-hover-size-20:hover { width: 5rem; height: 5rem; }
+  .lg-focus-size-20:focus { width: 5rem; height: 5rem; }
+  .lg-active-size-20:active { width: 5rem; height: 5rem; }
+  .lg-disabled-size-20:disabled { width: 5rem; height: 5rem; }
+  .lg-focus-visible-size-20:focus-visible { width: 5rem; height: 5rem; }
+  .lg-focus-within-size-20:focus-within { width: 5rem; height: 5rem; }
+  .group:hover .lg-group-hover-size-20 { width: 5rem; height: 5rem; }
+  .lg-size-24 { width: 6rem; height: 6rem; }
+  .lg-hover-size-24:hover { width: 6rem; height: 6rem; }
+  .lg-focus-size-24:focus { width: 6rem; height: 6rem; }
+  .lg-active-size-24:active { width: 6rem; height: 6rem; }
+  .lg-disabled-size-24:disabled { width: 6rem; height: 6rem; }
+  .lg-focus-visible-size-24:focus-visible { width: 6rem; height: 6rem; }
+  .lg-focus-within-size-24:focus-within { width: 6rem; height: 6rem; }
+  .group:hover .lg-group-hover-size-24 { width: 6rem; height: 6rem; }
+  .lg-size-28 { width: 7rem; height: 7rem; }
+  .lg-hover-size-28:hover { width: 7rem; height: 7rem; }
+  .lg-focus-size-28:focus { width: 7rem; height: 7rem; }
+  .lg-active-size-28:active { width: 7rem; height: 7rem; }
+  .lg-disabled-size-28:disabled { width: 7rem; height: 7rem; }
+  .lg-focus-visible-size-28:focus-visible { width: 7rem; height: 7rem; }
+  .lg-focus-within-size-28:focus-within { width: 7rem; height: 7rem; }
+  .group:hover .lg-group-hover-size-28 { width: 7rem; height: 7rem; }
+  .lg-size-32 { width: 8rem; height: 8rem; }
+  .lg-hover-size-32:hover { width: 8rem; height: 8rem; }
+  .lg-focus-size-32:focus { width: 8rem; height: 8rem; }
+  .lg-active-size-32:active { width: 8rem; height: 8rem; }
+  .lg-disabled-size-32:disabled { width: 8rem; height: 8rem; }
+  .lg-focus-visible-size-32:focus-visible { width: 8rem; height: 8rem; }
+  .lg-focus-within-size-32:focus-within { width: 8rem; height: 8rem; }
+  .group:hover .lg-group-hover-size-32 { width: 8rem; height: 8rem; }
+  .lg-size-36 { width: 9rem; height: 9rem; }
+  .lg-hover-size-36:hover { width: 9rem; height: 9rem; }
+  .lg-focus-size-36:focus { width: 9rem; height: 9rem; }
+  .lg-active-size-36:active { width: 9rem; height: 9rem; }
+  .lg-disabled-size-36:disabled { width: 9rem; height: 9rem; }
+  .lg-focus-visible-size-36:focus-visible { width: 9rem; height: 9rem; }
+  .lg-focus-within-size-36:focus-within { width: 9rem; height: 9rem; }
+  .group:hover .lg-group-hover-size-36 { width: 9rem; height: 9rem; }
+  .lg-size-40 { width: 10rem; height: 10rem; }
+  .lg-hover-size-40:hover { width: 10rem; height: 10rem; }
+  .lg-focus-size-40:focus { width: 10rem; height: 10rem; }
+  .lg-active-size-40:active { width: 10rem; height: 10rem; }
+  .lg-disabled-size-40:disabled { width: 10rem; height: 10rem; }
+  .lg-focus-visible-size-40:focus-visible { width: 10rem; height: 10rem; }
+  .lg-focus-within-size-40:focus-within { width: 10rem; height: 10rem; }
+  .group:hover .lg-group-hover-size-40 { width: 10rem; height: 10rem; }
+  .lg-size-44 { width: 11rem; height: 11rem; }
+  .lg-hover-size-44:hover { width: 11rem; height: 11rem; }
+  .lg-focus-size-44:focus { width: 11rem; height: 11rem; }
+  .lg-active-size-44:active { width: 11rem; height: 11rem; }
+  .lg-disabled-size-44:disabled { width: 11rem; height: 11rem; }
+  .lg-focus-visible-size-44:focus-visible { width: 11rem; height: 11rem; }
+  .lg-focus-within-size-44:focus-within { width: 11rem; height: 11rem; }
+  .group:hover .lg-group-hover-size-44 { width: 11rem; height: 11rem; }
+  .lg-size-48 { width: 12rem; height: 12rem; }
+  .lg-hover-size-48:hover { width: 12rem; height: 12rem; }
+  .lg-focus-size-48:focus { width: 12rem; height: 12rem; }
+  .lg-active-size-48:active { width: 12rem; height: 12rem; }
+  .lg-disabled-size-48:disabled { width: 12rem; height: 12rem; }
+  .lg-focus-visible-size-48:focus-visible { width: 12rem; height: 12rem; }
+  .lg-focus-within-size-48:focus-within { width: 12rem; height: 12rem; }
+  .group:hover .lg-group-hover-size-48 { width: 12rem; height: 12rem; }
+  .lg-size-52 { width: 13rem; height: 13rem; }
+  .lg-hover-size-52:hover { width: 13rem; height: 13rem; }
+  .lg-focus-size-52:focus { width: 13rem; height: 13rem; }
+  .lg-active-size-52:active { width: 13rem; height: 13rem; }
+  .lg-disabled-size-52:disabled { width: 13rem; height: 13rem; }
+  .lg-focus-visible-size-52:focus-visible { width: 13rem; height: 13rem; }
+  .lg-focus-within-size-52:focus-within { width: 13rem; height: 13rem; }
+  .group:hover .lg-group-hover-size-52 { width: 13rem; height: 13rem; }
+  .lg-size-56 { width: 14rem; height: 14rem; }
+  .lg-hover-size-56:hover { width: 14rem; height: 14rem; }
+  .lg-focus-size-56:focus { width: 14rem; height: 14rem; }
+  .lg-active-size-56:active { width: 14rem; height: 14rem; }
+  .lg-disabled-size-56:disabled { width: 14rem; height: 14rem; }
+  .lg-focus-visible-size-56:focus-visible { width: 14rem; height: 14rem; }
+  .lg-focus-within-size-56:focus-within { width: 14rem; height: 14rem; }
+  .group:hover .lg-group-hover-size-56 { width: 14rem; height: 14rem; }
+  .lg-size-60 { width: 15rem; height: 15rem; }
+  .lg-hover-size-60:hover { width: 15rem; height: 15rem; }
+  .lg-focus-size-60:focus { width: 15rem; height: 15rem; }
+  .lg-active-size-60:active { width: 15rem; height: 15rem; }
+  .lg-disabled-size-60:disabled { width: 15rem; height: 15rem; }
+  .lg-focus-visible-size-60:focus-visible { width: 15rem; height: 15rem; }
+  .lg-focus-within-size-60:focus-within { width: 15rem; height: 15rem; }
+  .group:hover .lg-group-hover-size-60 { width: 15rem; height: 15rem; }
+  .lg-size-64 { width: 16rem; height: 16rem; }
+  .lg-hover-size-64:hover { width: 16rem; height: 16rem; }
+  .lg-focus-size-64:focus { width: 16rem; height: 16rem; }
+  .lg-active-size-64:active { width: 16rem; height: 16rem; }
+  .lg-disabled-size-64:disabled { width: 16rem; height: 16rem; }
+  .lg-focus-visible-size-64:focus-visible { width: 16rem; height: 16rem; }
+  .lg-focus-within-size-64:focus-within { width: 16rem; height: 16rem; }
+  .group:hover .lg-group-hover-size-64 { width: 16rem; height: 16rem; }
+  .lg-size-72 { width: 18rem; height: 18rem; }
+  .lg-hover-size-72:hover { width: 18rem; height: 18rem; }
+  .lg-focus-size-72:focus { width: 18rem; height: 18rem; }
+  .lg-active-size-72:active { width: 18rem; height: 18rem; }
+  .lg-disabled-size-72:disabled { width: 18rem; height: 18rem; }
+  .lg-focus-visible-size-72:focus-visible { width: 18rem; height: 18rem; }
+  .lg-focus-within-size-72:focus-within { width: 18rem; height: 18rem; }
+  .group:hover .lg-group-hover-size-72 { width: 18rem; height: 18rem; }
+  .lg-size-80 { width: 20rem; height: 20rem; }
+  .lg-hover-size-80:hover { width: 20rem; height: 20rem; }
+  .lg-focus-size-80:focus { width: 20rem; height: 20rem; }
+  .lg-active-size-80:active { width: 20rem; height: 20rem; }
+  .lg-disabled-size-80:disabled { width: 20rem; height: 20rem; }
+  .lg-focus-visible-size-80:focus-visible { width: 20rem; height: 20rem; }
+  .lg-focus-within-size-80:focus-within { width: 20rem; height: 20rem; }
+  .group:hover .lg-group-hover-size-80 { width: 20rem; height: 20rem; }
+  .lg-size-96 { width: 24rem; height: 24rem; }
+  .lg-hover-size-96:hover { width: 24rem; height: 24rem; }
+  .lg-focus-size-96:focus { width: 24rem; height: 24rem; }
+  .lg-active-size-96:active { width: 24rem; height: 24rem; }
+  .lg-disabled-size-96:disabled { width: 24rem; height: 24rem; }
+  .lg-focus-visible-size-96:focus-visible { width: 24rem; height: 24rem; }
+  .lg-focus-within-size-96:focus-within { width: 24rem; height: 24rem; }
+  .group:hover .lg-group-hover-size-96 { width: 24rem; height: 24rem; }
+}
+
+/* XL Breakpoint */
+@media (min-width: 1280px) {
+  .xl-size-0 { width: 0; height: 0; }
+  .xl-hover-size-0:hover { width: 0; height: 0; }
+  .xl-focus-size-0:focus { width: 0; height: 0; }
+  .xl-active-size-0:active { width: 0; height: 0; }
+  .xl-disabled-size-0:disabled { width: 0; height: 0; }
+  .xl-focus-visible-size-0:focus-visible { width: 0; height: 0; }
+  .xl-focus-within-size-0:focus-within { width: 0; height: 0; }
+  .group:hover .xl-group-hover-size-0 { width: 0; height: 0; }
+  .xl-25rem { width: 0.25rem; height: 0.25rem; }
+  .xl-hover-25rem:hover { width: 0.25rem; height: 0.25rem; }
+  .xl-focus-25rem:focus { width: 0.25rem; height: 0.25rem; }
+  .xl-active-25rem:active { width: 0.25rem; height: 0.25rem; }
+  .xl-disabled-25rem:disabled { width: 0.25rem; height: 0.25rem; }
+  .xl-focus-visible-25rem:focus-visible { width: 0.25rem; height: 0.25rem; }
+  .xl-focus-within-25rem:focus-within { width: 0.25rem; height: 0.25rem; }
+  .group:hover .xl-group-hover-25rem { width: 0.25rem; height: 0.25rem; }
+  .xl-size-1 { width: 0.25rem; height: 0.25rem; }
+  .xl-hover-size-1:hover { width: 0.25rem; height: 0.25rem; }
+  .xl-focus-size-1:focus { width: 0.25rem; height: 0.25rem; }
+  .xl-active-size-1:active { width: 0.25rem; height: 0.25rem; }
+  .xl-disabled-size-1:disabled { width: 0.25rem; height: 0.25rem; }
+  .xl-focus-visible-size-1:focus-visible { width: 0.25rem; height: 0.25rem; }
+  .xl-focus-within-size-1:focus-within { width: 0.25rem; height: 0.25rem; }
+  .group:hover .xl-group-hover-size-1 { width: 0.25rem; height: 0.25rem; }
+  .xl-size-2 { width: 0.5rem; height: 0.5rem; }
+  .xl-hover-size-2:hover { width: 0.5rem; height: 0.5rem; }
+  .xl-focus-size-2:focus { width: 0.5rem; height: 0.5rem; }
+  .xl-active-size-2:active { width: 0.5rem; height: 0.5rem; }
+  .xl-disabled-size-2:disabled { width: 0.5rem; height: 0.5rem; }
+  .xl-focus-visible-size-2:focus-visible { width: 0.5rem; height: 0.5rem; }
+  .xl-focus-within-size-2:focus-within { width: 0.5rem; height: 0.5rem; }
+  .group:hover .xl-group-hover-size-2 { width: 0.5rem; height: 0.5rem; }
+  .xl-size-3 { width: 0.75rem; height: 0.75rem; }
+  .xl-hover-size-3:hover { width: 0.75rem; height: 0.75rem; }
+  .xl-focus-size-3:focus { width: 0.75rem; height: 0.75rem; }
+  .xl-active-size-3:active { width: 0.75rem; height: 0.75rem; }
+  .xl-disabled-size-3:disabled { width: 0.75rem; height: 0.75rem; }
+  .xl-focus-visible-size-3:focus-visible { width: 0.75rem; height: 0.75rem; }
+  .xl-focus-within-size-3:focus-within { width: 0.75rem; height: 0.75rem; }
+  .group:hover .xl-group-hover-size-3 { width: 0.75rem; height: 0.75rem; }
+  .xl-size-4 { width: 1rem; height: 1rem; }
+  .xl-hover-size-4:hover { width: 1rem; height: 1rem; }
+  .xl-focus-size-4:focus { width: 1rem; height: 1rem; }
+  .xl-active-size-4:active { width: 1rem; height: 1rem; }
+  .xl-disabled-size-4:disabled { width: 1rem; height: 1rem; }
+  .xl-focus-visible-size-4:focus-visible { width: 1rem; height: 1rem; }
+  .xl-focus-within-size-4:focus-within { width: 1rem; height: 1rem; }
+  .group:hover .xl-group-hover-size-4 { width: 1rem; height: 1rem; }
+  .xl-size-5 { width: 1.25rem; height: 1.25rem; }
+  .xl-hover-size-5:hover { width: 1.25rem; height: 1.25rem; }
+  .xl-focus-size-5:focus { width: 1.25rem; height: 1.25rem; }
+  .xl-active-size-5:active { width: 1.25rem; height: 1.25rem; }
+  .xl-disabled-size-5:disabled { width: 1.25rem; height: 1.25rem; }
+  .xl-focus-visible-size-5:focus-visible { width: 1.25rem; height: 1.25rem; }
+  .xl-focus-within-size-5:focus-within { width: 1.25rem; height: 1.25rem; }
+  .group:hover .xl-group-hover-size-5 { width: 1.25rem; height: 1.25rem; }
+  .xl-size-6 { width: 1.5rem; height: 1.5rem; }
+  .xl-hover-size-6:hover { width: 1.5rem; height: 1.5rem; }
+  .xl-focus-size-6:focus { width: 1.5rem; height: 1.5rem; }
+  .xl-active-size-6:active { width: 1.5rem; height: 1.5rem; }
+  .xl-disabled-size-6:disabled { width: 1.5rem; height: 1.5rem; }
+  .xl-focus-visible-size-6:focus-visible { width: 1.5rem; height: 1.5rem; }
+  .xl-focus-within-size-6:focus-within { width: 1.5rem; height: 1.5rem; }
+  .group:hover .xl-group-hover-size-6 { width: 1.5rem; height: 1.5rem; }
+  .xl-size-7 { width: 1.75rem; height: 1.75rem; }
+  .xl-hover-size-7:hover { width: 1.75rem; height: 1.75rem; }
+  .xl-focus-size-7:focus { width: 1.75rem; height: 1.75rem; }
+  .xl-active-size-7:active { width: 1.75rem; height: 1.75rem; }
+  .xl-disabled-size-7:disabled { width: 1.75rem; height: 1.75rem; }
+  .xl-focus-visible-size-7:focus-visible { width: 1.75rem; height: 1.75rem; }
+  .xl-focus-within-size-7:focus-within { width: 1.75rem; height: 1.75rem; }
+  .group:hover .xl-group-hover-size-7 { width: 1.75rem; height: 1.75rem; }
+  .xl-size-8 { width: 2rem; height: 2rem; }
+  .xl-hover-size-8:hover { width: 2rem; height: 2rem; }
+  .xl-focus-size-8:focus { width: 2rem; height: 2rem; }
+  .xl-active-size-8:active { width: 2rem; height: 2rem; }
+  .xl-disabled-size-8:disabled { width: 2rem; height: 2rem; }
+  .xl-focus-visible-size-8:focus-visible { width: 2rem; height: 2rem; }
+  .xl-focus-within-size-8:focus-within { width: 2rem; height: 2rem; }
+  .group:hover .xl-group-hover-size-8 { width: 2rem; height: 2rem; }
+  .xl-size-9 { width: 2.25rem; height: 2.25rem; }
+  .xl-hover-size-9:hover { width: 2.25rem; height: 2.25rem; }
+  .xl-focus-size-9:focus { width: 2.25rem; height: 2.25rem; }
+  .xl-active-size-9:active { width: 2.25rem; height: 2.25rem; }
+  .xl-disabled-size-9:disabled { width: 2.25rem; height: 2.25rem; }
+  .xl-focus-visible-size-9:focus-visible { width: 2.25rem; height: 2.25rem; }
+  .xl-focus-within-size-9:focus-within { width: 2.25rem; height: 2.25rem; }
+  .group:hover .xl-group-hover-size-9 { width: 2.25rem; height: 2.25rem; }
+  .xl-size-10 { width: 2.5rem; height: 2.5rem; }
+  .xl-hover-size-10:hover { width: 2.5rem; height: 2.5rem; }
+  .xl-focus-size-10:focus { width: 2.5rem; height: 2.5rem; }
+  .xl-active-size-10:active { width: 2.5rem; height: 2.5rem; }
+  .xl-disabled-size-10:disabled { width: 2.5rem; height: 2.5rem; }
+  .xl-focus-visible-size-10:focus-visible { width: 2.5rem; height: 2.5rem; }
+  .xl-focus-within-size-10:focus-within { width: 2.5rem; height: 2.5rem; }
+  .group:hover .xl-group-hover-size-10 { width: 2.5rem; height: 2.5rem; }
+  .xl-size-11 { width: 2.75rem; height: 2.75rem; }
+  .xl-hover-size-11:hover { width: 2.75rem; height: 2.75rem; }
+  .xl-focus-size-11:focus { width: 2.75rem; height: 2.75rem; }
+  .xl-active-size-11:active { width: 2.75rem; height: 2.75rem; }
+  .xl-disabled-size-11:disabled { width: 2.75rem; height: 2.75rem; }
+  .xl-focus-visible-size-11:focus-visible { width: 2.75rem; height: 2.75rem; }
+  .xl-focus-within-size-11:focus-within { width: 2.75rem; height: 2.75rem; }
+  .group:hover .xl-group-hover-size-11 { width: 2.75rem; height: 2.75rem; }
+  .xl-size-12 { width: 3rem; height: 3rem; }
+  .xl-hover-size-12:hover { width: 3rem; height: 3rem; }
+  .xl-focus-size-12:focus { width: 3rem; height: 3rem; }
+  .xl-active-size-12:active { width: 3rem; height: 3rem; }
+  .xl-disabled-size-12:disabled { width: 3rem; height: 3rem; }
+  .xl-focus-visible-size-12:focus-visible { width: 3rem; height: 3rem; }
+  .xl-focus-within-size-12:focus-within { width: 3rem; height: 3rem; }
+  .group:hover .xl-group-hover-size-12 { width: 3rem; height: 3rem; }
+  .xl-size-14 { width: 3.5rem; height: 3.5rem; }
+  .xl-hover-size-14:hover { width: 3.5rem; height: 3.5rem; }
+  .xl-focus-size-14:focus { width: 3.5rem; height: 3.5rem; }
+  .xl-active-size-14:active { width: 3.5rem; height: 3.5rem; }
+  .xl-disabled-size-14:disabled { width: 3.5rem; height: 3.5rem; }
+  .xl-focus-visible-size-14:focus-visible { width: 3.5rem; height: 3.5rem; }
+  .xl-focus-within-size-14:focus-within { width: 3.5rem; height: 3.5rem; }
+  .group:hover .xl-group-hover-size-14 { width: 3.5rem; height: 3.5rem; }
+  .xl-size-16 { width: 4rem; height: 4rem; }
+  .xl-hover-size-16:hover { width: 4rem; height: 4rem; }
+  .xl-focus-size-16:focus { width: 4rem; height: 4rem; }
+  .xl-active-size-16:active { width: 4rem; height: 4rem; }
+  .xl-disabled-size-16:disabled { width: 4rem; height: 4rem; }
+  .xl-focus-visible-size-16:focus-visible { width: 4rem; height: 4rem; }
+  .xl-focus-within-size-16:focus-within { width: 4rem; height: 4rem; }
+  .group:hover .xl-group-hover-size-16 { width: 4rem; height: 4rem; }
+  .xl-size-20 { width: 5rem; height: 5rem; }
+  .xl-hover-size-20:hover { width: 5rem; height: 5rem; }
+  .xl-focus-size-20:focus { width: 5rem; height: 5rem; }
+  .xl-active-size-20:active { width: 5rem; height: 5rem; }
+  .xl-disabled-size-20:disabled { width: 5rem; height: 5rem; }
+  .xl-focus-visible-size-20:focus-visible { width: 5rem; height: 5rem; }
+  .xl-focus-within-size-20:focus-within { width: 5rem; height: 5rem; }
+  .group:hover .xl-group-hover-size-20 { width: 5rem; height: 5rem; }
+  .xl-size-24 { width: 6rem; height: 6rem; }
+  .xl-hover-size-24:hover { width: 6rem; height: 6rem; }
+  .xl-focus-size-24:focus { width: 6rem; height: 6rem; }
+  .xl-active-size-24:active { width: 6rem; height: 6rem; }
+  .xl-disabled-size-24:disabled { width: 6rem; height: 6rem; }
+  .xl-focus-visible-size-24:focus-visible { width: 6rem; height: 6rem; }
+  .xl-focus-within-size-24:focus-within { width: 6rem; height: 6rem; }
+  .group:hover .xl-group-hover-size-24 { width: 6rem; height: 6rem; }
+  .xl-size-28 { width: 7rem; height: 7rem; }
+  .xl-hover-size-28:hover { width: 7rem; height: 7rem; }
+  .xl-focus-size-28:focus { width: 7rem; height: 7rem; }
+  .xl-active-size-28:active { width: 7rem; height: 7rem; }
+  .xl-disabled-size-28:disabled { width: 7rem; height: 7rem; }
+  .xl-focus-visible-size-28:focus-visible { width: 7rem; height: 7rem; }
+  .xl-focus-within-size-28:focus-within { width: 7rem; height: 7rem; }
+  .group:hover .xl-group-hover-size-28 { width: 7rem; height: 7rem; }
+  .xl-size-32 { width: 8rem; height: 8rem; }
+  .xl-hover-size-32:hover { width: 8rem; height: 8rem; }
+  .xl-focus-size-32:focus { width: 8rem; height: 8rem; }
+  .xl-active-size-32:active { width: 8rem; height: 8rem; }
+  .xl-disabled-size-32:disabled { width: 8rem; height: 8rem; }
+  .xl-focus-visible-size-32:focus-visible { width: 8rem; height: 8rem; }
+  .xl-focus-within-size-32:focus-within { width: 8rem; height: 8rem; }
+  .group:hover .xl-group-hover-size-32 { width: 8rem; height: 8rem; }
+  .xl-size-36 { width: 9rem; height: 9rem; }
+  .xl-hover-size-36:hover { width: 9rem; height: 9rem; }
+  .xl-focus-size-36:focus { width: 9rem; height: 9rem; }
+  .xl-active-size-36:active { width: 9rem; height: 9rem; }
+  .xl-disabled-size-36:disabled { width: 9rem; height: 9rem; }
+  .xl-focus-visible-size-36:focus-visible { width: 9rem; height: 9rem; }
+  .xl-focus-within-size-36:focus-within { width: 9rem; height: 9rem; }
+  .group:hover .xl-group-hover-size-36 { width: 9rem; height: 9rem; }
+  .xl-size-40 { width: 10rem; height: 10rem; }
+  .xl-hover-size-40:hover { width: 10rem; height: 10rem; }
+  .xl-focus-size-40:focus { width: 10rem; height: 10rem; }
+  .xl-active-size-40:active { width: 10rem; height: 10rem; }
+  .xl-disabled-size-40:disabled { width: 10rem; height: 10rem; }
+  .xl-focus-visible-size-40:focus-visible { width: 10rem; height: 10rem; }
+  .xl-focus-within-size-40:focus-within { width: 10rem; height: 10rem; }
+  .group:hover .xl-group-hover-size-40 { width: 10rem; height: 10rem; }
+  .xl-size-44 { width: 11rem; height: 11rem; }
+  .xl-hover-size-44:hover { width: 11rem; height: 11rem; }
+  .xl-focus-size-44:focus { width: 11rem; height: 11rem; }
+  .xl-active-size-44:active { width: 11rem; height: 11rem; }
+  .xl-disabled-size-44:disabled { width: 11rem; height: 11rem; }
+  .xl-focus-visible-size-44:focus-visible { width: 11rem; height: 11rem; }
+  .xl-focus-within-size-44:focus-within { width: 11rem; height: 11rem; }
+  .group:hover .xl-group-hover-size-44 { width: 11rem; height: 11rem; }
+  .xl-size-48 { width: 12rem; height: 12rem; }
+  .xl-hover-size-48:hover { width: 12rem; height: 12rem; }
+  .xl-focus-size-48:focus { width: 12rem; height: 12rem; }
+  .xl-active-size-48:active { width: 12rem; height: 12rem; }
+  .xl-disabled-size-48:disabled { width: 12rem; height: 12rem; }
+  .xl-focus-visible-size-48:focus-visible { width: 12rem; height: 12rem; }
+  .xl-focus-within-size-48:focus-within { width: 12rem; height: 12rem; }
+  .group:hover .xl-group-hover-size-48 { width: 12rem; height: 12rem; }
+  .xl-size-52 { width: 13rem; height: 13rem; }
+  .xl-hover-size-52:hover { width: 13rem; height: 13rem; }
+  .xl-focus-size-52:focus { width: 13rem; height: 13rem; }
+  .xl-active-size-52:active { width: 13rem; height: 13rem; }
+  .xl-disabled-size-52:disabled { width: 13rem; height: 13rem; }
+  .xl-focus-visible-size-52:focus-visible { width: 13rem; height: 13rem; }
+  .xl-focus-within-size-52:focus-within { width: 13rem; height: 13rem; }
+  .group:hover .xl-group-hover-size-52 { width: 13rem; height: 13rem; }
+  .xl-size-56 { width: 14rem; height: 14rem; }
+  .xl-hover-size-56:hover { width: 14rem; height: 14rem; }
+  .xl-focus-size-56:focus { width: 14rem; height: 14rem; }
+  .xl-active-size-56:active { width: 14rem; height: 14rem; }
+  .xl-disabled-size-56:disabled { width: 14rem; height: 14rem; }
+  .xl-focus-visible-size-56:focus-visible { width: 14rem; height: 14rem; }
+  .xl-focus-within-size-56:focus-within { width: 14rem; height: 14rem; }
+  .group:hover .xl-group-hover-size-56 { width: 14rem; height: 14rem; }
+  .xl-size-60 { width: 15rem; height: 15rem; }
+  .xl-hover-size-60:hover { width: 15rem; height: 15rem; }
+  .xl-focus-size-60:focus { width: 15rem; height: 15rem; }
+  .xl-active-size-60:active { width: 15rem; height: 15rem; }
+  .xl-disabled-size-60:disabled { width: 15rem; height: 15rem; }
+  .xl-focus-visible-size-60:focus-visible { width: 15rem; height: 15rem; }
+  .xl-focus-within-size-60:focus-within { width: 15rem; height: 15rem; }
+  .group:hover .xl-group-hover-size-60 { width: 15rem; height: 15rem; }
+  .xl-size-64 { width: 16rem; height: 16rem; }
+  .xl-hover-size-64:hover { width: 16rem; height: 16rem; }
+  .xl-focus-size-64:focus { width: 16rem; height: 16rem; }
+  .xl-active-size-64:active { width: 16rem; height: 16rem; }
+  .xl-disabled-size-64:disabled { width: 16rem; height: 16rem; }
+  .xl-focus-visible-size-64:focus-visible { width: 16rem; height: 16rem; }
+  .xl-focus-within-size-64:focus-within { width: 16rem; height: 16rem; }
+  .group:hover .xl-group-hover-size-64 { width: 16rem; height: 16rem; }
+  .xl-size-72 { width: 18rem; height: 18rem; }
+  .xl-hover-size-72:hover { width: 18rem; height: 18rem; }
+  .xl-focus-size-72:focus { width: 18rem; height: 18rem; }
+  .xl-active-size-72:active { width: 18rem; height: 18rem; }
+  .xl-disabled-size-72:disabled { width: 18rem; height: 18rem; }
+  .xl-focus-visible-size-72:focus-visible { width: 18rem; height: 18rem; }
+  .xl-focus-within-size-72:focus-within { width: 18rem; height: 18rem; }
+  .group:hover .xl-group-hover-size-72 { width: 18rem; height: 18rem; }
+  .xl-size-80 { width: 20rem; height: 20rem; }
+  .xl-hover-size-80:hover { width: 20rem; height: 20rem; }
+  .xl-focus-size-80:focus { width: 20rem; height: 20rem; }
+  .xl-active-size-80:active { width: 20rem; height: 20rem; }
+  .xl-disabled-size-80:disabled { width: 20rem; height: 20rem; }
+  .xl-focus-visible-size-80:focus-visible { width: 20rem; height: 20rem; }
+  .xl-focus-within-size-80:focus-within { width: 20rem; height: 20rem; }
+  .group:hover .xl-group-hover-size-80 { width: 20rem; height: 20rem; }
+  .xl-size-96 { width: 24rem; height: 24rem; }
+  .xl-hover-size-96:hover { width: 24rem; height: 24rem; }
+  .xl-focus-size-96:focus { width: 24rem; height: 24rem; }
+  .xl-active-size-96:active { width: 24rem; height: 24rem; }
+  .xl-disabled-size-96:disabled { width: 24rem; height: 24rem; }
+  .xl-focus-visible-size-96:focus-visible { width: 24rem; height: 24rem; }
+  .xl-focus-within-size-96:focus-within { width: 24rem; height: 24rem; }
+  .group:hover .xl-group-hover-size-96 { width: 24rem; height: 24rem; }
+}
+
+/* UW Breakpoint */
+@media (min-width: 1536px) {
+  .uw-size-0 { width: 0; height: 0; }
+  .uw-hover-size-0:hover { width: 0; height: 0; }
+  .uw-focus-size-0:focus { width: 0; height: 0; }
+  .uw-active-size-0:active { width: 0; height: 0; }
+  .uw-disabled-size-0:disabled { width: 0; height: 0; }
+  .uw-focus-visible-size-0:focus-visible { width: 0; height: 0; }
+  .uw-focus-within-size-0:focus-within { width: 0; height: 0; }
+  .group:hover .uw-group-hover-size-0 { width: 0; height: 0; }
+  .uw-25rem { width: 0.25rem; height: 0.25rem; }
+  .uw-hover-25rem:hover { width: 0.25rem; height: 0.25rem; }
+  .uw-focus-25rem:focus { width: 0.25rem; height: 0.25rem; }
+  .uw-active-25rem:active { width: 0.25rem; height: 0.25rem; }
+  .uw-disabled-25rem:disabled { width: 0.25rem; height: 0.25rem; }
+  .uw-focus-visible-25rem:focus-visible { width: 0.25rem; height: 0.25rem; }
+  .uw-focus-within-25rem:focus-within { width: 0.25rem; height: 0.25rem; }
+  .group:hover .uw-group-hover-25rem { width: 0.25rem; height: 0.25rem; }
+  .uw-size-1 { width: 0.25rem; height: 0.25rem; }
+  .uw-hover-size-1:hover { width: 0.25rem; height: 0.25rem; }
+  .uw-focus-size-1:focus { width: 0.25rem; height: 0.25rem; }
+  .uw-active-size-1:active { width: 0.25rem; height: 0.25rem; }
+  .uw-disabled-size-1:disabled { width: 0.25rem; height: 0.25rem; }
+  .uw-focus-visible-size-1:focus-visible { width: 0.25rem; height: 0.25rem; }
+  .uw-focus-within-size-1:focus-within { width: 0.25rem; height: 0.25rem; }
+  .group:hover .uw-group-hover-size-1 { width: 0.25rem; height: 0.25rem; }
+  .uw-size-2 { width: 0.5rem; height: 0.5rem; }
+  .uw-hover-size-2:hover { width: 0.5rem; height: 0.5rem; }
+  .uw-focus-size-2:focus { width: 0.5rem; height: 0.5rem; }
+  .uw-active-size-2:active { width: 0.5rem; height: 0.5rem; }
+  .uw-disabled-size-2:disabled { width: 0.5rem; height: 0.5rem; }
+  .uw-focus-visible-size-2:focus-visible { width: 0.5rem; height: 0.5rem; }
+  .uw-focus-within-size-2:focus-within { width: 0.5rem; height: 0.5rem; }
+  .group:hover .uw-group-hover-size-2 { width: 0.5rem; height: 0.5rem; }
+  .uw-size-3 { width: 0.75rem; height: 0.75rem; }
+  .uw-hover-size-3:hover { width: 0.75rem; height: 0.75rem; }
+  .uw-focus-size-3:focus { width: 0.75rem; height: 0.75rem; }
+  .uw-active-size-3:active { width: 0.75rem; height: 0.75rem; }
+  .uw-disabled-size-3:disabled { width: 0.75rem; height: 0.75rem; }
+  .uw-focus-visible-size-3:focus-visible { width: 0.75rem; height: 0.75rem; }
+  .uw-focus-within-size-3:focus-within { width: 0.75rem; height: 0.75rem; }
+  .group:hover .uw-group-hover-size-3 { width: 0.75rem; height: 0.75rem; }
+  .uw-size-4 { width: 1rem; height: 1rem; }
+  .uw-hover-size-4:hover { width: 1rem; height: 1rem; }
+  .uw-focus-size-4:focus { width: 1rem; height: 1rem; }
+  .uw-active-size-4:active { width: 1rem; height: 1rem; }
+  .uw-disabled-size-4:disabled { width: 1rem; height: 1rem; }
+  .uw-focus-visible-size-4:focus-visible { width: 1rem; height: 1rem; }
+  .uw-focus-within-size-4:focus-within { width: 1rem; height: 1rem; }
+  .group:hover .uw-group-hover-size-4 { width: 1rem; height: 1rem; }
+  .uw-size-5 { width: 1.25rem; height: 1.25rem; }
+  .uw-hover-size-5:hover { width: 1.25rem; height: 1.25rem; }
+  .uw-focus-size-5:focus { width: 1.25rem; height: 1.25rem; }
+  .uw-active-size-5:active { width: 1.25rem; height: 1.25rem; }
+  .uw-disabled-size-5:disabled { width: 1.25rem; height: 1.25rem; }
+  .uw-focus-visible-size-5:focus-visible { width: 1.25rem; height: 1.25rem; }
+  .uw-focus-within-size-5:focus-within { width: 1.25rem; height: 1.25rem; }
+  .group:hover .uw-group-hover-size-5 { width: 1.25rem; height: 1.25rem; }
+  .uw-size-6 { width: 1.5rem; height: 1.5rem; }
+  .uw-hover-size-6:hover { width: 1.5rem; height: 1.5rem; }
+  .uw-focus-size-6:focus { width: 1.5rem; height: 1.5rem; }
+  .uw-active-size-6:active { width: 1.5rem; height: 1.5rem; }
+  .uw-disabled-size-6:disabled { width: 1.5rem; height: 1.5rem; }
+  .uw-focus-visible-size-6:focus-visible { width: 1.5rem; height: 1.5rem; }
+  .uw-focus-within-size-6:focus-within { width: 1.5rem; height: 1.5rem; }
+  .group:hover .uw-group-hover-size-6 { width: 1.5rem; height: 1.5rem; }
+  .uw-size-7 { width: 1.75rem; height: 1.75rem; }
+  .uw-hover-size-7:hover { width: 1.75rem; height: 1.75rem; }
+  .uw-focus-size-7:focus { width: 1.75rem; height: 1.75rem; }
+  .uw-active-size-7:active { width: 1.75rem; height: 1.75rem; }
+  .uw-disabled-size-7:disabled { width: 1.75rem; height: 1.75rem; }
+  .uw-focus-visible-size-7:focus-visible { width: 1.75rem; height: 1.75rem; }
+  .uw-focus-within-size-7:focus-within { width: 1.75rem; height: 1.75rem; }
+  .group:hover .uw-group-hover-size-7 { width: 1.75rem; height: 1.75rem; }
+  .uw-size-8 { width: 2rem; height: 2rem; }
+  .uw-hover-size-8:hover { width: 2rem; height: 2rem; }
+  .uw-focus-size-8:focus { width: 2rem; height: 2rem; }
+  .uw-active-size-8:active { width: 2rem; height: 2rem; }
+  .uw-disabled-size-8:disabled { width: 2rem; height: 2rem; }
+  .uw-focus-visible-size-8:focus-visible { width: 2rem; height: 2rem; }
+  .uw-focus-within-size-8:focus-within { width: 2rem; height: 2rem; }
+  .group:hover .uw-group-hover-size-8 { width: 2rem; height: 2rem; }
+  .uw-size-9 { width: 2.25rem; height: 2.25rem; }
+  .uw-hover-size-9:hover { width: 2.25rem; height: 2.25rem; }
+  .uw-focus-size-9:focus { width: 2.25rem; height: 2.25rem; }
+  .uw-active-size-9:active { width: 2.25rem; height: 2.25rem; }
+  .uw-disabled-size-9:disabled { width: 2.25rem; height: 2.25rem; }
+  .uw-focus-visible-size-9:focus-visible { width: 2.25rem; height: 2.25rem; }
+  .uw-focus-within-size-9:focus-within { width: 2.25rem; height: 2.25rem; }
+  .group:hover .uw-group-hover-size-9 { width: 2.25rem; height: 2.25rem; }
+  .uw-size-10 { width: 2.5rem; height: 2.5rem; }
+  .uw-hover-size-10:hover { width: 2.5rem; height: 2.5rem; }
+  .uw-focus-size-10:focus { width: 2.5rem; height: 2.5rem; }
+  .uw-active-size-10:active { width: 2.5rem; height: 2.5rem; }
+  .uw-disabled-size-10:disabled { width: 2.5rem; height: 2.5rem; }
+  .uw-focus-visible-size-10:focus-visible { width: 2.5rem; height: 2.5rem; }
+  .uw-focus-within-size-10:focus-within { width: 2.5rem; height: 2.5rem; }
+  .group:hover .uw-group-hover-size-10 { width: 2.5rem; height: 2.5rem; }
+  .uw-size-11 { width: 2.75rem; height: 2.75rem; }
+  .uw-hover-size-11:hover { width: 2.75rem; height: 2.75rem; }
+  .uw-focus-size-11:focus { width: 2.75rem; height: 2.75rem; }
+  .uw-active-size-11:active { width: 2.75rem; height: 2.75rem; }
+  .uw-disabled-size-11:disabled { width: 2.75rem; height: 2.75rem; }
+  .uw-focus-visible-size-11:focus-visible { width: 2.75rem; height: 2.75rem; }
+  .uw-focus-within-size-11:focus-within { width: 2.75rem; height: 2.75rem; }
+  .group:hover .uw-group-hover-size-11 { width: 2.75rem; height: 2.75rem; }
+  .uw-size-12 { width: 3rem; height: 3rem; }
+  .uw-hover-size-12:hover { width: 3rem; height: 3rem; }
+  .uw-focus-size-12:focus { width: 3rem; height: 3rem; }
+  .uw-active-size-12:active { width: 3rem; height: 3rem; }
+  .uw-disabled-size-12:disabled { width: 3rem; height: 3rem; }
+  .uw-focus-visible-size-12:focus-visible { width: 3rem; height: 3rem; }
+  .uw-focus-within-size-12:focus-within { width: 3rem; height: 3rem; }
+  .group:hover .uw-group-hover-size-12 { width: 3rem; height: 3rem; }
+  .uw-size-14 { width: 3.5rem; height: 3.5rem; }
+  .uw-hover-size-14:hover { width: 3.5rem; height: 3.5rem; }
+  .uw-focus-size-14:focus { width: 3.5rem; height: 3.5rem; }
+  .uw-active-size-14:active { width: 3.5rem; height: 3.5rem; }
+  .uw-disabled-size-14:disabled { width: 3.5rem; height: 3.5rem; }
+  .uw-focus-visible-size-14:focus-visible { width: 3.5rem; height: 3.5rem; }
+  .uw-focus-within-size-14:focus-within { width: 3.5rem; height: 3.5rem; }
+  .group:hover .uw-group-hover-size-14 { width: 3.5rem; height: 3.5rem; }
+  .uw-size-16 { width: 4rem; height: 4rem; }
+  .uw-hover-size-16:hover { width: 4rem; height: 4rem; }
+  .uw-focus-size-16:focus { width: 4rem; height: 4rem; }
+  .uw-active-size-16:active { width: 4rem; height: 4rem; }
+  .uw-disabled-size-16:disabled { width: 4rem; height: 4rem; }
+  .uw-focus-visible-size-16:focus-visible { width: 4rem; height: 4rem; }
+  .uw-focus-within-size-16:focus-within { width: 4rem; height: 4rem; }
+  .group:hover .uw-group-hover-size-16 { width: 4rem; height: 4rem; }
+  .uw-size-20 { width: 5rem; height: 5rem; }
+  .uw-hover-size-20:hover { width: 5rem; height: 5rem; }
+  .uw-focus-size-20:focus { width: 5rem; height: 5rem; }
+  .uw-active-size-20:active { width: 5rem; height: 5rem; }
+  .uw-disabled-size-20:disabled { width: 5rem; height: 5rem; }
+  .uw-focus-visible-size-20:focus-visible { width: 5rem; height: 5rem; }
+  .uw-focus-within-size-20:focus-within { width: 5rem; height: 5rem; }
+  .group:hover .uw-group-hover-size-20 { width: 5rem; height: 5rem; }
+  .uw-size-24 { width: 6rem; height: 6rem; }
+  .uw-hover-size-24:hover { width: 6rem; height: 6rem; }
+  .uw-focus-size-24:focus { width: 6rem; height: 6rem; }
+  .uw-active-size-24:active { width: 6rem; height: 6rem; }
+  .uw-disabled-size-24:disabled { width: 6rem; height: 6rem; }
+  .uw-focus-visible-size-24:focus-visible { width: 6rem; height: 6rem; }
+  .uw-focus-within-size-24:focus-within { width: 6rem; height: 6rem; }
+  .group:hover .uw-group-hover-size-24 { width: 6rem; height: 6rem; }
+  .uw-size-28 { width: 7rem; height: 7rem; }
+  .uw-hover-size-28:hover { width: 7rem; height: 7rem; }
+  .uw-focus-size-28:focus { width: 7rem; height: 7rem; }
+  .uw-active-size-28:active { width: 7rem; height: 7rem; }
+  .uw-disabled-size-28:disabled { width: 7rem; height: 7rem; }
+  .uw-focus-visible-size-28:focus-visible { width: 7rem; height: 7rem; }
+  .uw-focus-within-size-28:focus-within { width: 7rem; height: 7rem; }
+  .group:hover .uw-group-hover-size-28 { width: 7rem; height: 7rem; }
+  .uw-size-32 { width: 8rem; height: 8rem; }
+  .uw-hover-size-32:hover { width: 8rem; height: 8rem; }
+  .uw-focus-size-32:focus { width: 8rem; height: 8rem; }
+  .uw-active-size-32:active { width: 8rem; height: 8rem; }
+  .uw-disabled-size-32:disabled { width: 8rem; height: 8rem; }
+  .uw-focus-visible-size-32:focus-visible { width: 8rem; height: 8rem; }
+  .uw-focus-within-size-32:focus-within { width: 8rem; height: 8rem; }
+  .group:hover .uw-group-hover-size-32 { width: 8rem; height: 8rem; }
+  .uw-size-36 { width: 9rem; height: 9rem; }
+  .uw-hover-size-36:hover { width: 9rem; height: 9rem; }
+  .uw-focus-size-36:focus { width: 9rem; height: 9rem; }
+  .uw-active-size-36:active { width: 9rem; height: 9rem; }
+  .uw-disabled-size-36:disabled { width: 9rem; height: 9rem; }
+  .uw-focus-visible-size-36:focus-visible { width: 9rem; height: 9rem; }
+  .uw-focus-within-size-36:focus-within { width: 9rem; height: 9rem; }
+  .group:hover .uw-group-hover-size-36 { width: 9rem; height: 9rem; }
+  .uw-size-40 { width: 10rem; height: 10rem; }
+  .uw-hover-size-40:hover { width: 10rem; height: 10rem; }
+  .uw-focus-size-40:focus { width: 10rem; height: 10rem; }
+  .uw-active-size-40:active { width: 10rem; height: 10rem; }
+  .uw-disabled-size-40:disabled { width: 10rem; height: 10rem; }
+  .uw-focus-visible-size-40:focus-visible { width: 10rem; height: 10rem; }
+  .uw-focus-within-size-40:focus-within { width: 10rem; height: 10rem; }
+  .group:hover .uw-group-hover-size-40 { width: 10rem; height: 10rem; }
+  .uw-size-44 { width: 11rem; height: 11rem; }
+  .uw-hover-size-44:hover { width: 11rem; height: 11rem; }
+  .uw-focus-size-44:focus { width: 11rem; height: 11rem; }
+  .uw-active-size-44:active { width: 11rem; height: 11rem; }
+  .uw-disabled-size-44:disabled { width: 11rem; height: 11rem; }
+  .uw-focus-visible-size-44:focus-visible { width: 11rem; height: 11rem; }
+  .uw-focus-within-size-44:focus-within { width: 11rem; height: 11rem; }
+  .group:hover .uw-group-hover-size-44 { width: 11rem; height: 11rem; }
+  .uw-size-48 { width: 12rem; height: 12rem; }
+  .uw-hover-size-48:hover { width: 12rem; height: 12rem; }
+  .uw-focus-size-48:focus { width: 12rem; height: 12rem; }
+  .uw-active-size-48:active { width: 12rem; height: 12rem; }
+  .uw-disabled-size-48:disabled { width: 12rem; height: 12rem; }
+  .uw-focus-visible-size-48:focus-visible { width: 12rem; height: 12rem; }
+  .uw-focus-within-size-48:focus-within { width: 12rem; height: 12rem; }
+  .group:hover .uw-group-hover-size-48 { width: 12rem; height: 12rem; }
+  .uw-size-52 { width: 13rem; height: 13rem; }
+  .uw-hover-size-52:hover { width: 13rem; height: 13rem; }
+  .uw-focus-size-52:focus { width: 13rem; height: 13rem; }
+  .uw-active-size-52:active { width: 13rem; height: 13rem; }
+  .uw-disabled-size-52:disabled { width: 13rem; height: 13rem; }
+  .uw-focus-visible-size-52:focus-visible { width: 13rem; height: 13rem; }
+  .uw-focus-within-size-52:focus-within { width: 13rem; height: 13rem; }
+  .group:hover .uw-group-hover-size-52 { width: 13rem; height: 13rem; }
+  .uw-size-56 { width: 14rem; height: 14rem; }
+  .uw-hover-size-56:hover { width: 14rem; height: 14rem; }
+  .uw-focus-size-56:focus { width: 14rem; height: 14rem; }
+  .uw-active-size-56:active { width: 14rem; height: 14rem; }
+  .uw-disabled-size-56:disabled { width: 14rem; height: 14rem; }
+  .uw-focus-visible-size-56:focus-visible { width: 14rem; height: 14rem; }
+  .uw-focus-within-size-56:focus-within { width: 14rem; height: 14rem; }
+  .group:hover .uw-group-hover-size-56 { width: 14rem; height: 14rem; }
+  .uw-size-60 { width: 15rem; height: 15rem; }
+  .uw-hover-size-60:hover { width: 15rem; height: 15rem; }
+  .uw-focus-size-60:focus { width: 15rem; height: 15rem; }
+  .uw-active-size-60:active { width: 15rem; height: 15rem; }
+  .uw-disabled-size-60:disabled { width: 15rem; height: 15rem; }
+  .uw-focus-visible-size-60:focus-visible { width: 15rem; height: 15rem; }
+  .uw-focus-within-size-60:focus-within { width: 15rem; height: 15rem; }
+  .group:hover .uw-group-hover-size-60 { width: 15rem; height: 15rem; }
+  .uw-size-64 { width: 16rem; height: 16rem; }
+  .uw-hover-size-64:hover { width: 16rem; height: 16rem; }
+  .uw-focus-size-64:focus { width: 16rem; height: 16rem; }
+  .uw-active-size-64:active { width: 16rem; height: 16rem; }
+  .uw-disabled-size-64:disabled { width: 16rem; height: 16rem; }
+  .uw-focus-visible-size-64:focus-visible { width: 16rem; height: 16rem; }
+  .uw-focus-within-size-64:focus-within { width: 16rem; height: 16rem; }
+  .group:hover .uw-group-hover-size-64 { width: 16rem; height: 16rem; }
+  .uw-size-72 { width: 18rem; height: 18rem; }
+  .uw-hover-size-72:hover { width: 18rem; height: 18rem; }
+  .uw-focus-size-72:focus { width: 18rem; height: 18rem; }
+  .uw-active-size-72:active { width: 18rem; height: 18rem; }
+  .uw-disabled-size-72:disabled { width: 18rem; height: 18rem; }
+  .uw-focus-visible-size-72:focus-visible { width: 18rem; height: 18rem; }
+  .uw-focus-within-size-72:focus-within { width: 18rem; height: 18rem; }
+  .group:hover .uw-group-hover-size-72 { width: 18rem; height: 18rem; }
+  .uw-size-80 { width: 20rem; height: 20rem; }
+  .uw-hover-size-80:hover { width: 20rem; height: 20rem; }
+  .uw-focus-size-80:focus { width: 20rem; height: 20rem; }
+  .uw-active-size-80:active { width: 20rem; height: 20rem; }
+  .uw-disabled-size-80:disabled { width: 20rem; height: 20rem; }
+  .uw-focus-visible-size-80:focus-visible { width: 20rem; height: 20rem; }
+  .uw-focus-within-size-80:focus-within { width: 20rem; height: 20rem; }
+  .group:hover .uw-group-hover-size-80 { width: 20rem; height: 20rem; }
+  .uw-size-96 { width: 24rem; height: 24rem; }
+  .uw-hover-size-96:hover { width: 24rem; height: 24rem; }
+  .uw-focus-size-96:focus { width: 24rem; height: 24rem; }
+  .uw-active-size-96:active { width: 24rem; height: 24rem; }
+  .uw-disabled-size-96:disabled { width: 24rem; height: 24rem; }
+  .uw-focus-visible-size-96:focus-visible { width: 24rem; height: 24rem; }
+  .uw-focus-within-size-96:focus-within { width: 24rem; height: 24rem; }
+  .group:hover .uw-group-hover-size-96 { width: 24rem; height: 24rem; }
+}

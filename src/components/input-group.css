@@ -1,77 +1,114 @@
+/* quanta input-group — palette-token only, accessible + theme-friendly */
+
 .quanta-input-group {
   display: flex;
   align-items: stretch;
   width: 100%;
   border-radius: var(--quanta-rounded-md);
   overflow: hidden;
-  border: var(--quanta-border-width) solid var(--quanta-border-color);
-  background-color: var(--white);
+  border: var(--quanta-border-width, 1px) solid var(--quanta-border-color, var(--quanta-grey-200));
+  background-color: var(--white, #fff);
 }
 
+/* show visible focus when any child has keyboard focus */
+.quanta-input-group:focus-within {
+  /* uses quanta-focus-rgb if you defined it (e.g. "20 99 255") */
+  box-shadow: 0 0 0 3px rgba(var(--quanta-focus-rgb, 20 99 255), 0.12);
+  border-color: color-mix(in srgb, var(--quanta-primary, #25C0D6) 36%, var(--quanta-border-color, var(--quanta-grey-200)));
+}
+
+/* left icon block */
 .quanta-input-icon-left {
   display: flex;
   align-items: center;
   padding: 0 var(--quanta-space-4);
-  background: var(--quanta-slate-100);
-  color: var(--quanta-text-muted);
+  background: var(--quanta-grey-100, #f1f5f9);
+  color: var(--quanta-text-muted, var(--quanta-grey-500));
   font-size: var(--quanta-text-sm);
+  min-width: 3rem;
+  justify-content: center;
 }
 
+/* input itself */
 .quanta-input {
   border: none;
   flex: 1;
   padding: var(--quanta-space-3) var(--quanta-space-3);
   font-size: var(--quanta-text-sm);
   background: transparent;
-  color: var(--quanta-text-default);
+  color: var(--quanta-text-default, var(--quanta-grey-800));
   font-family: inherit;
+  caret-color: var(--quanta-primary, #25C0D6);
+  outline: none; /* visual handled by :focus-visible / group focus-within */
 }
 
-.quanta-input:focus {
+/* keyboard focus for input (only keyboard users) */
+.quanta-input:focus-visible {
   outline: none;
-  background: var(--white);
+  box-shadow: 0 0 0 3px rgba(var(--quanta-focus-rgb, 20 99 255), 0.16);
+  border-radius: 0; /* avoid double rounding inside the group */
+  background: transparent;
 }
 
+/* button on the right */
 .quanta-input-button {
-  background: var(--quanta-primary);
-  color: var(--white);
+  background: var(--quanta-primary, #25C0D6);
+  color: var(--white, #fff);
   border: none;
   padding: 0 var(--quanta-space-4);
   cursor: pointer;
   font-size: var(--quanta-text-sm);
   display: flex;
   align-items: center;
-  transition: background 0.3s ease;
+  transition: background var(--quanta-duration-fast, 150ms) var(--quanta-ease-default),
+              transform var(--quanta-duration-fast, 150ms) var(--quanta-ease-default),
+              box-shadow var(--quanta-duration-fast, 150ms);
+  border-left: 1px solid var(--quanta-border-color, var(--quanta-grey-200));
 }
 
-.quanta-input-button:hover {
-  background: var(--quanta-primary-hover);
+/* hover / active / focus-visible */
+.quanta-input-button:hover,
+.quanta-input-button:focus-visible {
+  background: var(--quanta-primary-hover, #1CA7B8);
+  transform: translateY(-1px);
+  box-shadow: var(--quanta-shadow-sm);
+  outline: none;
 }
 
-/* Dark mode */
+/* disabled */
+.quanta-input-button:disabled {
+  opacity: .6;
+  cursor: not-allowed;
+  transform: none;
+  box-shadow: none;
+}
+
+/* Dark mode (using your quanta tokens) */
 html[data-theme="dark"] .quanta-input-group {
   background-color: transparent;
-  border-color: var(--quanta-border-color);
+  border-color: var(--quanta-border-color, var(--quanta-grey-700));
 }
 
 html[data-theme="dark"] .quanta-input {
-  color: var(--quanta-text-light);
+  color: var(--quanta-text-light, var(--quanta-grey-100));
 }
 
-html[data-theme="dark"] .quanta-input:focus {
-  outline: none;
-  background: var(--bg-slate-800);
+html[data-theme="dark"] .quanta-input:focus-visible {
+  background: transparent;
+  box-shadow: 0 0 0 3px rgba(var(--quanta-focus-rgb, 20 99 255), 0.20);
 }
 
 html[data-theme="dark"] .quanta-input-icon-left {
-  background: var(--quanta-slate-700);
-  color: var(--quanta-text-light-muted);
+  background: var(--quanta-grey-700);
+  color: var(--quanta-text-light-muted, var(--quanta-grey-300));
 }
 
 html[data-theme="dark"] .quanta-input-button {
-  background: var(--quanta-primary);
+  background: var(--quanta-primary, #25C0D6);
+  color: var(--white, #fff);
 }
 
-html[data-theme="dark"] .quanta-input-button:hover {
-  background: var(--quanta-primary-hover);
+html[data-theme="dark"] .quanta-input-button:hover,
+html[data-theme="dark"] .quanta-input-button:focus-visible {
+  background: var(--quanta-primary-hover, #34D0E5);
 }

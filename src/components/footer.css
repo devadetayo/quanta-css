@@ -1,5 +1,5 @@
 .quanta-footer {
-  background-color: var(--quanta-slate-100);
+  background-color: var(--quanta-grey-100);
   padding: var(--quanta-space-8) var(--quanta-space-6);
   display: flex;
   flex-wrap: wrap;
@@ -51,7 +51,7 @@
 }
 
 html[data-theme="dark"] .quanta-footer {
-  background-color: var(--quanta-slate-800);
+  background-color: var(--quanta-grey-800);
 }
 
 html[data-theme="dark"] .quanta-footer a:hover {

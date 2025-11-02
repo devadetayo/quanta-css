@@ -67,7 +67,7 @@
 /* ─── Dark Mode ────────────────────────────────── */
 html[data-theme="dark"] .quanta-searchbar-input,
 html[data-theme="dark"] .quanta-searchbar-select {
-  background-color: var(--quanta-slate-800);
+  background-color: var(--quanta-grey-800);
   border-color: var(--quanta-border-color);
   color: var(--quanta-text-light);
 }

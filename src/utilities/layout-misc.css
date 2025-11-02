@@ -1,0 +1,62 @@
+
+
+/* -- Clear Utilities -- */
+.clear-left { clear: left; }
+
+.clear-right { clear: right; }
+
+.clear-both { clear: both; }
+
+/* -- Float Utilities -- */
+.float-left { float: left; }
+
+.float-right { float: right; }
+
+.float-none { float: none; }
+
+.box-decoration-slice { box-decoration-break: slice;
+  -webkit-box-decoration-break: slice; /* for Safari */ }
+
+.box-decoration-clone { box-decoration-break: clone;
+  -webkit-box-decoration-break: clone; /* for Safari */ }
+
+/* =============================================================================
+   2. ADVANCED LAYOUT UTILITIES
+============================================================================= */
+
+/* Aspect Ratio */
+.aspect-auto { aspect-ratio: auto; }
+
+.aspect-square { aspect-ratio: 1 / 1; }
+
+.aspect-video { aspect-ratio: 16 / 9; }
+
+.aspect-ar_4_3 { aspect-ratio: 4 / 3; }
+
+/* Isolation */
+.isolation-auto { isolation: auto; }
+
+.isolation-isolate { isolation: isolate; }
+
+/* Containment */
+.contain-none { contain: none; }
+
+.contain-layout { contain: layout; }
+
+.contain-size { contain: size; }
+
+.contain-style { contain: style; }
+
+.contain-paint { contain: paint; }
+
+.contain-content { contain: content; }
+
+/* Box Sizing */
+.box-border { box-sizing: border-box; }
+
+.box-content { box-sizing: content-box; }
+
+/* Box Sizing */
+.box-border { box-sizing: border-box; }
+
+.box-content { box-sizing: content-box; }

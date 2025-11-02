@@ -3,12 +3,11 @@
   align-items: center;
   justify-content: center;
   gap: var(--quanta-space-2);
-  padding: var(--quanta-space-2);
+  padding: var(--quanta-space-3);
   border: none;
   background: var(--white);
   color: var(--quanta-text-default);
-  border-radius: var(--quanta-rounded-lg);
-  border: 2px solid var(--quanta-border-color);
+  border-radius: var(--quanta-rounded-full);
   cursor: pointer;
   transition: background 0.3s;
   height: fit-content;
@@ -27,7 +26,7 @@
 }
 
 html[data-theme="dark"] .quanta-theme-toggle {
-  background: var(--quanta-slate-800);
+  background: var(--quanta-grey-800);
   border-color: var(--quanta-border-color);
 }
 

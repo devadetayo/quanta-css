@@ -3,6 +3,7 @@
 
 :root {
   /* ─── Spacing Scale ───────────────────────────────────── */
+  /* ─── Spacing Scale ───────────────────────────────────── */
   --quanta-space-0: 0rem;
   --quanta-space-1: 0.25rem;
   --quanta-space-2: 0.5rem;
@@ -85,51 +86,55 @@
   --quanta-border-width: 1px;
   --quanta-ring-width: 2px;
 
+  /* ─── Focus helper (keeps a single point to tweak ring) ── */
+  --quanta-focus-rgb: 20 99 255; /* default, override in token file if you want */
+  --quanta-ring: 0 0 0 3px rgba(var(--quanta-focus-rgb), 0.18);
+
   /* ─── Semantic Colors - Light ─────────────────────────── */
   --quanta-bg-default:        var(--quanta-grey-50);
   --quanta-text-default:      var(--quanta-grey-600);
-  --quanta-border-color:      var(--quanta-slate-200);
+  --quanta-border-color:      var(--quanta-grey-200);
 
-  --quanta-primary:         #25C0D6;
-  --quanta-primary-hover:   #1CA7B8;
+  --quanta-primary:         #3B82F6;
+  --quanta-primary-hover:   #2562c4;
   --quanta-text-primary:    #ffffff;
-  --quanta-border-primary:  #1CA7B8;
+  --quanta-border-primary:  #3B82F6;
 
 
-  --quanta-bg-secondary:      var(--quanta-slate-800);
+  --quanta-bg-secondary:      #8b5CF6;
   --quanta-text-secondary:    var(--white);
-  --quanta-border-secondary:  var(--quanta-slate-800);
-  --quanta-secondary-hover:   var(--quanta-slate-700);
+  --quanta-border-secondary:  #8b5CF6;
+  --quanta-secondary-hover:   #6130d1;
 
-  --quanta-bg-success:        var(--quanta-green-500);
+  --quanta-bg-success:        #22C55E;
   --quanta-text-success:      var(--white);
-  --quanta-border-success:    var(--quanta-green-500);
-  --quanta-success-hover:     var(--quanta-green-600);
+  --quanta-border-success:    #22C55E;
+  --quanta-success-hover:     #12873d;
 
-  --quanta-bg-warning:        var(--quanta-orange-500);
+  --quanta-bg-warning:        #E59E0B;
   --quanta-text-warning:      var(--white);
-  --quanta-border-warning:    var(--quanta-orange-500);
-  --quanta-warning-hover:     var(--quanta-orange-600);
+  --quanta-border-warning:    #E59E0B;
+  --quanta-warning-hover:     #b27a08;
 
-  --quanta-bg-danger:         var(--quanta-red-500);
+  --quanta-bg-danger:         #EF4444;
   --quanta-text-danger:       var(--white);
-  --quanta-border-danger:     var(--quanta-red-500);
-  --quanta-danger-hover:      var(--quanta-red-600);
+  --quanta-border-danger:     #EF4444;
+  --quanta-danger-hover:      #c82b2b;
 
-  --quanta-bg-info:           var(--quanta-cyan-500);
+  --quanta-bg-info:           #0EA5E9;
   --quanta-text-info:         var(--white);
-  --quanta-border-info:       var(--quanta-cyan-500);
-  --quanta-info-hover:        var(--quanta-cyan-600);
+  --quanta-border-info:       #0EA5E9;
+  --quanta-info-hover:        #0e8cc7;
 
-  --quanta-bg-neutral:        var(--quanta-grey-100);
-  --quanta-text-neutral:      var(--quanta-grey-700);
-  --quanta-border-neutral:    var(--quanta-grey-300);
-  --quanta-neutral-hover:     var(--quanta-grey-200);
+  --quanta-bg-neutral:        #9CA3AF;
+  --quanta-text-neutral:      var(--quanta-grey-800);
+  --quanta-border-neutral:    #9CA3AF;
+  --quanta-neutral-hover:     #7a7e86;
 
-  --quanta-bg-accent:         var(--quanta-indigo-500);
+  --quanta-bg-accent:         #c522b8;
   --quanta-text-accent:       var(--white);
-  --quanta-border-accent:     var(--quanta-indigo-500);
-  --quanta-accent-hover:      var(--quanta-indigo-600);
+  --quanta-border-accent:     #c522b8;
+  --quanta-accent-hover:      #c522b8;
 
   --quanta-bg-ghost:          transparent;
   --quanta-text-ghost:        var(--quanta-grey-600);
@@ -142,55 +147,56 @@
 
 html[data-theme="dark"] {
   /* ─── Semantic Colors - Dark ───────────────────────────── */
-  --quanta-bg-default:        var(--quanta-slate-900);
+  --quanta-bg-default:        var(--quanta-grey-900);
   --quanta-text-default:      var(--quanta-grey-100);
-  --quanta-border-color:      var(--quanta-slate-700);
+  --quanta-border-color:      var(--quanta-grey-700);
 
-  --quanta-primary:         #25C0D6;
-  --quanta-primary-hover:   #34D0E5;
+  --quanta-primary:         #3B82F6;
+  --quanta-primary-hover:   #2562c4;
   --quanta-text-primary:    #ffffff;
-  --quanta-border-primary:  #34D0E5;
+  --quanta-border-primary:  #3B82F6;
 
-  --quanta-bg-secondary:      var(--quanta-slate-500);
-  --quanta-text-secondary:    var(--quanta-slate-100);
-  --quanta-border-secondary:  var(--quanta-slate-500);
-  --quanta-secondary-hover:   var(--quanta-slate-400);
 
-  --quanta-bg-success:        var(--quanta-green-400);
-  --quanta-text-success:      var(--quanta-grey-100);
-  --quanta-border-success:    var(--quanta-green-400);
-  --quanta-success-hover:     var(--quanta-green-300);
+  --quanta-bg-secondary:      #8b5CF6;
+  --quanta-text-secondary:    var(--white);
+  --quanta-border-secondary:  #8b5CF6;
+  --quanta-secondary-hover:   #6130d1;
 
-  --quanta-bg-warning:        var(--quanta-orange-400);
+  --quanta-bg-success:        #22C55E;
+  --quanta-text-success:      var(--white);
+  --quanta-border-success:    #22C55E;
+  --quanta-success-hover:     #12873d;
+
+  --quanta-bg-warning:        #E59E0B;
   --quanta-text-warning:      var(--white);
-  --quanta-border-warning:    var(--quanta-orange-400);
-  --quanta-warning-hover:     var(--quanta-orange-300);
+  --quanta-border-warning:    #E59E0B;
+  --quanta-warning-hover:     #b27a08;
 
-  --quanta-bg-danger:         var(--quanta-red-400);
+  --quanta-bg-danger:         #EF4444;
   --quanta-text-danger:       var(--white);
-  --quanta-border-danger:     var(--quanta-red-400);
-  --quanta-danger-hover:      var(--quanta-red-700);
+  --quanta-border-danger:     #EF4444;
+  --quanta-danger-hover:      #c82b2b;
 
-  --quanta-bg-info:           var(--quanta-cyan-300);
-  --quanta-text-info:         var(--quanta-grey-100);
-  --quanta-border-info:       var(--quanta-cyan-300);
-  --quanta-info-hover:        var(--quanta-cyan-200);
+  --quanta-bg-info:           #0EA5E9;
+  --quanta-text-info:         var(--white);
+  --quanta-border-info:       #0EA5E9;
+  --quanta-info-hover:        #0e8cc7;
 
-  --quanta-bg-neutral:        var(--quanta-grey-400);
-  --quanta-text-neutral:      var(--quanta-grey-200);
-  --quanta-border-neutral:    var(--quanta-grey-400);
-  --quanta-neutral-hover:     var(--quanta-grey-200);
+  --quanta-bg-neutral:        #9CA3AF;
+  --quanta-text-neutral:      var(--quanta-grey-800);
+  --quanta-border-neutral:    #9CA3AF;
+  --quanta-neutral-hover:     #7a7e86;
 
-  --quanta-bg-accent:         var(--quanta-indigo-400);
-  --quanta-text-accent:       var(--quanta-grey-100);
-  --quanta-border-accent:     var(--quanta-indigo-400);
-  --quanta-accent-hover:      var(--quanta-indigo-500);
+  --quanta-bg-accent:         #c522b8;
+  --quanta-text-accent:       var(--white);
+  --quanta-border-accent:     #c522b8;
+  --quanta-accent-hover:      #c522b8;
 
   --quanta-bg-ghost:          transparent;
-  --quanta-text-ghost:        var(--quanta-grey-300);
+  --quanta-text-ghost:        var(--quanta-grey-600);
   --quanta-border-ghost:      transparent;
-  --quanta-ghost-hover:       var(--quanta-grey-800);
+  --quanta-ghost-hover:       var(--quanta-grey-100);
 
-  --quanta-text-link:         var(--quanta-blue-400);
-  --quanta-link-hover:        var(--quanta-blue-300);
+  --quanta-text-link:         var(--quanta-blue-600);
+  --quanta-link-hover:        var(--quanta-blue-700);
 }

@@ -2,7 +2,7 @@
   position: relative;
   width: 100%;
   height: 1rem;
-  background-color: var(--quanta-slate-100);
+  background-color: var(--quanta-grey-100);
   border-radius: var(--quanta-rounded-sm);
   overflow: hidden;
   box-shadow: var(--quanta-shadow-xs);
@@ -32,6 +32,8 @@
 .quanta-progress-warning .quanta-progress-bar-inner { background-color: var(--quanta-bg-warning); }
 .quanta-progress-info .quanta-progress-bar-inner { background-color: var(--quanta-bg-info); }
 .quanta-progress-danger .quanta-progress-bar-inner { background-color: var(--quanta-bg-danger); }
+.quanta-progress-accent .quanta-progress-bar-inner { background-color: var(--quanta-bg-accent); }
+.quanta-progress-neutral .quanta-progress-bar-inner { background-color: var(--quanta-bg-neutral); }
 
 /* Style Variants */
 .quanta-progress-soft .quanta-progress-bar-inner { opacity: 0.8; }
@@ -93,9 +95,19 @@
 
 /* Dark Mode */
 html[data-theme="dark"] {
-  .quanta-progress-bar { background-color: var(--quanta-slate-700); }
+  .quanta-progress-bar { background-color: var(--quanta-grey-700); }
   .quanta-progress-bar-inner { background-color: var(--quanta-primary); }
 }
+html[data-theme="dark"] {
+  /* Color Variants */
+  .quanta-progress-success .quanta-progress-bar-inner { background-color: var(--quanta-bg-success); }
+  .quanta-progress-warning .quanta-progress-bar-inner { background-color: var(--quanta-bg-warning); }
+  .quanta-progress-info .quanta-progress-bar-inner { background-color: var(--quanta-bg-info); }
+  .quanta-progress-danger .quanta-progress-bar-inner { background-color: var(--quanta-bg-danger); }
+  .quanta-progress-accent .quanta-progress-bar-inner { background-color: var(--quanta-bg-accent); }
+  .quanta-progress-neutral .quanta-progress-bar-inner { background-color: var(--quanta-bg-neutral); }
+}
+
 
 /* Responsive Height */
 @media (max-width: 640px) {

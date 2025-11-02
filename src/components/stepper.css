@@ -72,12 +72,12 @@
 }
 
 .quanta-step[data-status="upcoming"] .quanta-step-label {
-  color: var(--quanta-slate-400);
+  color: var(--quanta-grey-400);
 }
 
 html[data-theme="dark"] .quanta-stepper-line .quanta-step-icon {
-  background-color: var(--quanta-slate-700);
-  border-color: var(--quanta-slate-700);
+  background-color: var(--quanta-grey-700);
+  border-color: var(--quanta-grey-700);
 }
 
 html[data-theme="dark"] .quanta-step[data-status="completed"] .quanta-step-icon {
@@ -95,5 +95,5 @@ html[data-theme="dark"] .quanta-step[data-status="active"] .quanta-step-icon {
 }
 
 html[data-theme="dark"] .quanta-step[data-status="upcoming"] .quanta-step-label {
-  color: var(--quanta-slate-500);
+  color: var(--quanta-grey-500);
 }

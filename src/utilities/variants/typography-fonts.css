@@ -1,0 +1,2514 @@
+/* Quanta CSS v2.1 - typography-fonts Light Variants */
+
+/* State Variants */
+.hover-font-sans:hover { font-family: var(--font-sans) !important; }
+.focus-font-sans:focus { font-family: var(--font-sans) !important; }
+.active-font-sans:active { font-family: var(--font-sans) !important; }
+.disabled-font-sans:disabled { font-family: var(--font-sans) !important; }
+.focus-visible-font-sans:focus-visible { font-family: var(--font-sans) !important; }
+.focus-within-font-sans:focus-within { font-family: var(--font-sans) !important; }
+.group:hover .group-hover-font-sans { font-family: var(--font-sans) !important; }
+.hover-font-serif:hover { font-family: var(--font-serif) !important; }
+.focus-font-serif:focus { font-family: var(--font-serif) !important; }
+.active-font-serif:active { font-family: var(--font-serif) !important; }
+.disabled-font-serif:disabled { font-family: var(--font-serif) !important; }
+.focus-visible-font-serif:focus-visible { font-family: var(--font-serif) !important; }
+.focus-within-font-serif:focus-within { font-family: var(--font-serif) !important; }
+.group:hover .group-hover-font-serif { font-family: var(--font-serif) !important; }
+.hover-font-mono:hover { font-family: var(--font-mono) !important; }
+.focus-font-mono:focus { font-family: var(--font-mono) !important; }
+.active-font-mono:active { font-family: var(--font-mono) !important; }
+.disabled-font-mono:disabled { font-family: var(--font-mono) !important; }
+.focus-visible-font-mono:focus-visible { font-family: var(--font-mono) !important; }
+.focus-within-font-mono:focus-within { font-family: var(--font-mono) !important; }
+.group:hover .group-hover-font-mono { font-family: var(--font-mono) !important; }
+.hover-font-size-auto:hover { font-size: auto; }
+.focus-font-size-auto:focus { font-size: auto; }
+.active-font-size-auto:active { font-size: auto; }
+.disabled-font-size-auto:disabled { font-size: auto; }
+.focus-visible-font-size-auto:focus-visible { font-size: auto; }
+.focus-within-font-size-auto:focus-within { font-size: auto; }
+.group:hover .group-hover-font-size-auto { font-size: auto; }
+.hover-font-size-0:hover { font-size: 0; }
+.focus-font-size-0:focus { font-size: 0; }
+.active-font-size-0:active { font-size: 0; }
+.disabled-font-size-0:disabled { font-size: 0; }
+.focus-visible-font-size-0:focus-visible { font-size: 0; }
+.focus-within-font-size-0:focus-within { font-size: 0; }
+.group:hover .group-hover-font-size-0 { font-size: 0; }
+.hover-font-size-1:hover { font-size: 0.25rem; }
+.focus-font-size-1:focus { font-size: 0.25rem; }
+.active-font-size-1:active { font-size: 0.25rem; }
+.disabled-font-size-1:disabled { font-size: 0.25rem; }
+.focus-visible-font-size-1:focus-visible { font-size: 0.25rem; }
+.focus-within-font-size-1:focus-within { font-size: 0.25rem; }
+.group:hover .group-hover-font-size-1 { font-size: 0.25rem; }
+.hover-font-size-2:hover { font-size: 0.5rem; }
+.focus-font-size-2:focus { font-size: 0.5rem; }
+.active-font-size-2:active { font-size: 0.5rem; }
+.disabled-font-size-2:disabled { font-size: 0.5rem; }
+.focus-visible-font-size-2:focus-visible { font-size: 0.5rem; }
+.focus-within-font-size-2:focus-within { font-size: 0.5rem; }
+.group:hover .group-hover-font-size-2 { font-size: 0.5rem; }
+.hover-font-size-3:hover { font-size: 0.75rem; }
+.focus-font-size-3:focus { font-size: 0.75rem; }
+.active-font-size-3:active { font-size: 0.75rem; }
+.disabled-font-size-3:disabled { font-size: 0.75rem; }
+.focus-visible-font-size-3:focus-visible { font-size: 0.75rem; }
+.focus-within-font-size-3:focus-within { font-size: 0.75rem; }
+.group:hover .group-hover-font-size-3 { font-size: 0.75rem; }
+.hover-font-size-4:hover { font-size: 1rem; }
+.focus-font-size-4:focus { font-size: 1rem; }
+.active-font-size-4:active { font-size: 1rem; }
+.disabled-font-size-4:disabled { font-size: 1rem; }
+.focus-visible-font-size-4:focus-visible { font-size: 1rem; }
+.focus-within-font-size-4:focus-within { font-size: 1rem; }
+.group:hover .group-hover-font-size-4 { font-size: 1rem; }
+.hover-font-size-5:hover { font-size: 1.25rem; }
+.focus-font-size-5:focus { font-size: 1.25rem; }
+.active-font-size-5:active { font-size: 1.25rem; }
+.disabled-font-size-5:disabled { font-size: 1.25rem; }
+.focus-visible-font-size-5:focus-visible { font-size: 1.25rem; }
+.focus-within-font-size-5:focus-within { font-size: 1.25rem; }
+.group:hover .group-hover-font-size-5 { font-size: 1.25rem; }
+.hover-font-size-6:hover { font-size: 1.5rem; }
+.focus-font-size-6:focus { font-size: 1.5rem; }
+.active-font-size-6:active { font-size: 1.5rem; }
+.disabled-font-size-6:disabled { font-size: 1.5rem; }
+.focus-visible-font-size-6:focus-visible { font-size: 1.5rem; }
+.focus-within-font-size-6:focus-within { font-size: 1.5rem; }
+.group:hover .group-hover-font-size-6 { font-size: 1.5rem; }
+.hover-font-size-7:hover { font-size: 1.75rem; }
+.focus-font-size-7:focus { font-size: 1.75rem; }
+.active-font-size-7:active { font-size: 1.75rem; }
+.disabled-font-size-7:disabled { font-size: 1.75rem; }
+.focus-visible-font-size-7:focus-visible { font-size: 1.75rem; }
+.focus-within-font-size-7:focus-within { font-size: 1.75rem; }
+.group:hover .group-hover-font-size-7 { font-size: 1.75rem; }
+.hover-font-size-8:hover { font-size: 2rem; }
+.focus-font-size-8:focus { font-size: 2rem; }
+.active-font-size-8:active { font-size: 2rem; }
+.disabled-font-size-8:disabled { font-size: 2rem; }
+.focus-visible-font-size-8:focus-visible { font-size: 2rem; }
+.focus-within-font-size-8:focus-within { font-size: 2rem; }
+.group:hover .group-hover-font-size-8 { font-size: 2rem; }
+.hover-font-size-9:hover { font-size: 2.25rem; }
+.focus-font-size-9:focus { font-size: 2.25rem; }
+.active-font-size-9:active { font-size: 2.25rem; }
+.disabled-font-size-9:disabled { font-size: 2.25rem; }
+.focus-visible-font-size-9:focus-visible { font-size: 2.25rem; }
+.focus-within-font-size-9:focus-within { font-size: 2.25rem; }
+.group:hover .group-hover-font-size-9 { font-size: 2.25rem; }
+.hover-font-size-10:hover { font-size: 2.5rem; }
+.focus-font-size-10:focus { font-size: 2.5rem; }
+.active-font-size-10:active { font-size: 2.5rem; }
+.disabled-font-size-10:disabled { font-size: 2.5rem; }
+.focus-visible-font-size-10:focus-visible { font-size: 2.5rem; }
+.focus-within-font-size-10:focus-within { font-size: 2.5rem; }
+.group:hover .group-hover-font-size-10 { font-size: 2.5rem; }
+.hover-font-size-12:hover { font-size: 3rem; }
+.focus-font-size-12:focus { font-size: 3rem; }
+.active-font-size-12:active { font-size: 3rem; }
+.disabled-font-size-12:disabled { font-size: 3rem; }
+.focus-visible-font-size-12:focus-visible { font-size: 3rem; }
+.focus-within-font-size-12:focus-within { font-size: 3rem; }
+.group:hover .group-hover-font-size-12 { font-size: 3rem; }
+.hover-font-size-14:hover { font-size: 3.5rem; }
+.focus-font-size-14:focus { font-size: 3.5rem; }
+.active-font-size-14:active { font-size: 3.5rem; }
+.disabled-font-size-14:disabled { font-size: 3.5rem; }
+.focus-visible-font-size-14:focus-visible { font-size: 3.5rem; }
+.focus-within-font-size-14:focus-within { font-size: 3.5rem; }
+.group:hover .group-hover-font-size-14 { font-size: 3.5rem; }
+.hover-font-size-16:hover { font-size: 4rem; }
+.focus-font-size-16:focus { font-size: 4rem; }
+.active-font-size-16:active { font-size: 4rem; }
+.disabled-font-size-16:disabled { font-size: 4rem; }
+.focus-visible-font-size-16:focus-visible { font-size: 4rem; }
+.focus-within-font-size-16:focus-within { font-size: 4rem; }
+.group:hover .group-hover-font-size-16 { font-size: 4rem; }
+.hover-font-size-18:hover { font-size: 4.5rem; }
+.focus-font-size-18:focus { font-size: 4.5rem; }
+.active-font-size-18:active { font-size: 4.5rem; }
+.disabled-font-size-18:disabled { font-size: 4.5rem; }
+.focus-visible-font-size-18:focus-visible { font-size: 4.5rem; }
+.focus-within-font-size-18:focus-within { font-size: 4.5rem; }
+.group:hover .group-hover-font-size-18 { font-size: 4.5rem; }
+.hover-font-size-20:hover { font-size: 5rem; }
+.focus-font-size-20:focus { font-size: 5rem; }
+.active-font-size-20:active { font-size: 5rem; }
+.disabled-font-size-20:disabled { font-size: 5rem; }
+.focus-visible-font-size-20:focus-visible { font-size: 5rem; }
+.focus-within-font-size-20:focus-within { font-size: 5rem; }
+.group:hover .group-hover-font-size-20 { font-size: 5rem; }
+.hover-font-size-24:hover { font-size: 6rem; }
+.focus-font-size-24:focus { font-size: 6rem; }
+.active-font-size-24:active { font-size: 6rem; }
+.disabled-font-size-24:disabled { font-size: 6rem; }
+.focus-visible-font-size-24:focus-visible { font-size: 6rem; }
+.focus-within-font-size-24:focus-within { font-size: 6rem; }
+.group:hover .group-hover-font-size-24 { font-size: 6rem; }
+.hover-font-size-28:hover { font-size: 7rem; }
+.focus-font-size-28:focus { font-size: 7rem; }
+.active-font-size-28:active { font-size: 7rem; }
+.disabled-font-size-28:disabled { font-size: 7rem; }
+.focus-visible-font-size-28:focus-visible { font-size: 7rem; }
+.focus-within-font-size-28:focus-within { font-size: 7rem; }
+.group:hover .group-hover-font-size-28 { font-size: 7rem; }
+.hover-font-size-32:hover { font-size: 8rem; }
+.focus-font-size-32:focus { font-size: 8rem; }
+.active-font-size-32:active { font-size: 8rem; }
+.disabled-font-size-32:disabled { font-size: 8rem; }
+.focus-visible-font-size-32:focus-visible { font-size: 8rem; }
+.focus-within-font-size-32:focus-within { font-size: 8rem; }
+.group:hover .group-hover-font-size-32 { font-size: 8rem; }
+.hover-font-style-normal:hover { font-style: normal; }
+.focus-font-style-normal:focus { font-style: normal; }
+.active-font-style-normal:active { font-style: normal; }
+.disabled-font-style-normal:disabled { font-style: normal; }
+.focus-visible-font-style-normal:focus-visible { font-style: normal; }
+.focus-within-font-style-normal:focus-within { font-style: normal; }
+.group:hover .group-hover-font-style-normal { font-style: normal; }
+.hover-font-style-italic:hover { font-style: italic; }
+.focus-font-style-italic:focus { font-style: italic; }
+.active-font-style-italic:active { font-style: italic; }
+.disabled-font-style-italic:disabled { font-style: italic; }
+.focus-visible-font-style-italic:focus-visible { font-style: italic; }
+.focus-within-font-style-italic:focus-within { font-style: italic; }
+.group:hover .group-hover-font-style-italic { font-style: italic; }
+.hover-font-style-oblique:hover { font-style: oblique; }
+.focus-font-style-oblique:focus { font-style: oblique; }
+.active-font-style-oblique:active { font-style: oblique; }
+.disabled-font-style-oblique:disabled { font-style: oblique; }
+.focus-visible-font-style-oblique:focus-visible { font-style: oblique; }
+.focus-within-font-style-oblique:focus-within { font-style: oblique; }
+.group:hover .group-hover-font-style-oblique { font-style: oblique; }
+.hover-font-smoothing-antialiased:hover { -webkit-font-smoothing: antialiased; }
+.focus-font-smoothing-antialiased:focus { -webkit-font-smoothing: antialiased; }
+.active-font-smoothing-antialiased:active { -webkit-font-smoothing: antialiased; }
+.disabled-font-smoothing-antialiased:disabled { -webkit-font-smoothing: antialiased; }
+.focus-visible-font-smoothing-antialiased:focus-visible { -webkit-font-smoothing: antialiased; }
+.focus-within-font-smoothing-antialiased:focus-within { -webkit-font-smoothing: antialiased; }
+.group:hover .group-hover-font-smoothing-antialiased { -webkit-font-smoothing: antialiased; }
+.hover-font-smoothing-subpixel-antialiased:hover { -webkit-font-smoothing: subpixel-antialiased; }
+.focus-font-smoothing-subpixel-antialiased:focus { -webkit-font-smoothing: subpixel-antialiased; }
+.active-font-smoothing-subpixel-antialiased:active { -webkit-font-smoothing: subpixel-antialiased; }
+.disabled-font-smoothing-subpixel-antialiased:disabled { -webkit-font-smoothing: subpixel-antialiased; }
+.focus-visible-font-smoothing-subpixel-antialiased:focus-visible { -webkit-font-smoothing: subpixel-antialiased; }
+.focus-within-font-smoothing-subpixel-antialiased:focus-within { -webkit-font-smoothing: subpixel-antialiased; }
+.group:hover .group-hover-font-smoothing-subpixel-antialiased { -webkit-font-smoothing: subpixel-antialiased; }
+.hover-font-weight-thin:hover { font-weight: 100; }
+.focus-font-weight-thin:focus { font-weight: 100; }
+.active-font-weight-thin:active { font-weight: 100; }
+.disabled-font-weight-thin:disabled { font-weight: 100; }
+.focus-visible-font-weight-thin:focus-visible { font-weight: 100; }
+.focus-within-font-weight-thin:focus-within { font-weight: 100; }
+.group:hover .group-hover-font-weight-thin { font-weight: 100; }
+.hover-font-weight-extralight:hover { font-weight: 200; }
+.focus-font-weight-extralight:focus { font-weight: 200; }
+.active-font-weight-extralight:active { font-weight: 200; }
+.disabled-font-weight-extralight:disabled { font-weight: 200; }
+.focus-visible-font-weight-extralight:focus-visible { font-weight: 200; }
+.focus-within-font-weight-extralight:focus-within { font-weight: 200; }
+.group:hover .group-hover-font-weight-extralight { font-weight: 200; }
+.hover-font-weight-light:hover { font-weight: 300; }
+.focus-font-weight-light:focus { font-weight: 300; }
+.active-font-weight-light:active { font-weight: 300; }
+.disabled-font-weight-light:disabled { font-weight: 300; }
+.focus-visible-font-weight-light:focus-visible { font-weight: 300; }
+.focus-within-font-weight-light:focus-within { font-weight: 300; }
+.group:hover .group-hover-font-weight-light { font-weight: 300; }
+.hover-font-weight-regular:hover { font-weight: 400; }
+.focus-font-weight-regular:focus { font-weight: 400; }
+.active-font-weight-regular:active { font-weight: 400; }
+.disabled-font-weight-regular:disabled { font-weight: 400; }
+.focus-visible-font-weight-regular:focus-visible { font-weight: 400; }
+.focus-within-font-weight-regular:focus-within { font-weight: 400; }
+.group:hover .group-hover-font-weight-regular { font-weight: 400; }
+.hover-font-weight-medium:hover { font-weight: 500; }
+.focus-font-weight-medium:focus { font-weight: 500; }
+.active-font-weight-medium:active { font-weight: 500; }
+.disabled-font-weight-medium:disabled { font-weight: 500; }
+.focus-visible-font-weight-medium:focus-visible { font-weight: 500; }
+.focus-within-font-weight-medium:focus-within { font-weight: 500; }
+.group:hover .group-hover-font-weight-medium { font-weight: 500; }
+.hover-font-weight-semibold:hover { font-weight: 600; }
+.focus-font-weight-semibold:focus { font-weight: 600; }
+.active-font-weight-semibold:active { font-weight: 600; }
+.disabled-font-weight-semibold:disabled { font-weight: 600; }
+.focus-visible-font-weight-semibold:focus-visible { font-weight: 600; }
+.focus-within-font-weight-semibold:focus-within { font-weight: 600; }
+.group:hover .group-hover-font-weight-semibold { font-weight: 600; }
+.hover-font-weight-bold:hover { font-weight: 700; }
+.focus-font-weight-bold:focus { font-weight: 700; }
+.active-font-weight-bold:active { font-weight: 700; }
+.disabled-font-weight-bold:disabled { font-weight: 700; }
+.focus-visible-font-weight-bold:focus-visible { font-weight: 700; }
+.focus-within-font-weight-bold:focus-within { font-weight: 700; }
+.group:hover .group-hover-font-weight-bold { font-weight: 700; }
+.hover-font-weight-extrabold:hover { font-weight: 800; }
+.focus-font-weight-extrabold:focus { font-weight: 800; }
+.active-font-weight-extrabold:active { font-weight: 800; }
+.disabled-font-weight-extrabold:disabled { font-weight: 800; }
+.focus-visible-font-weight-extrabold:focus-visible { font-weight: 800; }
+.focus-within-font-weight-extrabold:focus-within { font-weight: 800; }
+.group:hover .group-hover-font-weight-extrabold { font-weight: 800; }
+.hover-font-weight-ultrabold:hover { font-weight: 900; }
+.focus-font-weight-ultrabold:focus { font-weight: 900; }
+.active-font-weight-ultrabold:active { font-weight: 900; }
+.disabled-font-weight-ultrabold:disabled { font-weight: 900; }
+.focus-visible-font-weight-ultrabold:focus-visible { font-weight: 900; }
+.focus-within-font-weight-ultrabold:focus-within { font-weight: 900; }
+.group:hover .group-hover-font-weight-ultrabold { font-weight: 900; }
+.hover-font-stretch-ultra-condensed:hover { font-stretch: ultra-condensed; }
+.focus-font-stretch-ultra-condensed:focus { font-stretch: ultra-condensed; }
+.active-font-stretch-ultra-condensed:active { font-stretch: ultra-condensed; }
+.disabled-font-stretch-ultra-condensed:disabled { font-stretch: ultra-condensed; }
+.focus-visible-font-stretch-ultra-condensed:focus-visible { font-stretch: ultra-condensed; }
+.focus-within-font-stretch-ultra-condensed:focus-within { font-stretch: ultra-condensed; }
+.group:hover .group-hover-font-stretch-ultra-condensed { font-stretch: ultra-condensed; }
+.hover-font-stretch-extra-condensed:hover { font-stretch: extra-condensed; }
+.focus-font-stretch-extra-condensed:focus { font-stretch: extra-condensed; }
+.active-font-stretch-extra-condensed:active { font-stretch: extra-condensed; }
+.disabled-font-stretch-extra-condensed:disabled { font-stretch: extra-condensed; }
+.focus-visible-font-stretch-extra-condensed:focus-visible { font-stretch: extra-condensed; }
+.focus-within-font-stretch-extra-condensed:focus-within { font-stretch: extra-condensed; }
+.group:hover .group-hover-font-stretch-extra-condensed { font-stretch: extra-condensed; }
+.hover-font-stretch-condensed:hover { font-stretch: condensed; }
+.focus-font-stretch-condensed:focus { font-stretch: condensed; }
+.active-font-stretch-condensed:active { font-stretch: condensed; }
+.disabled-font-stretch-condensed:disabled { font-stretch: condensed; }
+.focus-visible-font-stretch-condensed:focus-visible { font-stretch: condensed; }
+.focus-within-font-stretch-condensed:focus-within { font-stretch: condensed; }
+.group:hover .group-hover-font-stretch-condensed { font-stretch: condensed; }
+.hover-font-stretch-semi-condensed:hover { font-stretch: semi-condensed; }
+.focus-font-stretch-semi-condensed:focus { font-stretch: semi-condensed; }
+.active-font-stretch-semi-condensed:active { font-stretch: semi-condensed; }
+.disabled-font-stretch-semi-condensed:disabled { font-stretch: semi-condensed; }
+.focus-visible-font-stretch-semi-condensed:focus-visible { font-stretch: semi-condensed; }
+.focus-within-font-stretch-semi-condensed:focus-within { font-stretch: semi-condensed; }
+.group:hover .group-hover-font-stretch-semi-condensed { font-stretch: semi-condensed; }
+.hover-font-stretch-normal:hover { font-stretch: normal; }
+.focus-font-stretch-normal:focus { font-stretch: normal; }
+.active-font-stretch-normal:active { font-stretch: normal; }
+.disabled-font-stretch-normal:disabled { font-stretch: normal; }
+.focus-visible-font-stretch-normal:focus-visible { font-stretch: normal; }
+.focus-within-font-stretch-normal:focus-within { font-stretch: normal; }
+.group:hover .group-hover-font-stretch-normal { font-stretch: normal; }
+.hover-font-stretch-semi-expanded:hover { font-stretch: semi-expanded; }
+.focus-font-stretch-semi-expanded:focus { font-stretch: semi-expanded; }
+.active-font-stretch-semi-expanded:active { font-stretch: semi-expanded; }
+.disabled-font-stretch-semi-expanded:disabled { font-stretch: semi-expanded; }
+.focus-visible-font-stretch-semi-expanded:focus-visible { font-stretch: semi-expanded; }
+.focus-within-font-stretch-semi-expanded:focus-within { font-stretch: semi-expanded; }
+.group:hover .group-hover-font-stretch-semi-expanded { font-stretch: semi-expanded; }
+.hover-font-stretch-expanded:hover { font-stretch: expanded; }
+.focus-font-stretch-expanded:focus { font-stretch: expanded; }
+.active-font-stretch-expanded:active { font-stretch: expanded; }
+.disabled-font-stretch-expanded:disabled { font-stretch: expanded; }
+.focus-visible-font-stretch-expanded:focus-visible { font-stretch: expanded; }
+.focus-within-font-stretch-expanded:focus-within { font-stretch: expanded; }
+.group:hover .group-hover-font-stretch-expanded { font-stretch: expanded; }
+.hover-font-stretch-extra-expanded:hover { font-stretch: extra-expanded; }
+.focus-font-stretch-extra-expanded:focus { font-stretch: extra-expanded; }
+.active-font-stretch-extra-expanded:active { font-stretch: extra-expanded; }
+.disabled-font-stretch-extra-expanded:disabled { font-stretch: extra-expanded; }
+.focus-visible-font-stretch-extra-expanded:focus-visible { font-stretch: extra-expanded; }
+.focus-within-font-stretch-extra-expanded:focus-within { font-stretch: extra-expanded; }
+.group:hover .group-hover-font-stretch-extra-expanded { font-stretch: extra-expanded; }
+.hover-font-stretch-ultra-expanded:hover { font-stretch: ultra-expanded; }
+.focus-font-stretch-ultra-expanded:focus { font-stretch: ultra-expanded; }
+.active-font-stretch-ultra-expanded:active { font-stretch: ultra-expanded; }
+.disabled-font-stretch-ultra-expanded:disabled { font-stretch: ultra-expanded; }
+.focus-visible-font-stretch-ultra-expanded:focus-visible { font-stretch: ultra-expanded; }
+.focus-within-font-stretch-ultra-expanded:focus-within { font-stretch: ultra-expanded; }
+.group:hover .group-hover-font-stretch-ultra-expanded { font-stretch: ultra-expanded; }
+.hover-font-variant-numeric-normal:hover { font-variant-numeric: normal; }
+.focus-font-variant-numeric-normal:focus { font-variant-numeric: normal; }
+.active-font-variant-numeric-normal:active { font-variant-numeric: normal; }
+.disabled-font-variant-numeric-normal:disabled { font-variant-numeric: normal; }
+.focus-visible-font-variant-numeric-normal:focus-visible { font-variant-numeric: normal; }
+.focus-within-font-variant-numeric-normal:focus-within { font-variant-numeric: normal; }
+.group:hover .group-hover-font-variant-numeric-normal { font-variant-numeric: normal; }
+.hover-font-variant-numeric-lining-nums:hover { font-variant-numeric: lining-nums; }
+.focus-font-variant-numeric-lining-nums:focus { font-variant-numeric: lining-nums; }
+.active-font-variant-numeric-lining-nums:active { font-variant-numeric: lining-nums; }
+.disabled-font-variant-numeric-lining-nums:disabled { font-variant-numeric: lining-nums; }
+.focus-visible-font-variant-numeric-lining-nums:focus-visible { font-variant-numeric: lining-nums; }
+.focus-within-font-variant-numeric-lining-nums:focus-within { font-variant-numeric: lining-nums; }
+.group:hover .group-hover-font-variant-numeric-lining-nums { font-variant-numeric: lining-nums; }
+.hover-font-variant-numeric-oldstyle-nums:hover { font-variant-numeric: oldstyle-nums; }
+.focus-font-variant-numeric-oldstyle-nums:focus { font-variant-numeric: oldstyle-nums; }
+.active-font-variant-numeric-oldstyle-nums:active { font-variant-numeric: oldstyle-nums; }
+.disabled-font-variant-numeric-oldstyle-nums:disabled { font-variant-numeric: oldstyle-nums; }
+.focus-visible-font-variant-numeric-oldstyle-nums:focus-visible { font-variant-numeric: oldstyle-nums; }
+.focus-within-font-variant-numeric-oldstyle-nums:focus-within { font-variant-numeric: oldstyle-nums; }
+.group:hover .group-hover-font-variant-numeric-oldstyle-nums { font-variant-numeric: oldstyle-nums; }
+.hover-font-variant-numeric-proportional-nums:hover { font-variant-numeric: proportional-nums; }
+.focus-font-variant-numeric-proportional-nums:focus { font-variant-numeric: proportional-nums; }
+.active-font-variant-numeric-proportional-nums:active { font-variant-numeric: proportional-nums; }
+.disabled-font-variant-numeric-proportional-nums:disabled { font-variant-numeric: proportional-nums; }
+.focus-visible-font-variant-numeric-proportional-nums:focus-visible { font-variant-numeric: proportional-nums; }
+.focus-within-font-variant-numeric-proportional-nums:focus-within { font-variant-numeric: proportional-nums; }
+.group:hover .group-hover-font-variant-numeric-proportional-nums { font-variant-numeric: proportional-nums; }
+.hover-font-variant-numeric-tabular-nums:hover { font-variant-numeric: tabular-nums; }
+.focus-font-variant-numeric-tabular-nums:focus { font-variant-numeric: tabular-nums; }
+.active-font-variant-numeric-tabular-nums:active { font-variant-numeric: tabular-nums; }
+.disabled-font-variant-numeric-tabular-nums:disabled { font-variant-numeric: tabular-nums; }
+.focus-visible-font-variant-numeric-tabular-nums:focus-visible { font-variant-numeric: tabular-nums; }
+.focus-within-font-variant-numeric-tabular-nums:focus-within { font-variant-numeric: tabular-nums; }
+.group:hover .group-hover-font-variant-numeric-tabular-nums { font-variant-numeric: tabular-nums; }
+.hover-font-variant-numeric-diagonal-fractions:hover { font-variant-numeric: diagonal-fractions; }
+.focus-font-variant-numeric-diagonal-fractions:focus { font-variant-numeric: diagonal-fractions; }
+.active-font-variant-numeric-diagonal-fractions:active { font-variant-numeric: diagonal-fractions; }
+.disabled-font-variant-numeric-diagonal-fractions:disabled { font-variant-numeric: diagonal-fractions; }
+.focus-visible-font-variant-numeric-diagonal-fractions:focus-visible { font-variant-numeric: diagonal-fractions; }
+.focus-within-font-variant-numeric-diagonal-fractions:focus-within { font-variant-numeric: diagonal-fractions; }
+.group:hover .group-hover-font-variant-numeric-diagonal-fractions { font-variant-numeric: diagonal-fractions; }
+.hover-font-variant-numeric-stacked-fractions:hover { font-variant-numeric: stacked-fractions; }
+.focus-font-variant-numeric-stacked-fractions:focus { font-variant-numeric: stacked-fractions; }
+.active-font-variant-numeric-stacked-fractions:active { font-variant-numeric: stacked-fractions; }
+.disabled-font-variant-numeric-stacked-fractions:disabled { font-variant-numeric: stacked-fractions; }
+.focus-visible-font-variant-numeric-stacked-fractions:focus-visible { font-variant-numeric: stacked-fractions; }
+.focus-within-font-variant-numeric-stacked-fractions:focus-within { font-variant-numeric: stacked-fractions; }
+.group:hover .group-hover-font-variant-numeric-stacked-fractions { font-variant-numeric: stacked-fractions; }
+
+/* SM Breakpoint */
+@media (min-width: 480px) {
+  .sm-font-sans { font-family: var(--font-sans) !important; }
+  .sm-hover-font-sans:hover { font-family: var(--font-sans) !important; }
+  .sm-focus-font-sans:focus { font-family: var(--font-sans) !important; }
+  .sm-active-font-sans:active { font-family: var(--font-sans) !important; }
+  .sm-disabled-font-sans:disabled { font-family: var(--font-sans) !important; }
+  .sm-focus-visible-font-sans:focus-visible { font-family: var(--font-sans) !important; }
+  .sm-focus-within-font-sans:focus-within { font-family: var(--font-sans) !important; }
+  .group:hover .sm-group-hover-font-sans { font-family: var(--font-sans) !important; }
+  .sm-font-serif { font-family: var(--font-serif) !important; }
+  .sm-hover-font-serif:hover { font-family: var(--font-serif) !important; }
+  .sm-focus-font-serif:focus { font-family: var(--font-serif) !important; }
+  .sm-active-font-serif:active { font-family: var(--font-serif) !important; }
+  .sm-disabled-font-serif:disabled { font-family: var(--font-serif) !important; }
+  .sm-focus-visible-font-serif:focus-visible { font-family: var(--font-serif) !important; }
+  .sm-focus-within-font-serif:focus-within { font-family: var(--font-serif) !important; }
+  .group:hover .sm-group-hover-font-serif { font-family: var(--font-serif) !important; }
+  .sm-font-mono { font-family: var(--font-mono) !important; }
+  .sm-hover-font-mono:hover { font-family: var(--font-mono) !important; }
+  .sm-focus-font-mono:focus { font-family: var(--font-mono) !important; }
+  .sm-active-font-mono:active { font-family: var(--font-mono) !important; }
+  .sm-disabled-font-mono:disabled { font-family: var(--font-mono) !important; }
+  .sm-focus-visible-font-mono:focus-visible { font-family: var(--font-mono) !important; }
+  .sm-focus-within-font-mono:focus-within { font-family: var(--font-mono) !important; }
+  .group:hover .sm-group-hover-font-mono { font-family: var(--font-mono) !important; }
+  .sm-font-size-auto { font-size: auto; }
+  .sm-hover-font-size-auto:hover { font-size: auto; }
+  .sm-focus-font-size-auto:focus { font-size: auto; }
+  .sm-active-font-size-auto:active { font-size: auto; }
+  .sm-disabled-font-size-auto:disabled { font-size: auto; }
+  .sm-focus-visible-font-size-auto:focus-visible { font-size: auto; }
+  .sm-focus-within-font-size-auto:focus-within { font-size: auto; }
+  .group:hover .sm-group-hover-font-size-auto { font-size: auto; }
+  .sm-font-size-0 { font-size: 0; }
+  .sm-hover-font-size-0:hover { font-size: 0; }
+  .sm-focus-font-size-0:focus { font-size: 0; }
+  .sm-active-font-size-0:active { font-size: 0; }
+  .sm-disabled-font-size-0:disabled { font-size: 0; }
+  .sm-focus-visible-font-size-0:focus-visible { font-size: 0; }
+  .sm-focus-within-font-size-0:focus-within { font-size: 0; }
+  .group:hover .sm-group-hover-font-size-0 { font-size: 0; }
+  .sm-font-size-1 { font-size: 0.25rem; }
+  .sm-hover-font-size-1:hover { font-size: 0.25rem; }
+  .sm-focus-font-size-1:focus { font-size: 0.25rem; }
+  .sm-active-font-size-1:active { font-size: 0.25rem; }
+  .sm-disabled-font-size-1:disabled { font-size: 0.25rem; }
+  .sm-focus-visible-font-size-1:focus-visible { font-size: 0.25rem; }
+  .sm-focus-within-font-size-1:focus-within { font-size: 0.25rem; }
+  .group:hover .sm-group-hover-font-size-1 { font-size: 0.25rem; }
+  .sm-font-size-2 { font-size: 0.5rem; }
+  .sm-hover-font-size-2:hover { font-size: 0.5rem; }
+  .sm-focus-font-size-2:focus { font-size: 0.5rem; }
+  .sm-active-font-size-2:active { font-size: 0.5rem; }
+  .sm-disabled-font-size-2:disabled { font-size: 0.5rem; }
+  .sm-focus-visible-font-size-2:focus-visible { font-size: 0.5rem; }
+  .sm-focus-within-font-size-2:focus-within { font-size: 0.5rem; }
+  .group:hover .sm-group-hover-font-size-2 { font-size: 0.5rem; }
+  .sm-font-size-3 { font-size: 0.75rem; }
+  .sm-hover-font-size-3:hover { font-size: 0.75rem; }
+  .sm-focus-font-size-3:focus { font-size: 0.75rem; }
+  .sm-active-font-size-3:active { font-size: 0.75rem; }
+  .sm-disabled-font-size-3:disabled { font-size: 0.75rem; }
+  .sm-focus-visible-font-size-3:focus-visible { font-size: 0.75rem; }
+  .sm-focus-within-font-size-3:focus-within { font-size: 0.75rem; }
+  .group:hover .sm-group-hover-font-size-3 { font-size: 0.75rem; }
+  .sm-font-size-4 { font-size: 1rem; }
+  .sm-hover-font-size-4:hover { font-size: 1rem; }
+  .sm-focus-font-size-4:focus { font-size: 1rem; }
+  .sm-active-font-size-4:active { font-size: 1rem; }
+  .sm-disabled-font-size-4:disabled { font-size: 1rem; }
+  .sm-focus-visible-font-size-4:focus-visible { font-size: 1rem; }
+  .sm-focus-within-font-size-4:focus-within { font-size: 1rem; }
+  .group:hover .sm-group-hover-font-size-4 { font-size: 1rem; }
+  .sm-font-size-5 { font-size: 1.25rem; }
+  .sm-hover-font-size-5:hover { font-size: 1.25rem; }
+  .sm-focus-font-size-5:focus { font-size: 1.25rem; }
+  .sm-active-font-size-5:active { font-size: 1.25rem; }
+  .sm-disabled-font-size-5:disabled { font-size: 1.25rem; }
+  .sm-focus-visible-font-size-5:focus-visible { font-size: 1.25rem; }
+  .sm-focus-within-font-size-5:focus-within { font-size: 1.25rem; }
+  .group:hover .sm-group-hover-font-size-5 { font-size: 1.25rem; }
+  .sm-font-size-6 { font-size: 1.5rem; }
+  .sm-hover-font-size-6:hover { font-size: 1.5rem; }
+  .sm-focus-font-size-6:focus { font-size: 1.5rem; }
+  .sm-active-font-size-6:active { font-size: 1.5rem; }
+  .sm-disabled-font-size-6:disabled { font-size: 1.5rem; }
+  .sm-focus-visible-font-size-6:focus-visible { font-size: 1.5rem; }
+  .sm-focus-within-font-size-6:focus-within { font-size: 1.5rem; }
+  .group:hover .sm-group-hover-font-size-6 { font-size: 1.5rem; }
+  .sm-font-size-7 { font-size: 1.75rem; }
+  .sm-hover-font-size-7:hover { font-size: 1.75rem; }
+  .sm-focus-font-size-7:focus { font-size: 1.75rem; }
+  .sm-active-font-size-7:active { font-size: 1.75rem; }
+  .sm-disabled-font-size-7:disabled { font-size: 1.75rem; }
+  .sm-focus-visible-font-size-7:focus-visible { font-size: 1.75rem; }
+  .sm-focus-within-font-size-7:focus-within { font-size: 1.75rem; }
+  .group:hover .sm-group-hover-font-size-7 { font-size: 1.75rem; }
+  .sm-font-size-8 { font-size: 2rem; }
+  .sm-hover-font-size-8:hover { font-size: 2rem; }
+  .sm-focus-font-size-8:focus { font-size: 2rem; }
+  .sm-active-font-size-8:active { font-size: 2rem; }
+  .sm-disabled-font-size-8:disabled { font-size: 2rem; }
+  .sm-focus-visible-font-size-8:focus-visible { font-size: 2rem; }
+  .sm-focus-within-font-size-8:focus-within { font-size: 2rem; }
+  .group:hover .sm-group-hover-font-size-8 { font-size: 2rem; }
+  .sm-font-size-9 { font-size: 2.25rem; }
+  .sm-hover-font-size-9:hover { font-size: 2.25rem; }
+  .sm-focus-font-size-9:focus { font-size: 2.25rem; }
+  .sm-active-font-size-9:active { font-size: 2.25rem; }
+  .sm-disabled-font-size-9:disabled { font-size: 2.25rem; }
+  .sm-focus-visible-font-size-9:focus-visible { font-size: 2.25rem; }
+  .sm-focus-within-font-size-9:focus-within { font-size: 2.25rem; }
+  .group:hover .sm-group-hover-font-size-9 { font-size: 2.25rem; }
+  .sm-font-size-10 { font-size: 2.5rem; }
+  .sm-hover-font-size-10:hover { font-size: 2.5rem; }
+  .sm-focus-font-size-10:focus { font-size: 2.5rem; }
+  .sm-active-font-size-10:active { font-size: 2.5rem; }
+  .sm-disabled-font-size-10:disabled { font-size: 2.5rem; }
+  .sm-focus-visible-font-size-10:focus-visible { font-size: 2.5rem; }
+  .sm-focus-within-font-size-10:focus-within { font-size: 2.5rem; }
+  .group:hover .sm-group-hover-font-size-10 { font-size: 2.5rem; }
+  .sm-font-size-12 { font-size: 3rem; }
+  .sm-hover-font-size-12:hover { font-size: 3rem; }
+  .sm-focus-font-size-12:focus { font-size: 3rem; }
+  .sm-active-font-size-12:active { font-size: 3rem; }
+  .sm-disabled-font-size-12:disabled { font-size: 3rem; }
+  .sm-focus-visible-font-size-12:focus-visible { font-size: 3rem; }
+  .sm-focus-within-font-size-12:focus-within { font-size: 3rem; }
+  .group:hover .sm-group-hover-font-size-12 { font-size: 3rem; }
+  .sm-font-size-14 { font-size: 3.5rem; }
+  .sm-hover-font-size-14:hover { font-size: 3.5rem; }
+  .sm-focus-font-size-14:focus { font-size: 3.5rem; }
+  .sm-active-font-size-14:active { font-size: 3.5rem; }
+  .sm-disabled-font-size-14:disabled { font-size: 3.5rem; }
+  .sm-focus-visible-font-size-14:focus-visible { font-size: 3.5rem; }
+  .sm-focus-within-font-size-14:focus-within { font-size: 3.5rem; }
+  .group:hover .sm-group-hover-font-size-14 { font-size: 3.5rem; }
+  .sm-font-size-16 { font-size: 4rem; }
+  .sm-hover-font-size-16:hover { font-size: 4rem; }
+  .sm-focus-font-size-16:focus { font-size: 4rem; }
+  .sm-active-font-size-16:active { font-size: 4rem; }
+  .sm-disabled-font-size-16:disabled { font-size: 4rem; }
+  .sm-focus-visible-font-size-16:focus-visible { font-size: 4rem; }
+  .sm-focus-within-font-size-16:focus-within { font-size: 4rem; }
+  .group:hover .sm-group-hover-font-size-16 { font-size: 4rem; }
+  .sm-font-size-18 { font-size: 4.5rem; }
+  .sm-hover-font-size-18:hover { font-size: 4.5rem; }
+  .sm-focus-font-size-18:focus { font-size: 4.5rem; }
+  .sm-active-font-size-18:active { font-size: 4.5rem; }
+  .sm-disabled-font-size-18:disabled { font-size: 4.5rem; }
+  .sm-focus-visible-font-size-18:focus-visible { font-size: 4.5rem; }
+  .sm-focus-within-font-size-18:focus-within { font-size: 4.5rem; }
+  .group:hover .sm-group-hover-font-size-18 { font-size: 4.5rem; }
+  .sm-font-size-20 { font-size: 5rem; }
+  .sm-hover-font-size-20:hover { font-size: 5rem; }
+  .sm-focus-font-size-20:focus { font-size: 5rem; }
+  .sm-active-font-size-20:active { font-size: 5rem; }
+  .sm-disabled-font-size-20:disabled { font-size: 5rem; }
+  .sm-focus-visible-font-size-20:focus-visible { font-size: 5rem; }
+  .sm-focus-within-font-size-20:focus-within { font-size: 5rem; }
+  .group:hover .sm-group-hover-font-size-20 { font-size: 5rem; }
+  .sm-font-size-24 { font-size: 6rem; }
+  .sm-hover-font-size-24:hover { font-size: 6rem; }
+  .sm-focus-font-size-24:focus { font-size: 6rem; }
+  .sm-active-font-size-24:active { font-size: 6rem; }
+  .sm-disabled-font-size-24:disabled { font-size: 6rem; }
+  .sm-focus-visible-font-size-24:focus-visible { font-size: 6rem; }
+  .sm-focus-within-font-size-24:focus-within { font-size: 6rem; }
+  .group:hover .sm-group-hover-font-size-24 { font-size: 6rem; }
+  .sm-font-size-28 { font-size: 7rem; }
+  .sm-hover-font-size-28:hover { font-size: 7rem; }
+  .sm-focus-font-size-28:focus { font-size: 7rem; }
+  .sm-active-font-size-28:active { font-size: 7rem; }
+  .sm-disabled-font-size-28:disabled { font-size: 7rem; }
+  .sm-focus-visible-font-size-28:focus-visible { font-size: 7rem; }
+  .sm-focus-within-font-size-28:focus-within { font-size: 7rem; }
+  .group:hover .sm-group-hover-font-size-28 { font-size: 7rem; }
+  .sm-font-size-32 { font-size: 8rem; }
+  .sm-hover-font-size-32:hover { font-size: 8rem; }
+  .sm-focus-font-size-32:focus { font-size: 8rem; }
+  .sm-active-font-size-32:active { font-size: 8rem; }
+  .sm-disabled-font-size-32:disabled { font-size: 8rem; }
+  .sm-focus-visible-font-size-32:focus-visible { font-size: 8rem; }
+  .sm-focus-within-font-size-32:focus-within { font-size: 8rem; }
+  .group:hover .sm-group-hover-font-size-32 { font-size: 8rem; }
+  .sm-font-style-normal { font-style: normal; }
+  .sm-hover-font-style-normal:hover { font-style: normal; }
+  .sm-focus-font-style-normal:focus { font-style: normal; }
+  .sm-active-font-style-normal:active { font-style: normal; }
+  .sm-disabled-font-style-normal:disabled { font-style: normal; }
+  .sm-focus-visible-font-style-normal:focus-visible { font-style: normal; }
+  .sm-focus-within-font-style-normal:focus-within { font-style: normal; }
+  .group:hover .sm-group-hover-font-style-normal { font-style: normal; }
+  .sm-font-style-italic { font-style: italic; }
+  .sm-hover-font-style-italic:hover { font-style: italic; }
+  .sm-focus-font-style-italic:focus { font-style: italic; }
+  .sm-active-font-style-italic:active { font-style: italic; }
+  .sm-disabled-font-style-italic:disabled { font-style: italic; }
+  .sm-focus-visible-font-style-italic:focus-visible { font-style: italic; }
+  .sm-focus-within-font-style-italic:focus-within { font-style: italic; }
+  .group:hover .sm-group-hover-font-style-italic { font-style: italic; }
+  .sm-font-style-oblique { font-style: oblique; }
+  .sm-hover-font-style-oblique:hover { font-style: oblique; }
+  .sm-focus-font-style-oblique:focus { font-style: oblique; }
+  .sm-active-font-style-oblique:active { font-style: oblique; }
+  .sm-disabled-font-style-oblique:disabled { font-style: oblique; }
+  .sm-focus-visible-font-style-oblique:focus-visible { font-style: oblique; }
+  .sm-focus-within-font-style-oblique:focus-within { font-style: oblique; }
+  .group:hover .sm-group-hover-font-style-oblique { font-style: oblique; }
+  .sm-font-smoothing-antialiased { -webkit-font-smoothing: antialiased; }
+  .sm-hover-font-smoothing-antialiased:hover { -webkit-font-smoothing: antialiased; }
+  .sm-focus-font-smoothing-antialiased:focus { -webkit-font-smoothing: antialiased; }
+  .sm-active-font-smoothing-antialiased:active { -webkit-font-smoothing: antialiased; }
+  .sm-disabled-font-smoothing-antialiased:disabled { -webkit-font-smoothing: antialiased; }
+  .sm-focus-visible-font-smoothing-antialiased:focus-visible { -webkit-font-smoothing: antialiased; }
+  .sm-focus-within-font-smoothing-antialiased:focus-within { -webkit-font-smoothing: antialiased; }
+  .group:hover .sm-group-hover-font-smoothing-antialiased { -webkit-font-smoothing: antialiased; }
+  .sm-font-smoothing-subpixel-antialiased { -webkit-font-smoothing: subpixel-antialiased; }
+  .sm-hover-font-smoothing-subpixel-antialiased:hover { -webkit-font-smoothing: subpixel-antialiased; }
+  .sm-focus-font-smoothing-subpixel-antialiased:focus { -webkit-font-smoothing: subpixel-antialiased; }
+  .sm-active-font-smoothing-subpixel-antialiased:active { -webkit-font-smoothing: subpixel-antialiased; }
+  .sm-disabled-font-smoothing-subpixel-antialiased:disabled { -webkit-font-smoothing: subpixel-antialiased; }
+  .sm-focus-visible-font-smoothing-subpixel-antialiased:focus-visible { -webkit-font-smoothing: subpixel-antialiased; }
+  .sm-focus-within-font-smoothing-subpixel-antialiased:focus-within { -webkit-font-smoothing: subpixel-antialiased; }
+  .group:hover .sm-group-hover-font-smoothing-subpixel-antialiased { -webkit-font-smoothing: subpixel-antialiased; }
+  .sm-font-weight-thin { font-weight: 100; }
+  .sm-hover-font-weight-thin:hover { font-weight: 100; }
+  .sm-focus-font-weight-thin:focus { font-weight: 100; }
+  .sm-active-font-weight-thin:active { font-weight: 100; }
+  .sm-disabled-font-weight-thin:disabled { font-weight: 100; }
+  .sm-focus-visible-font-weight-thin:focus-visible { font-weight: 100; }
+  .sm-focus-within-font-weight-thin:focus-within { font-weight: 100; }
+  .group:hover .sm-group-hover-font-weight-thin { font-weight: 100; }
+  .sm-font-weight-extralight { font-weight: 200; }
+  .sm-hover-font-weight-extralight:hover { font-weight: 200; }
+  .sm-focus-font-weight-extralight:focus { font-weight: 200; }
+  .sm-active-font-weight-extralight:active { font-weight: 200; }
+  .sm-disabled-font-weight-extralight:disabled { font-weight: 200; }
+  .sm-focus-visible-font-weight-extralight:focus-visible { font-weight: 200; }
+  .sm-focus-within-font-weight-extralight:focus-within { font-weight: 200; }
+  .group:hover .sm-group-hover-font-weight-extralight { font-weight: 200; }
+  .sm-font-weight-light { font-weight: 300; }
+  .sm-hover-font-weight-light:hover { font-weight: 300; }
+  .sm-focus-font-weight-light:focus { font-weight: 300; }
+  .sm-active-font-weight-light:active { font-weight: 300; }
+  .sm-disabled-font-weight-light:disabled { font-weight: 300; }
+  .sm-focus-visible-font-weight-light:focus-visible { font-weight: 300; }
+  .sm-focus-within-font-weight-light:focus-within { font-weight: 300; }
+  .group:hover .sm-group-hover-font-weight-light { font-weight: 300; }
+  .sm-font-weight-regular { font-weight: 400; }
+  .sm-hover-font-weight-regular:hover { font-weight: 400; }
+  .sm-focus-font-weight-regular:focus { font-weight: 400; }
+  .sm-active-font-weight-regular:active { font-weight: 400; }
+  .sm-disabled-font-weight-regular:disabled { font-weight: 400; }
+  .sm-focus-visible-font-weight-regular:focus-visible { font-weight: 400; }
+  .sm-focus-within-font-weight-regular:focus-within { font-weight: 400; }
+  .group:hover .sm-group-hover-font-weight-regular { font-weight: 400; }
+  .sm-font-weight-medium { font-weight: 500; }
+  .sm-hover-font-weight-medium:hover { font-weight: 500; }
+  .sm-focus-font-weight-medium:focus { font-weight: 500; }
+  .sm-active-font-weight-medium:active { font-weight: 500; }
+  .sm-disabled-font-weight-medium:disabled { font-weight: 500; }
+  .sm-focus-visible-font-weight-medium:focus-visible { font-weight: 500; }
+  .sm-focus-within-font-weight-medium:focus-within { font-weight: 500; }
+  .group:hover .sm-group-hover-font-weight-medium { font-weight: 500; }
+  .sm-font-weight-semibold { font-weight: 600; }
+  .sm-hover-font-weight-semibold:hover { font-weight: 600; }
+  .sm-focus-font-weight-semibold:focus { font-weight: 600; }
+  .sm-active-font-weight-semibold:active { font-weight: 600; }
+  .sm-disabled-font-weight-semibold:disabled { font-weight: 600; }
+  .sm-focus-visible-font-weight-semibold:focus-visible { font-weight: 600; }
+  .sm-focus-within-font-weight-semibold:focus-within { font-weight: 600; }
+  .group:hover .sm-group-hover-font-weight-semibold { font-weight: 600; }
+  .sm-font-weight-bold { font-weight: 700; }
+  .sm-hover-font-weight-bold:hover { font-weight: 700; }
+  .sm-focus-font-weight-bold:focus { font-weight: 700; }
+  .sm-active-font-weight-bold:active { font-weight: 700; }
+  .sm-disabled-font-weight-bold:disabled { font-weight: 700; }
+  .sm-focus-visible-font-weight-bold:focus-visible { font-weight: 700; }
+  .sm-focus-within-font-weight-bold:focus-within { font-weight: 700; }
+  .group:hover .sm-group-hover-font-weight-bold { font-weight: 700; }
+  .sm-font-weight-extrabold { font-weight: 800; }
+  .sm-hover-font-weight-extrabold:hover { font-weight: 800; }
+  .sm-focus-font-weight-extrabold:focus { font-weight: 800; }
+  .sm-active-font-weight-extrabold:active { font-weight: 800; }
+  .sm-disabled-font-weight-extrabold:disabled { font-weight: 800; }
+  .sm-focus-visible-font-weight-extrabold:focus-visible { font-weight: 800; }
+  .sm-focus-within-font-weight-extrabold:focus-within { font-weight: 800; }
+  .group:hover .sm-group-hover-font-weight-extrabold { font-weight: 800; }
+  .sm-font-weight-ultrabold { font-weight: 900; }
+  .sm-hover-font-weight-ultrabold:hover { font-weight: 900; }
+  .sm-focus-font-weight-ultrabold:focus { font-weight: 900; }
+  .sm-active-font-weight-ultrabold:active { font-weight: 900; }
+  .sm-disabled-font-weight-ultrabold:disabled { font-weight: 900; }
+  .sm-focus-visible-font-weight-ultrabold:focus-visible { font-weight: 900; }
+  .sm-focus-within-font-weight-ultrabold:focus-within { font-weight: 900; }
+  .group:hover .sm-group-hover-font-weight-ultrabold { font-weight: 900; }
+  .sm-font-stretch-ultra-condensed { font-stretch: ultra-condensed; }
+  .sm-hover-font-stretch-ultra-condensed:hover { font-stretch: ultra-condensed; }
+  .sm-focus-font-stretch-ultra-condensed:focus { font-stretch: ultra-condensed; }
+  .sm-active-font-stretch-ultra-condensed:active { font-stretch: ultra-condensed; }
+  .sm-disabled-font-stretch-ultra-condensed:disabled { font-stretch: ultra-condensed; }
+  .sm-focus-visible-font-stretch-ultra-condensed:focus-visible { font-stretch: ultra-condensed; }
+  .sm-focus-within-font-stretch-ultra-condensed:focus-within { font-stretch: ultra-condensed; }
+  .group:hover .sm-group-hover-font-stretch-ultra-condensed { font-stretch: ultra-condensed; }
+  .sm-font-stretch-extra-condensed { font-stretch: extra-condensed; }
+  .sm-hover-font-stretch-extra-condensed:hover { font-stretch: extra-condensed; }
+  .sm-focus-font-stretch-extra-condensed:focus { font-stretch: extra-condensed; }
+  .sm-active-font-stretch-extra-condensed:active { font-stretch: extra-condensed; }
+  .sm-disabled-font-stretch-extra-condensed:disabled { font-stretch: extra-condensed; }
+  .sm-focus-visible-font-stretch-extra-condensed:focus-visible { font-stretch: extra-condensed; }
+  .sm-focus-within-font-stretch-extra-condensed:focus-within { font-stretch: extra-condensed; }
+  .group:hover .sm-group-hover-font-stretch-extra-condensed { font-stretch: extra-condensed; }
+  .sm-font-stretch-condensed { font-stretch: condensed; }
+  .sm-hover-font-stretch-condensed:hover { font-stretch: condensed; }
+  .sm-focus-font-stretch-condensed:focus { font-stretch: condensed; }
+  .sm-active-font-stretch-condensed:active { font-stretch: condensed; }
+  .sm-disabled-font-stretch-condensed:disabled { font-stretch: condensed; }
+  .sm-focus-visible-font-stretch-condensed:focus-visible { font-stretch: condensed; }
+  .sm-focus-within-font-stretch-condensed:focus-within { font-stretch: condensed; }
+  .group:hover .sm-group-hover-font-stretch-condensed { font-stretch: condensed; }
+  .sm-font-stretch-semi-condensed { font-stretch: semi-condensed; }
+  .sm-hover-font-stretch-semi-condensed:hover { font-stretch: semi-condensed; }
+  .sm-focus-font-stretch-semi-condensed:focus { font-stretch: semi-condensed; }
+  .sm-active-font-stretch-semi-condensed:active { font-stretch: semi-condensed; }
+  .sm-disabled-font-stretch-semi-condensed:disabled { font-stretch: semi-condensed; }
+  .sm-focus-visible-font-stretch-semi-condensed:focus-visible { font-stretch: semi-condensed; }
+  .sm-focus-within-font-stretch-semi-condensed:focus-within { font-stretch: semi-condensed; }
+  .group:hover .sm-group-hover-font-stretch-semi-condensed { font-stretch: semi-condensed; }
+  .sm-font-stretch-normal { font-stretch: normal; }
+  .sm-hover-font-stretch-normal:hover { font-stretch: normal; }
+  .sm-focus-font-stretch-normal:focus { font-stretch: normal; }
+  .sm-active-font-stretch-normal:active { font-stretch: normal; }
+  .sm-disabled-font-stretch-normal:disabled { font-stretch: normal; }
+  .sm-focus-visible-font-stretch-normal:focus-visible { font-stretch: normal; }
+  .sm-focus-within-font-stretch-normal:focus-within { font-stretch: normal; }
+  .group:hover .sm-group-hover-font-stretch-normal { font-stretch: normal; }
+  .sm-font-stretch-semi-expanded { font-stretch: semi-expanded; }
+  .sm-hover-font-stretch-semi-expanded:hover { font-stretch: semi-expanded; }
+  .sm-focus-font-stretch-semi-expanded:focus { font-stretch: semi-expanded; }
+  .sm-active-font-stretch-semi-expanded:active { font-stretch: semi-expanded; }
+  .sm-disabled-font-stretch-semi-expanded:disabled { font-stretch: semi-expanded; }
+  .sm-focus-visible-font-stretch-semi-expanded:focus-visible { font-stretch: semi-expanded; }
+  .sm-focus-within-font-stretch-semi-expanded:focus-within { font-stretch: semi-expanded; }
+  .group:hover .sm-group-hover-font-stretch-semi-expanded { font-stretch: semi-expanded; }
+  .sm-font-stretch-expanded { font-stretch: expanded; }
+  .sm-hover-font-stretch-expanded:hover { font-stretch: expanded; }
+  .sm-focus-font-stretch-expanded:focus { font-stretch: expanded; }
+  .sm-active-font-stretch-expanded:active { font-stretch: expanded; }
+  .sm-disabled-font-stretch-expanded:disabled { font-stretch: expanded; }
+  .sm-focus-visible-font-stretch-expanded:focus-visible { font-stretch: expanded; }
+  .sm-focus-within-font-stretch-expanded:focus-within { font-stretch: expanded; }
+  .group:hover .sm-group-hover-font-stretch-expanded { font-stretch: expanded; }
+  .sm-font-stretch-extra-expanded { font-stretch: extra-expanded; }
+  .sm-hover-font-stretch-extra-expanded:hover { font-stretch: extra-expanded; }
+  .sm-focus-font-stretch-extra-expanded:focus { font-stretch: extra-expanded; }
+  .sm-active-font-stretch-extra-expanded:active { font-stretch: extra-expanded; }
+  .sm-disabled-font-stretch-extra-expanded:disabled { font-stretch: extra-expanded; }
+  .sm-focus-visible-font-stretch-extra-expanded:focus-visible { font-stretch: extra-expanded; }
+  .sm-focus-within-font-stretch-extra-expanded:focus-within { font-stretch: extra-expanded; }
+  .group:hover .sm-group-hover-font-stretch-extra-expanded { font-stretch: extra-expanded; }
+  .sm-font-stretch-ultra-expanded { font-stretch: ultra-expanded; }
+  .sm-hover-font-stretch-ultra-expanded:hover { font-stretch: ultra-expanded; }
+  .sm-focus-font-stretch-ultra-expanded:focus { font-stretch: ultra-expanded; }
+  .sm-active-font-stretch-ultra-expanded:active { font-stretch: ultra-expanded; }
+  .sm-disabled-font-stretch-ultra-expanded:disabled { font-stretch: ultra-expanded; }
+  .sm-focus-visible-font-stretch-ultra-expanded:focus-visible { font-stretch: ultra-expanded; }
+  .sm-focus-within-font-stretch-ultra-expanded:focus-within { font-stretch: ultra-expanded; }
+  .group:hover .sm-group-hover-font-stretch-ultra-expanded { font-stretch: ultra-expanded; }
+  .sm-font-variant-numeric-normal { font-variant-numeric: normal; }
+  .sm-hover-font-variant-numeric-normal:hover { font-variant-numeric: normal; }
+  .sm-focus-font-variant-numeric-normal:focus { font-variant-numeric: normal; }
+  .sm-active-font-variant-numeric-normal:active { font-variant-numeric: normal; }
+  .sm-disabled-font-variant-numeric-normal:disabled { font-variant-numeric: normal; }
+  .sm-focus-visible-font-variant-numeric-normal:focus-visible { font-variant-numeric: normal; }
+  .sm-focus-within-font-variant-numeric-normal:focus-within { font-variant-numeric: normal; }
+  .group:hover .sm-group-hover-font-variant-numeric-normal { font-variant-numeric: normal; }
+  .sm-font-variant-numeric-lining-nums { font-variant-numeric: lining-nums; }
+  .sm-hover-font-variant-numeric-lining-nums:hover { font-variant-numeric: lining-nums; }
+  .sm-focus-font-variant-numeric-lining-nums:focus { font-variant-numeric: lining-nums; }
+  .sm-active-font-variant-numeric-lining-nums:active { font-variant-numeric: lining-nums; }
+  .sm-disabled-font-variant-numeric-lining-nums:disabled { font-variant-numeric: lining-nums; }
+  .sm-focus-visible-font-variant-numeric-lining-nums:focus-visible { font-variant-numeric: lining-nums; }
+  .sm-focus-within-font-variant-numeric-lining-nums:focus-within { font-variant-numeric: lining-nums; }
+  .group:hover .sm-group-hover-font-variant-numeric-lining-nums { font-variant-numeric: lining-nums; }
+  .sm-font-variant-numeric-oldstyle-nums { font-variant-numeric: oldstyle-nums; }
+  .sm-hover-font-variant-numeric-oldstyle-nums:hover { font-variant-numeric: oldstyle-nums; }
+  .sm-focus-font-variant-numeric-oldstyle-nums:focus { font-variant-numeric: oldstyle-nums; }
+  .sm-active-font-variant-numeric-oldstyle-nums:active { font-variant-numeric: oldstyle-nums; }
+  .sm-disabled-font-variant-numeric-oldstyle-nums:disabled { font-variant-numeric: oldstyle-nums; }
+  .sm-focus-visible-font-variant-numeric-oldstyle-nums:focus-visible { font-variant-numeric: oldstyle-nums; }
+  .sm-focus-within-font-variant-numeric-oldstyle-nums:focus-within { font-variant-numeric: oldstyle-nums; }
+  .group:hover .sm-group-hover-font-variant-numeric-oldstyle-nums { font-variant-numeric: oldstyle-nums; }
+  .sm-font-variant-numeric-proportional-nums { font-variant-numeric: proportional-nums; }
+  .sm-hover-font-variant-numeric-proportional-nums:hover { font-variant-numeric: proportional-nums; }
+  .sm-focus-font-variant-numeric-proportional-nums:focus { font-variant-numeric: proportional-nums; }
+  .sm-active-font-variant-numeric-proportional-nums:active { font-variant-numeric: proportional-nums; }
+  .sm-disabled-font-variant-numeric-proportional-nums:disabled { font-variant-numeric: proportional-nums; }
+  .sm-focus-visible-font-variant-numeric-proportional-nums:focus-visible { font-variant-numeric: proportional-nums; }
+  .sm-focus-within-font-variant-numeric-proportional-nums:focus-within { font-variant-numeric: proportional-nums; }
+  .group:hover .sm-group-hover-font-variant-numeric-proportional-nums { font-variant-numeric: proportional-nums; }
+  .sm-font-variant-numeric-tabular-nums { font-variant-numeric: tabular-nums; }
+  .sm-hover-font-variant-numeric-tabular-nums:hover { font-variant-numeric: tabular-nums; }
+  .sm-focus-font-variant-numeric-tabular-nums:focus { font-variant-numeric: tabular-nums; }
+  .sm-active-font-variant-numeric-tabular-nums:active { font-variant-numeric: tabular-nums; }
+  .sm-disabled-font-variant-numeric-tabular-nums:disabled { font-variant-numeric: tabular-nums; }
+  .sm-focus-visible-font-variant-numeric-tabular-nums:focus-visible { font-variant-numeric: tabular-nums; }
+  .sm-focus-within-font-variant-numeric-tabular-nums:focus-within { font-variant-numeric: tabular-nums; }
+  .group:hover .sm-group-hover-font-variant-numeric-tabular-nums { font-variant-numeric: tabular-nums; }
+  .sm-font-variant-numeric-diagonal-fractions { font-variant-numeric: diagonal-fractions; }
+  .sm-hover-font-variant-numeric-diagonal-fractions:hover { font-variant-numeric: diagonal-fractions; }
+  .sm-focus-font-variant-numeric-diagonal-fractions:focus { font-variant-numeric: diagonal-fractions; }
+  .sm-active-font-variant-numeric-diagonal-fractions:active { font-variant-numeric: diagonal-fractions; }
+  .sm-disabled-font-variant-numeric-diagonal-fractions:disabled { font-variant-numeric: diagonal-fractions; }
+  .sm-focus-visible-font-variant-numeric-diagonal-fractions:focus-visible { font-variant-numeric: diagonal-fractions; }
+  .sm-focus-within-font-variant-numeric-diagonal-fractions:focus-within { font-variant-numeric: diagonal-fractions; }
+  .group:hover .sm-group-hover-font-variant-numeric-diagonal-fractions { font-variant-numeric: diagonal-fractions; }
+  .sm-font-variant-numeric-stacked-fractions { font-variant-numeric: stacked-fractions; }
+  .sm-hover-font-variant-numeric-stacked-fractions:hover { font-variant-numeric: stacked-fractions; }
+  .sm-focus-font-variant-numeric-stacked-fractions:focus { font-variant-numeric: stacked-fractions; }
+  .sm-active-font-variant-numeric-stacked-fractions:active { font-variant-numeric: stacked-fractions; }
+  .sm-disabled-font-variant-numeric-stacked-fractions:disabled { font-variant-numeric: stacked-fractions; }
+  .sm-focus-visible-font-variant-numeric-stacked-fractions:focus-visible { font-variant-numeric: stacked-fractions; }
+  .sm-focus-within-font-variant-numeric-stacked-fractions:focus-within { font-variant-numeric: stacked-fractions; }
+  .group:hover .sm-group-hover-font-variant-numeric-stacked-fractions { font-variant-numeric: stacked-fractions; }
+}
+
+/* MD Breakpoint */
+@media (min-width: 768px) {
+  .md-font-sans { font-family: var(--font-sans) !important; }
+  .md-hover-font-sans:hover { font-family: var(--font-sans) !important; }
+  .md-focus-font-sans:focus { font-family: var(--font-sans) !important; }
+  .md-active-font-sans:active { font-family: var(--font-sans) !important; }
+  .md-disabled-font-sans:disabled { font-family: var(--font-sans) !important; }
+  .md-focus-visible-font-sans:focus-visible { font-family: var(--font-sans) !important; }
+  .md-focus-within-font-sans:focus-within { font-family: var(--font-sans) !important; }
+  .group:hover .md-group-hover-font-sans { font-family: var(--font-sans) !important; }
+  .md-font-serif { font-family: var(--font-serif) !important; }
+  .md-hover-font-serif:hover { font-family: var(--font-serif) !important; }
+  .md-focus-font-serif:focus { font-family: var(--font-serif) !important; }
+  .md-active-font-serif:active { font-family: var(--font-serif) !important; }
+  .md-disabled-font-serif:disabled { font-family: var(--font-serif) !important; }
+  .md-focus-visible-font-serif:focus-visible { font-family: var(--font-serif) !important; }
+  .md-focus-within-font-serif:focus-within { font-family: var(--font-serif) !important; }
+  .group:hover .md-group-hover-font-serif { font-family: var(--font-serif) !important; }
+  .md-font-mono { font-family: var(--font-mono) !important; }
+  .md-hover-font-mono:hover { font-family: var(--font-mono) !important; }
+  .md-focus-font-mono:focus { font-family: var(--font-mono) !important; }
+  .md-active-font-mono:active { font-family: var(--font-mono) !important; }
+  .md-disabled-font-mono:disabled { font-family: var(--font-mono) !important; }
+  .md-focus-visible-font-mono:focus-visible { font-family: var(--font-mono) !important; }
+  .md-focus-within-font-mono:focus-within { font-family: var(--font-mono) !important; }
+  .group:hover .md-group-hover-font-mono { font-family: var(--font-mono) !important; }
+  .md-font-size-auto { font-size: auto; }
+  .md-hover-font-size-auto:hover { font-size: auto; }
+  .md-focus-font-size-auto:focus { font-size: auto; }
+  .md-active-font-size-auto:active { font-size: auto; }
+  .md-disabled-font-size-auto:disabled { font-size: auto; }
+  .md-focus-visible-font-size-auto:focus-visible { font-size: auto; }
+  .md-focus-within-font-size-auto:focus-within { font-size: auto; }
+  .group:hover .md-group-hover-font-size-auto { font-size: auto; }
+  .md-font-size-0 { font-size: 0; }
+  .md-hover-font-size-0:hover { font-size: 0; }
+  .md-focus-font-size-0:focus { font-size: 0; }
+  .md-active-font-size-0:active { font-size: 0; }
+  .md-disabled-font-size-0:disabled { font-size: 0; }
+  .md-focus-visible-font-size-0:focus-visible { font-size: 0; }
+  .md-focus-within-font-size-0:focus-within { font-size: 0; }
+  .group:hover .md-group-hover-font-size-0 { font-size: 0; }
+  .md-font-size-1 { font-size: 0.25rem; }
+  .md-hover-font-size-1:hover { font-size: 0.25rem; }
+  .md-focus-font-size-1:focus { font-size: 0.25rem; }
+  .md-active-font-size-1:active { font-size: 0.25rem; }
+  .md-disabled-font-size-1:disabled { font-size: 0.25rem; }
+  .md-focus-visible-font-size-1:focus-visible { font-size: 0.25rem; }
+  .md-focus-within-font-size-1:focus-within { font-size: 0.25rem; }
+  .group:hover .md-group-hover-font-size-1 { font-size: 0.25rem; }
+  .md-font-size-2 { font-size: 0.5rem; }
+  .md-hover-font-size-2:hover { font-size: 0.5rem; }
+  .md-focus-font-size-2:focus { font-size: 0.5rem; }
+  .md-active-font-size-2:active { font-size: 0.5rem; }
+  .md-disabled-font-size-2:disabled { font-size: 0.5rem; }
+  .md-focus-visible-font-size-2:focus-visible { font-size: 0.5rem; }
+  .md-focus-within-font-size-2:focus-within { font-size: 0.5rem; }
+  .group:hover .md-group-hover-font-size-2 { font-size: 0.5rem; }
+  .md-font-size-3 { font-size: 0.75rem; }
+  .md-hover-font-size-3:hover { font-size: 0.75rem; }
+  .md-focus-font-size-3:focus { font-size: 0.75rem; }
+  .md-active-font-size-3:active { font-size: 0.75rem; }
+  .md-disabled-font-size-3:disabled { font-size: 0.75rem; }
+  .md-focus-visible-font-size-3:focus-visible { font-size: 0.75rem; }
+  .md-focus-within-font-size-3:focus-within { font-size: 0.75rem; }
+  .group:hover .md-group-hover-font-size-3 { font-size: 0.75rem; }
+  .md-font-size-4 { font-size: 1rem; }
+  .md-hover-font-size-4:hover { font-size: 1rem; }
+  .md-focus-font-size-4:focus { font-size: 1rem; }
+  .md-active-font-size-4:active { font-size: 1rem; }
+  .md-disabled-font-size-4:disabled { font-size: 1rem; }
+  .md-focus-visible-font-size-4:focus-visible { font-size: 1rem; }
+  .md-focus-within-font-size-4:focus-within { font-size: 1rem; }
+  .group:hover .md-group-hover-font-size-4 { font-size: 1rem; }
+  .md-font-size-5 { font-size: 1.25rem; }
+  .md-hover-font-size-5:hover { font-size: 1.25rem; }
+  .md-focus-font-size-5:focus { font-size: 1.25rem; }
+  .md-active-font-size-5:active { font-size: 1.25rem; }
+  .md-disabled-font-size-5:disabled { font-size: 1.25rem; }
+  .md-focus-visible-font-size-5:focus-visible { font-size: 1.25rem; }
+  .md-focus-within-font-size-5:focus-within { font-size: 1.25rem; }
+  .group:hover .md-group-hover-font-size-5 { font-size: 1.25rem; }
+  .md-font-size-6 { font-size: 1.5rem; }
+  .md-hover-font-size-6:hover { font-size: 1.5rem; }
+  .md-focus-font-size-6:focus { font-size: 1.5rem; }
+  .md-active-font-size-6:active { font-size: 1.5rem; }
+  .md-disabled-font-size-6:disabled { font-size: 1.5rem; }
+  .md-focus-visible-font-size-6:focus-visible { font-size: 1.5rem; }
+  .md-focus-within-font-size-6:focus-within { font-size: 1.5rem; }
+  .group:hover .md-group-hover-font-size-6 { font-size: 1.5rem; }
+  .md-font-size-7 { font-size: 1.75rem; }
+  .md-hover-font-size-7:hover { font-size: 1.75rem; }
+  .md-focus-font-size-7:focus { font-size: 1.75rem; }
+  .md-active-font-size-7:active { font-size: 1.75rem; }
+  .md-disabled-font-size-7:disabled { font-size: 1.75rem; }
+  .md-focus-visible-font-size-7:focus-visible { font-size: 1.75rem; }
+  .md-focus-within-font-size-7:focus-within { font-size: 1.75rem; }
+  .group:hover .md-group-hover-font-size-7 { font-size: 1.75rem; }
+  .md-font-size-8 { font-size: 2rem; }
+  .md-hover-font-size-8:hover { font-size: 2rem; }
+  .md-focus-font-size-8:focus { font-size: 2rem; }
+  .md-active-font-size-8:active { font-size: 2rem; }
+  .md-disabled-font-size-8:disabled { font-size: 2rem; }
+  .md-focus-visible-font-size-8:focus-visible { font-size: 2rem; }
+  .md-focus-within-font-size-8:focus-within { font-size: 2rem; }
+  .group:hover .md-group-hover-font-size-8 { font-size: 2rem; }
+  .md-font-size-9 { font-size: 2.25rem; }
+  .md-hover-font-size-9:hover { font-size: 2.25rem; }
+  .md-focus-font-size-9:focus { font-size: 2.25rem; }
+  .md-active-font-size-9:active { font-size: 2.25rem; }
+  .md-disabled-font-size-9:disabled { font-size: 2.25rem; }
+  .md-focus-visible-font-size-9:focus-visible { font-size: 2.25rem; }
+  .md-focus-within-font-size-9:focus-within { font-size: 2.25rem; }
+  .group:hover .md-group-hover-font-size-9 { font-size: 2.25rem; }
+  .md-font-size-10 { font-size: 2.5rem; }
+  .md-hover-font-size-10:hover { font-size: 2.5rem; }
+  .md-focus-font-size-10:focus { font-size: 2.5rem; }
+  .md-active-font-size-10:active { font-size: 2.5rem; }
+  .md-disabled-font-size-10:disabled { font-size: 2.5rem; }
+  .md-focus-visible-font-size-10:focus-visible { font-size: 2.5rem; }
+  .md-focus-within-font-size-10:focus-within { font-size: 2.5rem; }
+  .group:hover .md-group-hover-font-size-10 { font-size: 2.5rem; }
+  .md-font-size-12 { font-size: 3rem; }
+  .md-hover-font-size-12:hover { font-size: 3rem; }
+  .md-focus-font-size-12:focus { font-size: 3rem; }
+  .md-active-font-size-12:active { font-size: 3rem; }
+  .md-disabled-font-size-12:disabled { font-size: 3rem; }
+  .md-focus-visible-font-size-12:focus-visible { font-size: 3rem; }
+  .md-focus-within-font-size-12:focus-within { font-size: 3rem; }
+  .group:hover .md-group-hover-font-size-12 { font-size: 3rem; }
+  .md-font-size-14 { font-size: 3.5rem; }
+  .md-hover-font-size-14:hover { font-size: 3.5rem; }
+  .md-focus-font-size-14:focus { font-size: 3.5rem; }
+  .md-active-font-size-14:active { font-size: 3.5rem; }
+  .md-disabled-font-size-14:disabled { font-size: 3.5rem; }
+  .md-focus-visible-font-size-14:focus-visible { font-size: 3.5rem; }
+  .md-focus-within-font-size-14:focus-within { font-size: 3.5rem; }
+  .group:hover .md-group-hover-font-size-14 { font-size: 3.5rem; }
+  .md-font-size-16 { font-size: 4rem; }
+  .md-hover-font-size-16:hover { font-size: 4rem; }
+  .md-focus-font-size-16:focus { font-size: 4rem; }
+  .md-active-font-size-16:active { font-size: 4rem; }
+  .md-disabled-font-size-16:disabled { font-size: 4rem; }
+  .md-focus-visible-font-size-16:focus-visible { font-size: 4rem; }
+  .md-focus-within-font-size-16:focus-within { font-size: 4rem; }
+  .group:hover .md-group-hover-font-size-16 { font-size: 4rem; }
+  .md-font-size-18 { font-size: 4.5rem; }
+  .md-hover-font-size-18:hover { font-size: 4.5rem; }
+  .md-focus-font-size-18:focus { font-size: 4.5rem; }
+  .md-active-font-size-18:active { font-size: 4.5rem; }
+  .md-disabled-font-size-18:disabled { font-size: 4.5rem; }
+  .md-focus-visible-font-size-18:focus-visible { font-size: 4.5rem; }
+  .md-focus-within-font-size-18:focus-within { font-size: 4.5rem; }
+  .group:hover .md-group-hover-font-size-18 { font-size: 4.5rem; }
+  .md-font-size-20 { font-size: 5rem; }
+  .md-hover-font-size-20:hover { font-size: 5rem; }
+  .md-focus-font-size-20:focus { font-size: 5rem; }
+  .md-active-font-size-20:active { font-size: 5rem; }
+  .md-disabled-font-size-20:disabled { font-size: 5rem; }
+  .md-focus-visible-font-size-20:focus-visible { font-size: 5rem; }
+  .md-focus-within-font-size-20:focus-within { font-size: 5rem; }
+  .group:hover .md-group-hover-font-size-20 { font-size: 5rem; }
+  .md-font-size-24 { font-size: 6rem; }
+  .md-hover-font-size-24:hover { font-size: 6rem; }
+  .md-focus-font-size-24:focus { font-size: 6rem; }
+  .md-active-font-size-24:active { font-size: 6rem; }
+  .md-disabled-font-size-24:disabled { font-size: 6rem; }
+  .md-focus-visible-font-size-24:focus-visible { font-size: 6rem; }
+  .md-focus-within-font-size-24:focus-within { font-size: 6rem; }
+  .group:hover .md-group-hover-font-size-24 { font-size: 6rem; }
+  .md-font-size-28 { font-size: 7rem; }
+  .md-hover-font-size-28:hover { font-size: 7rem; }
+  .md-focus-font-size-28:focus { font-size: 7rem; }
+  .md-active-font-size-28:active { font-size: 7rem; }
+  .md-disabled-font-size-28:disabled { font-size: 7rem; }
+  .md-focus-visible-font-size-28:focus-visible { font-size: 7rem; }
+  .md-focus-within-font-size-28:focus-within { font-size: 7rem; }
+  .group:hover .md-group-hover-font-size-28 { font-size: 7rem; }
+  .md-font-size-32 { font-size: 8rem; }
+  .md-hover-font-size-32:hover { font-size: 8rem; }
+  .md-focus-font-size-32:focus { font-size: 8rem; }
+  .md-active-font-size-32:active { font-size: 8rem; }
+  .md-disabled-font-size-32:disabled { font-size: 8rem; }
+  .md-focus-visible-font-size-32:focus-visible { font-size: 8rem; }
+  .md-focus-within-font-size-32:focus-within { font-size: 8rem; }
+  .group:hover .md-group-hover-font-size-32 { font-size: 8rem; }
+  .md-font-style-normal { font-style: normal; }
+  .md-hover-font-style-normal:hover { font-style: normal; }
+  .md-focus-font-style-normal:focus { font-style: normal; }
+  .md-active-font-style-normal:active { font-style: normal; }
+  .md-disabled-font-style-normal:disabled { font-style: normal; }
+  .md-focus-visible-font-style-normal:focus-visible { font-style: normal; }
+  .md-focus-within-font-style-normal:focus-within { font-style: normal; }
+  .group:hover .md-group-hover-font-style-normal { font-style: normal; }
+  .md-font-style-italic { font-style: italic; }
+  .md-hover-font-style-italic:hover { font-style: italic; }
+  .md-focus-font-style-italic:focus { font-style: italic; }
+  .md-active-font-style-italic:active { font-style: italic; }
+  .md-disabled-font-style-italic:disabled { font-style: italic; }
+  .md-focus-visible-font-style-italic:focus-visible { font-style: italic; }
+  .md-focus-within-font-style-italic:focus-within { font-style: italic; }
+  .group:hover .md-group-hover-font-style-italic { font-style: italic; }
+  .md-font-style-oblique { font-style: oblique; }
+  .md-hover-font-style-oblique:hover { font-style: oblique; }
+  .md-focus-font-style-oblique:focus { font-style: oblique; }
+  .md-active-font-style-oblique:active { font-style: oblique; }
+  .md-disabled-font-style-oblique:disabled { font-style: oblique; }
+  .md-focus-visible-font-style-oblique:focus-visible { font-style: oblique; }
+  .md-focus-within-font-style-oblique:focus-within { font-style: oblique; }
+  .group:hover .md-group-hover-font-style-oblique { font-style: oblique; }
+  .md-font-smoothing-antialiased { -webkit-font-smoothing: antialiased; }
+  .md-hover-font-smoothing-antialiased:hover { -webkit-font-smoothing: antialiased; }
+  .md-focus-font-smoothing-antialiased:focus { -webkit-font-smoothing: antialiased; }
+  .md-active-font-smoothing-antialiased:active { -webkit-font-smoothing: antialiased; }
+  .md-disabled-font-smoothing-antialiased:disabled { -webkit-font-smoothing: antialiased; }
+  .md-focus-visible-font-smoothing-antialiased:focus-visible { -webkit-font-smoothing: antialiased; }
+  .md-focus-within-font-smoothing-antialiased:focus-within { -webkit-font-smoothing: antialiased; }
+  .group:hover .md-group-hover-font-smoothing-antialiased { -webkit-font-smoothing: antialiased; }
+  .md-font-smoothing-subpixel-antialiased { -webkit-font-smoothing: subpixel-antialiased; }
+  .md-hover-font-smoothing-subpixel-antialiased:hover { -webkit-font-smoothing: subpixel-antialiased; }
+  .md-focus-font-smoothing-subpixel-antialiased:focus { -webkit-font-smoothing: subpixel-antialiased; }
+  .md-active-font-smoothing-subpixel-antialiased:active { -webkit-font-smoothing: subpixel-antialiased; }
+  .md-disabled-font-smoothing-subpixel-antialiased:disabled { -webkit-font-smoothing: subpixel-antialiased; }
+  .md-focus-visible-font-smoothing-subpixel-antialiased:focus-visible { -webkit-font-smoothing: subpixel-antialiased; }
+  .md-focus-within-font-smoothing-subpixel-antialiased:focus-within { -webkit-font-smoothing: subpixel-antialiased; }
+  .group:hover .md-group-hover-font-smoothing-subpixel-antialiased { -webkit-font-smoothing: subpixel-antialiased; }
+  .md-font-weight-thin { font-weight: 100; }
+  .md-hover-font-weight-thin:hover { font-weight: 100; }
+  .md-focus-font-weight-thin:focus { font-weight: 100; }
+  .md-active-font-weight-thin:active { font-weight: 100; }
+  .md-disabled-font-weight-thin:disabled { font-weight: 100; }
+  .md-focus-visible-font-weight-thin:focus-visible { font-weight: 100; }
+  .md-focus-within-font-weight-thin:focus-within { font-weight: 100; }
+  .group:hover .md-group-hover-font-weight-thin { font-weight: 100; }
+  .md-font-weight-extralight { font-weight: 200; }
+  .md-hover-font-weight-extralight:hover { font-weight: 200; }
+  .md-focus-font-weight-extralight:focus { font-weight: 200; }
+  .md-active-font-weight-extralight:active { font-weight: 200; }
+  .md-disabled-font-weight-extralight:disabled { font-weight: 200; }
+  .md-focus-visible-font-weight-extralight:focus-visible { font-weight: 200; }
+  .md-focus-within-font-weight-extralight:focus-within { font-weight: 200; }
+  .group:hover .md-group-hover-font-weight-extralight { font-weight: 200; }
+  .md-font-weight-light { font-weight: 300; }
+  .md-hover-font-weight-light:hover { font-weight: 300; }
+  .md-focus-font-weight-light:focus { font-weight: 300; }
+  .md-active-font-weight-light:active { font-weight: 300; }
+  .md-disabled-font-weight-light:disabled { font-weight: 300; }
+  .md-focus-visible-font-weight-light:focus-visible { font-weight: 300; }
+  .md-focus-within-font-weight-light:focus-within { font-weight: 300; }
+  .group:hover .md-group-hover-font-weight-light { font-weight: 300; }
+  .md-font-weight-regular { font-weight: 400; }
+  .md-hover-font-weight-regular:hover { font-weight: 400; }
+  .md-focus-font-weight-regular:focus { font-weight: 400; }
+  .md-active-font-weight-regular:active { font-weight: 400; }
+  .md-disabled-font-weight-regular:disabled { font-weight: 400; }
+  .md-focus-visible-font-weight-regular:focus-visible { font-weight: 400; }
+  .md-focus-within-font-weight-regular:focus-within { font-weight: 400; }
+  .group:hover .md-group-hover-font-weight-regular { font-weight: 400; }
+  .md-font-weight-medium { font-weight: 500; }
+  .md-hover-font-weight-medium:hover { font-weight: 500; }
+  .md-focus-font-weight-medium:focus { font-weight: 500; }
+  .md-active-font-weight-medium:active { font-weight: 500; }
+  .md-disabled-font-weight-medium:disabled { font-weight: 500; }
+  .md-focus-visible-font-weight-medium:focus-visible { font-weight: 500; }
+  .md-focus-within-font-weight-medium:focus-within { font-weight: 500; }
+  .group:hover .md-group-hover-font-weight-medium { font-weight: 500; }
+  .md-font-weight-semibold { font-weight: 600; }
+  .md-hover-font-weight-semibold:hover { font-weight: 600; }
+  .md-focus-font-weight-semibold:focus { font-weight: 600; }
+  .md-active-font-weight-semibold:active { font-weight: 600; }
+  .md-disabled-font-weight-semibold:disabled { font-weight: 600; }
+  .md-focus-visible-font-weight-semibold:focus-visible { font-weight: 600; }
+  .md-focus-within-font-weight-semibold:focus-within { font-weight: 600; }
+  .group:hover .md-group-hover-font-weight-semibold { font-weight: 600; }
+  .md-font-weight-bold { font-weight: 700; }
+  .md-hover-font-weight-bold:hover { font-weight: 700; }
+  .md-focus-font-weight-bold:focus { font-weight: 700; }
+  .md-active-font-weight-bold:active { font-weight: 700; }
+  .md-disabled-font-weight-bold:disabled { font-weight: 700; }
+  .md-focus-visible-font-weight-bold:focus-visible { font-weight: 700; }
+  .md-focus-within-font-weight-bold:focus-within { font-weight: 700; }
+  .group:hover .md-group-hover-font-weight-bold { font-weight: 700; }
+  .md-font-weight-extrabold { font-weight: 800; }
+  .md-hover-font-weight-extrabold:hover { font-weight: 800; }
+  .md-focus-font-weight-extrabold:focus { font-weight: 800; }
+  .md-active-font-weight-extrabold:active { font-weight: 800; }
+  .md-disabled-font-weight-extrabold:disabled { font-weight: 800; }
+  .md-focus-visible-font-weight-extrabold:focus-visible { font-weight: 800; }
+  .md-focus-within-font-weight-extrabold:focus-within { font-weight: 800; }
+  .group:hover .md-group-hover-font-weight-extrabold { font-weight: 800; }
+  .md-font-weight-ultrabold { font-weight: 900; }
+  .md-hover-font-weight-ultrabold:hover { font-weight: 900; }
+  .md-focus-font-weight-ultrabold:focus { font-weight: 900; }
+  .md-active-font-weight-ultrabold:active { font-weight: 900; }
+  .md-disabled-font-weight-ultrabold:disabled { font-weight: 900; }
+  .md-focus-visible-font-weight-ultrabold:focus-visible { font-weight: 900; }
+  .md-focus-within-font-weight-ultrabold:focus-within { font-weight: 900; }
+  .group:hover .md-group-hover-font-weight-ultrabold { font-weight: 900; }
+  .md-font-stretch-ultra-condensed { font-stretch: ultra-condensed; }
+  .md-hover-font-stretch-ultra-condensed:hover { font-stretch: ultra-condensed; }
+  .md-focus-font-stretch-ultra-condensed:focus { font-stretch: ultra-condensed; }
+  .md-active-font-stretch-ultra-condensed:active { font-stretch: ultra-condensed; }
+  .md-disabled-font-stretch-ultra-condensed:disabled { font-stretch: ultra-condensed; }
+  .md-focus-visible-font-stretch-ultra-condensed:focus-visible { font-stretch: ultra-condensed; }
+  .md-focus-within-font-stretch-ultra-condensed:focus-within { font-stretch: ultra-condensed; }
+  .group:hover .md-group-hover-font-stretch-ultra-condensed { font-stretch: ultra-condensed; }
+  .md-font-stretch-extra-condensed { font-stretch: extra-condensed; }
+  .md-hover-font-stretch-extra-condensed:hover { font-stretch: extra-condensed; }
+  .md-focus-font-stretch-extra-condensed:focus { font-stretch: extra-condensed; }
+  .md-active-font-stretch-extra-condensed:active { font-stretch: extra-condensed; }
+  .md-disabled-font-stretch-extra-condensed:disabled { font-stretch: extra-condensed; }
+  .md-focus-visible-font-stretch-extra-condensed:focus-visible { font-stretch: extra-condensed; }
+  .md-focus-within-font-stretch-extra-condensed:focus-within { font-stretch: extra-condensed; }
+  .group:hover .md-group-hover-font-stretch-extra-condensed { font-stretch: extra-condensed; }
+  .md-font-stretch-condensed { font-stretch: condensed; }
+  .md-hover-font-stretch-condensed:hover { font-stretch: condensed; }
+  .md-focus-font-stretch-condensed:focus { font-stretch: condensed; }
+  .md-active-font-stretch-condensed:active { font-stretch: condensed; }
+  .md-disabled-font-stretch-condensed:disabled { font-stretch: condensed; }
+  .md-focus-visible-font-stretch-condensed:focus-visible { font-stretch: condensed; }
+  .md-focus-within-font-stretch-condensed:focus-within { font-stretch: condensed; }
+  .group:hover .md-group-hover-font-stretch-condensed { font-stretch: condensed; }
+  .md-font-stretch-semi-condensed { font-stretch: semi-condensed; }
+  .md-hover-font-stretch-semi-condensed:hover { font-stretch: semi-condensed; }
+  .md-focus-font-stretch-semi-condensed:focus { font-stretch: semi-condensed; }
+  .md-active-font-stretch-semi-condensed:active { font-stretch: semi-condensed; }
+  .md-disabled-font-stretch-semi-condensed:disabled { font-stretch: semi-condensed; }
+  .md-focus-visible-font-stretch-semi-condensed:focus-visible { font-stretch: semi-condensed; }
+  .md-focus-within-font-stretch-semi-condensed:focus-within { font-stretch: semi-condensed; }
+  .group:hover .md-group-hover-font-stretch-semi-condensed { font-stretch: semi-condensed; }
+  .md-font-stretch-normal { font-stretch: normal; }
+  .md-hover-font-stretch-normal:hover { font-stretch: normal; }
+  .md-focus-font-stretch-normal:focus { font-stretch: normal; }
+  .md-active-font-stretch-normal:active { font-stretch: normal; }
+  .md-disabled-font-stretch-normal:disabled { font-stretch: normal; }
+  .md-focus-visible-font-stretch-normal:focus-visible { font-stretch: normal; }
+  .md-focus-within-font-stretch-normal:focus-within { font-stretch: normal; }
+  .group:hover .md-group-hover-font-stretch-normal { font-stretch: normal; }
+  .md-font-stretch-semi-expanded { font-stretch: semi-expanded; }
+  .md-hover-font-stretch-semi-expanded:hover { font-stretch: semi-expanded; }
+  .md-focus-font-stretch-semi-expanded:focus { font-stretch: semi-expanded; }
+  .md-active-font-stretch-semi-expanded:active { font-stretch: semi-expanded; }
+  .md-disabled-font-stretch-semi-expanded:disabled { font-stretch: semi-expanded; }
+  .md-focus-visible-font-stretch-semi-expanded:focus-visible { font-stretch: semi-expanded; }
+  .md-focus-within-font-stretch-semi-expanded:focus-within { font-stretch: semi-expanded; }
+  .group:hover .md-group-hover-font-stretch-semi-expanded { font-stretch: semi-expanded; }
+  .md-font-stretch-expanded { font-stretch: expanded; }
+  .md-hover-font-stretch-expanded:hover { font-stretch: expanded; }
+  .md-focus-font-stretch-expanded:focus { font-stretch: expanded; }
+  .md-active-font-stretch-expanded:active { font-stretch: expanded; }
+  .md-disabled-font-stretch-expanded:disabled { font-stretch: expanded; }
+  .md-focus-visible-font-stretch-expanded:focus-visible { font-stretch: expanded; }
+  .md-focus-within-font-stretch-expanded:focus-within { font-stretch: expanded; }
+  .group:hover .md-group-hover-font-stretch-expanded { font-stretch: expanded; }
+  .md-font-stretch-extra-expanded { font-stretch: extra-expanded; }
+  .md-hover-font-stretch-extra-expanded:hover { font-stretch: extra-expanded; }
+  .md-focus-font-stretch-extra-expanded:focus { font-stretch: extra-expanded; }
+  .md-active-font-stretch-extra-expanded:active { font-stretch: extra-expanded; }
+  .md-disabled-font-stretch-extra-expanded:disabled { font-stretch: extra-expanded; }
+  .md-focus-visible-font-stretch-extra-expanded:focus-visible { font-stretch: extra-expanded; }
+  .md-focus-within-font-stretch-extra-expanded:focus-within { font-stretch: extra-expanded; }
+  .group:hover .md-group-hover-font-stretch-extra-expanded { font-stretch: extra-expanded; }
+  .md-font-stretch-ultra-expanded { font-stretch: ultra-expanded; }
+  .md-hover-font-stretch-ultra-expanded:hover { font-stretch: ultra-expanded; }
+  .md-focus-font-stretch-ultra-expanded:focus { font-stretch: ultra-expanded; }
+  .md-active-font-stretch-ultra-expanded:active { font-stretch: ultra-expanded; }
+  .md-disabled-font-stretch-ultra-expanded:disabled { font-stretch: ultra-expanded; }
+  .md-focus-visible-font-stretch-ultra-expanded:focus-visible { font-stretch: ultra-expanded; }
+  .md-focus-within-font-stretch-ultra-expanded:focus-within { font-stretch: ultra-expanded; }
+  .group:hover .md-group-hover-font-stretch-ultra-expanded { font-stretch: ultra-expanded; }
+  .md-font-variant-numeric-normal { font-variant-numeric: normal; }
+  .md-hover-font-variant-numeric-normal:hover { font-variant-numeric: normal; }
+  .md-focus-font-variant-numeric-normal:focus { font-variant-numeric: normal; }
+  .md-active-font-variant-numeric-normal:active { font-variant-numeric: normal; }
+  .md-disabled-font-variant-numeric-normal:disabled { font-variant-numeric: normal; }
+  .md-focus-visible-font-variant-numeric-normal:focus-visible { font-variant-numeric: normal; }
+  .md-focus-within-font-variant-numeric-normal:focus-within { font-variant-numeric: normal; }
+  .group:hover .md-group-hover-font-variant-numeric-normal { font-variant-numeric: normal; }
+  .md-font-variant-numeric-lining-nums { font-variant-numeric: lining-nums; }
+  .md-hover-font-variant-numeric-lining-nums:hover { font-variant-numeric: lining-nums; }
+  .md-focus-font-variant-numeric-lining-nums:focus { font-variant-numeric: lining-nums; }
+  .md-active-font-variant-numeric-lining-nums:active { font-variant-numeric: lining-nums; }
+  .md-disabled-font-variant-numeric-lining-nums:disabled { font-variant-numeric: lining-nums; }
+  .md-focus-visible-font-variant-numeric-lining-nums:focus-visible { font-variant-numeric: lining-nums; }
+  .md-focus-within-font-variant-numeric-lining-nums:focus-within { font-variant-numeric: lining-nums; }
+  .group:hover .md-group-hover-font-variant-numeric-lining-nums { font-variant-numeric: lining-nums; }
+  .md-font-variant-numeric-oldstyle-nums { font-variant-numeric: oldstyle-nums; }
+  .md-hover-font-variant-numeric-oldstyle-nums:hover { font-variant-numeric: oldstyle-nums; }
+  .md-focus-font-variant-numeric-oldstyle-nums:focus { font-variant-numeric: oldstyle-nums; }
+  .md-active-font-variant-numeric-oldstyle-nums:active { font-variant-numeric: oldstyle-nums; }
+  .md-disabled-font-variant-numeric-oldstyle-nums:disabled { font-variant-numeric: oldstyle-nums; }
+  .md-focus-visible-font-variant-numeric-oldstyle-nums:focus-visible { font-variant-numeric: oldstyle-nums; }
+  .md-focus-within-font-variant-numeric-oldstyle-nums:focus-within { font-variant-numeric: oldstyle-nums; }
+  .group:hover .md-group-hover-font-variant-numeric-oldstyle-nums { font-variant-numeric: oldstyle-nums; }
+  .md-font-variant-numeric-proportional-nums { font-variant-numeric: proportional-nums; }
+  .md-hover-font-variant-numeric-proportional-nums:hover { font-variant-numeric: proportional-nums; }
+  .md-focus-font-variant-numeric-proportional-nums:focus { font-variant-numeric: proportional-nums; }
+  .md-active-font-variant-numeric-proportional-nums:active { font-variant-numeric: proportional-nums; }
+  .md-disabled-font-variant-numeric-proportional-nums:disabled { font-variant-numeric: proportional-nums; }
+  .md-focus-visible-font-variant-numeric-proportional-nums:focus-visible { font-variant-numeric: proportional-nums; }
+  .md-focus-within-font-variant-numeric-proportional-nums:focus-within { font-variant-numeric: proportional-nums; }
+  .group:hover .md-group-hover-font-variant-numeric-proportional-nums { font-variant-numeric: proportional-nums; }
+  .md-font-variant-numeric-tabular-nums { font-variant-numeric: tabular-nums; }
+  .md-hover-font-variant-numeric-tabular-nums:hover { font-variant-numeric: tabular-nums; }
+  .md-focus-font-variant-numeric-tabular-nums:focus { font-variant-numeric: tabular-nums; }
+  .md-active-font-variant-numeric-tabular-nums:active { font-variant-numeric: tabular-nums; }
+  .md-disabled-font-variant-numeric-tabular-nums:disabled { font-variant-numeric: tabular-nums; }
+  .md-focus-visible-font-variant-numeric-tabular-nums:focus-visible { font-variant-numeric: tabular-nums; }
+  .md-focus-within-font-variant-numeric-tabular-nums:focus-within { font-variant-numeric: tabular-nums; }
+  .group:hover .md-group-hover-font-variant-numeric-tabular-nums { font-variant-numeric: tabular-nums; }
+  .md-font-variant-numeric-diagonal-fractions { font-variant-numeric: diagonal-fractions; }
+  .md-hover-font-variant-numeric-diagonal-fractions:hover { font-variant-numeric: diagonal-fractions; }
+  .md-focus-font-variant-numeric-diagonal-fractions:focus { font-variant-numeric: diagonal-fractions; }
+  .md-active-font-variant-numeric-diagonal-fractions:active { font-variant-numeric: diagonal-fractions; }
+  .md-disabled-font-variant-numeric-diagonal-fractions:disabled { font-variant-numeric: diagonal-fractions; }
+  .md-focus-visible-font-variant-numeric-diagonal-fractions:focus-visible { font-variant-numeric: diagonal-fractions; }
+  .md-focus-within-font-variant-numeric-diagonal-fractions:focus-within { font-variant-numeric: diagonal-fractions; }
+  .group:hover .md-group-hover-font-variant-numeric-diagonal-fractions { font-variant-numeric: diagonal-fractions; }
+  .md-font-variant-numeric-stacked-fractions { font-variant-numeric: stacked-fractions; }
+  .md-hover-font-variant-numeric-stacked-fractions:hover { font-variant-numeric: stacked-fractions; }
+  .md-focus-font-variant-numeric-stacked-fractions:focus { font-variant-numeric: stacked-fractions; }
+  .md-active-font-variant-numeric-stacked-fractions:active { font-variant-numeric: stacked-fractions; }
+  .md-disabled-font-variant-numeric-stacked-fractions:disabled { font-variant-numeric: stacked-fractions; }
+  .md-focus-visible-font-variant-numeric-stacked-fractions:focus-visible { font-variant-numeric: stacked-fractions; }
+  .md-focus-within-font-variant-numeric-stacked-fractions:focus-within { font-variant-numeric: stacked-fractions; }
+  .group:hover .md-group-hover-font-variant-numeric-stacked-fractions { font-variant-numeric: stacked-fractions; }
+}
+
+/* LG Breakpoint */
+@media (min-width: 1024px) {
+  .lg-font-sans { font-family: var(--font-sans) !important; }
+  .lg-hover-font-sans:hover { font-family: var(--font-sans) !important; }
+  .lg-focus-font-sans:focus { font-family: var(--font-sans) !important; }
+  .lg-active-font-sans:active { font-family: var(--font-sans) !important; }
+  .lg-disabled-font-sans:disabled { font-family: var(--font-sans) !important; }
+  .lg-focus-visible-font-sans:focus-visible { font-family: var(--font-sans) !important; }
+  .lg-focus-within-font-sans:focus-within { font-family: var(--font-sans) !important; }
+  .group:hover .lg-group-hover-font-sans { font-family: var(--font-sans) !important; }
+  .lg-font-serif { font-family: var(--font-serif) !important; }
+  .lg-hover-font-serif:hover { font-family: var(--font-serif) !important; }
+  .lg-focus-font-serif:focus { font-family: var(--font-serif) !important; }
+  .lg-active-font-serif:active { font-family: var(--font-serif) !important; }
+  .lg-disabled-font-serif:disabled { font-family: var(--font-serif) !important; }
+  .lg-focus-visible-font-serif:focus-visible { font-family: var(--font-serif) !important; }
+  .lg-focus-within-font-serif:focus-within { font-family: var(--font-serif) !important; }
+  .group:hover .lg-group-hover-font-serif { font-family: var(--font-serif) !important; }
+  .lg-font-mono { font-family: var(--font-mono) !important; }
+  .lg-hover-font-mono:hover { font-family: var(--font-mono) !important; }
+  .lg-focus-font-mono:focus { font-family: var(--font-mono) !important; }
+  .lg-active-font-mono:active { font-family: var(--font-mono) !important; }
+  .lg-disabled-font-mono:disabled { font-family: var(--font-mono) !important; }
+  .lg-focus-visible-font-mono:focus-visible { font-family: var(--font-mono) !important; }
+  .lg-focus-within-font-mono:focus-within { font-family: var(--font-mono) !important; }
+  .group:hover .lg-group-hover-font-mono { font-family: var(--font-mono) !important; }
+  .lg-font-size-auto { font-size: auto; }
+  .lg-hover-font-size-auto:hover { font-size: auto; }
+  .lg-focus-font-size-auto:focus { font-size: auto; }
+  .lg-active-font-size-auto:active { font-size: auto; }
+  .lg-disabled-font-size-auto:disabled { font-size: auto; }
+  .lg-focus-visible-font-size-auto:focus-visible { font-size: auto; }
+  .lg-focus-within-font-size-auto:focus-within { font-size: auto; }
+  .group:hover .lg-group-hover-font-size-auto { font-size: auto; }
+  .lg-font-size-0 { font-size: 0; }
+  .lg-hover-font-size-0:hover { font-size: 0; }
+  .lg-focus-font-size-0:focus { font-size: 0; }
+  .lg-active-font-size-0:active { font-size: 0; }
+  .lg-disabled-font-size-0:disabled { font-size: 0; }
+  .lg-focus-visible-font-size-0:focus-visible { font-size: 0; }
+  .lg-focus-within-font-size-0:focus-within { font-size: 0; }
+  .group:hover .lg-group-hover-font-size-0 { font-size: 0; }
+  .lg-font-size-1 { font-size: 0.25rem; }
+  .lg-hover-font-size-1:hover { font-size: 0.25rem; }
+  .lg-focus-font-size-1:focus { font-size: 0.25rem; }
+  .lg-active-font-size-1:active { font-size: 0.25rem; }
+  .lg-disabled-font-size-1:disabled { font-size: 0.25rem; }
+  .lg-focus-visible-font-size-1:focus-visible { font-size: 0.25rem; }
+  .lg-focus-within-font-size-1:focus-within { font-size: 0.25rem; }
+  .group:hover .lg-group-hover-font-size-1 { font-size: 0.25rem; }
+  .lg-font-size-2 { font-size: 0.5rem; }
+  .lg-hover-font-size-2:hover { font-size: 0.5rem; }
+  .lg-focus-font-size-2:focus { font-size: 0.5rem; }
+  .lg-active-font-size-2:active { font-size: 0.5rem; }
+  .lg-disabled-font-size-2:disabled { font-size: 0.5rem; }
+  .lg-focus-visible-font-size-2:focus-visible { font-size: 0.5rem; }
+  .lg-focus-within-font-size-2:focus-within { font-size: 0.5rem; }
+  .group:hover .lg-group-hover-font-size-2 { font-size: 0.5rem; }
+  .lg-font-size-3 { font-size: 0.75rem; }
+  .lg-hover-font-size-3:hover { font-size: 0.75rem; }
+  .lg-focus-font-size-3:focus { font-size: 0.75rem; }
+  .lg-active-font-size-3:active { font-size: 0.75rem; }
+  .lg-disabled-font-size-3:disabled { font-size: 0.75rem; }
+  .lg-focus-visible-font-size-3:focus-visible { font-size: 0.75rem; }
+  .lg-focus-within-font-size-3:focus-within { font-size: 0.75rem; }
+  .group:hover .lg-group-hover-font-size-3 { font-size: 0.75rem; }
+  .lg-font-size-4 { font-size: 1rem; }
+  .lg-hover-font-size-4:hover { font-size: 1rem; }
+  .lg-focus-font-size-4:focus { font-size: 1rem; }
+  .lg-active-font-size-4:active { font-size: 1rem; }
+  .lg-disabled-font-size-4:disabled { font-size: 1rem; }
+  .lg-focus-visible-font-size-4:focus-visible { font-size: 1rem; }
+  .lg-focus-within-font-size-4:focus-within { font-size: 1rem; }
+  .group:hover .lg-group-hover-font-size-4 { font-size: 1rem; }
+  .lg-font-size-5 { font-size: 1.25rem; }
+  .lg-hover-font-size-5:hover { font-size: 1.25rem; }
+  .lg-focus-font-size-5:focus { font-size: 1.25rem; }
+  .lg-active-font-size-5:active { font-size: 1.25rem; }
+  .lg-disabled-font-size-5:disabled { font-size: 1.25rem; }
+  .lg-focus-visible-font-size-5:focus-visible { font-size: 1.25rem; }
+  .lg-focus-within-font-size-5:focus-within { font-size: 1.25rem; }
+  .group:hover .lg-group-hover-font-size-5 { font-size: 1.25rem; }
+  .lg-font-size-6 { font-size: 1.5rem; }
+  .lg-hover-font-size-6:hover { font-size: 1.5rem; }
+  .lg-focus-font-size-6:focus { font-size: 1.5rem; }
+  .lg-active-font-size-6:active { font-size: 1.5rem; }
+  .lg-disabled-font-size-6:disabled { font-size: 1.5rem; }
+  .lg-focus-visible-font-size-6:focus-visible { font-size: 1.5rem; }
+  .lg-focus-within-font-size-6:focus-within { font-size: 1.5rem; }
+  .group:hover .lg-group-hover-font-size-6 { font-size: 1.5rem; }
+  .lg-font-size-7 { font-size: 1.75rem; }
+  .lg-hover-font-size-7:hover { font-size: 1.75rem; }
+  .lg-focus-font-size-7:focus { font-size: 1.75rem; }
+  .lg-active-font-size-7:active { font-size: 1.75rem; }
+  .lg-disabled-font-size-7:disabled { font-size: 1.75rem; }
+  .lg-focus-visible-font-size-7:focus-visible { font-size: 1.75rem; }
+  .lg-focus-within-font-size-7:focus-within { font-size: 1.75rem; }
+  .group:hover .lg-group-hover-font-size-7 { font-size: 1.75rem; }
+  .lg-font-size-8 { font-size: 2rem; }
+  .lg-hover-font-size-8:hover { font-size: 2rem; }
+  .lg-focus-font-size-8:focus { font-size: 2rem; }
+  .lg-active-font-size-8:active { font-size: 2rem; }
+  .lg-disabled-font-size-8:disabled { font-size: 2rem; }
+  .lg-focus-visible-font-size-8:focus-visible { font-size: 2rem; }
+  .lg-focus-within-font-size-8:focus-within { font-size: 2rem; }
+  .group:hover .lg-group-hover-font-size-8 { font-size: 2rem; }
+  .lg-font-size-9 { font-size: 2.25rem; }
+  .lg-hover-font-size-9:hover { font-size: 2.25rem; }
+  .lg-focus-font-size-9:focus { font-size: 2.25rem; }
+  .lg-active-font-size-9:active { font-size: 2.25rem; }
+  .lg-disabled-font-size-9:disabled { font-size: 2.25rem; }
+  .lg-focus-visible-font-size-9:focus-visible { font-size: 2.25rem; }
+  .lg-focus-within-font-size-9:focus-within { font-size: 2.25rem; }
+  .group:hover .lg-group-hover-font-size-9 { font-size: 2.25rem; }
+  .lg-font-size-10 { font-size: 2.5rem; }
+  .lg-hover-font-size-10:hover { font-size: 2.5rem; }
+  .lg-focus-font-size-10:focus { font-size: 2.5rem; }
+  .lg-active-font-size-10:active { font-size: 2.5rem; }
+  .lg-disabled-font-size-10:disabled { font-size: 2.5rem; }
+  .lg-focus-visible-font-size-10:focus-visible { font-size: 2.5rem; }
+  .lg-focus-within-font-size-10:focus-within { font-size: 2.5rem; }
+  .group:hover .lg-group-hover-font-size-10 { font-size: 2.5rem; }
+  .lg-font-size-12 { font-size: 3rem; }
+  .lg-hover-font-size-12:hover { font-size: 3rem; }
+  .lg-focus-font-size-12:focus { font-size: 3rem; }
+  .lg-active-font-size-12:active { font-size: 3rem; }
+  .lg-disabled-font-size-12:disabled { font-size: 3rem; }
+  .lg-focus-visible-font-size-12:focus-visible { font-size: 3rem; }
+  .lg-focus-within-font-size-12:focus-within { font-size: 3rem; }
+  .group:hover .lg-group-hover-font-size-12 { font-size: 3rem; }
+  .lg-font-size-14 { font-size: 3.5rem; }
+  .lg-hover-font-size-14:hover { font-size: 3.5rem; }
+  .lg-focus-font-size-14:focus { font-size: 3.5rem; }
+  .lg-active-font-size-14:active { font-size: 3.5rem; }
+  .lg-disabled-font-size-14:disabled { font-size: 3.5rem; }
+  .lg-focus-visible-font-size-14:focus-visible { font-size: 3.5rem; }
+  .lg-focus-within-font-size-14:focus-within { font-size: 3.5rem; }
+  .group:hover .lg-group-hover-font-size-14 { font-size: 3.5rem; }
+  .lg-font-size-16 { font-size: 4rem; }
+  .lg-hover-font-size-16:hover { font-size: 4rem; }
+  .lg-focus-font-size-16:focus { font-size: 4rem; }
+  .lg-active-font-size-16:active { font-size: 4rem; }
+  .lg-disabled-font-size-16:disabled { font-size: 4rem; }
+  .lg-focus-visible-font-size-16:focus-visible { font-size: 4rem; }
+  .lg-focus-within-font-size-16:focus-within { font-size: 4rem; }
+  .group:hover .lg-group-hover-font-size-16 { font-size: 4rem; }
+  .lg-font-size-18 { font-size: 4.5rem; }
+  .lg-hover-font-size-18:hover { font-size: 4.5rem; }
+  .lg-focus-font-size-18:focus { font-size: 4.5rem; }
+  .lg-active-font-size-18:active { font-size: 4.5rem; }
+  .lg-disabled-font-size-18:disabled { font-size: 4.5rem; }
+  .lg-focus-visible-font-size-18:focus-visible { font-size: 4.5rem; }
+  .lg-focus-within-font-size-18:focus-within { font-size: 4.5rem; }
+  .group:hover .lg-group-hover-font-size-18 { font-size: 4.5rem; }
+  .lg-font-size-20 { font-size: 5rem; }
+  .lg-hover-font-size-20:hover { font-size: 5rem; }
+  .lg-focus-font-size-20:focus { font-size: 5rem; }
+  .lg-active-font-size-20:active { font-size: 5rem; }
+  .lg-disabled-font-size-20:disabled { font-size: 5rem; }
+  .lg-focus-visible-font-size-20:focus-visible { font-size: 5rem; }
+  .lg-focus-within-font-size-20:focus-within { font-size: 5rem; }
+  .group:hover .lg-group-hover-font-size-20 { font-size: 5rem; }
+  .lg-font-size-24 { font-size: 6rem; }
+  .lg-hover-font-size-24:hover { font-size: 6rem; }
+  .lg-focus-font-size-24:focus { font-size: 6rem; }
+  .lg-active-font-size-24:active { font-size: 6rem; }
+  .lg-disabled-font-size-24:disabled { font-size: 6rem; }
+  .lg-focus-visible-font-size-24:focus-visible { font-size: 6rem; }
+  .lg-focus-within-font-size-24:focus-within { font-size: 6rem; }
+  .group:hover .lg-group-hover-font-size-24 { font-size: 6rem; }
+  .lg-font-size-28 { font-size: 7rem; }
+  .lg-hover-font-size-28:hover { font-size: 7rem; }
+  .lg-focus-font-size-28:focus { font-size: 7rem; }
+  .lg-active-font-size-28:active { font-size: 7rem; }
+  .lg-disabled-font-size-28:disabled { font-size: 7rem; }
+  .lg-focus-visible-font-size-28:focus-visible { font-size: 7rem; }
+  .lg-focus-within-font-size-28:focus-within { font-size: 7rem; }
+  .group:hover .lg-group-hover-font-size-28 { font-size: 7rem; }
+  .lg-font-size-32 { font-size: 8rem; }
+  .lg-hover-font-size-32:hover { font-size: 8rem; }
+  .lg-focus-font-size-32:focus { font-size: 8rem; }
+  .lg-active-font-size-32:active { font-size: 8rem; }
+  .lg-disabled-font-size-32:disabled { font-size: 8rem; }
+  .lg-focus-visible-font-size-32:focus-visible { font-size: 8rem; }
+  .lg-focus-within-font-size-32:focus-within { font-size: 8rem; }
+  .group:hover .lg-group-hover-font-size-32 { font-size: 8rem; }
+  .lg-font-style-normal { font-style: normal; }
+  .lg-hover-font-style-normal:hover { font-style: normal; }
+  .lg-focus-font-style-normal:focus { font-style: normal; }
+  .lg-active-font-style-normal:active { font-style: normal; }
+  .lg-disabled-font-style-normal:disabled { font-style: normal; }
+  .lg-focus-visible-font-style-normal:focus-visible { font-style: normal; }
+  .lg-focus-within-font-style-normal:focus-within { font-style: normal; }
+  .group:hover .lg-group-hover-font-style-normal { font-style: normal; }
+  .lg-font-style-italic { font-style: italic; }
+  .lg-hover-font-style-italic:hover { font-style: italic; }
+  .lg-focus-font-style-italic:focus { font-style: italic; }
+  .lg-active-font-style-italic:active { font-style: italic; }
+  .lg-disabled-font-style-italic:disabled { font-style: italic; }
+  .lg-focus-visible-font-style-italic:focus-visible { font-style: italic; }
+  .lg-focus-within-font-style-italic:focus-within { font-style: italic; }
+  .group:hover .lg-group-hover-font-style-italic { font-style: italic; }
+  .lg-font-style-oblique { font-style: oblique; }
+  .lg-hover-font-style-oblique:hover { font-style: oblique; }
+  .lg-focus-font-style-oblique:focus { font-style: oblique; }
+  .lg-active-font-style-oblique:active { font-style: oblique; }
+  .lg-disabled-font-style-oblique:disabled { font-style: oblique; }
+  .lg-focus-visible-font-style-oblique:focus-visible { font-style: oblique; }
+  .lg-focus-within-font-style-oblique:focus-within { font-style: oblique; }
+  .group:hover .lg-group-hover-font-style-oblique { font-style: oblique; }
+  .lg-font-smoothing-antialiased { -webkit-font-smoothing: antialiased; }
+  .lg-hover-font-smoothing-antialiased:hover { -webkit-font-smoothing: antialiased; }
+  .lg-focus-font-smoothing-antialiased:focus { -webkit-font-smoothing: antialiased; }
+  .lg-active-font-smoothing-antialiased:active { -webkit-font-smoothing: antialiased; }
+  .lg-disabled-font-smoothing-antialiased:disabled { -webkit-font-smoothing: antialiased; }
+  .lg-focus-visible-font-smoothing-antialiased:focus-visible { -webkit-font-smoothing: antialiased; }
+  .lg-focus-within-font-smoothing-antialiased:focus-within { -webkit-font-smoothing: antialiased; }
+  .group:hover .lg-group-hover-font-smoothing-antialiased { -webkit-font-smoothing: antialiased; }
+  .lg-font-smoothing-subpixel-antialiased { -webkit-font-smoothing: subpixel-antialiased; }
+  .lg-hover-font-smoothing-subpixel-antialiased:hover { -webkit-font-smoothing: subpixel-antialiased; }
+  .lg-focus-font-smoothing-subpixel-antialiased:focus { -webkit-font-smoothing: subpixel-antialiased; }
+  .lg-active-font-smoothing-subpixel-antialiased:active { -webkit-font-smoothing: subpixel-antialiased; }
+  .lg-disabled-font-smoothing-subpixel-antialiased:disabled { -webkit-font-smoothing: subpixel-antialiased; }
+  .lg-focus-visible-font-smoothing-subpixel-antialiased:focus-visible { -webkit-font-smoothing: subpixel-antialiased; }
+  .lg-focus-within-font-smoothing-subpixel-antialiased:focus-within { -webkit-font-smoothing: subpixel-antialiased; }
+  .group:hover .lg-group-hover-font-smoothing-subpixel-antialiased { -webkit-font-smoothing: subpixel-antialiased; }
+  .lg-font-weight-thin { font-weight: 100; }
+  .lg-hover-font-weight-thin:hover { font-weight: 100; }
+  .lg-focus-font-weight-thin:focus { font-weight: 100; }
+  .lg-active-font-weight-thin:active { font-weight: 100; }
+  .lg-disabled-font-weight-thin:disabled { font-weight: 100; }
+  .lg-focus-visible-font-weight-thin:focus-visible { font-weight: 100; }
+  .lg-focus-within-font-weight-thin:focus-within { font-weight: 100; }
+  .group:hover .lg-group-hover-font-weight-thin { font-weight: 100; }
+  .lg-font-weight-extralight { font-weight: 200; }
+  .lg-hover-font-weight-extralight:hover { font-weight: 200; }
+  .lg-focus-font-weight-extralight:focus { font-weight: 200; }
+  .lg-active-font-weight-extralight:active { font-weight: 200; }
+  .lg-disabled-font-weight-extralight:disabled { font-weight: 200; }
+  .lg-focus-visible-font-weight-extralight:focus-visible { font-weight: 200; }
+  .lg-focus-within-font-weight-extralight:focus-within { font-weight: 200; }
+  .group:hover .lg-group-hover-font-weight-extralight { font-weight: 200; }
+  .lg-font-weight-light { font-weight: 300; }
+  .lg-hover-font-weight-light:hover { font-weight: 300; }
+  .lg-focus-font-weight-light:focus { font-weight: 300; }
+  .lg-active-font-weight-light:active { font-weight: 300; }
+  .lg-disabled-font-weight-light:disabled { font-weight: 300; }
+  .lg-focus-visible-font-weight-light:focus-visible { font-weight: 300; }
+  .lg-focus-within-font-weight-light:focus-within { font-weight: 300; }
+  .group:hover .lg-group-hover-font-weight-light { font-weight: 300; }
+  .lg-font-weight-regular { font-weight: 400; }
+  .lg-hover-font-weight-regular:hover { font-weight: 400; }
+  .lg-focus-font-weight-regular:focus { font-weight: 400; }
+  .lg-active-font-weight-regular:active { font-weight: 400; }
+  .lg-disabled-font-weight-regular:disabled { font-weight: 400; }
+  .lg-focus-visible-font-weight-regular:focus-visible { font-weight: 400; }
+  .lg-focus-within-font-weight-regular:focus-within { font-weight: 400; }
+  .group:hover .lg-group-hover-font-weight-regular { font-weight: 400; }
+  .lg-font-weight-medium { font-weight: 500; }
+  .lg-hover-font-weight-medium:hover { font-weight: 500; }
+  .lg-focus-font-weight-medium:focus { font-weight: 500; }
+  .lg-active-font-weight-medium:active { font-weight: 500; }
+  .lg-disabled-font-weight-medium:disabled { font-weight: 500; }
+  .lg-focus-visible-font-weight-medium:focus-visible { font-weight: 500; }
+  .lg-focus-within-font-weight-medium:focus-within { font-weight: 500; }
+  .group:hover .lg-group-hover-font-weight-medium { font-weight: 500; }
+  .lg-font-weight-semibold { font-weight: 600; }
+  .lg-hover-font-weight-semibold:hover { font-weight: 600; }
+  .lg-focus-font-weight-semibold:focus { font-weight: 600; }
+  .lg-active-font-weight-semibold:active { font-weight: 600; }
+  .lg-disabled-font-weight-semibold:disabled { font-weight: 600; }
+  .lg-focus-visible-font-weight-semibold:focus-visible { font-weight: 600; }
+  .lg-focus-within-font-weight-semibold:focus-within { font-weight: 600; }
+  .group:hover .lg-group-hover-font-weight-semibold { font-weight: 600; }
+  .lg-font-weight-bold { font-weight: 700; }
+  .lg-hover-font-weight-bold:hover { font-weight: 700; }
+  .lg-focus-font-weight-bold:focus { font-weight: 700; }
+  .lg-active-font-weight-bold:active { font-weight: 700; }
+  .lg-disabled-font-weight-bold:disabled { font-weight: 700; }
+  .lg-focus-visible-font-weight-bold:focus-visible { font-weight: 700; }
+  .lg-focus-within-font-weight-bold:focus-within { font-weight: 700; }
+  .group:hover .lg-group-hover-font-weight-bold { font-weight: 700; }
+  .lg-font-weight-extrabold { font-weight: 800; }
+  .lg-hover-font-weight-extrabold:hover { font-weight: 800; }
+  .lg-focus-font-weight-extrabold:focus { font-weight: 800; }
+  .lg-active-font-weight-extrabold:active { font-weight: 800; }
+  .lg-disabled-font-weight-extrabold:disabled { font-weight: 800; }
+  .lg-focus-visible-font-weight-extrabold:focus-visible { font-weight: 800; }
+  .lg-focus-within-font-weight-extrabold:focus-within { font-weight: 800; }
+  .group:hover .lg-group-hover-font-weight-extrabold { font-weight: 800; }
+  .lg-font-weight-ultrabold { font-weight: 900; }
+  .lg-hover-font-weight-ultrabold:hover { font-weight: 900; }
+  .lg-focus-font-weight-ultrabold:focus { font-weight: 900; }
+  .lg-active-font-weight-ultrabold:active { font-weight: 900; }
+  .lg-disabled-font-weight-ultrabold:disabled { font-weight: 900; }
+  .lg-focus-visible-font-weight-ultrabold:focus-visible { font-weight: 900; }
+  .lg-focus-within-font-weight-ultrabold:focus-within { font-weight: 900; }
+  .group:hover .lg-group-hover-font-weight-ultrabold { font-weight: 900; }
+  .lg-font-stretch-ultra-condensed { font-stretch: ultra-condensed; }
+  .lg-hover-font-stretch-ultra-condensed:hover { font-stretch: ultra-condensed; }
+  .lg-focus-font-stretch-ultra-condensed:focus { font-stretch: ultra-condensed; }
+  .lg-active-font-stretch-ultra-condensed:active { font-stretch: ultra-condensed; }
+  .lg-disabled-font-stretch-ultra-condensed:disabled { font-stretch: ultra-condensed; }
+  .lg-focus-visible-font-stretch-ultra-condensed:focus-visible { font-stretch: ultra-condensed; }
+  .lg-focus-within-font-stretch-ultra-condensed:focus-within { font-stretch: ultra-condensed; }
+  .group:hover .lg-group-hover-font-stretch-ultra-condensed { font-stretch: ultra-condensed; }
+  .lg-font-stretch-extra-condensed { font-stretch: extra-condensed; }
+  .lg-hover-font-stretch-extra-condensed:hover { font-stretch: extra-condensed; }
+  .lg-focus-font-stretch-extra-condensed:focus { font-stretch: extra-condensed; }
+  .lg-active-font-stretch-extra-condensed:active { font-stretch: extra-condensed; }
+  .lg-disabled-font-stretch-extra-condensed:disabled { font-stretch: extra-condensed; }
+  .lg-focus-visible-font-stretch-extra-condensed:focus-visible { font-stretch: extra-condensed; }
+  .lg-focus-within-font-stretch-extra-condensed:focus-within { font-stretch: extra-condensed; }
+  .group:hover .lg-group-hover-font-stretch-extra-condensed { font-stretch: extra-condensed; }
+  .lg-font-stretch-condensed { font-stretch: condensed; }
+  .lg-hover-font-stretch-condensed:hover { font-stretch: condensed; }
+  .lg-focus-font-stretch-condensed:focus { font-stretch: condensed; }
+  .lg-active-font-stretch-condensed:active { font-stretch: condensed; }
+  .lg-disabled-font-stretch-condensed:disabled { font-stretch: condensed; }
+  .lg-focus-visible-font-stretch-condensed:focus-visible { font-stretch: condensed; }
+  .lg-focus-within-font-stretch-condensed:focus-within { font-stretch: condensed; }
+  .group:hover .lg-group-hover-font-stretch-condensed { font-stretch: condensed; }
+  .lg-font-stretch-semi-condensed { font-stretch: semi-condensed; }
+  .lg-hover-font-stretch-semi-condensed:hover { font-stretch: semi-condensed; }
+  .lg-focus-font-stretch-semi-condensed:focus { font-stretch: semi-condensed; }
+  .lg-active-font-stretch-semi-condensed:active { font-stretch: semi-condensed; }
+  .lg-disabled-font-stretch-semi-condensed:disabled { font-stretch: semi-condensed; }
+  .lg-focus-visible-font-stretch-semi-condensed:focus-visible { font-stretch: semi-condensed; }
+  .lg-focus-within-font-stretch-semi-condensed:focus-within { font-stretch: semi-condensed; }
+  .group:hover .lg-group-hover-font-stretch-semi-condensed { font-stretch: semi-condensed; }
+  .lg-font-stretch-normal { font-stretch: normal; }
+  .lg-hover-font-stretch-normal:hover { font-stretch: normal; }
+  .lg-focus-font-stretch-normal:focus { font-stretch: normal; }
+  .lg-active-font-stretch-normal:active { font-stretch: normal; }
+  .lg-disabled-font-stretch-normal:disabled { font-stretch: normal; }
+  .lg-focus-visible-font-stretch-normal:focus-visible { font-stretch: normal; }
+  .lg-focus-within-font-stretch-normal:focus-within { font-stretch: normal; }
+  .group:hover .lg-group-hover-font-stretch-normal { font-stretch: normal; }
+  .lg-font-stretch-semi-expanded { font-stretch: semi-expanded; }
+  .lg-hover-font-stretch-semi-expanded:hover { font-stretch: semi-expanded; }
+  .lg-focus-font-stretch-semi-expanded:focus { font-stretch: semi-expanded; }
+  .lg-active-font-stretch-semi-expanded:active { font-stretch: semi-expanded; }
+  .lg-disabled-font-stretch-semi-expanded:disabled { font-stretch: semi-expanded; }
+  .lg-focus-visible-font-stretch-semi-expanded:focus-visible { font-stretch: semi-expanded; }
+  .lg-focus-within-font-stretch-semi-expanded:focus-within { font-stretch: semi-expanded; }
+  .group:hover .lg-group-hover-font-stretch-semi-expanded { font-stretch: semi-expanded; }
+  .lg-font-stretch-expanded { font-stretch: expanded; }
+  .lg-hover-font-stretch-expanded:hover { font-stretch: expanded; }
+  .lg-focus-font-stretch-expanded:focus { font-stretch: expanded; }
+  .lg-active-font-stretch-expanded:active { font-stretch: expanded; }
+  .lg-disabled-font-stretch-expanded:disabled { font-stretch: expanded; }
+  .lg-focus-visible-font-stretch-expanded:focus-visible { font-stretch: expanded; }
+  .lg-focus-within-font-stretch-expanded:focus-within { font-stretch: expanded; }
+  .group:hover .lg-group-hover-font-stretch-expanded { font-stretch: expanded; }
+  .lg-font-stretch-extra-expanded { font-stretch: extra-expanded; }
+  .lg-hover-font-stretch-extra-expanded:hover { font-stretch: extra-expanded; }
+  .lg-focus-font-stretch-extra-expanded:focus { font-stretch: extra-expanded; }
+  .lg-active-font-stretch-extra-expanded:active { font-stretch: extra-expanded; }
+  .lg-disabled-font-stretch-extra-expanded:disabled { font-stretch: extra-expanded; }
+  .lg-focus-visible-font-stretch-extra-expanded:focus-visible { font-stretch: extra-expanded; }
+  .lg-focus-within-font-stretch-extra-expanded:focus-within { font-stretch: extra-expanded; }
+  .group:hover .lg-group-hover-font-stretch-extra-expanded { font-stretch: extra-expanded; }
+  .lg-font-stretch-ultra-expanded { font-stretch: ultra-expanded; }
+  .lg-hover-font-stretch-ultra-expanded:hover { font-stretch: ultra-expanded; }
+  .lg-focus-font-stretch-ultra-expanded:focus { font-stretch: ultra-expanded; }
+  .lg-active-font-stretch-ultra-expanded:active { font-stretch: ultra-expanded; }
+  .lg-disabled-font-stretch-ultra-expanded:disabled { font-stretch: ultra-expanded; }
+  .lg-focus-visible-font-stretch-ultra-expanded:focus-visible { font-stretch: ultra-expanded; }
+  .lg-focus-within-font-stretch-ultra-expanded:focus-within { font-stretch: ultra-expanded; }
+  .group:hover .lg-group-hover-font-stretch-ultra-expanded { font-stretch: ultra-expanded; }
+  .lg-font-variant-numeric-normal { font-variant-numeric: normal; }
+  .lg-hover-font-variant-numeric-normal:hover { font-variant-numeric: normal; }
+  .lg-focus-font-variant-numeric-normal:focus { font-variant-numeric: normal; }
+  .lg-active-font-variant-numeric-normal:active { font-variant-numeric: normal; }
+  .lg-disabled-font-variant-numeric-normal:disabled { font-variant-numeric: normal; }
+  .lg-focus-visible-font-variant-numeric-normal:focus-visible { font-variant-numeric: normal; }
+  .lg-focus-within-font-variant-numeric-normal:focus-within { font-variant-numeric: normal; }
+  .group:hover .lg-group-hover-font-variant-numeric-normal { font-variant-numeric: normal; }
+  .lg-font-variant-numeric-lining-nums { font-variant-numeric: lining-nums; }
+  .lg-hover-font-variant-numeric-lining-nums:hover { font-variant-numeric: lining-nums; }
+  .lg-focus-font-variant-numeric-lining-nums:focus { font-variant-numeric: lining-nums; }
+  .lg-active-font-variant-numeric-lining-nums:active { font-variant-numeric: lining-nums; }
+  .lg-disabled-font-variant-numeric-lining-nums:disabled { font-variant-numeric: lining-nums; }
+  .lg-focus-visible-font-variant-numeric-lining-nums:focus-visible { font-variant-numeric: lining-nums; }
+  .lg-focus-within-font-variant-numeric-lining-nums:focus-within { font-variant-numeric: lining-nums; }
+  .group:hover .lg-group-hover-font-variant-numeric-lining-nums { font-variant-numeric: lining-nums; }
+  .lg-font-variant-numeric-oldstyle-nums { font-variant-numeric: oldstyle-nums; }
+  .lg-hover-font-variant-numeric-oldstyle-nums:hover { font-variant-numeric: oldstyle-nums; }
+  .lg-focus-font-variant-numeric-oldstyle-nums:focus { font-variant-numeric: oldstyle-nums; }
+  .lg-active-font-variant-numeric-oldstyle-nums:active { font-variant-numeric: oldstyle-nums; }
+  .lg-disabled-font-variant-numeric-oldstyle-nums:disabled { font-variant-numeric: oldstyle-nums; }
+  .lg-focus-visible-font-variant-numeric-oldstyle-nums:focus-visible { font-variant-numeric: oldstyle-nums; }
+  .lg-focus-within-font-variant-numeric-oldstyle-nums:focus-within { font-variant-numeric: oldstyle-nums; }
+  .group:hover .lg-group-hover-font-variant-numeric-oldstyle-nums { font-variant-numeric: oldstyle-nums; }
+  .lg-font-variant-numeric-proportional-nums { font-variant-numeric: proportional-nums; }
+  .lg-hover-font-variant-numeric-proportional-nums:hover { font-variant-numeric: proportional-nums; }
+  .lg-focus-font-variant-numeric-proportional-nums:focus { font-variant-numeric: proportional-nums; }
+  .lg-active-font-variant-numeric-proportional-nums:active { font-variant-numeric: proportional-nums; }
+  .lg-disabled-font-variant-numeric-proportional-nums:disabled { font-variant-numeric: proportional-nums; }
+  .lg-focus-visible-font-variant-numeric-proportional-nums:focus-visible { font-variant-numeric: proportional-nums; }
+  .lg-focus-within-font-variant-numeric-proportional-nums:focus-within { font-variant-numeric: proportional-nums; }
+  .group:hover .lg-group-hover-font-variant-numeric-proportional-nums { font-variant-numeric: proportional-nums; }
+  .lg-font-variant-numeric-tabular-nums { font-variant-numeric: tabular-nums; }
+  .lg-hover-font-variant-numeric-tabular-nums:hover { font-variant-numeric: tabular-nums; }
+  .lg-focus-font-variant-numeric-tabular-nums:focus { font-variant-numeric: tabular-nums; }
+  .lg-active-font-variant-numeric-tabular-nums:active { font-variant-numeric: tabular-nums; }
+  .lg-disabled-font-variant-numeric-tabular-nums:disabled { font-variant-numeric: tabular-nums; }
+  .lg-focus-visible-font-variant-numeric-tabular-nums:focus-visible { font-variant-numeric: tabular-nums; }
+  .lg-focus-within-font-variant-numeric-tabular-nums:focus-within { font-variant-numeric: tabular-nums; }
+  .group:hover .lg-group-hover-font-variant-numeric-tabular-nums { font-variant-numeric: tabular-nums; }
+  .lg-font-variant-numeric-diagonal-fractions { font-variant-numeric: diagonal-fractions; }
+  .lg-hover-font-variant-numeric-diagonal-fractions:hover { font-variant-numeric: diagonal-fractions; }
+  .lg-focus-font-variant-numeric-diagonal-fractions:focus { font-variant-numeric: diagonal-fractions; }
+  .lg-active-font-variant-numeric-diagonal-fractions:active { font-variant-numeric: diagonal-fractions; }
+  .lg-disabled-font-variant-numeric-diagonal-fractions:disabled { font-variant-numeric: diagonal-fractions; }
+  .lg-focus-visible-font-variant-numeric-diagonal-fractions:focus-visible { font-variant-numeric: diagonal-fractions; }
+  .lg-focus-within-font-variant-numeric-diagonal-fractions:focus-within { font-variant-numeric: diagonal-fractions; }
+  .group:hover .lg-group-hover-font-variant-numeric-diagonal-fractions { font-variant-numeric: diagonal-fractions; }
+  .lg-font-variant-numeric-stacked-fractions { font-variant-numeric: stacked-fractions; }
+  .lg-hover-font-variant-numeric-stacked-fractions:hover { font-variant-numeric: stacked-fractions; }
+  .lg-focus-font-variant-numeric-stacked-fractions:focus { font-variant-numeric: stacked-fractions; }
+  .lg-active-font-variant-numeric-stacked-fractions:active { font-variant-numeric: stacked-fractions; }
+  .lg-disabled-font-variant-numeric-stacked-fractions:disabled { font-variant-numeric: stacked-fractions; }
+  .lg-focus-visible-font-variant-numeric-stacked-fractions:focus-visible { font-variant-numeric: stacked-fractions; }
+  .lg-focus-within-font-variant-numeric-stacked-fractions:focus-within { font-variant-numeric: stacked-fractions; }
+  .group:hover .lg-group-hover-font-variant-numeric-stacked-fractions { font-variant-numeric: stacked-fractions; }
+}
+
+/* XL Breakpoint */
+@media (min-width: 1280px) {
+  .xl-font-sans { font-family: var(--font-sans) !important; }
+  .xl-hover-font-sans:hover { font-family: var(--font-sans) !important; }
+  .xl-focus-font-sans:focus { font-family: var(--font-sans) !important; }
+  .xl-active-font-sans:active { font-family: var(--font-sans) !important; }
+  .xl-disabled-font-sans:disabled { font-family: var(--font-sans) !important; }
+  .xl-focus-visible-font-sans:focus-visible { font-family: var(--font-sans) !important; }
+  .xl-focus-within-font-sans:focus-within { font-family: var(--font-sans) !important; }
+  .group:hover .xl-group-hover-font-sans { font-family: var(--font-sans) !important; }
+  .xl-font-serif { font-family: var(--font-serif) !important; }
+  .xl-hover-font-serif:hover { font-family: var(--font-serif) !important; }
+  .xl-focus-font-serif:focus { font-family: var(--font-serif) !important; }
+  .xl-active-font-serif:active { font-family: var(--font-serif) !important; }
+  .xl-disabled-font-serif:disabled { font-family: var(--font-serif) !important; }
+  .xl-focus-visible-font-serif:focus-visible { font-family: var(--font-serif) !important; }
+  .xl-focus-within-font-serif:focus-within { font-family: var(--font-serif) !important; }
+  .group:hover .xl-group-hover-font-serif { font-family: var(--font-serif) !important; }
+  .xl-font-mono { font-family: var(--font-mono) !important; }
+  .xl-hover-font-mono:hover { font-family: var(--font-mono) !important; }
+  .xl-focus-font-mono:focus { font-family: var(--font-mono) !important; }
+  .xl-active-font-mono:active { font-family: var(--font-mono) !important; }
+  .xl-disabled-font-mono:disabled { font-family: var(--font-mono) !important; }
+  .xl-focus-visible-font-mono:focus-visible { font-family: var(--font-mono) !important; }
+  .xl-focus-within-font-mono:focus-within { font-family: var(--font-mono) !important; }
+  .group:hover .xl-group-hover-font-mono { font-family: var(--font-mono) !important; }
+  .xl-font-size-auto { font-size: auto; }
+  .xl-hover-font-size-auto:hover { font-size: auto; }
+  .xl-focus-font-size-auto:focus { font-size: auto; }
+  .xl-active-font-size-auto:active { font-size: auto; }
+  .xl-disabled-font-size-auto:disabled { font-size: auto; }
+  .xl-focus-visible-font-size-auto:focus-visible { font-size: auto; }
+  .xl-focus-within-font-size-auto:focus-within { font-size: auto; }
+  .group:hover .xl-group-hover-font-size-auto { font-size: auto; }
+  .xl-font-size-0 { font-size: 0; }
+  .xl-hover-font-size-0:hover { font-size: 0; }
+  .xl-focus-font-size-0:focus { font-size: 0; }
+  .xl-active-font-size-0:active { font-size: 0; }
+  .xl-disabled-font-size-0:disabled { font-size: 0; }
+  .xl-focus-visible-font-size-0:focus-visible { font-size: 0; }
+  .xl-focus-within-font-size-0:focus-within { font-size: 0; }
+  .group:hover .xl-group-hover-font-size-0 { font-size: 0; }
+  .xl-font-size-1 { font-size: 0.25rem; }
+  .xl-hover-font-size-1:hover { font-size: 0.25rem; }
+  .xl-focus-font-size-1:focus { font-size: 0.25rem; }
+  .xl-active-font-size-1:active { font-size: 0.25rem; }
+  .xl-disabled-font-size-1:disabled { font-size: 0.25rem; }
+  .xl-focus-visible-font-size-1:focus-visible { font-size: 0.25rem; }
+  .xl-focus-within-font-size-1:focus-within { font-size: 0.25rem; }
+  .group:hover .xl-group-hover-font-size-1 { font-size: 0.25rem; }
+  .xl-font-size-2 { font-size: 0.5rem; }
+  .xl-hover-font-size-2:hover { font-size: 0.5rem; }
+  .xl-focus-font-size-2:focus { font-size: 0.5rem; }
+  .xl-active-font-size-2:active { font-size: 0.5rem; }
+  .xl-disabled-font-size-2:disabled { font-size: 0.5rem; }
+  .xl-focus-visible-font-size-2:focus-visible { font-size: 0.5rem; }
+  .xl-focus-within-font-size-2:focus-within { font-size: 0.5rem; }
+  .group:hover .xl-group-hover-font-size-2 { font-size: 0.5rem; }
+  .xl-font-size-3 { font-size: 0.75rem; }
+  .xl-hover-font-size-3:hover { font-size: 0.75rem; }
+  .xl-focus-font-size-3:focus { font-size: 0.75rem; }
+  .xl-active-font-size-3:active { font-size: 0.75rem; }
+  .xl-disabled-font-size-3:disabled { font-size: 0.75rem; }
+  .xl-focus-visible-font-size-3:focus-visible { font-size: 0.75rem; }
+  .xl-focus-within-font-size-3:focus-within { font-size: 0.75rem; }
+  .group:hover .xl-group-hover-font-size-3 { font-size: 0.75rem; }
+  .xl-font-size-4 { font-size: 1rem; }
+  .xl-hover-font-size-4:hover { font-size: 1rem; }
+  .xl-focus-font-size-4:focus { font-size: 1rem; }
+  .xl-active-font-size-4:active { font-size: 1rem; }
+  .xl-disabled-font-size-4:disabled { font-size: 1rem; }
+  .xl-focus-visible-font-size-4:focus-visible { font-size: 1rem; }
+  .xl-focus-within-font-size-4:focus-within { font-size: 1rem; }
+  .group:hover .xl-group-hover-font-size-4 { font-size: 1rem; }
+  .xl-font-size-5 { font-size: 1.25rem; }
+  .xl-hover-font-size-5:hover { font-size: 1.25rem; }
+  .xl-focus-font-size-5:focus { font-size: 1.25rem; }
+  .xl-active-font-size-5:active { font-size: 1.25rem; }
+  .xl-disabled-font-size-5:disabled { font-size: 1.25rem; }
+  .xl-focus-visible-font-size-5:focus-visible { font-size: 1.25rem; }
+  .xl-focus-within-font-size-5:focus-within { font-size: 1.25rem; }
+  .group:hover .xl-group-hover-font-size-5 { font-size: 1.25rem; }
+  .xl-font-size-6 { font-size: 1.5rem; }
+  .xl-hover-font-size-6:hover { font-size: 1.5rem; }
+  .xl-focus-font-size-6:focus { font-size: 1.5rem; }
+  .xl-active-font-size-6:active { font-size: 1.5rem; }
+  .xl-disabled-font-size-6:disabled { font-size: 1.5rem; }
+  .xl-focus-visible-font-size-6:focus-visible { font-size: 1.5rem; }
+  .xl-focus-within-font-size-6:focus-within { font-size: 1.5rem; }
+  .group:hover .xl-group-hover-font-size-6 { font-size: 1.5rem; }
+  .xl-font-size-7 { font-size: 1.75rem; }
+  .xl-hover-font-size-7:hover { font-size: 1.75rem; }
+  .xl-focus-font-size-7:focus { font-size: 1.75rem; }
+  .xl-active-font-size-7:active { font-size: 1.75rem; }
+  .xl-disabled-font-size-7:disabled { font-size: 1.75rem; }
+  .xl-focus-visible-font-size-7:focus-visible { font-size: 1.75rem; }
+  .xl-focus-within-font-size-7:focus-within { font-size: 1.75rem; }
+  .group:hover .xl-group-hover-font-size-7 { font-size: 1.75rem; }
+  .xl-font-size-8 { font-size: 2rem; }
+  .xl-hover-font-size-8:hover { font-size: 2rem; }
+  .xl-focus-font-size-8:focus { font-size: 2rem; }
+  .xl-active-font-size-8:active { font-size: 2rem; }
+  .xl-disabled-font-size-8:disabled { font-size: 2rem; }
+  .xl-focus-visible-font-size-8:focus-visible { font-size: 2rem; }
+  .xl-focus-within-font-size-8:focus-within { font-size: 2rem; }
+  .group:hover .xl-group-hover-font-size-8 { font-size: 2rem; }
+  .xl-font-size-9 { font-size: 2.25rem; }
+  .xl-hover-font-size-9:hover { font-size: 2.25rem; }
+  .xl-focus-font-size-9:focus { font-size: 2.25rem; }
+  .xl-active-font-size-9:active { font-size: 2.25rem; }
+  .xl-disabled-font-size-9:disabled { font-size: 2.25rem; }
+  .xl-focus-visible-font-size-9:focus-visible { font-size: 2.25rem; }
+  .xl-focus-within-font-size-9:focus-within { font-size: 2.25rem; }
+  .group:hover .xl-group-hover-font-size-9 { font-size: 2.25rem; }
+  .xl-font-size-10 { font-size: 2.5rem; }
+  .xl-hover-font-size-10:hover { font-size: 2.5rem; }
+  .xl-focus-font-size-10:focus { font-size: 2.5rem; }
+  .xl-active-font-size-10:active { font-size: 2.5rem; }
+  .xl-disabled-font-size-10:disabled { font-size: 2.5rem; }
+  .xl-focus-visible-font-size-10:focus-visible { font-size: 2.5rem; }
+  .xl-focus-within-font-size-10:focus-within { font-size: 2.5rem; }
+  .group:hover .xl-group-hover-font-size-10 { font-size: 2.5rem; }
+  .xl-font-size-12 { font-size: 3rem; }
+  .xl-hover-font-size-12:hover { font-size: 3rem; }
+  .xl-focus-font-size-12:focus { font-size: 3rem; }
+  .xl-active-font-size-12:active { font-size: 3rem; }
+  .xl-disabled-font-size-12:disabled { font-size: 3rem; }
+  .xl-focus-visible-font-size-12:focus-visible { font-size: 3rem; }
+  .xl-focus-within-font-size-12:focus-within { font-size: 3rem; }
+  .group:hover .xl-group-hover-font-size-12 { font-size: 3rem; }
+  .xl-font-size-14 { font-size: 3.5rem; }
+  .xl-hover-font-size-14:hover { font-size: 3.5rem; }
+  .xl-focus-font-size-14:focus { font-size: 3.5rem; }
+  .xl-active-font-size-14:active { font-size: 3.5rem; }
+  .xl-disabled-font-size-14:disabled { font-size: 3.5rem; }
+  .xl-focus-visible-font-size-14:focus-visible { font-size: 3.5rem; }
+  .xl-focus-within-font-size-14:focus-within { font-size: 3.5rem; }
+  .group:hover .xl-group-hover-font-size-14 { font-size: 3.5rem; }
+  .xl-font-size-16 { font-size: 4rem; }
+  .xl-hover-font-size-16:hover { font-size: 4rem; }
+  .xl-focus-font-size-16:focus { font-size: 4rem; }
+  .xl-active-font-size-16:active { font-size: 4rem; }
+  .xl-disabled-font-size-16:disabled { font-size: 4rem; }
+  .xl-focus-visible-font-size-16:focus-visible { font-size: 4rem; }
+  .xl-focus-within-font-size-16:focus-within { font-size: 4rem; }
+  .group:hover .xl-group-hover-font-size-16 { font-size: 4rem; }
+  .xl-font-size-18 { font-size: 4.5rem; }
+  .xl-hover-font-size-18:hover { font-size: 4.5rem; }
+  .xl-focus-font-size-18:focus { font-size: 4.5rem; }
+  .xl-active-font-size-18:active { font-size: 4.5rem; }
+  .xl-disabled-font-size-18:disabled { font-size: 4.5rem; }
+  .xl-focus-visible-font-size-18:focus-visible { font-size: 4.5rem; }
+  .xl-focus-within-font-size-18:focus-within { font-size: 4.5rem; }
+  .group:hover .xl-group-hover-font-size-18 { font-size: 4.5rem; }
+  .xl-font-size-20 { font-size: 5rem; }
+  .xl-hover-font-size-20:hover { font-size: 5rem; }
+  .xl-focus-font-size-20:focus { font-size: 5rem; }
+  .xl-active-font-size-20:active { font-size: 5rem; }
+  .xl-disabled-font-size-20:disabled { font-size: 5rem; }
+  .xl-focus-visible-font-size-20:focus-visible { font-size: 5rem; }
+  .xl-focus-within-font-size-20:focus-within { font-size: 5rem; }
+  .group:hover .xl-group-hover-font-size-20 { font-size: 5rem; }
+  .xl-font-size-24 { font-size: 6rem; }
+  .xl-hover-font-size-24:hover { font-size: 6rem; }
+  .xl-focus-font-size-24:focus { font-size: 6rem; }
+  .xl-active-font-size-24:active { font-size: 6rem; }
+  .xl-disabled-font-size-24:disabled { font-size: 6rem; }
+  .xl-focus-visible-font-size-24:focus-visible { font-size: 6rem; }
+  .xl-focus-within-font-size-24:focus-within { font-size: 6rem; }
+  .group:hover .xl-group-hover-font-size-24 { font-size: 6rem; }
+  .xl-font-size-28 { font-size: 7rem; }
+  .xl-hover-font-size-28:hover { font-size: 7rem; }
+  .xl-focus-font-size-28:focus { font-size: 7rem; }
+  .xl-active-font-size-28:active { font-size: 7rem; }
+  .xl-disabled-font-size-28:disabled { font-size: 7rem; }
+  .xl-focus-visible-font-size-28:focus-visible { font-size: 7rem; }
+  .xl-focus-within-font-size-28:focus-within { font-size: 7rem; }
+  .group:hover .xl-group-hover-font-size-28 { font-size: 7rem; }
+  .xl-font-size-32 { font-size: 8rem; }
+  .xl-hover-font-size-32:hover { font-size: 8rem; }
+  .xl-focus-font-size-32:focus { font-size: 8rem; }
+  .xl-active-font-size-32:active { font-size: 8rem; }
+  .xl-disabled-font-size-32:disabled { font-size: 8rem; }
+  .xl-focus-visible-font-size-32:focus-visible { font-size: 8rem; }
+  .xl-focus-within-font-size-32:focus-within { font-size: 8rem; }
+  .group:hover .xl-group-hover-font-size-32 { font-size: 8rem; }
+  .xl-font-style-normal { font-style: normal; }
+  .xl-hover-font-style-normal:hover { font-style: normal; }
+  .xl-focus-font-style-normal:focus { font-style: normal; }
+  .xl-active-font-style-normal:active { font-style: normal; }
+  .xl-disabled-font-style-normal:disabled { font-style: normal; }
+  .xl-focus-visible-font-style-normal:focus-visible { font-style: normal; }
+  .xl-focus-within-font-style-normal:focus-within { font-style: normal; }
+  .group:hover .xl-group-hover-font-style-normal { font-style: normal; }
+  .xl-font-style-italic { font-style: italic; }
+  .xl-hover-font-style-italic:hover { font-style: italic; }
+  .xl-focus-font-style-italic:focus { font-style: italic; }
+  .xl-active-font-style-italic:active { font-style: italic; }
+  .xl-disabled-font-style-italic:disabled { font-style: italic; }
+  .xl-focus-visible-font-style-italic:focus-visible { font-style: italic; }
+  .xl-focus-within-font-style-italic:focus-within { font-style: italic; }
+  .group:hover .xl-group-hover-font-style-italic { font-style: italic; }
+  .xl-font-style-oblique { font-style: oblique; }
+  .xl-hover-font-style-oblique:hover { font-style: oblique; }
+  .xl-focus-font-style-oblique:focus { font-style: oblique; }
+  .xl-active-font-style-oblique:active { font-style: oblique; }
+  .xl-disabled-font-style-oblique:disabled { font-style: oblique; }
+  .xl-focus-visible-font-style-oblique:focus-visible { font-style: oblique; }
+  .xl-focus-within-font-style-oblique:focus-within { font-style: oblique; }
+  .group:hover .xl-group-hover-font-style-oblique { font-style: oblique; }
+  .xl-font-smoothing-antialiased { -webkit-font-smoothing: antialiased; }
+  .xl-hover-font-smoothing-antialiased:hover { -webkit-font-smoothing: antialiased; }
+  .xl-focus-font-smoothing-antialiased:focus { -webkit-font-smoothing: antialiased; }
+  .xl-active-font-smoothing-antialiased:active { -webkit-font-smoothing: antialiased; }
+  .xl-disabled-font-smoothing-antialiased:disabled { -webkit-font-smoothing: antialiased; }
+  .xl-focus-visible-font-smoothing-antialiased:focus-visible { -webkit-font-smoothing: antialiased; }
+  .xl-focus-within-font-smoothing-antialiased:focus-within { -webkit-font-smoothing: antialiased; }
+  .group:hover .xl-group-hover-font-smoothing-antialiased { -webkit-font-smoothing: antialiased; }
+  .xl-font-smoothing-subpixel-antialiased { -webkit-font-smoothing: subpixel-antialiased; }
+  .xl-hover-font-smoothing-subpixel-antialiased:hover { -webkit-font-smoothing: subpixel-antialiased; }
+  .xl-focus-font-smoothing-subpixel-antialiased:focus { -webkit-font-smoothing: subpixel-antialiased; }
+  .xl-active-font-smoothing-subpixel-antialiased:active { -webkit-font-smoothing: subpixel-antialiased; }
+  .xl-disabled-font-smoothing-subpixel-antialiased:disabled { -webkit-font-smoothing: subpixel-antialiased; }
+  .xl-focus-visible-font-smoothing-subpixel-antialiased:focus-visible { -webkit-font-smoothing: subpixel-antialiased; }
+  .xl-focus-within-font-smoothing-subpixel-antialiased:focus-within { -webkit-font-smoothing: subpixel-antialiased; }
+  .group:hover .xl-group-hover-font-smoothing-subpixel-antialiased { -webkit-font-smoothing: subpixel-antialiased; }
+  .xl-font-weight-thin { font-weight: 100; }
+  .xl-hover-font-weight-thin:hover { font-weight: 100; }
+  .xl-focus-font-weight-thin:focus { font-weight: 100; }
+  .xl-active-font-weight-thin:active { font-weight: 100; }
+  .xl-disabled-font-weight-thin:disabled { font-weight: 100; }
+  .xl-focus-visible-font-weight-thin:focus-visible { font-weight: 100; }
+  .xl-focus-within-font-weight-thin:focus-within { font-weight: 100; }
+  .group:hover .xl-group-hover-font-weight-thin { font-weight: 100; }
+  .xl-font-weight-extralight { font-weight: 200; }
+  .xl-hover-font-weight-extralight:hover { font-weight: 200; }
+  .xl-focus-font-weight-extralight:focus { font-weight: 200; }
+  .xl-active-font-weight-extralight:active { font-weight: 200; }
+  .xl-disabled-font-weight-extralight:disabled { font-weight: 200; }
+  .xl-focus-visible-font-weight-extralight:focus-visible { font-weight: 200; }
+  .xl-focus-within-font-weight-extralight:focus-within { font-weight: 200; }
+  .group:hover .xl-group-hover-font-weight-extralight { font-weight: 200; }
+  .xl-font-weight-light { font-weight: 300; }
+  .xl-hover-font-weight-light:hover { font-weight: 300; }
+  .xl-focus-font-weight-light:focus { font-weight: 300; }
+  .xl-active-font-weight-light:active { font-weight: 300; }
+  .xl-disabled-font-weight-light:disabled { font-weight: 300; }
+  .xl-focus-visible-font-weight-light:focus-visible { font-weight: 300; }
+  .xl-focus-within-font-weight-light:focus-within { font-weight: 300; }
+  .group:hover .xl-group-hover-font-weight-light { font-weight: 300; }
+  .xl-font-weight-regular { font-weight: 400; }
+  .xl-hover-font-weight-regular:hover { font-weight: 400; }
+  .xl-focus-font-weight-regular:focus { font-weight: 400; }
+  .xl-active-font-weight-regular:active { font-weight: 400; }
+  .xl-disabled-font-weight-regular:disabled { font-weight: 400; }
+  .xl-focus-visible-font-weight-regular:focus-visible { font-weight: 400; }
+  .xl-focus-within-font-weight-regular:focus-within { font-weight: 400; }
+  .group:hover .xl-group-hover-font-weight-regular { font-weight: 400; }
+  .xl-font-weight-medium { font-weight: 500; }
+  .xl-hover-font-weight-medium:hover { font-weight: 500; }
+  .xl-focus-font-weight-medium:focus { font-weight: 500; }
+  .xl-active-font-weight-medium:active { font-weight: 500; }
+  .xl-disabled-font-weight-medium:disabled { font-weight: 500; }
+  .xl-focus-visible-font-weight-medium:focus-visible { font-weight: 500; }
+  .xl-focus-within-font-weight-medium:focus-within { font-weight: 500; }
+  .group:hover .xl-group-hover-font-weight-medium { font-weight: 500; }
+  .xl-font-weight-semibold { font-weight: 600; }
+  .xl-hover-font-weight-semibold:hover { font-weight: 600; }
+  .xl-focus-font-weight-semibold:focus { font-weight: 600; }
+  .xl-active-font-weight-semibold:active { font-weight: 600; }
+  .xl-disabled-font-weight-semibold:disabled { font-weight: 600; }
+  .xl-focus-visible-font-weight-semibold:focus-visible { font-weight: 600; }
+  .xl-focus-within-font-weight-semibold:focus-within { font-weight: 600; }
+  .group:hover .xl-group-hover-font-weight-semibold { font-weight: 600; }
+  .xl-font-weight-bold { font-weight: 700; }
+  .xl-hover-font-weight-bold:hover { font-weight: 700; }
+  .xl-focus-font-weight-bold:focus { font-weight: 700; }
+  .xl-active-font-weight-bold:active { font-weight: 700; }
+  .xl-disabled-font-weight-bold:disabled { font-weight: 700; }
+  .xl-focus-visible-font-weight-bold:focus-visible { font-weight: 700; }
+  .xl-focus-within-font-weight-bold:focus-within { font-weight: 700; }
+  .group:hover .xl-group-hover-font-weight-bold { font-weight: 700; }
+  .xl-font-weight-extrabold { font-weight: 800; }
+  .xl-hover-font-weight-extrabold:hover { font-weight: 800; }
+  .xl-focus-font-weight-extrabold:focus { font-weight: 800; }
+  .xl-active-font-weight-extrabold:active { font-weight: 800; }
+  .xl-disabled-font-weight-extrabold:disabled { font-weight: 800; }
+  .xl-focus-visible-font-weight-extrabold:focus-visible { font-weight: 800; }
+  .xl-focus-within-font-weight-extrabold:focus-within { font-weight: 800; }
+  .group:hover .xl-group-hover-font-weight-extrabold { font-weight: 800; }
+  .xl-font-weight-ultrabold { font-weight: 900; }
+  .xl-hover-font-weight-ultrabold:hover { font-weight: 900; }
+  .xl-focus-font-weight-ultrabold:focus { font-weight: 900; }
+  .xl-active-font-weight-ultrabold:active { font-weight: 900; }
+  .xl-disabled-font-weight-ultrabold:disabled { font-weight: 900; }
+  .xl-focus-visible-font-weight-ultrabold:focus-visible { font-weight: 900; }
+  .xl-focus-within-font-weight-ultrabold:focus-within { font-weight: 900; }
+  .group:hover .xl-group-hover-font-weight-ultrabold { font-weight: 900; }
+  .xl-font-stretch-ultra-condensed { font-stretch: ultra-condensed; }
+  .xl-hover-font-stretch-ultra-condensed:hover { font-stretch: ultra-condensed; }
+  .xl-focus-font-stretch-ultra-condensed:focus { font-stretch: ultra-condensed; }
+  .xl-active-font-stretch-ultra-condensed:active { font-stretch: ultra-condensed; }
+  .xl-disabled-font-stretch-ultra-condensed:disabled { font-stretch: ultra-condensed; }
+  .xl-focus-visible-font-stretch-ultra-condensed:focus-visible { font-stretch: ultra-condensed; }
+  .xl-focus-within-font-stretch-ultra-condensed:focus-within { font-stretch: ultra-condensed; }
+  .group:hover .xl-group-hover-font-stretch-ultra-condensed { font-stretch: ultra-condensed; }
+  .xl-font-stretch-extra-condensed { font-stretch: extra-condensed; }
+  .xl-hover-font-stretch-extra-condensed:hover { font-stretch: extra-condensed; }
+  .xl-focus-font-stretch-extra-condensed:focus { font-stretch: extra-condensed; }
+  .xl-active-font-stretch-extra-condensed:active { font-stretch: extra-condensed; }
+  .xl-disabled-font-stretch-extra-condensed:disabled { font-stretch: extra-condensed; }
+  .xl-focus-visible-font-stretch-extra-condensed:focus-visible { font-stretch: extra-condensed; }
+  .xl-focus-within-font-stretch-extra-condensed:focus-within { font-stretch: extra-condensed; }
+  .group:hover .xl-group-hover-font-stretch-extra-condensed { font-stretch: extra-condensed; }
+  .xl-font-stretch-condensed { font-stretch: condensed; }
+  .xl-hover-font-stretch-condensed:hover { font-stretch: condensed; }
+  .xl-focus-font-stretch-condensed:focus { font-stretch: condensed; }
+  .xl-active-font-stretch-condensed:active { font-stretch: condensed; }
+  .xl-disabled-font-stretch-condensed:disabled { font-stretch: condensed; }
+  .xl-focus-visible-font-stretch-condensed:focus-visible { font-stretch: condensed; }
+  .xl-focus-within-font-stretch-condensed:focus-within { font-stretch: condensed; }
+  .group:hover .xl-group-hover-font-stretch-condensed { font-stretch: condensed; }
+  .xl-font-stretch-semi-condensed { font-stretch: semi-condensed; }
+  .xl-hover-font-stretch-semi-condensed:hover { font-stretch: semi-condensed; }
+  .xl-focus-font-stretch-semi-condensed:focus { font-stretch: semi-condensed; }
+  .xl-active-font-stretch-semi-condensed:active { font-stretch: semi-condensed; }
+  .xl-disabled-font-stretch-semi-condensed:disabled { font-stretch: semi-condensed; }
+  .xl-focus-visible-font-stretch-semi-condensed:focus-visible { font-stretch: semi-condensed; }
+  .xl-focus-within-font-stretch-semi-condensed:focus-within { font-stretch: semi-condensed; }
+  .group:hover .xl-group-hover-font-stretch-semi-condensed { font-stretch: semi-condensed; }
+  .xl-font-stretch-normal { font-stretch: normal; }
+  .xl-hover-font-stretch-normal:hover { font-stretch: normal; }
+  .xl-focus-font-stretch-normal:focus { font-stretch: normal; }
+  .xl-active-font-stretch-normal:active { font-stretch: normal; }
+  .xl-disabled-font-stretch-normal:disabled { font-stretch: normal; }
+  .xl-focus-visible-font-stretch-normal:focus-visible { font-stretch: normal; }
+  .xl-focus-within-font-stretch-normal:focus-within { font-stretch: normal; }
+  .group:hover .xl-group-hover-font-stretch-normal { font-stretch: normal; }
+  .xl-font-stretch-semi-expanded { font-stretch: semi-expanded; }
+  .xl-hover-font-stretch-semi-expanded:hover { font-stretch: semi-expanded; }
+  .xl-focus-font-stretch-semi-expanded:focus { font-stretch: semi-expanded; }
+  .xl-active-font-stretch-semi-expanded:active { font-stretch: semi-expanded; }
+  .xl-disabled-font-stretch-semi-expanded:disabled { font-stretch: semi-expanded; }
+  .xl-focus-visible-font-stretch-semi-expanded:focus-visible { font-stretch: semi-expanded; }
+  .xl-focus-within-font-stretch-semi-expanded:focus-within { font-stretch: semi-expanded; }
+  .group:hover .xl-group-hover-font-stretch-semi-expanded { font-stretch: semi-expanded; }
+  .xl-font-stretch-expanded { font-stretch: expanded; }
+  .xl-hover-font-stretch-expanded:hover { font-stretch: expanded; }
+  .xl-focus-font-stretch-expanded:focus { font-stretch: expanded; }
+  .xl-active-font-stretch-expanded:active { font-stretch: expanded; }
+  .xl-disabled-font-stretch-expanded:disabled { font-stretch: expanded; }
+  .xl-focus-visible-font-stretch-expanded:focus-visible { font-stretch: expanded; }
+  .xl-focus-within-font-stretch-expanded:focus-within { font-stretch: expanded; }
+  .group:hover .xl-group-hover-font-stretch-expanded { font-stretch: expanded; }
+  .xl-font-stretch-extra-expanded { font-stretch: extra-expanded; }
+  .xl-hover-font-stretch-extra-expanded:hover { font-stretch: extra-expanded; }
+  .xl-focus-font-stretch-extra-expanded:focus { font-stretch: extra-expanded; }
+  .xl-active-font-stretch-extra-expanded:active { font-stretch: extra-expanded; }
+  .xl-disabled-font-stretch-extra-expanded:disabled { font-stretch: extra-expanded; }
+  .xl-focus-visible-font-stretch-extra-expanded:focus-visible { font-stretch: extra-expanded; }
+  .xl-focus-within-font-stretch-extra-expanded:focus-within { font-stretch: extra-expanded; }
+  .group:hover .xl-group-hover-font-stretch-extra-expanded { font-stretch: extra-expanded; }
+  .xl-font-stretch-ultra-expanded { font-stretch: ultra-expanded; }
+  .xl-hover-font-stretch-ultra-expanded:hover { font-stretch: ultra-expanded; }
+  .xl-focus-font-stretch-ultra-expanded:focus { font-stretch: ultra-expanded; }
+  .xl-active-font-stretch-ultra-expanded:active { font-stretch: ultra-expanded; }
+  .xl-disabled-font-stretch-ultra-expanded:disabled { font-stretch: ultra-expanded; }
+  .xl-focus-visible-font-stretch-ultra-expanded:focus-visible { font-stretch: ultra-expanded; }
+  .xl-focus-within-font-stretch-ultra-expanded:focus-within { font-stretch: ultra-expanded; }
+  .group:hover .xl-group-hover-font-stretch-ultra-expanded { font-stretch: ultra-expanded; }
+  .xl-font-variant-numeric-normal { font-variant-numeric: normal; }
+  .xl-hover-font-variant-numeric-normal:hover { font-variant-numeric: normal; }
+  .xl-focus-font-variant-numeric-normal:focus { font-variant-numeric: normal; }
+  .xl-active-font-variant-numeric-normal:active { font-variant-numeric: normal; }
+  .xl-disabled-font-variant-numeric-normal:disabled { font-variant-numeric: normal; }
+  .xl-focus-visible-font-variant-numeric-normal:focus-visible { font-variant-numeric: normal; }
+  .xl-focus-within-font-variant-numeric-normal:focus-within { font-variant-numeric: normal; }
+  .group:hover .xl-group-hover-font-variant-numeric-normal { font-variant-numeric: normal; }
+  .xl-font-variant-numeric-lining-nums { font-variant-numeric: lining-nums; }
+  .xl-hover-font-variant-numeric-lining-nums:hover { font-variant-numeric: lining-nums; }
+  .xl-focus-font-variant-numeric-lining-nums:focus { font-variant-numeric: lining-nums; }
+  .xl-active-font-variant-numeric-lining-nums:active { font-variant-numeric: lining-nums; }
+  .xl-disabled-font-variant-numeric-lining-nums:disabled { font-variant-numeric: lining-nums; }
+  .xl-focus-visible-font-variant-numeric-lining-nums:focus-visible { font-variant-numeric: lining-nums; }
+  .xl-focus-within-font-variant-numeric-lining-nums:focus-within { font-variant-numeric: lining-nums; }
+  .group:hover .xl-group-hover-font-variant-numeric-lining-nums { font-variant-numeric: lining-nums; }
+  .xl-font-variant-numeric-oldstyle-nums { font-variant-numeric: oldstyle-nums; }
+  .xl-hover-font-variant-numeric-oldstyle-nums:hover { font-variant-numeric: oldstyle-nums; }
+  .xl-focus-font-variant-numeric-oldstyle-nums:focus { font-variant-numeric: oldstyle-nums; }
+  .xl-active-font-variant-numeric-oldstyle-nums:active { font-variant-numeric: oldstyle-nums; }
+  .xl-disabled-font-variant-numeric-oldstyle-nums:disabled { font-variant-numeric: oldstyle-nums; }
+  .xl-focus-visible-font-variant-numeric-oldstyle-nums:focus-visible { font-variant-numeric: oldstyle-nums; }
+  .xl-focus-within-font-variant-numeric-oldstyle-nums:focus-within { font-variant-numeric: oldstyle-nums; }
+  .group:hover .xl-group-hover-font-variant-numeric-oldstyle-nums { font-variant-numeric: oldstyle-nums; }
+  .xl-font-variant-numeric-proportional-nums { font-variant-numeric: proportional-nums; }
+  .xl-hover-font-variant-numeric-proportional-nums:hover { font-variant-numeric: proportional-nums; }
+  .xl-focus-font-variant-numeric-proportional-nums:focus { font-variant-numeric: proportional-nums; }
+  .xl-active-font-variant-numeric-proportional-nums:active { font-variant-numeric: proportional-nums; }
+  .xl-disabled-font-variant-numeric-proportional-nums:disabled { font-variant-numeric: proportional-nums; }
+  .xl-focus-visible-font-variant-numeric-proportional-nums:focus-visible { font-variant-numeric: proportional-nums; }
+  .xl-focus-within-font-variant-numeric-proportional-nums:focus-within { font-variant-numeric: proportional-nums; }
+  .group:hover .xl-group-hover-font-variant-numeric-proportional-nums { font-variant-numeric: proportional-nums; }
+  .xl-font-variant-numeric-tabular-nums { font-variant-numeric: tabular-nums; }
+  .xl-hover-font-variant-numeric-tabular-nums:hover { font-variant-numeric: tabular-nums; }
+  .xl-focus-font-variant-numeric-tabular-nums:focus { font-variant-numeric: tabular-nums; }
+  .xl-active-font-variant-numeric-tabular-nums:active { font-variant-numeric: tabular-nums; }
+  .xl-disabled-font-variant-numeric-tabular-nums:disabled { font-variant-numeric: tabular-nums; }
+  .xl-focus-visible-font-variant-numeric-tabular-nums:focus-visible { font-variant-numeric: tabular-nums; }
+  .xl-focus-within-font-variant-numeric-tabular-nums:focus-within { font-variant-numeric: tabular-nums; }
+  .group:hover .xl-group-hover-font-variant-numeric-tabular-nums { font-variant-numeric: tabular-nums; }
+  .xl-font-variant-numeric-diagonal-fractions { font-variant-numeric: diagonal-fractions; }
+  .xl-hover-font-variant-numeric-diagonal-fractions:hover { font-variant-numeric: diagonal-fractions; }
+  .xl-focus-font-variant-numeric-diagonal-fractions:focus { font-variant-numeric: diagonal-fractions; }
+  .xl-active-font-variant-numeric-diagonal-fractions:active { font-variant-numeric: diagonal-fractions; }
+  .xl-disabled-font-variant-numeric-diagonal-fractions:disabled { font-variant-numeric: diagonal-fractions; }
+  .xl-focus-visible-font-variant-numeric-diagonal-fractions:focus-visible { font-variant-numeric: diagonal-fractions; }
+  .xl-focus-within-font-variant-numeric-diagonal-fractions:focus-within { font-variant-numeric: diagonal-fractions; }
+  .group:hover .xl-group-hover-font-variant-numeric-diagonal-fractions { font-variant-numeric: diagonal-fractions; }
+  .xl-font-variant-numeric-stacked-fractions { font-variant-numeric: stacked-fractions; }
+  .xl-hover-font-variant-numeric-stacked-fractions:hover { font-variant-numeric: stacked-fractions; }
+  .xl-focus-font-variant-numeric-stacked-fractions:focus { font-variant-numeric: stacked-fractions; }
+  .xl-active-font-variant-numeric-stacked-fractions:active { font-variant-numeric: stacked-fractions; }
+  .xl-disabled-font-variant-numeric-stacked-fractions:disabled { font-variant-numeric: stacked-fractions; }
+  .xl-focus-visible-font-variant-numeric-stacked-fractions:focus-visible { font-variant-numeric: stacked-fractions; }
+  .xl-focus-within-font-variant-numeric-stacked-fractions:focus-within { font-variant-numeric: stacked-fractions; }
+  .group:hover .xl-group-hover-font-variant-numeric-stacked-fractions { font-variant-numeric: stacked-fractions; }
+}
+
+/* UW Breakpoint */
+@media (min-width: 1536px) {
+  .uw-font-sans { font-family: var(--font-sans) !important; }
+  .uw-hover-font-sans:hover { font-family: var(--font-sans) !important; }
+  .uw-focus-font-sans:focus { font-family: var(--font-sans) !important; }
+  .uw-active-font-sans:active { font-family: var(--font-sans) !important; }
+  .uw-disabled-font-sans:disabled { font-family: var(--font-sans) !important; }
+  .uw-focus-visible-font-sans:focus-visible { font-family: var(--font-sans) !important; }
+  .uw-focus-within-font-sans:focus-within { font-family: var(--font-sans) !important; }
+  .group:hover .uw-group-hover-font-sans { font-family: var(--font-sans) !important; }
+  .uw-font-serif { font-family: var(--font-serif) !important; }
+  .uw-hover-font-serif:hover { font-family: var(--font-serif) !important; }
+  .uw-focus-font-serif:focus { font-family: var(--font-serif) !important; }
+  .uw-active-font-serif:active { font-family: var(--font-serif) !important; }
+  .uw-disabled-font-serif:disabled { font-family: var(--font-serif) !important; }
+  .uw-focus-visible-font-serif:focus-visible { font-family: var(--font-serif) !important; }
+  .uw-focus-within-font-serif:focus-within { font-family: var(--font-serif) !important; }
+  .group:hover .uw-group-hover-font-serif { font-family: var(--font-serif) !important; }
+  .uw-font-mono { font-family: var(--font-mono) !important; }
+  .uw-hover-font-mono:hover { font-family: var(--font-mono) !important; }
+  .uw-focus-font-mono:focus { font-family: var(--font-mono) !important; }
+  .uw-active-font-mono:active { font-family: var(--font-mono) !important; }
+  .uw-disabled-font-mono:disabled { font-family: var(--font-mono) !important; }
+  .uw-focus-visible-font-mono:focus-visible { font-family: var(--font-mono) !important; }
+  .uw-focus-within-font-mono:focus-within { font-family: var(--font-mono) !important; }
+  .group:hover .uw-group-hover-font-mono { font-family: var(--font-mono) !important; }
+  .uw-font-size-auto { font-size: auto; }
+  .uw-hover-font-size-auto:hover { font-size: auto; }
+  .uw-focus-font-size-auto:focus { font-size: auto; }
+  .uw-active-font-size-auto:active { font-size: auto; }
+  .uw-disabled-font-size-auto:disabled { font-size: auto; }
+  .uw-focus-visible-font-size-auto:focus-visible { font-size: auto; }
+  .uw-focus-within-font-size-auto:focus-within { font-size: auto; }
+  .group:hover .uw-group-hover-font-size-auto { font-size: auto; }
+  .uw-font-size-0 { font-size: 0; }
+  .uw-hover-font-size-0:hover { font-size: 0; }
+  .uw-focus-font-size-0:focus { font-size: 0; }
+  .uw-active-font-size-0:active { font-size: 0; }
+  .uw-disabled-font-size-0:disabled { font-size: 0; }
+  .uw-focus-visible-font-size-0:focus-visible { font-size: 0; }
+  .uw-focus-within-font-size-0:focus-within { font-size: 0; }
+  .group:hover .uw-group-hover-font-size-0 { font-size: 0; }
+  .uw-font-size-1 { font-size: 0.25rem; }
+  .uw-hover-font-size-1:hover { font-size: 0.25rem; }
+  .uw-focus-font-size-1:focus { font-size: 0.25rem; }
+  .uw-active-font-size-1:active { font-size: 0.25rem; }
+  .uw-disabled-font-size-1:disabled { font-size: 0.25rem; }
+  .uw-focus-visible-font-size-1:focus-visible { font-size: 0.25rem; }
+  .uw-focus-within-font-size-1:focus-within { font-size: 0.25rem; }
+  .group:hover .uw-group-hover-font-size-1 { font-size: 0.25rem; }
+  .uw-font-size-2 { font-size: 0.5rem; }
+  .uw-hover-font-size-2:hover { font-size: 0.5rem; }
+  .uw-focus-font-size-2:focus { font-size: 0.5rem; }
+  .uw-active-font-size-2:active { font-size: 0.5rem; }
+  .uw-disabled-font-size-2:disabled { font-size: 0.5rem; }
+  .uw-focus-visible-font-size-2:focus-visible { font-size: 0.5rem; }
+  .uw-focus-within-font-size-2:focus-within { font-size: 0.5rem; }
+  .group:hover .uw-group-hover-font-size-2 { font-size: 0.5rem; }
+  .uw-font-size-3 { font-size: 0.75rem; }
+  .uw-hover-font-size-3:hover { font-size: 0.75rem; }
+  .uw-focus-font-size-3:focus { font-size: 0.75rem; }
+  .uw-active-font-size-3:active { font-size: 0.75rem; }
+  .uw-disabled-font-size-3:disabled { font-size: 0.75rem; }
+  .uw-focus-visible-font-size-3:focus-visible { font-size: 0.75rem; }
+  .uw-focus-within-font-size-3:focus-within { font-size: 0.75rem; }
+  .group:hover .uw-group-hover-font-size-3 { font-size: 0.75rem; }
+  .uw-font-size-4 { font-size: 1rem; }
+  .uw-hover-font-size-4:hover { font-size: 1rem; }
+  .uw-focus-font-size-4:focus { font-size: 1rem; }
+  .uw-active-font-size-4:active { font-size: 1rem; }
+  .uw-disabled-font-size-4:disabled { font-size: 1rem; }
+  .uw-focus-visible-font-size-4:focus-visible { font-size: 1rem; }
+  .uw-focus-within-font-size-4:focus-within { font-size: 1rem; }
+  .group:hover .uw-group-hover-font-size-4 { font-size: 1rem; }
+  .uw-font-size-5 { font-size: 1.25rem; }
+  .uw-hover-font-size-5:hover { font-size: 1.25rem; }
+  .uw-focus-font-size-5:focus { font-size: 1.25rem; }
+  .uw-active-font-size-5:active { font-size: 1.25rem; }
+  .uw-disabled-font-size-5:disabled { font-size: 1.25rem; }
+  .uw-focus-visible-font-size-5:focus-visible { font-size: 1.25rem; }
+  .uw-focus-within-font-size-5:focus-within { font-size: 1.25rem; }
+  .group:hover .uw-group-hover-font-size-5 { font-size: 1.25rem; }
+  .uw-font-size-6 { font-size: 1.5rem; }
+  .uw-hover-font-size-6:hover { font-size: 1.5rem; }
+  .uw-focus-font-size-6:focus { font-size: 1.5rem; }
+  .uw-active-font-size-6:active { font-size: 1.5rem; }
+  .uw-disabled-font-size-6:disabled { font-size: 1.5rem; }
+  .uw-focus-visible-font-size-6:focus-visible { font-size: 1.5rem; }
+  .uw-focus-within-font-size-6:focus-within { font-size: 1.5rem; }
+  .group:hover .uw-group-hover-font-size-6 { font-size: 1.5rem; }
+  .uw-font-size-7 { font-size: 1.75rem; }
+  .uw-hover-font-size-7:hover { font-size: 1.75rem; }
+  .uw-focus-font-size-7:focus { font-size: 1.75rem; }
+  .uw-active-font-size-7:active { font-size: 1.75rem; }
+  .uw-disabled-font-size-7:disabled { font-size: 1.75rem; }
+  .uw-focus-visible-font-size-7:focus-visible { font-size: 1.75rem; }
+  .uw-focus-within-font-size-7:focus-within { font-size: 1.75rem; }
+  .group:hover .uw-group-hover-font-size-7 { font-size: 1.75rem; }
+  .uw-font-size-8 { font-size: 2rem; }
+  .uw-hover-font-size-8:hover { font-size: 2rem; }
+  .uw-focus-font-size-8:focus { font-size: 2rem; }
+  .uw-active-font-size-8:active { font-size: 2rem; }
+  .uw-disabled-font-size-8:disabled { font-size: 2rem; }
+  .uw-focus-visible-font-size-8:focus-visible { font-size: 2rem; }
+  .uw-focus-within-font-size-8:focus-within { font-size: 2rem; }
+  .group:hover .uw-group-hover-font-size-8 { font-size: 2rem; }
+  .uw-font-size-9 { font-size: 2.25rem; }
+  .uw-hover-font-size-9:hover { font-size: 2.25rem; }
+  .uw-focus-font-size-9:focus { font-size: 2.25rem; }
+  .uw-active-font-size-9:active { font-size: 2.25rem; }
+  .uw-disabled-font-size-9:disabled { font-size: 2.25rem; }
+  .uw-focus-visible-font-size-9:focus-visible { font-size: 2.25rem; }
+  .uw-focus-within-font-size-9:focus-within { font-size: 2.25rem; }
+  .group:hover .uw-group-hover-font-size-9 { font-size: 2.25rem; }
+  .uw-font-size-10 { font-size: 2.5rem; }
+  .uw-hover-font-size-10:hover { font-size: 2.5rem; }
+  .uw-focus-font-size-10:focus { font-size: 2.5rem; }
+  .uw-active-font-size-10:active { font-size: 2.5rem; }
+  .uw-disabled-font-size-10:disabled { font-size: 2.5rem; }
+  .uw-focus-visible-font-size-10:focus-visible { font-size: 2.5rem; }
+  .uw-focus-within-font-size-10:focus-within { font-size: 2.5rem; }
+  .group:hover .uw-group-hover-font-size-10 { font-size: 2.5rem; }
+  .uw-font-size-12 { font-size: 3rem; }
+  .uw-hover-font-size-12:hover { font-size: 3rem; }
+  .uw-focus-font-size-12:focus { font-size: 3rem; }
+  .uw-active-font-size-12:active { font-size: 3rem; }
+  .uw-disabled-font-size-12:disabled { font-size: 3rem; }
+  .uw-focus-visible-font-size-12:focus-visible { font-size: 3rem; }
+  .uw-focus-within-font-size-12:focus-within { font-size: 3rem; }
+  .group:hover .uw-group-hover-font-size-12 { font-size: 3rem; }
+  .uw-font-size-14 { font-size: 3.5rem; }
+  .uw-hover-font-size-14:hover { font-size: 3.5rem; }
+  .uw-focus-font-size-14:focus { font-size: 3.5rem; }
+  .uw-active-font-size-14:active { font-size: 3.5rem; }
+  .uw-disabled-font-size-14:disabled { font-size: 3.5rem; }
+  .uw-focus-visible-font-size-14:focus-visible { font-size: 3.5rem; }
+  .uw-focus-within-font-size-14:focus-within { font-size: 3.5rem; }
+  .group:hover .uw-group-hover-font-size-14 { font-size: 3.5rem; }
+  .uw-font-size-16 { font-size: 4rem; }
+  .uw-hover-font-size-16:hover { font-size: 4rem; }
+  .uw-focus-font-size-16:focus { font-size: 4rem; }
+  .uw-active-font-size-16:active { font-size: 4rem; }
+  .uw-disabled-font-size-16:disabled { font-size: 4rem; }
+  .uw-focus-visible-font-size-16:focus-visible { font-size: 4rem; }
+  .uw-focus-within-font-size-16:focus-within { font-size: 4rem; }
+  .group:hover .uw-group-hover-font-size-16 { font-size: 4rem; }
+  .uw-font-size-18 { font-size: 4.5rem; }
+  .uw-hover-font-size-18:hover { font-size: 4.5rem; }
+  .uw-focus-font-size-18:focus { font-size: 4.5rem; }
+  .uw-active-font-size-18:active { font-size: 4.5rem; }
+  .uw-disabled-font-size-18:disabled { font-size: 4.5rem; }
+  .uw-focus-visible-font-size-18:focus-visible { font-size: 4.5rem; }
+  .uw-focus-within-font-size-18:focus-within { font-size: 4.5rem; }
+  .group:hover .uw-group-hover-font-size-18 { font-size: 4.5rem; }
+  .uw-font-size-20 { font-size: 5rem; }
+  .uw-hover-font-size-20:hover { font-size: 5rem; }
+  .uw-focus-font-size-20:focus { font-size: 5rem; }
+  .uw-active-font-size-20:active { font-size: 5rem; }
+  .uw-disabled-font-size-20:disabled { font-size: 5rem; }
+  .uw-focus-visible-font-size-20:focus-visible { font-size: 5rem; }
+  .uw-focus-within-font-size-20:focus-within { font-size: 5rem; }
+  .group:hover .uw-group-hover-font-size-20 { font-size: 5rem; }
+  .uw-font-size-24 { font-size: 6rem; }
+  .uw-hover-font-size-24:hover { font-size: 6rem; }
+  .uw-focus-font-size-24:focus { font-size: 6rem; }
+  .uw-active-font-size-24:active { font-size: 6rem; }
+  .uw-disabled-font-size-24:disabled { font-size: 6rem; }
+  .uw-focus-visible-font-size-24:focus-visible { font-size: 6rem; }
+  .uw-focus-within-font-size-24:focus-within { font-size: 6rem; }
+  .group:hover .uw-group-hover-font-size-24 { font-size: 6rem; }
+  .uw-font-size-28 { font-size: 7rem; }
+  .uw-hover-font-size-28:hover { font-size: 7rem; }
+  .uw-focus-font-size-28:focus { font-size: 7rem; }
+  .uw-active-font-size-28:active { font-size: 7rem; }
+  .uw-disabled-font-size-28:disabled { font-size: 7rem; }
+  .uw-focus-visible-font-size-28:focus-visible { font-size: 7rem; }
+  .uw-focus-within-font-size-28:focus-within { font-size: 7rem; }
+  .group:hover .uw-group-hover-font-size-28 { font-size: 7rem; }
+  .uw-font-size-32 { font-size: 8rem; }
+  .uw-hover-font-size-32:hover { font-size: 8rem; }
+  .uw-focus-font-size-32:focus { font-size: 8rem; }
+  .uw-active-font-size-32:active { font-size: 8rem; }
+  .uw-disabled-font-size-32:disabled { font-size: 8rem; }
+  .uw-focus-visible-font-size-32:focus-visible { font-size: 8rem; }
+  .uw-focus-within-font-size-32:focus-within { font-size: 8rem; }
+  .group:hover .uw-group-hover-font-size-32 { font-size: 8rem; }
+  .uw-font-style-normal { font-style: normal; }
+  .uw-hover-font-style-normal:hover { font-style: normal; }
+  .uw-focus-font-style-normal:focus { font-style: normal; }
+  .uw-active-font-style-normal:active { font-style: normal; }
+  .uw-disabled-font-style-normal:disabled { font-style: normal; }
+  .uw-focus-visible-font-style-normal:focus-visible { font-style: normal; }
+  .uw-focus-within-font-style-normal:focus-within { font-style: normal; }
+  .group:hover .uw-group-hover-font-style-normal { font-style: normal; }
+  .uw-font-style-italic { font-style: italic; }
+  .uw-hover-font-style-italic:hover { font-style: italic; }
+  .uw-focus-font-style-italic:focus { font-style: italic; }
+  .uw-active-font-style-italic:active { font-style: italic; }
+  .uw-disabled-font-style-italic:disabled { font-style: italic; }
+  .uw-focus-visible-font-style-italic:focus-visible { font-style: italic; }
+  .uw-focus-within-font-style-italic:focus-within { font-style: italic; }
+  .group:hover .uw-group-hover-font-style-italic { font-style: italic; }
+  .uw-font-style-oblique { font-style: oblique; }
+  .uw-hover-font-style-oblique:hover { font-style: oblique; }
+  .uw-focus-font-style-oblique:focus { font-style: oblique; }
+  .uw-active-font-style-oblique:active { font-style: oblique; }
+  .uw-disabled-font-style-oblique:disabled { font-style: oblique; }
+  .uw-focus-visible-font-style-oblique:focus-visible { font-style: oblique; }
+  .uw-focus-within-font-style-oblique:focus-within { font-style: oblique; }
+  .group:hover .uw-group-hover-font-style-oblique { font-style: oblique; }
+  .uw-font-smoothing-antialiased { -webkit-font-smoothing: antialiased; }
+  .uw-hover-font-smoothing-antialiased:hover { -webkit-font-smoothing: antialiased; }
+  .uw-focus-font-smoothing-antialiased:focus { -webkit-font-smoothing: antialiased; }
+  .uw-active-font-smoothing-antialiased:active { -webkit-font-smoothing: antialiased; }
+  .uw-disabled-font-smoothing-antialiased:disabled { -webkit-font-smoothing: antialiased; }
+  .uw-focus-visible-font-smoothing-antialiased:focus-visible { -webkit-font-smoothing: antialiased; }
+  .uw-focus-within-font-smoothing-antialiased:focus-within { -webkit-font-smoothing: antialiased; }
+  .group:hover .uw-group-hover-font-smoothing-antialiased { -webkit-font-smoothing: antialiased; }
+  .uw-font-smoothing-subpixel-antialiased { -webkit-font-smoothing: subpixel-antialiased; }
+  .uw-hover-font-smoothing-subpixel-antialiased:hover { -webkit-font-smoothing: subpixel-antialiased; }
+  .uw-focus-font-smoothing-subpixel-antialiased:focus { -webkit-font-smoothing: subpixel-antialiased; }
+  .uw-active-font-smoothing-subpixel-antialiased:active { -webkit-font-smoothing: subpixel-antialiased; }
+  .uw-disabled-font-smoothing-subpixel-antialiased:disabled { -webkit-font-smoothing: subpixel-antialiased; }
+  .uw-focus-visible-font-smoothing-subpixel-antialiased:focus-visible { -webkit-font-smoothing: subpixel-antialiased; }
+  .uw-focus-within-font-smoothing-subpixel-antialiased:focus-within { -webkit-font-smoothing: subpixel-antialiased; }
+  .group:hover .uw-group-hover-font-smoothing-subpixel-antialiased { -webkit-font-smoothing: subpixel-antialiased; }
+  .uw-font-weight-thin { font-weight: 100; }
+  .uw-hover-font-weight-thin:hover { font-weight: 100; }
+  .uw-focus-font-weight-thin:focus { font-weight: 100; }
+  .uw-active-font-weight-thin:active { font-weight: 100; }
+  .uw-disabled-font-weight-thin:disabled { font-weight: 100; }
+  .uw-focus-visible-font-weight-thin:focus-visible { font-weight: 100; }
+  .uw-focus-within-font-weight-thin:focus-within { font-weight: 100; }
+  .group:hover .uw-group-hover-font-weight-thin { font-weight: 100; }
+  .uw-font-weight-extralight { font-weight: 200; }
+  .uw-hover-font-weight-extralight:hover { font-weight: 200; }
+  .uw-focus-font-weight-extralight:focus { font-weight: 200; }
+  .uw-active-font-weight-extralight:active { font-weight: 200; }
+  .uw-disabled-font-weight-extralight:disabled { font-weight: 200; }
+  .uw-focus-visible-font-weight-extralight:focus-visible { font-weight: 200; }
+  .uw-focus-within-font-weight-extralight:focus-within { font-weight: 200; }
+  .group:hover .uw-group-hover-font-weight-extralight { font-weight: 200; }
+  .uw-font-weight-light { font-weight: 300; }
+  .uw-hover-font-weight-light:hover { font-weight: 300; }
+  .uw-focus-font-weight-light:focus { font-weight: 300; }
+  .uw-active-font-weight-light:active { font-weight: 300; }
+  .uw-disabled-font-weight-light:disabled { font-weight: 300; }
+  .uw-focus-visible-font-weight-light:focus-visible { font-weight: 300; }
+  .uw-focus-within-font-weight-light:focus-within { font-weight: 300; }
+  .group:hover .uw-group-hover-font-weight-light { font-weight: 300; }
+  .uw-font-weight-regular { font-weight: 400; }
+  .uw-hover-font-weight-regular:hover { font-weight: 400; }
+  .uw-focus-font-weight-regular:focus { font-weight: 400; }
+  .uw-active-font-weight-regular:active { font-weight: 400; }
+  .uw-disabled-font-weight-regular:disabled { font-weight: 400; }
+  .uw-focus-visible-font-weight-regular:focus-visible { font-weight: 400; }
+  .uw-focus-within-font-weight-regular:focus-within { font-weight: 400; }
+  .group:hover .uw-group-hover-font-weight-regular { font-weight: 400; }
+  .uw-font-weight-medium { font-weight: 500; }
+  .uw-hover-font-weight-medium:hover { font-weight: 500; }
+  .uw-focus-font-weight-medium:focus { font-weight: 500; }
+  .uw-active-font-weight-medium:active { font-weight: 500; }
+  .uw-disabled-font-weight-medium:disabled { font-weight: 500; }
+  .uw-focus-visible-font-weight-medium:focus-visible { font-weight: 500; }
+  .uw-focus-within-font-weight-medium:focus-within { font-weight: 500; }
+  .group:hover .uw-group-hover-font-weight-medium { font-weight: 500; }
+  .uw-font-weight-semibold { font-weight: 600; }
+  .uw-hover-font-weight-semibold:hover { font-weight: 600; }
+  .uw-focus-font-weight-semibold:focus { font-weight: 600; }
+  .uw-active-font-weight-semibold:active { font-weight: 600; }
+  .uw-disabled-font-weight-semibold:disabled { font-weight: 600; }
+  .uw-focus-visible-font-weight-semibold:focus-visible { font-weight: 600; }
+  .uw-focus-within-font-weight-semibold:focus-within { font-weight: 600; }
+  .group:hover .uw-group-hover-font-weight-semibold { font-weight: 600; }
+  .uw-font-weight-bold { font-weight: 700; }
+  .uw-hover-font-weight-bold:hover { font-weight: 700; }
+  .uw-focus-font-weight-bold:focus { font-weight: 700; }
+  .uw-active-font-weight-bold:active { font-weight: 700; }
+  .uw-disabled-font-weight-bold:disabled { font-weight: 700; }
+  .uw-focus-visible-font-weight-bold:focus-visible { font-weight: 700; }
+  .uw-focus-within-font-weight-bold:focus-within { font-weight: 700; }
+  .group:hover .uw-group-hover-font-weight-bold { font-weight: 700; }
+  .uw-font-weight-extrabold { font-weight: 800; }
+  .uw-hover-font-weight-extrabold:hover { font-weight: 800; }
+  .uw-focus-font-weight-extrabold:focus { font-weight: 800; }
+  .uw-active-font-weight-extrabold:active { font-weight: 800; }
+  .uw-disabled-font-weight-extrabold:disabled { font-weight: 800; }
+  .uw-focus-visible-font-weight-extrabold:focus-visible { font-weight: 800; }
+  .uw-focus-within-font-weight-extrabold:focus-within { font-weight: 800; }
+  .group:hover .uw-group-hover-font-weight-extrabold { font-weight: 800; }
+  .uw-font-weight-ultrabold { font-weight: 900; }
+  .uw-hover-font-weight-ultrabold:hover { font-weight: 900; }
+  .uw-focus-font-weight-ultrabold:focus { font-weight: 900; }
+  .uw-active-font-weight-ultrabold:active { font-weight: 900; }
+  .uw-disabled-font-weight-ultrabold:disabled { font-weight: 900; }
+  .uw-focus-visible-font-weight-ultrabold:focus-visible { font-weight: 900; }
+  .uw-focus-within-font-weight-ultrabold:focus-within { font-weight: 900; }
+  .group:hover .uw-group-hover-font-weight-ultrabold { font-weight: 900; }
+  .uw-font-stretch-ultra-condensed { font-stretch: ultra-condensed; }
+  .uw-hover-font-stretch-ultra-condensed:hover { font-stretch: ultra-condensed; }
+  .uw-focus-font-stretch-ultra-condensed:focus { font-stretch: ultra-condensed; }
+  .uw-active-font-stretch-ultra-condensed:active { font-stretch: ultra-condensed; }
+  .uw-disabled-font-stretch-ultra-condensed:disabled { font-stretch: ultra-condensed; }
+  .uw-focus-visible-font-stretch-ultra-condensed:focus-visible { font-stretch: ultra-condensed; }
+  .uw-focus-within-font-stretch-ultra-condensed:focus-within { font-stretch: ultra-condensed; }
+  .group:hover .uw-group-hover-font-stretch-ultra-condensed { font-stretch: ultra-condensed; }
+  .uw-font-stretch-extra-condensed { font-stretch: extra-condensed; }
+  .uw-hover-font-stretch-extra-condensed:hover { font-stretch: extra-condensed; }
+  .uw-focus-font-stretch-extra-condensed:focus { font-stretch: extra-condensed; }
+  .uw-active-font-stretch-extra-condensed:active { font-stretch: extra-condensed; }
+  .uw-disabled-font-stretch-extra-condensed:disabled { font-stretch: extra-condensed; }
+  .uw-focus-visible-font-stretch-extra-condensed:focus-visible { font-stretch: extra-condensed; }
+  .uw-focus-within-font-stretch-extra-condensed:focus-within { font-stretch: extra-condensed; }
+  .group:hover .uw-group-hover-font-stretch-extra-condensed { font-stretch: extra-condensed; }
+  .uw-font-stretch-condensed { font-stretch: condensed; }
+  .uw-hover-font-stretch-condensed:hover { font-stretch: condensed; }
+  .uw-focus-font-stretch-condensed:focus { font-stretch: condensed; }
+  .uw-active-font-stretch-condensed:active { font-stretch: condensed; }
+  .uw-disabled-font-stretch-condensed:disabled { font-stretch: condensed; }
+  .uw-focus-visible-font-stretch-condensed:focus-visible { font-stretch: condensed; }
+  .uw-focus-within-font-stretch-condensed:focus-within { font-stretch: condensed; }
+  .group:hover .uw-group-hover-font-stretch-condensed { font-stretch: condensed; }
+  .uw-font-stretch-semi-condensed { font-stretch: semi-condensed; }
+  .uw-hover-font-stretch-semi-condensed:hover { font-stretch: semi-condensed; }
+  .uw-focus-font-stretch-semi-condensed:focus { font-stretch: semi-condensed; }
+  .uw-active-font-stretch-semi-condensed:active { font-stretch: semi-condensed; }
+  .uw-disabled-font-stretch-semi-condensed:disabled { font-stretch: semi-condensed; }
+  .uw-focus-visible-font-stretch-semi-condensed:focus-visible { font-stretch: semi-condensed; }
+  .uw-focus-within-font-stretch-semi-condensed:focus-within { font-stretch: semi-condensed; }
+  .group:hover .uw-group-hover-font-stretch-semi-condensed { font-stretch: semi-condensed; }
+  .uw-font-stretch-normal { font-stretch: normal; }
+  .uw-hover-font-stretch-normal:hover { font-stretch: normal; }
+  .uw-focus-font-stretch-normal:focus { font-stretch: normal; }
+  .uw-active-font-stretch-normal:active { font-stretch: normal; }
+  .uw-disabled-font-stretch-normal:disabled { font-stretch: normal; }
+  .uw-focus-visible-font-stretch-normal:focus-visible { font-stretch: normal; }
+  .uw-focus-within-font-stretch-normal:focus-within { font-stretch: normal; }
+  .group:hover .uw-group-hover-font-stretch-normal { font-stretch: normal; }
+  .uw-font-stretch-semi-expanded { font-stretch: semi-expanded; }
+  .uw-hover-font-stretch-semi-expanded:hover { font-stretch: semi-expanded; }
+  .uw-focus-font-stretch-semi-expanded:focus { font-stretch: semi-expanded; }
+  .uw-active-font-stretch-semi-expanded:active { font-stretch: semi-expanded; }
+  .uw-disabled-font-stretch-semi-expanded:disabled { font-stretch: semi-expanded; }
+  .uw-focus-visible-font-stretch-semi-expanded:focus-visible { font-stretch: semi-expanded; }
+  .uw-focus-within-font-stretch-semi-expanded:focus-within { font-stretch: semi-expanded; }
+  .group:hover .uw-group-hover-font-stretch-semi-expanded { font-stretch: semi-expanded; }
+  .uw-font-stretch-expanded { font-stretch: expanded; }
+  .uw-hover-font-stretch-expanded:hover { font-stretch: expanded; }
+  .uw-focus-font-stretch-expanded:focus { font-stretch: expanded; }
+  .uw-active-font-stretch-expanded:active { font-stretch: expanded; }
+  .uw-disabled-font-stretch-expanded:disabled { font-stretch: expanded; }
+  .uw-focus-visible-font-stretch-expanded:focus-visible { font-stretch: expanded; }
+  .uw-focus-within-font-stretch-expanded:focus-within { font-stretch: expanded; }
+  .group:hover .uw-group-hover-font-stretch-expanded { font-stretch: expanded; }
+  .uw-font-stretch-extra-expanded { font-stretch: extra-expanded; }
+  .uw-hover-font-stretch-extra-expanded:hover { font-stretch: extra-expanded; }
+  .uw-focus-font-stretch-extra-expanded:focus { font-stretch: extra-expanded; }
+  .uw-active-font-stretch-extra-expanded:active { font-stretch: extra-expanded; }
+  .uw-disabled-font-stretch-extra-expanded:disabled { font-stretch: extra-expanded; }
+  .uw-focus-visible-font-stretch-extra-expanded:focus-visible { font-stretch: extra-expanded; }
+  .uw-focus-within-font-stretch-extra-expanded:focus-within { font-stretch: extra-expanded; }
+  .group:hover .uw-group-hover-font-stretch-extra-expanded { font-stretch: extra-expanded; }
+  .uw-font-stretch-ultra-expanded { font-stretch: ultra-expanded; }
+  .uw-hover-font-stretch-ultra-expanded:hover { font-stretch: ultra-expanded; }
+  .uw-focus-font-stretch-ultra-expanded:focus { font-stretch: ultra-expanded; }
+  .uw-active-font-stretch-ultra-expanded:active { font-stretch: ultra-expanded; }
+  .uw-disabled-font-stretch-ultra-expanded:disabled { font-stretch: ultra-expanded; }
+  .uw-focus-visible-font-stretch-ultra-expanded:focus-visible { font-stretch: ultra-expanded; }
+  .uw-focus-within-font-stretch-ultra-expanded:focus-within { font-stretch: ultra-expanded; }
+  .group:hover .uw-group-hover-font-stretch-ultra-expanded { font-stretch: ultra-expanded; }
+  .uw-font-variant-numeric-normal { font-variant-numeric: normal; }
+  .uw-hover-font-variant-numeric-normal:hover { font-variant-numeric: normal; }
+  .uw-focus-font-variant-numeric-normal:focus { font-variant-numeric: normal; }
+  .uw-active-font-variant-numeric-normal:active { font-variant-numeric: normal; }
+  .uw-disabled-font-variant-numeric-normal:disabled { font-variant-numeric: normal; }
+  .uw-focus-visible-font-variant-numeric-normal:focus-visible { font-variant-numeric: normal; }
+  .uw-focus-within-font-variant-numeric-normal:focus-within { font-variant-numeric: normal; }
+  .group:hover .uw-group-hover-font-variant-numeric-normal { font-variant-numeric: normal; }
+  .uw-font-variant-numeric-lining-nums { font-variant-numeric: lining-nums; }
+  .uw-hover-font-variant-numeric-lining-nums:hover { font-variant-numeric: lining-nums; }
+  .uw-focus-font-variant-numeric-lining-nums:focus { font-variant-numeric: lining-nums; }
+  .uw-active-font-variant-numeric-lining-nums:active { font-variant-numeric: lining-nums; }
+  .uw-disabled-font-variant-numeric-lining-nums:disabled { font-variant-numeric: lining-nums; }
+  .uw-focus-visible-font-variant-numeric-lining-nums:focus-visible { font-variant-numeric: lining-nums; }
+  .uw-focus-within-font-variant-numeric-lining-nums:focus-within { font-variant-numeric: lining-nums; }
+  .group:hover .uw-group-hover-font-variant-numeric-lining-nums { font-variant-numeric: lining-nums; }
+  .uw-font-variant-numeric-oldstyle-nums { font-variant-numeric: oldstyle-nums; }
+  .uw-hover-font-variant-numeric-oldstyle-nums:hover { font-variant-numeric: oldstyle-nums; }
+  .uw-focus-font-variant-numeric-oldstyle-nums:focus { font-variant-numeric: oldstyle-nums; }
+  .uw-active-font-variant-numeric-oldstyle-nums:active { font-variant-numeric: oldstyle-nums; }
+  .uw-disabled-font-variant-numeric-oldstyle-nums:disabled { font-variant-numeric: oldstyle-nums; }
+  .uw-focus-visible-font-variant-numeric-oldstyle-nums:focus-visible { font-variant-numeric: oldstyle-nums; }
+  .uw-focus-within-font-variant-numeric-oldstyle-nums:focus-within { font-variant-numeric: oldstyle-nums; }
+  .group:hover .uw-group-hover-font-variant-numeric-oldstyle-nums { font-variant-numeric: oldstyle-nums; }
+  .uw-font-variant-numeric-proportional-nums { font-variant-numeric: proportional-nums; }
+  .uw-hover-font-variant-numeric-proportional-nums:hover { font-variant-numeric: proportional-nums; }
+  .uw-focus-font-variant-numeric-proportional-nums:focus { font-variant-numeric: proportional-nums; }
+  .uw-active-font-variant-numeric-proportional-nums:active { font-variant-numeric: proportional-nums; }
+  .uw-disabled-font-variant-numeric-proportional-nums:disabled { font-variant-numeric: proportional-nums; }
+  .uw-focus-visible-font-variant-numeric-proportional-nums:focus-visible { font-variant-numeric: proportional-nums; }
+  .uw-focus-within-font-variant-numeric-proportional-nums:focus-within { font-variant-numeric: proportional-nums; }
+  .group:hover .uw-group-hover-font-variant-numeric-proportional-nums { font-variant-numeric: proportional-nums; }
+  .uw-font-variant-numeric-tabular-nums { font-variant-numeric: tabular-nums; }
+  .uw-hover-font-variant-numeric-tabular-nums:hover { font-variant-numeric: tabular-nums; }
+  .uw-focus-font-variant-numeric-tabular-nums:focus { font-variant-numeric: tabular-nums; }
+  .uw-active-font-variant-numeric-tabular-nums:active { font-variant-numeric: tabular-nums; }
+  .uw-disabled-font-variant-numeric-tabular-nums:disabled { font-variant-numeric: tabular-nums; }
+  .uw-focus-visible-font-variant-numeric-tabular-nums:focus-visible { font-variant-numeric: tabular-nums; }
+  .uw-focus-within-font-variant-numeric-tabular-nums:focus-within { font-variant-numeric: tabular-nums; }
+  .group:hover .uw-group-hover-font-variant-numeric-tabular-nums { font-variant-numeric: tabular-nums; }
+  .uw-font-variant-numeric-diagonal-fractions { font-variant-numeric: diagonal-fractions; }
+  .uw-hover-font-variant-numeric-diagonal-fractions:hover { font-variant-numeric: diagonal-fractions; }
+  .uw-focus-font-variant-numeric-diagonal-fractions:focus { font-variant-numeric: diagonal-fractions; }
+  .uw-active-font-variant-numeric-diagonal-fractions:active { font-variant-numeric: diagonal-fractions; }
+  .uw-disabled-font-variant-numeric-diagonal-fractions:disabled { font-variant-numeric: diagonal-fractions; }
+  .uw-focus-visible-font-variant-numeric-diagonal-fractions:focus-visible { font-variant-numeric: diagonal-fractions; }
+  .uw-focus-within-font-variant-numeric-diagonal-fractions:focus-within { font-variant-numeric: diagonal-fractions; }
+  .group:hover .uw-group-hover-font-variant-numeric-diagonal-fractions { font-variant-numeric: diagonal-fractions; }
+  .uw-font-variant-numeric-stacked-fractions { font-variant-numeric: stacked-fractions; }
+  .uw-hover-font-variant-numeric-stacked-fractions:hover { font-variant-numeric: stacked-fractions; }
+  .uw-focus-font-variant-numeric-stacked-fractions:focus { font-variant-numeric: stacked-fractions; }
+  .uw-active-font-variant-numeric-stacked-fractions:active { font-variant-numeric: stacked-fractions; }
+  .uw-disabled-font-variant-numeric-stacked-fractions:disabled { font-variant-numeric: stacked-fractions; }
+  .uw-focus-visible-font-variant-numeric-stacked-fractions:focus-visible { font-variant-numeric: stacked-fractions; }
+  .uw-focus-within-font-variant-numeric-stacked-fractions:focus-within { font-variant-numeric: stacked-fractions; }
+  .group:hover .uw-group-hover-font-variant-numeric-stacked-fractions { font-variant-numeric: stacked-fractions; }
+}

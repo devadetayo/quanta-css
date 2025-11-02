@@ -48,15 +48,15 @@
 .quanta-btn-outline-neutral     { background: transparent; color: var(--quanta-bg-neutral); border: 1px solid var(--quanta-border-neutral); }
 .quanta-btn-outline-ghost       { background: transparent; color: var(--quanta-text-ghost); border: 1px solid var(--quanta-border-ghost); }
 
-.quanta-btn-outline-primary:hover   { background: var(--quanta-primary-hover); color: var(--white); }
-.quanta-btn-outline-secondary:hover { background: var(--quanta-secondary-hover); color: var(--white); }
-.quanta-btn-outline-success:hover   { background: var(--quanta-success-hover); color: var(--white); }
-.quanta-btn-outline-warning:hover   { background: var(--quanta-warning-hover); color: var(--quanta-text-warning); }
-.quanta-btn-outline-danger:hover    { background: var(--quanta-danger-hover); color: var(--white); }
-.quanta-btn-outline-info:hover      { background: var(--quanta-info-hover); color: var(--white); }
-.quanta-btn-outline-accent:hover    { background: var(--quanta-accent-hover); color: var(--white); }
-.quanta-btn-outline-neutral:hover   { background: var(--quanta-neutral-hover); color: var(--quanta-text-neutral); }
-.quanta-btn-outline-ghost:hover     { background: var(--quanta-ghost-hover); color: var(--quanta-text-default); }
+.quanta-btn-outline-primary:hover   { background: var(--quanta-primary); color: var(--white); }
+.quanta-btn-outline-secondary:hover { background: var(--quanta-bg-secondary); color: var(--white); }
+.quanta-btn-outline-success:hover   { background: var(--quanta-bg-success); color: var(--white); }
+.quanta-btn-outline-warning:hover   { background: var(--quanta-bg-warning); color: var(--quanta-text-warning); }
+.quanta-btn-outline-danger:hover    { background: var(--quanta-bg-danger); color: var(--white); }
+.quanta-btn-outline-info:hover      { background: var(--quanta-bg-info); color: var(--white); }
+.quanta-btn-outline-accent:hover    { background: var(--quanta-bg-accent); color: var(--white); }
+.quanta-btn-outline-neutral:hover   { background: var(--quanta-bg-neutral); color: var(--quanta-text-neutral); }
+.quanta-btn-outline-ghost:hover     { background: var(--quanta-ghost); color: var(--quanta-text-default); }
 
 /* ─── Sizes ──────────────────────────────────────────────── */
 .quanta-btn-sm { padding: var(--quanta-space-1) var(--quanta-space-3); font-size: var(--quanta-text-sm); }

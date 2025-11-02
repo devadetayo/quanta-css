@@ -1,0 +1,1198 @@
+/* Quanta CSS v2.1 - layout-overflow Light Variants */
+
+/* State Variants */
+.hover-overflow-auto:hover { overflow: auto; }
+.focus-overflow-auto:focus { overflow: auto; }
+.active-overflow-auto:active { overflow: auto; }
+.disabled-overflow-auto:disabled { overflow: auto; }
+.focus-visible-overflow-auto:focus-visible { overflow: auto; }
+.focus-within-overflow-auto:focus-within { overflow: auto; }
+.group:hover .group-hover-overflow-auto { overflow: auto; }
+.hover-overflow-hidden:hover { overflow: hidden; }
+.focus-overflow-hidden:focus { overflow: hidden; }
+.active-overflow-hidden:active { overflow: hidden; }
+.disabled-overflow-hidden:disabled { overflow: hidden; }
+.focus-visible-overflow-hidden:focus-visible { overflow: hidden; }
+.focus-within-overflow-hidden:focus-within { overflow: hidden; }
+.group:hover .group-hover-overflow-hidden { overflow: hidden; }
+.hover-overflow-visible:hover { overflow: visible; }
+.focus-overflow-visible:focus { overflow: visible; }
+.active-overflow-visible:active { overflow: visible; }
+.disabled-overflow-visible:disabled { overflow: visible; }
+.focus-visible-overflow-visible:focus-visible { overflow: visible; }
+.focus-within-overflow-visible:focus-within { overflow: visible; }
+.group:hover .group-hover-overflow-visible { overflow: visible; }
+.hover-overflow-scroll:hover { overflow: scroll; }
+.focus-overflow-scroll:focus { overflow: scroll; }
+.active-overflow-scroll:active { overflow: scroll; }
+.disabled-overflow-scroll:disabled { overflow: scroll; }
+.focus-visible-overflow-scroll:focus-visible { overflow: scroll; }
+.focus-within-overflow-scroll:focus-within { overflow: scroll; }
+.group:hover .group-hover-overflow-scroll { overflow: scroll; }
+.hover-overflow-x-auto:hover { overflow-x: auto; }
+.focus-overflow-x-auto:focus { overflow-x: auto; }
+.active-overflow-x-auto:active { overflow-x: auto; }
+.disabled-overflow-x-auto:disabled { overflow-x: auto; }
+.focus-visible-overflow-x-auto:focus-visible { overflow-x: auto; }
+.focus-within-overflow-x-auto:focus-within { overflow-x: auto; }
+.group:hover .group-hover-overflow-x-auto { overflow-x: auto; }
+.hover-overflow-x-hidden:hover { overflow-x: hidden; }
+.focus-overflow-x-hidden:focus { overflow-x: hidden; }
+.active-overflow-x-hidden:active { overflow-x: hidden; }
+.disabled-overflow-x-hidden:disabled { overflow-x: hidden; }
+.focus-visible-overflow-x-hidden:focus-visible { overflow-x: hidden; }
+.focus-within-overflow-x-hidden:focus-within { overflow-x: hidden; }
+.group:hover .group-hover-overflow-x-hidden { overflow-x: hidden; }
+.hover-overflow-x-visible:hover { overflow-x: visible; }
+.focus-overflow-x-visible:focus { overflow-x: visible; }
+.active-overflow-x-visible:active { overflow-x: visible; }
+.disabled-overflow-x-visible:disabled { overflow-x: visible; }
+.focus-visible-overflow-x-visible:focus-visible { overflow-x: visible; }
+.focus-within-overflow-x-visible:focus-within { overflow-x: visible; }
+.group:hover .group-hover-overflow-x-visible { overflow-x: visible; }
+.hover-overflow-x-scroll:hover { overflow-x: scroll; }
+.focus-overflow-x-scroll:focus { overflow-x: scroll; }
+.active-overflow-x-scroll:active { overflow-x: scroll; }
+.disabled-overflow-x-scroll:disabled { overflow-x: scroll; }
+.focus-visible-overflow-x-scroll:focus-visible { overflow-x: scroll; }
+.focus-within-overflow-x-scroll:focus-within { overflow-x: scroll; }
+.group:hover .group-hover-overflow-x-scroll { overflow-x: scroll; }
+.hover-overflow-y-auto:hover { overflow-y: auto; }
+.focus-overflow-y-auto:focus { overflow-y: auto; }
+.active-overflow-y-auto:active { overflow-y: auto; }
+.disabled-overflow-y-auto:disabled { overflow-y: auto; }
+.focus-visible-overflow-y-auto:focus-visible { overflow-y: auto; }
+.focus-within-overflow-y-auto:focus-within { overflow-y: auto; }
+.group:hover .group-hover-overflow-y-auto { overflow-y: auto; }
+.hover-overflow-y-hidden:hover { overflow-y: hidden; }
+.focus-overflow-y-hidden:focus { overflow-y: hidden; }
+.active-overflow-y-hidden:active { overflow-y: hidden; }
+.disabled-overflow-y-hidden:disabled { overflow-y: hidden; }
+.focus-visible-overflow-y-hidden:focus-visible { overflow-y: hidden; }
+.focus-within-overflow-y-hidden:focus-within { overflow-y: hidden; }
+.group:hover .group-hover-overflow-y-hidden { overflow-y: hidden; }
+.hover-overflow-y-visible:hover { overflow-y: visible; }
+.focus-overflow-y-visible:focus { overflow-y: visible; }
+.active-overflow-y-visible:active { overflow-y: visible; }
+.disabled-overflow-y-visible:disabled { overflow-y: visible; }
+.focus-visible-overflow-y-visible:focus-visible { overflow-y: visible; }
+.focus-within-overflow-y-visible:focus-within { overflow-y: visible; }
+.group:hover .group-hover-overflow-y-visible { overflow-y: visible; }
+.hover-overflow-y-scroll:hover { overflow-y: scroll; }
+.focus-overflow-y-scroll:focus { overflow-y: scroll; }
+.active-overflow-y-scroll:active { overflow-y: scroll; }
+.disabled-overflow-y-scroll:disabled { overflow-y: scroll; }
+.focus-visible-overflow-y-scroll:focus-visible { overflow-y: scroll; }
+.focus-within-overflow-y-scroll:focus-within { overflow-y: scroll; }
+.group:hover .group-hover-overflow-y-scroll { overflow-y: scroll; }
+.hover-overflow-normal:hover { overflow-wrap: normal; }
+.focus-overflow-normal:focus { overflow-wrap: normal; }
+.active-overflow-normal:active { overflow-wrap: normal; }
+.disabled-overflow-normal:disabled { overflow-wrap: normal; }
+.focus-visible-overflow-normal:focus-visible { overflow-wrap: normal; }
+.focus-within-overflow-normal:focus-within { overflow-wrap: normal; }
+.group:hover .group-hover-overflow-normal { overflow-wrap: normal; }
+.hover-overflow-break:hover { overflow-wrap: break-word; }
+.focus-overflow-break:focus { overflow-wrap: break-word; }
+.active-overflow-break:active { overflow-wrap: break-word; }
+.disabled-overflow-break:disabled { overflow-wrap: break-word; }
+.focus-visible-overflow-break:focus-visible { overflow-wrap: break-word; }
+.focus-within-overflow-break:focus-within { overflow-wrap: break-word; }
+.group:hover .group-hover-overflow-break { overflow-wrap: break-word; }
+.hover-overflow-normal:hover { overflow-wrap: normal; }
+.focus-overflow-normal:focus { overflow-wrap: normal; }
+.active-overflow-normal:active { overflow-wrap: normal; }
+.disabled-overflow-normal:disabled { overflow-wrap: normal; }
+.focus-visible-overflow-normal:focus-visible { overflow-wrap: normal; }
+.focus-within-overflow-normal:focus-within { overflow-wrap: normal; }
+.group:hover .group-hover-overflow-normal { overflow-wrap: normal; }
+.hover-overflow-break:hover { overflow-wrap: break-word; }
+.focus-overflow-break:focus { overflow-wrap: break-word; }
+.active-overflow-break:active { overflow-wrap: break-word; }
+.disabled-overflow-break:disabled { overflow-wrap: break-word; }
+.focus-visible-overflow-break:focus-visible { overflow-wrap: break-word; }
+.focus-within-overflow-break:focus-within { overflow-wrap: break-word; }
+.group:hover .group-hover-overflow-break { overflow-wrap: break-word; }
+.hover-overscroll-auto:hover { overscroll-behavior: auto; }
+.focus-overscroll-auto:focus { overscroll-behavior: auto; }
+.active-overscroll-auto:active { overscroll-behavior: auto; }
+.disabled-overscroll-auto:disabled { overscroll-behavior: auto; }
+.focus-visible-overscroll-auto:focus-visible { overscroll-behavior: auto; }
+.focus-within-overscroll-auto:focus-within { overscroll-behavior: auto; }
+.group:hover .group-hover-overscroll-auto { overscroll-behavior: auto; }
+.hover-overscroll-contain:hover { overscroll-behavior: contain; }
+.focus-overscroll-contain:focus { overscroll-behavior: contain; }
+.active-overscroll-contain:active { overscroll-behavior: contain; }
+.disabled-overscroll-contain:disabled { overscroll-behavior: contain; }
+.focus-visible-overscroll-contain:focus-visible { overscroll-behavior: contain; }
+.focus-within-overscroll-contain:focus-within { overscroll-behavior: contain; }
+.group:hover .group-hover-overscroll-contain { overscroll-behavior: contain; }
+.hover-overscroll-none:hover { overscroll-behavior: none; }
+.focus-overscroll-none:focus { overscroll-behavior: none; }
+.active-overscroll-none:active { overscroll-behavior: none; }
+.disabled-overscroll-none:disabled { overscroll-behavior: none; }
+.focus-visible-overscroll-none:focus-visible { overscroll-behavior: none; }
+.focus-within-overscroll-none:focus-within { overscroll-behavior: none; }
+.group:hover .group-hover-overscroll-none { overscroll-behavior: none; }
+.hover-overscroll-x-auto:hover { overscroll-behavior-x: auto; }
+.focus-overscroll-x-auto:focus { overscroll-behavior-x: auto; }
+.active-overscroll-x-auto:active { overscroll-behavior-x: auto; }
+.disabled-overscroll-x-auto:disabled { overscroll-behavior-x: auto; }
+.focus-visible-overscroll-x-auto:focus-visible { overscroll-behavior-x: auto; }
+.focus-within-overscroll-x-auto:focus-within { overscroll-behavior-x: auto; }
+.group:hover .group-hover-overscroll-x-auto { overscroll-behavior-x: auto; }
+.hover-overscroll-x-contain:hover { overscroll-behavior-x: contain; }
+.focus-overscroll-x-contain:focus { overscroll-behavior-x: contain; }
+.active-overscroll-x-contain:active { overscroll-behavior-x: contain; }
+.disabled-overscroll-x-contain:disabled { overscroll-behavior-x: contain; }
+.focus-visible-overscroll-x-contain:focus-visible { overscroll-behavior-x: contain; }
+.focus-within-overscroll-x-contain:focus-within { overscroll-behavior-x: contain; }
+.group:hover .group-hover-overscroll-x-contain { overscroll-behavior-x: contain; }
+.hover-overscroll-x-none:hover { overscroll-behavior-x: none; }
+.focus-overscroll-x-none:focus { overscroll-behavior-x: none; }
+.active-overscroll-x-none:active { overscroll-behavior-x: none; }
+.disabled-overscroll-x-none:disabled { overscroll-behavior-x: none; }
+.focus-visible-overscroll-x-none:focus-visible { overscroll-behavior-x: none; }
+.focus-within-overscroll-x-none:focus-within { overscroll-behavior-x: none; }
+.group:hover .group-hover-overscroll-x-none { overscroll-behavior-x: none; }
+.hover-overscroll-y-auto:hover { overscroll-behavior-y: auto; }
+.focus-overscroll-y-auto:focus { overscroll-behavior-y: auto; }
+.active-overscroll-y-auto:active { overscroll-behavior-y: auto; }
+.disabled-overscroll-y-auto:disabled { overscroll-behavior-y: auto; }
+.focus-visible-overscroll-y-auto:focus-visible { overscroll-behavior-y: auto; }
+.focus-within-overscroll-y-auto:focus-within { overscroll-behavior-y: auto; }
+.group:hover .group-hover-overscroll-y-auto { overscroll-behavior-y: auto; }
+.hover-overscroll-y-contain:hover { overscroll-behavior-y: contain; }
+.focus-overscroll-y-contain:focus { overscroll-behavior-y: contain; }
+.active-overscroll-y-contain:active { overscroll-behavior-y: contain; }
+.disabled-overscroll-y-contain:disabled { overscroll-behavior-y: contain; }
+.focus-visible-overscroll-y-contain:focus-visible { overscroll-behavior-y: contain; }
+.focus-within-overscroll-y-contain:focus-within { overscroll-behavior-y: contain; }
+.group:hover .group-hover-overscroll-y-contain { overscroll-behavior-y: contain; }
+.hover-overscroll-y-none:hover { overscroll-behavior-y: none; }
+.focus-overscroll-y-none:focus { overscroll-behavior-y: none; }
+.active-overscroll-y-none:active { overscroll-behavior-y: none; }
+.disabled-overscroll-y-none:disabled { overscroll-behavior-y: none; }
+.focus-visible-overscroll-y-none:focus-visible { overscroll-behavior-y: none; }
+.focus-within-overscroll-y-none:focus-within { overscroll-behavior-y: none; }
+.group:hover .group-hover-overscroll-y-none { overscroll-behavior-y: none; }
+
+/* SM Breakpoint */
+@media (min-width: 480px) {
+  .sm-overflow-auto { overflow: auto; }
+  .sm-hover-overflow-auto:hover { overflow: auto; }
+  .sm-focus-overflow-auto:focus { overflow: auto; }
+  .sm-active-overflow-auto:active { overflow: auto; }
+  .sm-disabled-overflow-auto:disabled { overflow: auto; }
+  .sm-focus-visible-overflow-auto:focus-visible { overflow: auto; }
+  .sm-focus-within-overflow-auto:focus-within { overflow: auto; }
+  .group:hover .sm-group-hover-overflow-auto { overflow: auto; }
+  .sm-overflow-hidden { overflow: hidden; }
+  .sm-hover-overflow-hidden:hover { overflow: hidden; }
+  .sm-focus-overflow-hidden:focus { overflow: hidden; }
+  .sm-active-overflow-hidden:active { overflow: hidden; }
+  .sm-disabled-overflow-hidden:disabled { overflow: hidden; }
+  .sm-focus-visible-overflow-hidden:focus-visible { overflow: hidden; }
+  .sm-focus-within-overflow-hidden:focus-within { overflow: hidden; }
+  .group:hover .sm-group-hover-overflow-hidden { overflow: hidden; }
+  .sm-overflow-visible { overflow: visible; }
+  .sm-hover-overflow-visible:hover { overflow: visible; }
+  .sm-focus-overflow-visible:focus { overflow: visible; }
+  .sm-active-overflow-visible:active { overflow: visible; }
+  .sm-disabled-overflow-visible:disabled { overflow: visible; }
+  .sm-focus-visible-overflow-visible:focus-visible { overflow: visible; }
+  .sm-focus-within-overflow-visible:focus-within { overflow: visible; }
+  .group:hover .sm-group-hover-overflow-visible { overflow: visible; }
+  .sm-overflow-scroll { overflow: scroll; }
+  .sm-hover-overflow-scroll:hover { overflow: scroll; }
+  .sm-focus-overflow-scroll:focus { overflow: scroll; }
+  .sm-active-overflow-scroll:active { overflow: scroll; }
+  .sm-disabled-overflow-scroll:disabled { overflow: scroll; }
+  .sm-focus-visible-overflow-scroll:focus-visible { overflow: scroll; }
+  .sm-focus-within-overflow-scroll:focus-within { overflow: scroll; }
+  .group:hover .sm-group-hover-overflow-scroll { overflow: scroll; }
+  .sm-overflow-x-auto { overflow-x: auto; }
+  .sm-hover-overflow-x-auto:hover { overflow-x: auto; }
+  .sm-focus-overflow-x-auto:focus { overflow-x: auto; }
+  .sm-active-overflow-x-auto:active { overflow-x: auto; }
+  .sm-disabled-overflow-x-auto:disabled { overflow-x: auto; }
+  .sm-focus-visible-overflow-x-auto:focus-visible { overflow-x: auto; }
+  .sm-focus-within-overflow-x-auto:focus-within { overflow-x: auto; }
+  .group:hover .sm-group-hover-overflow-x-auto { overflow-x: auto; }
+  .sm-overflow-x-hidden { overflow-x: hidden; }
+  .sm-hover-overflow-x-hidden:hover { overflow-x: hidden; }
+  .sm-focus-overflow-x-hidden:focus { overflow-x: hidden; }
+  .sm-active-overflow-x-hidden:active { overflow-x: hidden; }
+  .sm-disabled-overflow-x-hidden:disabled { overflow-x: hidden; }
+  .sm-focus-visible-overflow-x-hidden:focus-visible { overflow-x: hidden; }
+  .sm-focus-within-overflow-x-hidden:focus-within { overflow-x: hidden; }
+  .group:hover .sm-group-hover-overflow-x-hidden { overflow-x: hidden; }
+  .sm-overflow-x-visible { overflow-x: visible; }
+  .sm-hover-overflow-x-visible:hover { overflow-x: visible; }
+  .sm-focus-overflow-x-visible:focus { overflow-x: visible; }
+  .sm-active-overflow-x-visible:active { overflow-x: visible; }
+  .sm-disabled-overflow-x-visible:disabled { overflow-x: visible; }
+  .sm-focus-visible-overflow-x-visible:focus-visible { overflow-x: visible; }
+  .sm-focus-within-overflow-x-visible:focus-within { overflow-x: visible; }
+  .group:hover .sm-group-hover-overflow-x-visible { overflow-x: visible; }
+  .sm-overflow-x-scroll { overflow-x: scroll; }
+  .sm-hover-overflow-x-scroll:hover { overflow-x: scroll; }
+  .sm-focus-overflow-x-scroll:focus { overflow-x: scroll; }
+  .sm-active-overflow-x-scroll:active { overflow-x: scroll; }
+  .sm-disabled-overflow-x-scroll:disabled { overflow-x: scroll; }
+  .sm-focus-visible-overflow-x-scroll:focus-visible { overflow-x: scroll; }
+  .sm-focus-within-overflow-x-scroll:focus-within { overflow-x: scroll; }
+  .group:hover .sm-group-hover-overflow-x-scroll { overflow-x: scroll; }
+  .sm-overflow-y-auto { overflow-y: auto; }
+  .sm-hover-overflow-y-auto:hover { overflow-y: auto; }
+  .sm-focus-overflow-y-auto:focus { overflow-y: auto; }
+  .sm-active-overflow-y-auto:active { overflow-y: auto; }
+  .sm-disabled-overflow-y-auto:disabled { overflow-y: auto; }
+  .sm-focus-visible-overflow-y-auto:focus-visible { overflow-y: auto; }
+  .sm-focus-within-overflow-y-auto:focus-within { overflow-y: auto; }
+  .group:hover .sm-group-hover-overflow-y-auto { overflow-y: auto; }
+  .sm-overflow-y-hidden { overflow-y: hidden; }
+  .sm-hover-overflow-y-hidden:hover { overflow-y: hidden; }
+  .sm-focus-overflow-y-hidden:focus { overflow-y: hidden; }
+  .sm-active-overflow-y-hidden:active { overflow-y: hidden; }
+  .sm-disabled-overflow-y-hidden:disabled { overflow-y: hidden; }
+  .sm-focus-visible-overflow-y-hidden:focus-visible { overflow-y: hidden; }
+  .sm-focus-within-overflow-y-hidden:focus-within { overflow-y: hidden; }
+  .group:hover .sm-group-hover-overflow-y-hidden { overflow-y: hidden; }
+  .sm-overflow-y-visible { overflow-y: visible; }
+  .sm-hover-overflow-y-visible:hover { overflow-y: visible; }
+  .sm-focus-overflow-y-visible:focus { overflow-y: visible; }
+  .sm-active-overflow-y-visible:active { overflow-y: visible; }
+  .sm-disabled-overflow-y-visible:disabled { overflow-y: visible; }
+  .sm-focus-visible-overflow-y-visible:focus-visible { overflow-y: visible; }
+  .sm-focus-within-overflow-y-visible:focus-within { overflow-y: visible; }
+  .group:hover .sm-group-hover-overflow-y-visible { overflow-y: visible; }
+  .sm-overflow-y-scroll { overflow-y: scroll; }
+  .sm-hover-overflow-y-scroll:hover { overflow-y: scroll; }
+  .sm-focus-overflow-y-scroll:focus { overflow-y: scroll; }
+  .sm-active-overflow-y-scroll:active { overflow-y: scroll; }
+  .sm-disabled-overflow-y-scroll:disabled { overflow-y: scroll; }
+  .sm-focus-visible-overflow-y-scroll:focus-visible { overflow-y: scroll; }
+  .sm-focus-within-overflow-y-scroll:focus-within { overflow-y: scroll; }
+  .group:hover .sm-group-hover-overflow-y-scroll { overflow-y: scroll; }
+  .sm-overflow-normal { overflow-wrap: normal; }
+  .sm-hover-overflow-normal:hover { overflow-wrap: normal; }
+  .sm-focus-overflow-normal:focus { overflow-wrap: normal; }
+  .sm-active-overflow-normal:active { overflow-wrap: normal; }
+  .sm-disabled-overflow-normal:disabled { overflow-wrap: normal; }
+  .sm-focus-visible-overflow-normal:focus-visible { overflow-wrap: normal; }
+  .sm-focus-within-overflow-normal:focus-within { overflow-wrap: normal; }
+  .group:hover .sm-group-hover-overflow-normal { overflow-wrap: normal; }
+  .sm-overflow-break { overflow-wrap: break-word; }
+  .sm-hover-overflow-break:hover { overflow-wrap: break-word; }
+  .sm-focus-overflow-break:focus { overflow-wrap: break-word; }
+  .sm-active-overflow-break:active { overflow-wrap: break-word; }
+  .sm-disabled-overflow-break:disabled { overflow-wrap: break-word; }
+  .sm-focus-visible-overflow-break:focus-visible { overflow-wrap: break-word; }
+  .sm-focus-within-overflow-break:focus-within { overflow-wrap: break-word; }
+  .group:hover .sm-group-hover-overflow-break { overflow-wrap: break-word; }
+  .sm-overflow-normal { overflow-wrap: normal; }
+  .sm-hover-overflow-normal:hover { overflow-wrap: normal; }
+  .sm-focus-overflow-normal:focus { overflow-wrap: normal; }
+  .sm-active-overflow-normal:active { overflow-wrap: normal; }
+  .sm-disabled-overflow-normal:disabled { overflow-wrap: normal; }
+  .sm-focus-visible-overflow-normal:focus-visible { overflow-wrap: normal; }
+  .sm-focus-within-overflow-normal:focus-within { overflow-wrap: normal; }
+  .group:hover .sm-group-hover-overflow-normal { overflow-wrap: normal; }
+  .sm-overflow-break { overflow-wrap: break-word; }
+  .sm-hover-overflow-break:hover { overflow-wrap: break-word; }
+  .sm-focus-overflow-break:focus { overflow-wrap: break-word; }
+  .sm-active-overflow-break:active { overflow-wrap: break-word; }
+  .sm-disabled-overflow-break:disabled { overflow-wrap: break-word; }
+  .sm-focus-visible-overflow-break:focus-visible { overflow-wrap: break-word; }
+  .sm-focus-within-overflow-break:focus-within { overflow-wrap: break-word; }
+  .group:hover .sm-group-hover-overflow-break { overflow-wrap: break-word; }
+  .sm-overscroll-auto { overscroll-behavior: auto; }
+  .sm-hover-overscroll-auto:hover { overscroll-behavior: auto; }
+  .sm-focus-overscroll-auto:focus { overscroll-behavior: auto; }
+  .sm-active-overscroll-auto:active { overscroll-behavior: auto; }
+  .sm-disabled-overscroll-auto:disabled { overscroll-behavior: auto; }
+  .sm-focus-visible-overscroll-auto:focus-visible { overscroll-behavior: auto; }
+  .sm-focus-within-overscroll-auto:focus-within { overscroll-behavior: auto; }
+  .group:hover .sm-group-hover-overscroll-auto { overscroll-behavior: auto; }
+  .sm-overscroll-contain { overscroll-behavior: contain; }
+  .sm-hover-overscroll-contain:hover { overscroll-behavior: contain; }
+  .sm-focus-overscroll-contain:focus { overscroll-behavior: contain; }
+  .sm-active-overscroll-contain:active { overscroll-behavior: contain; }
+  .sm-disabled-overscroll-contain:disabled { overscroll-behavior: contain; }
+  .sm-focus-visible-overscroll-contain:focus-visible { overscroll-behavior: contain; }
+  .sm-focus-within-overscroll-contain:focus-within { overscroll-behavior: contain; }
+  .group:hover .sm-group-hover-overscroll-contain { overscroll-behavior: contain; }
+  .sm-overscroll-none { overscroll-behavior: none; }
+  .sm-hover-overscroll-none:hover { overscroll-behavior: none; }
+  .sm-focus-overscroll-none:focus { overscroll-behavior: none; }
+  .sm-active-overscroll-none:active { overscroll-behavior: none; }
+  .sm-disabled-overscroll-none:disabled { overscroll-behavior: none; }
+  .sm-focus-visible-overscroll-none:focus-visible { overscroll-behavior: none; }
+  .sm-focus-within-overscroll-none:focus-within { overscroll-behavior: none; }
+  .group:hover .sm-group-hover-overscroll-none { overscroll-behavior: none; }
+  .sm-overscroll-x-auto { overscroll-behavior-x: auto; }
+  .sm-hover-overscroll-x-auto:hover { overscroll-behavior-x: auto; }
+  .sm-focus-overscroll-x-auto:focus { overscroll-behavior-x: auto; }
+  .sm-active-overscroll-x-auto:active { overscroll-behavior-x: auto; }
+  .sm-disabled-overscroll-x-auto:disabled { overscroll-behavior-x: auto; }
+  .sm-focus-visible-overscroll-x-auto:focus-visible { overscroll-behavior-x: auto; }
+  .sm-focus-within-overscroll-x-auto:focus-within { overscroll-behavior-x: auto; }
+  .group:hover .sm-group-hover-overscroll-x-auto { overscroll-behavior-x: auto; }
+  .sm-overscroll-x-contain { overscroll-behavior-x: contain; }
+  .sm-hover-overscroll-x-contain:hover { overscroll-behavior-x: contain; }
+  .sm-focus-overscroll-x-contain:focus { overscroll-behavior-x: contain; }
+  .sm-active-overscroll-x-contain:active { overscroll-behavior-x: contain; }
+  .sm-disabled-overscroll-x-contain:disabled { overscroll-behavior-x: contain; }
+  .sm-focus-visible-overscroll-x-contain:focus-visible { overscroll-behavior-x: contain; }
+  .sm-focus-within-overscroll-x-contain:focus-within { overscroll-behavior-x: contain; }
+  .group:hover .sm-group-hover-overscroll-x-contain { overscroll-behavior-x: contain; }
+  .sm-overscroll-x-none { overscroll-behavior-x: none; }
+  .sm-hover-overscroll-x-none:hover { overscroll-behavior-x: none; }
+  .sm-focus-overscroll-x-none:focus { overscroll-behavior-x: none; }
+  .sm-active-overscroll-x-none:active { overscroll-behavior-x: none; }
+  .sm-disabled-overscroll-x-none:disabled { overscroll-behavior-x: none; }
+  .sm-focus-visible-overscroll-x-none:focus-visible { overscroll-behavior-x: none; }
+  .sm-focus-within-overscroll-x-none:focus-within { overscroll-behavior-x: none; }
+  .group:hover .sm-group-hover-overscroll-x-none { overscroll-behavior-x: none; }
+  .sm-overscroll-y-auto { overscroll-behavior-y: auto; }
+  .sm-hover-overscroll-y-auto:hover { overscroll-behavior-y: auto; }
+  .sm-focus-overscroll-y-auto:focus { overscroll-behavior-y: auto; }
+  .sm-active-overscroll-y-auto:active { overscroll-behavior-y: auto; }
+  .sm-disabled-overscroll-y-auto:disabled { overscroll-behavior-y: auto; }
+  .sm-focus-visible-overscroll-y-auto:focus-visible { overscroll-behavior-y: auto; }
+  .sm-focus-within-overscroll-y-auto:focus-within { overscroll-behavior-y: auto; }
+  .group:hover .sm-group-hover-overscroll-y-auto { overscroll-behavior-y: auto; }
+  .sm-overscroll-y-contain { overscroll-behavior-y: contain; }
+  .sm-hover-overscroll-y-contain:hover { overscroll-behavior-y: contain; }
+  .sm-focus-overscroll-y-contain:focus { overscroll-behavior-y: contain; }
+  .sm-active-overscroll-y-contain:active { overscroll-behavior-y: contain; }
+  .sm-disabled-overscroll-y-contain:disabled { overscroll-behavior-y: contain; }
+  .sm-focus-visible-overscroll-y-contain:focus-visible { overscroll-behavior-y: contain; }
+  .sm-focus-within-overscroll-y-contain:focus-within { overscroll-behavior-y: contain; }
+  .group:hover .sm-group-hover-overscroll-y-contain { overscroll-behavior-y: contain; }
+  .sm-overscroll-y-none { overscroll-behavior-y: none; }
+  .sm-hover-overscroll-y-none:hover { overscroll-behavior-y: none; }
+  .sm-focus-overscroll-y-none:focus { overscroll-behavior-y: none; }
+  .sm-active-overscroll-y-none:active { overscroll-behavior-y: none; }
+  .sm-disabled-overscroll-y-none:disabled { overscroll-behavior-y: none; }
+  .sm-focus-visible-overscroll-y-none:focus-visible { overscroll-behavior-y: none; }
+  .sm-focus-within-overscroll-y-none:focus-within { overscroll-behavior-y: none; }
+  .group:hover .sm-group-hover-overscroll-y-none { overscroll-behavior-y: none; }
+}
+
+/* MD Breakpoint */
+@media (min-width: 768px) {
+  .md-overflow-auto { overflow: auto; }
+  .md-hover-overflow-auto:hover { overflow: auto; }
+  .md-focus-overflow-auto:focus { overflow: auto; }
+  .md-active-overflow-auto:active { overflow: auto; }
+  .md-disabled-overflow-auto:disabled { overflow: auto; }
+  .md-focus-visible-overflow-auto:focus-visible { overflow: auto; }
+  .md-focus-within-overflow-auto:focus-within { overflow: auto; }
+  .group:hover .md-group-hover-overflow-auto { overflow: auto; }
+  .md-overflow-hidden { overflow: hidden; }
+  .md-hover-overflow-hidden:hover { overflow: hidden; }
+  .md-focus-overflow-hidden:focus { overflow: hidden; }
+  .md-active-overflow-hidden:active { overflow: hidden; }
+  .md-disabled-overflow-hidden:disabled { overflow: hidden; }
+  .md-focus-visible-overflow-hidden:focus-visible { overflow: hidden; }
+  .md-focus-within-overflow-hidden:focus-within { overflow: hidden; }
+  .group:hover .md-group-hover-overflow-hidden { overflow: hidden; }
+  .md-overflow-visible { overflow: visible; }
+  .md-hover-overflow-visible:hover { overflow: visible; }
+  .md-focus-overflow-visible:focus { overflow: visible; }
+  .md-active-overflow-visible:active { overflow: visible; }
+  .md-disabled-overflow-visible:disabled { overflow: visible; }
+  .md-focus-visible-overflow-visible:focus-visible { overflow: visible; }
+  .md-focus-within-overflow-visible:focus-within { overflow: visible; }
+  .group:hover .md-group-hover-overflow-visible { overflow: visible; }
+  .md-overflow-scroll { overflow: scroll; }
+  .md-hover-overflow-scroll:hover { overflow: scroll; }
+  .md-focus-overflow-scroll:focus { overflow: scroll; }
+  .md-active-overflow-scroll:active { overflow: scroll; }
+  .md-disabled-overflow-scroll:disabled { overflow: scroll; }
+  .md-focus-visible-overflow-scroll:focus-visible { overflow: scroll; }
+  .md-focus-within-overflow-scroll:focus-within { overflow: scroll; }
+  .group:hover .md-group-hover-overflow-scroll { overflow: scroll; }
+  .md-overflow-x-auto { overflow-x: auto; }
+  .md-hover-overflow-x-auto:hover { overflow-x: auto; }
+  .md-focus-overflow-x-auto:focus { overflow-x: auto; }
+  .md-active-overflow-x-auto:active { overflow-x: auto; }
+  .md-disabled-overflow-x-auto:disabled { overflow-x: auto; }
+  .md-focus-visible-overflow-x-auto:focus-visible { overflow-x: auto; }
+  .md-focus-within-overflow-x-auto:focus-within { overflow-x: auto; }
+  .group:hover .md-group-hover-overflow-x-auto { overflow-x: auto; }
+  .md-overflow-x-hidden { overflow-x: hidden; }
+  .md-hover-overflow-x-hidden:hover { overflow-x: hidden; }
+  .md-focus-overflow-x-hidden:focus { overflow-x: hidden; }
+  .md-active-overflow-x-hidden:active { overflow-x: hidden; }
+  .md-disabled-overflow-x-hidden:disabled { overflow-x: hidden; }
+  .md-focus-visible-overflow-x-hidden:focus-visible { overflow-x: hidden; }
+  .md-focus-within-overflow-x-hidden:focus-within { overflow-x: hidden; }
+  .group:hover .md-group-hover-overflow-x-hidden { overflow-x: hidden; }
+  .md-overflow-x-visible { overflow-x: visible; }
+  .md-hover-overflow-x-visible:hover { overflow-x: visible; }
+  .md-focus-overflow-x-visible:focus { overflow-x: visible; }
+  .md-active-overflow-x-visible:active { overflow-x: visible; }
+  .md-disabled-overflow-x-visible:disabled { overflow-x: visible; }
+  .md-focus-visible-overflow-x-visible:focus-visible { overflow-x: visible; }
+  .md-focus-within-overflow-x-visible:focus-within { overflow-x: visible; }
+  .group:hover .md-group-hover-overflow-x-visible { overflow-x: visible; }
+  .md-overflow-x-scroll { overflow-x: scroll; }
+  .md-hover-overflow-x-scroll:hover { overflow-x: scroll; }
+  .md-focus-overflow-x-scroll:focus { overflow-x: scroll; }
+  .md-active-overflow-x-scroll:active { overflow-x: scroll; }
+  .md-disabled-overflow-x-scroll:disabled { overflow-x: scroll; }
+  .md-focus-visible-overflow-x-scroll:focus-visible { overflow-x: scroll; }
+  .md-focus-within-overflow-x-scroll:focus-within { overflow-x: scroll; }
+  .group:hover .md-group-hover-overflow-x-scroll { overflow-x: scroll; }
+  .md-overflow-y-auto { overflow-y: auto; }
+  .md-hover-overflow-y-auto:hover { overflow-y: auto; }
+  .md-focus-overflow-y-auto:focus { overflow-y: auto; }
+  .md-active-overflow-y-auto:active { overflow-y: auto; }
+  .md-disabled-overflow-y-auto:disabled { overflow-y: auto; }
+  .md-focus-visible-overflow-y-auto:focus-visible { overflow-y: auto; }
+  .md-focus-within-overflow-y-auto:focus-within { overflow-y: auto; }
+  .group:hover .md-group-hover-overflow-y-auto { overflow-y: auto; }
+  .md-overflow-y-hidden { overflow-y: hidden; }
+  .md-hover-overflow-y-hidden:hover { overflow-y: hidden; }
+  .md-focus-overflow-y-hidden:focus { overflow-y: hidden; }
+  .md-active-overflow-y-hidden:active { overflow-y: hidden; }
+  .md-disabled-overflow-y-hidden:disabled { overflow-y: hidden; }
+  .md-focus-visible-overflow-y-hidden:focus-visible { overflow-y: hidden; }
+  .md-focus-within-overflow-y-hidden:focus-within { overflow-y: hidden; }
+  .group:hover .md-group-hover-overflow-y-hidden { overflow-y: hidden; }
+  .md-overflow-y-visible { overflow-y: visible; }
+  .md-hover-overflow-y-visible:hover { overflow-y: visible; }
+  .md-focus-overflow-y-visible:focus { overflow-y: visible; }
+  .md-active-overflow-y-visible:active { overflow-y: visible; }
+  .md-disabled-overflow-y-visible:disabled { overflow-y: visible; }
+  .md-focus-visible-overflow-y-visible:focus-visible { overflow-y: visible; }
+  .md-focus-within-overflow-y-visible:focus-within { overflow-y: visible; }
+  .group:hover .md-group-hover-overflow-y-visible { overflow-y: visible; }
+  .md-overflow-y-scroll { overflow-y: scroll; }
+  .md-hover-overflow-y-scroll:hover { overflow-y: scroll; }
+  .md-focus-overflow-y-scroll:focus { overflow-y: scroll; }
+  .md-active-overflow-y-scroll:active { overflow-y: scroll; }
+  .md-disabled-overflow-y-scroll:disabled { overflow-y: scroll; }
+  .md-focus-visible-overflow-y-scroll:focus-visible { overflow-y: scroll; }
+  .md-focus-within-overflow-y-scroll:focus-within { overflow-y: scroll; }
+  .group:hover .md-group-hover-overflow-y-scroll { overflow-y: scroll; }
+  .md-overflow-normal { overflow-wrap: normal; }
+  .md-hover-overflow-normal:hover { overflow-wrap: normal; }
+  .md-focus-overflow-normal:focus { overflow-wrap: normal; }
+  .md-active-overflow-normal:active { overflow-wrap: normal; }
+  .md-disabled-overflow-normal:disabled { overflow-wrap: normal; }
+  .md-focus-visible-overflow-normal:focus-visible { overflow-wrap: normal; }
+  .md-focus-within-overflow-normal:focus-within { overflow-wrap: normal; }
+  .group:hover .md-group-hover-overflow-normal { overflow-wrap: normal; }
+  .md-overflow-break { overflow-wrap: break-word; }
+  .md-hover-overflow-break:hover { overflow-wrap: break-word; }
+  .md-focus-overflow-break:focus { overflow-wrap: break-word; }
+  .md-active-overflow-break:active { overflow-wrap: break-word; }
+  .md-disabled-overflow-break:disabled { overflow-wrap: break-word; }
+  .md-focus-visible-overflow-break:focus-visible { overflow-wrap: break-word; }
+  .md-focus-within-overflow-break:focus-within { overflow-wrap: break-word; }
+  .group:hover .md-group-hover-overflow-break { overflow-wrap: break-word; }
+  .md-overflow-normal { overflow-wrap: normal; }
+  .md-hover-overflow-normal:hover { overflow-wrap: normal; }
+  .md-focus-overflow-normal:focus { overflow-wrap: normal; }
+  .md-active-overflow-normal:active { overflow-wrap: normal; }
+  .md-disabled-overflow-normal:disabled { overflow-wrap: normal; }
+  .md-focus-visible-overflow-normal:focus-visible { overflow-wrap: normal; }
+  .md-focus-within-overflow-normal:focus-within { overflow-wrap: normal; }
+  .group:hover .md-group-hover-overflow-normal { overflow-wrap: normal; }
+  .md-overflow-break { overflow-wrap: break-word; }
+  .md-hover-overflow-break:hover { overflow-wrap: break-word; }
+  .md-focus-overflow-break:focus { overflow-wrap: break-word; }
+  .md-active-overflow-break:active { overflow-wrap: break-word; }
+  .md-disabled-overflow-break:disabled { overflow-wrap: break-word; }
+  .md-focus-visible-overflow-break:focus-visible { overflow-wrap: break-word; }
+  .md-focus-within-overflow-break:focus-within { overflow-wrap: break-word; }
+  .group:hover .md-group-hover-overflow-break { overflow-wrap: break-word; }
+  .md-overscroll-auto { overscroll-behavior: auto; }
+  .md-hover-overscroll-auto:hover { overscroll-behavior: auto; }
+  .md-focus-overscroll-auto:focus { overscroll-behavior: auto; }
+  .md-active-overscroll-auto:active { overscroll-behavior: auto; }
+  .md-disabled-overscroll-auto:disabled { overscroll-behavior: auto; }
+  .md-focus-visible-overscroll-auto:focus-visible { overscroll-behavior: auto; }
+  .md-focus-within-overscroll-auto:focus-within { overscroll-behavior: auto; }
+  .group:hover .md-group-hover-overscroll-auto { overscroll-behavior: auto; }
+  .md-overscroll-contain { overscroll-behavior: contain; }
+  .md-hover-overscroll-contain:hover { overscroll-behavior: contain; }
+  .md-focus-overscroll-contain:focus { overscroll-behavior: contain; }
+  .md-active-overscroll-contain:active { overscroll-behavior: contain; }
+  .md-disabled-overscroll-contain:disabled { overscroll-behavior: contain; }
+  .md-focus-visible-overscroll-contain:focus-visible { overscroll-behavior: contain; }
+  .md-focus-within-overscroll-contain:focus-within { overscroll-behavior: contain; }
+  .group:hover .md-group-hover-overscroll-contain { overscroll-behavior: contain; }
+  .md-overscroll-none { overscroll-behavior: none; }
+  .md-hover-overscroll-none:hover { overscroll-behavior: none; }
+  .md-focus-overscroll-none:focus { overscroll-behavior: none; }
+  .md-active-overscroll-none:active { overscroll-behavior: none; }
+  .md-disabled-overscroll-none:disabled { overscroll-behavior: none; }
+  .md-focus-visible-overscroll-none:focus-visible { overscroll-behavior: none; }
+  .md-focus-within-overscroll-none:focus-within { overscroll-behavior: none; }
+  .group:hover .md-group-hover-overscroll-none { overscroll-behavior: none; }
+  .md-overscroll-x-auto { overscroll-behavior-x: auto; }
+  .md-hover-overscroll-x-auto:hover { overscroll-behavior-x: auto; }
+  .md-focus-overscroll-x-auto:focus { overscroll-behavior-x: auto; }
+  .md-active-overscroll-x-auto:active { overscroll-behavior-x: auto; }
+  .md-disabled-overscroll-x-auto:disabled { overscroll-behavior-x: auto; }
+  .md-focus-visible-overscroll-x-auto:focus-visible { overscroll-behavior-x: auto; }
+  .md-focus-within-overscroll-x-auto:focus-within { overscroll-behavior-x: auto; }
+  .group:hover .md-group-hover-overscroll-x-auto { overscroll-behavior-x: auto; }
+  .md-overscroll-x-contain { overscroll-behavior-x: contain; }
+  .md-hover-overscroll-x-contain:hover { overscroll-behavior-x: contain; }
+  .md-focus-overscroll-x-contain:focus { overscroll-behavior-x: contain; }
+  .md-active-overscroll-x-contain:active { overscroll-behavior-x: contain; }
+  .md-disabled-overscroll-x-contain:disabled { overscroll-behavior-x: contain; }
+  .md-focus-visible-overscroll-x-contain:focus-visible { overscroll-behavior-x: contain; }
+  .md-focus-within-overscroll-x-contain:focus-within { overscroll-behavior-x: contain; }
+  .group:hover .md-group-hover-overscroll-x-contain { overscroll-behavior-x: contain; }
+  .md-overscroll-x-none { overscroll-behavior-x: none; }
+  .md-hover-overscroll-x-none:hover { overscroll-behavior-x: none; }
+  .md-focus-overscroll-x-none:focus { overscroll-behavior-x: none; }
+  .md-active-overscroll-x-none:active { overscroll-behavior-x: none; }
+  .md-disabled-overscroll-x-none:disabled { overscroll-behavior-x: none; }
+  .md-focus-visible-overscroll-x-none:focus-visible { overscroll-behavior-x: none; }
+  .md-focus-within-overscroll-x-none:focus-within { overscroll-behavior-x: none; }
+  .group:hover .md-group-hover-overscroll-x-none { overscroll-behavior-x: none; }
+  .md-overscroll-y-auto { overscroll-behavior-y: auto; }
+  .md-hover-overscroll-y-auto:hover { overscroll-behavior-y: auto; }
+  .md-focus-overscroll-y-auto:focus { overscroll-behavior-y: auto; }
+  .md-active-overscroll-y-auto:active { overscroll-behavior-y: auto; }
+  .md-disabled-overscroll-y-auto:disabled { overscroll-behavior-y: auto; }
+  .md-focus-visible-overscroll-y-auto:focus-visible { overscroll-behavior-y: auto; }
+  .md-focus-within-overscroll-y-auto:focus-within { overscroll-behavior-y: auto; }
+  .group:hover .md-group-hover-overscroll-y-auto { overscroll-behavior-y: auto; }
+  .md-overscroll-y-contain { overscroll-behavior-y: contain; }
+  .md-hover-overscroll-y-contain:hover { overscroll-behavior-y: contain; }
+  .md-focus-overscroll-y-contain:focus { overscroll-behavior-y: contain; }
+  .md-active-overscroll-y-contain:active { overscroll-behavior-y: contain; }
+  .md-disabled-overscroll-y-contain:disabled { overscroll-behavior-y: contain; }
+  .md-focus-visible-overscroll-y-contain:focus-visible { overscroll-behavior-y: contain; }
+  .md-focus-within-overscroll-y-contain:focus-within { overscroll-behavior-y: contain; }
+  .group:hover .md-group-hover-overscroll-y-contain { overscroll-behavior-y: contain; }
+  .md-overscroll-y-none { overscroll-behavior-y: none; }
+  .md-hover-overscroll-y-none:hover { overscroll-behavior-y: none; }
+  .md-focus-overscroll-y-none:focus { overscroll-behavior-y: none; }
+  .md-active-overscroll-y-none:active { overscroll-behavior-y: none; }
+  .md-disabled-overscroll-y-none:disabled { overscroll-behavior-y: none; }
+  .md-focus-visible-overscroll-y-none:focus-visible { overscroll-behavior-y: none; }
+  .md-focus-within-overscroll-y-none:focus-within { overscroll-behavior-y: none; }
+  .group:hover .md-group-hover-overscroll-y-none { overscroll-behavior-y: none; }
+}
+
+/* LG Breakpoint */
+@media (min-width: 1024px) {
+  .lg-overflow-auto { overflow: auto; }
+  .lg-hover-overflow-auto:hover { overflow: auto; }
+  .lg-focus-overflow-auto:focus { overflow: auto; }
+  .lg-active-overflow-auto:active { overflow: auto; }
+  .lg-disabled-overflow-auto:disabled { overflow: auto; }
+  .lg-focus-visible-overflow-auto:focus-visible { overflow: auto; }
+  .lg-focus-within-overflow-auto:focus-within { overflow: auto; }
+  .group:hover .lg-group-hover-overflow-auto { overflow: auto; }
+  .lg-overflow-hidden { overflow: hidden; }
+  .lg-hover-overflow-hidden:hover { overflow: hidden; }
+  .lg-focus-overflow-hidden:focus { overflow: hidden; }
+  .lg-active-overflow-hidden:active { overflow: hidden; }
+  .lg-disabled-overflow-hidden:disabled { overflow: hidden; }
+  .lg-focus-visible-overflow-hidden:focus-visible { overflow: hidden; }
+  .lg-focus-within-overflow-hidden:focus-within { overflow: hidden; }
+  .group:hover .lg-group-hover-overflow-hidden { overflow: hidden; }
+  .lg-overflow-visible { overflow: visible; }
+  .lg-hover-overflow-visible:hover { overflow: visible; }
+  .lg-focus-overflow-visible:focus { overflow: visible; }
+  .lg-active-overflow-visible:active { overflow: visible; }
+  .lg-disabled-overflow-visible:disabled { overflow: visible; }
+  .lg-focus-visible-overflow-visible:focus-visible { overflow: visible; }
+  .lg-focus-within-overflow-visible:focus-within { overflow: visible; }
+  .group:hover .lg-group-hover-overflow-visible { overflow: visible; }
+  .lg-overflow-scroll { overflow: scroll; }
+  .lg-hover-overflow-scroll:hover { overflow: scroll; }
+  .lg-focus-overflow-scroll:focus { overflow: scroll; }
+  .lg-active-overflow-scroll:active { overflow: scroll; }
+  .lg-disabled-overflow-scroll:disabled { overflow: scroll; }
+  .lg-focus-visible-overflow-scroll:focus-visible { overflow: scroll; }
+  .lg-focus-within-overflow-scroll:focus-within { overflow: scroll; }
+  .group:hover .lg-group-hover-overflow-scroll { overflow: scroll; }
+  .lg-overflow-x-auto { overflow-x: auto; }
+  .lg-hover-overflow-x-auto:hover { overflow-x: auto; }
+  .lg-focus-overflow-x-auto:focus { overflow-x: auto; }
+  .lg-active-overflow-x-auto:active { overflow-x: auto; }
+  .lg-disabled-overflow-x-auto:disabled { overflow-x: auto; }
+  .lg-focus-visible-overflow-x-auto:focus-visible { overflow-x: auto; }
+  .lg-focus-within-overflow-x-auto:focus-within { overflow-x: auto; }
+  .group:hover .lg-group-hover-overflow-x-auto { overflow-x: auto; }
+  .lg-overflow-x-hidden { overflow-x: hidden; }
+  .lg-hover-overflow-x-hidden:hover { overflow-x: hidden; }
+  .lg-focus-overflow-x-hidden:focus { overflow-x: hidden; }
+  .lg-active-overflow-x-hidden:active { overflow-x: hidden; }
+  .lg-disabled-overflow-x-hidden:disabled { overflow-x: hidden; }
+  .lg-focus-visible-overflow-x-hidden:focus-visible { overflow-x: hidden; }
+  .lg-focus-within-overflow-x-hidden:focus-within { overflow-x: hidden; }
+  .group:hover .lg-group-hover-overflow-x-hidden { overflow-x: hidden; }
+  .lg-overflow-x-visible { overflow-x: visible; }
+  .lg-hover-overflow-x-visible:hover { overflow-x: visible; }
+  .lg-focus-overflow-x-visible:focus { overflow-x: visible; }
+  .lg-active-overflow-x-visible:active { overflow-x: visible; }
+  .lg-disabled-overflow-x-visible:disabled { overflow-x: visible; }
+  .lg-focus-visible-overflow-x-visible:focus-visible { overflow-x: visible; }
+  .lg-focus-within-overflow-x-visible:focus-within { overflow-x: visible; }
+  .group:hover .lg-group-hover-overflow-x-visible { overflow-x: visible; }
+  .lg-overflow-x-scroll { overflow-x: scroll; }
+  .lg-hover-overflow-x-scroll:hover { overflow-x: scroll; }
+  .lg-focus-overflow-x-scroll:focus { overflow-x: scroll; }
+  .lg-active-overflow-x-scroll:active { overflow-x: scroll; }
+  .lg-disabled-overflow-x-scroll:disabled { overflow-x: scroll; }
+  .lg-focus-visible-overflow-x-scroll:focus-visible { overflow-x: scroll; }
+  .lg-focus-within-overflow-x-scroll:focus-within { overflow-x: scroll; }
+  .group:hover .lg-group-hover-overflow-x-scroll { overflow-x: scroll; }
+  .lg-overflow-y-auto { overflow-y: auto; }
+  .lg-hover-overflow-y-auto:hover { overflow-y: auto; }
+  .lg-focus-overflow-y-auto:focus { overflow-y: auto; }
+  .lg-active-overflow-y-auto:active { overflow-y: auto; }
+  .lg-disabled-overflow-y-auto:disabled { overflow-y: auto; }
+  .lg-focus-visible-overflow-y-auto:focus-visible { overflow-y: auto; }
+  .lg-focus-within-overflow-y-auto:focus-within { overflow-y: auto; }
+  .group:hover .lg-group-hover-overflow-y-auto { overflow-y: auto; }
+  .lg-overflow-y-hidden { overflow-y: hidden; }
+  .lg-hover-overflow-y-hidden:hover { overflow-y: hidden; }
+  .lg-focus-overflow-y-hidden:focus { overflow-y: hidden; }
+  .lg-active-overflow-y-hidden:active { overflow-y: hidden; }
+  .lg-disabled-overflow-y-hidden:disabled { overflow-y: hidden; }
+  .lg-focus-visible-overflow-y-hidden:focus-visible { overflow-y: hidden; }
+  .lg-focus-within-overflow-y-hidden:focus-within { overflow-y: hidden; }
+  .group:hover .lg-group-hover-overflow-y-hidden { overflow-y: hidden; }
+  .lg-overflow-y-visible { overflow-y: visible; }
+  .lg-hover-overflow-y-visible:hover { overflow-y: visible; }
+  .lg-focus-overflow-y-visible:focus { overflow-y: visible; }
+  .lg-active-overflow-y-visible:active { overflow-y: visible; }
+  .lg-disabled-overflow-y-visible:disabled { overflow-y: visible; }
+  .lg-focus-visible-overflow-y-visible:focus-visible { overflow-y: visible; }
+  .lg-focus-within-overflow-y-visible:focus-within { overflow-y: visible; }
+  .group:hover .lg-group-hover-overflow-y-visible { overflow-y: visible; }
+  .lg-overflow-y-scroll { overflow-y: scroll; }
+  .lg-hover-overflow-y-scroll:hover { overflow-y: scroll; }
+  .lg-focus-overflow-y-scroll:focus { overflow-y: scroll; }
+  .lg-active-overflow-y-scroll:active { overflow-y: scroll; }
+  .lg-disabled-overflow-y-scroll:disabled { overflow-y: scroll; }
+  .lg-focus-visible-overflow-y-scroll:focus-visible { overflow-y: scroll; }
+  .lg-focus-within-overflow-y-scroll:focus-within { overflow-y: scroll; }
+  .group:hover .lg-group-hover-overflow-y-scroll { overflow-y: scroll; }
+  .lg-overflow-normal { overflow-wrap: normal; }
+  .lg-hover-overflow-normal:hover { overflow-wrap: normal; }
+  .lg-focus-overflow-normal:focus { overflow-wrap: normal; }
+  .lg-active-overflow-normal:active { overflow-wrap: normal; }
+  .lg-disabled-overflow-normal:disabled { overflow-wrap: normal; }
+  .lg-focus-visible-overflow-normal:focus-visible { overflow-wrap: normal; }
+  .lg-focus-within-overflow-normal:focus-within { overflow-wrap: normal; }
+  .group:hover .lg-group-hover-overflow-normal { overflow-wrap: normal; }
+  .lg-overflow-break { overflow-wrap: break-word; }
+  .lg-hover-overflow-break:hover { overflow-wrap: break-word; }
+  .lg-focus-overflow-break:focus { overflow-wrap: break-word; }
+  .lg-active-overflow-break:active { overflow-wrap: break-word; }
+  .lg-disabled-overflow-break:disabled { overflow-wrap: break-word; }
+  .lg-focus-visible-overflow-break:focus-visible { overflow-wrap: break-word; }
+  .lg-focus-within-overflow-break:focus-within { overflow-wrap: break-word; }
+  .group:hover .lg-group-hover-overflow-break { overflow-wrap: break-word; }
+  .lg-overflow-normal { overflow-wrap: normal; }
+  .lg-hover-overflow-normal:hover { overflow-wrap: normal; }
+  .lg-focus-overflow-normal:focus { overflow-wrap: normal; }
+  .lg-active-overflow-normal:active { overflow-wrap: normal; }
+  .lg-disabled-overflow-normal:disabled { overflow-wrap: normal; }
+  .lg-focus-visible-overflow-normal:focus-visible { overflow-wrap: normal; }
+  .lg-focus-within-overflow-normal:focus-within { overflow-wrap: normal; }
+  .group:hover .lg-group-hover-overflow-normal { overflow-wrap: normal; }
+  .lg-overflow-break { overflow-wrap: break-word; }
+  .lg-hover-overflow-break:hover { overflow-wrap: break-word; }
+  .lg-focus-overflow-break:focus { overflow-wrap: break-word; }
+  .lg-active-overflow-break:active { overflow-wrap: break-word; }
+  .lg-disabled-overflow-break:disabled { overflow-wrap: break-word; }
+  .lg-focus-visible-overflow-break:focus-visible { overflow-wrap: break-word; }
+  .lg-focus-within-overflow-break:focus-within { overflow-wrap: break-word; }
+  .group:hover .lg-group-hover-overflow-break { overflow-wrap: break-word; }
+  .lg-overscroll-auto { overscroll-behavior: auto; }
+  .lg-hover-overscroll-auto:hover { overscroll-behavior: auto; }
+  .lg-focus-overscroll-auto:focus { overscroll-behavior: auto; }
+  .lg-active-overscroll-auto:active { overscroll-behavior: auto; }
+  .lg-disabled-overscroll-auto:disabled { overscroll-behavior: auto; }
+  .lg-focus-visible-overscroll-auto:focus-visible { overscroll-behavior: auto; }
+  .lg-focus-within-overscroll-auto:focus-within { overscroll-behavior: auto; }
+  .group:hover .lg-group-hover-overscroll-auto { overscroll-behavior: auto; }
+  .lg-overscroll-contain { overscroll-behavior: contain; }
+  .lg-hover-overscroll-contain:hover { overscroll-behavior: contain; }
+  .lg-focus-overscroll-contain:focus { overscroll-behavior: contain; }
+  .lg-active-overscroll-contain:active { overscroll-behavior: contain; }
+  .lg-disabled-overscroll-contain:disabled { overscroll-behavior: contain; }
+  .lg-focus-visible-overscroll-contain:focus-visible { overscroll-behavior: contain; }
+  .lg-focus-within-overscroll-contain:focus-within { overscroll-behavior: contain; }
+  .group:hover .lg-group-hover-overscroll-contain { overscroll-behavior: contain; }
+  .lg-overscroll-none { overscroll-behavior: none; }
+  .lg-hover-overscroll-none:hover { overscroll-behavior: none; }
+  .lg-focus-overscroll-none:focus { overscroll-behavior: none; }
+  .lg-active-overscroll-none:active { overscroll-behavior: none; }
+  .lg-disabled-overscroll-none:disabled { overscroll-behavior: none; }
+  .lg-focus-visible-overscroll-none:focus-visible { overscroll-behavior: none; }
+  .lg-focus-within-overscroll-none:focus-within { overscroll-behavior: none; }
+  .group:hover .lg-group-hover-overscroll-none { overscroll-behavior: none; }
+  .lg-overscroll-x-auto { overscroll-behavior-x: auto; }
+  .lg-hover-overscroll-x-auto:hover { overscroll-behavior-x: auto; }
+  .lg-focus-overscroll-x-auto:focus { overscroll-behavior-x: auto; }
+  .lg-active-overscroll-x-auto:active { overscroll-behavior-x: auto; }
+  .lg-disabled-overscroll-x-auto:disabled { overscroll-behavior-x: auto; }
+  .lg-focus-visible-overscroll-x-auto:focus-visible { overscroll-behavior-x: auto; }
+  .lg-focus-within-overscroll-x-auto:focus-within { overscroll-behavior-x: auto; }
+  .group:hover .lg-group-hover-overscroll-x-auto { overscroll-behavior-x: auto; }
+  .lg-overscroll-x-contain { overscroll-behavior-x: contain; }
+  .lg-hover-overscroll-x-contain:hover { overscroll-behavior-x: contain; }
+  .lg-focus-overscroll-x-contain:focus { overscroll-behavior-x: contain; }
+  .lg-active-overscroll-x-contain:active { overscroll-behavior-x: contain; }
+  .lg-disabled-overscroll-x-contain:disabled { overscroll-behavior-x: contain; }
+  .lg-focus-visible-overscroll-x-contain:focus-visible { overscroll-behavior-x: contain; }
+  .lg-focus-within-overscroll-x-contain:focus-within { overscroll-behavior-x: contain; }
+  .group:hover .lg-group-hover-overscroll-x-contain { overscroll-behavior-x: contain; }
+  .lg-overscroll-x-none { overscroll-behavior-x: none; }
+  .lg-hover-overscroll-x-none:hover { overscroll-behavior-x: none; }
+  .lg-focus-overscroll-x-none:focus { overscroll-behavior-x: none; }
+  .lg-active-overscroll-x-none:active { overscroll-behavior-x: none; }
+  .lg-disabled-overscroll-x-none:disabled { overscroll-behavior-x: none; }
+  .lg-focus-visible-overscroll-x-none:focus-visible { overscroll-behavior-x: none; }
+  .lg-focus-within-overscroll-x-none:focus-within { overscroll-behavior-x: none; }
+  .group:hover .lg-group-hover-overscroll-x-none { overscroll-behavior-x: none; }
+  .lg-overscroll-y-auto { overscroll-behavior-y: auto; }
+  .lg-hover-overscroll-y-auto:hover { overscroll-behavior-y: auto; }
+  .lg-focus-overscroll-y-auto:focus { overscroll-behavior-y: auto; }
+  .lg-active-overscroll-y-auto:active { overscroll-behavior-y: auto; }
+  .lg-disabled-overscroll-y-auto:disabled { overscroll-behavior-y: auto; }
+  .lg-focus-visible-overscroll-y-auto:focus-visible { overscroll-behavior-y: auto; }
+  .lg-focus-within-overscroll-y-auto:focus-within { overscroll-behavior-y: auto; }
+  .group:hover .lg-group-hover-overscroll-y-auto { overscroll-behavior-y: auto; }
+  .lg-overscroll-y-contain { overscroll-behavior-y: contain; }
+  .lg-hover-overscroll-y-contain:hover { overscroll-behavior-y: contain; }
+  .lg-focus-overscroll-y-contain:focus { overscroll-behavior-y: contain; }
+  .lg-active-overscroll-y-contain:active { overscroll-behavior-y: contain; }
+  .lg-disabled-overscroll-y-contain:disabled { overscroll-behavior-y: contain; }
+  .lg-focus-visible-overscroll-y-contain:focus-visible { overscroll-behavior-y: contain; }
+  .lg-focus-within-overscroll-y-contain:focus-within { overscroll-behavior-y: contain; }
+  .group:hover .lg-group-hover-overscroll-y-contain { overscroll-behavior-y: contain; }
+  .lg-overscroll-y-none { overscroll-behavior-y: none; }
+  .lg-hover-overscroll-y-none:hover { overscroll-behavior-y: none; }
+  .lg-focus-overscroll-y-none:focus { overscroll-behavior-y: none; }
+  .lg-active-overscroll-y-none:active { overscroll-behavior-y: none; }
+  .lg-disabled-overscroll-y-none:disabled { overscroll-behavior-y: none; }
+  .lg-focus-visible-overscroll-y-none:focus-visible { overscroll-behavior-y: none; }
+  .lg-focus-within-overscroll-y-none:focus-within { overscroll-behavior-y: none; }
+  .group:hover .lg-group-hover-overscroll-y-none { overscroll-behavior-y: none; }
+}
+
+/* XL Breakpoint */
+@media (min-width: 1280px) {
+  .xl-overflow-auto { overflow: auto; }
+  .xl-hover-overflow-auto:hover { overflow: auto; }
+  .xl-focus-overflow-auto:focus { overflow: auto; }
+  .xl-active-overflow-auto:active { overflow: auto; }
+  .xl-disabled-overflow-auto:disabled { overflow: auto; }
+  .xl-focus-visible-overflow-auto:focus-visible { overflow: auto; }
+  .xl-focus-within-overflow-auto:focus-within { overflow: auto; }
+  .group:hover .xl-group-hover-overflow-auto { overflow: auto; }
+  .xl-overflow-hidden { overflow: hidden; }
+  .xl-hover-overflow-hidden:hover { overflow: hidden; }
+  .xl-focus-overflow-hidden:focus { overflow: hidden; }
+  .xl-active-overflow-hidden:active { overflow: hidden; }
+  .xl-disabled-overflow-hidden:disabled { overflow: hidden; }
+  .xl-focus-visible-overflow-hidden:focus-visible { overflow: hidden; }
+  .xl-focus-within-overflow-hidden:focus-within { overflow: hidden; }
+  .group:hover .xl-group-hover-overflow-hidden { overflow: hidden; }
+  .xl-overflow-visible { overflow: visible; }
+  .xl-hover-overflow-visible:hover { overflow: visible; }
+  .xl-focus-overflow-visible:focus { overflow: visible; }
+  .xl-active-overflow-visible:active { overflow: visible; }
+  .xl-disabled-overflow-visible:disabled { overflow: visible; }
+  .xl-focus-visible-overflow-visible:focus-visible { overflow: visible; }
+  .xl-focus-within-overflow-visible:focus-within { overflow: visible; }
+  .group:hover .xl-group-hover-overflow-visible { overflow: visible; }
+  .xl-overflow-scroll { overflow: scroll; }
+  .xl-hover-overflow-scroll:hover { overflow: scroll; }
+  .xl-focus-overflow-scroll:focus { overflow: scroll; }
+  .xl-active-overflow-scroll:active { overflow: scroll; }
+  .xl-disabled-overflow-scroll:disabled { overflow: scroll; }
+  .xl-focus-visible-overflow-scroll:focus-visible { overflow: scroll; }
+  .xl-focus-within-overflow-scroll:focus-within { overflow: scroll; }
+  .group:hover .xl-group-hover-overflow-scroll { overflow: scroll; }
+  .xl-overflow-x-auto { overflow-x: auto; }
+  .xl-hover-overflow-x-auto:hover { overflow-x: auto; }
+  .xl-focus-overflow-x-auto:focus { overflow-x: auto; }
+  .xl-active-overflow-x-auto:active { overflow-x: auto; }
+  .xl-disabled-overflow-x-auto:disabled { overflow-x: auto; }
+  .xl-focus-visible-overflow-x-auto:focus-visible { overflow-x: auto; }
+  .xl-focus-within-overflow-x-auto:focus-within { overflow-x: auto; }
+  .group:hover .xl-group-hover-overflow-x-auto { overflow-x: auto; }
+  .xl-overflow-x-hidden { overflow-x: hidden; }
+  .xl-hover-overflow-x-hidden:hover { overflow-x: hidden; }
+  .xl-focus-overflow-x-hidden:focus { overflow-x: hidden; }
+  .xl-active-overflow-x-hidden:active { overflow-x: hidden; }
+  .xl-disabled-overflow-x-hidden:disabled { overflow-x: hidden; }
+  .xl-focus-visible-overflow-x-hidden:focus-visible { overflow-x: hidden; }
+  .xl-focus-within-overflow-x-hidden:focus-within { overflow-x: hidden; }
+  .group:hover .xl-group-hover-overflow-x-hidden { overflow-x: hidden; }
+  .xl-overflow-x-visible { overflow-x: visible; }
+  .xl-hover-overflow-x-visible:hover { overflow-x: visible; }
+  .xl-focus-overflow-x-visible:focus { overflow-x: visible; }
+  .xl-active-overflow-x-visible:active { overflow-x: visible; }
+  .xl-disabled-overflow-x-visible:disabled { overflow-x: visible; }
+  .xl-focus-visible-overflow-x-visible:focus-visible { overflow-x: visible; }
+  .xl-focus-within-overflow-x-visible:focus-within { overflow-x: visible; }
+  .group:hover .xl-group-hover-overflow-x-visible { overflow-x: visible; }
+  .xl-overflow-x-scroll { overflow-x: scroll; }
+  .xl-hover-overflow-x-scroll:hover { overflow-x: scroll; }
+  .xl-focus-overflow-x-scroll:focus { overflow-x: scroll; }
+  .xl-active-overflow-x-scroll:active { overflow-x: scroll; }
+  .xl-disabled-overflow-x-scroll:disabled { overflow-x: scroll; }
+  .xl-focus-visible-overflow-x-scroll:focus-visible { overflow-x: scroll; }
+  .xl-focus-within-overflow-x-scroll:focus-within { overflow-x: scroll; }
+  .group:hover .xl-group-hover-overflow-x-scroll { overflow-x: scroll; }
+  .xl-overflow-y-auto { overflow-y: auto; }
+  .xl-hover-overflow-y-auto:hover { overflow-y: auto; }
+  .xl-focus-overflow-y-auto:focus { overflow-y: auto; }
+  .xl-active-overflow-y-auto:active { overflow-y: auto; }
+  .xl-disabled-overflow-y-auto:disabled { overflow-y: auto; }
+  .xl-focus-visible-overflow-y-auto:focus-visible { overflow-y: auto; }
+  .xl-focus-within-overflow-y-auto:focus-within { overflow-y: auto; }
+  .group:hover .xl-group-hover-overflow-y-auto { overflow-y: auto; }
+  .xl-overflow-y-hidden { overflow-y: hidden; }
+  .xl-hover-overflow-y-hidden:hover { overflow-y: hidden; }
+  .xl-focus-overflow-y-hidden:focus { overflow-y: hidden; }
+  .xl-active-overflow-y-hidden:active { overflow-y: hidden; }
+  .xl-disabled-overflow-y-hidden:disabled { overflow-y: hidden; }
+  .xl-focus-visible-overflow-y-hidden:focus-visible { overflow-y: hidden; }
+  .xl-focus-within-overflow-y-hidden:focus-within { overflow-y: hidden; }
+  .group:hover .xl-group-hover-overflow-y-hidden { overflow-y: hidden; }
+  .xl-overflow-y-visible { overflow-y: visible; }
+  .xl-hover-overflow-y-visible:hover { overflow-y: visible; }
+  .xl-focus-overflow-y-visible:focus { overflow-y: visible; }
+  .xl-active-overflow-y-visible:active { overflow-y: visible; }
+  .xl-disabled-overflow-y-visible:disabled { overflow-y: visible; }
+  .xl-focus-visible-overflow-y-visible:focus-visible { overflow-y: visible; }
+  .xl-focus-within-overflow-y-visible:focus-within { overflow-y: visible; }
+  .group:hover .xl-group-hover-overflow-y-visible { overflow-y: visible; }
+  .xl-overflow-y-scroll { overflow-y: scroll; }
+  .xl-hover-overflow-y-scroll:hover { overflow-y: scroll; }
+  .xl-focus-overflow-y-scroll:focus { overflow-y: scroll; }
+  .xl-active-overflow-y-scroll:active { overflow-y: scroll; }
+  .xl-disabled-overflow-y-scroll:disabled { overflow-y: scroll; }
+  .xl-focus-visible-overflow-y-scroll:focus-visible { overflow-y: scroll; }
+  .xl-focus-within-overflow-y-scroll:focus-within { overflow-y: scroll; }
+  .group:hover .xl-group-hover-overflow-y-scroll { overflow-y: scroll; }
+  .xl-overflow-normal { overflow-wrap: normal; }
+  .xl-hover-overflow-normal:hover { overflow-wrap: normal; }
+  .xl-focus-overflow-normal:focus { overflow-wrap: normal; }
+  .xl-active-overflow-normal:active { overflow-wrap: normal; }
+  .xl-disabled-overflow-normal:disabled { overflow-wrap: normal; }
+  .xl-focus-visible-overflow-normal:focus-visible { overflow-wrap: normal; }
+  .xl-focus-within-overflow-normal:focus-within { overflow-wrap: normal; }
+  .group:hover .xl-group-hover-overflow-normal { overflow-wrap: normal; }
+  .xl-overflow-break { overflow-wrap: break-word; }
+  .xl-hover-overflow-break:hover { overflow-wrap: break-word; }
+  .xl-focus-overflow-break:focus { overflow-wrap: break-word; }
+  .xl-active-overflow-break:active { overflow-wrap: break-word; }
+  .xl-disabled-overflow-break:disabled { overflow-wrap: break-word; }
+  .xl-focus-visible-overflow-break:focus-visible { overflow-wrap: break-word; }
+  .xl-focus-within-overflow-break:focus-within { overflow-wrap: break-word; }
+  .group:hover .xl-group-hover-overflow-break { overflow-wrap: break-word; }
+  .xl-overflow-normal { overflow-wrap: normal; }
+  .xl-hover-overflow-normal:hover { overflow-wrap: normal; }
+  .xl-focus-overflow-normal:focus { overflow-wrap: normal; }
+  .xl-active-overflow-normal:active { overflow-wrap: normal; }
+  .xl-disabled-overflow-normal:disabled { overflow-wrap: normal; }
+  .xl-focus-visible-overflow-normal:focus-visible { overflow-wrap: normal; }
+  .xl-focus-within-overflow-normal:focus-within { overflow-wrap: normal; }
+  .group:hover .xl-group-hover-overflow-normal { overflow-wrap: normal; }
+  .xl-overflow-break { overflow-wrap: break-word; }
+  .xl-hover-overflow-break:hover { overflow-wrap: break-word; }
+  .xl-focus-overflow-break:focus { overflow-wrap: break-word; }
+  .xl-active-overflow-break:active { overflow-wrap: break-word; }
+  .xl-disabled-overflow-break:disabled { overflow-wrap: break-word; }
+  .xl-focus-visible-overflow-break:focus-visible { overflow-wrap: break-word; }
+  .xl-focus-within-overflow-break:focus-within { overflow-wrap: break-word; }
+  .group:hover .xl-group-hover-overflow-break { overflow-wrap: break-word; }
+  .xl-overscroll-auto { overscroll-behavior: auto; }
+  .xl-hover-overscroll-auto:hover { overscroll-behavior: auto; }
+  .xl-focus-overscroll-auto:focus { overscroll-behavior: auto; }
+  .xl-active-overscroll-auto:active { overscroll-behavior: auto; }
+  .xl-disabled-overscroll-auto:disabled { overscroll-behavior: auto; }
+  .xl-focus-visible-overscroll-auto:focus-visible { overscroll-behavior: auto; }
+  .xl-focus-within-overscroll-auto:focus-within { overscroll-behavior: auto; }
+  .group:hover .xl-group-hover-overscroll-auto { overscroll-behavior: auto; }
+  .xl-overscroll-contain { overscroll-behavior: contain; }
+  .xl-hover-overscroll-contain:hover { overscroll-behavior: contain; }
+  .xl-focus-overscroll-contain:focus { overscroll-behavior: contain; }
+  .xl-active-overscroll-contain:active { overscroll-behavior: contain; }
+  .xl-disabled-overscroll-contain:disabled { overscroll-behavior: contain; }
+  .xl-focus-visible-overscroll-contain:focus-visible { overscroll-behavior: contain; }
+  .xl-focus-within-overscroll-contain:focus-within { overscroll-behavior: contain; }
+  .group:hover .xl-group-hover-overscroll-contain { overscroll-behavior: contain; }
+  .xl-overscroll-none { overscroll-behavior: none; }
+  .xl-hover-overscroll-none:hover { overscroll-behavior: none; }
+  .xl-focus-overscroll-none:focus { overscroll-behavior: none; }
+  .xl-active-overscroll-none:active { overscroll-behavior: none; }
+  .xl-disabled-overscroll-none:disabled { overscroll-behavior: none; }
+  .xl-focus-visible-overscroll-none:focus-visible { overscroll-behavior: none; }
+  .xl-focus-within-overscroll-none:focus-within { overscroll-behavior: none; }
+  .group:hover .xl-group-hover-overscroll-none { overscroll-behavior: none; }
+  .xl-overscroll-x-auto { overscroll-behavior-x: auto; }
+  .xl-hover-overscroll-x-auto:hover { overscroll-behavior-x: auto; }
+  .xl-focus-overscroll-x-auto:focus { overscroll-behavior-x: auto; }
+  .xl-active-overscroll-x-auto:active { overscroll-behavior-x: auto; }
+  .xl-disabled-overscroll-x-auto:disabled { overscroll-behavior-x: auto; }
+  .xl-focus-visible-overscroll-x-auto:focus-visible { overscroll-behavior-x: auto; }
+  .xl-focus-within-overscroll-x-auto:focus-within { overscroll-behavior-x: auto; }
+  .group:hover .xl-group-hover-overscroll-x-auto { overscroll-behavior-x: auto; }
+  .xl-overscroll-x-contain { overscroll-behavior-x: contain; }
+  .xl-hover-overscroll-x-contain:hover { overscroll-behavior-x: contain; }
+  .xl-focus-overscroll-x-contain:focus { overscroll-behavior-x: contain; }
+  .xl-active-overscroll-x-contain:active { overscroll-behavior-x: contain; }
+  .xl-disabled-overscroll-x-contain:disabled { overscroll-behavior-x: contain; }
+  .xl-focus-visible-overscroll-x-contain:focus-visible { overscroll-behavior-x: contain; }
+  .xl-focus-within-overscroll-x-contain:focus-within { overscroll-behavior-x: contain; }
+  .group:hover .xl-group-hover-overscroll-x-contain { overscroll-behavior-x: contain; }
+  .xl-overscroll-x-none { overscroll-behavior-x: none; }
+  .xl-hover-overscroll-x-none:hover { overscroll-behavior-x: none; }
+  .xl-focus-overscroll-x-none:focus { overscroll-behavior-x: none; }
+  .xl-active-overscroll-x-none:active { overscroll-behavior-x: none; }
+  .xl-disabled-overscroll-x-none:disabled { overscroll-behavior-x: none; }
+  .xl-focus-visible-overscroll-x-none:focus-visible { overscroll-behavior-x: none; }
+  .xl-focus-within-overscroll-x-none:focus-within { overscroll-behavior-x: none; }
+  .group:hover .xl-group-hover-overscroll-x-none { overscroll-behavior-x: none; }
+  .xl-overscroll-y-auto { overscroll-behavior-y: auto; }
+  .xl-hover-overscroll-y-auto:hover { overscroll-behavior-y: auto; }
+  .xl-focus-overscroll-y-auto:focus { overscroll-behavior-y: auto; }
+  .xl-active-overscroll-y-auto:active { overscroll-behavior-y: auto; }
+  .xl-disabled-overscroll-y-auto:disabled { overscroll-behavior-y: auto; }
+  .xl-focus-visible-overscroll-y-auto:focus-visible { overscroll-behavior-y: auto; }
+  .xl-focus-within-overscroll-y-auto:focus-within { overscroll-behavior-y: auto; }
+  .group:hover .xl-group-hover-overscroll-y-auto { overscroll-behavior-y: auto; }
+  .xl-overscroll-y-contain { overscroll-behavior-y: contain; }
+  .xl-hover-overscroll-y-contain:hover { overscroll-behavior-y: contain; }
+  .xl-focus-overscroll-y-contain:focus { overscroll-behavior-y: contain; }
+  .xl-active-overscroll-y-contain:active { overscroll-behavior-y: contain; }
+  .xl-disabled-overscroll-y-contain:disabled { overscroll-behavior-y: contain; }
+  .xl-focus-visible-overscroll-y-contain:focus-visible { overscroll-behavior-y: contain; }
+  .xl-focus-within-overscroll-y-contain:focus-within { overscroll-behavior-y: contain; }
+  .group:hover .xl-group-hover-overscroll-y-contain { overscroll-behavior-y: contain; }
+  .xl-overscroll-y-none { overscroll-behavior-y: none; }
+  .xl-hover-overscroll-y-none:hover { overscroll-behavior-y: none; }
+  .xl-focus-overscroll-y-none:focus { overscroll-behavior-y: none; }
+  .xl-active-overscroll-y-none:active { overscroll-behavior-y: none; }
+  .xl-disabled-overscroll-y-none:disabled { overscroll-behavior-y: none; }
+  .xl-focus-visible-overscroll-y-none:focus-visible { overscroll-behavior-y: none; }
+  .xl-focus-within-overscroll-y-none:focus-within { overscroll-behavior-y: none; }
+  .group:hover .xl-group-hover-overscroll-y-none { overscroll-behavior-y: none; }
+}
+
+/* UW Breakpoint */
+@media (min-width: 1536px) {
+  .uw-overflow-auto { overflow: auto; }
+  .uw-hover-overflow-auto:hover { overflow: auto; }
+  .uw-focus-overflow-auto:focus { overflow: auto; }
+  .uw-active-overflow-auto:active { overflow: auto; }
+  .uw-disabled-overflow-auto:disabled { overflow: auto; }
+  .uw-focus-visible-overflow-auto:focus-visible { overflow: auto; }
+  .uw-focus-within-overflow-auto:focus-within { overflow: auto; }
+  .group:hover .uw-group-hover-overflow-auto { overflow: auto; }
+  .uw-overflow-hidden { overflow: hidden; }
+  .uw-hover-overflow-hidden:hover { overflow: hidden; }
+  .uw-focus-overflow-hidden:focus { overflow: hidden; }
+  .uw-active-overflow-hidden:active { overflow: hidden; }
+  .uw-disabled-overflow-hidden:disabled { overflow: hidden; }
+  .uw-focus-visible-overflow-hidden:focus-visible { overflow: hidden; }
+  .uw-focus-within-overflow-hidden:focus-within { overflow: hidden; }
+  .group:hover .uw-group-hover-overflow-hidden { overflow: hidden; }
+  .uw-overflow-visible { overflow: visible; }
+  .uw-hover-overflow-visible:hover { overflow: visible; }
+  .uw-focus-overflow-visible:focus { overflow: visible; }
+  .uw-active-overflow-visible:active { overflow: visible; }
+  .uw-disabled-overflow-visible:disabled { overflow: visible; }
+  .uw-focus-visible-overflow-visible:focus-visible { overflow: visible; }
+  .uw-focus-within-overflow-visible:focus-within { overflow: visible; }
+  .group:hover .uw-group-hover-overflow-visible { overflow: visible; }
+  .uw-overflow-scroll { overflow: scroll; }
+  .uw-hover-overflow-scroll:hover { overflow: scroll; }
+  .uw-focus-overflow-scroll:focus { overflow: scroll; }
+  .uw-active-overflow-scroll:active { overflow: scroll; }
+  .uw-disabled-overflow-scroll:disabled { overflow: scroll; }
+  .uw-focus-visible-overflow-scroll:focus-visible { overflow: scroll; }
+  .uw-focus-within-overflow-scroll:focus-within { overflow: scroll; }
+  .group:hover .uw-group-hover-overflow-scroll { overflow: scroll; }
+  .uw-overflow-x-auto { overflow-x: auto; }
+  .uw-hover-overflow-x-auto:hover { overflow-x: auto; }
+  .uw-focus-overflow-x-auto:focus { overflow-x: auto; }
+  .uw-active-overflow-x-auto:active { overflow-x: auto; }
+  .uw-disabled-overflow-x-auto:disabled { overflow-x: auto; }
+  .uw-focus-visible-overflow-x-auto:focus-visible { overflow-x: auto; }
+  .uw-focus-within-overflow-x-auto:focus-within { overflow-x: auto; }
+  .group:hover .uw-group-hover-overflow-x-auto { overflow-x: auto; }
+  .uw-overflow-x-hidden { overflow-x: hidden; }
+  .uw-hover-overflow-x-hidden:hover { overflow-x: hidden; }
+  .uw-focus-overflow-x-hidden:focus { overflow-x: hidden; }
+  .uw-active-overflow-x-hidden:active { overflow-x: hidden; }
+  .uw-disabled-overflow-x-hidden:disabled { overflow-x: hidden; }
+  .uw-focus-visible-overflow-x-hidden:focus-visible { overflow-x: hidden; }
+  .uw-focus-within-overflow-x-hidden:focus-within { overflow-x: hidden; }
+  .group:hover .uw-group-hover-overflow-x-hidden { overflow-x: hidden; }
+  .uw-overflow-x-visible { overflow-x: visible; }
+  .uw-hover-overflow-x-visible:hover { overflow-x: visible; }
+  .uw-focus-overflow-x-visible:focus { overflow-x: visible; }
+  .uw-active-overflow-x-visible:active { overflow-x: visible; }
+  .uw-disabled-overflow-x-visible:disabled { overflow-x: visible; }
+  .uw-focus-visible-overflow-x-visible:focus-visible { overflow-x: visible; }
+  .uw-focus-within-overflow-x-visible:focus-within { overflow-x: visible; }
+  .group:hover .uw-group-hover-overflow-x-visible { overflow-x: visible; }
+  .uw-overflow-x-scroll { overflow-x: scroll; }
+  .uw-hover-overflow-x-scroll:hover { overflow-x: scroll; }
+  .uw-focus-overflow-x-scroll:focus { overflow-x: scroll; }
+  .uw-active-overflow-x-scroll:active { overflow-x: scroll; }
+  .uw-disabled-overflow-x-scroll:disabled { overflow-x: scroll; }
+  .uw-focus-visible-overflow-x-scroll:focus-visible { overflow-x: scroll; }
+  .uw-focus-within-overflow-x-scroll:focus-within { overflow-x: scroll; }
+  .group:hover .uw-group-hover-overflow-x-scroll { overflow-x: scroll; }
+  .uw-overflow-y-auto { overflow-y: auto; }
+  .uw-hover-overflow-y-auto:hover { overflow-y: auto; }
+  .uw-focus-overflow-y-auto:focus { overflow-y: auto; }
+  .uw-active-overflow-y-auto:active { overflow-y: auto; }
+  .uw-disabled-overflow-y-auto:disabled { overflow-y: auto; }
+  .uw-focus-visible-overflow-y-auto:focus-visible { overflow-y: auto; }
+  .uw-focus-within-overflow-y-auto:focus-within { overflow-y: auto; }
+  .group:hover .uw-group-hover-overflow-y-auto { overflow-y: auto; }
+  .uw-overflow-y-hidden { overflow-y: hidden; }
+  .uw-hover-overflow-y-hidden:hover { overflow-y: hidden; }
+  .uw-focus-overflow-y-hidden:focus { overflow-y: hidden; }
+  .uw-active-overflow-y-hidden:active { overflow-y: hidden; }
+  .uw-disabled-overflow-y-hidden:disabled { overflow-y: hidden; }
+  .uw-focus-visible-overflow-y-hidden:focus-visible { overflow-y: hidden; }
+  .uw-focus-within-overflow-y-hidden:focus-within { overflow-y: hidden; }
+  .group:hover .uw-group-hover-overflow-y-hidden { overflow-y: hidden; }
+  .uw-overflow-y-visible { overflow-y: visible; }
+  .uw-hover-overflow-y-visible:hover { overflow-y: visible; }
+  .uw-focus-overflow-y-visible:focus { overflow-y: visible; }
+  .uw-active-overflow-y-visible:active { overflow-y: visible; }
+  .uw-disabled-overflow-y-visible:disabled { overflow-y: visible; }
+  .uw-focus-visible-overflow-y-visible:focus-visible { overflow-y: visible; }
+  .uw-focus-within-overflow-y-visible:focus-within { overflow-y: visible; }
+  .group:hover .uw-group-hover-overflow-y-visible { overflow-y: visible; }
+  .uw-overflow-y-scroll { overflow-y: scroll; }
+  .uw-hover-overflow-y-scroll:hover { overflow-y: scroll; }
+  .uw-focus-overflow-y-scroll:focus { overflow-y: scroll; }
+  .uw-active-overflow-y-scroll:active { overflow-y: scroll; }
+  .uw-disabled-overflow-y-scroll:disabled { overflow-y: scroll; }
+  .uw-focus-visible-overflow-y-scroll:focus-visible { overflow-y: scroll; }
+  .uw-focus-within-overflow-y-scroll:focus-within { overflow-y: scroll; }
+  .group:hover .uw-group-hover-overflow-y-scroll { overflow-y: scroll; }
+  .uw-overflow-normal { overflow-wrap: normal; }
+  .uw-hover-overflow-normal:hover { overflow-wrap: normal; }
+  .uw-focus-overflow-normal:focus { overflow-wrap: normal; }
+  .uw-active-overflow-normal:active { overflow-wrap: normal; }
+  .uw-disabled-overflow-normal:disabled { overflow-wrap: normal; }
+  .uw-focus-visible-overflow-normal:focus-visible { overflow-wrap: normal; }
+  .uw-focus-within-overflow-normal:focus-within { overflow-wrap: normal; }
+  .group:hover .uw-group-hover-overflow-normal { overflow-wrap: normal; }
+  .uw-overflow-break { overflow-wrap: break-word; }
+  .uw-hover-overflow-break:hover { overflow-wrap: break-word; }
+  .uw-focus-overflow-break:focus { overflow-wrap: break-word; }
+  .uw-active-overflow-break:active { overflow-wrap: break-word; }
+  .uw-disabled-overflow-break:disabled { overflow-wrap: break-word; }
+  .uw-focus-visible-overflow-break:focus-visible { overflow-wrap: break-word; }
+  .uw-focus-within-overflow-break:focus-within { overflow-wrap: break-word; }
+  .group:hover .uw-group-hover-overflow-break { overflow-wrap: break-word; }
+  .uw-overflow-normal { overflow-wrap: normal; }
+  .uw-hover-overflow-normal:hover { overflow-wrap: normal; }
+  .uw-focus-overflow-normal:focus { overflow-wrap: normal; }
+  .uw-active-overflow-normal:active { overflow-wrap: normal; }
+  .uw-disabled-overflow-normal:disabled { overflow-wrap: normal; }
+  .uw-focus-visible-overflow-normal:focus-visible { overflow-wrap: normal; }
+  .uw-focus-within-overflow-normal:focus-within { overflow-wrap: normal; }
+  .group:hover .uw-group-hover-overflow-normal { overflow-wrap: normal; }
+  .uw-overflow-break { overflow-wrap: break-word; }
+  .uw-hover-overflow-break:hover { overflow-wrap: break-word; }
+  .uw-focus-overflow-break:focus { overflow-wrap: break-word; }
+  .uw-active-overflow-break:active { overflow-wrap: break-word; }
+  .uw-disabled-overflow-break:disabled { overflow-wrap: break-word; }
+  .uw-focus-visible-overflow-break:focus-visible { overflow-wrap: break-word; }
+  .uw-focus-within-overflow-break:focus-within { overflow-wrap: break-word; }
+  .group:hover .uw-group-hover-overflow-break { overflow-wrap: break-word; }
+  .uw-overscroll-auto { overscroll-behavior: auto; }
+  .uw-hover-overscroll-auto:hover { overscroll-behavior: auto; }
+  .uw-focus-overscroll-auto:focus { overscroll-behavior: auto; }
+  .uw-active-overscroll-auto:active { overscroll-behavior: auto; }
+  .uw-disabled-overscroll-auto:disabled { overscroll-behavior: auto; }
+  .uw-focus-visible-overscroll-auto:focus-visible { overscroll-behavior: auto; }
+  .uw-focus-within-overscroll-auto:focus-within { overscroll-behavior: auto; }
+  .group:hover .uw-group-hover-overscroll-auto { overscroll-behavior: auto; }
+  .uw-overscroll-contain { overscroll-behavior: contain; }
+  .uw-hover-overscroll-contain:hover { overscroll-behavior: contain; }
+  .uw-focus-overscroll-contain:focus { overscroll-behavior: contain; }
+  .uw-active-overscroll-contain:active { overscroll-behavior: contain; }
+  .uw-disabled-overscroll-contain:disabled { overscroll-behavior: contain; }
+  .uw-focus-visible-overscroll-contain:focus-visible { overscroll-behavior: contain; }
+  .uw-focus-within-overscroll-contain:focus-within { overscroll-behavior: contain; }
+  .group:hover .uw-group-hover-overscroll-contain { overscroll-behavior: contain; }
+  .uw-overscroll-none { overscroll-behavior: none; }
+  .uw-hover-overscroll-none:hover { overscroll-behavior: none; }
+  .uw-focus-overscroll-none:focus { overscroll-behavior: none; }
+  .uw-active-overscroll-none:active { overscroll-behavior: none; }
+  .uw-disabled-overscroll-none:disabled { overscroll-behavior: none; }
+  .uw-focus-visible-overscroll-none:focus-visible { overscroll-behavior: none; }
+  .uw-focus-within-overscroll-none:focus-within { overscroll-behavior: none; }
+  .group:hover .uw-group-hover-overscroll-none { overscroll-behavior: none; }
+  .uw-overscroll-x-auto { overscroll-behavior-x: auto; }
+  .uw-hover-overscroll-x-auto:hover { overscroll-behavior-x: auto; }
+  .uw-focus-overscroll-x-auto:focus { overscroll-behavior-x: auto; }
+  .uw-active-overscroll-x-auto:active { overscroll-behavior-x: auto; }
+  .uw-disabled-overscroll-x-auto:disabled { overscroll-behavior-x: auto; }
+  .uw-focus-visible-overscroll-x-auto:focus-visible { overscroll-behavior-x: auto; }
+  .uw-focus-within-overscroll-x-auto:focus-within { overscroll-behavior-x: auto; }
+  .group:hover .uw-group-hover-overscroll-x-auto { overscroll-behavior-x: auto; }
+  .uw-overscroll-x-contain { overscroll-behavior-x: contain; }
+  .uw-hover-overscroll-x-contain:hover { overscroll-behavior-x: contain; }
+  .uw-focus-overscroll-x-contain:focus { overscroll-behavior-x: contain; }
+  .uw-active-overscroll-x-contain:active { overscroll-behavior-x: contain; }
+  .uw-disabled-overscroll-x-contain:disabled { overscroll-behavior-x: contain; }
+  .uw-focus-visible-overscroll-x-contain:focus-visible { overscroll-behavior-x: contain; }
+  .uw-focus-within-overscroll-x-contain:focus-within { overscroll-behavior-x: contain; }
+  .group:hover .uw-group-hover-overscroll-x-contain { overscroll-behavior-x: contain; }
+  .uw-overscroll-x-none { overscroll-behavior-x: none; }
+  .uw-hover-overscroll-x-none:hover { overscroll-behavior-x: none; }
+  .uw-focus-overscroll-x-none:focus { overscroll-behavior-x: none; }
+  .uw-active-overscroll-x-none:active { overscroll-behavior-x: none; }
+  .uw-disabled-overscroll-x-none:disabled { overscroll-behavior-x: none; }
+  .uw-focus-visible-overscroll-x-none:focus-visible { overscroll-behavior-x: none; }
+  .uw-focus-within-overscroll-x-none:focus-within { overscroll-behavior-x: none; }
+  .group:hover .uw-group-hover-overscroll-x-none { overscroll-behavior-x: none; }
+  .uw-overscroll-y-auto { overscroll-behavior-y: auto; }
+  .uw-hover-overscroll-y-auto:hover { overscroll-behavior-y: auto; }
+  .uw-focus-overscroll-y-auto:focus { overscroll-behavior-y: auto; }
+  .uw-active-overscroll-y-auto:active { overscroll-behavior-y: auto; }
+  .uw-disabled-overscroll-y-auto:disabled { overscroll-behavior-y: auto; }
+  .uw-focus-visible-overscroll-y-auto:focus-visible { overscroll-behavior-y: auto; }
+  .uw-focus-within-overscroll-y-auto:focus-within { overscroll-behavior-y: auto; }
+  .group:hover .uw-group-hover-overscroll-y-auto { overscroll-behavior-y: auto; }
+  .uw-overscroll-y-contain { overscroll-behavior-y: contain; }
+  .uw-hover-overscroll-y-contain:hover { overscroll-behavior-y: contain; }
+  .uw-focus-overscroll-y-contain:focus { overscroll-behavior-y: contain; }
+  .uw-active-overscroll-y-contain:active { overscroll-behavior-y: contain; }
+  .uw-disabled-overscroll-y-contain:disabled { overscroll-behavior-y: contain; }
+  .uw-focus-visible-overscroll-y-contain:focus-visible { overscroll-behavior-y: contain; }
+  .uw-focus-within-overscroll-y-contain:focus-within { overscroll-behavior-y: contain; }
+  .group:hover .uw-group-hover-overscroll-y-contain { overscroll-behavior-y: contain; }
+  .uw-overscroll-y-none { overscroll-behavior-y: none; }
+  .uw-hover-overscroll-y-none:hover { overscroll-behavior-y: none; }
+  .uw-focus-overscroll-y-none:focus { overscroll-behavior-y: none; }
+  .uw-active-overscroll-y-none:active { overscroll-behavior-y: none; }
+  .uw-disabled-overscroll-y-none:disabled { overscroll-behavior-y: none; }
+  .uw-focus-visible-overscroll-y-none:focus-visible { overscroll-behavior-y: none; }
+  .uw-focus-within-overscroll-y-none:focus-within { overscroll-behavior-y: none; }
+  .group:hover .uw-group-hover-overscroll-y-none { overscroll-behavior-y: none; }
+}

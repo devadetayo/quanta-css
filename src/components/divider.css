@@ -40,6 +40,9 @@ html[data-theme="dark"] .quanta-divider-vertical {
 }
 
 html[data-theme="dark"] .quanta-divider-text {
-  background-color: var(--quanta-slate-900);
+  background-color: var(--quanta-grey-900);
   color: var(--quanta-text-light);
 }
+
+html[data-theme="dark"] .divider-dashed { border-top: 2px dashed var(--quanta-border-color); background: none; height: auto; }
+html[data-theme="dark"] .divider-dotted { border-top: 2px dotted var(--quanta-border-color); background: none; height: auto; }

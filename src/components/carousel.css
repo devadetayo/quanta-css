@@ -74,7 +74,7 @@
 .indicator-img.active { border:2px solid var(--quanta-primary); }
 
 @media(max-width:var(--quanta-screen-sm)) { .quanta-carousel-item { padding:var(--quanta-space-4); } }
-html[data-theme="dark"] .quanta-carousel-item { background:var(--quanta-slate-800); }
-html[data-theme="dark"] .quanta-carousel-prev, html[data-theme="dark"] .quanta-carousel-next { background:var(--quanta-slate-700); color:var(--white); }
-html[data-theme="dark"] .indicator-circle, html[data-theme="dark"] .indicator-square, html[data-theme="dark"] .indicator-rect { background:var(--quanta-slate-800); }
+html[data-theme="dark"] .quanta-carousel-item { background:var(--quanta-grey-800); }
+html[data-theme="dark"] .quanta-carousel-prev, html[data-theme="dark"] .quanta-carousel-next { background:var(--quanta-grey-700); color:var(--white); }
+html[data-theme="dark"] .indicator-circle, html[data-theme="dark"] .indicator-square, html[data-theme="dark"] .indicator-rect { background:var(--quanta-grey-800); }
 html[data-theme="dark"] .indicator-circle.active, html[data-theme="dark"] .indicator-square.active, html[data-theme="dark"] .indicator-rect.active { background:var(--quanta-primary); }

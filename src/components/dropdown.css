@@ -1,8 +1,6 @@
 .quanta-dropdown {
   position: relative;
   display: inline-block;
-  /* Extend hover area to menu gap */
-  padding-bottom: var(--quanta-space-2);
 }
 
 /* Toggle button */
@@ -21,7 +19,7 @@
 /* Menu panel */
 .quanta-dropdown-menu {
   position: absolute;
-  top: calc(100% - var(--quanta-space-2)); /* lift up to overlap padding */
+  top: calc(100% + var(--quanta-space-2)); /* lift up to overlap padding */
   left: 0;
   min-width: 160px;
   background-color: var(--quanta-bg-default);
@@ -63,7 +61,7 @@
 }
 .quanta-dropdown-item:hover,
 .quanta-dropdown-item:focus {
-  background-color: var(--quanta-slate-50);
+  background-color: var(--quanta-grey-50);
   color: var(--black);
 }
 .quanta-dropdown-item:active {
@@ -73,22 +71,22 @@
 /* Dark mode */
 html[data-theme="dark"] .quanta-dropdown-toggle {
   color: var(--quanta-text-secondary);
-  background-color: var(--quanta-slate-800);
+  background-color: var(--quanta-grey-800);
 }
 html[data-theme="dark"] .quanta-dropdown-toggle:hover,
 html[data-theme="dark"] .quanta-dropdown-toggle:focus {
-  background-color: var(--quanta-slate-700);
+  background-color: var(--quanta-grey-700);
   color: var(--quanta-primary-hover);
 }
 html[data-theme="dark"] .quanta-dropdown-menu {
-  background-color: var(--quanta-slate-800);
+  background-color: var(--quanta-grey-800);
 }
 html[data-theme="dark"] .quanta-dropdown-item {
   color: var(--quanta-text-default);
 }
 html[data-theme="dark"] .quanta-dropdown-item:hover,
 html[data-theme="dark"] .quanta-dropdown-item:focus {
-  background-color: var(--quanta-slate-700);
+  background-color: var(--quanta-grey-700);
   color: var(--quanta-white);
 }
 html[data-theme="dark"] .quanta-dropdown-item:active {

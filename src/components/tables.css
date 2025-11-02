@@ -41,11 +41,11 @@
 
 /* ─── Visual Variants ───────────────────────────────── */
 .quanta-table-hover tbody tr:hover {
-  background-color: var(--quanta-slate-100);
+  background-color: var(--quanta-grey-100);
 }
 
 .quanta-table-zebra tbody tr:nth-child(odd) {
-  background-color: var(--quanta-slate-50);
+  background-color: var(--quanta-grey-50);
 }
 
 .quanta-table-bordered th,
@@ -69,7 +69,7 @@
 }
 
 .quanta-table-glass {
-  background-color: var(--quanta-slate-50);
+  background-color: var(--quanta-grey-50);
   backdrop-filter: blur(6px);
   border-radius: var(--quanta-rounded-lg);
   overflow: hidden;
@@ -115,7 +115,7 @@
 .quanta-pagination-button {
   padding: var(--quanta-space-2) var(--quanta-space-3);
   font-size: var(--quanta-text-sm);
-  background-color: var(--quanta-slate-100);
+  background-color: var(--quanta-grey-100);
   color: var(--quanta-text-default);
   border: none;
   border-radius: var(--quanta-rounded-md);
@@ -124,7 +124,7 @@
 }
 
 .quanta-pagination-button:hover {
-  background-color: var(--quanta-slate-200);
+  background-color: var(--quanta-grey-200);
   color: var(--quanta-text-dark);
 }
 
@@ -134,7 +134,7 @@
 }
 
 .quanta-pagination-button:disabled {
-  background-color: var(--quanta-slate-50);
+  background-color: var(--quanta-grey-50);
   color: var(--quanta-text-muted);
   cursor: not-allowed;
 }
@@ -150,11 +150,11 @@ html[data-theme="dark"] {
   }
 
   .quanta-table-hover tbody tr:hover {
-    background-color: var(--quanta-slate-800);
+    background-color: var(--quanta-grey-800);
   }
 
   .quanta-table-zebra tbody tr:nth-child(odd) {
-    background-color: var(--quanta-slate-900);
+    background-color: var(--quanta-grey-900);
   }
 
   .quanta-table-clean th,
@@ -163,7 +163,7 @@ html[data-theme="dark"] {
   }
 
   .quanta-table-glass {
-    background-color: var(--quanta-slate-700);
+    background-color: var(--quanta-grey-700);
   }
 
   .quanta-table-bordered th,
@@ -172,12 +172,12 @@ html[data-theme="dark"] {
   }
 
   .quanta-pagination-button {
-    background-color: var(--quanta-slate-800);
+    background-color: var(--quanta-grey-800);
     color: var(--quanta-text-light);
   }
 
   .quanta-pagination-button:hover {
-    background-color: var(--quanta-slate-700);
+    background-color: var(--quanta-grey-700);
     color: var(--quanta-text-light);
   }
 

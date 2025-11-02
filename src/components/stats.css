@@ -64,7 +64,7 @@ html[data-theme="dark"] .quanta-stat-label {
 }
 
 html[data-theme="dark"] .quanta-stat:hover {
-  background: var(--quanta-slate-800);
+  background: var(--quanta-grey-800);
 }
 
 /* ─── Responsive Fine-Tuning ────────────────────────────── */
